@@ -5,10 +5,10 @@
 <h1 align="center">REAL: Exploratory, Communicative, and Deployable Embodied Agents</h1>
 
 <p align="center">
-  <a href="https://github.com/InternRobotics/REAL"><img src="https://img.shields.io/badge/GitHub-REAL-black?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  <img src="https://img.shields.io/badge/Phase_1-Released-10b981?style=flat-square" alt="Phase 1 Released" />
-  <img src="https://img.shields.io/badge/Phase_2-Released-10b981?style=flat-square" alt="Phase 2 Released" />
-  <img src="https://img.shields.io/badge/Phase_3-SFT_Templates_Released-10b981?style=flat-square" alt="Phase 3 SFT Templates Released" />
+  <a href="#dataset--checkpoint"><img src="https://img.shields.io/badge/Dataset%20%26%20Checkpoint-Coming%20Soon-f59e0b?style=flat-square" alt="Dataset and Checkpoint" /></a>
+  <a href="#paper"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-3b82f6?style=flat-square" alt="Paper" /></a>
+  <a href="#project-page"><img src="https://img.shields.io/badge/Project%20Page-Coming%20Soon-10b981?style=flat-square" alt="Project Page" /></a>
+  <a href="https://github.com/InternRobotics/REAL"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="Code" /></a>
   <img src="https://img.shields.io/badge/License-MIT-6366f1?style=flat-square" alt="MIT License" />
 </p>
 
@@ -16,8 +16,8 @@
 
 ## 📰 News
 
-* **[2026.03.31]** 🔥🔥 **Phase 2 Released** — Procedural task & trajectory generation pipeline (GRScenes + MesaTask) is now open-source!
-* **[2026.03.24]** 🔥🔥 **Phase 1 Released** — Simulation engine (InternUtopia), nanobot interface, and MCP server are now open-source!
+* **[2026.03.31]** Procedural task and trajectory generation pipeline released.
+* **[2026.03.24]** Simulation environment, nanobot interface, and MCP server released.
 
 ---
 
@@ -46,23 +46,7 @@
 
 ## Demo
 
-https://github.com/user-attachments/assets/b5d2424b-9a75-43d2-a33f-d657c9fd28f1
-
-
-
-
-
----
-
-## Roadmap
-
-| Stage | Status | Description |
-|-------|--------|-------------|
-| Phase 1 | ✅ **Released** | Simulation engine (InternUtopia), nanobot interface, MCP server |
-| Phase 2 | ✅ **Released** | Task & trajectory generation pipeline (GRScenes + MesaTask) |
-| Phase 3 | ✅ **SFT templates released** | Qwen3-VL SFT launch templates and data config examples; RL training coming soon |
-| - | 🔜 Coming soon | Technical report |
-
+[▶ Watch the REAL real-world deployment demo](docs/real-world-demo.mp4)
 
 ---
 
@@ -295,6 +279,22 @@ This repository does not publish private cluster scripts, internal data paths, s
 The paper citation will be added after publication. Until then, please cite this repository URL and the paper title:
 
 > Exploratory, Communicative, and Deployable: Vision-Driven Embodied Agents for Open-World Mobile Manipulation.
+
+---
+
+## Resources
+
+### Dataset & Checkpoint
+
+The dataset and model checkpoint links will be added here after release.
+
+### Paper
+
+The paper link will be added here after publication.
+
+### Project Page
+
+The project page link will be added here when available.
 
 ---
 
