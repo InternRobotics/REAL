@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">REAL</title>
+  <desc id="desc">REAL: Exploratory, Communicative, and Deployable Embodied Agents</desc>
+  <rect width="1200" height="280" rx="28" fill="#f4f8fb"/>
+  <g transform="translate(70 55)" fill="none" stroke="#123b5d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="85" cy="85" r="66" fill="#d9eef2"/>
+    <path d="M42 100c28-48 62-58 101-27M55 126c27 17 57 15 88-8"/>
+    <circle cx="65" cy="68" r="9" fill="#f59e5b" stroke="none"/>
+    <circle cx="119" cy="54" r="9" fill="#58b98c" stroke="none"/>
+    <circle cx="132" cy="111" r="9" fill="#5ca6d6" stroke="none"/>
+  </g>
+  <text x="270" y="145" fill="#123b5d" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="700" letter-spacing="8">REAL</text>
+  <text x="276" y="202" fill="#385b72" font-family="Arial, Helvetica, sans-serif" font-size="30">Exploratory, Communicative, and Deployable Embodied Agents</text>
+</svg>

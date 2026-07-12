@@ -1,0 +1,20 @@
+# Example dataset registry values for Qwen3-VL SFT on REAL data.
+# The official Qwen3-VL trainer expects these values to be registered in
+# QWEN3VL_FINETUNE_ROOT/qwenvl/data/__init__.py before launching training.
+
+datasets:
+  real_basic_pnp:
+    annotation_path: ${REAL_SFT_DATA_ROOT}/basic_pnp/annotations.json
+    data_path: ${REAL_SFT_DATA_ROOT}/basic_pnp
+
+  real_articulation:
+    annotation_path: ${REAL_SFT_DATA_ROOT}/articulation/annotations.json
+    data_path: ${REAL_SFT_DATA_ROOT}/articulation
+
+  real_interactive:
+    annotation_path: ${REAL_SFT_DATA_ROOT}/interactive/annotations.json
+    data_path: ${REAL_SFT_DATA_ROOT}/interactive
+
+  real_gather:
+    annotation_path: ${REAL_SFT_DATA_ROOT}/gather/annotations.json
+    data_path: ${REAL_SFT_DATA_ROOT}/gather

@@ -1,0 +1,62 @@
+{
+  "MVUCSQAKTKJ5EAABAAAAAAQ8-pnp": {
+    "output_dir": "./output/basic_pnp/MVUCSQAKTKJ5EAABAAAAAAQ8",
+    "input_data_path": "/path/to/your/replaydata/basic_pnp/MVUCSQAKTKJ5EAABAAAAAAQ8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAAAQ8_template.json"
+  },
+  "MV7J6NIKTKJZ2AABAAAAAEI8-pnp": {
+    "output_dir": "./output/basic_pnp/MV7J6NIKTKJZ2AABAAAAAEI8",
+    "input_data_path": "/path/to/your/replaydata/basic_pnp/MV7J6NIKTKJZ2AABAAAAAEI8",
+    "template": "./templates/MV7J6NIKTKJZ2AABAAAAAEI8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAAAI8-pnp": {
+    "output_dir": "./output/basic_pnp/MVUCSQAKTKJ5EAABAAAAAAI8",
+    "input_data_path": "/path/to/your/replaydata/basic_pnp/MVUCSQAKTKJ5EAABAAAAAAI8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAAAI8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAABA8-pnp": {
+    "output_dir": "./output/basic_pnp/MVUCSQAKTKJ5EAABAAAAABA8",
+    "input_data_path": "/path/to/your/replaydata/basic_pnp/MVUCSQAKTKJ5EAABAAAAABA8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAABA8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAABQ8-pnp": {
+    "output_dir": "./output/basic_pnp/MVUCSQAKTKJ5EAABAAAAABQ8",
+    "input_data_path": "/path/to/your/replaydata/basic_pnp/MVUCSQAKTKJ5EAABAAAAABQ8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAABQ8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAACA8-pnp": {
+    "output_dir": "./output/basic_pnp/MVUCSQAKTKJ5EAABAAAAACA8",
+    "input_data_path": "/path/to/your/replaydata/basic_pnp/MVUCSQAKTKJ5EAABAAAAACA8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAACA8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAAAQ8-art": {
+    "output_dir": "./output/articulation/MVUCSQAKTKJ5EAABAAAAAAQ8",
+    "input_data_path": "/path/to/your/replaydata/articulation/MVUCSQAKTKJ5EAABAAAAAAQ8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAAAQ8_template.json"
+  },
+  "MV7J6NIKTKJZ2AABAAAAAEI8-art": {
+    "output_dir": "./output/articulation/MV7J6NIKTKJZ2AABAAAAAEI8",
+    "input_data_path": "/path/to/your/replaydata/articulation/MV7J6NIKTKJZ2AABAAAAAEI8",
+    "template": "./templates/MV7J6NIKTKJZ2AABAAAAAEI8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAAAI8-art": {
+    "output_dir": "./output/articulation/MVUCSQAKTKJ5EAABAAAAAAI8",
+    "input_data_path": "/path/to/your/replaydata/articulation/MVUCSQAKTKJ5EAABAAAAAAI8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAAAI8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAABA8-art": {
+    "output_dir": "./output/articulation/MVUCSQAKTKJ5EAABAAAAABA8",
+    "input_data_path": "/path/to/your/replaydata/articulation/MVUCSQAKTKJ5EAABAAAAABA8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAABA8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAABQ8-art": {
+    "output_dir": "./output/articulation/MVUCSQAKTKJ5EAABAAAAABQ8",
+    "input_data_path": "/path/to/your/replaydata/articulation/MVUCSQAKTKJ5EAABAAAAABQ8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAABQ8_template.json"
+  },
+  "MVUCSQAKTKJ5EAABAAAAACA8-art": {
+    "output_dir": "./output/articulation/MVUCSQAKTKJ5EAABAAAAACA8",
+    "input_data_path": "/path/to/your/replaydata/articulation/MVUCSQAKTKJ5EAABAAAAACA8",
+    "template": "./templates/MVUCSQAKTKJ5EAABAAAAACA8_template.json"
+  }
+}
