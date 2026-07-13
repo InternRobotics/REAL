@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="REAL: Exploratory, Communicative, and Deployable Vision-Driven Embodied Agents for Open-World Mobile Manipulation.">
+    <meta name="theme-color" content="#f6f4ee">
+    <title>REAL | Vision-Driven Embodied Agents</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+        <div class="header-inner">
+            <a class="site-mark" href="#top" aria-label="REAL project page home">REAL</a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#overview">Overview</a>
+                <a href="#evidence">Evidence</a>
+                <a href="#framework">Framework</a>
+                <a href="#benchmark">REAL-Bench</a>
+                <a href="#results">Results</a>
+                <a href="#real-world">Deployment</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+                    <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"></path></svg>
+                </button>
+                <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+            <a href="#overview">Overview</a>
+            <a href="#evidence">Evidence</a>
+            <a href="#framework">Framework</a>
+            <a href="#benchmark">REAL-Bench</a>
+            <a href="#results">Results</a>
+            <a href="#real-world">Deployment</a>
+            <a href="#citation">Citation</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero section-shell">
+            <p class="eyebrow">ECCV 2026</p>
+            <h1>Exploratory, Communicative, and Deployable</h1>
+            <p class="hero-title-detail">Vision-Driven Embodied Agents for Open-World Mobile Manipulation</p>
+
+            <div class="authors" aria-label="Authors">
+                <a href="https://scholar.google.com/citations?user=61VVLPoAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Boyu Mi<sup>1,2*</sup></a>
+                <a href="https://mengchen-robot.github.io/" target="_blank" rel="noreferrer">Mengchen Ma<sup>2,3*</sup></a>
+                <a href="https://scholar.google.com/citations?user=YNu0zv8AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Yifei Yao<sup>1,2*</sup></a>
+                <a href="https://scholar.google.com/citations?user=6rjfzQUAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer">Xing Gao<sup>2†</sup></a>
+                <a href="https://sgtvincent.github.io/" target="_blank" rel="noreferrer">Junting Chen<sup>4</sup></a>
+                <span>Yangzi Li<sup>5</sup></span>
+                <span>Zihou Zhu<sup>2</sup></span>
+                <a href="https://ghli.org/" target="_blank" rel="noreferrer">Guohao Li<sup>6</sup></a>
+                <a href="https://yinzhenfei.github.io/" target="_blank" rel="noreferrer">Zhenfei Yin<sup>7</sup></a>
+                <a href="http://taiwang.me/" target="_blank" rel="noreferrer">Tai Wang<sup>2</sup></a>
+                <a href="https://yaomarkmu.github.io/" target="_blank" rel="noreferrer">Yao Mu<sup>1,2</sup></a>
+                <a href="https://oceanpang.github.io/" target="_blank" rel="noreferrer">Jiangmiao Pang<sup>2</sup></a>
+                <a href="https://hanqingwangai.github.io/" target="_blank" rel="noreferrer">Hanqing Wang<sup>2†</sup></a>
+            </div>
+            <div class="affiliations">
+                <span><sup>1</sup>Shanghai Jiao Tong University</span>
+                <span><sup>2</sup>Shanghai Artificial Intelligence Laboratory</span>
+                <span><sup>3</sup>Southeast University</span>
+                <span><sup>4</sup>National University of Singapore</span>
+                <span><sup>5</sup>Zhejiang University</span>
+                <span><sup>6</sup>Camel AI</span>
+                <span><sup>7</sup>University of Oxford</span>
+            </div>
+            <p class="author-note"><sup>*</sup>Equal contribution &nbsp;·&nbsp; <sup>†</sup>Corresponding authors</p>
+
+            <div class="institution-stage" aria-label="Affiliated institutions">
+                <img class="institution-logo" src="assets/institutions/pptx/sjtu.png" alt="Shanghai Jiao Tong University">
+                <img class="institution-logo" src="assets/institutions/pptx/shlab.png" alt="Shanghai Artificial Intelligence Laboratory">
+                <img class="institution-logo" src="assets/institutions/pptx/seu.png" alt="Southeast University">
+                <img class="institution-logo" src="assets/institutions/pptx/nus.svg" alt="National University of Singapore">
+                <img class="institution-logo" src="assets/institutions/pptx/zju.svg" alt="Zhejiang University">
+                <img class="institution-logo" src="assets/institutions/pptx/camel.png" alt="CAMEL-AI">
+                <img class="institution-logo" src="assets/institutions/pptx/oxford.svg" alt="University of Oxford">
+            </div>
+
+            <div class="hero-links" aria-label="Project resources">
+                <span class="button button-disabled" aria-disabled="true"><span>Paper</span><small>Coming soon</small></span>
+                <span class="button button-disabled" aria-disabled="true"><span>Dataset &amp; Checkpoint</span><small>Coming soon</small></span>
+                <a class="button button-primary" href="https://github.com/InternRobotics/REAL" target="_blank" rel="noreferrer"><span>Code</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"></path></svg></a>
+                <a class="button" href="#evidence">Explore evidence</a>
+            </div>
+
+            <div class="deployment-media hero-video">
+                <div class="video-frame"><video muted controls playsinline preload="none" poster="assets/real-world/real-world-demo-poster.jpg"><source src="assets/real-world/real-world-demo.mp4" type="video/mp4">Your browser does not support embedded MP4 video.</video></div>
+                <p class="video-caption"><strong>REAL in the physical world.</strong> The high-level policy controls an Ark LIFT2 mobile manipulator through the same tool interface used during simulation training.</p>
+            </div>
+        </section>
+
+        <section class="section section-tinted" id="overview">
+            <div class="section-shell reveal">
+                <div class="section-heading heading-tight">
+                    <div><p class="section-kicker">Overview</p><h2>Bridge the gap between what agents see and what they can do.</h2></div>
+                    <p>REAL makes the deployment constraints visible: evidence must be gathered from RGB observations, ambiguity must be resolved by dialogue, and every high-level action must remain executable on the robot.</p>
+                </div>
+                <div class="overview-layout">
+                    <div class="overview-problem"><p class="micro-heading">The deployment gap</p><p>Many embodied benchmarks expose <strong>global object lists, poses, or success signals</strong>. They can also assume a fully specified instruction. Those shortcuts conceal the two actions a deployed agent actually needs: <em>explore</em> and <em>ask</em>.</p></div>
+                    <div class="overview-response"><p class="micro-heading">The REAL response</p><p>REAL provides a shared, sim-to-real tool interface without oracle perception, a simulated user for clarification, and a dual-stage SFT + online RL pipeline that teaches the policy to recover, reason, and communicate in a closed loop.</p></div>
+                </div>
+                <figure class="paper-figure overview-figure"><img src="assets/framework/framework-comparison.webp" width="1308" height="737" alt="Comparison between prior embodied agent frameworks using oracle perception and REAL using RGB exploration and natural-language interaction."><figcaption><strong>From privileged simulation to deployable interaction.</strong> REAL removes oracle perceptual APIs while retaining physically obtainable scene priors, so policies must explore RGB observations and resolve ambiguous instructions through dialogue.</figcaption></figure>
+                <div class="contribution-grid">
+                    <article class="contribution-card"><span class="card-number">01 / EXPLORE</span><h3>Privilege-free perception</h3><p>Navigation, detection, Set-of-Mark prompting, and visual grounding replace hidden simulator state.</p><a href="#evidence">Watch a discovery trajectory <span aria-hidden="true">↗</span></a></article>
+                    <article class="contribution-card"><span class="card-number">02 / COMMUNICATE</span><h3>Interactive intent alignment</h3><p>A simulated user turns ambiguity into an observable decision: pause, ask, ground the response, then act.</p><a href="#benchmark">Inspect SUL evidence <span aria-hidden="true">↗</span></a></article>
+                    <article class="contribution-card"><span class="card-number">03 / DEPLOY</span><h3>One interface, two backends</h3><p>The same high-level policy transfers zero-shot from simulation to a dual-arm mobile robot.</p><a href="#real-world">View physical execution <span aria-hidden="true">↗</span></a></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="evidence">
+            <div class="section-shell reveal">
+                <div class="section-heading heading-tight evidence-heading"><div><p class="section-kicker">Evidence explorer</p><h2>Evidence, one trajectory at a time.</h2></div><p>Choose a case to inspect one representative trajectory at its intended scale. Each connects a claimed capability to an observable sequence from the paper and supplementary materials.</p></div>
+                <div class="trajectory-tabs trajectory-card-grid" role="tablist" aria-label="Trajectory evidence">
+                    <button class="trajectory-tab trajectory-card is-active" type="button" role="tab" aria-selected="true" aria-controls="trajectory-explore" id="tab-explore" data-trajectory="explore"><span class="trajectory-card-visual"><img src="assets/evidence/demo-policy.jpg" alt="" aria-hidden="true"></span><span class="trajectory-card-index">01 / Explore</span><strong>Discover beyond the first view</strong><small>Simulation trajectory</small></button>
+                    <button class="trajectory-tab trajectory-card" type="button" role="tab" aria-selected="false" aria-controls="trajectory-ask" id="tab-ask" data-trajectory="ask"><span class="trajectory-card-visual"><img src="assets/evidence/demo-ask.jpg" alt="" aria-hidden="true"></span><span class="trajectory-card-index">02 / Ask</span><strong>Clarify before committing</strong><small>Interactive trajectory</small></button>
+                    <button class="trajectory-tab trajectory-card" type="button" role="tab" aria-selected="false" aria-controls="trajectory-deploy" id="tab-deploy" data-trajectory="deploy"><span class="trajectory-card-visual"><img src="assets/real-world/real-world-demo-poster.jpg" alt="" aria-hidden="true"></span><span class="trajectory-card-index">03 / Deploy</span><strong>Carry the loop into the real world</strong><small>Physical-world trajectory</small></button>
+                </div>
+                <div class="trajectory-panels">
+                    <article class="trajectory-panel is-active" id="trajectory-explore" role="tabpanel" aria-labelledby="tab-explore" data-panel="explore"><div class="trajectory-copy"><p class="micro-heading">Active discovery</p><h3>Find what the first view misses.</h3><p>The policy uses a deployable <code>walk_around</code> action to discover an object that is not initially visible, then grounds it before manipulation.</p><ol><li>Observe a partial scene</li><li>Explore an unseen viewpoint</li><li>Detect and ground the target</li></ol></div><div class="trajectory-media"><video controls playsinline preload="metadata" poster="assets/evidence/demo-policy.jpg"><source src="assets/videos/demo-policy.mp4" type="video/mp4"></video></div></article>
+                    <article class="trajectory-panel" id="trajectory-ask" role="tabpanel" aria-labelledby="tab-ask" data-panel="ask" hidden><div class="trajectory-copy"><p class="micro-heading">Proactive clarification</p><h3>Ask when the scene is ambiguous.</h3><p>The Simulator-User Loop exposes when visual evidence is insufficient. The policy can query the user, ground the answer, and continue its plan instead of guessing.</p><ol><li>Detect unresolved ambiguity</li><li>Issue <code>ask</code> through the shared schema</li><li>Use the answer to select the target</li></ol></div><div class="trajectory-media"><video controls playsinline preload="metadata" poster="assets/evidence/demo-ask.jpg"><source src="assets/videos/demo-ask.mp4" type="video/mp4"></video></div></article>
+                    <article class="trajectory-panel" id="trajectory-deploy" role="tabpanel" aria-labelledby="tab-deploy" data-panel="deploy" hidden><div class="trajectory-copy"><p class="micro-heading">Physical execution</p><h3>One policy, physical execution.</h3><p>REAL transfers the cognitive policy zero-shot. The physical backend maps its abstract tool calls to robot perception and low-level skills.</p><ol><li>Prepare the destination</li><li>Find and retrieve the object</li><li>Return, place, and complete the task</li></ol></div><div class="trajectory-media"><video controls playsinline preload="none" poster="assets/real-world/real-world-demo-poster.jpg"><source src="assets/real-world/real-world-demo.mp4" type="video/mp4"></video></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="framework">
+            <div class="section-shell reveal">
+                <div class="section-heading heading-tight"><div><p class="section-kicker">Framework</p><h2>One visual-interactive loop from simulation to reality.</h2></div><p>REAL routes a fixed MCP schema to simulation handlers or real robot controllers. The high-level policy never receives information that cannot be obtained by a deployed system.</p></div>
+                <figure class="paper-figure dark-figure paper-figure-wide"><img src="assets/framework/framework.webp" width="1308" height="737" loading="lazy" alt="REAL framework showing environment construction, simulated user interaction, data generation, SFT and reinforcement learning, and deployment."><figcaption><strong>REAL framework.</strong> A shared visual-interactive loop connects environment construction, automated trajectory generation, dual-stage policy optimization, benchmark evaluation, and physical deployment.</figcaption></figure>
+                <div class="framework-feature-grid">
+                    <article><span>RGB</span><h3>Privilege-free perception</h3><p>Visual observations, not global object inventories, drive navigation and grounding.</p></article>
+                    <article><span>ASK</span><h3>Simulated human feedback</h3><p>Context-aware clarification is available through a dedicated user interaction tool.</p></article>
+                    <article><span>MCP</span><h3>Backend-agnostic tools</h3><p>The same high-level action schema dispatches to simulation or physical controllers.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="training">
+            <div class="section-shell reveal">
+                <div class="section-heading heading-tight"><div><p class="section-kicker">Training</p><h2>Turn diverse environments into closed-loop behavior.</h2></div><p>REAL uses generated trajectories for tool alignment, then online reinforcement learning to improve recovery, exploration, and the timing of user queries.</p></div>
+                <div class="training-layout">
+                    <figure class="paper-figure"><img src="assets/evidence/training-scene-1.png" loading="lazy" alt="A training scene used for generated visual-interactive mobile manipulation tasks."><figcaption>Generated task instances vary rooms, furniture, object configurations, and language descriptions.</figcaption></figure>
+                    <div class="training-flow" aria-label="REAL training stages"><article><span>01</span><h3>Compose tasks</h3><p>Construct static and ambiguous task families across rooms, receptacles, objects, and distractors.</p></article><article><span>02</span><h3>Generate &amp; filter</h3><p>Keep successful visual-interactive trajectories and reject invalid or non-deployable behavior.</p></article><article><span>03</span><h3>SFT alignment</h3><p>Align Qwen3-VL-8B with the MCP tool schema and long-horizon action format.</p></article><article><span>04</span><h3>Online RL</h3><p>Optimize exploration, recovery, and timely clarification from environmental feedback.</p></article></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-tinted" id="benchmark">
+            <div class="section-shell reveal">
+                <div class="section-heading heading-tight"><div><p class="section-kicker">REAL-Bench</p><h2>241 tasks that isolate four real-world capabilities.</h2></div><p>Select a task family to connect its evaluation target with an illustrative trajectory. The full task count stays visible so the benchmark composition remains legible.</p></div>
+                <div class="benchmark-interaction">
+                    <div class="benchmark-total"><strong>241</strong><span>total task instances</span><small>72 FDP · 56 FODP · 48 FDO · 65 SUL</small></div>
+                    <div class="benchmark-grid" role="tablist" aria-label="REAL-Bench task families">
+                        <button class="benchmark-card is-active" type="button" role="tab" aria-selected="true" data-benchmark="fdp"><strong>FDP</strong><span>72 tasks</span><h3>Furniture-Distractor Pick-and-Place</h3><p>Find a source and destination among visually similar furniture.</p></button>
+                        <button class="benchmark-card" type="button" role="tab" aria-selected="false" data-benchmark="fodp"><strong>FODP</strong><span>56 tasks</span><h3>Furniture &amp; Object Distractors</h3><p>Resolve open-vocabulary clutter at receptacle and object levels.</p></button>
+                        <button class="benchmark-card" type="button" role="tab" aria-selected="false" data-benchmark="fdo"><strong>FDO</strong><span>48 tasks</span><h3>Furniture-Distractor Open/Close</h3><p>Maintain temporal consistency through articulated state changes.</p></button>
+                        <button class="benchmark-card" type="button" role="tab" aria-selected="false" data-benchmark="sul"><strong>SUL</strong><span>65 tasks</span><h3>Simulator-User Loop</h3><p>Detect ambiguity and proactively query the simulated user.</p></button>
+                    </div>
+                </div>
+                <article class="benchmark-detail" id="benchmark-detail" aria-live="polite"><div><p class="micro-heading" id="benchmark-kicker">FDP / ACTIVE EXPLORATION</p><h3 id="benchmark-title">Object and furniture distractors make visual search necessary.</h3><p id="benchmark-copy">The agent must first identify the right source and destination among similarly named or visually similar furniture, then complete a cross-receptacle rearrangement.</p></div><div class="benchmark-signal" aria-label="Selected benchmark evaluation logic"><p class="micro-heading">What this split evaluates</p><h4 id="benchmark-signal-title">Evidence must precede the pick-and-place action.</h4><ol class="benchmark-signal-list"><li><span>01</span><div><strong id="benchmark-step-1-title">Observe</strong><p id="benchmark-step-1-copy">Separate similar furniture from the RGB view.</p></div></li><li><span>02</span><div><strong id="benchmark-step-2-title">Act</strong><p id="benchmark-step-2-copy">Explore and ground the source and destination.</p></div></li><li><span>03</span><div><strong id="benchmark-step-3-title">Verify</strong><p id="benchmark-step-3-copy">Complete the correct cross-receptacle placement.</p></div></li></ol></div></article>
+            </div>
+        </section>
+
+        <section class="section" id="results">
+            <div class="section-shell reveal">
+                <div class="section-heading heading-tight"><div><p class="section-kicker">Simulation results</p><h2>RL restores exploration and proactive interaction.</h2></div><p>Use the task selector to compare a one-epoch SFT policy, a two-epoch SFT policy, and the final SFT + RL policy across all four REAL-Bench capabilities.</p></div>
+                <div class="result-highlights"><article><strong>56.9%</strong><span>SUL success</span><p>Best interactive-task result</p></article><article><strong>+6.1</strong><span>RL gain on SUL</span><p>Over two-epoch SFT</p></article><article><strong>33.9%</strong><span>FODP success</span><p>Recovered open-vocabulary exploration</p></article></div>
+                <div class="result-explorer" aria-label="Results comparison chart">
+                    <div class="result-tabs" role="tablist" aria-label="Results task split"><button class="result-tab is-active" type="button" role="tab" aria-selected="true" data-result="fdp">FDP</button><button class="result-tab" type="button" role="tab" aria-selected="false" data-result="fodp">FODP</button><button class="result-tab" type="button" role="tab" aria-selected="false" data-result="fdo">FDO</button><button class="result-tab" type="button" role="tab" aria-selected="false" data-result="sul">SUL</button></div>
+                    <div class="result-chart"><div class="result-chart-meta"><p class="micro-heading" id="result-chart-kicker">FDP / TOOL ALIGNMENT</p><h3 id="result-chart-title">SFT establishes a usable tool policy.</h3><p id="result-chart-copy">One SFT epoch lifts the base model from 0.0% to 45.8%; the second epoch reaches 65.3%.</p></div><div class="bar-chart" id="bar-chart" role="img" aria-label="Success rate comparison"><div class="bar-row"><span>SFT · 1 epoch</span><div class="bar-track"><i id="bar-sft1" style="--bar-value:45.8"></i></div><strong id="value-sft1">45.8%</strong></div><div class="bar-row"><span>SFT · 2 epochs</span><div class="bar-track"><i id="bar-sft2" style="--bar-value:65.3"></i></div><strong id="value-sft2">65.3%</strong></div><div class="bar-row bar-row-ours"><span>SFT + RL</span><div class="bar-track"><i id="bar-rl" style="--bar-value:58.3"></i></div><strong id="value-rl">58.3%</strong></div></div></div>
+                </div>
+                <details class="result-table-card"><summary>Open the complete REAL-Bench results table</summary><div class="table-wrap"><table class="results-table"><thead><tr><th>Model</th><th>FDP</th><th>FODP</th><th>FDO</th><th>SUL</th></tr></thead><tbody><tr class="table-group"><th colspan="5">Zero-shot prompting</th></tr><tr class="teacher-row"><td>Gemini 3 Pro Preview <span>teacher</span></td><td><strong>81.9</strong></td><td>39.3</td><td>50.0</td><td>53.8</td></tr><tr><td>Gemini 2.5 Pro</td><td>66.7</td><td><strong>41.1</strong></td><td>43.8</td><td>49.2</td></tr><tr><td>GPT-5</td><td>68.1</td><td>30.4</td><td>47.9</td><td>52.3</td></tr><tr><td>GPT-4o</td><td>30.6</td><td>28.6</td><td>27.1</td><td>40.0</td></tr><tr><td>Claude Haiku 4.5</td><td>45.8</td><td>16.1</td><td><strong>52.1</strong></td><td>47.7</td></tr><tr><td>Qwen3-VL-235B-A22B-Instruct</td><td>22.2</td><td>14.3</td><td>14.6</td><td>18.5</td></tr><tr><td>Qwen3-VL-8B-Instruct</td><td>0.0</td><td>0.0</td><td>0.0</td><td>1.5</td></tr><tr class="table-group"><th colspan="5">REAL agent</th></tr><tr><td>REAL-8B · SFT 1 epoch</td><td>45.8</td><td>30.4</td><td>35.4</td><td>36.9</td></tr><tr><td>REAL-8B · SFT 2 epochs</td><td>65.3</td><td>28.6</td><td>43.8</td><td>50.8</td></tr><tr class="ours-row"><td><strong>REAL-8B · SFT + RL</strong></td><td>58.3</td><td>33.9</td><td>41.7</td><td><strong>56.9</strong></td></tr></tbody></table></div></details>
+                <div class="failure-analysis"><div><p class="micro-heading">Failure analysis / 100 episodes</p><h3>Most remaining errors are visual or procedural, not interface failures.</h3><p>Manual analysis identifies object confusion as the largest source of failure, followed by missing key actions such as failing to ask for clarification.</p><ul><li><strong>25%</strong> object confusion</li><li><strong>17%</strong> key action missing</li><li><strong>9%</strong> lost memory</li></ul></div><figure class="paper-figure"><img src="assets/evidence/failure-taxonomy.png" loading="lazy" alt="Failure mode taxonomy for 100 evaluation episodes, including object confusion, key action missing, and lost memory."><figcaption>Manual failure taxonomy for the best SFT + RL checkpoint.</figcaption></figure></div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="real-world">
+            <div class="section-shell reveal">
+                <div class="section-heading heading-tight"><div><p class="section-kicker">Real-world deployment</p><h2>Zero-shot transfer to a dual-arm mobile robot.</h2></div><p>The high-level policy is frozen and runs through the same MCP tool interface as simulation, while specialized physical skills execute the continuous manipulation primitives.</p></div>
+                <figure class="paper-figure dark-figure"><img src="assets/real-world/deployment-trajectory.webp" width="1516" height="520" loading="lazy" alt="REAL executing a long-horizon mobile manipulation trajectory on the Ark LIFT2 robot."><figcaption><strong>Physical deployment.</strong> The agent prepares the destination, explores candidate objects, asks for clarification, grounds the response, and completes the manipulation task.</figcaption></figure>
+                <div class="real-metrics"><article><strong>78.3%</strong><span>end-to-end success</span><small>60 physical episodes</small></article><article><strong>63.1%</strong><span>overall SPL</span><small>path efficiency</small></article><article><strong>85.3%</strong><span>primitive success</span><small>600 VLA executions</small></article><article><strong>1.78 cm</strong><span>odometry error</span><small>30 repeatability trials</small></article></div>
+                <div class="deployment-sequence"><article><span>01</span><h3>Prepare</h3><p>Open the destination receptacle before fetching the object.</p></article><article><span>02</span><h3>Explore</h3><p>Navigate to the source and visually inspect multiple candidates.</p></article><article><span>03</span><h3>Disambiguate</h3><p>Pause and ask the user instead of guessing under ambiguity.</p></article><article><span>04</span><h3>Execute</h3><p>Ground the response, pick the object, return, and place it.</p></article></div>
+                <div class="real-world-gallery"><img src="assets/evidence/real-steps-01-03.png" loading="lazy" alt="The first three real world execution steps."><img src="assets/evidence/real-steps-04-06.png" loading="lazy" alt="The next three real world execution steps."></div>
+                <details class="result-table-card dark-table-card"><summary>Open real-world evaluation details</summary><div class="table-wrap"><table class="results-table real-table"><thead><tr><th>Task</th><th>Success</th><th>Steps</th><th>SPL</th><th>Ask</th><th>VLM latency</th></tr></thead><tbody><tr><td>FDO</td><td>80.0%</td><td>12.2</td><td>67.0%</td><td>0.90</td><td>71.1 s</td></tr><tr><td>FODP</td><td>100.0%</td><td>9.6</td><td>86.9%</td><td>0.70</td><td>53.5 s</td></tr><tr><td>SUL</td><td>55.0%</td><td>13.0</td><td>35.4%</td><td>0.55</td><td>80.5 s</td></tr><tr class="ours-row"><td><strong>Overall</strong></td><td><strong>78.3%</strong></td><td>11.6</td><td><strong>63.1%</strong></td><td>0.72</td><td>68.4 s</td></tr></tbody></table></div></details>
+            </div>
+        </section>
+
+        <section class="section section-tinted" id="citation">
+            <div class="section-shell narrow-shell reveal"><p class="section-kicker">Reference</p><h2>Citation</h2><p>If you find REAL or REAL-Bench useful, please consider citing our work.</p><div class="citation-box"><button class="copy-button" id="copy-citation" type="button" aria-label="Copy BibTeX citation"><span class="copy-label">Copy</span></button><pre><code id="bibtex">@inproceedings{mi2026real,
+  title     = {Exploratory, Communicative, and Deployable: Vision-Driven Embodied Agents for Open-World Mobile Manipulation},
+  author    = {Mi, Boyu and Ma, Mengchen and Yao, Yifei and Gao, Xing and Chen, Junting and Li, Yangzi and Zhu, Zihou and Li, Guohao and Yin, Zhenfei and Wang, Tai and Mu, Yao and Pang, Jiangmiao and Wang, Hanqing},
+  booktitle = {European Conference on Computer Vision},
+  year      = {2026}
+}</code></pre></div></div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="section-shell footer-inner"><div><strong>REAL</strong><p>Exploratory, Communicative, and Deployable Embodied Agents.</p></div><p>ECCV 2026 project page · Built from the paper and supplementary material.</p></div></footer>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"></path></svg></button>
+    <script src="script.js?v=3"></script>
+</body>
+</html>
