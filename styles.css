@@ -58,7 +58,7 @@ code { padding: 0.08em 0.28em; border-radius: 0.25em; background: color-mix(in s
 .header-inner, .section-shell { width: min(calc(100% - 40px), var(--shell)); margin-inline: auto; }
 .header-inner { min-height: 72px; display: flex; align-items: center; gap: 24px; }
 .site-mark { display: inline-flex; align-items: center; gap: 9px; color: #17233a; font-family: var(--serif); font-size: 1.35rem; font-weight: 800; letter-spacing: 0.08em; text-decoration: none; }
-.site-mark img { width: 36px; height: 36px; object-fit: contain; flex: 0 0 auto; }
+.site-mark img { width: 40px; height: 40px; object-fit: contain; flex: 0 0 auto; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(13px, 1.5vw, 24px); margin-left: auto; }
 .desktop-nav a, .mobile-nav a { color: var(--muted); font-size: 0.88rem; font-weight: 740; text-decoration: none; transition: color 160ms ease; }
 .desktop-nav a:hover, .desktop-nav a:focus-visible, .mobile-nav a:hover, .mobile-nav a:focus-visible { color: var(--accent); }
