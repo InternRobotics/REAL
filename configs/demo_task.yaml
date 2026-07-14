@@ -1,0 +1,55 @@
+# Demo task config — self-contained, no external /cpfs dependencies.
+# Paths are relative to the repo root unless they start with /.
+#
+# Object positions are world-space coordinates in meters,
+# following the convention in mcp_env_demo.py.
+
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+
+paths:
+  scene_usd:     assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir:   assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+
+# Object asset definitions (usd_path relative to repo root, position in world-space meters)
+objects:
+  demo_obj_0:
+    original_id: c13555900d7f413bad3caec2086d3874
+    category: bread
+    usd_path: assets/objects/c13555900d7f413bad3caec2086d3874.usd
+    usd_scale: [78.33179287537465, 78.28691492759698, 78.04682656265376]
+    position: [-2.1, -1.5, 0.6]
+
+  demo_obj_1:
+    original_id: 052fedd7-cb75-43dd-9685-bd85a0e1619b
+    category: bread
+    usd_path: assets/objects/052fedd7-cb75-43dd-9685-bd85a0e1619b.usd
+    usd_scale: [6.805071722021558, 6.652481779102385, 5.570768602317321]
+    position: [-1.9, -1.5, 0.6]
+
+# Single episode
+episodes:
+  - task_id: demo_task_0
+    task_description: "Pick the bread from the dining table and place it on the desk in the study room."
+    src: table_1       # dinning room/0
+    dest: desk_1       # study room/0
+    target_object_id: c13555900d7f413bad3caec2086d3874
+    src_distractors: []
+    dest_distractors: []
+    obj_distractors:
+      - 052fedd7-cb75-43dd-9685-bd85a0e1619b
+    obj_distractor_meta:
+      052fedd7-cb75-43dd-9685-bd85a0e1619b:
+        category: bread
+    execution_plan:
+      - navigate to table_1 in dinning room
+      - pick up the bread (c13555900d7f413bad3caec2086d3874)
+      - navigate to desk_1 in study room
+      - place the bread on desk_1
+    placements:
+      demo_obj_0:
+        original_id: c13555900d7f413bad3caec2086d3874
+        furniture: table_1
+      demo_obj_1:
+        original_id: 052fedd7-cb75-43dd-9685-bd85a0e1619b
+        furniture: table_1

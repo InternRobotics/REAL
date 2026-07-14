@@ -1,0 +1,15 @@
+[
+  {
+    "image": "images/example_0001.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat action should the agent take next?"
+      },
+      {
+        "from": "gpt",
+        "value": "The agent should navigate to the table and pick up the marked cup."
+      }
+    ]
+  }
+]

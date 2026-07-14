@@ -1,0 +1,3 @@
+[submodule "internutopia"]
+	path = internutopia
+	url = https://github.com/InternRobotics/InternUtopia.git

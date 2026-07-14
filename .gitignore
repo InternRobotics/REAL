@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Output directories
+eval_output/
+traj_output/
+output/
+outputs/
+checkpoints/
+runs/
+wandb/
+
+# Model checkpoints
+*.pt
+*.pth
+*.safetensors
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Secrets
+.env
+config.local.yaml
+
+# Downloaded assets and local data
+assets/
+data/
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local agent configuration
+.claude
