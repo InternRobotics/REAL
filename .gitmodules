@@ -1,3 +1,4 @@
 [submodule "internutopia"]
 	path = internutopia
 	url = https://github.com/miboyu24/InternUtopia.git
+	branch = main
