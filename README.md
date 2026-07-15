@@ -43,6 +43,18 @@
 | `training/qwen3vl_sft/` | Public Qwen3-VL SFT launch and dataset templates |
 | `scripts/` | Demo and batch-processing entrypoints |
 
+### Online RL branch
+
+The MCP-based online GRPO runtime is maintained on the [`gspo`](../../tree/gspo)
+branch under `training/mcp_gspo/`. It is kept separate from `main` because it
+depends on the ms-swift rollout stack and external MCP workers rather than the
+public demo runtime. To use it, fetch the branch and switch explicitly:
+
+```bash
+git fetch origin gspo
+git switch gspo
+```
+
 ---
 
 ## Available MCP Tools
@@ -241,7 +253,10 @@ export DATASETS=real_basic_pnp
 bash training/qwen3vl_sft/train_qwen3vl_sft.sh
 ```
 
-This repository does not publish private cluster scripts, internal data paths, service credentials, model weights, or RL training code.
+This branch does not publish private cluster scripts, internal data paths,
+service credentials, or model weights. The version-controlled online RL runtime
+is available on the `gspo` branch; private deployment topology and credentials
+remain excluded there as well.
 
 ---
 
