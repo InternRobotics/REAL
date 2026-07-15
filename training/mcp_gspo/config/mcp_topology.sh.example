@@ -1,0 +1,23 @@
+# Copy this file to config/mcp_topology.sh to override setup_ssh_tunnels.sh.
+# Array lengths and ordering must match.
+
+DSW_HOSTS=(
+    "mcp-worker-01.example.internal"
+)
+
+DSW_INSTANCES=(
+    "worker01"
+)
+
+DSW_TMUX_SESSIONS=(
+    "mcp_scene_1"
+)
+
+SSH_USER="${SSH_USER:-root}"
+SSH_PORT=22
+REMOTE_PORT_START=8000
+REMOTE_PORT_END=8007
+PORTS_PER_INSTANCE=$(( REMOTE_PORT_END - REMOTE_PORT_START + 1 ))
+LOCAL_PORT_BASE=18000
+PID_DIR="/tmp/mcp_ssh_tunnels"
+SSH_STRICT_HOST_KEY_CHECKING="accept-new"

@@ -1,0 +1,22 @@
+# Runtime dependencies observed in the source RL training environment.
+# CUDA/PyTorch wheels may need the platform-specific index used by your cluster.
+ms-swift==3.12.4
+vllm==0.11.2
+torch==2.9.0
+deepspeed==0.18.6
+transformers==4.57.3
+accelerate==1.12.0
+peft==0.18.0
+trl==0.24.0
+modelscope==1.33.0
+matplotlib==3.10.8
+mcp==1.21.2
+httpx==0.28.1
+gymnasium==1.2.3
+numpy==1.26.4
+requests==2.32.5
+Pillow==12.0.0
+# OpenCV 4.12+ requires NumPy 2 on Python 3.10, while this stack uses NumPy 1.26.
+opencv-python-headless==4.11.0.86
+qwen-vl-utils==0.0.14
+tensorboard==2.20.0
