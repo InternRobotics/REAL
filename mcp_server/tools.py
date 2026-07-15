@@ -5,6 +5,23 @@ Provides both OpenAI function-calling format and MCP tool format.
 
 from mcp import types
 
+ASK_INPUT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "target_category": {
+            "type": "string",
+            "description": "the category of the object to disambiguate",
+            "minLength": 1,
+        },
+        "target_description": {
+            "type": "string",
+            "description": "the candidate detailed description from the interaction plan",
+            "minLength": 1,
+        },
+    },
+    "required": ["target_category", "target_description"],
+}
+
 # OpenAI function-calling format
 OPENAI_TOOLS = [
     {
@@ -178,17 +195,8 @@ OPENAI_TOOLS = [
         "type": "function",
         "function": {
             "name": "ask",
-            "description": "ask the user a question to get more information about the task.",
-            "parameters": {
-                "type": "object",
-                "required": ["question"],
-                "properties": {
-                    "question": {
-                        "type": "string",
-                        "description": "the question to ask the user",
-                    }
-                },
-            },
+            "description": "query the deterministic simulated user for the task's canonical target description.",
+            "parameters": ASK_INPUT_SCHEMA,
         },
     },
 ]
@@ -319,5 +327,10 @@ MCP_TOOLS = [
             },
             "required": ["marker_id"],
         },
+    ),
+    types.Tool(
+        name="ask",
+        description="query the deterministic simulated user for the task's canonical target description.",
+        inputSchema=ASK_INPUT_SCHEMA,
     ),
 ]

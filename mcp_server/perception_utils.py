@@ -13,45 +13,36 @@ from dataclasses import dataclass
 import omni.replicator.core as rep
 from openai import OpenAI
 
-_embedding_client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY"),
-    base_url=os.getenv("OPENAI_API_BASE_URL"),
-)
+_embedding_client = None
 
 EMBEDDING_MODEL = "text-embedding-3-large"
 EMBEDDING_CACHE: dict = {}
-_embedding_model_checked = False
 
 
-def _mask_api_key_prefix() -> str:
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        return "<EMPTY>"
-    return api_key[:8]
-
-
-def _ensure_embedding_model_available() -> None:
-    global _embedding_model_checked
-    if _embedding_model_checked:
-        return
+def _get_embedding_client():
+    """Create the optional embedding client only for a fuzzy query."""
+    global _embedding_client
+    if _embedding_client is not None:
+        return _embedding_client
     try:
-        _embedding_client.embeddings.create(
-            input="health_check",
-            model=EMBEDDING_MODEL,
+        _embedding_client = OpenAI(
+            api_key=os.getenv("OPENAI_API_KEY"),
+            # A copied .env.example intentionally leaves this blank.  Passing
+            # an empty URL disables the OpenAI SDK's normal default endpoint.
+            base_url=os.getenv("OPENAI_API_BASE_URL") or None,
         )
-        _embedding_model_checked = True
     except Exception as exc:
-        key_prefix = _mask_api_key_prefix()
-        print(f"[embedding_check] unavailable, api_key_prefix={key_prefix}")
         raise RuntimeError(
-            f"Embedding model '{EMBEDDING_MODEL}' is unavailable. api_key_prefix={key_prefix}"
+            "An OpenAI-compatible endpoint is required only for fuzzy category "
+            "matching; configure OPENAI_API_KEY and OPENAI_API_BASE_URL."
         ) from exc
+    return _embedding_client
 
-_ensure_embedding_model_available()
 
 @dataclass
 class VisualPromptingComponent:
     """Component for visual prompting."""
+
     object_name: str
     component_name: str
     component_type: str
@@ -121,14 +112,14 @@ def _find_objects_exact(
     image_rgb = rgb_data[..., :3].astype(np.uint8)
     observation = PILImage.fromarray(image_rgb)
 
-    mask_data = instance_seg['data']
-    id_to_labels = instance_seg['info']['idToLabels']
+    mask_data = instance_seg["data"]
+    id_to_labels = instance_seg["info"]["idToLabels"]
     prim_to_id = {v: int(k) for k, v in id_to_labels.items()}
 
     # Find target objects by exact category match
     target_objs = []
     for asset_name, asset_info in current_assets.items():
-        if asset_info['category'] == target_category:
+        if asset_info["category"] == target_category:
             target_objs.append(asset_name)
 
     # Find instance IDs for target objects
@@ -163,8 +154,8 @@ def _find_objects_exact(
             marker2component[str(marker_id)] = VisualPromptingComponent(
                 object_name=obj_name,
                 component_name="NONE",
-                component_type='mesh',
-                prim_path=obj_name
+                component_type="mesh",
+                prim_path=obj_name,
             )
     else:
         # Auto-generate marker IDs (sorted by instance_id)
@@ -186,8 +177,8 @@ def _find_objects_exact(
             marker2component[str(label_index)] = VisualPromptingComponent(
                 object_name=obj_name,
                 component_name="NONE",
-                component_type='mesh',
-                prim_path=obj_name
+                component_type="mesh",
+                prim_path=obj_name,
             )
             label_index += 1
 
@@ -205,7 +196,7 @@ def _get_embedding(text: str) -> np.ndarray:
     """Get embedding vector for text, using cache."""
     if text in EMBEDDING_CACHE:
         return EMBEDDING_CACHE[text]
-    embd = _embedding_client.embeddings.create(
+    embd = _get_embedding_client().embeddings.create(
         input=text,
         model=EMBEDDING_MODEL,
     )
@@ -238,6 +229,15 @@ def find_objects(
     Returns:
         (result_image, marker2component) - PIL Image with markers and dict mapping marker IDs to components
     """
+    current_categories = {asset_info["category"] for asset_info in current_assets.values()}
+    if target_category in current_categories or not current_categories:
+        return _find_objects_exact(
+            target_category,
+            current_assets,
+            camera=camera,
+            predefined_markers=predefined_markers,
+        )
+
     from internutopia_extension.utils.som import draw_mask_and_number_on_image
 
     # Initialize annotators if needed
@@ -251,16 +251,13 @@ def find_objects(
     image_rgb = rgb_data[..., :3].astype(np.uint8)
     observation = PILImage.fromarray(image_rgb)
 
-    mask_data = instance_seg['data']
-    id_to_labels = instance_seg['info']['idToLabels']
+    mask_data = instance_seg["data"]
+    id_to_labels = instance_seg["info"]["idToLabels"]
     prim_to_id = {v: int(k) for k, v in id_to_labels.items()}
 
     # Collect all unique categories from current assets and cache their embeddings
-    current_categories = set()
-    for asset_info in current_assets.values():
-        cat = asset_info['category']
-        current_categories.add(cat)
-        _get_embedding(cat)
+    for category in current_categories:
+        _get_embedding(category)
 
     # Get embedding for target category and find best match
     target_embd_vec = _get_embedding(target_category)
@@ -274,13 +271,15 @@ def find_objects(
         similarities[category] = similarity
 
     matched_category = max(similarities, key=similarities.get)
-    print(f"[find_objects] query='{target_category}' -> matched='{matched_category}' "
-          f"(sim={similarities[matched_category]:.4f})")
+    print(
+        f"[find_objects] query='{target_category}' -> matched='{matched_category}' "
+        f"(sim={similarities[matched_category]:.4f})"
+    )
 
     # Find target objects by matched category
     target_objs = []
     for asset_name, asset_info in current_assets.items():
-        if asset_info['category'] == matched_category:
+        if asset_info["category"] == matched_category:
             target_objs.append(asset_name)
 
     # Find instance IDs for target objects
@@ -311,8 +310,8 @@ def find_objects(
             marker2component[str(marker_id)] = VisualPromptingComponent(
                 object_name=obj_name,
                 component_name="NONE",
-                component_type='mesh',
-                prim_path=obj_name
+                component_type="mesh",
+                prim_path=obj_name,
             )
     else:
         sorted_grounded_prims = sorted(
@@ -330,8 +329,8 @@ def find_objects(
             marker2component[str(label_index)] = VisualPromptingComponent(
                 object_name=obj_name,
                 component_name="NONE",
-                component_type='mesh',
-                prim_path=obj_name
+                component_type="mesh",
+                prim_path=obj_name,
             )
             label_index += 1
 
@@ -348,7 +347,7 @@ def find_objects(
 def highlight_receptacles(
     furniture_prims: list,
     furniture_names: list,
-    hidden_target: str = '',
+    hidden_target: str = "",
     camera=None,
 ) -> tuple:
     """
@@ -371,10 +370,10 @@ def highlight_receptacles(
 
     # Build prim to furniture name mapping
     prim2fur = {}
-    prim2fur['/World/env_0/objects/sink_0_base'] = 'sink_0'
-    prim2fur['/World/env_0/objects/sink_1_base'] = 'sink_1'
-    prim2fur['/World/env_0/objects/washingmachine_1_base'] = 'washingmachine_1'
-    prim2fur['/World/env_0/scene/Meshes/Animation/electriccooker'] = 'electriccooker_0'
+    prim2fur["/World/env_0/objects/sink_0_base"] = "sink_0"
+    prim2fur["/World/env_0/objects/sink_1_base"] = "sink_1"
+    prim2fur["/World/env_0/objects/washingmachine_1_base"] = "washingmachine_1"
+    prim2fur["/World/env_0/scene/Meshes/Animation/electriccooker"] = "electriccooker_0"
     for i in range(len(furniture_names)):
         prim2fur[furniture_prims[i]] = furniture_names[i]
 
@@ -385,8 +384,8 @@ def highlight_receptacles(
     image_rgb = rgb_data[..., :3].astype(np.uint8)
     observation = PILImage.fromarray(image_rgb)
 
-    mask_data = instance_seg['data']
-    id_to_labels = instance_seg['info']['idToLabels']
+    mask_data = instance_seg["data"]
+    id_to_labels = instance_seg["info"]["idToLabels"]
     prim_to_id = {v: int(k) for k, v in id_to_labels.items()}
 
     # Find instance IDs for furniture
@@ -397,9 +396,7 @@ def highlight_receptacles(
                 grounded_prims[fur_name].append(instance_id)
                 break
 
-    sorted_grounded_prims = sorted(
-        grounded_prims.items(), key=lambda item: next(iter(item[1]), 0)
-    )
+    sorted_grounded_prims = sorted(grounded_prims.items(), key=lambda item: next(iter(item[1]), 0))
 
     masks = []
     labels = []
@@ -414,16 +411,15 @@ def highlight_receptacles(
 
         if not instance_mask.any():
             if fur_name == hidden_target:
-                print(f"Warning: receptacle {fur_name} has no visible instance in the current view.")
+                print(
+                    f"Warning: receptacle {fur_name} has no visible instance in the current view."
+                )
             continue
 
         masks.append(instance_mask)
         labels.append(str(label_index))
         marker2component[str(label_index)] = VisualPromptingComponent(
-            object_name=fur_name,
-            component_name="NONE",
-            component_type='mesh',
-            prim_path=fur_name
+            object_name=fur_name, component_name="NONE", component_type="mesh", prim_path=fur_name
         )
         label_index += 1
 
@@ -461,8 +457,8 @@ def render_persisted_markers(
     image_rgb = rgb_data[..., :3].astype(np.uint8)
     observation = PILImage.fromarray(image_rgb)
 
-    mask_data = instance_seg['data']
-    id_to_labels = instance_seg['info']['idToLabels']
+    mask_data = instance_seg["data"]
+    id_to_labels = instance_seg["info"]["idToLabels"]
     prim_to_id = {v: int(k) for k, v in id_to_labels.items()}
 
     # Find instance IDs for each named object
@@ -492,7 +488,7 @@ def render_persisted_markers(
         marker2component[str(marker_id)] = VisualPromptingComponent(
             object_name=obj_name,
             component_name="NONE",
-            component_type='mesh',
+            component_type="mesh",
             prim_path=obj_name,
         )
 

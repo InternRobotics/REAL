@@ -8,7 +8,6 @@ Follows the patterns from replay/mcp4sft_sync_refactored.py.
 
 import base64
 import json
-import os
 from io import BytesIO
 from copy import deepcopy
 from dataclasses import dataclass, field
@@ -42,9 +41,11 @@ from mcp_server.perception_utils import (
 # State
 # =============================================================================
 
+
 @dataclass
 class EvalState:
     """Mutable evaluation state, replacing global variables."""
+
     current_obs_dict: Any = None
     current_marker_map: Optional[Dict[str, str]] = None
     current_landmark: Optional[str] = None
@@ -55,17 +56,18 @@ class EvalState:
     camera_orientation: Any = None  # Last known camera orientation
     persist_marker_map_on_gaze: bool = False
     precomputed_nav_positions: Dict[str, Tuple[Any, Any]] = field(default_factory=dict)
-
-
+    simulated_user_context: Dict[str, str] = field(default_factory=dict)
 
 
 # =============================================================================
 # Helpers
 # =============================================================================
 
+
 def _ensure_playing():
     """Resume the Isaac Sim timeline if it was stopped (e.g. after USD stage edits)."""
     import omni.timeline
+
     timeline = omni.timeline.get_timeline_interface()
     if not timeline.is_playing():
         timeline.play()
@@ -83,6 +85,7 @@ def step_simulation(env, n_steps: int = 1):
 def _set_rigid_body_enabled(prim_path: str, enabled: bool):
     """Enable or disable rigid body physics via USD API (avoids tensor view issues)."""
     from omni.isaac.core.utils.stage import get_current_stage
+
     stage = get_current_stage()
     prim = stage.GetPrimAtPath(prim_path)
     if prim.IsValid() and prim.HasAPI(UsdPhysics.RigidBodyAPI):
@@ -157,13 +160,14 @@ def get_rgb_observation() -> np.ndarray:
     """Get RGB image from replicator annotator."""
     return get_rgb_image()
 
+
 def image_to_base64(pil_image: PILImage) -> str:
     """Convert a PIL image to base64-encoded PNG string."""
-    if pil_image.mode != 'RGB':
-        pil_image = pil_image.convert('RGB')
+    if pil_image.mode != "RGB":
+        pil_image = pil_image.convert("RGB")
     buffered = BytesIO()
     pil_image.save(buffered, format="PNG")
-    return base64.b64encode(buffered.getvalue()).decode('utf-8')
+    return base64.b64encode(buffered.getvalue()).decode("utf-8")
 
 
 def rgb_array_to_base64(rgb_array: np.ndarray) -> str:
@@ -174,21 +178,21 @@ def rgb_array_to_base64(rgb_array: np.ndarray) -> str:
 
 def get_debug_info(state: EvalState) -> dict:
     """Serialize current state for debug output."""
-    wg_summary = ''
+    wg_summary = ""
     for fur in state.world_graph:
-        content = state.world_graph[fur].get('content', [])
+        content = state.world_graph[fur].get("content", [])
         if len(content) > 0:
             wg_summary += f"{fur}: {content}\n"
 
     return {
-        'CURRENT_LANDMARK': state.current_landmark,
-        'CURRENT_POS': list(state.current_pos) if state.current_pos is not None else None,
-        'CURRENT_INV': state.current_inv,
-        'CURRENT_MARKER_MAP': state.current_marker_map,
+        "CURRENT_LANDMARK": state.current_landmark,
+        "CURRENT_POS": list(state.current_pos) if state.current_pos is not None else None,
+        "CURRENT_INV": state.current_inv,
+        "CURRENT_MARKER_MAP": state.current_marker_map,
         # Canonical machine-readable world graph for downstream clients.
-        'world_graph': deepcopy(state.world_graph),
+        "world_graph": deepcopy(state.world_graph),
         # Backward-compatible human-readable summary kept for debugging.
-        'WORLD_GRAPH': wg_summary,
+        "WORLD_GRAPH": wg_summary,
     }
 
 
@@ -196,9 +200,8 @@ def get_debug_info(state: EvalState) -> dict:
 # Action Handlers
 # =============================================================================
 
-def handle_list_receptacles(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+
+def handle_list_receptacles(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """List all receptacles by room."""
     state.persist_marker_map_on_gaze = False
     receptacle_info = ""
@@ -209,47 +212,37 @@ def handle_list_receptacles(
     return "text", receptacle_info
 
 
-def handle_find_objects(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_find_objects(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """Detect and highlight objects of a category in the current view."""
     result_image, marker2component = find_objects(
-        arguments['target_category'],
+        arguments["target_category"],
         state.current_extra_assets,
     )
-    state.current_marker_map = {
-        k: v.object_name for k, v in marker2component.items()
-    }
+    state.current_marker_map = {k: v.object_name for k, v in marker2component.items()}
     state.persist_marker_map_on_gaze = True
     return "image", image_to_base64(result_image)
 
 
-def handle_highlight_receptacles(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_highlight_receptacles(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """Highlight all receptacle objects in the current view."""
     state.persist_marker_map_on_gaze = False
     result_image, marker2component = highlight_receptacles(
         furniture_prims=FURNITURE_PRIMS,
         furniture_names=ALL_FURNITURES,
     )
-    state.current_marker_map = {
-        k: v.object_name for k, v in marker2component.items()
-    }
+    state.current_marker_map = {k: v.object_name for k, v in marker2component.items()}
     return "image", image_to_base64(result_image)
 
 
-def handle_navigate_to(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_navigate_to(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """Navigate camera to a furniture receptacle."""
     state.persist_marker_map_on_gaze = False
     state.current_marker_map = None
-    target_furniture_name = arguments['receptacle_name']
+    target_furniture_name = arguments["receptacle_name"]
 
     # Eval/Test mode: use precomputed nav positions when available.
     # Action-level is_test has higher priority than global default.
-    
+
     nav_target = env.runner.current_tasks[env._current_task_name].objects.get(target_furniture_name)
     if nav_target is None:
         return "text", f"Receptacle {target_furniture_name} not found in the scene."
@@ -265,15 +258,17 @@ def handle_navigate_to(
     for comp in [door_component, surface_component]:
         if comp is not None:
             prim_path = comp.prim_path
-            if 'Constraint' in prim_path:
-                prim_path = prim_path.replace('Constraint', 'Group')
+            if "Constraint" in prim_path:
+                prim_path = prim_path.replace("Constraint", "Group")
             break
 
     target_center, target_radius, radius_lower_bound = compute_nav_target_params(prim_path)
 
     # Fallback: if component bbox is degenerate, use the parent object's prim
     if target_center is None:
-        print(f"  Component bbox degenerate for {prim_path}, falling back to parent: {nav_target.prim_path}")
+        print(
+            f"  Component bbox degenerate for {prim_path}, falling back to parent: {nav_target.prim_path}"
+        )
         prim_path = nav_target.prim_path
         target_center, target_radius, radius_lower_bound = compute_nav_target_params(prim_path)
 
@@ -285,7 +280,9 @@ def handle_navigate_to(
     print(f"  [nav_debug] components={list(nav_target.components.keys())}")
     print(f"  [nav_debug] prim_path={prim_path}")
     print(f"  [nav_debug] parent_prim_path={nav_target.prim_path}")
-    print(f"  [nav_debug] target_center={target_center}, target_radius={target_radius:.3f}, radius_lower_bound={radius_lower_bound:.3f}")
+    print(
+        f"  [nav_debug] target_center={target_center}, target_radius={target_radius:.3f}, radius_lower_bound={radius_lower_bound:.3f}"
+    )
     obj_min_point, obj_max_point = compute_path_bbox(prim_path)
     print(f"  [nav_debug] bbox_min={tuple(obj_min_point)}, bbox_max={tuple(obj_max_point)}")
     # Also print parent bbox for comparison
@@ -299,7 +296,7 @@ def handle_navigate_to(
     # each other) are not treated as occluders.
     parent_prim = nav_target.prim_path
     # Go one level up from e.g. ".../washingmachine/model_xxx" to ".../washingmachine/"
-    category_prim_path = parent_prim.rsplit('/', 1)[0] + '/'
+    category_prim_path = parent_prim.rsplit("/", 1)[0] + "/"
 
     nav_position = nav_manager.get_camera_position_by_seg(
         target_component_prim_path=category_prim_path,
@@ -313,7 +310,10 @@ def handle_navigate_to(
     )
 
     if nav_position is None:
-        return "text", f"Cannot find a non-occluded position to navigate to {target_furniture_name}."
+        return (
+            "text",
+            f"Cannot find a non-occluded position to navigate to {target_furniture_name}.",
+        )
 
     camera_orientation = calculate_look_at_quaternion_fixed_camera(nav_position, target_center)
 
@@ -331,16 +331,17 @@ def handle_navigate_to(
     return "image", rgb_array_to_base64(get_rgb_observation())
 
 
-def handle_explore_receptacle(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_explore_receptacle(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """List objects on current furniture."""
     if state.current_landmark is None:
         return "text", "No landmark selected. Use 'navigate_to' first."
 
-    content = state.world_graph.get(state.current_landmark, {}).get('content', [])
+    content = state.world_graph.get(state.current_landmark, {}).get("content", [])
     if len(content) == 0:
-        return "text", f"Seems there is no object on the {state.current_landmark}'s top shelf to observe."
+        return (
+            "text",
+            f"Seems there is no object on the {state.current_landmark}'s top shelf to observe.",
+        )
 
     walkaround_result = {}
     nl_result = "I found the following object(s): \n"
@@ -348,7 +349,7 @@ def handle_explore_receptacle(
     for obj_name in content:
         if obj_name not in state.current_extra_assets:
             continue
-        obj_category = state.current_extra_assets[obj_name]['category']
+        obj_category = state.current_extra_assets[obj_name]["category"]
         walkaround_result[str(label_index)] = obj_name
         nl_result += f"\t{label_index}: a(an) {obj_category}.\n"
         label_index += 1
@@ -359,21 +360,17 @@ def handle_explore_receptacle(
     return "text", nl_result
 
 
-def handle_focus_on(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_focus_on(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """Focus camera on a specific marker/object."""
     if state.current_marker_map is None:
         return "text", "No marker map available. Use 'find_objects' or 'explore_receptacle' first."
 
-    marker_id = str(arguments['marker_id'])
+    marker_id = str(arguments["marker_id"])
     if marker_id not in state.current_marker_map:
         return "text", f"Marker ID {marker_id} not found in the marker map."
 
     obj_name = state.current_marker_map[marker_id]
-    gaze_target = env.runner.current_tasks[
-        env._current_task_name
-    ].objects.get(obj_name)
+    gaze_target = env.runner.current_tasks[env._current_task_name].objects.get(obj_name)
 
     if gaze_target is None:
         return "text", f"Object {obj_name} is not available. Cannot focus on it."
@@ -420,38 +417,37 @@ def handle_focus_on(
 
     if state.persist_marker_map_on_gaze and state.current_marker_map is not None:
         predefined_markers = {
-            obj_name: int(marker_id)
-            for marker_id, obj_name in state.current_marker_map.items()
+            obj_name: int(marker_id) for marker_id, obj_name in state.current_marker_map.items()
         }
         result_image, marker2component = render_persisted_markers(
             predefined_markers=predefined_markers,
         )
-        state.current_marker_map = {
-            k: v.object_name for k, v in marker2component.items()
-        }
+        state.current_marker_map = {k: v.object_name for k, v in marker2component.items()}
         return "image", image_to_base64(result_image)
 
     return "image", rgb_array_to_base64(get_rgb_observation())
 
 
-def handle_pick(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_pick(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """Pick up an object by marker id."""
     state.persist_marker_map_on_gaze = False
     if state.current_inv is not None:
-        return "text", f"You are already holding '{state.current_inv}'. Place it before picking another object."
+        return (
+            "text",
+            f"You are already holding '{state.current_inv}'. Place it before picking another object.",
+        )
     if state.current_marker_map is None:
-        return "text", "No marker map available. Use 'find_objects', 'explore_receptacle' or 'highlight_receptacles' first."
+        return (
+            "text",
+            "No marker map available. Use 'find_objects', 'explore_receptacle' or 'highlight_receptacles' first.",
+        )
 
-    marker_id = str(arguments['marker_id'])
+    marker_id = str(arguments["marker_id"])
     if marker_id not in state.current_marker_map:
         return "text", f"Marker ID {marker_id} not found in the marker map."
 
     target_name = state.current_marker_map[marker_id]
-    obj = env.runner.current_tasks[
-        env._current_task_name
-    ].objects.get(target_name)
+    obj = env.runner.current_tasks[env._current_task_name].objects.get(target_name)
 
     if obj is None:
         return "text", f"Object {target_name} is not graspable. Cannot pick it up."
@@ -468,9 +464,9 @@ def handle_pick(
 
     # Update world graph
     for furniture_name in state.world_graph:
-        if target_name in state.world_graph[furniture_name].get('content', []):
-            state.world_graph[furniture_name]['content'] = list(
-                set(state.world_graph[furniture_name]['content']) - {target_name}
+        if target_name in state.world_graph[furniture_name].get("content", []):
+            state.world_graph[furniture_name]["content"] = list(
+                set(state.world_graph[furniture_name]["content"]) - {target_name}
             )
             break
 
@@ -482,15 +478,13 @@ def handle_pick(
     return "image", rgb_array_to_base64(get_rgb_observation())
 
 
-def handle_place(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_place(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """Place held object on a receptacle surface."""
     state.persist_marker_map_on_gaze = False
     if state.current_marker_map is None:
         return "text", "No marker map available. Use 'highlight_receptacles' first."
 
-    marker_id = str(arguments['marker_id'])
+    marker_id = str(arguments["marker_id"])
     if marker_id not in state.current_marker_map:
         return "text", f"Marker ID {marker_id} not found in the marker map."
 
@@ -501,15 +495,17 @@ def handle_place(
 
     if (
         target_name not in state.world_graph
-        or 'potlid' in target_name.lower()
-        or 'content' not in state.world_graph[target_name]
+        or "potlid" in target_name.lower()
+        or "content" not in state.world_graph[target_name]
     ):
         return "text", f"'{target_name}' is not a valid placement surface."
 
-    if state.world_graph[target_name].get('door') is False:
+    if state.world_graph[target_name].get("door") is False:
         return "text", f"The door of '{target_name}' is closed. Use 'open' first."
 
-    target_surface_furniture = env.runner.current_tasks[env._current_task_name].objects.get(target_name)
+    target_surface_furniture = env.runner.current_tasks[env._current_task_name].objects.get(
+        target_name
+    )
     if target_surface_furniture is None:
         return "text", f"Target furniture {target_name} not found in the scene."
 
@@ -517,9 +513,7 @@ def handle_place(
     if surface_comp is None:
         return "text", f"Furniture {target_name} has no top_shelf component."
 
-    target_object = env.runner.current_tasks[
-        env._current_task_name
-    ].objects.get(state.current_inv)
+    target_object = env.runner.current_tasks[env._current_task_name].objects.get(state.current_inv)
     if target_object is None:
         return "text", f"Held object '{state.current_inv}' not found in the scene."
 
@@ -536,7 +530,7 @@ def handle_place(
     target_object.components.get("graspable").attached = False
 
     # Update world graph
-    state.world_graph[target_name]['content'].append(state.current_inv)
+    state.world_graph[target_name]["content"].append(state.current_inv)
     state.current_inv = None
 
     step_simulation(env, 1000)
@@ -544,15 +538,13 @@ def handle_place(
     return "image", rgb_array_to_base64(get_rgb_observation())
 
 
-def handle_open(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_open(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """Open a door of an articulated object."""
     state.persist_marker_map_on_gaze = False
     if state.current_marker_map is None:
         return "text", "No marker map available."
 
-    marker_id = str(arguments['marker_id'])
+    marker_id = str(arguments["marker_id"])
     if marker_id not in state.current_marker_map:
         return "text", f"Marker ID {marker_id} not found in the marker map."
 
@@ -560,13 +552,15 @@ def handle_open(
 
     try:
         if (
-            'door' in state.world_graph.get(target_name, {})
-            and state.world_graph[target_name]['door'] is False
+            "door" in state.world_graph.get(target_name, {})
+            and state.world_graph[target_name]["door"] is False
         ):
-            target_door_furniture = env.runner.current_tasks[env._current_task_name].objects.get(target_name)
+            target_door_furniture = env.runner.current_tasks[env._current_task_name].objects.get(
+                target_name
+            )
             door_comp = target_door_furniture.components.get("door")
             door_comp.set_angle(90)
-            state.world_graph[target_name]['door'] = True
+            state.world_graph[target_name]["door"] = True
     except Exception as e:
         print(f"[WARN] Error opening door: {e}")
 
@@ -574,15 +568,13 @@ def handle_open(
     return "image", rgb_array_to_base64(get_rgb_observation())
 
 
-def handle_close(
-    state: EvalState, env, arguments: dict
-) -> Tuple[str, str]:
+def handle_close(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
     """Close a door of an articulated object."""
     state.persist_marker_map_on_gaze = False
     if state.current_marker_map is None:
         return "text", "No marker map available."
 
-    marker_id = str(arguments['marker_id'])
+    marker_id = str(arguments["marker_id"])
     if marker_id not in state.current_marker_map:
         return "text", f"Marker ID {marker_id} not found in the marker map."
 
@@ -590,19 +582,45 @@ def handle_close(
 
     try:
         if (
-            'door' in state.world_graph.get(target_name, {})
-            and state.world_graph[target_name]['door'] is True
+            "door" in state.world_graph.get(target_name, {})
+            and state.world_graph[target_name]["door"] is True
         ):
-            target_door_furniture = env.runner.current_tasks[env._current_task_name].objects.get(target_name)
+            target_door_furniture = env.runner.current_tasks[env._current_task_name].objects.get(
+                target_name
+            )
             door_comp = target_door_furniture.components.get("door")
             door_comp.set_angle(0)
-            state.world_graph[target_name]['door'] = False
+            state.world_graph[target_name]["door"] = False
     except Exception as e:
         print(f"[WARN] Error closing door: {e}")
 
     step_simulation(env, 100)
 
     return "image", rgb_array_to_base64(get_rgb_observation())
+
+
+def handle_ask(state: EvalState, env, arguments: dict) -> Tuple[str, str]:
+    """Return the task config's canonical disambiguation response."""
+    # Access both generated-plan arguments so direct callers get the same
+    # contract validation as MCP schema-aware clients.
+    target_category = str(arguments["target_category"]).strip()
+    target_description = str(arguments["target_description"]).strip()
+    if not target_category or not target_description:
+        return "text", json.dumps(
+            {
+                "error": "target_category and target_description must be non-empty",
+                "source": "task_metadata",
+            }
+        )
+
+    if not state.simulated_user_context:
+        response = {
+            "error": "simulated_user_context_unavailable",
+            "source": "task_metadata",
+        }
+    else:
+        response = state.simulated_user_context
+    return "text", json.dumps(response, ensure_ascii=False)
 
 
 # =============================================================================
@@ -620,6 +638,7 @@ ACTION_HANDLERS = {
     "place": handle_place,
     "open": handle_open,
     "close": handle_close,
+    "ask": handle_ask,
 }
 
 

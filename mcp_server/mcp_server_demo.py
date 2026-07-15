@@ -32,12 +32,13 @@ from starlette.responses import Response
 from starlette.routing import Mount, Route
 import uvicorn
 
-os.environ.setdefault('IS_TEST', '0')
+os.environ.setdefault("IS_TEST", "0")
 
 # Alias mcp_env_demo as mcp_server.mcp_env so actions.py shares this instance.
 import sys
 import mcp_server.mcp_env_demo as _mcp_env_module
-sys.modules['mcp_server.mcp_env'] = _mcp_env_module
+
+sys.modules["mcp_server.mcp_env"] = _mcp_env_module
 
 from mcp_server.mcp_env_demo import (
     env,
@@ -62,7 +63,7 @@ from mcp_server.actions import (
 # =============================================================================
 
 sse = SseServerTransport("/messages/")
-app = Server('eval-server-demo')
+app = Server("eval-server-demo")
 
 
 @app.list_tools()
@@ -73,6 +74,7 @@ async def list_tools(*args) -> list[types.Tool]:
 # =============================================================================
 # Task Manager
 # =============================================================================
+
 
 @dataclass
 class Task:
@@ -127,6 +129,7 @@ init_annotators(camera, resolution=(640, 480))
 # MCP Handler
 # =============================================================================
 
+
 @app.call_tool()
 async def wrapped_handler(
     action_name: str, arguments: dict
@@ -140,13 +143,10 @@ async def wrapped_handler(
 # HTTP Routes
 # =============================================================================
 
+
 async def handle_sse(request):
-    async with sse.connect_sse(
-        request.scope, request.receive, request._send
-    ) as streams:
-        await app.run(
-            streams[0], streams[1], app.create_initialization_options()
-        )
+    async with sse.connect_sse(request.scope, request.receive, request._send) as streams:
+        await app.run(streams[0], streams[1], app.create_initialization_options())
     return Response()
 
 
@@ -163,13 +163,14 @@ starlette_app = Starlette(
 # Action Handlers
 # =============================================================================
 
+
 def handle_finish() -> list:
     global current_episode_idx, state
 
     current_episode_idx += 1
 
     if current_episode_idx >= len(eval_episodes):
-        return [types.TextContent(type='text', text="All evaluation episodes completed.")]
+        return [types.TextContent(type="text", text="All evaluation episodes completed.")]
 
     episode = eval_episodes[current_episode_idx]
     global_episode_idx = EPISODE_START_IDX + current_episode_idx
@@ -180,12 +181,15 @@ def handle_finish() -> list:
         )
     except Exception as e:
         import traceback
-        return [types.TextContent(
-            type='text',
-            text=f"Error spawning episode {current_episode_idx}: {traceback.format_exc()}"
-        )]
 
-    state.world_graph = deepcopy(episode['initial_world_graph'])
+        return [
+            types.TextContent(
+                type="text",
+                text=f"Error spawning episode {current_episode_idx}: {traceback.format_exc()}",
+            )
+        ]
+
+    state.world_graph = deepcopy(episode["initial_world_graph"])
     step_simulation(env, 500)
 
     state.current_obs_dict = None
@@ -194,43 +198,44 @@ def handle_finish() -> list:
     state.current_inv = None
     state.current_pos = None
     state.camera_orientation = None
+    state.simulated_user_context = deepcopy(episode.get("simulated_user_context", {}))
 
-    target_world_graph = deepcopy(episode['initial_world_graph'])
-    src = episode['src']
-    dest = episode['dest']
-    target_obj_name = episode['target_object_name']
+    target_world_graph = deepcopy(episode["initial_world_graph"])
+    src = episode["src"]
+    dest = episode["dest"]
+    target_obj_name = episode["target_object_name"]
 
-    if src in target_world_graph and target_obj_name in target_world_graph[src]['content']:
-        target_world_graph[src]['content'].remove(target_obj_name)
+    if src in target_world_graph and target_obj_name in target_world_graph[src]["content"]:
+        target_world_graph[src]["content"].remove(target_obj_name)
     if dest in target_world_graph:
-        if target_obj_name not in target_world_graph[dest]['content']:
-            target_world_graph[dest]['content'].append(target_obj_name)
+        if target_obj_name not in target_world_graph[dest]["content"]:
+            target_world_graph[dest]["content"].append(target_obj_name)
 
     task_info = {
-        'task_id': episode['task_id'],
-        'episode_idx': global_episode_idx,
-        'episode_local_idx': current_episode_idx,
-        'episode_range': [EPISODE_START_IDX, EPISODE_END_IDX],
-        'task_description': episode['task_description'],
-        'scene_id': TARGET_SCENE_ID,
-        'rooms_and_furniture': dict(object_per_room),
-        'initial_world_graph': episode['initial_world_graph'],
-        'target_world_graph': target_world_graph,
-        'target_object': {
-            'id': episode['target_object_id'],
-            'name': episode['target_object_name'],
-            'category': episode['target_category'],
+        "task_id": episode["task_id"],
+        "episode_idx": global_episode_idx,
+        "episode_local_idx": current_episode_idx,
+        "episode_range": [EPISODE_START_IDX, EPISODE_END_IDX],
+        "task_description": episode["task_description"],
+        "scene_id": TARGET_SCENE_ID,
+        "rooms_and_furniture": dict(object_per_room),
+        "initial_world_graph": episode["initial_world_graph"],
+        "target_world_graph": target_world_graph,
+        "target_object": {
+            "id": episode["target_object_id"],
+            "name": episode["target_object_name"],
+            "category": episode["target_category"],
         },
-        'source_furniture': src,
-        'destination_furniture': dest,
-        'source_distractors': episode.get('src_distractors', []),
-        'destination_distractors': episode.get('dest_distractors', []),
-        'object_distractors': episode.get('obj_distractors', []),
-        'distractor_metadata': episode.get('obj_distractor_meta', {}),
-        'execution_plan': episode.get('execution_plan', []),
+        "source_furniture": src,
+        "destination_furniture": dest,
+        "source_distractors": episode.get("src_distractors", []),
+        "destination_distractors": episode.get("dest_distractors", []),
+        "object_distractors": episode.get("obj_distractors", []),
+        "distractor_metadata": episode.get("obj_distractor_meta", {}),
+        "execution_plan": episode.get("execution_plan", []),
     }
 
-    return [types.TextContent(type='text', text=json.dumps(task_info, indent=2))]
+    return [types.TextContent(type="text", text=json.dumps(task_info, indent=2))]
 
 
 def execute_action(action_name: str, arguments: dict) -> list:
@@ -239,28 +244,26 @@ def execute_action(action_name: str, arguments: dict) -> list:
     if action_name == "finish":
         return handle_finish()
 
-    result_type, result_data, debug_info = dispatch_action(
-        action_name, arguments, state, env
-    )
+    result_type, result_data, debug_info = dispatch_action(action_name, arguments, state, env)
 
     step_simulation(env, 200)
 
     result = []
 
     if result_type == "text":
-        result.append(types.TextContent(type='text', text=result_data))
+        result.append(types.TextContent(type="text", text=result_data))
     elif result_type == "image":
-        result.append(types.ImageContent(type='image', data=result_data, mimeType="image/png"))
+        result.append(types.ImageContent(type="image", data=result_data, mimeType="image/png"))
 
     if result_type != "image":
         rgb = Image.fromarray(get_rgb_image())
         buffered = BytesIO()
         rgb.save(buffered, format="PNG")
-        img_str = base64.b64encode(buffered.getvalue()).decode('utf-8')
-        result.append(types.ImageContent(type='image', data=img_str, mimeType="image/png"))
+        img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
+        result.append(types.ImageContent(type="image", data=img_str, mimeType="image/png"))
 
     debug_str = json.dumps(debug_info, indent=2, default=str)
-    result.append(types.TextContent(type='text', text=f"Debug Info:\n{debug_str}"))
+    result.append(types.TextContent(type="text", text=f"Debug Info:\n{debug_str}"))
 
     return result
 
@@ -268,6 +271,7 @@ def execute_action(action_name: str, arguments: dict) -> list:
 # =============================================================================
 # Main Loop
 # =============================================================================
+
 
 def run_api():
     port = int(os.getenv("PORT", 8080))
@@ -295,13 +299,15 @@ def main():
     if eval_episodes:
         global current_episode_idx
         demo_local_idx = next(
-            (i for i, ep in enumerate(eval_episodes) if len(ep['placements']) >= 2),
+            (i for i, ep in enumerate(eval_episodes) if len(ep["placements"]) >= 2),
             0,
         )
         current_episode_idx = demo_local_idx - 1  # handle_finish() increments by 1
 
-        print(f"[DEMO] Auto-loading episode local_idx={demo_local_idx} "
-              f"({len(eval_episodes[demo_local_idx]['placements'])} objects)...")
+        print(
+            f"[DEMO] Auto-loading episode local_idx={demo_local_idx} "
+            f"({len(eval_episodes[demo_local_idx]['placements'])} objects)..."
+        )
         init_result = handle_finish()
         print(f"[DEMO] Spawn done: {init_result[0].text[:200] if init_result else 'none'}")
 
@@ -320,9 +326,10 @@ def main():
             manager.return_result(result)
         except Exception as e:
             import traceback
+
             error_msg = f"Error executing {action_name}: {traceback.format_exc()}"
             print(error_msg)
-            manager.return_result([types.TextContent(type='text', text=error_msg)])
+            manager.return_result([types.TextContent(type="text", text=error_msg)])
 
     env.simulation_app.close()
 

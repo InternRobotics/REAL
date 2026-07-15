@@ -32,18 +32,21 @@ from copy import deepcopy
 
 import yaml
 
+from mcp_server.config import resolve_repo_path
+from mcp_server.interaction import build_simulated_user_context
+
 # =============================================================================
 # Load task config
 # =============================================================================
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 
-_cfg_path = Path(os.environ.get(
-    'DEMO_TASK_CONFIG',
-    str(_REPO_ROOT / 'configs' / 'demo_task.yaml'),
-)).expanduser()
-if not _cfg_path.is_absolute():
-    _cfg_path = _REPO_ROOT / _cfg_path
+_cfg_path = resolve_repo_path(
+    os.environ.get(
+        "DEMO_TASK_CONFIG",
+        str(_REPO_ROOT / "configs" / "demo_task.yaml"),
+    )
+)
 assert _cfg_path.exists(), f"Task config not found: {_cfg_path}"
 
 with open(_cfg_path) as _f:
@@ -51,35 +54,32 @@ with open(_cfg_path) as _f:
 
 
 def _resolve(p: str) -> Path:
-    """Return path as-is if absolute, otherwise relative to repo root."""
-    p = Path(p)
-    return p if p.is_absolute() else _REPO_ROOT / p
+    """Expand environment variables and resolve paths against the repo root."""
+    return resolve_repo_path(p)
 
 
 # =============================================================================
 # Configuration
 # =============================================================================
 
-TARGET_SCENE_ID = os.environ.get('TARGET_SCENE_ID', _task_cfg['scene_id'])
-TRAJ_PATH = _resolve(os.environ.get('TRAJ_PATH', 'eval_output_demo'))
+TARGET_SCENE_ID = os.environ.get("TARGET_SCENE_ID", _task_cfg["scene_id"])
+TRAJ_PATH = _resolve(os.environ.get("TRAJ_PATH", "eval_output_demo"))
 
-_paths = _task_cfg['paths']
+_paths = _task_cfg["paths"]
 
 # Scene USD
-USE_EMPTY_SCENE = os.environ.get('USE_EMPTY_SCENE', '0') == '1'
+USE_EMPTY_SCENE = os.environ.get("USE_EMPTY_SCENE", "0") == "1"
 if USE_EMPTY_SCENE:
-    _empty_usd = os.environ.get('EMPTY_USD_PATH', '')
+    _empty_usd = os.environ.get("EMPTY_USD_PATH", "")
     assert _empty_usd, "USE_EMPTY_SCENE=1 requires the EMPTY_USD_PATH env var"
     SCENE_USD_PATH = _empty_usd
 else:
-    SCENE_USD_PATH = str(
-        os.environ.get('SCENE_USD_PATH', '') or _resolve(_paths['scene_usd'])
-    )
+    SCENE_USD_PATH = str(_resolve(os.environ.get("SCENE_USD_PATH", "") or _paths["scene_usd"]))
 
 assert os.path.exists(SCENE_USD_PATH), f"Scene USD not found: {SCENE_USD_PATH}"
 
 # Occupancy map directory
-OCC_MAP_PATH: Path = _resolve(_paths['occ_map_dir'])
+OCC_MAP_PATH: Path = _resolve(_paths["occ_map_dir"])
 assert OCC_MAP_PATH.exists(), f"Occ map dir not found: {OCC_MAP_PATH}"
 
 print(f"[mcp_env_debug] config          = {_cfg_path}")
@@ -91,9 +91,9 @@ print(f"[mcp_env_debug] OCC_MAP_PATH    = {OCC_MAP_PATH}")
 # =============================================================================
 
 _object_registry: dict = {}
-for _obj_name, _obj_cfg in _task_cfg.get('objects', {}).items():
+for _obj_name, _obj_cfg in _task_cfg.get("objects", {}).items():
     _entry = dict(_obj_cfg)
-    _entry['usd_path'] = str(_resolve(_obj_cfg['usd_path']))
+    _entry["usd_path"] = str(_resolve(_obj_cfg["usd_path"]))
     _object_registry[_obj_name] = _entry
 
 # =============================================================================
@@ -102,11 +102,11 @@ for _obj_name, _obj_cfg in _task_cfg.get('objects', {}).items():
 
 from internutopia_extension.configs.objects import InteractiveObjCfg, UsdObjCfg
 
-_furniture_lib_path = _resolve(_paths['furniture_lib'])
+_furniture_lib_path = _resolve(_paths["furniture_lib"])
 scene_anno = json.load(open(_furniture_lib_path))
 
 # Scene captions are optional
-_anno_path = os.environ.get('SCENE_ANNO_PATH', '')
+_anno_path = os.environ.get("SCENE_ANNO_PATH", "")
 try:
     all_captions = json.load(open(_anno_path)) if _anno_path else {}
     if not _anno_path:
@@ -122,19 +122,19 @@ object_per_room = defaultdict(list)
 
 empty_world_graph = {}
 for furniture_uid, furniture_info in scene_anno.items():
-    if TARGET_SCENE_ID != furniture_info['scene_id']:
+    if TARGET_SCENE_ID != furniture_info["scene_id"]:
         continue
     used_keys = ["name", "prim_path", "components"]
     furniture_data = {k: furniture_info[k] for k in used_keys}
     furniture = InteractiveObjCfg(**furniture_data)
-    assert '/Root' not in str(furniture_data)
+    assert "/Root" not in str(furniture_data)
     furnitures.append(furniture)
-    furniture_names.append(furniture_info['name'])
-    empty_world_graph[furniture_info['name']] = {'content': []}
-    if 'door' in furniture_info['components']:
-        empty_world_graph[furniture_info['name']]['door'] = False
-    furniture_prims.append(furniture_info['prim_path'])
-    object_per_room[furniture_info['room_name']].append(furniture_info['name'])
+    furniture_names.append(furniture_info["name"])
+    empty_world_graph[furniture_info["name"]] = {"content": []}
+    if "door" in furniture_info["components"]:
+        empty_world_graph[furniture_info["name"]]["door"] = False
+    furniture_prims.append(furniture_info["prim_path"])
+    object_per_room[furniture_info["room_name"]].append(furniture_info["name"])
 
 # =============================================================================
 # Lift robot definition (optional, enabled by USE_LIFT_ROBOT=1)
@@ -148,13 +148,13 @@ from internutopia.core.scene.scene import IScene
 
 
 class LiftCfg(RobotCfg):
-    name: _Optional[str] = 'lift'
-    type: _Optional[str] = 'Lift'
-    prim_path: _Optional[str] = '/lift'
+    name: _Optional[str] = "lift"
+    type: _Optional[str] = "Lift"
+    prim_path: _Optional[str] = "/lift"
     usd_path: _Optional[str] = None  # must be provided via LIFT_USD_PATH
 
 
-@BaseRobot.register('Lift')
+@BaseRobot.register("Lift")
 class LiftRobot(BaseRobot):
     def __init__(self, config: LiftCfg, scene: IScene):
         super().__init__(config, scene)
@@ -170,6 +170,7 @@ class LiftRobot(BaseRobot):
         print("[LiftRobot] joints:", self.articulation.dof_names)
         from pxr import UsdPhysics, Usd, PhysxSchema
         from omni.isaac.core.utils.stage import get_current_stage
+
         stage = get_current_stage()
         root_prim = stage.GetPrimAtPath(self.config.prim_path)
         for prim in Usd.PrimRange(root_prim):
@@ -191,17 +192,21 @@ class LiftRobot(BaseRobot):
     def get_obs(self):
         position, orientation = self.articulation.get_pose()
         controllers_obs, sensors_obs = super()._get_controllers_and_sensors_obs()
-        obs = {'position': position, 'orientation': orientation,
-               'controllers': controllers_obs, 'sensors': sensors_obs}
+        obs = {
+            "position": position,
+            "orientation": orientation,
+            "controllers": controllers_obs,
+            "sensors": sensors_obs,
+        }
         obs["joint_velocitis"] = self.articulation.get_joint_velocities()
         obs["joint_positions"] = self.articulation.get_joint_positions()
         return self._make_ordered(obs)
 
 
-USE_LIFT_ROBOT = os.environ.get('USE_LIFT_ROBOT', '0') == '1'
+USE_LIFT_ROBOT = os.environ.get("USE_LIFT_ROBOT", "0") == "1"
 
 if USE_LIFT_ROBOT:
-    _lift_usd = os.environ.get('LIFT_USD_PATH', '')
+    _lift_usd = os.environ.get("LIFT_USD_PATH", "")
     assert _lift_usd, "USE_LIFT_ROBOT=1 requires the LIFT_USD_PATH env var"
     lift_cfg = LiftCfg(
         usd_path=_lift_usd,
@@ -220,7 +225,9 @@ from internutopia.core.gym_env import Env
 from internutopia_extension import import_extensions
 
 config = Config(
-    simulator=SimConfig(physics_dt=1 / 240, rendering_dt=1 / 240, use_fabric=False, headless=False, webrtc=False),
+    simulator=SimConfig(
+        physics_dt=1 / 240, rendering_dt=1 / 240, use_fabric=False, headless=False, webrtc=False
+    ),
     task_configs=[
         FiniteStepTaskCfg(
             scene_asset_path=SCENE_USD_PATH,
@@ -235,7 +242,7 @@ config = Config(
 env = Env(config)
 import_extensions()
 obs, _ = env.reset()
-print(f'========INIT OBS{obs}=============')
+print(f"========INIT OBS{obs}=============")
 
 from internutopia.core.scene.object import create_object
 
@@ -260,8 +267,11 @@ camera_prim = XFormPrim(prim_path="/Replicator/Camera_0_Xform")
 # Patch NavManager to load occupancy.npy from OCC_MAP_PATH
 _nav_occ_file = OCC_MAP_PATH / "occupancy.npy"
 _orig_nav_init = NavManager.__init__
+
+
 def _patched_nav_init(self, scene_id: str):
     import numpy as _np
+
     self.scene_id = scene_id
     self.occupancy_map = _np.load(str(_nav_occ_file))
     self.x_corrds = self.occupancy_map[0, 1:]
@@ -274,6 +284,8 @@ def _patched_nav_init(self, scene_id: str):
         self.y_res = abs(self.y_res)
     self.x_origin, self.y_origin = self.x_corrds[0], self.y_corrds[0]
     self.H, self.W = self.free_map.shape
+
+
 NavManager.__init__ = _patched_nav_init
 
 nav_manager = NavManager(scene_id=TARGET_SCENE_ID)
@@ -282,60 +294,67 @@ nav_manager = NavManager(scene_id=TARGET_SCENE_ID)
 # Build processed_eval_episodes from config episodes
 # =============================================================================
 
+
 def _build_world_graph(placements: dict) -> dict:
     world_graph = deepcopy(empty_world_graph)
     for obj_name, placement_info in placements.items():
-        furniture_name = placement_info['furniture']
+        furniture_name = placement_info["furniture"]
         if furniture_name in world_graph:
-            world_graph[furniture_name]['content'].append(obj_name)
+            world_graph[furniture_name]["content"].append(obj_name)
     return world_graph
 
 
 def _find_target_object_name(placements: dict, target_obj_id: str, src: str) -> str:
     fallback = None
     for obj_name, info in placements.items():
-        if info['original_id'] != target_obj_id:
+        if info["original_id"] != target_obj_id:
             continue
         if fallback is None:
             fallback = obj_name
-        if info.get('furniture') == src:
+        if info.get("furniture") == src:
             return obj_name
     return fallback
 
 
 def query_object_category(obj_id: str) -> str:
     for obj in _object_registry.values():
-        if obj['original_id'] == obj_id:
-            return obj['category']
+        if obj["original_id"] == obj_id:
+            return obj["category"]
     raise KeyError(f"Object id {obj_id} not found in object registry")
 
 
 processed_eval_episodes = []
-for _ep_idx, _ep in enumerate(_task_cfg.get('episodes', [])):
-    _placements = _ep['placements']
-    _target_id = _ep['target_object_id']
-    _src = _ep['src']
+for _ep_idx, _ep in enumerate(_task_cfg.get("episodes", [])):
+    _placements = _ep["placements"]
+    _target_id = _ep["target_object_id"]
+    _src = _ep["src"]
 
     _target_name = _find_target_object_name(_placements, _target_id, _src)
     _target_category = query_object_category(_target_id)
 
-    processed_eval_episodes.append({
-        'task_id': _ep['task_id'],
-        'original_idx': _ep_idx,
-        'task_description': _ep['task_description'],
-        'initial_world_graph': _build_world_graph(_placements),
-        'placements': _placements,
-        'execution_plan': _ep.get('execution_plan', []),
-        'src': _src,
-        'dest': _ep['dest'],
-        'src_distractors': _ep.get('src_distractors', []),
-        'dest_distractors': _ep.get('dest_distractors', []),
-        'obj_distractors': _ep.get('obj_distractors', []),
-        'obj_distractor_meta': _ep.get('obj_distractor_meta', {}),
-        'target_object_id': _target_id,
-        'target_object_name': _target_name,
-        'target_category': _target_category,
-    })
+    processed_eval_episodes.append(
+        {
+            "task_id": _ep["task_id"],
+            "original_idx": _ep_idx,
+            "task_description": _ep["task_description"],
+            "initial_world_graph": _build_world_graph(_placements),
+            "placements": _placements,
+            "execution_plan": _ep.get("execution_plan", []),
+            "src": _src,
+            "dest": _ep["dest"],
+            "src_distractors": _ep.get("src_distractors", []),
+            "dest_distractors": _ep.get("dest_distractors", []),
+            "obj_distractors": _ep.get("obj_distractors", []),
+            "obj_distractor_meta": _ep.get("obj_distractor_meta", {}),
+            "target_object_id": _target_id,
+            "target_object_name": _target_name,
+            "target_category": _target_category,
+            "simulated_user_context": build_simulated_user_context(
+                _ep,
+                fallback_category=_target_category,
+            ),
+        }
+    )
 
 print(f"[mcp_env_debug] Loaded eval episodes: {len(processed_eval_episodes)}")
 
@@ -344,18 +363,17 @@ print(f"[mcp_env_debug] Loaded eval episodes: {len(processed_eval_episodes)}")
 # Object spawning — world-space positions from config
 # =============================================================================
 
+
 def spawn_objects_by_world_graph(env: Env, episode: dict, current_objects: dict):
     """
     Spawn objects at world-space positions defined in the config's objects section.
     A +0.4 m Z offset is applied so objects drop onto the surface from above.
     """
-    placements = episode['placements']
+    placements = episode["placements"]
 
     # Clean up existing objects
     for current_obj_name in current_objects.keys():
-        current_obj = env.runner.current_tasks[
-            env._current_task_name
-        ].objects.get(current_obj_name)
+        current_obj = env.runner.current_tasks[env._current_task_name].objects.get(current_obj_name)
         if current_obj is not None:
             current_obj.prim.set_world_pose(position=(-100, -100, 0))
 
@@ -364,7 +382,7 @@ def spawn_objects_by_world_graph(env: Env, episode: dict, current_objects: dict)
     task = env.runner.current_tasks[env._current_task_name]
     for obj_name, placement_info in placements.items():
         obj_meta = _object_registry[obj_name]
-        pos = obj_meta['position']
+        pos = obj_meta["position"]
         spawn_pos = (pos[0], pos[1], pos[2] + 0.4)
 
         print(f"[spawn] {obj_name} ({obj_meta['category']}) -> {spawn_pos}")
@@ -372,20 +390,20 @@ def spawn_objects_by_world_graph(env: Env, episode: dict, current_objects: dict)
         obj_cfg = InteractiveObjCfg(
             name=obj_name,
             prim_path=f"/World/env_0/scene/Meshes/{obj_name}",
-            usd_path=obj_meta['usd_path'],
+            usd_path=obj_meta["usd_path"],
             position=spawn_pos,
             orientation=(0.7071068, 0.7071068, 0.0, 0.0),
             collider=True,
             components={"graspable": f"/World/env_0/scene/Meshes/{obj_name}"},
-            scale=obj_meta['usd_scale'],
+            scale=obj_meta["usd_scale"],
         )
 
         _obj = create_object(obj_cfg)
         _obj.set_up_scene(task._scene)
         task.objects[obj_name] = _obj
         current_objects[obj_name] = {
-            "category": obj_meta['category'],
-            "original_id": placement_info['original_id'],
+            "category": obj_meta["category"],
+            "original_id": placement_info["original_id"],
         }
 
     for _ in range(50):
