@@ -51,6 +51,8 @@ config.local.yaml
 # Downloaded assets and local data
 assets/
 data/
+!scripts/data/
+!scripts/data/export_processed_grscenes.py
 
 # Test and coverage artifacts
 .pytest_cache/
