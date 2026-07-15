@@ -5,7 +5,8 @@
 <h1 align="center">REAL: Exploratory, Communicative, and Deployable Embodied Agents</h1>
 
 <p align="center">
-  <a href="#dataset--checkpoint"><img src="https://img.shields.io/badge/Dataset%20%26%20Checkpoint-Coming%20Soon-f59e0b?style=flat-square" alt="Dataset and Checkpoint" /></a>
+  <a href="https://huggingface.co/datasets/InternRobotics/REAL-Data"><img src="https://img.shields.io/badge/Dataset-REAL--Data-ffd21e?style=flat-square&logo=huggingface&logoColor=black" alt="REAL-Data on Hugging Face" /></a>
+  <a href="#dataset--checkpoint"><img src="https://img.shields.io/badge/Checkpoint-Coming%20Soon-f59e0b?style=flat-square" alt="Checkpoint coming soon" /></a>
   <a href="#paper"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-3b82f6?style=flat-square" alt="Paper" /></a>
   <a href="https://internrobotics.github.io/REAL/"><img src="https://img.shields.io/badge/Project%20Page-Website-10b981?style=flat-square" alt="Project Page" /></a>
   <a href="https://github.com/InternRobotics/REAL"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="Code" /></a>
@@ -16,6 +17,7 @@
 
 ## 📰 News
 
+* **[2026.07.15]** 🤗 [REAL-Data](https://huggingface.co/datasets/InternRobotics/REAL-Data), including the seven experiment-processed GRScenes stages, is now available.
 * **[2026.06.18]** 🎉 Our paper has been accepted to **ECCV 2026**! 🥳
 * **[2026.06.01]** 🚀 Training code released.
 * **[2026.03.31]** Procedural task generation and trajectory annotation utilities released.
@@ -70,6 +72,7 @@ git switch gspo
 | `pick` | Pick up an object by marker ID |
 | `place` | Place held object onto a receptacle surface |
 | `open` / `close` | Operate articulated doors |
+| `ask` | Query the deterministic simulated user for the task's target description |
 
 
 Each tool call returns an RGB observation image and structured text feedback from the simulation.
@@ -97,15 +100,92 @@ pip install -r requirements.txt
 
 Optional Qwen3-VL training dependencies are managed by the upstream Qwen3-VL fine-tuning environment rather than this runtime requirements file.
 
-### 4. Download and unpack assets
+### 4. Download and install REAL-Data
 
-Download `assets.tar.gz` from [Google Drive](https://drive.google.com/drive/folders/15RXHNisGn5SZTLvFWYkdKKazNvxaRrVd?usp=sharing) and extract it into the repository root.
+The public [REAL-Data](https://huggingface.co/datasets/InternRobotics/REAL-Data)
+bundle contains the seven processed scene entry points, their complete
+model/material dependency closure, occupancy maps, and generator metadata. It
+does **not** contain MesaTask object USDs.
 
-After extraction, the `assets/` directory should contain the scenes, models, objects, materials, and metadata required by the demo.
+Install the current Hugging Face CLI if `hf` is not already available, and
+ensure the `zstd` command is installed:
 
-Copy `.env.example` to `.env` only when you need an OpenAI-compatible perception endpoint. Never commit the populated `.env` file.
+```bash
+python -m pip install -U huggingface_hub
+```
 
-### 5. Run the demo MCP server
+From the REAL repository root, download, verify, and extract the bundle into
+the `assets/` layout expected by the configs and pipeline scripts:
+
+```bash
+hf download InternRobotics/REAL-Data \
+  data/REAL-Data.tar.zst \
+  data/REAL-Data.tar.zst.sha256 \
+  --repo-type dataset \
+  --local-dir data/REAL-Data-download
+
+(cd data/REAL-Data-download/data && \
+  sha256sum -c REAL-Data.tar.zst.sha256)
+
+# Start from a clean destination; assets/ is intentionally gitignored.
+test ! -e assets || {
+  echo "assets/ already exists; move or remove it before extracting REAL-Data" >&2
+  exit 1
+}
+mkdir assets
+tar -I zstd -xf data/REAL-Data-download/data/REAL-Data.tar.zst \
+  --strip-components=1 \
+  -C assets
+
+# Verify all 6,205 payload files plus the manifest.
+(cd assets && sha256sum -c SHA256SUMS)
+```
+
+The downloaded archive SHA256 is
+`dab362cdeb23a01c192ae4a0a5a87d6c00aad99e023f5d7dd15d4831c2a6f96f`.
+After extraction, at minimum these paths must exist:
+
+```text
+assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/occupancy.npy
+assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+assets/metadata/consolidated_asset_library_with_size.json
+```
+
+### 5. Download MesaTask objects
+
+Download [MesaTask-10K](https://huggingface.co/datasets/InternRobotics/MesaTask-10K)
+separately. Preserve its object/texture layout, then point
+`MESATASK_USD_ROOT` at the flat directory containing the object `.usd` files:
+
+```bash
+export MESATASK_USD_ROOT=/path/to/mesatask_download/object_usds
+```
+
+The default demo directly reuses the two objects listed in
+`assets/mesa_required.txt`. Check them before starting Isaac Sim:
+
+```bash
+while IFS= read -r usd; do
+  test -f "$MESATASK_USD_ROOT/$usd" || {
+    echo "Missing MesaTask object: $MESATASK_USD_ROOT/$usd" >&2
+    exit 1
+  }
+done < assets/mesa_required.txt
+```
+
+### 6. Configure the optional perception endpoint
+
+No endpoint is needed for exact category matching or any non-perception MCP
+tool. Copy `.env.example` to `.env` only when fuzzy category matching is
+needed. The demo launcher loads this file automatically without overriding
+variables already exported by the caller. Never commit the populated `.env`
+file.
+
+### 7. Run the demo MCP server
+
+Run the launcher from the repository root in the InternUtopia/Isaac Sim
+environment. It opens the Omniverse GUI, so a working display is required:
 
 ```bash
 ./scripts/demo/run_mcp_server_demo.sh
@@ -140,13 +220,20 @@ flowchart LR
 
 ### Asset setup — MesaTask USD files
 
-The task generator relies on object USD files from the [MesaTask dataset](https://huggingface.co/datasets/InternRobotics/MesaTask-10K).  After downloading, set `MESATASK_USD_ROOT` to the directory containing the `.usd` files before running any pipeline script:
+Complete Quick Start steps 4–5 before running the pipeline. All default scene
+and metadata paths resolve under the extracted `assets/` directory. The task
+generator and physics verifier resolve relative MesaTask filenames against
+`MESATASK_USD_ROOT`:
 
 ```bash
 export MESATASK_USD_ROOT=/path/to/mesatask_download/object_usds
 ```
 
 The metadata file `assets/metadata/consolidated_asset_library_with_size.json` stores only filenames (e.g. `abc123.usd`); the code resolves them against `MESATASK_USD_ROOT` at runtime.
+
+Articulation episodes use `task_type: articulation` and preserve the operation
+as `articulation_subtype: store|retrieve`; both subtypes are written to the
+same `articulation.yaml` file.
 
 ### Stage 1 — Task generation & static filtering
 
@@ -166,7 +253,8 @@ python proc_datagen/task_generator.py \
     --output-dir proc_datagen/configs
 
 # Polish task descriptions with an LLM after generation
-# (requires OPENAI_API_KEY and openai package)
+# (requires OPENAI_API_KEY and openai package; defaults to gpt-4o-mini)
+export OPENAI_MODEL=gpt-4o-mini
 python proc_datagen/task_generator.py \
     --tasks all \
     --output-dir proc_datagen/configs \
@@ -180,6 +268,9 @@ python proc_datagen/task_generator.py \
     --verify-placement \
     --to-json
 ```
+
+Polishing retries transient failures three times and then exits with an error;
+it never silently writes the unpolished input as if the request succeeded.
 
 Output: `proc_datagen/configs/{scene_id}/{task_type}.yaml` — per-scene per-type YAML files containing `objects` (with positions) and `episodes` (with placements).
 
@@ -273,7 +364,22 @@ The paper citation will be added after publication. Until then, please cite this
 
 ### Dataset & Checkpoint
 
-The dataset and model checkpoint links will be added here after release.
+[**REAL-Data**](https://huggingface.co/datasets/InternRobotics/REAL-Data) is
+publicly available on Hugging Face. It contains the seven processed GRScenes
+stages, their portable scene dependency closure, and runtime/generator
+metadata. MesaTask object USDs remain a separate download from
+[MesaTask-10K](https://huggingface.co/datasets/InternRobotics/MesaTask-10K).
+
+The model checkpoint link will be added after release.
+
+The scene release contains the **seven experiment-processed GRScenes stages**,
+not the original same-ID GRScenes stages. Maintainers build the portable bundle
+with InternUtopia's `export_scenes.py` through
+[`scripts/data/export_processed_grscenes.py`](scripts/data/export_processed_grscenes.py).
+The wrapper selects the exact processed entries, localizes every dependency,
+checks recursive USD/MDL closure, and emits a manifest plus checksums. The
+non-duplicating layout, command, provenance requirements, and release gates are
+documented in [Minimal Data Release](docs/minimal-data-release.md).
 
 ### Paper
 
@@ -295,4 +401,7 @@ We thank the teams behind [**Model Context Protocol**](https://modelcontextproto
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+The code in this repository is licensed under the [MIT License](LICENSE).
+[REAL-Data](https://huggingface.co/datasets/InternRobotics/REAL-Data) is a
+derived data artifact released under CC BY-NC-SA 4.0; the MIT code license does
+not replace its data terms.
