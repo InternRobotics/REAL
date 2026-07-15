@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Isaac Sim's conda activation exports a synthetic BASH_SOURCE value.  This
+# launcher is executed (not sourced), so $0 is the reliable script location.
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 
 : "${QWEN3VL_FINETUNE_ROOT:?Set QWEN3VL_FINETUNE_ROOT to the official Qwen3-VL/qwen-vl-finetune directory.}"
