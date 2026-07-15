@@ -46,7 +46,9 @@ TASK_TYPES=(
     "gather"
 )
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Isaac Sim's conda activation exports a synthetic BASH_SOURCE value.  This
+# launcher is executed (not sourced), so $0 is the reliable script location.
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 TASK_SRC_DIR="${TASK_SRC_DIR:-$ROOT/proc_datagen/configs}"
@@ -199,6 +201,10 @@ for task_type in task_types:
             # Add scene_id to each episode for traceability
             for ep in episodes:
                 ep["scene_id"] = scene_id
+                ep["placements"] = {
+                    f"{scene_id}_{obj_key}": placement
+                    for obj_key, placement in ep.get("placements", {}).items()
+                }
                 merged_episodes.append(ep)
 
             # Merge objects (prefix with scene_id to avoid key collisions)
