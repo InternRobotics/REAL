@@ -37,9 +37,11 @@ EPISODE_WORKERS = int(os.getenv("ANNO_EPISODE_WORKERS", "100"))
 if not API_KEY:
     raise RuntimeError("Missing OPENAI_API_KEY.")
 
+
 def make_openai_client() -> OpenAI:
     """Create a fresh OpenAI client (one per episode worker)."""
     return OpenAI(base_url=BASE_URL, api_key=API_KEY, timeout=REQUEST_TIMEOUT_S)
+
 
 # ------------ Jobs Config ------------
 # Jobs are loaded from an external JSON config file via --config.
@@ -47,10 +49,12 @@ def make_openai_client() -> OpenAI:
 
 # ------------ PKL Processing Utils ------------
 
+
 def _to_uint8_rgb(arr):
     if arr is None:
         return None
     import numpy as _np
+
     if arr.ndim == 2:
         arr = _np.stack([arr] * 3, axis=-1)
     if arr.ndim != 3 or arr.shape[2] < 3:
@@ -179,7 +183,7 @@ def extract_first_json_object(text: str) -> str:
 
 def fix_json_newlines_in_strings(s: str) -> str:
     """Fix illegal newlines inside JSON string values.
-    
+
     JSON standard doesn't allow literal newlines inside string values.
     This function replaces them with escaped \\n sequences.
     """
@@ -192,7 +196,7 @@ def fix_json_newlines_in_strings(s: str) -> str:
                 result.append(ch)
                 esc = False
                 continue
-            if ch == '\\':
+            if ch == "\\":
                 result.append(ch)
                 esc = True
                 continue
@@ -201,18 +205,18 @@ def fix_json_newlines_in_strings(s: str) -> str:
                 in_str = False
                 continue
             # Replace literal newlines with escaped version
-            if ch == '\n':
-                result.append('\\n')
+            if ch == "\n":
+                result.append("\\n")
                 continue
-            if ch == '\r':
-                result.append('\\r')
+            if ch == "\r":
+                result.append("\\r")
                 continue
             result.append(ch)
         else:
             if ch == '"':
                 in_str = True
             result.append(ch)
-    return ''.join(result)
+    return "".join(result)
 
 
 def parse_json_or_none(s: Any) -> Optional[Any]:
@@ -250,9 +254,11 @@ def _coerce_new_schedule(v: Any) -> Optional[List[str]]:
     return None
 
 
-def canonicalize_thinking_dict(obj: Dict[str, Any], include_last_action: bool = False) -> Dict[str, Any]:
+def canonicalize_thinking_dict(
+    obj: Dict[str, Any], include_last_action: bool = False
+) -> Dict[str, Any]:
     """Canonicalize thinking dict with optional Last Action field.
-    
+
     Args:
         obj: Raw thinking dict from GPT
         include_last_action: If True, preserve "Last Action" field in Summary
@@ -260,17 +266,17 @@ def canonicalize_thinking_dict(obj: Dict[str, Any], include_last_action: bool = 
     out: Dict[str, Any] = {"CoT": str(obj.get("CoT", "") or "")}
     s_in = obj.get("Summary")
     s = s_in if isinstance(s_in, dict) else {}
-    
+
     summary_out = {
         "History": str(s.get("History", "") or ""),
         "New Schedule": _coerce_new_schedule(s.get("New Schedule")),
         "Current subtask": str(s.get("Current subtask", "") or ""),
     }
-    
+
     # Preserve Last Action if requested (for step >= 1 input)
     if include_last_action and "Last Action" in s:
         summary_out["Last Action"] = s.get("Last Action")
-    
+
     out["Summary"] = summary_out
     return out
 
@@ -291,14 +297,14 @@ def call_chat_thinking(
                 img_size_mb = Path(image_path).stat().st_size / (1024 * 1024)
                 if img_size_mb > 10:
                     print(f"[WARNING] Large image: {img_size_mb:.2f}MB, may cause timeout")
-                
+
                 user_content = [
                     {"type": "image_url", "image_url": {"url": image_path_to_data_url(image_path)}},
                     {"type": "text", "text": human_prompt},
                 ]
             else:
                 user_content = human_prompt
-            
+
             # Try with response_format for strict JSON output (may not be supported by all models)
             try:
                 resp = client.chat.completions.create(
@@ -321,7 +327,7 @@ def call_chat_thinking(
                     temperature=temperature,
                 )
             return (resp.choices[0].message.content or "").strip()
-        
+
         except Exception as e:
             print(f"[ERROR] GPT call failed (attempt {attempt + 1}/{max_retries}): {str(e)[:200]}")
             if attempt == max_retries - 1:
@@ -342,8 +348,9 @@ def call_chat_thinking(
                     return ""  # Return empty string if all retries failed
             # Wait before retry
             import time
+
             time.sleep(2)
-    
+
     # Should never reach here, but just in case
     return ""
 
@@ -359,14 +366,12 @@ def build_human_prompt_step0(
         "Observation": {
             "camera": None,  # No image for step 0
             "text": "",
-            "conversation": []
+            "conversation": [],
         },
         "Next Action": init_action,
         "IMPORTANT": "You are annotating Chain-of-Thought reasoning for a SUCCESSFUL execution trajectory. The Next Action shown is from ground truth and will be executed correctly. Your task is to write the CoT that explains WHY this action is reasonable given the current state. You MUST output ONLY a single valid JSON object. Do NOT output any other text or explanations.\n",
-
         "Object disambiguation metadata": "1.src: Task-required source Object\n 2.src_distractors: Source distractors (do NOT treat as src)\n 3.dest: Task-required destination Object \n 4.dest_distractors: Destination distractors (do NOT treat as dest)\n",
         "Object disambiguation": object_info or {},
-
         "Output format (REQUIRED JSON)": {
             "CoT": "",
             "Summary": {
@@ -374,7 +379,6 @@ def build_human_prompt_step0(
                 "New Schedule": "",
                 "Current subtask": "",
             },
-        
         },
     }
     return json.dumps(input_obj, ensure_ascii=False, indent=2)
@@ -390,7 +394,7 @@ def build_human_prompt_stepN(
     object_info: Optional[Dict[str, Any]] = None,
 ) -> str:
     """Build step >= 1 prompt with accumulated History.
-    
+
     Args:
         prev_action_text: JSON string of last executed action
         next_acton: JSON string of next action to execute
@@ -406,19 +410,19 @@ def build_human_prompt_stepN(
     }
 
     # Build Observation object (camera + conversation only)
-    if obs_dict['text'].startswith('.....') or obs_dict['text'].startswith('.....'):
-        conversation = [obs_dict['text']]
-        obs_text = ''
+    if obs_dict["text"].startswith(".....") or obs_dict["text"].startswith("....."):
+        conversation = [obs_dict["text"]]
+        obs_text = ""
     else:
-        obs_text = obs_dict['text']
+        obs_text = obs_dict["text"]
         conversation = []
-        
+
     obs_obj = {
         "camera": "<image>",
-        "text": obs_dict['text'],
+        "text": obs_dict["text"],
         "conversation": [],
     }
-    
+
     input_obj = {
         "Task instruction": instruction or "",
         "History": history_obj,
@@ -444,7 +448,7 @@ def format_action_dict(action_dict: Dict[str, Any]) -> str:
     """Format action dict to canonical JSON string."""
     if not action_dict:
         return ""
-    
+
     def _maybe_parse_py_dict_str(s: Any) -> Optional[Dict[str, Any]]:
         if not isinstance(s, str):
             return None
@@ -465,9 +469,9 @@ def format_action_dict(action_dict: Dict[str, Any]) -> str:
             tool_name = "place"
         if tool_name == "show_object_by_category":
             tool_name = "show_object_by_category"
-        if tool_name in {"walk_around", "show_receptacles", "finish","check_scene_objects"}:
+        if tool_name in {"walk_around", "show_receptacles", "finish", "check_scene_objects"}:
             return tool_name, {}
-        
+
         # Tool -> required parameter name mapping
         tool_param_map = {
             "gaze_at": "marker_id",
@@ -479,7 +483,7 @@ def format_action_dict(action_dict: Dict[str, Any]) -> str:
             "close": "receptacle_name",
             "ask": "question",
         }
-        
+
         args_obj: Any = raw_args
         if args_obj in ("", None):
             args_obj = {}
@@ -571,7 +575,7 @@ def process_pkl_to_steps(
 
     steps: List[Step] = []
     step_id = 1  # Start from 1 (step 0 reserved for virtual instruction-only step)
-    
+
     for action, obs in iter_paired_steps(traj_obj):
         # Extract action dict
         action_dict = {}
@@ -645,7 +649,7 @@ def annotate_episode(
     thinking_history: List[str] = []
     # Script-maintained accumulated history items (deterministic, no GPT hallucination)
     accumulated_history_items: List[str] = []
-    
+
     all_samples = []
 
     # Step 0: virtual instruction-only step
@@ -655,12 +659,12 @@ def annotate_episode(
     # Remove obs_text (not needed in training data)
     if "obs_text" in step0_sample:
         del step0_sample["obs_text"]
-    
+
     # Add system prompt (only once)
     convs = step0_sample.setdefault("conversations", [])
     if not any(c.get("from") == "system" for c in convs):
         convs.insert(0, {"from": "system", "value": system_prompt})
-    
+
     object_info = {}
     if isinstance(episode_meta, dict):
         object_info = {
@@ -676,7 +680,7 @@ def annotate_episode(
         object_info=object_info,
     )
     set_human_value(step0_sample, human_prompt)
-    
+
     print(f"[anno] episode={steps[0].episode_id if steps else 'unknown'} step_id=0 request_start")
     thinking_raw = call_chat_thinking(
         client=client,
@@ -685,11 +689,18 @@ def annotate_episode(
         image_path=None,
         temperature=0.0,
     )
-    print(f"[anno] episode={steps[0].episode_id if steps else 'unknown'} step_id=0 request_done chars={len(thinking_raw)}")
-    
+    print(
+        f"[anno] episode={steps[0].episode_id if steps else 'unknown'} step_id=0 request_done chars={len(thinking_raw)}"
+    )
+
     if not thinking_raw or not thinking_raw.strip():
-        print(f"[anno][WARNING] episode={steps[0].episode_id if steps else 'unknown'} step_id=0 GPT returned empty response!")
-        thinking_clean = json.dumps({"CoT": "", "Summary": {"History": "", "New Schedule": None, "Current subtask": ""}}, ensure_ascii=False)
+        print(
+            f"[anno][WARNING] episode={steps[0].episode_id if steps else 'unknown'} step_id=0 GPT returned empty response!"
+        )
+        thinking_clean = json.dumps(
+            {"CoT": "", "Summary": {"History": "", "New Schedule": None, "Current subtask": ""}},
+            ensure_ascii=False,
+        )
     else:
         thinking_clean = strip_special_tokens(thinking_raw)
         json_only = extract_first_json_object(thinking_clean)
@@ -701,17 +712,19 @@ def annotate_episode(
                 print(f"[anno][WARNING] step_id=0 JSON parse failed, using raw: {json_only[:100]}")
                 thinking_clean = json_only
         else:
-            print(f"[anno][WARNING] step_id=0 No JSON found in response, first 200 chars: {thinking_clean[:200]}")
+            print(
+                f"[anno][WARNING] step_id=0 No JSON found in response, first 200 chars: {thinking_clean[:200]}"
+            )
             thinking_clean = thinking_raw
-    
+
     set_gpt_thinking(step0_sample, thinking_clean)
-    
+
     # Step 0 action = first PKL action
     if steps:
         action_text = format_action_dict(steps[0].action_dict)
         if action_text:
             set_gpt_action(step0_sample, action_text)
-    
+
     thinking_history.append(thinking_clean)
     # Initialize accumulated history with Step 0 fixed content
     accumulated_history_items.append("1) I have completed a detailed task analysis.")
@@ -722,22 +735,26 @@ def annotate_episode(
     if steps:
         # Initialize with step 0's action
         action_history.append(format_action_dict(steps[0].action_dict))
-    
+
     for idx, st in enumerate(steps):
         obs_dict = {"text": st.obs_text}
-        
+
         # Add system prompt (only once)
         convs = st.sample.setdefault("conversations", [])
         if not any(c.get("from") == "system" for c in convs):
             convs.insert(0, {"from": "system", "value": system_prompt})
-        
+
         # prev_action: last executed action aligned with current observation
         prev_action = format_action_dict(steps[idx].action_dict) if idx < len(steps) else ""
-        next_acton = format_action_dict(steps[idx + 1].action_dict) if idx + 1 < len(steps) else format_action_dict({"finish": {}})
-        
+        next_acton = (
+            format_action_dict(steps[idx + 1].action_dict)
+            if idx + 1 < len(steps)
+            else format_action_dict({"finish": {}})
+        )
+
         # Build accumulated history string from all previous steps
         accumulated_history_str = "\n".join(accumulated_history_items)
-        
+
         human_prompt = build_human_prompt_stepN(
             instruction=instruction,
             prev_action_text=prev_action,
@@ -746,13 +763,15 @@ def annotate_episode(
             obs_dict=obs_dict,
             object_info=object_info,
         )
-        
+
         set_human_value(st.sample, human_prompt)
-        
+
         if DEBUG_IMAGE and st.image_path:
             exists = Path(st.image_path).exists()
-            print(f"[anno][image] episode={st.episode_id} step_id={st.step_id} using_image={st.image_path} exists={exists}")
-        
+            print(
+                f"[anno][image] episode={st.episode_id} step_id={st.step_id} using_image={st.image_path} exists={exists}"
+            )
+
         print(f"[anno][llm] episode={st.episode_id} step_id={st.step_id} request_start")
         thinking_raw = call_chat_thinking(
             client=client,
@@ -761,18 +780,30 @@ def annotate_episode(
             image_path=st.image_path,
             temperature=0.0,
         )
-        print(f"[anno][llm] episode={st.episode_id} step_id={st.step_id} request_done chars={len(thinking_raw)}")
-        
+        print(
+            f"[anno][llm] episode={st.episode_id} step_id={st.step_id} request_done chars={len(thinking_raw)}"
+        )
+
         # Debug: print first 300 chars of GPT response
         if thinking_raw:
-            print(f"[DEBUG] episode={st.episode_id} step_id={st.step_id} GPT response preview: {thinking_raw[:300]}")
-        
+            print(
+                f"[DEBUG] episode={st.episode_id} step_id={st.step_id} GPT response preview: {thinking_raw[:300]}"
+            )
+
         # parsed_thinking will hold the successfully parsed dict for later use
         parsed_thinking: Optional[Dict[str, Any]] = None
-        
+
         if not thinking_raw or not thinking_raw.strip():
-            print(f"[anno][WARNING] episode={st.episode_id} step_id={st.step_id} GPT returned empty response!")
-            thinking_clean = json.dumps({"CoT": "", "Summary": {"History": "", "New Schedule": None, "Current subtask": ""}}, ensure_ascii=False)
+            print(
+                f"[anno][WARNING] episode={st.episode_id} step_id={st.step_id} GPT returned empty response!"
+            )
+            thinking_clean = json.dumps(
+                {
+                    "CoT": "",
+                    "Summary": {"History": "", "New Schedule": None, "Current subtask": ""},
+                },
+                ensure_ascii=False,
+            )
         else:
             thinking_clean = strip_special_tokens(thinking_raw)
             json_only = extract_first_json_object(thinking_clean)
@@ -781,17 +812,26 @@ def annotate_episode(
                 if isinstance(parsed, dict):
                     # Debug: check if parsed JSON has empty fields
                     if not parsed.get("CoT") and not parsed.get("Summary", {}).get("History"):
-                        print(f"[DEBUG] episode={st.episode_id} step_id={st.step_id} GPT returned JSON with empty fields!")
+                        print(
+                            f"[DEBUG] episode={st.episode_id} step_id={st.step_id} GPT returned JSON with empty fields!"
+                        )
                     parsed_thinking = parsed  # Save for later History extraction
-                    thinking_clean = json.dumps(canonicalize_thinking_dict(parsed, include_last_action=True), ensure_ascii=False)
+                    thinking_clean = json.dumps(
+                        canonicalize_thinking_dict(parsed, include_last_action=True),
+                        ensure_ascii=False,
+                    )
                 else:
-                    print(f"[anno][WARNING] episode={st.episode_id} step_id={st.step_id} JSON parse failed, using raw: {json_only[:100]}")
+                    print(
+                        f"[anno][WARNING] episode={st.episode_id} step_id={st.step_id} JSON parse failed, using raw: {json_only[:100]}"
+                    )
                     thinking_clean = json_only
             else:
-                print(f"[anno][WARNING] episode={st.episode_id} step_id={st.step_id} No JSON found in response, first 200 chars: {thinking_clean[:200]}")
+                print(
+                    f"[anno][WARNING] episode={st.episode_id} step_id={st.step_id} No JSON found in response, first 200 chars: {thinking_clean[:200]}"
+                )
                 # Fallback: use raw response
                 thinking_clean = thinking_raw
-        
+
         # Extract GPT's Summary.History and append to accumulated_history_items
         # Use parsed_thinking (from successful parse) instead of re-parsing thinking_clean
         if parsed_thinking and isinstance(parsed_thinking, dict) and "Summary" in parsed_thinking:
@@ -803,17 +843,24 @@ def annotate_episode(
                     step_num = len(accumulated_history_items) + 1
                     accumulated_history_items.append(f"{step_num}) {gpt_history.strip()}")
                 else:
-                    print(f"[DEBUG] episode={st.episode_id} step_id={st.step_id} GPT returned empty History, skipping append")
-                
+                    print(
+                        f"[DEBUG] episode={st.episode_id} step_id={st.step_id} GPT returned empty History, skipping append"
+                    )
+
                 # Overwrite GPT's Summary.History with accumulated history for training data
                 s["History"] = "\n".join(accumulated_history_items)
                 # Re-serialize thinking_clean with updated History
-                thinking_clean = json.dumps(canonicalize_thinking_dict(parsed_thinking, include_last_action=True), ensure_ascii=False)
+                thinking_clean = json.dumps(
+                    canonicalize_thinking_dict(parsed_thinking, include_last_action=True),
+                    ensure_ascii=False,
+                )
         else:
-            print(f"[DEBUG] episode={st.episode_id} step_id={st.step_id} Failed to parse thinking, cannot extract History")
-        
+            print(
+                f"[DEBUG] episode={st.episode_id} step_id={st.step_id} Failed to parse thinking, cannot extract History"
+            )
+
         set_gpt_thinking(st.sample, thinking_clean)
-        
+
         # Action = next step's action (or none if last step)
         current_action_text = ""
         if idx + 1 < len(steps):
@@ -826,9 +873,9 @@ def annotate_episode(
             finish_action_text = format_action_dict({"finish": {}})
             set_gpt_action(st.sample, finish_action_text)
             action_history.append(finish_action_text)
-            
+
         thinking_history.append(thinking_clean)
-        
+
         all_samples.append(st.sample)
 
     return all_samples
@@ -859,12 +906,16 @@ def main():
         description="Annotate embodied manipulation trajectories with Chain-of-Thought reasoning."
     )
     parser.add_argument(
-        "--config", type=str, required=True,
-        help="Path to the jobs configuration JSON file (see config_example.json)."
+        "--config",
+        type=str,
+        required=True,
+        help="Path to the jobs configuration JSON file (see config_example.json).",
     )
     parser.add_argument(
-        "--limit", type=str, default="all",
-        help="Max number of episodes to annotate per job. 'all' for no limit, or an integer (default: all)."
+        "--limit",
+        type=str,
+        default="all",
+        help="Max number of episodes to annotate per job. 'all' for no limit, or an integer (default: all).",
     )
     args = parser.parse_args()
 
@@ -988,7 +1039,7 @@ def main():
         system_prompt = find_system_prompt(base_rec)
 
         print(f"[{scene_id}] processing {len(episodes)} episodes")
-        
+
         futures = []
         with ThreadPoolExecutor(max_workers=EPISODE_WORKERS) as executor:
             for episode_id, pkl_path, meta in episodes:
@@ -1029,7 +1080,7 @@ def main():
         all_annotated: List[Dict[str, Any]] = []
         for _, episode_id, annotated in results_sorted:
             all_annotated.extend(annotated)
-        
+
         # Save final output
         output_json = output_dir / "annotated_output.json"
         save_json(str(output_json), all_annotated)
@@ -1038,4 +1089,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

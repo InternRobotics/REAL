@@ -146,10 +146,14 @@ def _vis_2d_to_uint8(x: np.ndarray) -> Optional[np.ndarray]:
     return y
 
 
-def _save_png(path: Path, arr_uint8: np.ndarray, *, resize_wh: Optional[Tuple[int, int]] = None) -> None:
+def _save_png(
+    path: Path, arr_uint8: np.ndarray, *, resize_wh: Optional[Tuple[int, int]] = None
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     if Image is None:
-        raise RuntimeError("PIL is required to save png, but Pillow is not available in this environment.")
+        raise RuntimeError(
+            "PIL is required to save png, but Pillow is not available in this environment."
+        )
     img = Image.fromarray(arr_uint8)
     if resize_wh is not None:
         # PIL uses (width, height)
@@ -330,7 +334,9 @@ def interleave_traj_to_steps(
             continue
         if isinstance(item, np.ndarray):
             # could be overlay image or some other array dumped into traj
-            if item.size >= cfg.min_image_pixels and (item.ndim == 2 or (item.ndim == 3 and item.shape[2] in (3, 4))):
+            if item.size >= cfg.min_image_pixels and (
+                item.ndim == 2 or (item.ndim == 3 and item.shape[2] in (3, 4))
+            ):
                 pending_overlays.append(item)
             else:
                 pending_texts.append(f"[ndarray skipped shape={item.shape} dtype={item.dtype}]")
@@ -523,7 +529,12 @@ def _make_template_record(
         "conversations": [
             {"from": "system", "value": system_prompt},
             {"from": "human", "value": human_prompt},
-            {"from": "gpt", "value": gpt_value, "think_or_action": int(think_or_action), "end_turn": bool(end_turn)},
+            {
+                "from": "gpt",
+                "value": gpt_value,
+                "think_or_action": int(think_or_action),
+                "end_turn": bool(end_turn),
+            },
         ],
     }
 
@@ -598,7 +609,9 @@ def export_traj_to_template_records(
         # map step_id -> raw index window
         if step_id < len(raw_event_idx):
             start_raw = raw_event_idx[step_id]
-            end_raw = raw_event_idx[step_id + 1] if (step_id + 1) < len(raw_event_idx) else len(traj_obj)
+            end_raw = (
+                raw_event_idx[step_id + 1] if (step_id + 1) < len(raw_event_idx) else len(traj_obj)
+            )
             rgb = find_first_rgb_between(start_raw, end_raw)
             if rgb is not None and cfg.save_images:
                 img_path = img_dir / f"{episode_id}_step_{step_id}.png"
@@ -642,9 +655,11 @@ def export_scene_to_template_json(
     pkls = sorted(scene_dir.glob("layout*_traj.pkl"))
     if only_layout_ids is not None:
         allow = set(int(x) for x in only_layout_ids)
+
         def _lid(p: Path) -> Optional[int]:
             m = re.search(r"layout(\d+)_traj\.pkl$", p.name)
             return int(m.group(1)) if m else None
+
         pkls = [p for p in pkls if (_lid(p) in allow)]
 
     all_records: List[Dict[str, Any]] = []
@@ -666,5 +681,3 @@ def export_scene_to_template_json(
     out_json.parent.mkdir(parents=True, exist_ok=True)
     out_json.write_text(json.dumps(all_records, ensure_ascii=False, indent=2), encoding="utf-8")
     return out_json
-
-
