@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://huggingface.co/datasets/InternRobotics/REAL-Data"><img src="https://img.shields.io/badge/Dataset-REAL--Data-ffd21e?style=flat-square&logo=huggingface&logoColor=black" alt="REAL-Data on Hugging Face" /></a>
   <a href="#dataset--checkpoint"><img src="https://img.shields.io/badge/Checkpoint-Coming%20Soon-f59e0b?style=flat-square" alt="Checkpoint coming soon" /></a>
-  <a href="#paper"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-3b82f6?style=flat-square" alt="Paper" /></a>
+  <a href="https://arxiv.org/abs/2607.13653"><img src="https://img.shields.io/badge/Paper-arXiv%3A2607.13653-B31B1B?style=flat-square&logo=arxiv&logoColor=white" alt="Paper on arXiv" /></a>
   <a href="https://internrobotics.github.io/REAL/"><img src="https://img.shields.io/badge/Project%20Page-Website-10b981?style=flat-square" alt="Project Page" /></a>
   <a href="https://github.com/InternRobotics/REAL"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="Code" /></a>
   <img src="https://img.shields.io/badge/License-MIT-6366f1?style=flat-square" alt="MIT License" />
