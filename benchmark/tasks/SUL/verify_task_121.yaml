@@ -1,0 +1,302 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _04171af27fa541dead4476307a5559df_on_desk_2_at_verify_task_121:
+    original_id: _04171af27fa541dead4476307a5559df
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/04171af27fa541dead4476307a5559df.usd
+    usd_scale:
+    - 0.03921895649957925
+    - 0.039045999868788206
+    - 0.038986038461342985
+    position:
+    - 4.3101470010402085
+    - 2.3695372584544665
+    - 0.809150363067165
+    size:
+    - 0.0882720947265625
+    - 0.09105449728667736
+    - 0.08741558762267232
+    detailed_caption: A shiny red apple with a smooth surface, subtle gradient, green leaf, and short
+      stem.
+  b2e5732dd9584e57ab9857d3a8b0350c_on_desk_2_at_verify_task_121:
+    original_id: b2e5732dd9584e57ab9857d3a8b0350c
+    category: lemon
+    usd_path: ${MESATASK_USD_ROOT}/b2e5732dd9584e57ab9857d3a8b0350c.usd
+    usd_scale:
+    - 250.93172357933176
+    - 212.53010922430465
+    - 185.8010685043528
+    position:
+    - 4.436568005390502
+    - 1.2843768343263613
+    - 0.8029430535202846
+    size:
+    - 0.10079193115234375
+    - 0.12212225422263145
+    - 0.07500096852891147
+    detailed_caption: Bright yellow, smooth textured, slightly oval, featuring a small protrusion at one
+      end.
+  _4cfb8a1570404234b8044ed9eeff71ed_on_desk_2_at_verify_task_121:
+    original_id: _4cfb8a1570404234b8044ed9eeff71ed
+    category: banana
+    usd_path: ${MESATASK_USD_ROOT}/4cfb8a1570404234b8044ed9eeff71ed.usd
+    usd_scale:
+    - 73.57590453403364
+    - 86.2302414137028
+    - 68.62916948294375
+    position:
+    - 4.5724053671669616
+    - 1.896744136388865
+    - 0.779586256579496
+    size:
+    - 0.13991832733154297
+    - 0.0891571044921875
+    - 0.028287374647334218
+    detailed_caption: Ripe banana, slightly curved, yellow peel with brown spots, smooth texture, sweet
+      aroma.
+episodes:
+- task_id: verify_task_121
+  episode_idx: 76
+  original_idx: 121
+  benchmark_instruction: Pick up a fruit from white desk in front of the blank wall and place it on the
+    rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the a shiny red apple with a smooth surface, subtle gradient, green leaf, and
+    short stem from white desk in front of the blank wall to the rectangular table.
+  fuzzy_task_description: Pick up a fruit from white desk in front of the blank wall and place it on the
+    rectangular table.
+  purpose: fruit
+  purpose_group: fruits
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _04171af27fa541dead4476307a5559df
+      - b2e5732dd9584e57ab9857d3a8b0350c
+      - _4cfb8a1570404234b8044ed9eeff71ed
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _04171af27fa541dead4476307a5559df
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - b2e5732dd9584e57ab9857d3a8b0350c
+      - _4cfb8a1570404234b8044ed9eeff71ed
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _04171af27fa541dead4476307a5559df:
+      category: apple
+      detailed_caption: A shiny red apple with a smooth surface, subtle gradient, green leaf, and short
+        stem.
+      usd_path: 04171af27fa541dead4476307a5559df.usd
+      size:
+      - 0.0882720947265625
+      - 0.09105449728667736
+      - 0.08741558762267232
+  obj_distractors:
+  - b2e5732dd9584e57ab9857d3a8b0350c
+  - _4cfb8a1570404234b8044ed9eeff71ed
+  obj_distractor_meta:
+    b2e5732dd9584e57ab9857d3a8b0350c:
+      category: lemon
+      detailed_caption: Bright yellow, smooth textured, slightly oval, featuring a small protrusion at
+        one end.
+      usd_path: b2e5732dd9584e57ab9857d3a8b0350c.usd
+      size:
+      - 0.10079193115234375
+      - 0.12212225422263145
+      - 0.07500096852891147
+    _4cfb8a1570404234b8044ed9eeff71ed:
+      category: banana
+      detailed_caption: Ripe banana, slightly curved, yellow peel with brown spots, smooth texture, sweet
+        aroma.
+      usd_path: 4cfb8a1570404234b8044ed9eeff71ed.usd
+      size:
+      - 0.13991832733154297
+      - 0.0891571044921875
+      - 0.028287374647334218
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: apple
+      target_description: A shiny red apple with a smooth surface, subtle gradient, green leaf, and short
+        stem.
+  - action: gaze_at
+    args:
+      target_category: apple
+      target_description: A shiny red apple with a smooth surface, subtle gradient, green leaf, and short
+        stem.
+  - action: pick
+    args:
+      target_category: apple
+      target_description: A shiny red apple with a smooth surface, subtle gradient, green leaf, and short
+        stem.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Bring the a shiny red apple with a smooth surface, subtle gradient, green
+    leaf, and short stem from white desk in front of the blank wall to the rectangular table.
+  placements:
+    _04171af27fa541dead4476307a5559df_on_desk_2_at_verify_task_121:
+      position:
+      - 4.3101470010402085
+      - 2.3695372584544665
+      - 0.809150363067165
+      furniture: desk_2
+      original_id: _04171af27fa541dead4476307a5559df
+    b2e5732dd9584e57ab9857d3a8b0350c_on_desk_2_at_verify_task_121:
+      position:
+      - 4.436568005390502
+      - 1.2843768343263613
+      - 0.8029430535202846
+      furniture: desk_2
+      original_id: b2e5732dd9584e57ab9857d3a8b0350c
+    _4cfb8a1570404234b8044ed9eeff71ed_on_desk_2_at_verify_task_121:
+      position:
+      - 4.5724053671669616
+      - 1.896744136388865
+      - 0.779586256579496
+      furniture: desk_2
+      original_id: _4cfb8a1570404234b8044ed9eeff71ed
+  final_positions:
+    _04171af27fa541dead4476307a5559df_on_desk_2_at_verify_task_121:
+      initial_pos:
+      - 4.3101470010402085
+      - 2.3695372584544665
+      - 0.909150363067165
+      final_pos:
+      - 4.262771129608154
+      - 2.3849923610687256
+      - 0.7572881579399109
+      category: apple
+      original_id: _04171af27fa541dead4476307a5559df
+    b2e5732dd9584e57ab9857d3a8b0350c_on_desk_2_at_verify_task_121:
+      initial_pos:
+      - 4.436568005390502
+      - 1.2843768343263613
+      - 0.9029430535202846
+      final_pos:
+      - 4.443917274475098
+      - 1.2796849012374878
+      - 0.753714919090271
+      category: lemon
+      original_id: b2e5732dd9584e57ab9857d3a8b0350c
+    _4cfb8a1570404234b8044ed9eeff71ed_on_desk_2_at_verify_task_121:
+      initial_pos:
+      - 4.5724053671669616
+      - 1.896744136388865
+      - 0.879586256579496
+      final_pos:
+      - 4.572395324707031
+      - 1.90130615234375
+      - 0.7261207103729248
+      category: banana
+      original_id: _4cfb8a1570404234b8044ed9eeff71ed
+  family: SUL
+  benchmark_task_id: SUL/verify_task_121
+  global_index: 238
+  target_object_id: _04171af27fa541dead4476307a5559df

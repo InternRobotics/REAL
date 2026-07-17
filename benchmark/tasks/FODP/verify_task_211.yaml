@@ -1,0 +1,337 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_211:
+    original_id: _19f846a920864afb86a015fb79d1424c
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/19f846a920864afb86a015fb79d1424c.usd
+    usd_scale:
+    - 0.13438533143066458
+    - 0.13629921104269854
+    - 0.13385686147421313
+    position:
+    - -2.1415707571702374
+    - -1.1166255840764487
+    - 0.7772341181294178
+    size:
+    - 0.13190841674804688
+    - 0.14513397216796875
+    - 0.026468439391464926
+    detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+      outfit, distinct facial features.
+  _19f846a920864afb86a015fb79d1424c_on_table_2_at_verify_task_211:
+    original_id: _19f846a920864afb86a015fb79d1424c
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/19f846a920864afb86a015fb79d1424c.usd
+    usd_scale:
+    - 0.13438533143066458
+    - 0.13629921104269854
+    - 0.13385686147421313
+    position:
+    - -1.912166502103549
+    - 2.479764445135494
+    - 0.3032222200886463
+    size:
+    - 0.13190841674804688
+    - 0.14513397216796875
+    - 0.026468439391464926
+    detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+      outfit, distinct facial features.
+  _09533e32ffec46ebb63b0910a7206a75_on_table_2_at_verify_task_211:
+    original_id: _09533e32ffec46ebb63b0910a7206a75
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/09533e32ffec46ebb63b0910a7206a75.usd
+    usd_scale:
+    - 0.21515694956848613
+    - 0.22561604634868976
+    - 0.21809257774900206
+    position:
+    - -2.2686944157634636
+    - 3.196391151850929
+    - 0.3448184083495289
+    size:
+    - 0.14359580539166927
+    - 0.2441387176513672
+    - 0.10966081591323018
+    detailed_caption: Small white dog figurine, seated, smooth surface, slight texturing, realistic proportions,
+      upright posture.
+  _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_211:
+    original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/05aaa6414f4e4b6eb5432dbcf20290f6.usd
+    usd_scale:
+    - 1.2429552628370415
+    - 1.2276162272094766
+    - 1.2361208837344122
+    position:
+    - -1.9648858267937448
+    - 3.250437796097751
+    - 0.3221977397729643
+    size:
+    - 0.06312370300292969
+    - 0.2378683090209961
+    - 0.0644194787601009
+    detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+episodes:
+- benchmark_task_id: FODP/verify_task_211
+  family: FODP
+  task_id: verify_task_211
+  episode_idx: 46
+  original_idx: 211
+  benchmark_instruction: Transport the stylized white figurine, simplistic design, tuft of hair, arms
+    outstretched, buttoned outfit, distinct facial features at the table to place my snack for watching
+    TV to white desk with round black knob.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the stylized white figurine, simplistic design, tuft of hair, arms outstretched,
+    buttoned outfit, distinct facial features at the table to place my snack for watching TV to white
+    desk with round black knob.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _19f846a920864afb86a015fb79d1424c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _19f846a920864afb86a015fb79d1424c
+      - _09533e32ffec46ebb63b0910a7206a75
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _19f846a920864afb86a015fb79d1424c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _09533e32ffec46ebb63b0910a7206a75
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _19f846a920864afb86a015fb79d1424c
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _19f846a920864afb86a015fb79d1424c:
+      category: figurine
+      detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+        outfit, distinct facial features.
+      usd_path: 19f846a920864afb86a015fb79d1424c.usd
+      size:
+      - 0.13190841674804688
+      - 0.14513397216796875
+      - 0.026468439391464926
+  obj_distractors:
+  - _09533e32ffec46ebb63b0910a7206a75
+  - _05aaa6414f4e4b6eb5432dbcf20290f6
+  obj_distractor_meta:
+    _09533e32ffec46ebb63b0910a7206a75:
+      category: figurine
+      detailed_caption: Small white dog figurine, seated, smooth surface, slight texturing, realistic
+        proportions, upright posture.
+      usd_path: 09533e32ffec46ebb63b0910a7206a75.usd
+      size:
+      - 0.14359580539166927
+      - 0.2441387176513672
+      - 0.10966081591323018
+    _05aaa6414f4e4b6eb5432dbcf20290f6:
+      category: figurine
+      detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+      usd_path: 05aaa6414f4e4b6eb5432dbcf20290f6.usd
+      size:
+      - 0.06312370300292969
+      - 0.2378683090209961
+      - 0.0644194787601009
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Stylized white figurine, simplistic design, tuft of hair, arms outstretched,
+        buttoned outfit, distinct facial features.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Stylized white figurine, simplistic design, tuft of hair, arms outstretched,
+        buttoned outfit, distinct facial features.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Stylized white figurine, simplistic design, tuft of hair, arms outstretched,
+        buttoned outfit, distinct facial features.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_211:
+      position:
+      - -2.1415707571702374
+      - -1.1166255840764487
+      - 0.7772341181294178
+      furniture: table_1
+      original_id: _19f846a920864afb86a015fb79d1424c
+    _19f846a920864afb86a015fb79d1424c_on_table_2_at_verify_task_211:
+      position:
+      - -1.912166502103549
+      - 2.479764445135494
+      - 0.3032222200886463
+      furniture: table_2
+      original_id: _19f846a920864afb86a015fb79d1424c
+    _09533e32ffec46ebb63b0910a7206a75_on_table_2_at_verify_task_211:
+      position:
+      - -2.2686944157634636
+      - 3.196391151850929
+      - 0.3448184083495289
+      furniture: table_2
+      original_id: _09533e32ffec46ebb63b0910a7206a75
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_211:
+      position:
+      - -1.9648858267937448
+      - 3.250437796097751
+      - 0.3221977397729643
+      furniture: table_2
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+  final_positions:
+    _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_211:
+      initial_pos:
+      - -2.1415707571702374
+      - -1.1166255840764487
+      - 0.8772341181294178
+      final_pos:
+      - -2.140669345855713
+      - -1.1188747882843018
+      - 0.7551817893981934
+      category: figurine
+      original_id: _19f846a920864afb86a015fb79d1424c
+    _19f846a920864afb86a015fb79d1424c_on_table_2_at_verify_task_211:
+      initial_pos:
+      - -1.912166502103549
+      - 2.479764445135494
+      - 0.4032222200886463
+      final_pos:
+      - -1.9112869501113892
+      - 2.477142095565796
+      - 0.2811698317527771
+      category: figurine
+      original_id: _19f846a920864afb86a015fb79d1424c
+    _09533e32ffec46ebb63b0910a7206a75_on_table_2_at_verify_task_211:
+      initial_pos:
+      - -2.2686944157634636
+      - 3.196391151850929
+      - 0.4448184083495289
+      final_pos:
+      - -2.200448751449585
+      - 3.204860210418701
+      - 0.32212451100349426
+      category: figurine
+      original_id: _09533e32ffec46ebb63b0910a7206a75
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_211:
+      initial_pos:
+      - -1.9648858267937448
+      - 3.250437796097751
+      - 0.42219773977296426
+      final_pos:
+      - -1.953218698501587
+      - 3.2421581745147705
+      - 0.2914220094680786
+      category: figurine
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+  global_index: 118
+  target_object_id: _19f846a920864afb86a015fb79d1424c

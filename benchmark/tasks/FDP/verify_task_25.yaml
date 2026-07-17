@@ -1,0 +1,264 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_1_at_verify_task_25:
+    original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/5f528103-90e2-4a1b-9693-7b3805f796db.usd
+    usd_scale:
+    - 12.415322090227361
+    - 12.565136342225646
+    - 12.606095137356798
+    position:
+    - -2.0174603375377282
+    - -1.3086241996993464
+    - 0.8162541435845196
+    size:
+    - 0.254540029913187
+    - 0.20325279235839844
+    - 0.10450849030166864
+    detailed_caption: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+      and small legs.
+  _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_2_at_verify_task_25:
+    original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/5f528103-90e2-4a1b-9693-7b3805f796db.usd
+    usd_scale:
+    - 12.415322090227361
+    - 12.565136342225646
+    - 12.606095137356798
+    position:
+    - -2.3828375049527346
+    - 2.575129417911267
+    - 0.34224224554374816
+    size:
+    - 0.254540029913187
+    - 0.20325279235839844
+    - 0.10450849030166864
+    detailed_caption: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+      and small legs.
+episodes:
+- task_id: verify_task_25
+  episode_idx: 17
+  original_idx: 25
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the vintage alarm clock with a rounded metallic body, worn brass finish, white
+    face, and small legs located at the rectangular table to white cabinet with yellow shelf back.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _5f528103_90e2_4a1b_9693_7b3805f796db
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _5f528103_90e2_4a1b_9693_7b3805f796db
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _5f528103_90e2_4a1b_9693_7b3805f796db
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _5f528103_90e2_4a1b_9693_7b3805f796db:
+      category: clock
+      detailed_caption: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+      usd_path: 5f528103-90e2-4a1b-9693-7b3805f796db.usd
+      size:
+      - 0.254540029913187
+      - 0.20325279235839844
+      - 0.10450849030166864
+  obj_distractors:
+  - _99ca0cd55e234273a589ebaceb5f0c93
+  - _73c023c90f8d45fb88294bccade836c0
+  obj_distractor_meta:
+    _99ca0cd55e234273a589ebaceb5f0c93:
+      category: watch
+      detailed_caption: Sleek silver wristwatch with a round face, black dial, and metallic link band.
+      usd_path: 99ca0cd55e234273a589ebaceb5f0c93.usd
+      size:
+      - 0.11234092712402344
+      - 0.09805679321289062
+      - 0.07319521345198154
+    _73c023c90f8d45fb88294bccade836c0:
+      category: clock
+      detailed_caption: Round metal body, clear glass face, two bells, black finish, short legs.
+      usd_path: 73c023c90f8d45fb88294bccade836c0.usd
+      size:
+      - 0.10976600646972656
+      - 0.1682281494140625
+      - 0.05667768185958266
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  placements:
+    _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_1_at_verify_task_25:
+      position:
+      - -2.0174603375377282
+      - -1.3086241996993464
+      - 0.8162541435845196
+      furniture: table_1
+      original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+    _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_2_at_verify_task_25:
+      position:
+      - -2.3828375049527346
+      - 2.575129417911267
+      - 0.34224224554374816
+      furniture: table_2
+      original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+  final_positions:
+    _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_1_at_verify_task_25:
+      initial_pos:
+      - -2.0174603375377282
+      - -1.3086241996993464
+      - 0.9162541435845196
+      final_pos:
+      - -1.8841066360473633
+      - -1.2824904918670654
+      - 0.7834499478340149
+      category: clock
+      original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+    _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_2_at_verify_task_25:
+      initial_pos:
+      - -2.3828375049527346
+      - 2.575129417911267
+      - 0.44224224554374814
+      final_pos:
+      - -2.2506303787231445
+      - 2.576042413711548
+      - 0.30943790078163147
+      category: clock
+      original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+  family: FDP
+  benchmark_task_id: FDP/verify_task_25
+  benchmark_instruction: Move the vintage alarm clock with a rounded metallic body, worn brass finish,
+    white face, and small legs located at the rectangular table to white cabinet with yellow shelf back.
+  global_index: 17
+  target_object_id: _5f528103_90e2_4a1b_9693_7b3805f796db

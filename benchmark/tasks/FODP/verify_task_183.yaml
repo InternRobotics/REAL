@@ -1,0 +1,341 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _27fa02a655504a7e8160a0b167105daf_on_table_1_at_verify_task_183:
+    original_id: _27fa02a655504a7e8160a0b167105daf
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/27fa02a655504a7e8160a0b167105daf.usd
+    usd_scale:
+    - 0.17621559689558874
+    - 0.1734709955471212
+    - 0.17391506720940508
+    position:
+    - -1.723411746737247
+    - -1.2442559583473112
+    - 0.8060816259635613
+    size:
+    - 0.10573959350585938
+    - 0.23981094360351562
+    - 0.08416345505975187
+    detailed_caption: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  _27fa02a655504a7e8160a0b167105daf_on_table_2_at_verify_task_183:
+    original_id: _27fa02a655504a7e8160a0b167105daf
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/27fa02a655504a7e8160a0b167105daf.usd
+    usd_scale:
+    - 0.17621559689558874
+    - 0.1734709955471212
+    - 0.17391506720940508
+    position:
+    - -2.6107099464691266
+    - 2.959288202894421
+    - 0.33206972792278977
+    size:
+    - 0.10573959350585938
+    - 0.23981094360351562
+    - 0.08416345505975187
+    detailed_caption: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_183:
+    original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/05aaa6414f4e4b6eb5432dbcf20290f6.usd
+    usd_scale:
+    - 1.2429552628370415
+    - 1.2276162272094766
+    - 1.2361208837344122
+    position:
+    - -2.369296238376294
+    - 2.8993076846997905
+    - 0.3221977397729643
+    size:
+    - 0.06312370300292969
+    - 0.2378683090209961
+    - 0.0644194787601009
+    detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+  _041704c459774b618b457a32f97a63f6_on_table_2_at_verify_task_183:
+    original_id: _041704c459774b618b457a32f97a63f6
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/041704c459774b618b457a32f97a63f6.usd
+    usd_scale:
+    - 4.873070551515098
+    - 4.893201166669616
+    - 4.932981598613504
+    position:
+    - -1.9398326866765454
+    - 3.216247510814445
+    - 0.3486462235446379
+    size:
+    - 0.10040283203125
+    - 0.09164237976074219
+    - 0.11731644630344817
+    detailed_caption: Stylized dog-like creature with blue mane, bird-like beak, solid base, glossy finish,
+      intricate textures.
+episodes:
+- benchmark_task_id: FODP/verify_task_183
+  family: FODP
+  task_id: verify_task_183
+  episode_idx: 33
+  original_idx: 183
+  benchmark_instruction: Bring the delicate figurine of a woman in a floral dress, green jacket, with
+    vibrant colors from the rounded rectangular table to square nightstand with circular rattan center.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the delicate figurine of a woman in a floral dress, green jacket, with vibrant
+    colors from the rounded rectangular table to square nightstand with circular rattan center.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _27fa02a655504a7e8160a0b167105daf
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _27fa02a655504a7e8160a0b167105daf
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+      - _041704c459774b618b457a32f97a63f6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _27fa02a655504a7e8160a0b167105daf
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+      - _041704c459774b618b457a32f97a63f6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _27fa02a655504a7e8160a0b167105daf
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _27fa02a655504a7e8160a0b167105daf:
+      category: figurine
+      detailed_caption: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+      usd_path: 27fa02a655504a7e8160a0b167105daf.usd
+      size:
+      - 0.10573959350585938
+      - 0.23981094360351562
+      - 0.08416345505975187
+  obj_distractors:
+  - _05aaa6414f4e4b6eb5432dbcf20290f6
+  - _041704c459774b618b457a32f97a63f6
+  obj_distractor_meta:
+    _05aaa6414f4e4b6eb5432dbcf20290f6:
+      category: figurine
+      detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+      usd_path: 05aaa6414f4e4b6eb5432dbcf20290f6.usd
+      size:
+      - 0.06312370300292969
+      - 0.2378683090209961
+      - 0.0644194787601009
+    _041704c459774b618b457a32f97a63f6:
+      category: figurine
+      detailed_caption: Stylized dog-like creature with blue mane, bird-like beak, solid base, glossy
+        finish, intricate textures.
+      usd_path: 041704c459774b618b457a32f97a63f6.usd
+      size:
+      - 0.10040283203125
+      - 0.09164237976074219
+      - 0.11731644630344817
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  placements:
+    _27fa02a655504a7e8160a0b167105daf_on_table_1_at_verify_task_183:
+      position:
+      - -1.723411746737247
+      - -1.2442559583473112
+      - 0.8060816259635613
+      furniture: table_1
+      original_id: _27fa02a655504a7e8160a0b167105daf
+    _27fa02a655504a7e8160a0b167105daf_on_table_2_at_verify_task_183:
+      position:
+      - -2.6107099464691266
+      - 2.959288202894421
+      - 0.33206972792278977
+      furniture: table_2
+      original_id: _27fa02a655504a7e8160a0b167105daf
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_183:
+      position:
+      - -2.369296238376294
+      - 2.8993076846997905
+      - 0.3221977397729643
+      furniture: table_2
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    _041704c459774b618b457a32f97a63f6_on_table_2_at_verify_task_183:
+      position:
+      - -1.9398326866765454
+      - 3.216247510814445
+      - 0.3486462235446379
+      furniture: table_2
+      original_id: _041704c459774b618b457a32f97a63f6
+  final_positions:
+    _27fa02a655504a7e8160a0b167105daf_on_table_1_at_verify_task_183:
+      initial_pos:
+      - -1.723411746737247
+      - -1.2442559583473112
+      - 0.9060816259635612
+      final_pos:
+      - -1.753052830696106
+      - -1.243626594543457
+      - 0.7793263792991638
+      category: figurine
+      original_id: _27fa02a655504a7e8160a0b167105daf
+    _27fa02a655504a7e8160a0b167105daf_on_table_2_at_verify_task_183:
+      initial_pos:
+      - -2.6107099464691266
+      - 2.959288202894421
+      - 0.43206972792278975
+      final_pos:
+      - -2.6394076347351074
+      - 2.9596004486083984
+      - 0.3053145706653595
+      category: figurine
+      original_id: _27fa02a655504a7e8160a0b167105daf
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_183:
+      initial_pos:
+      - -2.369296238376294
+      - 2.8993076846997905
+      - 0.42219773977296426
+      final_pos:
+      - -2.3620381355285645
+      - 2.8969998359680176
+      - 0.291422039270401
+      category: figurine
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    _041704c459774b618b457a32f97a63f6_on_table_2_at_verify_task_183:
+      initial_pos:
+      - -1.9398326866765454
+      - 3.216247510814445
+      - 0.4486462235446379
+      final_pos:
+      - -1.929137110710144
+      - 3.197035312652588
+      - 0.3229059875011444
+      category: figurine
+      original_id: _041704c459774b618b457a32f97a63f6
+  global_index: 105
+  target_object_id: _27fa02a655504a7e8160a0b167105daf

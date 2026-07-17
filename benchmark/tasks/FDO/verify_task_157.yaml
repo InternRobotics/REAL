@@ -1,0 +1,212 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _87126aab996b4aef83aeaeae238a02e6_on_pot_0_at_verify_task_157:
+    original_id: _87126aab996b4aef83aeaeae238a02e6
+    category: lettuce
+    usd_path: ${MESATASK_USD_ROOT}/87126aab996b4aef83aeaeae238a02e6.usd
+    usd_scale:
+    - 1.3213672885621395
+    - 1.3328703992815218
+    - 1.2546616390141674
+    position:
+    - -5.196499349765112
+    - -5.63292254069458
+    - 1.0380602110049222
+    size:
+    - 0.1332082748413086
+    - 0.1251659393310547
+    - 0.12049365771235898
+episodes:
+- benchmark_task_id: FDO/verify_task_157
+  family: FDO
+  task_id: verify_task_157
+  episode_idx: 37
+  original_idx: 157
+  benchmark_instruction: Move a lettuce located at the pot on the stove to the only electriccooker in
+    the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Move a lettuce located at the pot on the stove to the only electriccooker in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+      door: false
+  src: pot_0
+  src_distractors: []
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _87126aab996b4aef83aeaeae238a02e6:
+      category: lettuce
+      usd_path: 87126aab996b4aef83aeaeae238a02e6.usd
+      size:
+      - 0.1332082748413086
+      - 0.1251659393310547
+      - 0.12049365771235898
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: pot_0
+  - action: find
+    args:
+      target_category: lettuce
+  - action: gaze_at
+    args:
+      target_category: lettuce
+  - action: pick
+    args:
+      target_category: lettuce
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _87126aab996b4aef83aeaeae238a02e6_on_pot_0_at_verify_task_157:
+      position:
+      - -5.196499349765112
+      - -5.63292254069458
+      - 1.0380602110049222
+      furniture: pot_0
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+  final_positions:
+    _87126aab996b4aef83aeaeae238a02e6_on_pot_0_at_verify_task_157:
+      initial_pos:
+      - -5.196499349765112
+      - -5.63292254069458
+      - 1.1380602110049223
+      final_pos:
+      - -5.202441692352295
+      - -5.616667747497559
+      - 0.9402841329574585
+      category: lettuce
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+  global_index: 165
+  target_object_id: _87126aab996b4aef83aeaeae238a02e6

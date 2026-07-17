@@ -1,0 +1,364 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  c65e566bf1004f5385770a4f28eec736_on_cabinet_6_at_verify_task_117:
+    original_id: c65e566bf1004f5385770a4f28eec736
+    category: pepper
+    usd_path: ${MESATASK_USD_ROOT}/c65e566bf1004f5385770a4f28eec736.usd
+    usd_scale:
+    - 9.049234773886601
+    - 9.060817549699218
+    - 8.943785814545391
+    position:
+    - 2.6001098585588003
+    - -1.0358435971879048
+    - 0.7836020886711776
+    size:
+    - 0.09051513671875
+    - 0.13232421875
+    - 0.09120418783277273
+  c65e566bf1004f5385770a4f28eec736_on_cabinet_7_at_verify_task_117:
+    original_id: c65e566bf1004f5385770a4f28eec736
+    category: pepper
+    usd_path: ${MESATASK_USD_ROOT}/c65e566bf1004f5385770a4f28eec736.usd
+    usd_scale:
+    - 9.049234773886601
+    - 9.060817549699218
+    - 8.943785814545391
+    position:
+    - 1.2966730477687616
+    - 1.6798788125086672
+    - 0.9021520912460983
+    size:
+    - 0.09051513671875
+    - 0.13232421875
+    - 0.09120418783277273
+  c65e566bf1004f5385770a4f28eec736_on_cabinet_8_at_verify_task_117:
+    original_id: c65e566bf1004f5385770a4f28eec736
+    category: pepper
+    usd_path: ${MESATASK_USD_ROOT}/c65e566bf1004f5385770a4f28eec736.usd
+    usd_scale:
+    - 9.049234773886601
+    - 9.060817549699218
+    - 8.943785814545391
+    position:
+    - 4.461531071381014
+    - 2.9490607858961693
+    - 0.5161020755581558
+    size:
+    - 0.09051513671875
+    - 0.13232421875
+    - 0.09120418783277273
+  c65e566bf1004f5385770a4f28eec736_on_cabinet_9_at_verify_task_117:
+    original_id: c65e566bf1004f5385770a4f28eec736
+    category: pepper
+    usd_path: ${MESATASK_USD_ROOT}/c65e566bf1004f5385770a4f28eec736.usd
+    usd_scale:
+    - 9.049234773886601
+    - 9.060817549699218
+    - 8.943785814545391
+    position:
+    - 6.196605526058688
+    - 1.2207793291454978
+    - 1.0056020915322006
+    size:
+    - 0.09051513671875
+    - 0.13232421875
+    - 0.09120418783277273
+  c65e566bf1004f5385770a4f28eec736_on_cabinet_10_at_verify_task_117:
+    original_id: c65e566bf1004f5385770a4f28eec736
+    category: pepper
+    usd_path: ${MESATASK_USD_ROOT}/c65e566bf1004f5385770a4f28eec736.usd
+    usd_scale:
+    - 9.049234773886601
+    - 9.060817549699218
+    - 8.943785814545391
+    position:
+    - 3.258142597308124
+    - -0.5740153818026779
+    - 0.5386020839028061
+    size:
+    - 0.09051513671875
+    - 0.13232421875
+    - 0.09120418783277273
+episodes:
+- benchmark_task_id: FDO/verify_task_117
+  family: FDO
+  task_id: verify_task_117
+  episode_idx: 28
+  original_idx: 117
+  benchmark_instruction: Head over to whole-black cabinet with flat base, fetch a pepper, and bring it
+    back to the only electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Head over to whole-black cabinet with flat base, fetch a pepper, and bring it back
+    to the only electriccooker in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+      door: false
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    c65e566bf1004f5385770a4f28eec736:
+      category: pepper
+      usd_path: c65e566bf1004f5385770a4f28eec736.usd
+      size:
+      - 0.09051513671875
+      - 0.13232421875
+      - 0.09120418783277273
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: pepper
+  - action: gaze_at
+    args:
+      target_category: pepper
+  - action: pick
+    args:
+      target_category: pepper
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_6_at_verify_task_117:
+      position:
+      - 2.6001098585588003
+      - -1.0358435971879048
+      - 0.7836020886711776
+      furniture: cabinet_6
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_7_at_verify_task_117:
+      position:
+      - 1.2966730477687616
+      - 1.6798788125086672
+      - 0.9021520912460983
+      furniture: cabinet_7
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_8_at_verify_task_117:
+      position:
+      - 4.461531071381014
+      - 2.9490607858961693
+      - 0.5161020755581558
+      furniture: cabinet_8
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_9_at_verify_task_117:
+      position:
+      - 6.196605526058688
+      - 1.2207793291454978
+      - 1.0056020915322006
+      furniture: cabinet_9
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_10_at_verify_task_117:
+      position:
+      - 3.258142597308124
+      - -0.5740153818026779
+      - 0.5386020839028061
+      furniture: cabinet_10
+      original_id: c65e566bf1004f5385770a4f28eec736
+  final_positions:
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_6_at_verify_task_117:
+      initial_pos:
+      - 2.6001098585588003
+      - -1.0358435971879048
+      - 0.8836020886711776
+      final_pos:
+      - 2.578450918197632
+      - -1.0419927835464478
+      - 0.7576402425765991
+      category: pepper
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_7_at_verify_task_117:
+      initial_pos:
+      - 1.2966730477687616
+      - 1.6798788125086672
+      - 1.0021520912460984
+      final_pos:
+      - 1.2757692337036133
+      - 1.6747715473175049
+      - 0.8761898279190063
+      category: pepper
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_8_at_verify_task_117:
+      initial_pos:
+      - 4.461531071381014
+      - 2.9490607858961693
+      - 0.6161020755581558
+      final_pos:
+      - 4.439822196960449
+      - 2.9425225257873535
+      - 0.4901398718357086
+      category: pepper
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_9_at_verify_task_117:
+      initial_pos:
+      - 6.196605526058688
+      - 1.2207793291454978
+      - 1.1056020915322007
+      final_pos:
+      - 6.1744384765625
+      - 1.215425729751587
+      - 0.9796392321586609
+      category: pepper
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_cabinet_10_at_verify_task_117:
+      initial_pos:
+      - 3.258142597308124
+      - -0.5740153818026779
+      - 0.638602083902806
+      final_pos:
+      - 3.237588882446289
+      - -0.5790806412696838
+      - 0.5126400589942932
+      category: pepper
+      original_id: c65e566bf1004f5385770a4f28eec736
+  global_index: 156
+  target_object_id: c65e566bf1004f5385770a4f28eec736

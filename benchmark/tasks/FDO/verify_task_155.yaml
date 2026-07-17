@@ -1,0 +1,213 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0f1a7dd4_a679_4915_bf59_acf061932655_on_pot_0_at_verify_task_155:
+    original_id: _0f1a7dd4_a679_4915_bf59_acf061932655
+    category: bun
+    usd_path: ${MESATASK_USD_ROOT}/0f1a7dd4-a679-4915-bf59-acf061932655.usd
+    usd_scale:
+    - 5.086226734511086
+    - 5.089465073377511
+    - 5.093241542938009
+    position:
+    - -5.202982478429428
+    - -5.622974198696708
+    - 1.0145388969499618
+    size:
+    - 0.09599685668945312
+    - 0.10512924194335938
+    - 0.07345102960243821
+episodes:
+- benchmark_task_id: FDO/verify_task_155
+  family: FDO
+  task_id: verify_task_155
+  episode_idx: 36
+  original_idx: 155
+  benchmark_instruction: Navigate to the pot on the stove, grasp a bun, and carry it to the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Navigate to the pot on the stove, grasp a bun, and carry it to the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content:
+      - _0f1a7dd4_a679_4915_bf59_acf061932655
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _0f1a7dd4_a679_4915_bf59_acf061932655
+      door: false
+  src: pot_0
+  src_distractors: []
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _0f1a7dd4_a679_4915_bf59_acf061932655:
+      category: bun
+      usd_path: 0f1a7dd4-a679-4915-bf59-acf061932655.usd
+      size:
+      - 0.09599685668945312
+      - 0.10512924194335938
+      - 0.07345102960243821
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: pot_0
+  - action: find
+    args:
+      target_category: bun
+  - action: gaze_at
+    args:
+      target_category: bun
+  - action: pick
+    args:
+      target_category: bun
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _0f1a7dd4_a679_4915_bf59_acf061932655_on_pot_0_at_verify_task_155:
+      position:
+      - -5.202982478429428
+      - -5.622974198696708
+      - 1.0145388969499618
+      furniture: pot_0
+      original_id: _0f1a7dd4_a679_4915_bf59_acf061932655
+  final_positions:
+    _0f1a7dd4_a679_4915_bf59_acf061932655_on_pot_0_at_verify_task_155:
+      initial_pos:
+      - -5.202982478429428
+      - -5.622974198696708
+      - 1.1145388969499619
+      final_pos:
+      - -5.193537712097168
+      - -5.615006923675537
+      - 0.9081632494926453
+      category: bun
+      original_id: _0f1a7dd4_a679_4915_bf59_acf061932655
+  global_index: 164
+  target_object_id: _0f1a7dd4_a679_4915_bf59_acf061932655

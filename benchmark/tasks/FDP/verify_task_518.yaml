@@ -1,0 +1,262 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _619563fb2e33466cb1286b5732da59f9_on_bed_1_at_verify_task_518:
+    original_id: _619563fb2e33466cb1286b5732da59f9
+    category: soap
+    usd_path: ${MESATASK_USD_ROOT}/619563fb2e33466cb1286b5732da59f9.usd
+    usd_scale:
+    - 5.447466573244001
+    - 5.281396561319802
+    - 4.754222854419283
+    position:
+    - 3.1079451533760434
+    - 3.6363446923231373
+    - 0.5141785768023692
+    size:
+    - 0.0713653564453125
+    - 0.13751983642578125
+    - 0.04378685064148158
+    detailed_caption: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base, decorative
+      label.
+  _619563fb2e33466cb1286b5732da59f9_on_bed_2_at_verify_task_518:
+    original_id: _619563fb2e33466cb1286b5732da59f9
+    category: soap
+    usd_path: ${MESATASK_USD_ROOT}/619563fb2e33466cb1286b5732da59f9.usd
+    usd_scale:
+    - 5.447466573244001
+    - 5.281396561319802
+    - 4.754222854419283
+    position:
+    - 5.071782472552058
+    - -2.2666318653777235
+    - 0.5440426496020518
+    size:
+    - 0.0713653564453125
+    - 0.13751983642578125
+    - 0.04378685064148158
+    detailed_caption: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base, decorative
+      label.
+episodes:
+- task_id: verify_task_518
+  episode_idx: 70
+  original_idx: 518
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to bed with plain white bedding to find the pink semi-transparent liquid
+    soap bottle with pump, narrow neck, wide base, decorative label, then deliver it to single bowl bathroom
+    sink.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _619563fb2e33466cb1286b5732da59f9
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _619563fb2e33466cb1286b5732da59f9
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content:
+      - _619563fb2e33466cb1286b5732da59f9
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: sink_1
+  dest_distractors:
+  - sink_0
+  obj_meta:
+    _619563fb2e33466cb1286b5732da59f9:
+      category: soap
+      detailed_caption: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base, decorative
+        label.
+      usd_path: 619563fb2e33466cb1286b5732da59f9.usd
+      size:
+      - 0.0713653564453125
+      - 0.13751983642578125
+      - 0.04378685064148158
+  obj_distractors:
+  - d39d0d5f_8462_40db_b8e8_cc126bfc84b8
+  - a7e86ae8_4ebb_4791_a260_e6a95eb60298
+  obj_distractor_meta:
+    d39d0d5f_8462_40db_b8e8_cc126bfc84b8:
+      category: soap
+      detailed_caption: Rectangular yellow box with smooth edges, polished finish, red band, and bold
+        'SOAP' label.
+      usd_path: d39d0d5f-8462-40db-b8e8-cc126bfc84b8.usd
+      size:
+      - 0.12020492553710938
+      - 0.084014892578125
+      - 0.03281024529132992
+    a7e86ae8_4ebb_4791_a260_e6a95eb60298:
+      category: soap dispenser
+      detailed_caption: Cylindrical soap dispenser with a shiny metallic pump and frosted glass body,
+        vintage look.
+      usd_path: a7e86ae8-4ebb-4791-a260-e6a95eb60298.usd
+      size:
+      - 0.18352890014648438
+      - 0.22219467163085938
+      - 0.10609164834022522
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: soap
+      target_description: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base,
+        decorative label.
+  - action: gaze_at
+    args:
+      target_category: soap
+      target_description: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base,
+        decorative label.
+  - action: pick
+    args:
+      target_category: soap
+      target_description: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base,
+        decorative label.
+  - action: nav_to
+    args:
+      receptacle_name: sink_1
+  - action: place
+    args:
+      receptacle_name: sink_1
+  placements:
+    _619563fb2e33466cb1286b5732da59f9_on_bed_1_at_verify_task_518:
+      position:
+      - 3.1079451533760434
+      - 3.6363446923231373
+      - 0.5141785768023692
+      furniture: bed_1
+      original_id: _619563fb2e33466cb1286b5732da59f9
+    _619563fb2e33466cb1286b5732da59f9_on_bed_2_at_verify_task_518:
+      position:
+      - 5.071782472552058
+      - -2.2666318653777235
+      - 0.5440426496020518
+      furniture: bed_2
+      original_id: _619563fb2e33466cb1286b5732da59f9
+  final_positions:
+    _619563fb2e33466cb1286b5732da59f9_on_bed_1_at_verify_task_518:
+      initial_pos:
+      - 3.1079451533760434
+      - 3.6363446923231373
+      - 0.6141785768023692
+      final_pos:
+      - 3.13224720954895
+      - 3.6615986824035645
+      - 0.48816293478012085
+      category: soap
+      original_id: _619563fb2e33466cb1286b5732da59f9
+    _619563fb2e33466cb1286b5732da59f9_on_bed_2_at_verify_task_518:
+      initial_pos:
+      - 5.071782472552058
+      - -2.2666318653777235
+      - 0.6440426496020518
+      final_pos:
+      - 5.084787368774414
+      - -2.265883207321167
+      - 0.5358796715736389
+      category: soap
+      original_id: _619563fb2e33466cb1286b5732da59f9
+  family: FDP
+  benchmark_task_id: FDP/verify_task_518
+  benchmark_instruction: First, drive to bed with plain white bedding to find the pink semi-transparent
+    liquid soap bottle with pump, narrow neck, wide base, decorative label, then deliver it to single
+    bowl bathroom sink.
+  global_index: 70
+  target_object_id: _619563fb2e33466cb1286b5732da59f9

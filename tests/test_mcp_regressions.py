@@ -46,6 +46,22 @@ def test_ask_tool_schema_matches_generated_plan_arguments():
     assert openai_ask["parameters"] == mcp_ask.inputSchema
 
 
+def test_mcp_tool_list_exposes_finish_for_agent_clients():
+    from mcp_server.tools import MCP_TOOLS, OPENAI_TOOLS
+
+    mcp_finish = next(tool for tool in MCP_TOOLS if tool.name == "finish")
+    assert mcp_finish.inputSchema == {
+        "type": "object",
+        "properties": {},
+        "required": [],
+    }
+
+    openai_finish = next(
+        tool["function"] for tool in OPENAI_TOOLS if tool["function"]["name"] == "finish"
+    )
+    assert openai_finish["parameters"] == mcp_finish.inputSchema
+
+
 @pytest.mark.parametrize(
     "execution_plan",
     [

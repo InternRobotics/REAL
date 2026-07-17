@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _18e3dd35bbad47748a0bd546d520e83d_on_desk_1_at_verify_task_29:
+    original_id: _18e3dd35bbad47748a0bd546d520e83d
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/18e3dd35bbad47748a0bd546d520e83d.usd
+    usd_scale:
+    - 0.11459510197920088
+    - 0.10969704935552617
+    - 0.10522154495620764
+    position:
+    - -0.06551410868871034
+    - -2.7610770944926233
+    - 0.7646211508649867
+    size:
+    - 0.11696624755859375
+    - 0.01174163818359375
+    - 0.013242231158073992
+    detailed_caption: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+      core.
+  ca274b06_d6e2_4f26_b964_26e73a021a27_on_desk_1_at_verify_task_29:
+    original_id: ca274b06_d6e2_4f26_b964_26e73a021a27
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/ca274b06-d6e2-4f26-b964-26e73a021a27.usd
+    usd_scale:
+    - 6.766268434159915
+    - 6.7697432690396635
+    - 6.992254418858625
+    position:
+    - -0.09441446421426457
+    - -2.544989450560875
+    - 0.7634969111491228
+    size:
+    - 0.014118313789367676
+    - 0.13455963134765625
+    - 0.01099375172634609
+    detailed_caption: Smooth retractable pen with a glossy blue barrel, metallic silver clip, and fine
+      tip.
+  acbd811c2a8b4581ba3c7716aa316878_on_desk_1_at_verify_task_29:
+    original_id: acbd811c2a8b4581ba3c7716aa316878
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/acbd811c2a8b4581ba3c7716aa316878.usd
+    usd_scale:
+    - 0.8330411743559495
+    - 0.8271015671934326
+    - 0.8207602196222472
+    position:
+    - 0.0657070215934871
+    - -3.350060235795059
+    - 0.7617892850062344
+    size:
+    - 0.13573074340820312
+    - 0.056429386138916016
+    - 0.007578499440569431
+    detailed_caption: Sleek, slender pen with a metallic finish, comfortable grip, clip, and smooth design.
+episodes:
+- task_id: verify_task_29
+  episode_idx: 24
+  original_idx: 29
+  benchmark_instruction: Move a writing instrument located at wide desk with orange drawer pulls to the
+    rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+    core from wide desk with orange drawer pulls to the rectangular table.
+  fuzzy_task_description: Move a writing instrument located at wide desk with orange drawer pulls to the
+    rectangular table.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _18e3dd35bbad47748a0bd546d520e83d
+      - ca274b06_d6e2_4f26_b964_26e73a021a27
+      - acbd811c2a8b4581ba3c7716aa316878
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _18e3dd35bbad47748a0bd546d520e83d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - ca274b06_d6e2_4f26_b964_26e73a021a27
+      - acbd811c2a8b4581ba3c7716aa316878
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _18e3dd35bbad47748a0bd546d520e83d:
+      category: pencil
+      detailed_caption: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+      usd_path: 18e3dd35bbad47748a0bd546d520e83d.usd
+      size:
+      - 0.11696624755859375
+      - 0.01174163818359375
+      - 0.013242231158073992
+  obj_distractors:
+  - ca274b06_d6e2_4f26_b964_26e73a021a27
+  - acbd811c2a8b4581ba3c7716aa316878
+  obj_distractor_meta:
+    ca274b06_d6e2_4f26_b964_26e73a021a27:
+      category: pen
+      detailed_caption: Smooth retractable pen with a glossy blue barrel, metallic silver clip, and fine
+        tip.
+      usd_path: ca274b06-d6e2-4f26-b964-26e73a021a27.usd
+      size:
+      - 0.014118313789367676
+      - 0.13455963134765625
+      - 0.01099375172634609
+    acbd811c2a8b4581ba3c7716aa316878:
+      category: pen
+      detailed_caption: Sleek, slender pen with a metallic finish, comfortable grip, clip, and smooth
+        design.
+      usd_path: acbd811c2a8b4581ba3c7716aa316878.usd
+      size:
+      - 0.13573074340820312
+      - 0.056429386138916016
+      - 0.007578499440569431
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: pencil
+      target_description: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+  - action: gaze_at
+    args:
+      target_category: pencil
+      target_description: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+  - action: pick
+    args:
+      target_category: pencil
+      target_description: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Bring the cylindrical wooden pencil with a sharp tip, smooth finish, and visible
+    graphite core from wide desk with orange drawer pulls to the rectangular table.
+  placements:
+    _18e3dd35bbad47748a0bd546d520e83d_on_desk_1_at_verify_task_29:
+      position:
+      - -0.06551410868871034
+      - -2.7610770944926233
+      - 0.7646211508649867
+      furniture: desk_1
+      original_id: _18e3dd35bbad47748a0bd546d520e83d
+    ca274b06_d6e2_4f26_b964_26e73a021a27_on_desk_1_at_verify_task_29:
+      position:
+      - -0.09441446421426457
+      - -2.544989450560875
+      - 0.7634969111491228
+      furniture: desk_1
+      original_id: ca274b06_d6e2_4f26_b964_26e73a021a27
+    acbd811c2a8b4581ba3c7716aa316878_on_desk_1_at_verify_task_29:
+      position:
+      - 0.0657070215934871
+      - -3.350060235795059
+      - 0.7617892850062344
+      furniture: desk_1
+      original_id: acbd811c2a8b4581ba3c7716aa316878
+  final_positions:
+    _18e3dd35bbad47748a0bd546d520e83d_on_desk_1_at_verify_task_29:
+      initial_pos:
+      - -0.06551410868871034
+      - -2.7610770944926233
+      - 0.8646211508649867
+      final_pos:
+      - -0.06526177376508713
+      - -2.761115312576294
+      - 0.7433987855911255
+      category: pencil
+      original_id: _18e3dd35bbad47748a0bd546d520e83d
+    ca274b06_d6e2_4f26_b964_26e73a021a27_on_desk_1_at_verify_task_29:
+      initial_pos:
+      - -0.09441446421426457
+      - -2.544989450560875
+      - 0.8634969111491227
+      final_pos:
+      - -0.09089979529380798
+      - -2.5448639392852783
+      - 0.7414748668670654
+      category: pen
+      original_id: ca274b06_d6e2_4f26_b964_26e73a021a27
+    acbd811c2a8b4581ba3c7716aa316878_on_desk_1_at_verify_task_29:
+      initial_pos:
+      - 0.0657070215934871
+      - -3.350060235795059
+      - 0.8617892850062344
+      final_pos:
+      - 0.13837465643882751
+      - -3.320608139038086
+      - 0.7411783337593079
+      category: pen
+      original_id: acbd811c2a8b4581ba3c7716aa316878
+  family: SUL
+  benchmark_task_id: SUL/verify_task_29
+  global_index: 200
+  target_object_id: _18e3dd35bbad47748a0bd546d520e83d

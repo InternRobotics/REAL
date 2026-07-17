@@ -1,0 +1,305 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  fdf932b04e6c4e0fbd6e274563b94536_on_table_1_at_verify_task_80:
+    original_id: fdf932b04e6c4e0fbd6e274563b94536
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/fdf932b04e6c4e0fbd6e274563b94536.usd
+    usd_scale:
+    - 3.2919612702333745
+    - 3.1885059442273707
+    - 3.2649663098460473
+    position:
+    - -2.350671251845797
+    - -1.3397764616589307
+    - 0.8048862476639624
+    size:
+    - 0.17028427124023438
+    - 0.1953887939453125
+    - 0.08177269846055424
+    detailed_caption: Vintage wooden clock shaped like a house, round face with Roman numerals, distressed
+      finish.
+  _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_80:
+    original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    category: watch
+    usd_path: ${MESATASK_USD_ROOT}/6eefeb5c1bee4d4d9134b62cd9fc99d8.usd
+    usd_scale:
+    - 12.027450463412933
+    - 12.088888888888889
+    - 11.949723925295546
+    position:
+    - -2.626240445211736
+    - -1.4518144349644526
+    - 0.7703888950486726
+    size:
+    - 0.035556793212890625
+    - 0.2417774200439453
+    - 0.012777993229974527
+    detailed_caption: Sleek wristwatch with a round silver case, slim black leather strap, and clear glass
+      face.
+  cb0e7bf9c2c34681a1c46510298eca2e_on_table_1_at_verify_task_80:
+    original_id: cb0e7bf9c2c34681a1c46510298eca2e
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/cb0e7bf9c2c34681a1c46510298eca2e.usd
+    usd_scale:
+    - 103.11874723490796
+    - 106.41837054341505
+    - 125.86986305014719
+    position:
+    - -2.951600712565543
+    - -1.326368387194682
+    - 0.842146562859416
+    size:
+    - 0.12539970874786377
+    - 0.2917900085449219
+    - 0.1562933288514614
+    detailed_caption: Wooden frame, two glass bulbs, narrow neck, sturdy base, natural wood finish, classic
+      design.
+episodes:
+- task_id: verify_task_80
+  episode_idx: 52
+  original_idx: 80
+  benchmark_instruction: Transport a timekeeping device at the rectangular table to bed with all-white
+    bed sheet.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the vintage wooden clock shaped like a house, round face with Roman numerals,
+    distressed finish from the rectangular table and place it on bed with all-white bed sheet.
+  fuzzy_task_description: Transport a timekeeping device at the rectangular table to bed with all-white
+    bed sheet.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - fdf932b04e6c4e0fbd6e274563b94536
+      - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+      - cb0e7bf9c2c34681a1c46510298eca2e
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+      - cb0e7bf9c2c34681a1c46510298eca2e
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - fdf932b04e6c4e0fbd6e274563b94536
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    fdf932b04e6c4e0fbd6e274563b94536:
+      category: clock
+      detailed_caption: Vintage wooden clock shaped like a house, round face with Roman numerals, distressed
+        finish.
+      usd_path: fdf932b04e6c4e0fbd6e274563b94536.usd
+      size:
+      - 0.17028427124023438
+      - 0.1953887939453125
+      - 0.08177269846055424
+  obj_distractors:
+  - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+  - cb0e7bf9c2c34681a1c46510298eca2e
+  obj_distractor_meta:
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8:
+      category: watch
+      detailed_caption: Sleek wristwatch with a round silver case, slim black leather strap, and clear
+        glass face.
+      usd_path: 6eefeb5c1bee4d4d9134b62cd9fc99d8.usd
+      size:
+      - 0.035556793212890625
+      - 0.2417774200439453
+      - 0.012777993229974527
+    cb0e7bf9c2c34681a1c46510298eca2e:
+      category: hourglass
+      detailed_caption: Wooden frame, two glass bulbs, narrow neck, sturdy base, natural wood finish,
+        classic design.
+      usd_path: cb0e7bf9c2c34681a1c46510298eca2e.usd
+      size:
+      - 0.12539970874786377
+      - 0.2917900085449219
+      - 0.1562933288514614
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Vintage wooden clock shaped like a house, round face with Roman numerals, distressed
+        finish.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Vintage wooden clock shaped like a house, round face with Roman numerals, distressed
+        finish.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Vintage wooden clock shaped like a house, round face with Roman numerals, distressed
+        finish.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  physics_task_description: Pick up the vintage wooden clock shaped like a house, round face with Roman
+    numerals, distressed finish from the rectangular table and place it on bed with all-white bed sheet.
+  placements:
+    fdf932b04e6c4e0fbd6e274563b94536_on_table_1_at_verify_task_80:
+      position:
+      - -2.350671251845797
+      - -1.3397764616589307
+      - 0.8048862476639624
+      furniture: table_1
+      original_id: fdf932b04e6c4e0fbd6e274563b94536
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_80:
+      position:
+      - -2.626240445211736
+      - -1.4518144349644526
+      - 0.7703888950486726
+      furniture: table_1
+      original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    cb0e7bf9c2c34681a1c46510298eca2e_on_table_1_at_verify_task_80:
+      position:
+      - -2.951600712565543
+      - -1.326368387194682
+      - 0.842146562859416
+      furniture: table_1
+      original_id: cb0e7bf9c2c34681a1c46510298eca2e
+  final_positions:
+    fdf932b04e6c4e0fbd6e274563b94536_on_table_1_at_verify_task_80:
+      initial_pos:
+      - -2.350671251845797
+      - -1.3397764616589307
+      - 0.9048862476639624
+      final_pos:
+      - -2.350473403930664
+      - -1.3389830589294434
+      - 0.7820132374763489
+      category: clock
+      original_id: fdf932b04e6c4e0fbd6e274563b94536
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_80:
+      initial_pos:
+      - -2.626240445211736
+      - -1.4518144349644526
+      - 0.8703888950486726
+      final_pos:
+      - -2.6348483562469482
+      - -1.3264516592025757
+      - 0.7504906058311462
+      category: watch
+      original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    cb0e7bf9c2c34681a1c46510298eca2e_on_table_1_at_verify_task_80:
+      initial_pos:
+      - -2.951600712565543
+      - -1.326368387194682
+      - 0.942146562859416
+      final_pos:
+      - -3.0829811096191406
+      - -1.3264156579971313
+      - 0.8076454997062683
+      category: hourglass
+      original_id: cb0e7bf9c2c34681a1c46510298eca2e
+  family: SUL
+  benchmark_task_id: SUL/verify_task_80
+  global_index: 228
+  target_object_id: fdf932b04e6c4e0fbd6e274563b94536

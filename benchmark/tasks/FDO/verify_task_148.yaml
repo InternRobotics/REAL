@@ -1,0 +1,213 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _3fd154299f2b4ca68cd826195c7ade20_on_potlid_0_at_verify_task_148:
+    original_id: _3fd154299f2b4ca68cd826195c7ade20
+    category: ice cream
+    usd_path: ${MESATASK_USD_ROOT}/3fd154299f2b4ca68cd826195c7ade20.usd
+    usd_scale:
+    - 0.5743817805702036
+    - 0.5743818313171304
+    - 0.5844773618252966
+    position:
+    - -5.2437956034807875
+    - -5.6374194911673765
+    - 1.0318869185098447
+    size:
+    - 0.0312957763671875
+    - 0.09629440307617188
+    - 0.0347320317523554
+episodes:
+- benchmark_task_id: FDO/verify_task_148
+  family: FDO
+  task_id: verify_task_148
+  episode_idx: 32
+  original_idx: 148
+  benchmark_instruction: Pick up an ice cream from the pot lid and place it on the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Pick up an ice cream from the pot lid and place it on the only electriccooker in the
+    scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content:
+      - _3fd154299f2b4ca68cd826195c7ade20
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _3fd154299f2b4ca68cd826195c7ade20
+      door: false
+  src: potlid_0
+  src_distractors: []
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _3fd154299f2b4ca68cd826195c7ade20:
+      category: ice cream
+      usd_path: 3fd154299f2b4ca68cd826195c7ade20.usd
+      size:
+      - 0.0312957763671875
+      - 0.09629440307617188
+      - 0.0347320317523554
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: potlid_0
+  - action: find
+    args:
+      target_category: ice cream
+  - action: gaze_at
+    args:
+      target_category: ice cream
+  - action: pick
+    args:
+      target_category: ice cream
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _3fd154299f2b4ca68cd826195c7ade20_on_potlid_0_at_verify_task_148:
+      position:
+      - -5.2437956034807875
+      - -5.6374194911673765
+      - 1.0318869185098447
+      furniture: potlid_0
+      original_id: _3fd154299f2b4ca68cd826195c7ade20
+  final_positions:
+    _3fd154299f2b4ca68cd826195c7ade20_on_potlid_0_at_verify_task_148:
+      initial_pos:
+      - -5.2437956034807875
+      - -5.6374194911673765
+      - 1.1318869185098448
+      final_pos:
+      - -5.178389549255371
+      - -5.528866767883301
+      - 0.936445951461792
+      category: ice cream
+      original_id: _3fd154299f2b4ca68cd826195c7ade20
+  global_index: 160
+  target_object_id: _3fd154299f2b4ca68cd826195c7ade20

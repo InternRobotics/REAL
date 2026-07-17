@@ -1,0 +1,307 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  c90b62af44654d549be357a4825f6142_on_bed_1_at_verify_task_85:
+    original_id: c90b62af44654d549be357a4825f6142
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/c90b62af44654d549be357a4825f6142.usd
+    usd_scale:
+    - 0.07985849699642644
+    - 0.07950393398818813
+    - 0.07456782454142293
+    position:
+    - 3.7672129002732153
+    - 4.093525441384557
+    - 0.5342323193140328
+    size:
+    - 0.0917196273803711
+    - 0.12154388427734375
+    - 0.08389433566480875
+    detailed_caption: A shiny red apple, smooth surface, rounded shape, small green leaf, rich color,
+      subtle highlights.
+  _1445ab184a8f4e8ba0c7ae8753f96978_on_bed_1_at_verify_task_85:
+    original_id: _1445ab184a8f4e8ba0c7ae8753f96978
+    category: pineapple
+    usd_path: ${MESATASK_USD_ROOT}/1445ab184a8f4e8ba0c7ae8753f96978.usd
+    usd_scale:
+    - 23.332846566082264
+    - 23.422296601976104
+    - 23.36383138872241
+    position:
+    - 3.5930359804096463
+    - 3.8197216053110727
+    - 0.5561448884068523
+    size:
+    - 0.1402735710144043
+    - 0.21850204467773438
+    - 0.12771947385044768
+    detailed_caption: A fresh pineapple with a rough, diamond-patterned, golden-yellow exterior and vibrant
+      green leaves.
+  de1f77087aa84632a8d113dacafdc860_on_bed_1_at_verify_task_85:
+    original_id: de1f77087aa84632a8d113dacafdc860
+    category: avocado
+    usd_path: ${MESATASK_USD_ROOT}/de1f77087aa84632a8d113dacafdc860.usd
+    usd_scale:
+    - 2.7761590933487623
+    - 3.190119516962294
+    - 2.487444776473464
+    position:
+    - 3.298735736671752
+    - 3.991667320132315
+    - 0.5482930200919509
+    size:
+    - 0.12667465209960938
+    - 0.2091655731201172
+    - 0.11201573722064495
+    detailed_caption: Ripe avocado, smooth green skin, slightly bumpy texture, oval shape, small stem
+      at top.
+episodes:
+- task_id: verify_task_85
+  episode_idx: 57
+  original_idx: 85
+  benchmark_instruction: Retrieve a fruit from bed with plain white bedding and deposit it at the table
+    much larger than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the a shiny red apple, smooth surface, rounded shape, small green leaf, rich
+    color, subtle highlights from bed with plain white bedding and put it on the table much larger than
+    another one.
+  fuzzy_task_description: Retrieve a fruit from bed with plain white bedding and deposit it at the table
+    much larger than another one.
+  purpose: fruit
+  purpose_group: fruits
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - c90b62af44654d549be357a4825f6142
+      - _1445ab184a8f4e8ba0c7ae8753f96978
+      - de1f77087aa84632a8d113dacafdc860
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - c90b62af44654d549be357a4825f6142
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _1445ab184a8f4e8ba0c7ae8753f96978
+      - de1f77087aa84632a8d113dacafdc860
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    c90b62af44654d549be357a4825f6142:
+      category: apple
+      detailed_caption: A shiny red apple, smooth surface, rounded shape, small green leaf, rich color,
+        subtle highlights.
+      usd_path: c90b62af44654d549be357a4825f6142.usd
+      size:
+      - 0.0917196273803711
+      - 0.12154388427734375
+      - 0.08389433566480875
+  obj_distractors:
+  - _1445ab184a8f4e8ba0c7ae8753f96978
+  - de1f77087aa84632a8d113dacafdc860
+  obj_distractor_meta:
+    _1445ab184a8f4e8ba0c7ae8753f96978:
+      category: pineapple
+      detailed_caption: A fresh pineapple with a rough, diamond-patterned, golden-yellow exterior and
+        vibrant green leaves.
+      usd_path: 1445ab184a8f4e8ba0c7ae8753f96978.usd
+      size:
+      - 0.1402735710144043
+      - 0.21850204467773438
+      - 0.12771947385044768
+    de1f77087aa84632a8d113dacafdc860:
+      category: avocado
+      detailed_caption: Ripe avocado, smooth green skin, slightly bumpy texture, oval shape, small stem
+        at top.
+      usd_path: de1f77087aa84632a8d113dacafdc860.usd
+      size:
+      - 0.12667465209960938
+      - 0.2091655731201172
+      - 0.11201573722064495
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: apple
+      target_description: A shiny red apple, smooth surface, rounded shape, small green leaf, rich color,
+        subtle highlights.
+  - action: gaze_at
+    args:
+      target_category: apple
+      target_description: A shiny red apple, smooth surface, rounded shape, small green leaf, rich color,
+        subtle highlights.
+  - action: pick
+    args:
+      target_category: apple
+      target_description: A shiny red apple, smooth surface, rounded shape, small green leaf, rich color,
+        subtle highlights.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Take the a shiny red apple, smooth surface, rounded shape, small green leaf,
+    rich color, subtle highlights from bed with plain white bedding and put it on the table much larger
+    than another one.
+  placements:
+    c90b62af44654d549be357a4825f6142_on_bed_1_at_verify_task_85:
+      position:
+      - 3.7672129002732153
+      - 4.093525441384557
+      - 0.5342323193140328
+      furniture: bed_1
+      original_id: c90b62af44654d549be357a4825f6142
+    _1445ab184a8f4e8ba0c7ae8753f96978_on_bed_1_at_verify_task_85:
+      position:
+      - 3.5930359804096463
+      - 3.8197216053110727
+      - 0.5561448884068523
+      furniture: bed_1
+      original_id: _1445ab184a8f4e8ba0c7ae8753f96978
+    de1f77087aa84632a8d113dacafdc860_on_bed_1_at_verify_task_85:
+      position:
+      - 3.298735736671752
+      - 3.991667320132315
+      - 0.5482930200919509
+      furniture: bed_1
+      original_id: de1f77087aa84632a8d113dacafdc860
+  final_positions:
+    c90b62af44654d549be357a4825f6142_on_bed_1_at_verify_task_85:
+      initial_pos:
+      - 3.7672129002732153
+      - 4.093525441384557
+      - 0.6342323193140328
+      final_pos:
+      - 3.7754621505737305
+      - 4.092274188995361
+      - 0.5016635656356812
+      category: apple
+      original_id: c90b62af44654d549be357a4825f6142
+    _1445ab184a8f4e8ba0c7ae8753f96978_on_bed_1_at_verify_task_85:
+      initial_pos:
+      - 3.5930359804096463
+      - 3.8197216053110727
+      - 0.6561448884068523
+      final_pos:
+      - 3.6178627014160156
+      - 3.8066976070404053
+      - 0.5256336331367493
+      category: pineapple
+      original_id: _1445ab184a8f4e8ba0c7ae8753f96978
+    de1f77087aa84632a8d113dacafdc860_on_bed_1_at_verify_task_85:
+      initial_pos:
+      - 3.298735736671752
+      - 3.991667320132315
+      - 0.6482930200919509
+      final_pos:
+      - 3.3192155361175537
+      - 4.022615909576416
+      - 0.514284610748291
+      category: avocado
+      original_id: de1f77087aa84632a8d113dacafdc860
+  family: SUL
+  benchmark_task_id: SUL/verify_task_85
+  global_index: 233
+  target_object_id: c90b62af44654d549be357a4825f6142

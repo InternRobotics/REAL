@@ -1,0 +1,250 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _7b2a96dc42fd43b4bdd56bfecc29d56f_on_table_1_at_verify_task_9:
+    original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+    category: banana
+    usd_path: ${MESATASK_USD_ROOT}/7b2a96dc42fd43b4bdd56bfecc29d56f.usd
+    usd_scale:
+    - 12.616035619035632
+    - 18.279250802766626
+    - 7.207714278973467
+    position:
+    - -2.544714786671523
+    - -1.1421391083076444
+    - 0.789831745477859
+    size:
+    - 0.08189964294433594
+    - 0.27899932861328125
+    - 0.051663694088347256
+  _7b2a96dc42fd43b4bdd56bfecc29d56f_on_table_2_at_verify_task_9:
+    original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+    category: banana
+    usd_path: ${MESATASK_USD_ROOT}/7b2a96dc42fd43b4bdd56bfecc29d56f.usd
+    usd_scale:
+    - 12.616035619035632
+    - 18.279250802766626
+    - 7.207714278973467
+    position:
+    - -1.8644745959029754
+    - 2.695639660854513
+    - 0.31581984743708746
+    size:
+    - 0.08189964294433594
+    - 0.27899932861328125
+    - 0.051663694088347256
+episodes:
+- benchmark_task_id: FDO/verify_task_9
+  family: FDO
+  task_id: verify_task_9
+  episode_idx: 0
+  original_idx: 9
+  benchmark_instruction: Retrieve a banana from the table where we have dinner and deposit it at the only
+    electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Retrieve a banana from the table where we have dinner and deposit it at the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _7b2a96dc42fd43b4bdd56bfecc29d56f
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7b2a96dc42fd43b4bdd56bfecc29d56f
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7b2a96dc42fd43b4bdd56bfecc29d56f
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _7b2a96dc42fd43b4bdd56bfecc29d56f
+      door: false
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _7b2a96dc42fd43b4bdd56bfecc29d56f:
+      category: banana
+      usd_path: 7b2a96dc42fd43b4bdd56bfecc29d56f.usd
+      size:
+      - 0.08189964294433594
+      - 0.27899932861328125
+      - 0.051663694088347256
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: banana
+  - action: gaze_at
+    args:
+      target_category: banana
+  - action: pick
+    args:
+      target_category: banana
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _7b2a96dc42fd43b4bdd56bfecc29d56f_on_table_1_at_verify_task_9:
+      position:
+      - -2.544714786671523
+      - -1.1421391083076444
+      - 0.789831745477859
+      furniture: table_1
+      original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+    _7b2a96dc42fd43b4bdd56bfecc29d56f_on_table_2_at_verify_task_9:
+      position:
+      - -1.8644745959029754
+      - 2.695639660854513
+      - 0.31581984743708746
+      furniture: table_2
+      original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+  final_positions:
+    _7b2a96dc42fd43b4bdd56bfecc29d56f_on_table_1_at_verify_task_9:
+      initial_pos:
+      - -2.544714786671523
+      - -1.1421391083076444
+      - 0.8898317454778589
+      final_pos:
+      - -2.5311789512634277
+      - -1.1493068933486938
+      - 0.7706524133682251
+      category: banana
+      original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+    _7b2a96dc42fd43b4bdd56bfecc29d56f_on_table_2_at_verify_task_9:
+      initial_pos:
+      - -1.8644745959029754
+      - 2.695639660854513
+      - 0.41581984743708744
+      final_pos:
+      - -1.8495523929595947
+      - 2.688117742538452
+      - 0.2966403365135193
+      category: banana
+      original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+  global_index: 128
+  target_object_id: _7b2a96dc42fd43b4bdd56bfecc29d56f

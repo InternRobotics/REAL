@@ -1,0 +1,259 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_table_1_at_verify_task_171:
+    original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+    usd_scale:
+    - 12.380533588081919
+    - 12.995205453223841
+    - 14.755287127585984
+    position:
+    - -1.533282409385374
+    - -1.5359591044277088
+    - 0.9111010185620398
+    size:
+    - 0.18028736114501953
+    - 0.1647653579711914
+    - 0.29420224025670905
+    detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_table_2_at_verify_task_171:
+    original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+    usd_scale:
+    - 12.380533588081919
+    - 12.995205453223841
+    - 14.755287127585984
+    position:
+    - -2.245036383390941
+    - 2.76036970577904
+    - 0.43708912052126836
+    size:
+    - 0.18028736114501953
+    - 0.1647653579711914
+    - 0.29420224025670905
+    detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+episodes:
+- task_id: verify_task_171
+  episode_idx: 33
+  original_idx: 171
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to the table to place my snack for watching TV, fetch the notebook with
+    spiral binding, colorful cover images, and blank rectangular pages, and bring it back to white cabinet
+    next to the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: cabinet_7
+  dest_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b:
+      category: notebook
+      detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+      usd_path: gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+      size:
+      - 0.18028736114501953
+      - 0.1647653579711914
+      - 0.29420224025670905
+  obj_distractors:
+  - _26e240e2_8949_4c4f_aa03_05710a6261d2
+  - _5b08ececfd6b4e9ca93490b6c7abd6bd
+  obj_distractor_meta:
+    _26e240e2_8949_4c4f_aa03_05710a6261d2:
+      category: notebook
+      detailed_caption: A green rectangular spiral-bound notebook with rounded corners and a textured
+        cover.
+      usd_path: 26e240e2-8949-4c4f-aa03-05710a6261d2.usd
+      size:
+      - 0.18605899810791016
+      - 0.24641990661621094
+      - 0.017359787671011873
+    _5b08ececfd6b4e9ca93490b6c7abd6bd:
+      category: laptop
+      detailed_caption: Sleek, modern laptop, black exterior, textured keyboard, light-colored screen,
+        distinct logo, USB ports visible.
+      usd_path: 5b08ececfd6b4e9ca93490b6c7abd6bd.usd
+      size:
+      - 0.47218477725982666
+      - 0.2588825225830078
+      - 0.21138070581946522
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: place
+    args:
+      receptacle_name: cabinet_7
+  placements:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_table_1_at_verify_task_171:
+      position:
+      - -1.533282409385374
+      - -1.5359591044277088
+      - 0.9111010185620398
+      furniture: table_1
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_table_2_at_verify_task_171:
+      position:
+      - -2.245036383390941
+      - 2.76036970577904
+      - 0.43708912052126836
+      furniture: table_2
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+  final_positions:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_table_1_at_verify_task_171:
+      initial_pos:
+      - -1.533282409385374
+      - -1.5359591044277088
+      - 1.01110101856204
+      final_pos:
+      - -1.4205924272537231
+      - -1.3744314908981323
+      - 0.793310821056366
+      category: notebook
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_table_2_at_verify_task_171:
+      initial_pos:
+      - -2.245036383390941
+      - 2.76036970577904
+      - 0.5370891205212683
+      final_pos:
+      - -2.1325442790985107
+      - 2.9210007190704346
+      - 0.3192988634109497
+      category: notebook
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+  family: FDP
+  benchmark_task_id: FDP/verify_task_171
+  benchmark_instruction: Head over to the table to place my snack for watching TV, fetch the notebook
+    with spiral binding, colorful cover images, and blank rectangular pages, and bring it back to white
+    cabinet next to the washingmachine.
+  global_index: 33
+  target_object_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b

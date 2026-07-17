@@ -1,0 +1,250 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _13e2c5aec98945de989496d48f58a081_on_desk_1_at_verify_task_85:
+    original_id: _13e2c5aec98945de989496d48f58a081
+    category: food
+    usd_path: ${MESATASK_USD_ROOT}/13e2c5aec98945de989496d48f58a081.usd
+    usd_scale:
+    - 0.0831249841451675
+    - 0.07397941905566066
+    - 0.08302561054279309
+    position:
+    - -0.09609065358887629
+    - -3.06511075394153
+    - 0.8702089032517688
+    size:
+    - 0.13352012634277344
+    - 0.04455852508544922
+    - 0.22441773593163816
+  _13e2c5aec98945de989496d48f58a081_on_desk_2_at_verify_task_85:
+    original_id: _13e2c5aec98945de989496d48f58a081
+    category: food
+    usd_path: ${MESATASK_USD_ROOT}/13e2c5aec98945de989496d48f58a081.usd
+    usd_scale:
+    - 0.0831249841451675
+    - 0.07397941905566066
+    - 0.08302561054279309
+    position:
+    - 4.366005296340733
+    - 1.6269182108206488
+    - 0.877651437221648
+    size:
+    - 0.13352012634277344
+    - 0.04455852508544922
+    - 0.22441773593163816
+episodes:
+- benchmark_task_id: FDO/verify_task_85
+  family: FDO
+  task_id: verify_task_85
+  episode_idx: 5
+  original_idx: 85
+  benchmark_instruction: Retrieve a food from white table with single dark knob and deposit it at the
+    only electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Retrieve a food from white table with single dark knob and deposit it at the only
+    electriccooker in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _13e2c5aec98945de989496d48f58a081
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _13e2c5aec98945de989496d48f58a081
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _13e2c5aec98945de989496d48f58a081
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _13e2c5aec98945de989496d48f58a081
+      door: false
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _13e2c5aec98945de989496d48f58a081:
+      category: food
+      usd_path: 13e2c5aec98945de989496d48f58a081.usd
+      size:
+      - 0.13352012634277344
+      - 0.04455852508544922
+      - 0.22441773593163816
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: food
+  - action: gaze_at
+    args:
+      target_category: food
+  - action: pick
+    args:
+      target_category: food
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _13e2c5aec98945de989496d48f58a081_on_desk_1_at_verify_task_85:
+      position:
+      - -0.09609065358887629
+      - -3.06511075394153
+      - 0.8702089032517688
+      furniture: desk_1
+      original_id: _13e2c5aec98945de989496d48f58a081
+    _13e2c5aec98945de989496d48f58a081_on_desk_2_at_verify_task_85:
+      position:
+      - 4.366005296340733
+      - 1.6269182108206488
+      - 0.877651437221648
+      furniture: desk_2
+      original_id: _13e2c5aec98945de989496d48f58a081
+  final_positions:
+    _13e2c5aec98945de989496d48f58a081_on_desk_1_at_verify_task_85:
+      initial_pos:
+      - -0.09609065358887629
+      - -3.06511075394153
+      - 0.9702089032517688
+      final_pos:
+      - -0.09498618543148041
+      - -3.065542697906494
+      - 0.850083589553833
+      category: food
+      original_id: _13e2c5aec98945de989496d48f58a081
+    _13e2c5aec98945de989496d48f58a081_on_desk_2_at_verify_task_85:
+      initial_pos:
+      - 4.366005296340733
+      - 1.6269182108206488
+      - 0.9776514372216479
+      final_pos:
+      - 4.333484172821045
+      - 1.4840031862258911
+      - 0.7406795024871826
+      category: food
+      original_id: _13e2c5aec98945de989496d48f58a081
+  global_index: 133
+  target_object_id: _13e2c5aec98945de989496d48f58a081

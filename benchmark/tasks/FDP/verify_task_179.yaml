@@ -1,0 +1,265 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _290b9e48cad843639bda09239193e59f_on_table_1_at_verify_task_179:
+    original_id: _290b9e48cad843639bda09239193e59f
+    category: snacks
+    usd_path: ${MESATASK_USD_ROOT}/290b9e48cad843639bda09239193e59f.usd
+    usd_scale:
+    - 11.010707101748807
+    - 11.065322093411025
+    - 11.101740994374566
+    position:
+    - -2.737884317108554
+    - -1.3288424445031575
+    - 0.7954834067818592
+    size:
+    - 0.2009296417236328
+    - 0.09472274780273438
+    - 0.06296701669634786
+    detailed_caption: Packet of snacks, rectangular shape, slightly crumpled surface, predominantly black
+      with colorful branding.
+  _290b9e48cad843639bda09239193e59f_on_table_2_at_verify_task_179:
+    original_id: _290b9e48cad843639bda09239193e59f
+    category: snacks
+    usd_path: ${MESATASK_USD_ROOT}/290b9e48cad843639bda09239193e59f.usd
+    usd_scale:
+    - 11.010707101748807
+    - 11.065322093411025
+    - 11.101740994374566
+    position:
+    - -2.208303429035988
+    - 2.6327386262729497
+    - 0.32147150874108776
+    size:
+    - 0.2009296417236328
+    - 0.09472274780273438
+    - 0.06296701669634786
+    detailed_caption: Packet of snacks, rectangular shape, slightly crumpled surface, predominantly black
+      with colorful branding.
+episodes:
+- task_id: verify_task_179
+  episode_idx: 36
+  original_idx: 179
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to the table to place my snack for watching TV, grasp the packet of snacks,
+    rectangular shape, slightly crumpled surface, predominantly black with colorful branding, and carry
+    it to bed with all-white bed sheet.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _290b9e48cad843639bda09239193e59f
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _290b9e48cad843639bda09239193e59f
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _290b9e48cad843639bda09239193e59f
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _290b9e48cad843639bda09239193e59f:
+      category: snacks
+      detailed_caption: Packet of snacks, rectangular shape, slightly crumpled surface, predominantly
+        black with colorful branding.
+      usd_path: 290b9e48cad843639bda09239193e59f.usd
+      size:
+      - 0.2009296417236328
+      - 0.09472274780273438
+      - 0.06296701669634786
+  obj_distractors:
+  - _065fd0c4_39ce_42ac_b2b7_b1b277a58057
+  - c98a9a20080641fda4b181640c12e381
+  obj_distractor_meta:
+    _065fd0c4_39ce_42ac_b2b7_b1b277a58057:
+      category: snack
+      detailed_caption: Heap of crunchy snacks, twisted shapes, uneven texture, golden-brown color, rough
+        edges.
+      usd_path: 065fd0c4-39ce-42ac-b2b7-b1b277a58057.usd
+      size:
+      - 0.11673355102539062
+      - 0.12829899787902832
+      - 0.05468710571585689
+    c98a9a20080641fda4b181640c12e381:
+      category: cookies
+      detailed_caption: Round cookie with textured surface, golden brown color, darker spots, slightly
+        domed shape, rustic edge.
+      usd_path: c98a9a20080641fda4b181640c12e381.usd
+      size:
+      - 0.09877586364746094
+      - 0.097381591796875
+      - 0.02218502899631858
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: snacks
+      target_description: Packet of snacks, rectangular shape, slightly crumpled surface, predominantly
+        black with colorful branding.
+  - action: gaze_at
+    args:
+      target_category: snacks
+      target_description: Packet of snacks, rectangular shape, slightly crumpled surface, predominantly
+        black with colorful branding.
+  - action: pick
+    args:
+      target_category: snacks
+      target_description: Packet of snacks, rectangular shape, slightly crumpled surface, predominantly
+        black with colorful branding.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  placements:
+    _290b9e48cad843639bda09239193e59f_on_table_1_at_verify_task_179:
+      position:
+      - -2.737884317108554
+      - -1.3288424445031575
+      - 0.7954834067818592
+      furniture: table_1
+      original_id: _290b9e48cad843639bda09239193e59f
+    _290b9e48cad843639bda09239193e59f_on_table_2_at_verify_task_179:
+      position:
+      - -2.208303429035988
+      - 2.6327386262729497
+      - 0.32147150874108776
+      furniture: table_2
+      original_id: _290b9e48cad843639bda09239193e59f
+  final_positions:
+    _290b9e48cad843639bda09239193e59f_on_table_1_at_verify_task_179:
+      initial_pos:
+      - -2.737884317108554
+      - -1.3288424445031575
+      - 0.8954834067818592
+      final_pos:
+      - -2.7387514114379883
+      - -1.2738109827041626
+      - 0.7741726636886597
+      category: snacks
+      original_id: _290b9e48cad843639bda09239193e59f
+    _290b9e48cad843639bda09239193e59f_on_table_2_at_verify_task_179:
+      initial_pos:
+      - -2.208303429035988
+      - 2.6327386262729497
+      - 0.42147150874108774
+      final_pos:
+      - -2.208639621734619
+      - 2.6821506023406982
+      - 0.3001643717288971
+      category: snacks
+      original_id: _290b9e48cad843639bda09239193e59f
+  family: FDP
+  benchmark_task_id: FDP/verify_task_179
+  benchmark_instruction: Navigate to the table to place my snack for watching TV, grasp the packet of
+    snacks, rectangular shape, slightly crumpled surface, predominantly black with colorful branding,
+    and carry it to bed with all-white bed sheet.
+  global_index: 36
+  target_object_id: _290b9e48cad843639bda09239193e59f

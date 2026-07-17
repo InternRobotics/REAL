@@ -1,0 +1,334 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _2efc7778_ceef_45b9_94c7_bed14ea25749_on_bed_1_at_verify_task_516:
+    original_id: _2efc7778_ceef_45b9_94c7_bed14ea25749
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/2efc7778-ceef-45b9-94c7-bed14ea25749.usd
+    usd_scale:
+    - 10.285978670811815
+    - 10.031694288177095
+    - 10.98313233568088
+    position:
+    - 3.0690562689549314
+    - 4.030172006613937
+    - 0.5618973322957754
+    size:
+    - 0.1297454833984375
+    - 0.20755767822265625
+    - 0.139224361628294
+    detailed_caption: White paper towel roll on a circular base, cardboard with a smooth wood grain appearance.
+  cd4875fab5da4f7aa02a712c6b886876_on_bed_1_at_verify_task_516:
+    original_id: cd4875fab5da4f7aa02a712c6b886876
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/cd4875fab5da4f7aa02a712c6b886876.usd
+    usd_scale:
+    - 1.3300600300775
+    - 1.3099730440005601
+    - 1.2965011340208692
+    position:
+    - 3.3670976858998922
+    - 3.35087810506664
+    - 0.5360067257384071
+    size:
+    - 0.15840911865234375
+    - 0.17195892333984375
+    - 0.08744314851355739
+    detailed_caption: Cylindrical roll of paper towels with a white surface and red stripes.
+  ae9c4515_7b90_4555_a2a2_4c33b5bb274d_on_bed_1_at_verify_task_516:
+    original_id: ae9c4515_7b90_4555_a2a2_4c33b5bb274d
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/ae9c4515-7b90-4555-a2a2-4c33b5bb274d.usd
+    usd_scale:
+    - 13.513917609039021
+    - 13.820979606532642
+    - 14.039478503878867
+    position:
+    - 3.570725420716818
+    - 4.106359368134976
+    - 0.5233734693424776
+    size:
+    - 0.2660980224609375
+    - 0.1826763153076172
+    - 0.0621766357216984
+    detailed_caption: Blue and white checkered kitchen towel, soft texture, slightly thick, neatly folded.
+  _2efc7778_ceef_45b9_94c7_bed14ea25749_on_bed_2_at_verify_task_516:
+    original_id: _2efc7778_ceef_45b9_94c7_bed14ea25749
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/2efc7778-ceef-45b9-94c7-bed14ea25749.usd
+    usd_scale:
+    - 10.285978670811815
+    - 10.031694288177095
+    - 10.98313233568088
+    position:
+    - 4.582709797918264
+    - -2.3389795089802923
+    - 0.591761405095458
+    size:
+    - 0.1297454833984375
+    - 0.20755767822265625
+    - 0.139224361628294
+    detailed_caption: White paper towel roll on a circular base, cardboard with a smooth wood grain appearance.
+episodes:
+- benchmark_task_id: FODP/verify_task_516
+  family: FODP
+  task_id: verify_task_516
+  episode_idx: 53
+  original_idx: 516
+  benchmark_instruction: Get the white paper towel roll on a circular base, cardboard with a smooth wood
+    grain appearance from bed with plain white bedding and move it to sink with round ceramic basin.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Get the white paper towel roll on a circular base, cardboard with a smooth wood grain
+    appearance from bed with plain white bedding and move it to sink with round ceramic basin.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _2efc7778_ceef_45b9_94c7_bed14ea25749
+      - cd4875fab5da4f7aa02a712c6b886876
+      - ae9c4515_7b90_4555_a2a2_4c33b5bb274d
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _2efc7778_ceef_45b9_94c7_bed14ea25749
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - cd4875fab5da4f7aa02a712c6b886876
+      - ae9c4515_7b90_4555_a2a2_4c33b5bb274d
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _2efc7778_ceef_45b9_94c7_bed14ea25749
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content:
+      - _2efc7778_ceef_45b9_94c7_bed14ea25749
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: sink_1
+  dest_distractors:
+  - sink_0
+  obj_meta:
+    _2efc7778_ceef_45b9_94c7_bed14ea25749:
+      category: towel
+      detailed_caption: White paper towel roll on a circular base, cardboard with a smooth wood grain
+        appearance.
+      usd_path: 2efc7778-ceef-45b9-94c7-bed14ea25749.usd
+      size:
+      - 0.1297454833984375
+      - 0.20755767822265625
+      - 0.139224361628294
+  obj_distractors:
+  - cd4875fab5da4f7aa02a712c6b886876
+  - ae9c4515_7b90_4555_a2a2_4c33b5bb274d
+  obj_distractor_meta:
+    cd4875fab5da4f7aa02a712c6b886876:
+      category: towel
+      detailed_caption: Cylindrical roll of paper towels with a white surface and red stripes.
+      usd_path: cd4875fab5da4f7aa02a712c6b886876.usd
+      size:
+      - 0.15840911865234375
+      - 0.17195892333984375
+      - 0.08744314851355739
+    ae9c4515_7b90_4555_a2a2_4c33b5bb274d:
+      category: towel
+      detailed_caption: Blue and white checkered kitchen towel, soft texture, slightly thick, neatly folded.
+      usd_path: ae9c4515-7b90-4555-a2a2-4c33b5bb274d.usd
+      size:
+      - 0.2660980224609375
+      - 0.1826763153076172
+      - 0.0621766357216984
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: towel
+      target_description: White paper towel roll on a circular base, cardboard with a smooth wood grain
+        appearance.
+  - action: gaze_at
+    args:
+      target_category: towel
+      target_description: White paper towel roll on a circular base, cardboard with a smooth wood grain
+        appearance.
+  - action: pick
+    args:
+      target_category: towel
+      target_description: White paper towel roll on a circular base, cardboard with a smooth wood grain
+        appearance.
+  - action: nav_to
+    args:
+      receptacle_name: sink_0
+  - action: nav_to
+    args:
+      receptacle_name: sink_1
+  - action: place
+    args:
+      receptacle_name: sink_1
+  placements:
+    _2efc7778_ceef_45b9_94c7_bed14ea25749_on_bed_1_at_verify_task_516:
+      position:
+      - 3.0690562689549314
+      - 4.030172006613937
+      - 0.5618973322957754
+      furniture: bed_1
+      original_id: _2efc7778_ceef_45b9_94c7_bed14ea25749
+    cd4875fab5da4f7aa02a712c6b886876_on_bed_1_at_verify_task_516:
+      position:
+      - 3.3670976858998922
+      - 3.35087810506664
+      - 0.5360067257384071
+      furniture: bed_1
+      original_id: cd4875fab5da4f7aa02a712c6b886876
+    ae9c4515_7b90_4555_a2a2_4c33b5bb274d_on_bed_1_at_verify_task_516:
+      position:
+      - 3.570725420716818
+      - 4.106359368134976
+      - 0.5233734693424776
+      furniture: bed_1
+      original_id: ae9c4515_7b90_4555_a2a2_4c33b5bb274d
+    _2efc7778_ceef_45b9_94c7_bed14ea25749_on_bed_2_at_verify_task_516:
+      position:
+      - 4.582709797918264
+      - -2.3389795089802923
+      - 0.591761405095458
+      furniture: bed_2
+      original_id: _2efc7778_ceef_45b9_94c7_bed14ea25749
+  final_positions:
+    _2efc7778_ceef_45b9_94c7_bed14ea25749_on_bed_1_at_verify_task_516:
+      initial_pos:
+      - 3.0690562689549314
+      - 4.030172006613937
+      - 0.6618973322957754
+      final_pos:
+      - 2.832184076309204
+      - 4.194896221160889
+      - 0.46202975511550903
+      category: cotton pads
+      original_id: _2efc7778_ceef_45b9_94c7_bed14ea25749
+    cd4875fab5da4f7aa02a712c6b886876_on_bed_1_at_verify_task_516:
+      initial_pos:
+      - 3.3670976858998922
+      - 3.35087810506664
+      - 0.6360067257384071
+      final_pos:
+      - 3.3712964057922363
+      - 3.4829695224761963
+      - 0.48334065079689026
+      category: towel
+      original_id: cd4875fab5da4f7aa02a712c6b886876
+    ae9c4515_7b90_4555_a2a2_4c33b5bb274d_on_bed_1_at_verify_task_516:
+      initial_pos:
+      - 3.570725420716818
+      - 4.106359368134976
+      - 0.6233734693424776
+      final_pos:
+      - 3.5746335983276367
+      - 4.113764762878418
+      - 0.4766440987586975
+      category: towel
+      original_id: ae9c4515_7b90_4555_a2a2_4c33b5bb274d
+    _2efc7778_ceef_45b9_94c7_bed14ea25749_on_bed_2_at_verify_task_516:
+      initial_pos:
+      - 4.582709797918264
+      - -2.3389795089802923
+      - 0.691761405095458
+      final_pos:
+      - 4.615016460418701
+      - -2.2155728340148926
+      - 0.5778422355651855
+      category: cotton pads
+      original_id: _2efc7778_ceef_45b9_94c7_bed14ea25749
+  global_index: 125
+  target_object_id: _2efc7778_ceef_45b9_94c7_bed14ea25749

@@ -1,0 +1,262 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _267f6fc623254562a150ee002f027179_on_desk_1_at_verify_task_22:
+    original_id: _267f6fc623254562a150ee002f027179
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/267f6fc623254562a150ee002f027179.usd
+    usd_scale:
+    - 11.728801540301443
+    - 12.016666666666667
+    - 11.761948797151442
+    position:
+    - -0.015830555664155282
+    - -3.3849859054705265
+    - 0.8756203178914643
+    size:
+    - 0.08344650268554688
+    - 0.026447296142578125
+    - 0.2352405652110292
+    detailed_caption: Sleek black remote control with a circular navigation button and multicolored buttons.
+      Compact design.
+  _267f6fc623254562a150ee002f027179_on_desk_2_at_verify_task_22:
+    original_id: _267f6fc623254562a150ee002f027179
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/267f6fc623254562a150ee002f027179.usd
+    usd_scale:
+    - 11.728801540301443
+    - 12.016666666666667
+    - 11.761948797151442
+    position:
+    - 4.4593490670256815
+    - 2.082452269239457
+    - 0.8830628518613435
+    size:
+    - 0.08344650268554688
+    - 0.026447296142578125
+    - 0.2352405652110292
+    detailed_caption: Sleek black remote control with a circular navigation button and multicolored buttons.
+      Compact design.
+episodes:
+- task_id: verify_task_22
+  episode_idx: 14
+  original_idx: 22
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to wide desk with orange drawer pulls, grasp the sleek black remote control
+    with a circular navigation button and multicolored buttons. Compact design, and carry it to the table
+    where we have dinner.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _267f6fc623254562a150ee002f027179
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _267f6fc623254562a150ee002f027179
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _267f6fc623254562a150ee002f027179
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _267f6fc623254562a150ee002f027179:
+      category: remote control
+      detailed_caption: Sleek black remote control with a circular navigation button and multicolored
+        buttons. Compact design.
+      usd_path: 267f6fc623254562a150ee002f027179.usd
+      size:
+      - 0.08344650268554688
+      - 0.026447296142578125
+      - 0.2352405652110292
+  obj_distractors:
+  - _79bff744c1b74462af7d3c0b9b19267b
+  - cf2b3e74a7b547e2a75dba0187584190
+  obj_distractor_meta:
+    _79bff744c1b74462af7d3c0b9b19267b:
+      category: remote control
+      detailed_caption: Sleek, rectangular remote control with a black body and large, brightly colored
+        buttons.
+      usd_path: 79bff744c1b74462af7d3c0b9b19267b.usd
+      size:
+      - 0.08931159973144531
+      - 0.224365234375
+      - 0.027959939965512604
+    cf2b3e74a7b547e2a75dba0187584190:
+      category: remote control
+      detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+        grip.
+      usd_path: cf2b3e74a7b547e2a75dba0187584190.usd
+      size:
+      - 0.22077178955078125
+      - 0.225372314453125
+      - 0.05019793674000539
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control with a circular navigation button and multicolored
+        buttons. Compact design.
+  - action: gaze_at
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control with a circular navigation button and multicolored
+        buttons. Compact design.
+  - action: pick
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control with a circular navigation button and multicolored
+        buttons. Compact design.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    _267f6fc623254562a150ee002f027179_on_desk_1_at_verify_task_22:
+      position:
+      - -0.015830555664155282
+      - -3.3849859054705265
+      - 0.8756203178914643
+      furniture: desk_1
+      original_id: _267f6fc623254562a150ee002f027179
+    _267f6fc623254562a150ee002f027179_on_desk_2_at_verify_task_22:
+      position:
+      - 4.4593490670256815
+      - 2.082452269239457
+      - 0.8830628518613435
+      furniture: desk_2
+      original_id: _267f6fc623254562a150ee002f027179
+  final_positions:
+    _267f6fc623254562a150ee002f027179_on_desk_1_at_verify_task_22:
+      initial_pos:
+      - -0.015830555664155282
+      - -3.3849859054705265
+      - 0.9756203178914643
+      final_pos:
+      - -0.015811827033758163
+      - -3.384916305541992
+      - 0.8556199669837952
+      category: remote control
+      original_id: _267f6fc623254562a150ee002f027179
+    _267f6fc623254562a150ee002f027179_on_desk_2_at_verify_task_22:
+      initial_pos:
+      - 4.4593490670256815
+      - 2.082452269239457
+      - 0.9830628518613435
+      final_pos:
+      - 4.458373546600342
+      - 2.236461877822876
+      - 0.7316006422042847
+      category: remote control
+      original_id: _267f6fc623254562a150ee002f027179
+  family: FDP
+  benchmark_task_id: FDP/verify_task_22
+  benchmark_instruction: Navigate to wide desk with orange drawer pulls, grasp the sleek black remote
+    control with a circular navigation button and multicolored buttons. Compact design, and carry it to
+    the table where we have dinner.
+  global_index: 14
+  target_object_id: _267f6fc623254562a150ee002f027179

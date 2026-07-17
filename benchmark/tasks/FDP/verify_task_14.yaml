@@ -1,0 +1,258 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  cf2b3e74a7b547e2a75dba0187584190_on_desk_1_at_verify_task_14:
+    original_id: cf2b3e74a7b547e2a75dba0187584190
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/cf2b3e74a7b547e2a75dba0187584190.usd
+    usd_scale:
+    - 0.15257246027027485
+    - 0.15117129291725986
+    - 0.14418062139125867
+    position:
+    - 0.024813445185003682
+    - -2.796650697969425
+    - 0.7830990036559524
+    size:
+    - 0.22077178955078125
+    - 0.225372314453125
+    - 0.05019793674000539
+    detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+      grip.
+  cf2b3e74a7b547e2a75dba0187584190_on_desk_2_at_verify_task_14:
+    original_id: cf2b3e74a7b547e2a75dba0187584190
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/cf2b3e74a7b547e2a75dba0187584190.usd
+    usd_scale:
+    - 0.15257246027027485
+    - 0.15117129291725986
+    - 0.14418062139125867
+    position:
+    - 4.527259121196458
+    - 1.4736782885651187
+    - 0.7905415376258316
+    size:
+    - 0.22077178955078125
+    - 0.225372314453125
+    - 0.05019793674000539
+    detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+      grip.
+episodes:
+- task_id: verify_task_14
+  episode_idx: 7
+  original_idx: 14
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the sleek black remote control, curved design, glossy surface, colored buttons,
+    ergonomic grip located at wide desk with orange drawer pulls to the rectangular table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - cf2b3e74a7b547e2a75dba0187584190
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - cf2b3e74a7b547e2a75dba0187584190
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - cf2b3e74a7b547e2a75dba0187584190
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    cf2b3e74a7b547e2a75dba0187584190:
+      category: remote control
+      detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+        grip.
+      usd_path: cf2b3e74a7b547e2a75dba0187584190.usd
+      size:
+      - 0.22077178955078125
+      - 0.225372314453125
+      - 0.05019793674000539
+  obj_distractors:
+  - _63f5007c_eae0_4718_b760_df6c25e0e4ae
+  - e77ea3afe04b454d8882e25565dc1054
+  obj_distractor_meta:
+    _63f5007c_eae0_4718_b760_df6c25e0e4ae:
+      category: remote
+      detailed_caption: Sleek black plastic remote control, rounded shape, glossy finish, ergonomic design.
+      usd_path: 63f5007c-eae0-4718-b760-df6c25e0e4ae.usd
+      size:
+      - 0.05780982971191406
+      - 0.20239830017089844
+      - 0.030608095694333315
+    e77ea3afe04b454d8882e25565dc1054:
+      category: remote control
+      detailed_caption: Sleek black rectangular remote control with a smooth surface and colorful buttons.
+      usd_path: e77ea3afe04b454d8882e25565dc1054.usd
+      size:
+      - 0.08642196655273438
+      - 0.2476825714111328
+      - 0.04072807193733752
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control, curved design, glossy surface, colored buttons,
+        ergonomic grip.
+  - action: gaze_at
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control, curved design, glossy surface, colored buttons,
+        ergonomic grip.
+  - action: pick
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control, curved design, glossy surface, colored buttons,
+        ergonomic grip.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    cf2b3e74a7b547e2a75dba0187584190_on_desk_1_at_verify_task_14:
+      position:
+      - 0.024813445185003682
+      - -2.796650697969425
+      - 0.7830990036559524
+      furniture: desk_1
+      original_id: cf2b3e74a7b547e2a75dba0187584190
+    cf2b3e74a7b547e2a75dba0187584190_on_desk_2_at_verify_task_14:
+      position:
+      - 4.527259121196458
+      - 1.4736782885651187
+      - 0.7905415376258316
+      furniture: desk_2
+      original_id: cf2b3e74a7b547e2a75dba0187584190
+  final_positions:
+    cf2b3e74a7b547e2a75dba0187584190_on_desk_1_at_verify_task_14:
+      initial_pos:
+      - 0.024813445185003682
+      - -2.796650697969425
+      - 0.8830990036559524
+      final_pos:
+      - 0.03032492659986019
+      - -2.60121750831604
+      - 0.7595202922821045
+      category: remote control
+      original_id: cf2b3e74a7b547e2a75dba0187584190
+    cf2b3e74a7b547e2a75dba0187584190_on_desk_2_at_verify_task_14:
+      initial_pos:
+      - 4.527259121196458
+      - 1.4736782885651187
+      - 0.8905415376258315
+      final_pos:
+      - 4.582014560699463
+      - 1.5770251750946045
+      - 2.304589033126831
+      category: remote control
+      original_id: cf2b3e74a7b547e2a75dba0187584190
+  family: FDP
+  benchmark_task_id: FDP/verify_task_14
+  benchmark_instruction: Move the sleek black remote control, curved design, glossy surface, colored buttons,
+    ergonomic grip located at wide desk with orange drawer pulls to the rectangular table.
+  global_index: 7
+  target_object_id: cf2b3e74a7b547e2a75dba0187584190

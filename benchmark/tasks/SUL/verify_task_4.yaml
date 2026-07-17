@@ -1,0 +1,303 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _3aba69a3_987d_436f_99bc_b94b094b658f_on_table_1_at_verify_task_4:
+    original_id: _3aba69a3_987d_436f_99bc_b94b094b658f
+    category: decorative figure
+    usd_path: ${MESATASK_USD_ROOT}/3aba69a3-987d-436f-99bc-b94b094b658f.usd
+    usd_scale:
+    - 7.006038234545067
+    - 7.41153818350637
+    - 7.071804737931485
+    position:
+    - -1.8798260422501207
+    - -1.1130537177448054
+    - 0.8007113544549793
+    size:
+    - 0.07911920547485352
+    - 0.15001869201660156
+    - 0.073422912042588
+    detailed_caption: Delicate ceramic figurine of a girl, pastel colors, intricate details, textured
+      base, floral accents.
+  _2812b03176ba47afb9b1aade71081014_on_table_1_at_verify_task_4:
+    original_id: _2812b03176ba47afb9b1aade71081014
+    category: decorative object
+    usd_path: ${MESATASK_USD_ROOT}/2812b03176ba47afb9b1aade71081014.usd
+    usd_scale:
+    - 0.27521993325885885
+    - 0.2753984898508459
+    - 0.2772145777180283
+    position:
+    - -2.1516944333087005
+    - -1.4187644313032917
+    - 0.8114766205940396
+    size:
+    - 0.09380722045898438
+    - 0.04402351379394531
+    - 0.09495344432070851
+    detailed_caption: Decorative round box with floral design, slightly domed top, cylindrical body, sturdy
+      material.
+  _0743abf25e20405f80f99c60098c0429_on_table_1_at_verify_task_4:
+    original_id: _0743abf25e20405f80f99c60098c0429
+    category: decorative ball
+    usd_path: ${MESATASK_USD_ROOT}/0743abf25e20405f80f99c60098c0429.usd
+    usd_scale:
+    - 0.06249547782480244
+    - 0.06197632764536104
+    - 0.06200458152467715
+    position:
+    - -1.523327255839484
+    - -1.0524493557722883
+    - 0.8283764156326652
+    size:
+    - 0.12871551513671875
+    - 0.12926483154296875
+    - 0.1287530343979597
+    detailed_caption: Spherical object, predominantly red with a white base and central black band, smooth
+      surface.
+episodes:
+- task_id: verify_task_4
+  episode_idx: 2
+  original_idx: 4
+  benchmark_instruction: Go to the table where we have dinner, pick up a decorative object, then travel
+    to the couch in front of the TV to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to the table where we have dinner, pick up the delicate ceramic figurine of a girl,
+    pastel colors, intricate details, textured base, floral accents, then travel to the couch in front
+    of the TV to place it.
+  fuzzy_task_description: Go to the table where we have dinner, pick up a decorative object, then travel
+    to the couch in front of the TV to place it.
+  purpose: decorative object
+  purpose_group: decorative_objects
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _3aba69a3_987d_436f_99bc_b94b094b658f
+      - _2812b03176ba47afb9b1aade71081014
+      - _0743abf25e20405f80f99c60098c0429
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _2812b03176ba47afb9b1aade71081014
+      - _0743abf25e20405f80f99c60098c0429
+    couch_2:
+      room: living room/0
+      content:
+      - _3aba69a3_987d_436f_99bc_b94b094b658f
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: couch_2
+  dest_distractors: []
+  obj_meta:
+    _3aba69a3_987d_436f_99bc_b94b094b658f:
+      category: decorative figure
+      detailed_caption: Delicate ceramic figurine of a girl, pastel colors, intricate details, textured
+        base, floral accents.
+      usd_path: 3aba69a3-987d-436f-99bc-b94b094b658f.usd
+      size:
+      - 0.07911920547485352
+      - 0.15001869201660156
+      - 0.073422912042588
+  obj_distractors:
+  - _2812b03176ba47afb9b1aade71081014
+  - _0743abf25e20405f80f99c60098c0429
+  obj_distractor_meta:
+    _2812b03176ba47afb9b1aade71081014:
+      category: decorative object
+      detailed_caption: Decorative round box with floral design, slightly domed top, cylindrical body,
+        sturdy material.
+      usd_path: 2812b03176ba47afb9b1aade71081014.usd
+      size:
+      - 0.09380722045898438
+      - 0.04402351379394531
+      - 0.09495344432070851
+    _0743abf25e20405f80f99c60098c0429:
+      category: decorative ball
+      detailed_caption: Spherical object, predominantly red with a white base and central black band,
+        smooth surface.
+      usd_path: 0743abf25e20405f80f99c60098c0429.usd
+      size:
+      - 0.12871551513671875
+      - 0.12926483154296875
+      - 0.1287530343979597
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: decorative figure
+      target_description: Delicate ceramic figurine of a girl, pastel colors, intricate details, textured
+        base, floral accents.
+  - action: gaze_at
+    args:
+      target_category: decorative figure
+      target_description: Delicate ceramic figurine of a girl, pastel colors, intricate details, textured
+        base, floral accents.
+  - action: pick
+    args:
+      target_category: decorative figure
+      target_description: Delicate ceramic figurine of a girl, pastel colors, intricate details, textured
+        base, floral accents.
+  - action: nav_to
+    args:
+      receptacle_name: couch_2
+  - action: place
+    args:
+      receptacle_name: couch_2
+  physics_task_description: Go to the table where we have dinner, pick up the delicate ceramic figurine
+    of a girl, pastel colors, intricate details, textured base, floral accents, then travel to the couch
+    in front of the TV to place it.
+  placements:
+    _3aba69a3_987d_436f_99bc_b94b094b658f_on_table_1_at_verify_task_4:
+      position:
+      - -1.8798260422501207
+      - -1.1130537177448054
+      - 0.8007113544549793
+      furniture: table_1
+      original_id: _3aba69a3_987d_436f_99bc_b94b094b658f
+    _2812b03176ba47afb9b1aade71081014_on_table_1_at_verify_task_4:
+      position:
+      - -2.1516944333087005
+      - -1.4187644313032917
+      - 0.8114766205940396
+      furniture: table_1
+      original_id: _2812b03176ba47afb9b1aade71081014
+    _0743abf25e20405f80f99c60098c0429_on_table_1_at_verify_task_4:
+      position:
+      - -1.523327255839484
+      - -1.0524493557722883
+      - 0.8283764156326652
+      furniture: table_1
+      original_id: _0743abf25e20405f80f99c60098c0429
+  final_positions:
+    _3aba69a3_987d_436f_99bc_b94b094b658f_on_table_1_at_verify_task_4:
+      initial_pos:
+      - -1.8798260422501207
+      - -1.1130537177448054
+      - 0.9007113544549793
+      final_pos:
+      - -1.906790018081665
+      - -1.0331960916519165
+      - 0.7775752544403076
+      category: decorative figure
+      original_id: _3aba69a3_987d_436f_99bc_b94b094b658f
+    _2812b03176ba47afb9b1aade71081014_on_table_1_at_verify_task_4:
+      initial_pos:
+      - -2.1516944333087005
+      - -1.4187644313032917
+      - 0.9114766205940396
+      final_pos:
+      - -2.1694672107696533
+      - -1.4186785221099854
+      - 0.7904433608055115
+      category: decorative object
+      original_id: _2812b03176ba47afb9b1aade71081014
+    _0743abf25e20405f80f99c60098c0429_on_table_1_at_verify_task_4:
+      initial_pos:
+      - -1.523327255839484
+      - -1.0524493557722883
+      - 0.9283764156326652
+      final_pos:
+      - -1.539101004600525
+      - -1.020853042602539
+      - 0.8036415576934814
+      category: decorative ball
+      original_id: _0743abf25e20405f80f99c60098c0429
+  family: SUL
+  benchmark_task_id: SUL/verify_task_4
+  global_index: 178
+  target_object_id: _3aba69a3_987d_436f_99bc_b94b094b658f

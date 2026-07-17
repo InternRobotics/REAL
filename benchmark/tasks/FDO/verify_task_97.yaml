@@ -1,0 +1,367 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_6_at_verify_task_97:
+    original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    category: vegetable
+    usd_path: ${MESATASK_USD_ROOT}/7dceb5e3fa574027b6b8c6ffff8c980c.usd
+    usd_scale:
+    - 1.0041062501633324
+    - 1.0064878651109568
+    - 1.0074563461748025
+    position:
+    - 2.609186187075276
+    - -0.926689545502412
+    - 0.7735480494843796
+    size:
+    - 0.0780029296875
+    - 0.08620834350585938
+    - 0.07109610945917666
+  _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_7_at_verify_task_97:
+    original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    category: vegetable
+    usd_path: ${MESATASK_USD_ROOT}/7dceb5e3fa574027b6b8c6ffff8c980c.usd
+    usd_scale:
+    - 1.0041062501633324
+    - 1.0064878651109568
+    - 1.0074563461748025
+    position:
+    - 0.8866253892173239
+    - 1.7297578168497327
+    - 0.8920980520593003
+    size:
+    - 0.0780029296875
+    - 0.08620834350585938
+    - 0.07109610945917666
+  _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_8_at_verify_task_97:
+    original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    category: vegetable
+    usd_path: ${MESATASK_USD_ROOT}/7dceb5e3fa574027b6b8c6ffff8c980c.usd
+    usd_scale:
+    - 1.0041062501633324
+    - 1.0064878651109568
+    - 1.0074563461748025
+    position:
+    - 4.49223672491461
+    - 2.8659231077246723
+    - 0.5060480363713578
+    size:
+    - 0.0780029296875
+    - 0.08620834350585938
+    - 0.07109610945917666
+  _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_9_at_verify_task_97:
+    original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    category: vegetable
+    usd_path: ${MESATASK_USD_ROOT}/7dceb5e3fa574027b6b8c6ffff8c980c.usd
+    usd_scale:
+    - 1.0041062501633324
+    - 1.0064878651109568
+    - 1.0074563461748025
+    position:
+    - 6.082863813559726
+    - 1.2238901810997918
+    - 0.9955480523454026
+    size:
+    - 0.0780029296875
+    - 0.08620834350585938
+    - 0.07109610945917666
+  _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_10_at_verify_task_97:
+    original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    category: vegetable
+    usd_path: ${MESATASK_USD_ROOT}/7dceb5e3fa574027b6b8c6ffff8c980c.usd
+    usd_scale:
+    - 1.0041062501633324
+    - 1.0064878651109568
+    - 1.0074563461748025
+    position:
+    - 3.2835615149012836
+    - -0.5384670258343708
+    - 0.528548044716008
+    size:
+    - 0.0780029296875
+    - 0.08620834350585938
+    - 0.07109610945917666
+episodes:
+- benchmark_task_id: FDO/verify_task_97
+  family: FDO
+  task_id: verify_task_97
+  episode_idx: 14
+  original_idx: 97
+  benchmark_instruction: Transport a vegetable at the white cabinet next to the bedroom sink to the only
+    electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Transport a vegetable at the white cabinet next to the bedroom sink to the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _7dceb5e3fa574027b6b8c6ffff8c980c
+      door: false
+  src: cabinet_9
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_10
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _7dceb5e3fa574027b6b8c6ffff8c980c:
+      category: vegetable
+      usd_path: 7dceb5e3fa574027b6b8c6ffff8c980c.usd
+      size:
+      - 0.0780029296875
+      - 0.08620834350585938
+      - 0.07109610945917666
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: find
+    args:
+      target_category: vegetable
+  - action: gaze_at
+    args:
+      target_category: vegetable
+  - action: pick
+    args:
+      target_category: vegetable
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_6_at_verify_task_97:
+      position:
+      - 2.609186187075276
+      - -0.926689545502412
+      - 0.7735480494843796
+      furniture: cabinet_6
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_7_at_verify_task_97:
+      position:
+      - 0.8866253892173239
+      - 1.7297578168497327
+      - 0.8920980520593003
+      furniture: cabinet_7
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_8_at_verify_task_97:
+      position:
+      - 4.49223672491461
+      - 2.8659231077246723
+      - 0.5060480363713578
+      furniture: cabinet_8
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_9_at_verify_task_97:
+      position:
+      - 6.082863813559726
+      - 1.2238901810997918
+      - 0.9955480523454026
+      furniture: cabinet_9
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_10_at_verify_task_97:
+      position:
+      - 3.2835615149012836
+      - -0.5384670258343708
+      - 0.528548044716008
+      furniture: cabinet_10
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+  final_positions:
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_6_at_verify_task_97:
+      initial_pos:
+      - 2.609186187075276
+      - -0.926689545502412
+      - 0.8735480494843796
+      final_pos:
+      - 2.5645194053649902
+      - -0.9443000555038452
+      - 0.7515221238136292
+      category: vegetable
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_7_at_verify_task_97:
+      initial_pos:
+      - 0.8866253892173239
+      - 1.7297578168497327
+      - 0.9920980520593002
+      final_pos:
+      - 0.8493112921714783
+      - 1.7166852951049805
+      - 0.8700719475746155
+      category: vegetable
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_8_at_verify_task_97:
+      initial_pos:
+      - 4.49223672491461
+      - 2.8659231077246723
+      - 0.6060480363713577
+      final_pos:
+      - 4.447415351867676
+      - 2.848745107650757
+      - 0.4840221405029297
+      category: vegetable
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_9_at_verify_task_97:
+      initial_pos:
+      - 6.082863813559726
+      - 1.2238901810997918
+      - 1.0955480523454026
+      final_pos:
+      - 6.045438766479492
+      - 1.2108283042907715
+      - 0.9735211133956909
+      category: vegetable
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+    _7dceb5e3fa574027b6b8c6ffff8c980c_on_cabinet_10_at_verify_task_97:
+      initial_pos:
+      - 3.2835615149012836
+      - -0.5384670258343708
+      - 0.628548044716008
+      final_pos:
+      - 3.2385127544403076
+      - -0.5566616654396057
+      - 0.5065221786499023
+      category: vegetable
+      original_id: _7dceb5e3fa574027b6b8c6ffff8c980c
+  global_index: 142
+  target_object_id: _7dceb5e3fa574027b6b8c6ffff8c980c

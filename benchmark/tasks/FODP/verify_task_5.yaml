@@ -1,0 +1,340 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  ac98255331b54e76a9dace578d948dc5_on_table_1_at_verify_task_5:
+    original_id: ac98255331b54e76a9dace578d948dc5
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/ac98255331b54e76a9dace578d948dc5.usd
+    usd_scale:
+    - 8.78224396271253
+    - 8.712229712840067
+    - 8.77274079888256
+    position:
+    - -1.9455186061082037
+    - -1.400793160116591
+    - 0.8468881610129029
+    size:
+    - 0.1793193817138672
+    - 0.18381977081298828
+    - 0.1657765251584351
+    detailed_caption: Circular tray with a metallic textured surface, shiny finish, yellowed paint splatters,
+      wavy edges.
+  _225d406e1fee43139a3d465e31dd7937_on_table_1_at_verify_task_5:
+    original_id: _225d406e1fee43139a3d465e31dd7937
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/225d406e1fee43139a3d465e31dd7937.usd
+    usd_scale:
+    - 37.35943829793003
+    - 37.758962196715636
+    - 20.26802825287956
+    position:
+    - -2.713395108349143
+    - -1.4287455963009155
+    - 0.8296548145986162
+    size:
+    - 0.3442268371582031
+    - 0.1231008768081665
+    - 0.13130983232986182
+    detailed_caption: Rectangular tray with raised edges, flat surface, smooth and glossy finish, minimalist
+      design.
+  _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_5:
+    original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/9d0653ff-1a9d-46d6-91d0-f0d5739698e1.usd
+    usd_scale:
+    - 14.42849794144928
+    - 14.545888629114172
+    - 14.131672549110398
+    position:
+    - -2.4279549265605525
+    - -1.0890913837928333
+    - 0.7702914868668995
+    size:
+    - 0.2868843078613281
+    - 0.1930370330810547
+    - 0.012583176866428403
+    detailed_caption: Rectangular tray with a polished surface, sleek edges, reflective finish, and rounded
+      corners.
+  ac98255331b54e76a9dace578d948dc5_on_table_2_at_verify_task_5:
+    original_id: ac98255331b54e76a9dace578d948dc5
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/ac98255331b54e76a9dace578d948dc5.usd
+    usd_scale:
+    - 8.78224396271253
+    - 8.712229712840067
+    - 8.77274079888256
+    position:
+    - -2.611503411254405
+    - 3.3580507352779407
+    - 0.3728762629721314
+    size:
+    - 0.1793193817138672
+    - 0.18381977081298828
+    - 0.1657765251584351
+    detailed_caption: Circular tray with a metallic textured surface, shiny finish, yellowed paint splatters,
+      wavy edges.
+episodes:
+- benchmark_task_id: FODP/verify_task_5
+  family: FODP
+  task_id: verify_task_5
+  episode_idx: 3
+  original_idx: 5
+  benchmark_instruction: Bring the circular tray with a metallic textured surface, shiny finish, yellowed
+    paint splatters, wavy edges from the rectangular table to the table to place my snack for watching
+    TV.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the circular tray with a metallic textured surface, shiny finish, yellowed paint
+    splatters, wavy edges from the rectangular table to the table to place my snack for watching TV.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - ac98255331b54e76a9dace578d948dc5
+      - _225d406e1fee43139a3d465e31dd7937
+      - _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - ac98255331b54e76a9dace578d948dc5
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _225d406e1fee43139a3d465e31dd7937
+      - _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - ac98255331b54e76a9dace578d948dc5
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    ac98255331b54e76a9dace578d948dc5:
+      category: tray
+      detailed_caption: Circular tray with a metallic textured surface, shiny finish, yellowed paint splatters,
+        wavy edges.
+      usd_path: ac98255331b54e76a9dace578d948dc5.usd
+      size:
+      - 0.1793193817138672
+      - 0.18381977081298828
+      - 0.1657765251584351
+  obj_distractors:
+  - _225d406e1fee43139a3d465e31dd7937
+  - _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+  obj_distractor_meta:
+    _225d406e1fee43139a3d465e31dd7937:
+      category: tray
+      detailed_caption: Rectangular tray with raised edges, flat surface, smooth and glossy finish, minimalist
+        design.
+      usd_path: 225d406e1fee43139a3d465e31dd7937.usd
+      size:
+      - 0.3442268371582031
+      - 0.1231008768081665
+      - 0.13130983232986182
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1:
+      category: tray
+      detailed_caption: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+      usd_path: 9d0653ff-1a9d-46d6-91d0-f0d5739698e1.usd
+      size:
+      - 0.2868843078613281
+      - 0.1930370330810547
+      - 0.012583176866428403
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Circular tray with a metallic textured surface, shiny finish, yellowed paint
+        splatters, wavy edges.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Circular tray with a metallic textured surface, shiny finish, yellowed paint
+        splatters, wavy edges.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Circular tray with a metallic textured surface, shiny finish, yellowed paint
+        splatters, wavy edges.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    ac98255331b54e76a9dace578d948dc5_on_table_1_at_verify_task_5:
+      position:
+      - -1.9455186061082037
+      - -1.400793160116591
+      - 0.8468881610129029
+      furniture: table_1
+      original_id: ac98255331b54e76a9dace578d948dc5
+    _225d406e1fee43139a3d465e31dd7937_on_table_1_at_verify_task_5:
+      position:
+      - -2.713395108349143
+      - -1.4287455963009155
+      - 0.8296548145986162
+      furniture: table_1
+      original_id: _225d406e1fee43139a3d465e31dd7937
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_5:
+      position:
+      - -2.4279549265605525
+      - -1.0890913837928333
+      - 0.7702914868668995
+      furniture: table_1
+      original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    ac98255331b54e76a9dace578d948dc5_on_table_2_at_verify_task_5:
+      position:
+      - -2.611503411254405
+      - 3.3580507352779407
+      - 0.3728762629721314
+      furniture: table_2
+      original_id: ac98255331b54e76a9dace578d948dc5
+  final_positions:
+    ac98255331b54e76a9dace578d948dc5_on_table_1_at_verify_task_5:
+      initial_pos:
+      - -1.9455186061082037
+      - -1.400793160116591
+      - 0.9468881610129029
+      final_pos:
+      - -1.9387927055358887
+      - -1.3606877326965332
+      - 0.8027432560920715
+      category: tray
+      original_id: ac98255331b54e76a9dace578d948dc5
+    _225d406e1fee43139a3d465e31dd7937_on_table_1_at_verify_task_5:
+      initial_pos:
+      - -2.713395108349143
+      - -1.4287455963009155
+      - 0.9296548145986162
+      final_pos:
+      - -2.7233471870422363
+      - -1.4320781230926514
+      - 0.8085422515869141
+      category: tray
+      original_id: _225d406e1fee43139a3d465e31dd7937
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_5:
+      initial_pos:
+      - -2.4279549265605525
+      - -1.0890913837928333
+      - 0.8702914868668995
+      final_pos:
+      - -2.4279544353485107
+      - -1.0890916585922241
+      - 0.749589741230011
+      category: tray
+      original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    ac98255331b54e76a9dace578d948dc5_on_table_2_at_verify_task_5:
+      initial_pos:
+      - -2.611503411254405
+      - 3.3580507352779407
+      - 0.47287626297213137
+      final_pos:
+      - -2.6029112339019775
+      - 3.394249677658081
+      - 0.3287309408187866
+      category: tray
+      original_id: ac98255331b54e76a9dace578d948dc5
+  global_index: 75
+  target_object_id: ac98255331b54e76a9dace578d948dc5

@@ -1,0 +1,251 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  f5ac20ab3a984cc2a5a9e4ee72567bd1_on_desk_1_at_verify_task_80:
+    original_id: f5ac20ab3a984cc2a5a9e4ee72567bd1
+    category: bread
+    usd_path: ${MESATASK_USD_ROOT}/f5ac20ab3a984cc2a5a9e4ee72567bd1.usd
+    usd_scale:
+    - 0.029195018801169478
+    - 0.029302928683210376
+    - 0.030487768479381134
+    position:
+    - -0.10692027399299782
+    - -3.3611548446918658
+    - 0.7717213244573213
+    size:
+    - 0.09093475341796875
+    - 0.08071517944335938
+    - 0.027442578342743218
+  f5ac20ab3a984cc2a5a9e4ee72567bd1_on_desk_2_at_verify_task_80:
+    original_id: f5ac20ab3a984cc2a5a9e4ee72567bd1
+    category: bread
+    usd_path: ${MESATASK_USD_ROOT}/f5ac20ab3a984cc2a5a9e4ee72567bd1.usd
+    usd_scale:
+    - 0.029195018801169478
+    - 0.029302928683210376
+    - 0.030487768479381134
+    position:
+    - 4.5139943578644255
+    - 2.17995957031204
+    - 0.7791638584272005
+    size:
+    - 0.09093475341796875
+    - 0.08071517944335938
+    - 0.027442578342743218
+episodes:
+- benchmark_task_id: FDO/verify_task_80
+  family: FDO
+  task_id: verify_task_80
+  episode_idx: 2
+  original_idx: 80
+  benchmark_instruction: Retrieve a bread from the desk near my bed and deposit it at the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Retrieve a bread from the desk near my bed and deposit it at the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - f5ac20ab3a984cc2a5a9e4ee72567bd1
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - f5ac20ab3a984cc2a5a9e4ee72567bd1
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - f5ac20ab3a984cc2a5a9e4ee72567bd1
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - f5ac20ab3a984cc2a5a9e4ee72567bd1
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    f5ac20ab3a984cc2a5a9e4ee72567bd1:
+      category: bread
+      usd_path: f5ac20ab3a984cc2a5a9e4ee72567bd1.usd
+      size:
+      - 0.09093475341796875
+      - 0.08071517944335938
+      - 0.027442578342743218
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: bread
+  - action: gaze_at
+    args:
+      target_category: bread
+  - action: pick
+    args:
+      target_category: bread
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    f5ac20ab3a984cc2a5a9e4ee72567bd1_on_desk_1_at_verify_task_80:
+      position:
+      - -0.10692027399299782
+      - -3.3611548446918658
+      - 0.7717213244573213
+      furniture: desk_1
+      original_id: f5ac20ab3a984cc2a5a9e4ee72567bd1
+    f5ac20ab3a984cc2a5a9e4ee72567bd1_on_desk_2_at_verify_task_80:
+      position:
+      - 4.5139943578644255
+      - 2.17995957031204
+      - 0.7791638584272005
+      furniture: desk_2
+      original_id: f5ac20ab3a984cc2a5a9e4ee72567bd1
+  final_positions:
+    f5ac20ab3a984cc2a5a9e4ee72567bd1_on_desk_1_at_verify_task_80:
+      initial_pos:
+      - -0.10692027399299782
+      - -3.3611548446918658
+      - 0.8717213244573213
+      final_pos:
+      - -0.10369058698415756
+      - -3.3935999870300293
+      - 0.7499427199363708
+      category: bread
+      original_id: f5ac20ab3a984cc2a5a9e4ee72567bd1
+    f5ac20ab3a984cc2a5a9e4ee72567bd1_on_desk_2_at_verify_task_80:
+      initial_pos:
+      - 4.5139943578644255
+      - 2.17995957031204
+      - 0.8791638584272005
+      final_pos:
+      - 4.514310836791992
+      - 2.1814279556274414
+      - 0.7263312935829163
+      category: bread
+      original_id: f5ac20ab3a984cc2a5a9e4ee72567bd1
+  global_index: 130
+  target_object_id: f5ac20ab3a984cc2a5a9e4ee72567bd1

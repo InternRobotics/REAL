@@ -1,0 +1,338 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _81a3a49fd57a48ccb005e2c925973a14_on_desk_1_at_verify_task_18:
+    original_id: _81a3a49fd57a48ccb005e2c925973a14
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/81a3a49fd57a48ccb005e2c925973a14.usd
+    usd_scale:
+    - 83.83397866362014
+    - 60.03807793710231
+    - 73.4649882246099
+    position:
+    - 0.11675433185797383
+    - -2.8095587009830782
+    - 0.7727090832591057
+    size:
+    - 0.16311979293823242
+    - 0.18452201783657074
+    - 0.02941809594631195
+    detailed_caption: Rectangular book with a smooth brown leather cover, thin, slightly visible spine,
+      vintage appearance.
+  _7331cd3ba5ed458782491474c2412733_on_desk_1_at_verify_task_18:
+    original_id: _7331cd3ba5ed458782491474c2412733
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/7331cd3ba5ed458782491474c2412733.usd
+    usd_scale:
+    - 13.47
+    - 16.23681572749519
+    - 14.497736938379393
+    position:
+    - 0.022015154941072743
+    - -2.533919597951176
+    - 0.7707072553271428
+    size:
+    - 0.2708148956298828
+    - 0.1746654510498047
+    - 0.025414440082386136
+    detailed_caption: An open book with yellowed, textured pages and rectangular shape. Illustrations
+      present.
+  _30406f3ca169449eb08892727c0c980c_on_desk_1_at_verify_task_18:
+    original_id: _30406f3ca169449eb08892727c0c980c
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/30406f3ca169449eb08892727c0c980c.usd
+    usd_scale:
+    - 248.95833116930186
+    - 75.67615891112533
+    - 17.85267250984638
+    position:
+    - -0.03720432735613177
+    - -3.101904704230061
+    - 0.787425800412866
+    size:
+    - 0.249725341796875
+    - 0.2628135681152344
+    - 0.05885153025383261
+    detailed_caption: Bright red hardcover book, rectangular shape, flat spine, smooth finish, clean covers.
+  _81a3a49fd57a48ccb005e2c925973a14_on_desk_2_at_verify_task_18:
+    original_id: _81a3a49fd57a48ccb005e2c925973a14
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/81a3a49fd57a48ccb005e2c925973a14.usd
+    usd_scale:
+    - 83.83397866362014
+    - 60.03807793710231
+    - 73.4649882246099
+    position:
+    - 4.495269836869476
+    - 1.9344613175284318
+    - 0.7801516172289849
+    size:
+    - 0.16311979293823242
+    - 0.18452201783657074
+    - 0.02941809594631195
+    detailed_caption: Rectangular book with a smooth brown leather cover, thin, slightly visible spine,
+      vintage appearance.
+episodes:
+- benchmark_task_id: FODP/verify_task_18
+  family: FODP
+  task_id: verify_task_18
+  episode_idx: 11
+  original_idx: 18
+  benchmark_instruction: Retrieve the rectangular book with a smooth brown leather cover, thin, slightly
+    visible spine, vintage appearance from white desk with rectangular wooden handles and deposit it at
+    the table much larger than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the rectangular book with a smooth brown leather cover, thin, slightly visible
+    spine, vintage appearance from white desk with rectangular wooden handles and deposit it at the table
+    much larger than another one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _81a3a49fd57a48ccb005e2c925973a14
+      - _7331cd3ba5ed458782491474c2412733
+      - _30406f3ca169449eb08892727c0c980c
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _81a3a49fd57a48ccb005e2c925973a14
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _81a3a49fd57a48ccb005e2c925973a14
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _7331cd3ba5ed458782491474c2412733
+      - _30406f3ca169449eb08892727c0c980c
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _81a3a49fd57a48ccb005e2c925973a14
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _81a3a49fd57a48ccb005e2c925973a14:
+      category: book
+      detailed_caption: Rectangular book with a smooth brown leather cover, thin, slightly visible spine,
+        vintage appearance.
+      usd_path: 81a3a49fd57a48ccb005e2c925973a14.usd
+      size:
+      - 0.16311979293823242
+      - 0.18452201783657074
+      - 0.02941809594631195
+  obj_distractors:
+  - _7331cd3ba5ed458782491474c2412733
+  - _30406f3ca169449eb08892727c0c980c
+  obj_distractor_meta:
+    _7331cd3ba5ed458782491474c2412733:
+      category: book
+      detailed_caption: An open book with yellowed, textured pages and rectangular shape. Illustrations
+        present.
+      usd_path: 7331cd3ba5ed458782491474c2412733.usd
+      size:
+      - 0.2708148956298828
+      - 0.1746654510498047
+      - 0.025414440082386136
+    _30406f3ca169449eb08892727c0c980c:
+      category: book
+      detailed_caption: Bright red hardcover book, rectangular shape, flat spine, smooth finish, clean
+        covers.
+      usd_path: 30406f3ca169449eb08892727c0c980c.usd
+      size:
+      - 0.249725341796875
+      - 0.2628135681152344
+      - 0.05885153025383261
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: book
+      target_description: Rectangular book with a smooth brown leather cover, thin, slightly visible spine,
+        vintage appearance.
+  - action: gaze_at
+    args:
+      target_category: book
+      target_description: Rectangular book with a smooth brown leather cover, thin, slightly visible spine,
+        vintage appearance.
+  - action: pick
+    args:
+      target_category: book
+      target_description: Rectangular book with a smooth brown leather cover, thin, slightly visible spine,
+        vintage appearance.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    _81a3a49fd57a48ccb005e2c925973a14_on_desk_1_at_verify_task_18:
+      position:
+      - 0.11675433185797383
+      - -2.8095587009830782
+      - 0.7727090832591057
+      furniture: desk_1
+      original_id: _81a3a49fd57a48ccb005e2c925973a14
+    _7331cd3ba5ed458782491474c2412733_on_desk_1_at_verify_task_18:
+      position:
+      - 0.022015154941072743
+      - -2.533919597951176
+      - 0.7707072553271428
+      furniture: desk_1
+      original_id: _7331cd3ba5ed458782491474c2412733
+    _30406f3ca169449eb08892727c0c980c_on_desk_1_at_verify_task_18:
+      position:
+      - -0.03720432735613177
+      - -3.101904704230061
+      - 0.787425800412866
+      furniture: desk_1
+      original_id: _30406f3ca169449eb08892727c0c980c
+    _81a3a49fd57a48ccb005e2c925973a14_on_desk_2_at_verify_task_18:
+      position:
+      - 4.495269836869476
+      - 1.9344613175284318
+      - 0.7801516172289849
+      furniture: desk_2
+      original_id: _81a3a49fd57a48ccb005e2c925973a14
+  final_positions:
+    _81a3a49fd57a48ccb005e2c925973a14_on_desk_1_at_verify_task_18:
+      initial_pos:
+      - 0.11675433185797383
+      - -2.8095587009830782
+      - 0.8727090832591057
+      final_pos:
+      - 0.08209192007780075
+      - -2.8257758617401123
+      - 0.7438107132911682
+      category: book
+      original_id: _81a3a49fd57a48ccb005e2c925973a14
+    _7331cd3ba5ed458782491474c2412733_on_desk_1_at_verify_task_18:
+      initial_pos:
+      - 0.022015154941072743
+      - -2.533919597951176
+      - 0.8707072553271428
+      final_pos:
+      - 0.020964179188013077
+      - -2.4438092708587646
+      - 0.7518031597137451
+      category: book
+      original_id: _7331cd3ba5ed458782491474c2412733
+    _30406f3ca169449eb08892727c0c980c_on_desk_1_at_verify_task_18:
+      initial_pos:
+      - -0.03720432735613177
+      - -3.101904704230061
+      - 0.887425800412866
+      final_pos:
+      - -0.03678996488451958
+      - -3.10190486907959
+      - 0.7673682570457458
+      category: book
+      original_id: _30406f3ca169449eb08892727c0c980c
+    _81a3a49fd57a48ccb005e2c925973a14_on_desk_2_at_verify_task_18:
+      initial_pos:
+      - 4.495269836869476
+      - 1.9344613175284318
+      - 0.8801516172289848
+      final_pos:
+      - 4.491117477416992
+      - 1.8198723793029785
+      - 0.7429495453834534
+      category: book
+      original_id: _81a3a49fd57a48ccb005e2c925973a14
+  global_index: 83
+  target_object_id: _81a3a49fd57a48ccb005e2c925973a14

@@ -1,0 +1,262 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a33b80cd_aaa9_4b95_b554_af370a80d6c3_on_desk_1_at_verify_task_207:
+    original_id: a33b80cd_aaa9_4b95_b554_af370a80d6c3
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/a33b80cd-aaa9-4b95-b554-af370a80d6c3.usd
+    usd_scale:
+    - 8.635213531833104
+    - 9.25788989020741
+    - 8.827178594533715
+    position:
+    - 0.08723823559815634
+    - -3.3961944672439097
+    - 0.762976011839346
+    size:
+    - 0.17211532592773438
+    - 0.015270233154296875
+    - 0.009951953106792644
+    detailed_caption: Sleek mechanical pencil with a slim cylindrical body, textured grip, polished black
+      and silver finish.
+  a33b80cd_aaa9_4b95_b554_af370a80d6c3_on_desk_2_at_verify_task_207:
+    original_id: a33b80cd_aaa9_4b95_b554_af370a80d6c3
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/a33b80cd-aaa9-4b95-b554-af370a80d6c3.usd
+    usd_scale:
+    - 8.635213531833104
+    - 9.25788989020741
+    - 8.827178594533715
+    position:
+    - 4.482476857302503
+    - 1.8309199836520738
+    - 0.7704185458092252
+    size:
+    - 0.17211532592773438
+    - 0.015270233154296875
+    - 0.009951953106792644
+    detailed_caption: Sleek mechanical pencil with a slim cylindrical body, textured grip, polished black
+      and silver finish.
+episodes:
+- task_id: verify_task_207
+  episode_idx: 54
+  original_idx: 207
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to white desk in front of the blank wall, fetch the sleek mechanical pencil
+    with a slim cylindrical body, textured grip, polished black and silver finish, and bring it back to
+    the table to place my snack for watching TV.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - a33b80cd_aaa9_4b95_b554_af370a80d6c3
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - a33b80cd_aaa9_4b95_b554_af370a80d6c3
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - a33b80cd_aaa9_4b95_b554_af370a80d6c3
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    a33b80cd_aaa9_4b95_b554_af370a80d6c3:
+      category: pencil
+      detailed_caption: Sleek mechanical pencil with a slim cylindrical body, textured grip, polished
+        black and silver finish.
+      usd_path: a33b80cd-aaa9-4b95-b554-af370a80d6c3.usd
+      size:
+      - 0.17211532592773438
+      - 0.015270233154296875
+      - 0.009951953106792644
+  obj_distractors:
+  - _748724f9761f4029807de5618ae50c3c
+  - _4842e147554b4a06ad061cc2ab89ccda
+  obj_distractor_meta:
+    _748724f9761f4029807de5618ae50c3c:
+      category: pencil
+      detailed_caption: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood,
+        silver ferrule.
+      usd_path: 748724f9761f4029807de5618ae50c3c.usd
+      size:
+      - 0.2049999237060547
+      - 0.19643020629882812
+      - 0.0010589158664515708
+    _4842e147554b4a06ad061cc2ab89ccda:
+      category: pencil
+      detailed_caption: A yellow cylindrical pencil with a smooth surface, sharpened tip, and eraser at
+        one end.
+      usd_path: 4842e147554b4a06ad061cc2ab89ccda.usd
+      size:
+      - 0.15587806701660156
+      - 0.0077762603759765625
+      - 0.009357212809845805
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: pencil
+      target_description: Sleek mechanical pencil with a slim cylindrical body, textured grip, polished
+        black and silver finish.
+  - action: gaze_at
+    args:
+      target_category: pencil
+      target_description: Sleek mechanical pencil with a slim cylindrical body, textured grip, polished
+        black and silver finish.
+  - action: pick
+    args:
+      target_category: pencil
+      target_description: Sleek mechanical pencil with a slim cylindrical body, textured grip, polished
+        black and silver finish.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    a33b80cd_aaa9_4b95_b554_af370a80d6c3_on_desk_1_at_verify_task_207:
+      position:
+      - 0.08723823559815634
+      - -3.3961944672439097
+      - 0.762976011839346
+      furniture: desk_1
+      original_id: a33b80cd_aaa9_4b95_b554_af370a80d6c3
+    a33b80cd_aaa9_4b95_b554_af370a80d6c3_on_desk_2_at_verify_task_207:
+      position:
+      - 4.482476857302503
+      - 1.8309199836520738
+      - 0.7704185458092252
+      furniture: desk_2
+      original_id: a33b80cd_aaa9_4b95_b554_af370a80d6c3
+  final_positions:
+    a33b80cd_aaa9_4b95_b554_af370a80d6c3_on_desk_1_at_verify_task_207:
+      initial_pos:
+      - 0.08723823559815634
+      - -3.3961944672439097
+      - 0.862976011839346
+      final_pos:
+      - 0.08716124296188354
+      - -3.3915414810180664
+      - 0.7406172156333923
+      category: pencil pen
+      original_id: a33b80cd_aaa9_4b95_b554_af370a80d6c3
+    a33b80cd_aaa9_4b95_b554_af370a80d6c3_on_desk_2_at_verify_task_207:
+      initial_pos:
+      - 4.482476857302503
+      - 1.8309199836520738
+      - 0.8704185458092252
+      final_pos:
+      - 4.482425689697266
+      - 1.8314228057861328
+      - 0.7212538123130798
+      category: pencil pen
+      original_id: a33b80cd_aaa9_4b95_b554_af370a80d6c3
+  family: FDP
+  benchmark_task_id: FDP/verify_task_207
+  benchmark_instruction: Head over to white desk in front of the blank wall, fetch the sleek mechanical
+    pencil with a slim cylindrical body, textured grip, polished black and silver finish, and bring it
+    back to the table to place my snack for watching TV.
+  global_index: 54
+  target_object_id: a33b80cd_aaa9_4b95_b554_af370a80d6c3

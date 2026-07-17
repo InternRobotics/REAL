@@ -1,0 +1,253 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _4c820629af294e50af725ad1f5f01cb0_on_table_1_at_verify_task_205:
+    original_id: _4c820629af294e50af725ad1f5f01cb0
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/4c820629af294e50af725ad1f5f01cb0.usd
+    usd_scale:
+    - 0.8503708705606161
+    - 0.594437132317855
+    - 0.872917708246437
+    position:
+    - -3.051728504700294
+    - -1.1966554562389855
+    - 0.7947147758491337
+    size:
+    - 0.11966323852539062
+    - 0.12358665466308594
+    - 0.061429754830896854
+    detailed_caption: A vintage red alarm clock with a round face, two bells, and black hands.
+  _4c820629af294e50af725ad1f5f01cb0_on_table_2_at_verify_task_205:
+    original_id: _4c820629af294e50af725ad1f5f01cb0
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/4c820629af294e50af725ad1f5f01cb0.usd
+    usd_scale:
+    - 0.8503708705606161
+    - 0.594437132317855
+    - 0.872917708246437
+    position:
+    - -1.9739860479243239
+    - 2.9367751652321163
+    - 0.32070287780836226
+    size:
+    - 0.11966323852539062
+    - 0.12358665466308594
+    - 0.061429754830896854
+    detailed_caption: A vintage red alarm clock with a round face, two bells, and black hands.
+episodes:
+- task_id: verify_task_205
+  episode_idx: 52
+  original_idx: 205
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the a vintage red alarm clock with a round face, two bells, and black hands
+    from the table much smaller than another one and deposit it at white table with single dark knob.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _4c820629af294e50af725ad1f5f01cb0
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _4c820629af294e50af725ad1f5f01cb0
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _4c820629af294e50af725ad1f5f01cb0
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _4c820629af294e50af725ad1f5f01cb0:
+      category: clock
+      detailed_caption: A vintage red alarm clock with a round face, two bells, and black hands.
+      usd_path: 4c820629af294e50af725ad1f5f01cb0.usd
+      size:
+      - 0.11966323852539062
+      - 0.12358665466308594
+      - 0.061429754830896854
+  obj_distractors:
+  - _99ca0cd55e234273a589ebaceb5f0c93
+  - fd5b1428b91c47f1a74d98bb92c9fbe1
+  obj_distractor_meta:
+    _99ca0cd55e234273a589ebaceb5f0c93:
+      category: watch
+      detailed_caption: Sleek silver wristwatch with a round face, black dial, and metallic link band.
+      usd_path: 99ca0cd55e234273a589ebaceb5f0c93.usd
+      size:
+      - 0.11234092712402344
+      - 0.09805679321289062
+      - 0.07319521345198154
+    fd5b1428b91c47f1a74d98bb92c9fbe1:
+      category: clock
+      detailed_caption: Vintage-style round clock with a glossy blue body, white face, and black hands.
+      usd_path: fd5b1428b91c47f1a74d98bb92c9fbe1.usd
+      size:
+      - 0.2060251235961914
+      - 0.21339797973632812
+      - 0.11644687876105309
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: clock
+      target_description: A vintage red alarm clock with a round face, two bells, and black hands.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: A vintage red alarm clock with a round face, two bells, and black hands.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: A vintage red alarm clock with a round face, two bells, and black hands.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    _4c820629af294e50af725ad1f5f01cb0_on_table_1_at_verify_task_205:
+      position:
+      - -3.051728504700294
+      - -1.1966554562389855
+      - 0.7947147758491337
+      furniture: table_1
+      original_id: _4c820629af294e50af725ad1f5f01cb0
+    _4c820629af294e50af725ad1f5f01cb0_on_table_2_at_verify_task_205:
+      position:
+      - -1.9739860479243239
+      - 2.9367751652321163
+      - 0.32070287780836226
+      furniture: table_2
+      original_id: _4c820629af294e50af725ad1f5f01cb0
+  final_positions:
+    _4c820629af294e50af725ad1f5f01cb0_on_table_1_at_verify_task_205:
+      initial_pos:
+      - -3.051728504700294
+      - -1.1966554562389855
+      - 0.8947147758491337
+      final_pos:
+      - -3.0489649772644043
+      - -1.2124104499816895
+      - 0.7701665759086609
+      category: clock
+      original_id: _4c820629af294e50af725ad1f5f01cb0
+    _4c820629af294e50af725ad1f5f01cb0_on_table_2_at_verify_task_205:
+      initial_pos:
+      - -1.9739860479243239
+      - 2.9367751652321163
+      - 0.42070287780836224
+      final_pos:
+      - -1.975343942642212
+      - 2.9293220043182373
+      - 0.29615479707717896
+      category: clock
+      original_id: _4c820629af294e50af725ad1f5f01cb0
+  family: FDP
+  benchmark_task_id: FDP/verify_task_205
+  benchmark_instruction: Retrieve the a vintage red alarm clock with a round face, two bells, and black
+    hands from the table much smaller than another one and deposit it at white table with single dark
+    knob.
+  global_index: 52
+  target_object_id: _4c820629af294e50af725ad1f5f01cb0

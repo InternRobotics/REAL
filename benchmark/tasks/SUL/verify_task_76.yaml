@@ -1,0 +1,310 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _619563fb2e33466cb1286b5732da59f9_on_table_1_at_verify_task_76:
+    original_id: _619563fb2e33466cb1286b5732da59f9
+    category: soap
+    usd_path: ${MESATASK_USD_ROOT}/619563fb2e33466cb1286b5732da59f9.usd
+    usd_scale:
+    - 5.447466573244001
+    - 5.281396561319802
+    - 4.754222854419283
+    position:
+    - -2.6075060510230155
+    - -1.365061165896831
+    - 0.7858933237544261
+    size:
+    - 0.0713653564453125
+    - 0.13751983642578125
+    - 0.04378685064148158
+    detailed_caption: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base, decorative
+      label.
+  b4fd5308_d287_42eb_9242_138e9a7aef19_on_table_1_at_verify_task_76:
+    original_id: b4fd5308_d287_42eb_9242_138e9a7aef19
+    category: shampoo bottle
+    usd_path: ${MESATASK_USD_ROOT}/b4fd5308-d287-42eb-9242-138e9a7aef19.usd
+    usd_scale:
+    - 10.605336403425841
+    - 10.58414818320196
+    - 10.585173106328472
+    position:
+    - -2.646842272093673
+    - -1.6213110971668332
+    - 0.8013336848048493
+    size:
+    - 0.21162033081054688
+    - 0.07784271240234375
+    - 0.07466757274232805
+    detailed_caption: Plastic shampoo bottle, cylindrical shape, smooth surface, glossy finish, screw-on
+      cap.
+  a0dc1207_2b44_43bd_9d94_97112bec813b_on_table_1_at_verify_task_76:
+    original_id: a0dc1207_2b44_43bd_9d94_97112bec813b
+    category: soap dispenser
+    usd_path: ${MESATASK_USD_ROOT}/a0dc1207-2b44-43bd-9d94-97112bec813b.usd
+    usd_scale:
+    - 15.592469293987385
+    - 15.582286360271521
+    - 15.372654610930883
+    position:
+    - -1.640857276598905
+    - -1.483097541655361
+    - 0.8041573578189127
+    size:
+    - 0.21411514282226562
+    - 0.2667274475097656
+    - 0.08031491877045482
+    detailed_caption: Sleek, cylindrical soap dispenser made of durable white plastic with a shiny chrome
+      pump.
+episodes:
+- task_id: verify_task_76
+  episode_idx: 50
+  original_idx: 76
+  benchmark_instruction: Get a cleaning product from the table where we have dinner and move it to white
+    cabinet next to the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to the table where we have dinner, fetch the pink semi-transparent liquid
+    soap bottle with pump, narrow neck, wide base, decorative label, and bring it back to white cabinet
+    next to the washingmachine.
+  fuzzy_task_description: Get a cleaning product from the table where we have dinner and move it to white
+    cabinet next to the washingmachine.
+  purpose: cleaning product
+  purpose_group: cleaning
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _619563fb2e33466cb1286b5732da59f9
+      - b4fd5308_d287_42eb_9242_138e9a7aef19
+      - a0dc1207_2b44_43bd_9d94_97112bec813b
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - b4fd5308_d287_42eb_9242_138e9a7aef19
+      - a0dc1207_2b44_43bd_9d94_97112bec813b
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _619563fb2e33466cb1286b5732da59f9
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_7
+  dest_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _619563fb2e33466cb1286b5732da59f9:
+      category: soap
+      detailed_caption: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base, decorative
+        label.
+      usd_path: 619563fb2e33466cb1286b5732da59f9.usd
+      size:
+      - 0.0713653564453125
+      - 0.13751983642578125
+      - 0.04378685064148158
+  obj_distractors:
+  - b4fd5308_d287_42eb_9242_138e9a7aef19
+  - a0dc1207_2b44_43bd_9d94_97112bec813b
+  obj_distractor_meta:
+    b4fd5308_d287_42eb_9242_138e9a7aef19:
+      category: shampoo bottle
+      detailed_caption: Plastic shampoo bottle, cylindrical shape, smooth surface, glossy finish, screw-on
+        cap.
+      usd_path: b4fd5308-d287-42eb-9242-138e9a7aef19.usd
+      size:
+      - 0.21162033081054688
+      - 0.07784271240234375
+      - 0.07466757274232805
+    a0dc1207_2b44_43bd_9d94_97112bec813b:
+      category: soap dispenser
+      detailed_caption: Sleek, cylindrical soap dispenser made of durable white plastic with a shiny chrome
+        pump.
+      usd_path: a0dc1207-2b44-43bd-9d94-97112bec813b.usd
+      size:
+      - 0.21411514282226562
+      - 0.2667274475097656
+      - 0.08031491877045482
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: soap
+      target_description: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base,
+        decorative label.
+  - action: gaze_at
+    args:
+      target_category: soap
+      target_description: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base,
+        decorative label.
+  - action: pick
+    args:
+      target_category: soap
+      target_description: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base,
+        decorative label.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: place
+    args:
+      receptacle_name: cabinet_7
+  physics_task_description: Head over to the table where we have dinner, fetch the pink semi-transparent
+    liquid soap bottle with pump, narrow neck, wide base, decorative label, and bring it back to white
+    cabinet next to the washingmachine.
+  placements:
+    _619563fb2e33466cb1286b5732da59f9_on_table_1_at_verify_task_76:
+      position:
+      - -2.6075060510230155
+      - -1.365061165896831
+      - 0.7858933237544261
+      furniture: table_1
+      original_id: _619563fb2e33466cb1286b5732da59f9
+    b4fd5308_d287_42eb_9242_138e9a7aef19_on_table_1_at_verify_task_76:
+      position:
+      - -2.646842272093673
+      - -1.6213110971668332
+      - 0.8013336848048493
+      furniture: table_1
+      original_id: b4fd5308_d287_42eb_9242_138e9a7aef19
+    a0dc1207_2b44_43bd_9d94_97112bec813b_on_table_1_at_verify_task_76:
+      position:
+      - -1.640857276598905
+      - -1.483097541655361
+      - 0.8041573578189127
+      furniture: table_1
+      original_id: a0dc1207_2b44_43bd_9d94_97112bec813b
+  final_positions:
+    _619563fb2e33466cb1286b5732da59f9_on_table_1_at_verify_task_76:
+      initial_pos:
+      - -2.6075060510230155
+      - -1.365061165896831
+      - 0.8858933237544261
+      final_pos:
+      - -2.6041977405548096
+      - -1.3544621467590332
+      - 0.767240583896637
+      category: soap
+      original_id: _619563fb2e33466cb1286b5732da59f9
+    b4fd5308_d287_42eb_9242_138e9a7aef19_on_table_1_at_verify_task_76:
+      initial_pos:
+      - -2.646842272093673
+      - -1.6213110971668332
+      - 0.9013336848048493
+      final_pos:
+      - -2.7815463542938232
+      - -1.6289137601852417
+      - 0.7808990478515625
+      category: shampoo bottle
+      original_id: b4fd5308_d287_42eb_9242_138e9a7aef19
+    a0dc1207_2b44_43bd_9d94_97112bec813b_on_table_1_at_verify_task_76:
+      initial_pos:
+      - -1.640857276598905
+      - -1.483097541655361
+      - 0.9041573578189127
+      final_pos:
+      - -1.7543858289718628
+      - -1.3577361106872559
+      - 0.7832483053207397
+      category: soap dispenser
+      original_id: a0dc1207_2b44_43bd_9d94_97112bec813b
+  family: SUL
+  benchmark_task_id: SUL/verify_task_76
+  global_index: 226
+  target_object_id: _619563fb2e33466cb1286b5732da59f9

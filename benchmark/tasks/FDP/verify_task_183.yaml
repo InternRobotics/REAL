@@ -1,0 +1,265 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _27fa02a655504a7e8160a0b167105daf_on_table_1_at_verify_task_183:
+    original_id: _27fa02a655504a7e8160a0b167105daf
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/27fa02a655504a7e8160a0b167105daf.usd
+    usd_scale:
+    - 0.17621559689558874
+    - 0.1734709955471212
+    - 0.17391506720940508
+    position:
+    - -2.959576208961709
+    - -1.471282500663148
+    - 0.8060816259635613
+    size:
+    - 0.10573959350585938
+    - 0.23981094360351562
+    - 0.08416345505975187
+    detailed_caption: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  _27fa02a655504a7e8160a0b167105daf_on_table_2_at_verify_task_183:
+    original_id: _27fa02a655504a7e8160a0b167105daf
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/27fa02a655504a7e8160a0b167105daf.usd
+    usd_scale:
+    - 0.17621559689558874
+    - 0.1734709955471212
+    - 0.17391506720940508
+    position:
+    - -1.8768251384797634
+    - 2.64396407172206
+    - 0.33206972792278977
+    size:
+    - 0.10573959350585938
+    - 0.23981094360351562
+    - 0.08416345505975187
+    detailed_caption: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+episodes:
+- task_id: verify_task_183
+  episode_idx: 38
+  original_idx: 183
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the delicate figurine of a woman in a floral dress, green jacket, with vibrant
+    colors from the rounded rectangular table to square nightstand with circular rattan center.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _27fa02a655504a7e8160a0b167105daf
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _27fa02a655504a7e8160a0b167105daf
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _27fa02a655504a7e8160a0b167105daf
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _27fa02a655504a7e8160a0b167105daf:
+      category: figurine
+      detailed_caption: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+      usd_path: 27fa02a655504a7e8160a0b167105daf.usd
+      size:
+      - 0.10573959350585938
+      - 0.23981094360351562
+      - 0.08416345505975187
+  obj_distractors:
+  - _05aaa6414f4e4b6eb5432dbcf20290f6
+  - _041704c459774b618b457a32f97a63f6
+  obj_distractor_meta:
+    _05aaa6414f4e4b6eb5432dbcf20290f6:
+      category: figurine
+      detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+      usd_path: 05aaa6414f4e4b6eb5432dbcf20290f6.usd
+      size:
+      - 0.06312370300292969
+      - 0.2378683090209961
+      - 0.0644194787601009
+    _041704c459774b618b457a32f97a63f6:
+      category: figurine
+      detailed_caption: Stylized dog-like creature with blue mane, bird-like beak, solid base, glossy
+        finish, intricate textures.
+      usd_path: 041704c459774b618b457a32f97a63f6.usd
+      size:
+      - 0.10040283203125
+      - 0.09164237976074219
+      - 0.11731644630344817
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Delicate figurine of a woman in a floral dress, green jacket, with vibrant colors.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  placements:
+    _27fa02a655504a7e8160a0b167105daf_on_table_1_at_verify_task_183:
+      position:
+      - -2.959576208961709
+      - -1.471282500663148
+      - 0.8060816259635613
+      furniture: table_1
+      original_id: _27fa02a655504a7e8160a0b167105daf
+    _27fa02a655504a7e8160a0b167105daf_on_table_2_at_verify_task_183:
+      position:
+      - -1.8768251384797634
+      - 2.64396407172206
+      - 0.33206972792278977
+      furniture: table_2
+      original_id: _27fa02a655504a7e8160a0b167105daf
+  final_positions:
+    _27fa02a655504a7e8160a0b167105daf_on_table_1_at_verify_task_183:
+      initial_pos:
+      - -2.959576208961709
+      - -1.471282500663148
+      - 0.9060816259635612
+      final_pos:
+      - -2.9894325733184814
+      - -1.4705158472061157
+      - 0.7793267369270325
+      category: figurine
+      original_id: _27fa02a655504a7e8160a0b167105daf
+    _27fa02a655504a7e8160a0b167105daf_on_table_2_at_verify_task_183:
+      initial_pos:
+      - -1.8768251384797634
+      - 2.64396407172206
+      - 0.43206972792278975
+      final_pos:
+      - -1.9073891639709473
+      - 2.645073175430298
+      - 0.30531439185142517
+      category: figurine
+      original_id: _27fa02a655504a7e8160a0b167105daf
+  family: FDP
+  benchmark_task_id: FDP/verify_task_183
+  benchmark_instruction: Bring the delicate figurine of a woman in a floral dress, green jacket, with
+    vibrant colors from the rounded rectangular table to square nightstand with circular rattan center.
+  global_index: 38
+  target_object_id: _27fa02a655504a7e8160a0b167105daf

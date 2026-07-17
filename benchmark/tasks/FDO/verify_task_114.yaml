@@ -1,0 +1,362 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_6_at_verify_task_114:
+    original_id: _15dda994c29a4a2780840ef7c0242d7c
+    category: broccoli
+    usd_path: ${MESATASK_USD_ROOT}/15dda994c29a4a2780840ef7c0242d7c.usd
+    usd_scale:
+    - 5.841086167127681
+    - 5.879974552970974
+    - 5.836415837874811
+    position:
+    - 2.525269528779242
+    - -1.2230434741374887
+    - 0.7827517745131627
+    size:
+    - 0.10471725463867188
+    - 0.09411954879760742
+    - 0.08950355951674283
+  _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_7_at_verify_task_114:
+    original_id: _15dda994c29a4a2780840ef7c0242d7c
+    category: broccoli
+    usd_path: ${MESATASK_USD_ROOT}/15dda994c29a4a2780840ef7c0242d7c.usd
+    usd_scale:
+    - 5.841086167127681
+    - 5.879974552970974
+    - 5.836415837874811
+    position:
+    - 0.9245599251582516
+    - 1.6171573688766436
+    - 0.9013017770880833
+    size:
+    - 0.10471725463867188
+    - 0.09411954879760742
+    - 0.08950355951674283
+  _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_8_at_verify_task_114:
+    original_id: _15dda994c29a4a2780840ef7c0242d7c
+    category: broccoli
+    usd_path: ${MESATASK_USD_ROOT}/15dda994c29a4a2780840ef7c0242d7c.usd
+    usd_scale:
+    - 5.841086167127681
+    - 5.879974552970974
+    - 5.836415837874811
+    position:
+    - 4.539401704537341
+    - 2.8892518579337234
+    - 0.5152517614001408
+    size:
+    - 0.10471725463867188
+    - 0.09411954879760742
+    - 0.08950355951674283
+  _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_9_at_verify_task_114:
+    original_id: _15dda994c29a4a2780840ef7c0242d7c
+    category: broccoli
+    usd_path: ${MESATASK_USD_ROOT}/15dda994c29a4a2780840ef7c0242d7c.usd
+    usd_scale:
+    - 5.841086167127681
+    - 5.879974552970974
+    - 5.836415837874811
+    position:
+    - 5.997445388507021
+    - 1.2702986229181739
+    - 1.0047517773741856
+    size:
+    - 0.10471725463867188
+    - 0.09411954879760742
+    - 0.08950355951674283
+  _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_10_at_verify_task_114:
+    original_id: _15dda994c29a4a2780840ef7c0242d7c
+    category: broccoli
+    usd_path: ${MESATASK_USD_ROOT}/15dda994c29a4a2780840ef7c0242d7c.usd
+    usd_scale:
+    - 5.841086167127681
+    - 5.879974552970974
+    - 5.836415837874811
+    position:
+    - 3.285475588417333
+    - -0.5486944545082728
+    - 0.5377517697447911
+    size:
+    - 0.10471725463867188
+    - 0.09411954879760742
+    - 0.08950355951674283
+episodes:
+- benchmark_task_id: FDO/verify_task_114
+  family: FDO
+  task_id: verify_task_114
+  episode_idx: 25
+  original_idx: 114
+  benchmark_instruction: Bring a broccoli from whole-black cabinet with flat base to the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Bring a broccoli from whole-black cabinet with flat base to the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _15dda994c29a4a2780840ef7c0242d7c
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    _15dda994c29a4a2780840ef7c0242d7c:
+      category: broccoli
+      usd_path: 15dda994c29a4a2780840ef7c0242d7c.usd
+      size:
+      - 0.10471725463867188
+      - 0.09411954879760742
+      - 0.08950355951674283
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: broccoli
+  - action: gaze_at
+    args:
+      target_category: broccoli
+  - action: pick
+    args:
+      target_category: broccoli
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_6_at_verify_task_114:
+      position:
+      - 2.525269528779242
+      - -1.2230434741374887
+      - 0.7827517745131627
+      furniture: cabinet_6
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_7_at_verify_task_114:
+      position:
+      - 0.9245599251582516
+      - 1.6171573688766436
+      - 0.9013017770880833
+      furniture: cabinet_7
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_8_at_verify_task_114:
+      position:
+      - 4.539401704537341
+      - 2.8892518579337234
+      - 0.5152517614001408
+      furniture: cabinet_8
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_9_at_verify_task_114:
+      position:
+      - 5.997445388507021
+      - 1.2702986229181739
+      - 1.0047517773741856
+      furniture: cabinet_9
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_10_at_verify_task_114:
+      position:
+      - 3.285475588417333
+      - -0.5486944545082728
+      - 0.5377517697447911
+      furniture: cabinet_10
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+  final_positions:
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_6_at_verify_task_114:
+      initial_pos:
+      - 2.525269528779242
+      - -1.2230434741374887
+      - 0.8827517745131627
+      final_pos:
+      - 2.5030357837677
+      - -1.2179697751998901
+      - 0.7522763609886169
+      category: broccoli
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_7_at_verify_task_114:
+      initial_pos:
+      - 0.9245599251582516
+      - 1.6171573688766436
+      - 1.0013017770880834
+      final_pos:
+      - 0.8997546434402466
+      - 1.6836216449737549
+      - 0.8735336661338806
+      category: broccoli
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_8_at_verify_task_114:
+      initial_pos:
+      - 4.539401704537341
+      - 2.8892518579337234
+      - 0.6152517614001408
+      final_pos:
+      - 4.5171918869018555
+      - 2.8943514823913574
+      - 0.48477619886398315
+      category: broccoli
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_9_at_verify_task_114:
+      initial_pos:
+      - 5.997445388507021
+      - 1.2702986229181739
+      - 1.1047517773741857
+      final_pos:
+      - 5.976687431335449
+      - 1.2759495973587036
+      - 0.9742761850357056
+      category: broccoli
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+    _15dda994c29a4a2780840ef7c0242d7c_on_cabinet_10_at_verify_task_114:
+      initial_pos:
+      - 3.285475588417333
+      - -0.5486944545082728
+      - 0.6377517697447911
+      final_pos:
+      - 3.2633132934570312
+      - -0.5436113476753235
+      - 0.5072761178016663
+      category: broccoli
+      original_id: _15dda994c29a4a2780840ef7c0242d7c
+  global_index: 153
+  target_object_id: _15dda994c29a4a2780840ef7c0242d7c

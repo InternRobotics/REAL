@@ -1,0 +1,211 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _73bded78b3f64a4891721002c8653424_on_pot_0_at_verify_task_154:
+    original_id: _73bded78b3f64a4891721002c8653424
+    category: bun
+    usd_path: ${MESATASK_USD_ROOT}/73bded78b3f64a4891721002c8653424.usd
+    usd_scale:
+    - 1.5384582154601065
+    - 1.537833667893454
+    - 1.5463744024783683
+    position:
+    - -5.189099414078469
+    - -5.625799936238873
+    - 1.0213080320786685
+    size:
+    - 0.12386894226074219
+    - 0.11658096313476562
+    - 0.0869892998598516
+episodes:
+- benchmark_task_id: FDO/verify_task_154
+  family: FDO
+  task_id: verify_task_154
+  episode_idx: 35
+  original_idx: 154
+  benchmark_instruction: Get a bun from the pot on the stove and move it to the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Get a bun from the pot on the stove and move it to the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content:
+      - _73bded78b3f64a4891721002c8653424
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - _73bded78b3f64a4891721002c8653424
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: pot_0
+  src_distractors: []
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    _73bded78b3f64a4891721002c8653424:
+      category: bun
+      usd_path: 73bded78b3f64a4891721002c8653424.usd
+      size:
+      - 0.12386894226074219
+      - 0.11658096313476562
+      - 0.0869892998598516
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: pot_0
+  - action: find
+    args:
+      target_category: bun
+  - action: gaze_at
+    args:
+      target_category: bun
+  - action: pick
+    args:
+      target_category: bun
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    _73bded78b3f64a4891721002c8653424_on_pot_0_at_verify_task_154:
+      position:
+      - -5.189099414078469
+      - -5.625799936238873
+      - 1.0213080320786685
+      furniture: pot_0
+      original_id: _73bded78b3f64a4891721002c8653424
+  final_positions:
+    _73bded78b3f64a4891721002c8653424_on_pot_0_at_verify_task_154:
+      initial_pos:
+      - -5.189099414078469
+      - -5.625799936238873
+      - 1.1213080320786686
+      final_pos:
+      - -5.192440032958984
+      - -5.573876857757568
+      - 0.9181247353553772
+      category: bun
+      original_id: _73bded78b3f64a4891721002c8653424
+  global_index: 163
+  target_object_id: _73bded78b3f64a4891721002c8653424

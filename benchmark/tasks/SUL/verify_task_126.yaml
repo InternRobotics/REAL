@@ -1,0 +1,303 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0776c9b2_83ac_4d73_b437_5122596ca239_on_table_1_at_verify_task_126:
+    original_id: _0776c9b2_83ac_4d73_b437_5122596ca239
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/0776c9b2-83ac-4d73-b437-5122596ca239.usd
+    usd_scale:
+    - 13.999549018724053
+    - 13.189835592231512
+    - 18.234452534930035
+    position:
+    - -2.418932497379095
+    - -1.4052345793001504
+    - 0.7765786998020485
+    size:
+    - 0.18336868286132812
+    - 0.2635364532470703
+    - 0.025157602736726403
+    detailed_caption: Sleek, rectangular notebook with a textured brown cover and white elastic band;
+      smooth edges.
+  _53356b02_b7e3_49a9_b573_13fa5032c1e5_on_table_1_at_verify_task_126:
+    original_id: _53356b02_b7e3_49a9_b573_13fa5032c1e5
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/53356b02-b7e3-49a9-b573-13fa5032c1e5.usd
+    usd_scale:
+    - 10.746235968421448
+    - 10.466974537103763
+    - 11.167753112878232
+    position:
+    - -2.9151686987203096
+    - -1.3230157426023201
+    - 0.7712101568281651
+    size:
+    - 0.14741992950439453
+    - 0.20775222778320312
+    - 0.014420516788959503
+    detailed_caption: Spiral-bound notepad with blank lined pages, slight gloss cover, and minimalist
+      angled appearance.
+  _5899d997_4d52_4918_97b5_32195cbe58fb_on_table_1_at_verify_task_126:
+    original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/5899d997-4d52-4918-97b5-32195cbe58fb.usd
+    usd_scale:
+    - 12.161976199833912
+    - 12.044591764280078
+    - 13.308264737502707
+    position:
+    - -1.802935247602438
+    - -1.4486401314855792
+    - 0.7769873889151495
+    size:
+    - 0.190826416015625
+    - 0.23894691467285156
+    - 0.025974980962928385
+    detailed_caption: Multiple rectangular stacks of smooth, shiny white printing paper, varying in height.
+episodes:
+- task_id: verify_task_126
+  episode_idx: 81
+  original_idx: 126
+  benchmark_instruction: Take a notebook from the rectangular table and put it on white desk with round
+    black knob.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to the rectangular table, fetch the sleek, rectangular notebook with a textured
+    brown cover and white elastic band; smooth edges, and bring it back to white desk with round black
+    knob.
+  fuzzy_task_description: Take a notebook from the rectangular table and put it on white desk with round
+    black knob.
+  purpose: notebook
+  purpose_group: notebooks
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0776c9b2_83ac_4d73_b437_5122596ca239
+      - _53356b02_b7e3_49a9_b573_13fa5032c1e5
+      - _5899d997_4d52_4918_97b5_32195cbe58fb
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _53356b02_b7e3_49a9_b573_13fa5032c1e5
+      - _5899d997_4d52_4918_97b5_32195cbe58fb
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _0776c9b2_83ac_4d73_b437_5122596ca239
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _0776c9b2_83ac_4d73_b437_5122596ca239:
+      category: notebook
+      detailed_caption: Sleek, rectangular notebook with a textured brown cover and white elastic band;
+        smooth edges.
+      usd_path: 0776c9b2-83ac-4d73-b437-5122596ca239.usd
+      size:
+      - 0.18336868286132812
+      - 0.2635364532470703
+      - 0.025157602736726403
+  obj_distractors:
+  - _53356b02_b7e3_49a9_b573_13fa5032c1e5
+  - _5899d997_4d52_4918_97b5_32195cbe58fb
+  obj_distractor_meta:
+    _53356b02_b7e3_49a9_b573_13fa5032c1e5:
+      category: notepad
+      detailed_caption: Spiral-bound notepad with blank lined pages, slight gloss cover, and minimalist
+        angled appearance.
+      usd_path: 53356b02-b7e3-49a9-b573-13fa5032c1e5.usd
+      size:
+      - 0.14741992950439453
+      - 0.20775222778320312
+      - 0.014420516788959503
+    _5899d997_4d52_4918_97b5_32195cbe58fb:
+      category: notepad
+      detailed_caption: Multiple rectangular stacks of smooth, shiny white printing paper, varying in
+        height.
+      usd_path: 5899d997-4d52-4918-97b5-32195cbe58fb.usd
+      size:
+      - 0.190826416015625
+      - 0.23894691467285156
+      - 0.025974980962928385
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Sleek, rectangular notebook with a textured brown cover and white elastic band;
+        smooth edges.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Sleek, rectangular notebook with a textured brown cover and white elastic band;
+        smooth edges.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Sleek, rectangular notebook with a textured brown cover and white elastic band;
+        smooth edges.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  physics_task_description: Head over to the rectangular table, fetch the sleek, rectangular notebook
+    with a textured brown cover and white elastic band; smooth edges, and bring it back to white desk
+    with round black knob.
+  placements:
+    _0776c9b2_83ac_4d73_b437_5122596ca239_on_table_1_at_verify_task_126:
+      position:
+      - -2.418932497379095
+      - -1.4052345793001504
+      - 0.7765786998020485
+      furniture: table_1
+      original_id: _0776c9b2_83ac_4d73_b437_5122596ca239
+    _53356b02_b7e3_49a9_b573_13fa5032c1e5_on_table_1_at_verify_task_126:
+      position:
+      - -2.9151686987203096
+      - -1.3230157426023201
+      - 0.7712101568281651
+      furniture: table_1
+      original_id: _53356b02_b7e3_49a9_b573_13fa5032c1e5
+    _5899d997_4d52_4918_97b5_32195cbe58fb_on_table_1_at_verify_task_126:
+      position:
+      - -1.802935247602438
+      - -1.4486401314855792
+      - 0.7769873889151495
+      furniture: table_1
+      original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+  final_positions:
+    _0776c9b2_83ac_4d73_b437_5122596ca239_on_table_1_at_verify_task_126:
+      initial_pos:
+      - -2.418932497379095
+      - -1.4052345793001504
+      - 0.8765786998020485
+      final_pos:
+      - -2.41903018951416
+      - -1.4051949977874756
+      - 0.7541869282722473
+      category: notebook
+      original_id: _0776c9b2_83ac_4d73_b437_5122596ca239
+    _53356b02_b7e3_49a9_b573_13fa5032c1e5_on_table_1_at_verify_task_126:
+      initial_pos:
+      - -2.9151686987203096
+      - -1.3230157426023201
+      - 0.871210156828165
+      final_pos:
+      - -2.9151928424835205
+      - -1.32296621799469
+      - 0.7503376603126526
+      category: notepad
+      original_id: _53356b02_b7e3_49a9_b573_13fa5032c1e5
+    _5899d997_4d52_4918_97b5_32195cbe58fb_on_table_1_at_verify_task_126:
+      initial_pos:
+      - -1.802935247602438
+      - -1.4486401314855792
+      - 0.8769873889151495
+      final_pos:
+      - -1.80298912525177
+      - -1.4485920667648315
+      - 0.756313145160675
+      category: stack
+      original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+  family: SUL
+  benchmark_task_id: SUL/verify_task_126
+  global_index: 240
+  target_object_id: _0776c9b2_83ac_4d73_b437_5122596ca239

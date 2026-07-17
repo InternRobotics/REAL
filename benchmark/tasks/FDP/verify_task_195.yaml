@@ -1,0 +1,261 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_1_at_verify_task_195:
+    original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/gen_39647c11-3911-439b-88a3-f898aeed7493.usd
+    usd_scale:
+    - 9.891376839841328
+    - 9.887116102704567
+    - 9.573258153983087
+    position:
+    - -2.5322000187377265
+    - -1.471928523193594
+    - 0.8032847291283542
+    size:
+    - 0.12579727172851562
+    - 0.19942283630371094
+    - 0.07856966138933785
+    detailed_caption: Cylindrical pen holder with a metallic shine and a black base. Various colored pencils
+      and pens.
+  gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_2_at_verify_task_195:
+    original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/gen_39647c11-3911-439b-88a3-f898aeed7493.usd
+    usd_scale:
+    - 9.891376839841328
+    - 9.887116102704567
+    - 9.573258153983087
+    position:
+    - -2.481992274306795
+    - 3.296859287311492
+    - 0.32927283108758276
+    size:
+    - 0.12579727172851562
+    - 0.19942283630371094
+    - 0.07856966138933785
+    detailed_caption: Cylindrical pen holder with a metallic shine and a black base. Various colored pencils
+      and pens.
+episodes:
+- task_id: verify_task_195
+  episode_idx: 44
+  original_idx: 195
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the rounded rectangular table to find the cylindrical pen holder with
+    a metallic shine and a black base. Various colored pencils and pens, then deliver it to the desk near
+    my bed.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_39647c11_3911_439b_88a3_f898aeed7493
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - gen_39647c11_3911_439b_88a3_f898aeed7493
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - gen_39647c11_3911_439b_88a3_f898aeed7493
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    gen_39647c11_3911_439b_88a3_f898aeed7493:
+      category: pen
+      detailed_caption: Cylindrical pen holder with a metallic shine and a black base. Various colored
+        pencils and pens.
+      usd_path: gen_39647c11-3911-439b-88a3-f898aeed7493.usd
+      size:
+      - 0.12579727172851562
+      - 0.19942283630371094
+      - 0.07856966138933785
+  obj_distractors:
+  - ca274b06_d6e2_4f26_b964_26e73a021a27
+  - _0dd8be84d117499d9adfae347dc5a389
+  obj_distractor_meta:
+    ca274b06_d6e2_4f26_b964_26e73a021a27:
+      category: pen
+      detailed_caption: Smooth retractable pen with a glossy blue barrel, metallic silver clip, and fine
+        tip.
+      usd_path: ca274b06-d6e2-4f26-b964-26e73a021a27.usd
+      size:
+      - 0.014118313789367676
+      - 0.13455963134765625
+      - 0.01099375172634609
+    _0dd8be84d117499d9adfae347dc5a389:
+      category: marker
+      detailed_caption: Black marker with a rounded tip, cylindrical body, and white label.
+      usd_path: 0dd8be84d117499d9adfae347dc5a389.usd
+      size:
+      - 0.13348960876464844
+      - 0.014392852783203125
+      - 0.012709898524917662
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: pen
+      target_description: Cylindrical pen holder with a metallic shine and a black base. Various colored
+        pencils and pens.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Cylindrical pen holder with a metallic shine and a black base. Various colored
+        pencils and pens.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Cylindrical pen holder with a metallic shine and a black base. Various colored
+        pencils and pens.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_1_at_verify_task_195:
+      position:
+      - -2.5322000187377265
+      - -1.471928523193594
+      - 0.8032847291283542
+      furniture: table_1
+      original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+    gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_2_at_verify_task_195:
+      position:
+      - -2.481992274306795
+      - 3.296859287311492
+      - 0.32927283108758276
+      furniture: table_2
+      original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+  final_positions:
+    gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_1_at_verify_task_195:
+      initial_pos:
+      - -2.5322000187377265
+      - -1.471928523193594
+      - 0.9032847291283542
+      final_pos:
+      - -2.4903366565704346
+      - -1.472748875617981
+      - 0.7740454077720642
+      category: pen holder
+      original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+    gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_2_at_verify_task_195:
+      initial_pos:
+      - -2.481992274306795
+      - 3.296859287311492
+      - 0.42927283108758274
+      final_pos:
+      - -2.4374845027923584
+      - 3.291837215423584
+      - 0.3000333309173584
+      category: pen holder
+      original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+  family: FDP
+  benchmark_task_id: FDP/verify_task_195
+  benchmark_instruction: First, drive to the rounded rectangular table to find the cylindrical pen holder
+    with a metallic shine and a black base. Various colored pencils and pens, then deliver it to the desk
+    near my bed.
+  global_index: 44
+  target_object_id: gen_39647c11_3911_439b_88a3_f898aeed7493

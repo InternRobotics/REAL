@@ -1,0 +1,367 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_6_at_verify_task_99:
+    original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    category: dessert
+    usd_path: ${MESATASK_USD_ROOT}/1d7cf73ccf8c48f39e90f5d899b98d3a.usd
+    usd_scale:
+    - 0.01709739561679142
+    - 0.017097392784751565
+    - 0.017081271444249316
+    position:
+    - 2.494196922993719
+    - -1.1934282971729482
+    - 0.7692724728072062
+    size:
+    - 0.12555313110351562
+    - 0.11116790771484375
+    - 0.06254495610482991
+  _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_7_at_verify_task_99:
+    original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    category: dessert
+    usd_path: ${MESATASK_USD_ROOT}/1d7cf73ccf8c48f39e90f5d899b98d3a.usd
+    usd_scale:
+    - 0.01709739561679142
+    - 0.017097392784751565
+    - 0.017081271444249316
+    position:
+    - 0.8858111807269206
+    - 1.6669926695636894
+    - 0.8878224753821269
+    size:
+    - 0.12555313110351562
+    - 0.11116790771484375
+    - 0.06254495610482991
+  _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_8_at_verify_task_99:
+    original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    category: dessert
+    usd_path: ${MESATASK_USD_ROOT}/1d7cf73ccf8c48f39e90f5d899b98d3a.usd
+    usd_scale:
+    - 0.01709739561679142
+    - 0.017097392784751565
+    - 0.017081271444249316
+    position:
+    - 4.524084041812446
+    - 2.8697081675888803
+    - 0.5017724596941844
+    size:
+    - 0.12555313110351562
+    - 0.11116790771484375
+    - 0.06254495610482991
+  _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_9_at_verify_task_99:
+    original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    category: dessert
+    usd_path: ${MESATASK_USD_ROOT}/1d7cf73ccf8c48f39e90f5d899b98d3a.usd
+    usd_scale:
+    - 0.01709739561679142
+    - 0.017097392784751565
+    - 0.017081271444249316
+    position:
+    - 5.9950836496053554
+    - 1.3069185360479953
+    - 0.9912724756682292
+    size:
+    - 0.12555313110351562
+    - 0.11116790771484375
+    - 0.06254495610482991
+  _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_10_at_verify_task_99:
+    original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    category: dessert
+    usd_path: ${MESATASK_USD_ROOT}/1d7cf73ccf8c48f39e90f5d899b98d3a.usd
+    usd_scale:
+    - 0.01709739561679142
+    - 0.017097392784751565
+    - 0.017081271444249316
+    position:
+    - 3.186483959504989
+    - -0.7398089581974563
+    - 0.5242724680388346
+    size:
+    - 0.12555313110351562
+    - 0.11116790771484375
+    - 0.06254495610482991
+episodes:
+- benchmark_task_id: FDO/verify_task_99
+  family: FDO
+  task_id: verify_task_99
+  episode_idx: 15
+  original_idx: 99
+  benchmark_instruction: Navigate to the white cabinet next to the bedroom sink, grasp a dessert, and
+    carry it to the only electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Navigate to the white cabinet next to the bedroom sink, grasp a dessert, and carry
+    it to the only electriccooker in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _1d7cf73ccf8c48f39e90f5d899b98d3a
+      door: false
+  src: cabinet_9
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_10
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _1d7cf73ccf8c48f39e90f5d899b98d3a:
+      category: dessert
+      usd_path: 1d7cf73ccf8c48f39e90f5d899b98d3a.usd
+      size:
+      - 0.12555313110351562
+      - 0.11116790771484375
+      - 0.06254495610482991
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: find
+    args:
+      target_category: dessert
+  - action: gaze_at
+    args:
+      target_category: dessert
+  - action: pick
+    args:
+      target_category: dessert
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_6_at_verify_task_99:
+      position:
+      - 2.494196922993719
+      - -1.1934282971729482
+      - 0.7692724728072062
+      furniture: cabinet_6
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_7_at_verify_task_99:
+      position:
+      - 0.8858111807269206
+      - 1.6669926695636894
+      - 0.8878224753821269
+      furniture: cabinet_7
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_8_at_verify_task_99:
+      position:
+      - 4.524084041812446
+      - 2.8697081675888803
+      - 0.5017724596941844
+      furniture: cabinet_8
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_9_at_verify_task_99:
+      position:
+      - 5.9950836496053554
+      - 1.3069185360479953
+      - 0.9912724756682292
+      furniture: cabinet_9
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_10_at_verify_task_99:
+      position:
+      - 3.186483959504989
+      - -0.7398089581974563
+      - 0.5242724680388346
+      furniture: cabinet_10
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+  final_positions:
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_6_at_verify_task_99:
+      initial_pos:
+      - 2.494196922993719
+      - -1.1934282971729482
+      - 0.8692724728072062
+      final_pos:
+      - 2.4806323051452637
+      - -1.1328394412994385
+      - 0.7395968437194824
+      category: dessert
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_7_at_verify_task_99:
+      initial_pos:
+      - 0.8858111807269206
+      - 1.6669926695636894
+      - 0.9878224753821269
+      final_pos:
+      - 0.8720136284828186
+      - 1.7276310920715332
+      - 0.8581453561782837
+      category: dessert
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_8_at_verify_task_99:
+      initial_pos:
+      - 4.524084041812446
+      - 2.8697081675888803
+      - 0.6017724596941844
+      final_pos:
+      - 4.526961326599121
+      - 2.9207699298858643
+      - 0.47205573320388794
+      category: dessert
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_9_at_verify_task_99:
+      initial_pos:
+      - 5.9950836496053554
+      - 1.3069185360479953
+      - 1.0912724756682293
+      final_pos:
+      - 5.9813127517700195
+      - 1.3674927949905396
+      - 0.9615989327430725
+      category: dessert
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+    _1d7cf73ccf8c48f39e90f5d899b98d3a_on_cabinet_10_at_verify_task_99:
+      initial_pos:
+      - 3.186483959504989
+      - -0.7398089581974563
+      - 0.6242724680388346
+      final_pos:
+      - 3.1730165481567383
+      - -0.6846883893013
+      - 0.49455875158309937
+      category: dessert
+      original_id: _1d7cf73ccf8c48f39e90f5d899b98d3a
+  global_index: 143
+  target_object_id: _1d7cf73ccf8c48f39e90f5d899b98d3a

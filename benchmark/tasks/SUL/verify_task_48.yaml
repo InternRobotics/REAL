@@ -1,0 +1,311 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  c8acdbc61406494680ac47700670ea22_on_table_1_at_verify_task_48:
+    original_id: c8acdbc61406494680ac47700670ea22
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/c8acdbc61406494680ac47700670ea22.usd
+    usd_scale:
+    - 0.05480124271848954
+    - 0.05468067300731272
+    - 0.05479292006117666
+    position:
+    - -2.7528504416728343
+    - -1.3430396834649403
+    - 0.8079280410706997
+    size:
+    - 0.15329480171203613
+    - 0.27294111251831055
+    - 0.08785628527402878
+    detailed_caption: Ceramic figurine with a round head, stylized features, textured surface, and warm
+      colors.
+  _12d0ed657db04881b21b406353c76d3f_on_table_1_at_verify_task_48:
+    original_id: _12d0ed657db04881b21b406353c76d3f
+    category: decorative object
+    usd_path: ${MESATASK_USD_ROOT}/12d0ed657db04881b21b406353c76d3f.usd
+    usd_scale:
+    - 2.5685940526584035
+    - 2.5523214874605444
+    - 1.5235683597330079
+    position:
+    - -1.7388046896467213
+    - -1.3669958071487718
+    - 0.7897267812909559
+    size:
+    - 0.06783151626586914
+    - 0.1982879638671875
+    - 0.05145376571454108
+    detailed_caption: Vibrant green cactus with twisted sections, small spikes, in a brown ceramic pot.
+  _56b3fce44ef84c8696f96be3cad04463_on_table_1_at_verify_task_48:
+    original_id: _56b3fce44ef84c8696f96be3cad04463
+    category: decorative box
+    usd_path: ${MESATASK_USD_ROOT}/56b3fce44ef84c8696f96be3cad04463.usd
+    usd_scale:
+    - 27.222223492060365
+    - 25.962961931287545
+    - 23.66788246434989
+    position:
+    - -3.022001880609897
+    - -1.3172047573763606
+    - 0.8350038355589686
+    size:
+    - 0.12522125244140625
+    - 0.13798141479492188
+    - 0.1420078742505666
+    detailed_caption: Metallic square box with a matte finish, circular hole, slot, and clean edges.
+episodes:
+- task_id: verify_task_48
+  episode_idx: 38
+  original_idx: 48
+  benchmark_instruction: Get a decorative object from the rectangular table and move it to white cabinet
+    with yellow shelf back.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the ceramic figurine with a round head, stylized features, textured surface,
+    and warm colors from the rectangular table and place it on white cabinet with yellow shelf back.
+  fuzzy_task_description: Get a decorative object from the rectangular table and move it to white cabinet
+    with yellow shelf back.
+  purpose: decorative object
+  purpose_group: decorative_objects
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - c8acdbc61406494680ac47700670ea22
+      - _12d0ed657db04881b21b406353c76d3f
+      - _56b3fce44ef84c8696f96be3cad04463
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _12d0ed657db04881b21b406353c76d3f
+      - _56b3fce44ef84c8696f96be3cad04463
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - c8acdbc61406494680ac47700670ea22
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    c8acdbc61406494680ac47700670ea22:
+      category: figurine
+      detailed_caption: Ceramic figurine with a round head, stylized features, textured surface, and warm
+        colors.
+      usd_path: c8acdbc61406494680ac47700670ea22.usd
+      size:
+      - 0.15329480171203613
+      - 0.27294111251831055
+      - 0.08785628527402878
+  obj_distractors:
+  - _12d0ed657db04881b21b406353c76d3f
+  - _56b3fce44ef84c8696f96be3cad04463
+  obj_distractor_meta:
+    _12d0ed657db04881b21b406353c76d3f:
+      category: decorative object
+      detailed_caption: Vibrant green cactus with twisted sections, small spikes, in a brown ceramic pot.
+      usd_path: 12d0ed657db04881b21b406353c76d3f.usd
+      size:
+      - 0.06783151626586914
+      - 0.1982879638671875
+      - 0.05145376571454108
+    _56b3fce44ef84c8696f96be3cad04463:
+      category: decorative box
+      detailed_caption: Metallic square box with a matte finish, circular hole, slot, and clean edges.
+      usd_path: 56b3fce44ef84c8696f96be3cad04463.usd
+      size:
+      - 0.12522125244140625
+      - 0.13798141479492188
+      - 0.1420078742505666
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Ceramic figurine with a round head, stylized features, textured surface, and
+        warm colors.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Ceramic figurine with a round head, stylized features, textured surface, and
+        warm colors.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Ceramic figurine with a round head, stylized features, textured surface, and
+        warm colors.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  physics_task_description: Pick up the ceramic figurine with a round head, stylized features, textured
+    surface, and warm colors from the rectangular table and place it on white cabinet with yellow shelf
+    back.
+  placements:
+    c8acdbc61406494680ac47700670ea22_on_table_1_at_verify_task_48:
+      position:
+      - -2.7528504416728343
+      - -1.3430396834649403
+      - 0.8079280410706997
+      furniture: table_1
+      original_id: c8acdbc61406494680ac47700670ea22
+    _12d0ed657db04881b21b406353c76d3f_on_table_1_at_verify_task_48:
+      position:
+      - -1.7388046896467213
+      - -1.3669958071487718
+      - 0.7897267812909559
+      furniture: table_1
+      original_id: _12d0ed657db04881b21b406353c76d3f
+    _56b3fce44ef84c8696f96be3cad04463_on_table_1_at_verify_task_48:
+      position:
+      - -3.022001880609897
+      - -1.3172047573763606
+      - 0.8350038355589686
+      furniture: table_1
+      original_id: _56b3fce44ef84c8696f96be3cad04463
+  final_positions:
+    c8acdbc61406494680ac47700670ea22_on_table_1_at_verify_task_48:
+      initial_pos:
+      - -2.7528504416728343
+      - -1.3430396834649403
+      - 0.9079280410706997
+      final_pos:
+      - -2.7323293685913086
+      - -1.345690131187439
+      - 0.7845549583435059
+      category: figurine
+      original_id: c8acdbc61406494680ac47700670ea22
+    _12d0ed657db04881b21b406353c76d3f_on_table_1_at_verify_task_48:
+      initial_pos:
+      - -1.7388046896467213
+      - -1.3669958071487718
+      - 0.8897267812909558
+      final_pos:
+      - -1.7479840517044067
+      - -1.3762062788009644
+      - 0.7678273320198059
+      category: decorative object
+      original_id: _12d0ed657db04881b21b406353c76d3f
+    _56b3fce44ef84c8696f96be3cad04463_on_table_1_at_verify_task_48:
+      initial_pos:
+      - -3.022001880609897
+      - -1.3172047573763606
+      - 0.9350038355589686
+      final_pos:
+      - -3.022007942199707
+      - -1.3172088861465454
+      - 0.8150036334991455
+      category: box
+      original_id: _56b3fce44ef84c8696f96be3cad04463
+  family: SUL
+  benchmark_task_id: SUL/verify_task_48
+  global_index: 214
+  target_object_id: c8acdbc61406494680ac47700670ea22

@@ -1,0 +1,370 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _87126aab996b4aef83aeaeae238a02e6_on_cabinet_6_at_verify_task_115:
+    original_id: _87126aab996b4aef83aeaeae238a02e6
+    category: lettuce
+    usd_path: ${MESATASK_USD_ROOT}/87126aab996b4aef83aeaeae238a02e6.usd
+    usd_scale:
+    - 1.3213672885621395
+    - 1.3328703992815218
+    - 1.2546616390141674
+    position:
+    - 2.5716521684444746
+    - -1.0151207697552314
+    - 0.7982468236109708
+    size:
+    - 0.1332082748413086
+    - 0.1251659393310547
+    - 0.12049365771235898
+  _87126aab996b4aef83aeaeae238a02e6_on_cabinet_7_at_verify_task_115:
+    original_id: _87126aab996b4aef83aeaeae238a02e6
+    category: lettuce
+    usd_path: ${MESATASK_USD_ROOT}/87126aab996b4aef83aeaeae238a02e6.usd
+    usd_scale:
+    - 1.3213672885621395
+    - 1.3328703992815218
+    - 1.2546616390141674
+    position:
+    - 0.9103223043959274
+    - 1.6815568907827605
+    - 0.9167968261858914
+    size:
+    - 0.1332082748413086
+    - 0.1251659393310547
+    - 0.12049365771235898
+  _87126aab996b4aef83aeaeae238a02e6_on_cabinet_8_at_verify_task_115:
+    original_id: _87126aab996b4aef83aeaeae238a02e6
+    category: lettuce
+    usd_path: ${MESATASK_USD_ROOT}/87126aab996b4aef83aeaeae238a02e6.usd
+    usd_scale:
+    - 1.3213672885621395
+    - 1.3328703992815218
+    - 1.2546616390141674
+    position:
+    - 4.493014260851644
+    - 2.9922709267600474
+    - 0.5307468104979489
+    size:
+    - 0.1332082748413086
+    - 0.1251659393310547
+    - 0.12049365771235898
+  _87126aab996b4aef83aeaeae238a02e6_on_cabinet_9_at_verify_task_115:
+    original_id: _87126aab996b4aef83aeaeae238a02e6
+    category: lettuce
+    usd_path: ${MESATASK_USD_ROOT}/87126aab996b4aef83aeaeae238a02e6.usd
+    usd_scale:
+    - 1.3213672885621395
+    - 1.3328703992815218
+    - 1.2546616390141674
+    position:
+    - 6.180740778571266
+    - 1.2677371116969944
+    - 1.0202468264719937
+    size:
+    - 0.1332082748413086
+    - 0.1251659393310547
+    - 0.12049365771235898
+  _87126aab996b4aef83aeaeae238a02e6_on_cabinet_10_at_verify_task_115:
+    original_id: _87126aab996b4aef83aeaeae238a02e6
+    category: lettuce
+    usd_path: ${MESATASK_USD_ROOT}/87126aab996b4aef83aeaeae238a02e6.usd
+    usd_scale:
+    - 1.3213672885621395
+    - 1.3328703992815218
+    - 1.2546616390141674
+    position:
+    - 3.258807509568176
+    - -0.4617944449059112
+    - 0.5532468188425992
+    size:
+    - 0.1332082748413086
+    - 0.1251659393310547
+    - 0.12049365771235898
+episodes:
+- benchmark_task_id: FDO/verify_task_115
+  family: FDO
+  task_id: verify_task_115
+  episode_idx: 26
+  original_idx: 115
+  benchmark_instruction: Take a lettuce from whole-black cabinet with flat base and put it on the only
+    electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Take a lettuce from whole-black cabinet with flat base and put it on the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+      door: false
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _87126aab996b4aef83aeaeae238a02e6:
+      category: lettuce
+      usd_path: 87126aab996b4aef83aeaeae238a02e6.usd
+      size:
+      - 0.1332082748413086
+      - 0.1251659393310547
+      - 0.12049365771235898
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: lettuce
+  - action: gaze_at
+    args:
+      target_category: lettuce
+  - action: pick
+    args:
+      target_category: lettuce
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_6_at_verify_task_115:
+      position:
+      - 2.5716521684444746
+      - -1.0151207697552314
+      - 0.7982468236109708
+      furniture: cabinet_6
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_7_at_verify_task_115:
+      position:
+      - 0.9103223043959274
+      - 1.6815568907827605
+      - 0.9167968261858914
+      furniture: cabinet_7
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_8_at_verify_task_115:
+      position:
+      - 4.493014260851644
+      - 2.9922709267600474
+      - 0.5307468104979489
+      furniture: cabinet_8
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_9_at_verify_task_115:
+      position:
+      - 6.180740778571266
+      - 1.2677371116969944
+      - 1.0202468264719937
+      furniture: cabinet_9
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_10_at_verify_task_115:
+      position:
+      - 3.258807509568176
+      - -0.4617944449059112
+      - 0.5532468188425992
+      furniture: cabinet_10
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+  final_positions:
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_6_at_verify_task_115:
+      initial_pos:
+      - 2.5716521684444746
+      - -1.0151207697552314
+      - 0.8982468236109707
+      final_pos:
+      - 2.568096160888672
+      - -1.0162708759307861
+      - 0.7766973972320557
+      category: lettuce
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_7_at_verify_task_115:
+      initial_pos:
+      - 0.9103223043959274
+      - 1.6815568907827605
+      - 1.0167968261858915
+      final_pos:
+      - 0.9043680429458618
+      - 1.679176926612854
+      - 0.8952474594116211
+      category: lettuce
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_8_at_verify_task_115:
+      initial_pos:
+      - 4.493014260851644
+      - 2.9922709267600474
+      - 0.6307468104979489
+      final_pos:
+      - 4.489354133605957
+      - 2.9908721446990967
+      - 0.509196937084198
+      category: lettuce
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_9_at_verify_task_115:
+      initial_pos:
+      - 6.180740778571266
+      - 1.2677371116969944
+      - 1.1202468264719938
+      final_pos:
+      - 6.174849033355713
+      - 1.2653306722640991
+      - 0.9986974000930786
+      category: lettuce
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_cabinet_10_at_verify_task_115:
+      initial_pos:
+      - 3.258807509568176
+      - -0.4617944449059112
+      - 0.6532468188425992
+      final_pos:
+      - 3.255160331726074
+      - -0.4634855389595032
+      - 0.531697154045105
+      category: lettuce
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+  global_index: 154
+  target_object_id: _87126aab996b4aef83aeaeae238a02e6

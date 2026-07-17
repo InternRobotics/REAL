@@ -22,6 +22,12 @@ ASK_INPUT_SCHEMA = {
     "required": ["target_category", "target_description"],
 }
 
+FINISH_INPUT_SCHEMA = {
+    "type": "object",
+    "properties": {},
+    "required": [],
+}
+
 # OpenAI function-calling format
 OPENAI_TOOLS = [
     {
@@ -184,11 +190,7 @@ OPENAI_TOOLS = [
         "function": {
             "name": "finish",
             "description": "you must call this tool to finish the episode when you think you have completed all the instructions.",
-            "parameters": {
-                "type": "object",
-                "required": [],
-                "properties": {},
-            },
+            "parameters": FINISH_INPUT_SCHEMA,
         },
     },
     {
@@ -327,6 +329,11 @@ MCP_TOOLS = [
             },
             "required": ["marker_id"],
         },
+    ),
+    types.Tool(
+        name="finish",
+        description="you must call this tool to finish the episode when you think you have completed all the instructions.",
+        inputSchema=FINISH_INPUT_SCHEMA,
     ),
     types.Tool(
         name="ask",

@@ -1,0 +1,342 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  d29a0372_ad5f_4a4a_85a7_0cbac2219c72_on_desk_1_at_verify_task_193:
+    original_id: d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    category: speaker
+    usd_path: ${MESATASK_USD_ROOT}/d29a0372-ad5f-4a4a-85a7-0cbac2219c72.usd
+    usd_scale:
+    - 11.931378667081132
+    - 11.679388358514684
+    - 10.689302674190666
+    position:
+    - 0.05089499132695183
+    - -3.292615528449599
+    - 0.864229603707845
+    size:
+    - 0.12867069244384766
+    - 0.1549072265625
+    - 0.21245913684379047
+    detailed_caption: Sleek rectangular speaker with matte finish, two circular drivers, smooth sides,
+      and subtle back design.
+  d29a0372_ad5f_4a4a_85a7_0cbac2219c72_on_desk_2_at_verify_task_193:
+    original_id: d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    category: speaker
+    usd_path: ${MESATASK_USD_ROOT}/d29a0372-ad5f-4a4a-85a7-0cbac2219c72.usd
+    usd_scale:
+    - 11.931378667081132
+    - 11.679388358514684
+    - 10.689302674190666
+    position:
+    - 4.546531603479093
+    - 1.6086995620408582
+    - 0.8716721376777241
+    size:
+    - 0.12867069244384766
+    - 0.1549072265625
+    - 0.21245913684379047
+    detailed_caption: Sleek rectangular speaker with matte finish, two circular drivers, smooth sides,
+      and subtle back design.
+  _8c51d37795264cc99961417a56b3c1c0_on_desk_2_at_verify_task_193:
+    original_id: _8c51d37795264cc99961417a56b3c1c0
+    category: speaker
+    usd_path: ${MESATASK_USD_ROOT}/8c51d37795264cc99961417a56b3c1c0.usd
+    usd_scale:
+    - 117.21510588672169
+    - 109.60544520589227
+    - 142.93725382175728
+    position:
+    - 4.391901465423576
+    - 1.9358837446459525
+    - 0.8340573180280626
+    size:
+    - 0.11203193664550781
+    - 0.05787086486816406
+    - 0.13722949754446745
+    detailed_caption: Cylindrical speaker with a sleek design and textured fabric exterior; illuminated
+      button controls.
+  e5de4a6b4c13483aa5e2e7a81ab7228c_on_desk_2_at_verify_task_193:
+    original_id: e5de4a6b4c13483aa5e2e7a81ab7228c
+    category: speaker
+    usd_path: ${MESATASK_USD_ROOT}/e5de4a6b4c13483aa5e2e7a81ab7228c.usd
+    usd_scale:
+    - 0.06282845922912238
+    - 0.08147201313954636
+    - 0.1151821492582614
+    position:
+    - 4.389767512587521
+    - 1.2051963612268282
+    - 0.8443995103985071
+    size:
+    - 0.21634769439697266
+    - 0.11713027954101562
+    - 0.15791388228535652
+    detailed_caption: Cylindrical speaker with a sleek dark surface, mesh grill, and vibrant blue lighting
+      accents.
+episodes:
+- benchmark_task_id: FODP/verify_task_193
+  family: FODP
+  task_id: verify_task_193
+  episode_idx: 35
+  original_idx: 193
+  benchmark_instruction: Take the sleek rectangular speaker with matte finish, two circular drivers, smooth
+    sides, and subtle back design from white desk in front of the blank wall and put it on the rounded
+    rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the sleek rectangular speaker with matte finish, two circular drivers, smooth
+    sides, and subtle back design from white desk in front of the blank wall and put it on the rounded
+    rectangular table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+      - _8c51d37795264cc99961417a56b3c1c0
+      - e5de4a6b4c13483aa5e2e7a81ab7228c
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    desk_1:
+      room: study room/0
+      content:
+      - d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _8c51d37795264cc99961417a56b3c1c0
+      - e5de4a6b4c13483aa5e2e7a81ab7228c
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    d29a0372_ad5f_4a4a_85a7_0cbac2219c72:
+      category: speaker
+      detailed_caption: Sleek rectangular speaker with matte finish, two circular drivers, smooth sides,
+        and subtle back design.
+      usd_path: d29a0372-ad5f-4a4a-85a7-0cbac2219c72.usd
+      size:
+      - 0.12867069244384766
+      - 0.1549072265625
+      - 0.21245913684379047
+  obj_distractors:
+  - _8c51d37795264cc99961417a56b3c1c0
+  - e5de4a6b4c13483aa5e2e7a81ab7228c
+  obj_distractor_meta:
+    _8c51d37795264cc99961417a56b3c1c0:
+      category: speaker
+      detailed_caption: Cylindrical speaker with a sleek design and textured fabric exterior; illuminated
+        button controls.
+      usd_path: 8c51d37795264cc99961417a56b3c1c0.usd
+      size:
+      - 0.11203193664550781
+      - 0.05787086486816406
+      - 0.13722949754446745
+    e5de4a6b4c13483aa5e2e7a81ab7228c:
+      category: speaker
+      detailed_caption: Cylindrical speaker with a sleek dark surface, mesh grill, and vibrant blue lighting
+        accents.
+      usd_path: e5de4a6b4c13483aa5e2e7a81ab7228c.usd
+      size:
+      - 0.21634769439697266
+      - 0.11713027954101562
+      - 0.15791388228535652
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: speaker
+      target_description: Sleek rectangular speaker with matte finish, two circular drivers, smooth sides,
+        and subtle back design.
+  - action: gaze_at
+    args:
+      target_category: speaker
+      target_description: Sleek rectangular speaker with matte finish, two circular drivers, smooth sides,
+        and subtle back design.
+  - action: pick
+    args:
+      target_category: speaker
+      target_description: Sleek rectangular speaker with matte finish, two circular drivers, smooth sides,
+        and subtle back design.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    d29a0372_ad5f_4a4a_85a7_0cbac2219c72_on_desk_1_at_verify_task_193:
+      position:
+      - 0.05089499132695183
+      - -3.292615528449599
+      - 0.864229603707845
+      furniture: desk_1
+      original_id: d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    d29a0372_ad5f_4a4a_85a7_0cbac2219c72_on_desk_2_at_verify_task_193:
+      position:
+      - 4.546531603479093
+      - 1.6086995620408582
+      - 0.8716721376777241
+      furniture: desk_2
+      original_id: d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    _8c51d37795264cc99961417a56b3c1c0_on_desk_2_at_verify_task_193:
+      position:
+      - 4.391901465423576
+      - 1.9358837446459525
+      - 0.8340573180280626
+      furniture: desk_2
+      original_id: _8c51d37795264cc99961417a56b3c1c0
+    e5de4a6b4c13483aa5e2e7a81ab7228c_on_desk_2_at_verify_task_193:
+      position:
+      - 4.389767512587521
+      - 1.2051963612268282
+      - 0.8443995103985071
+      furniture: desk_2
+      original_id: e5de4a6b4c13483aa5e2e7a81ab7228c
+  final_positions:
+    d29a0372_ad5f_4a4a_85a7_0cbac2219c72_on_desk_1_at_verify_task_193:
+      initial_pos:
+      - 0.05089499132695183
+      - -3.292615528449599
+      - 0.9642296037078449
+      final_pos:
+      - 0.050902433693408966
+      - -3.2925944328308105
+      - 0.8438048362731934
+      category: speaker
+      original_id: d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    d29a0372_ad5f_4a4a_85a7_0cbac2219c72_on_desk_2_at_verify_task_193:
+      initial_pos:
+      - 4.546531603479093
+      - 1.6086995620408582
+      - 0.9716721376777241
+      final_pos:
+      - 4.545953750610352
+      - 1.6097040176391602
+      - 0.8237470984458923
+      category: speaker
+      original_id: d29a0372_ad5f_4a4a_85a7_0cbac2219c72
+    _8c51d37795264cc99961417a56b3c1c0_on_desk_2_at_verify_task_193:
+      initial_pos:
+      - 4.391901465423576
+      - 1.9358837446459525
+      - 0.9340573180280626
+      final_pos:
+      - 4.391807556152344
+      - 1.9357573986053467
+      - 0.7854411602020264
+      category: speaker
+      original_id: _8c51d37795264cc99961417a56b3c1c0
+    e5de4a6b4c13483aa5e2e7a81ab7228c_on_desk_2_at_verify_task_193:
+      initial_pos:
+      - 4.389767512587521
+      - 1.2051963612268282
+      - 0.9443995103985071
+      final_pos:
+      - 4.39815616607666
+      - 1.3185663223266602
+      - 0.7738198637962341
+      category: speaker
+      original_id: e5de4a6b4c13483aa5e2e7a81ab7228c
+  global_index: 107
+  target_object_id: d29a0372_ad5f_4a4a_85a7_0cbac2219c72

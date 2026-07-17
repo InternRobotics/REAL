@@ -1,0 +1,299 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_desk_1_at_verify_task_45:
+    original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+    usd_scale:
+    - 12.380533588081919
+    - 12.995205453223841
+    - 14.755287127585984
+    position:
+    - -0.08596256151899942
+    - -3.0212076233481118
+    - 0.9051011554143042
+    size:
+    - 0.18028736114501953
+    - 0.1647653579711914
+    - 0.29420224025670905
+    detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_desk_1_at_verify_task_45:
+    original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/c2f58583-d0fd-4a60-b45e-5bfc4321ea1c.usd
+    usd_scale:
+    - 9.96080179331549
+    - 9.934250012546055
+    - 10.610273543496273
+    position:
+    - 0.07659494854554999
+    - -2.45612071758544
+    - 0.7627224880266295
+    size:
+    - 0.14281845092773438
+    - 0.19748306274414062
+    - 0.009444905481359456
+    detailed_caption: White ruled notepad, leather-bound top, perforated edges, rectangular shape, clean
+      lined pages.
+  _5899d997_4d52_4918_97b5_32195cbe58fb_on_desk_1_at_verify_task_45:
+    original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/5899d997-4d52-4918-97b5-32195cbe58fb.usd
+    usd_scale:
+    - 12.161976199833912
+    - 12.044591764280078
+    - 13.308264737502707
+    position:
+    - 0.01231381318158363
+    - -2.7295904178241894
+    - 0.7709875257674139
+    size:
+    - 0.190826416015625
+    - 0.23894691467285156
+    - 0.025974980962928385
+    detailed_caption: Multiple rectangular stacks of smooth, shiny white printing paper, varying in height.
+episodes:
+- task_id: verify_task_45
+  episode_idx: 35
+  original_idx: 45
+  benchmark_instruction: Transport a notebook at wide desk with orange drawer pulls to the table where
+    we have dinner.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the notebook with spiral binding, colorful cover images, and blank rectangular
+    pages at wide desk with orange drawer pulls to the table where we have dinner.
+  fuzzy_task_description: Transport a notebook at wide desk with orange drawer pulls to the table where
+    we have dinner.
+  purpose: notebook
+  purpose_group: notebooks
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+      - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+      - _5899d997_4d52_4918_97b5_32195cbe58fb
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+      - _5899d997_4d52_4918_97b5_32195cbe58fb
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b:
+      category: notebook
+      detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+      usd_path: gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+      size:
+      - 0.18028736114501953
+      - 0.1647653579711914
+      - 0.29420224025670905
+  obj_distractors:
+  - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+  - _5899d997_4d52_4918_97b5_32195cbe58fb
+  obj_distractor_meta:
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c:
+      category: notepad
+      detailed_caption: White ruled notepad, leather-bound top, perforated edges, rectangular shape, clean
+        lined pages.
+      usd_path: c2f58583-d0fd-4a60-b45e-5bfc4321ea1c.usd
+      size:
+      - 0.14281845092773438
+      - 0.19748306274414062
+      - 0.009444905481359456
+    _5899d997_4d52_4918_97b5_32195cbe58fb:
+      category: notepad
+      detailed_caption: Multiple rectangular stacks of smooth, shiny white printing paper, varying in
+        height.
+      usd_path: 5899d997-4d52-4918-97b5-32195cbe58fb.usd
+      size:
+      - 0.190826416015625
+      - 0.23894691467285156
+      - 0.025974980962928385
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Transport the notebook with spiral binding, colorful cover images, and blank
+    rectangular pages at wide desk with orange drawer pulls to the table where we have dinner.
+  placements:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_desk_1_at_verify_task_45:
+      position:
+      - -0.08596256151899942
+      - -3.0212076233481118
+      - 0.9051011554143042
+      furniture: desk_1
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_desk_1_at_verify_task_45:
+      position:
+      - 0.07659494854554999
+      - -2.45612071758544
+      - 0.7627224880266295
+      furniture: desk_1
+      original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    _5899d997_4d52_4918_97b5_32195cbe58fb_on_desk_1_at_verify_task_45:
+      position:
+      - 0.01231381318158363
+      - -2.7295904178241894
+      - 0.7709875257674139
+      furniture: desk_1
+      original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+  final_positions:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_desk_1_at_verify_task_45:
+      initial_pos:
+      - -0.08596256151899942
+      - -3.0212076233481118
+      - 1.0051011554143043
+      final_pos:
+      - -0.08673311024904251
+      - -3.02065372467041
+      - 0.8844671249389648
+      category: notebook
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_desk_1_at_verify_task_45:
+      initial_pos:
+      - 0.07659494854554999
+      - -2.45612071758544
+      - 0.8627224880266294
+      final_pos:
+      - 0.07658513635396957
+      - -2.4560182094573975
+      - 0.7413408756256104
+      category: notepad
+      original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    _5899d997_4d52_4918_97b5_32195cbe58fb_on_desk_1_at_verify_task_45:
+      initial_pos:
+      - 0.01231381318158363
+      - -2.7295904178241894
+      - 0.8709875257674139
+      final_pos:
+      - 0.012300574220716953
+      - -2.729584217071533
+      - 0.7503132224082947
+      category: stack
+      original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+  family: SUL
+  benchmark_task_id: SUL/verify_task_45
+  global_index: 211
+  target_object_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b

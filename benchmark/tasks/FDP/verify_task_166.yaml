@@ -1,0 +1,253 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  e77ea3afe04b454d8882e25565dc1054_on_table_1_at_verify_task_166:
+    original_id: e77ea3afe04b454d8882e25565dc1054
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/e77ea3afe04b454d8882e25565dc1054.usd
+    usd_scale:
+    - 3.669689145664772
+    - 3.6684803151060983
+    - 3.3572252160183718
+    position:
+    - -2.018125170295474
+    - -1.202004353774293
+    - 0.7843639344023541
+    size:
+    - 0.08642196655273438
+    - 0.2476825714111328
+    - 0.04072807193733752
+    detailed_caption: Sleek black rectangular remote control with a smooth surface and colorful buttons.
+  e77ea3afe04b454d8882e25565dc1054_on_table_2_at_verify_task_166:
+    original_id: e77ea3afe04b454d8882e25565dc1054
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/e77ea3afe04b454d8882e25565dc1054.usd
+    usd_scale:
+    - 3.669689145664772
+    - 3.6684803151060983
+    - 3.3572252160183718
+    position:
+    - -2.373635421351464
+    - 2.700495708708594
+    - 0.3103520363615826
+    size:
+    - 0.08642196655273438
+    - 0.2476825714111328
+    - 0.04072807193733752
+    detailed_caption: Sleek black rectangular remote control with a smooth surface and colorful buttons.
+episodes:
+- task_id: verify_task_166
+  episode_idx: 30
+  original_idx: 166
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the sleek black rectangular remote control with a smooth surface and colorful
+    buttons from the rounded rectangular table and place it on white cabinet with grey bottle.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - e77ea3afe04b454d8882e25565dc1054
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - e77ea3afe04b454d8882e25565dc1054
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - e77ea3afe04b454d8882e25565dc1054
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: cabinet_7
+  dest_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    e77ea3afe04b454d8882e25565dc1054:
+      category: remote control
+      detailed_caption: Sleek black rectangular remote control with a smooth surface and colorful buttons.
+      usd_path: e77ea3afe04b454d8882e25565dc1054.usd
+      size:
+      - 0.08642196655273438
+      - 0.2476825714111328
+      - 0.04072807193733752
+  obj_distractors:
+  - fc55a7410d674754a8963216cf728f80
+  - _52f142c052564d85b6ef21413af34e25
+  obj_distractor_meta:
+    fc55a7410d674754a8963216cf728f80:
+      category: remote control
+      detailed_caption: Remote control, slim rectangular shape, smooth surface, primarily white with blue
+        accents.
+      usd_path: fc55a7410d674754a8963216cf728f80.usd
+      size:
+      - 0.05971384048461914
+      - 0.00995635986328125
+      - 0.21438525664075314
+    _52f142c052564d85b6ef21413af34e25:
+      category: remote
+      detailed_caption: Remote control, rectangular shape, gray with black accents, smooth, sleek surface.
+      usd_path: 52f142c052564d85b6ef21413af34e25.usd
+      size:
+      - 0.06293773651123047
+      - 1.425858497619629
+      - 0.0038919457531392254
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: remote control
+      target_description: Sleek black rectangular remote control with a smooth surface and colorful buttons.
+  - action: gaze_at
+    args:
+      target_category: remote control
+      target_description: Sleek black rectangular remote control with a smooth surface and colorful buttons.
+  - action: pick
+    args:
+      target_category: remote control
+      target_description: Sleek black rectangular remote control with a smooth surface and colorful buttons.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: place
+    args:
+      receptacle_name: cabinet_7
+  placements:
+    e77ea3afe04b454d8882e25565dc1054_on_table_1_at_verify_task_166:
+      position:
+      - -2.018125170295474
+      - -1.202004353774293
+      - 0.7843639344023541
+      furniture: table_1
+      original_id: e77ea3afe04b454d8882e25565dc1054
+    e77ea3afe04b454d8882e25565dc1054_on_table_2_at_verify_task_166:
+      position:
+      - -2.373635421351464
+      - 2.700495708708594
+      - 0.3103520363615826
+      furniture: table_2
+      original_id: e77ea3afe04b454d8882e25565dc1054
+  final_positions:
+    e77ea3afe04b454d8882e25565dc1054_on_table_1_at_verify_task_166:
+      initial_pos:
+      - -2.018125170295474
+      - -1.202004353774293
+      - 0.8843639344023541
+      final_pos:
+      - -2.00345516204834
+      - -1.0816987752914429
+      - 0.767217218875885
+      category: remote control
+      original_id: e77ea3afe04b454d8882e25565dc1054
+    e77ea3afe04b454d8882e25565dc1054_on_table_2_at_verify_task_166:
+      initial_pos:
+      - -2.373635421351464
+      - 2.700495708708594
+      - 0.4103520363615826
+      final_pos:
+      - -2.3622705936431885
+      - 2.8205153942108154
+      - 0.293205589056015
+      category: remote control
+      original_id: e77ea3afe04b454d8882e25565dc1054
+  family: FDP
+  benchmark_task_id: FDP/verify_task_166
+  benchmark_instruction: Pick up the sleek black rectangular remote control with a smooth surface and
+    colorful buttons from the rounded rectangular table and place it on white cabinet with grey bottle.
+  global_index: 30
+  target_object_id: e77ea3afe04b454d8882e25565dc1054

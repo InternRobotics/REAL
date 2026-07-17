@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a77e88c7_f4a1_45e3_813a_df943607f8ff_on_table_2_at_verify_task_15:
+    original_id: a77e88c7_f4a1_45e3_813a_df943607f8ff
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/a77e88c7-f4a1-45e3-813a-df943607f8ff.usd
+    usd_scale:
+    - 21.062401659804586
+    - 17.886956687500913
+    - 19.928172914127284
+    position:
+    - -2.1920128721260403
+    - 3.168573627329406
+    - 0.30559490661791644
+    size:
+    - 0.3775520324707031
+    - 0.3553352355957031
+    - 0.031213812450005207
+    detailed_caption: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+      and elegant appearance.
+  a135e3e2325448f9aa18797fd9903efc_on_table_2_at_verify_task_15:
+    original_id: a135e3e2325448f9aa18797fd9903efc
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/a135e3e2325448f9aa18797fd9903efc.usd
+    usd_scale:
+    - 0.22490356414178278
+    - 0.22484281145655563
+    - 0.28864291592555186
+    position:
+    - -2.0802907847653844
+    - 2.7557767385944345
+    - 0.3205754468031228
+    size:
+    - 0.24294281005859375
+    - 0.2269287109375
+    - 0.06117489282041788
+    detailed_caption: Decorative bowl with a blue floral design, golden rim, smooth glossy surface, and
+      shallow depth.
+  _0c84252f66b44ed5a1b48f65bc11b43c_on_table_2_at_verify_task_15:
+    original_id: _0c84252f66b44ed5a1b48f65bc11b43c
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/0c84252f66b44ed5a1b48f65bc11b43c.usd
+    usd_scale:
+    - 0.8147335959053013
+    - 0.8122258121703807
+    - 0.8225893890472818
+    position:
+    - -2.553303304339633
+    - 3.168648501134245
+    - 0.3419654825516045
+    size:
+    - 0.234893798828125
+    - 0.23509788513183594
+    - 0.10395496431738138
+    detailed_caption: Wooden bowl with a smooth, rounded design, rich brown finish, and gently curved
+      edges.
+episodes:
+- task_id: verify_task_15
+  episode_idx: 13
+  original_idx: 15
+  benchmark_instruction: Bring a food serving container from the table much smaller than another one to
+    the table much larger than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the sleek, rectangular tray with raised edges, polished metallic surface,
+    reflective and elegant appearance from the table much smaller than another one and place it on the
+    table much larger than another one.
+  fuzzy_task_description: Bring a food serving container from the table much smaller than another one
+    to the table much larger than another one.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - a77e88c7_f4a1_45e3_813a_df943607f8ff
+      - a135e3e2325448f9aa18797fd9903efc
+      - _0c84252f66b44ed5a1b48f65bc11b43c
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - a77e88c7_f4a1_45e3_813a_df943607f8ff
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - a135e3e2325448f9aa18797fd9903efc
+      - _0c84252f66b44ed5a1b48f65bc11b43c
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    a77e88c7_f4a1_45e3_813a_df943607f8ff:
+      category: tray
+      detailed_caption: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+      usd_path: a77e88c7-f4a1-45e3-813a-df943607f8ff.usd
+      size:
+      - 0.3775520324707031
+      - 0.3553352355957031
+      - 0.031213812450005207
+  obj_distractors:
+  - a135e3e2325448f9aa18797fd9903efc
+  - _0c84252f66b44ed5a1b48f65bc11b43c
+  obj_distractor_meta:
+    a135e3e2325448f9aa18797fd9903efc:
+      category: bowl
+      detailed_caption: Decorative bowl with a blue floral design, golden rim, smooth glossy surface,
+        and shallow depth.
+      usd_path: a135e3e2325448f9aa18797fd9903efc.usd
+      size:
+      - 0.24294281005859375
+      - 0.2269287109375
+      - 0.06117489282041788
+    _0c84252f66b44ed5a1b48f65bc11b43c:
+      category: bowl
+      detailed_caption: Wooden bowl with a smooth, rounded design, rich brown finish, and gently curved
+        edges.
+      usd_path: 0c84252f66b44ed5a1b48f65bc11b43c.usd
+      size:
+      - 0.234893798828125
+      - 0.23509788513183594
+      - 0.10395496431738138
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: tray
+      target_description: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Pick up the sleek, rectangular tray with raised edges, polished metallic surface,
+    reflective and elegant appearance from the table much smaller than another one and place it on the
+    table much larger than another one.
+  placements:
+    a77e88c7_f4a1_45e3_813a_df943607f8ff_on_table_2_at_verify_task_15:
+      position:
+      - -2.1920128721260403
+      - 3.168573627329406
+      - 0.30559490661791644
+      furniture: table_2
+      original_id: a77e88c7_f4a1_45e3_813a_df943607f8ff
+    a135e3e2325448f9aa18797fd9903efc_on_table_2_at_verify_task_15:
+      position:
+      - -2.0802907847653844
+      - 2.7557767385944345
+      - 0.3205754468031228
+      furniture: table_2
+      original_id: a135e3e2325448f9aa18797fd9903efc
+    _0c84252f66b44ed5a1b48f65bc11b43c_on_table_2_at_verify_task_15:
+      position:
+      - -2.553303304339633
+      - 3.168648501134245
+      - 0.3419654825516045
+      furniture: table_2
+      original_id: _0c84252f66b44ed5a1b48f65bc11b43c
+  final_positions:
+    a77e88c7_f4a1_45e3_813a_df943607f8ff_on_table_2_at_verify_task_15:
+      initial_pos:
+      - -2.1920128721260403
+      - 3.168573627329406
+      - 0.4055949066179164
+      final_pos:
+      - -2.1920180320739746
+      - 3.1685848236083984
+      - 0.28447386622428894
+      category: tray
+      original_id: a77e88c7_f4a1_45e3_813a_df943607f8ff
+    a135e3e2325448f9aa18797fd9903efc_on_table_2_at_verify_task_15:
+      initial_pos:
+      - -2.0802907847653844
+      - 2.7557767385944345
+      - 0.42057544680312275
+      final_pos:
+      - -2.0801351070404053
+      - 2.600994825363159
+      - 0.29272139072418213
+      category: bowl
+      original_id: a135e3e2325448f9aa18797fd9903efc
+    _0c84252f66b44ed5a1b48f65bc11b43c_on_table_2_at_verify_task_15:
+      initial_pos:
+      - -2.553303304339633
+      - 3.168648501134245
+      - 0.4419654825516045
+      final_pos:
+      - -2.55861496925354
+      - 3.0299243927001953
+      - 0.31384173035621643
+      category: bowl
+      original_id: _0c84252f66b44ed5a1b48f65bc11b43c
+  family: SUL
+  benchmark_task_id: SUL/verify_task_15
+  global_index: 189
+  target_object_id: a77e88c7_f4a1_45e3_813a_df943607f8ff

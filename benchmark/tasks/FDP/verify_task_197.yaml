@@ -1,0 +1,264 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0f27ac8853b7498892751acef48299cc_on_desk_1_at_verify_task_197:
+    original_id: _0f27ac8853b7498892751acef48299cc
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0f27ac8853b7498892751acef48299cc.usd
+    usd_scale:
+    - 4.16056920184218
+    - 4.166486136256042
+    - 4.168626917344152
+    position:
+    - -0.005525075044060831
+    - -3.1230022887082067
+    - 0.8698827683506534
+    size:
+    - 0.3871042728424072
+    - 0.4038982391357422
+    - 0.2237654661294073
+    detailed_caption: A teddy bear figure with a round body, outstretched arms, light brown color, smooth
+      texture.
+  _0f27ac8853b7498892751acef48299cc_on_desk_2_at_verify_task_197:
+    original_id: _0f27ac8853b7498892751acef48299cc
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0f27ac8853b7498892751acef48299cc.usd
+    usd_scale:
+    - 4.16056920184218
+    - 4.166486136256042
+    - 4.168626917344152
+    position:
+    - 4.45529664205669
+    - 2.0706690059487425
+    - 0.8773253023205325
+    size:
+    - 0.3871042728424072
+    - 0.4038982391357422
+    - 0.2237654661294073
+    detailed_caption: A teddy bear figure with a round body, outstretched arms, light brown color, smooth
+      texture.
+episodes:
+- task_id: verify_task_197
+  episode_idx: 46
+  original_idx: 197
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the a teddy bear figure with a round body, outstretched arms, light brown
+    color, smooth texture from white desk with round black knob and deposit it at the rounded rectangular
+    table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _0f27ac8853b7498892751acef48299cc
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _0f27ac8853b7498892751acef48299cc
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _0f27ac8853b7498892751acef48299cc
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _0f27ac8853b7498892751acef48299cc:
+      category: teddy bear
+      detailed_caption: A teddy bear figure with a round body, outstretched arms, light brown color, smooth
+        texture.
+      usd_path: 0f27ac8853b7498892751acef48299cc.usd
+      size:
+      - 0.3871042728424072
+      - 0.4038982391357422
+      - 0.2237654661294073
+  obj_distractors:
+  - c752c932af1a477a8fd37f6bb0ec5f64
+  - _3ab5f94d4f3745a48c7b8e5023836f8e
+  obj_distractor_meta:
+    c752c932af1a477a8fd37f6bb0ec5f64:
+      category: teddy bear
+      detailed_caption: Soft brown teddy bear with prominent ears, button eyes, light brown belly patch,
+        round face.
+      usd_path: c752c932af1a477a8fd37f6bb0ec5f64.usd
+      size:
+      - 0.2529454231262207
+      - 0.30280303955078125
+      - 0.20035326946526766
+    _3ab5f94d4f3745a48c7b8e5023836f8e:
+      category: teddy bear
+      detailed_caption: A teddy bear with soft fur, small wings, round belly, and button-like eyes.
+      usd_path: 3ab5f94d4f3745a48c7b8e5023836f8e.usd
+      size:
+      - 0.17863845825195312
+      - 0.19546127319335938
+      - 0.1770838350057602
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: teddy bear
+      target_description: A teddy bear figure with a round body, outstretched arms, light brown color,
+        smooth texture.
+  - action: gaze_at
+    args:
+      target_category: teddy bear
+      target_description: A teddy bear figure with a round body, outstretched arms, light brown color,
+        smooth texture.
+  - action: pick
+    args:
+      target_category: teddy bear
+      target_description: A teddy bear figure with a round body, outstretched arms, light brown color,
+        smooth texture.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _0f27ac8853b7498892751acef48299cc_on_desk_1_at_verify_task_197:
+      position:
+      - -0.005525075044060831
+      - -3.1230022887082067
+      - 0.8698827683506534
+      furniture: desk_1
+      original_id: _0f27ac8853b7498892751acef48299cc
+    _0f27ac8853b7498892751acef48299cc_on_desk_2_at_verify_task_197:
+      position:
+      - 4.45529664205669
+      - 2.0706690059487425
+      - 0.8773253023205325
+      furniture: desk_2
+      original_id: _0f27ac8853b7498892751acef48299cc
+  final_positions:
+    _0f27ac8853b7498892751acef48299cc_on_desk_1_at_verify_task_197:
+      initial_pos:
+      - -0.005525075044060831
+      - -3.1230022887082067
+      - 0.9698827683506533
+      final_pos:
+      - -0.005382014438509941
+      - -3.1352460384368896
+      - 0.8406913876533508
+      category: teddy bear
+      original_id: _0f27ac8853b7498892751acef48299cc
+    _0f27ac8853b7498892751acef48299cc_on_desk_2_at_verify_task_197:
+      initial_pos:
+      - 4.45529664205669
+      - 2.0706690059487425
+      - 0.9773253023205325
+      final_pos:
+      - 4.454984188079834
+      - 2.0517094135284424
+      - 0.8203504085540771
+      category: teddy bear
+      original_id: _0f27ac8853b7498892751acef48299cc
+  family: FDP
+  benchmark_task_id: FDP/verify_task_197
+  benchmark_instruction: Retrieve the a teddy bear figure with a round body, outstretched arms, light
+    brown color, smooth texture from white desk with round black knob and deposit it at the rounded rectangular
+    table.
+  global_index: 46
+  target_object_id: _0f27ac8853b7498892751acef48299cc

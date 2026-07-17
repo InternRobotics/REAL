@@ -1,0 +1,268 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0be004df7a6243aa8f21b95e8675b9c1_on_table_1_at_verify_task_30:
+    original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/0be004df7a6243aa8f21b95e8675b9c1.usd
+    usd_scale:
+    - 1.1688259963114804
+    - 1.158403598614655
+    - 1.1719509047956422
+    position:
+    - -2.0831969137458954
+    - -1.2990854454507925
+    - 0.7696686824597418
+    size:
+    - 0.11608266830444336
+    - 0.06706023216247559
+    - 0.011337568052113056
+    detailed_caption: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  _0be004df7a6243aa8f21b95e8675b9c1_on_table_2_at_verify_task_30:
+    original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/0be004df7a6243aa8f21b95e8675b9c1.usd
+    usd_scale:
+    - 1.1688259963114804
+    - 1.158403598614655
+    - 1.1719509047956422
+    position:
+    - -2.4051888259500913
+    - 2.775160833586237
+    - 0.29565678441897036
+    size:
+    - 0.11608266830444336
+    - 0.06706023216247559
+    - 0.011337568052113056
+    detailed_caption: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+episodes:
+- task_id: verify_task_30
+  episode_idx: 20
+  original_idx: 30
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to the table where we have dinner, pick up the cylindrical pen with a pink cap,
+    white barrel, smooth surface, and a clip, then travel to white cabinet with yellow shelf back to place
+    it.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0be004df7a6243aa8f21b95e8675b9c1
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _0be004df7a6243aa8f21b95e8675b9c1
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _0be004df7a6243aa8f21b95e8675b9c1
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _0be004df7a6243aa8f21b95e8675b9c1:
+      category: pen
+      detailed_caption: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+      usd_path: 0be004df7a6243aa8f21b95e8675b9c1.usd
+      size:
+      - 0.11608266830444336
+      - 0.06706023216247559
+      - 0.011337568052113056
+  obj_distractors:
+  - _8d4857932fba4a65a286ec60751c5201
+  - _4d97919397094d658e7773a6ff914320
+  obj_distractor_meta:
+    _8d4857932fba4a65a286ec60751c5201:
+      category: pen
+      detailed_caption: Sleek, modern pen, slim cylindrical body, matte black finish, silver accents,
+        smooth writing tip.
+      usd_path: 8d4857932fba4a65a286ec60751c5201.usd
+      size:
+      - 0.12587547302246094
+      - 0.050079345703125
+      - 0.013503589376341552
+    _4d97919397094d658e7773a6ff914320:
+      category: pencil
+      detailed_caption: Yellow hexagonal pencil with a sharpened graphite tip, eraser, smooth finish,
+        and vibrant colors.
+      usd_path: 4d97919397094d658e7773a6ff914320.usd
+      size:
+      - 0.040447235107421875
+      - 1.5958194732666016
+      - 0.0
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  placements:
+    _0be004df7a6243aa8f21b95e8675b9c1_on_table_1_at_verify_task_30:
+      position:
+      - -2.0831969137458954
+      - -1.2990854454507925
+      - 0.7696686824597418
+      furniture: table_1
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    _0be004df7a6243aa8f21b95e8675b9c1_on_table_2_at_verify_task_30:
+      position:
+      - -2.4051888259500913
+      - 2.775160833586237
+      - 0.29565678441897036
+      furniture: table_2
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+  final_positions:
+    _0be004df7a6243aa8f21b95e8675b9c1_on_table_1_at_verify_task_30:
+      initial_pos:
+      - -2.0831969137458954
+      - -1.2990854454507925
+      - 0.8696686824597418
+      final_pos:
+      - -2.154060125350952
+      - -1.2817994356155396
+      - 0.7490480542182922
+      category: pen
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    _0be004df7a6243aa8f21b95e8675b9c1_on_table_2_at_verify_task_30:
+      initial_pos:
+      - -2.4051888259500913
+      - 2.775160833586237
+      - 0.39565678441897034
+      final_pos:
+      - -2.4750943183898926
+      - 2.7928037643432617
+      - 0.2750360369682312
+      category: pen
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+  family: FDP
+  benchmark_task_id: FDP/verify_task_30
+  benchmark_instruction: Go to the table where we have dinner, pick up the cylindrical pen with a pink
+    cap, white barrel, smooth surface, and a clip, then travel to white cabinet with yellow shelf back
+    to place it.
+  global_index: 20
+  target_object_id: _0be004df7a6243aa8f21b95e8675b9c1

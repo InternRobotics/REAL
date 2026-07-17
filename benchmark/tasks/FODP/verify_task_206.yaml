@@ -1,0 +1,333 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0be004df7a6243aa8f21b95e8675b9c1_on_table_1_at_verify_task_206:
+    original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/0be004df7a6243aa8f21b95e8675b9c1.usd
+    usd_scale:
+    - 1.1688259963114804
+    - 1.158403598614655
+    - 1.1719509047956422
+    position:
+    - -1.6669148636683324
+    - -1.4309267930950664
+    - 0.7696686824597418
+    size:
+    - 0.11608266830444336
+    - 0.06706023216247559
+    - 0.011337568052113056
+    detailed_caption: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  _0be004df7a6243aa8f21b95e8675b9c1_on_table_2_at_verify_task_206:
+    original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/0be004df7a6243aa8f21b95e8675b9c1.usd
+    usd_scale:
+    - 1.1688259963114804
+    - 1.158403598614655
+    - 1.1719509047956422
+    position:
+    - -2.2100578457458777
+    - 2.9007599503693315
+    - 0.29565678441897036
+    size:
+    - 0.11608266830444336
+    - 0.06706023216247559
+    - 0.011337568052113056
+    detailed_caption: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  ca274b06_d6e2_4f26_b964_26e73a021a27_on_table_2_at_verify_task_206:
+    original_id: ca274b06_d6e2_4f26_b964_26e73a021a27
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/ca274b06-d6e2-4f26-b964-26e73a021a27.usd
+    usd_scale:
+    - 6.766268434159915
+    - 6.7697432690396635
+    - 6.992254418858625
+    position:
+    - -1.7533134238871122
+    - 2.947287051276322
+    - 0.2954848762560869
+    size:
+    - 0.014118313789367676
+    - 0.13455963134765625
+    - 0.01099375172634609
+    detailed_caption: Smooth retractable pen with a glossy blue barrel, metallic silver clip, and fine
+      tip.
+  a51ba478_3a52_4f69_a08b_80032e52345f_on_table_2_at_verify_task_206:
+    original_id: a51ba478_3a52_4f69_a08b_80032e52345f
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/a51ba478-3a52-4f69-a08b-80032e52345f.usd
+    usd_scale:
+    - 6.77896498902569
+    - 6.819060092291459
+    - 7.737536068802587
+    position:
+    - -2.4306441518955935
+    - 2.8597821990685546
+    - 0.295037470200914
+    size:
+    - 0.00919342041015625
+    - 0.1358642578125
+    - 0.01009893961600028
+    detailed_caption: Red cylindrical felt-tip pen with a fine tip, white clip, and transparent ink level
+      end.
+episodes:
+- benchmark_task_id: FODP/verify_task_206
+  family: FODP
+  task_id: verify_task_206
+  episode_idx: 43
+  original_idx: 206
+  benchmark_instruction: Retrieve the cylindrical pen with a pink cap, white barrel, smooth surface, and
+    a clip from the table to place my snack for watching TV and deposit it at white desk in front of the
+    blank wall.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the cylindrical pen with a pink cap, white barrel, smooth surface, and a
+    clip from the table to place my snack for watching TV and deposit it at white desk in front of the
+    blank wall.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0be004df7a6243aa8f21b95e8675b9c1
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _0be004df7a6243aa8f21b95e8675b9c1
+      - ca274b06_d6e2_4f26_b964_26e73a021a27
+      - a51ba478_3a52_4f69_a08b_80032e52345f
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0be004df7a6243aa8f21b95e8675b9c1
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - ca274b06_d6e2_4f26_b964_26e73a021a27
+      - a51ba478_3a52_4f69_a08b_80032e52345f
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _0be004df7a6243aa8f21b95e8675b9c1
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _0be004df7a6243aa8f21b95e8675b9c1:
+      category: pen
+      detailed_caption: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+      usd_path: 0be004df7a6243aa8f21b95e8675b9c1.usd
+      size:
+      - 0.11608266830444336
+      - 0.06706023216247559
+      - 0.011337568052113056
+  obj_distractors:
+  - ca274b06_d6e2_4f26_b964_26e73a021a27
+  - a51ba478_3a52_4f69_a08b_80032e52345f
+  obj_distractor_meta:
+    ca274b06_d6e2_4f26_b964_26e73a021a27:
+      category: pen
+      detailed_caption: Smooth retractable pen with a glossy blue barrel, metallic silver clip, and fine
+        tip.
+      usd_path: ca274b06-d6e2-4f26-b964-26e73a021a27.usd
+      size:
+      - 0.014118313789367676
+      - 0.13455963134765625
+      - 0.01099375172634609
+    a51ba478_3a52_4f69_a08b_80032e52345f:
+      category: pen
+      detailed_caption: Red cylindrical felt-tip pen with a fine tip, white clip, and transparent ink
+        level end.
+      usd_path: a51ba478-3a52-4f69-a08b-80032e52345f.usd
+      size:
+      - 0.00919342041015625
+      - 0.1358642578125
+      - 0.01009893961600028
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    _0be004df7a6243aa8f21b95e8675b9c1_on_table_1_at_verify_task_206:
+      position:
+      - -1.6669148636683324
+      - -1.4309267930950664
+      - 0.7696686824597418
+      furniture: table_1
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    _0be004df7a6243aa8f21b95e8675b9c1_on_table_2_at_verify_task_206:
+      position:
+      - -2.2100578457458777
+      - 2.9007599503693315
+      - 0.29565678441897036
+      furniture: table_2
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    ca274b06_d6e2_4f26_b964_26e73a021a27_on_table_2_at_verify_task_206:
+      position:
+      - -1.7533134238871122
+      - 2.947287051276322
+      - 0.2954848762560869
+      furniture: table_2
+      original_id: ca274b06_d6e2_4f26_b964_26e73a021a27
+    a51ba478_3a52_4f69_a08b_80032e52345f_on_table_2_at_verify_task_206:
+      position:
+      - -2.4306441518955935
+      - 2.8597821990685546
+      - 0.295037470200914
+      furniture: table_2
+      original_id: a51ba478_3a52_4f69_a08b_80032e52345f
+  final_positions:
+    _0be004df7a6243aa8f21b95e8675b9c1_on_table_1_at_verify_task_206:
+      initial_pos:
+      - -1.6669148636683324
+      - -1.4309267930950664
+      - 0.8696686824597418
+      final_pos:
+      - -1.7364892959594727
+      - -1.44566011428833
+      - 0.7491374015808105
+      category: pen
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    _0be004df7a6243aa8f21b95e8675b9c1_on_table_2_at_verify_task_206:
+      initial_pos:
+      - -2.2100578457458777
+      - 2.9007599503693315
+      - 0.39565678441897034
+      final_pos:
+      - -2.27988600730896
+      - 2.919771671295166
+      - 0.27510011196136475
+      category: pen
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    ca274b06_d6e2_4f26_b964_26e73a021a27_on_table_2_at_verify_task_206:
+      initial_pos:
+      - -1.7533134238871122
+      - 2.947287051276322
+      - 0.39548487625608686
+      final_pos:
+      - -1.7498266696929932
+      - 2.9474523067474365
+      - 0.27346259355545044
+      category: pen
+      original_id: ca274b06_d6e2_4f26_b964_26e73a021a27
+    a51ba478_3a52_4f69_a08b_80032e52345f_on_table_2_at_verify_task_206:
+      initial_pos:
+      - -2.4306441518955935
+      - 2.8597821990685546
+      - 0.39503747020091395
+      final_pos:
+      - -2.4227983951568604
+      - 2.8599302768707275
+      - 0.27395227551460266
+      category: pen
+      original_id: a51ba478_3a52_4f69_a08b_80032e52345f
+  global_index: 115
+  target_object_id: _0be004df7a6243aa8f21b95e8675b9c1

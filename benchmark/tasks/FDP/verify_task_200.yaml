@@ -1,0 +1,259 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _63f5007c_eae0_4718_b760_df6c25e0e4ae_on_desk_1_at_verify_task_200:
+    original_id: _63f5007c_eae0_4718_b760_df6c25e0e4ae
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/63f5007c-eae0-4718-b760-df6c25e0e4ae.usd
+    usd_scale:
+    - 10.122733893576136
+    - 10.183001846772132
+    - 9.917246458111748
+    position:
+    - 0.08424961362336619
+    - -2.2897617887871062
+    - 0.7733040831331164
+    size:
+    - 0.05780982971191406
+    - 0.20239830017089844
+    - 0.030608095694333315
+    detailed_caption: Sleek black plastic remote control, rounded shape, glossy finish, ergonomic design.
+  _63f5007c_eae0_4718_b760_df6c25e0e4ae_on_desk_2_at_verify_task_200:
+    original_id: _63f5007c_eae0_4718_b760_df6c25e0e4ae
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/63f5007c-eae0-4718-b760-df6c25e0e4ae.usd
+    usd_scale:
+    - 10.122733893576136
+    - 10.183001846772132
+    - 9.917246458111748
+    position:
+    - 4.582036345526806
+    - 2.189004194242232
+    - 0.7807466171029955
+    size:
+    - 0.05780982971191406
+    - 0.20239830017089844
+    - 0.030608095694333315
+    detailed_caption: Sleek black plastic remote control, rounded shape, glossy finish, ergonomic design.
+episodes:
+- task_id: verify_task_200
+  episode_idx: 49
+  original_idx: 200
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the sleek black plastic remote control, rounded shape, glossy finish, ergonomic
+    design located at white desk in front of the blank wall to the table much smaller than another one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _63f5007c_eae0_4718_b760_df6c25e0e4ae
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _63f5007c_eae0_4718_b760_df6c25e0e4ae
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _63f5007c_eae0_4718_b760_df6c25e0e4ae
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _63f5007c_eae0_4718_b760_df6c25e0e4ae:
+      category: remote control
+      detailed_caption: Sleek black plastic remote control, rounded shape, glossy finish, ergonomic design.
+      usd_path: 63f5007c-eae0-4718-b760-df6c25e0e4ae.usd
+      size:
+      - 0.05780982971191406
+      - 0.20239830017089844
+      - 0.030608095694333315
+  obj_distractors:
+  - cf2b3e74a7b547e2a75dba0187584190
+  - _52f142c052564d85b6ef21413af34e25
+  obj_distractor_meta:
+    cf2b3e74a7b547e2a75dba0187584190:
+      category: remote control
+      detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+        grip.
+      usd_path: cf2b3e74a7b547e2a75dba0187584190.usd
+      size:
+      - 0.22077178955078125
+      - 0.225372314453125
+      - 0.05019793674000539
+    _52f142c052564d85b6ef21413af34e25:
+      category: remote
+      detailed_caption: Remote control, rectangular shape, gray with black accents, smooth, sleek surface.
+      usd_path: 52f142c052564d85b6ef21413af34e25.usd
+      size:
+      - 0.06293773651123047
+      - 1.425858497619629
+      - 0.0038919457531392254
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: remote control
+      target_description: Sleek black plastic remote control, rounded shape, glossy finish, ergonomic
+        design.
+  - action: gaze_at
+    args:
+      target_category: remote control
+      target_description: Sleek black plastic remote control, rounded shape, glossy finish, ergonomic
+        design.
+  - action: pick
+    args:
+      target_category: remote control
+      target_description: Sleek black plastic remote control, rounded shape, glossy finish, ergonomic
+        design.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _63f5007c_eae0_4718_b760_df6c25e0e4ae_on_desk_1_at_verify_task_200:
+      position:
+      - 0.08424961362336619
+      - -2.2897617887871062
+      - 0.7733040831331164
+      furniture: desk_1
+      original_id: _63f5007c_eae0_4718_b760_df6c25e0e4ae
+    _63f5007c_eae0_4718_b760_df6c25e0e4ae_on_desk_2_at_verify_task_200:
+      position:
+      - 4.582036345526806
+      - 2.189004194242232
+      - 0.7807466171029955
+      furniture: desk_2
+      original_id: _63f5007c_eae0_4718_b760_df6c25e0e4ae
+  final_positions:
+    _63f5007c_eae0_4718_b760_df6c25e0e4ae_on_desk_1_at_verify_task_200:
+      initial_pos:
+      - 0.08424961362336619
+      - -2.2897617887871062
+      - 0.8733040831331164
+      final_pos:
+      - 0.08449207246303558
+      - -2.2896862030029297
+      - 0.750865638256073
+      category: remote
+      original_id: _63f5007c_eae0_4718_b760_df6c25e0e4ae
+    _63f5007c_eae0_4718_b760_df6c25e0e4ae_on_desk_2_at_verify_task_200:
+      initial_pos:
+      - 4.582036345526806
+      - 2.189004194242232
+      - 0.8807466171029955
+      final_pos:
+      - 4.596730709075928
+      - 2.1727120876312256
+      - 0.7305289506912231
+      category: remote
+      original_id: _63f5007c_eae0_4718_b760_df6c25e0e4ae
+  family: FDP
+  benchmark_task_id: FDP/verify_task_200
+  benchmark_instruction: Move the sleek black plastic remote control, rounded shape, glossy finish, ergonomic
+    design located at white desk in front of the blank wall to the table much smaller than another one.
+  global_index: 49
+  target_object_id: _63f5007c_eae0_4718_b760_df6c25e0e4ae

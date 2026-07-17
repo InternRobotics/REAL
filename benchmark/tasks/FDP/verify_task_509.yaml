@@ -1,0 +1,379 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_6_at_verify_task_509:
+    original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/37cecdef437e4f72ba5a0e9dafdf6bd5.usd
+    usd_scale:
+    - 2.6648115931505743
+    - 3.493075075910455
+    - 3.468926111329515
+    position:
+    - 2.4664622937635534
+    - -1.2498709532256378
+    - 0.8145185905955441
+    size:
+    - 0.056670188903808594
+    - 0.03021240234375
+    - 0.15303719168150565
+    detailed_caption: Remote control with a rectangular shape, smooth white surface, light gray accents,
+      and digital display.
+  _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_7_at_verify_task_509:
+    original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/37cecdef437e4f72ba5a0e9dafdf6bd5.usd
+    usd_scale:
+    - 2.6648115931505743
+    - 3.493075075910455
+    - 3.468926111329515
+    position:
+    - 0.871885997315228
+    - 1.6676225241087554
+    - 0.9330685931704648
+    size:
+    - 0.056670188903808594
+    - 0.03021240234375
+    - 0.15303719168150565
+    detailed_caption: Remote control with a rectangular shape, smooth white surface, light gray accents,
+      and digital display.
+  _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_8_at_verify_task_509:
+    original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/37cecdef437e4f72ba5a0e9dafdf6bd5.usd
+    usd_scale:
+    - 2.6648115931505743
+    - 3.493075075910455
+    - 3.468926111329515
+    position:
+    - 4.573573257186321
+    - 2.8384488943084536
+    - 0.5470185774825223
+    size:
+    - 0.056670188903808594
+    - 0.03021240234375
+    - 0.15303719168150565
+    detailed_caption: Remote control with a rectangular shape, smooth white surface, light gray accents,
+      and digital display.
+  _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_9_at_verify_task_509:
+    original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/37cecdef437e4f72ba5a0e9dafdf6bd5.usd
+    usd_scale:
+    - 2.6648115931505743
+    - 3.493075075910455
+    - 3.468926111329515
+    position:
+    - 6.063314344024791
+    - 1.2947408254423831
+    - 1.036518593456567
+    size:
+    - 0.056670188903808594
+    - 0.03021240234375
+    - 0.15303719168150565
+    detailed_caption: Remote control with a rectangular shape, smooth white surface, light gray accents,
+      and digital display.
+  _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_10_at_verify_task_509:
+    original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/37cecdef437e4f72ba5a0e9dafdf6bd5.usd
+    usd_scale:
+    - 2.6648115931505743
+    - 3.493075075910455
+    - 3.468926111329515
+    position:
+    - 3.1100667552040067
+    - -0.7920327538184088
+    - 0.5695185858271725
+    size:
+    - 0.056670188903808594
+    - 0.03021240234375
+    - 0.15303719168150565
+    detailed_caption: Remote control with a rectangular shape, smooth white surface, light gray accents,
+      and digital display.
+episodes:
+- task_id: verify_task_509
+  episode_idx: 67
+  original_idx: 509
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to black wood grain nightstand cabinet to find the remote control with
+    a rectangular shape, smooth white surface, light gray accents, and digital display, then deliver it
+    to bed with all-white bed sheet.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _37cecdef437e4f72ba5a0e9dafdf6bd5
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _37cecdef437e4f72ba5a0e9dafdf6bd5
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _37cecdef437e4f72ba5a0e9dafdf6bd5
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _37cecdef437e4f72ba5a0e9dafdf6bd5
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _37cecdef437e4f72ba5a0e9dafdf6bd5
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _37cecdef437e4f72ba5a0e9dafdf6bd5
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _37cecdef437e4f72ba5a0e9dafdf6bd5:
+      category: remote control
+      detailed_caption: Remote control with a rectangular shape, smooth white surface, light gray accents,
+        and digital display.
+      usd_path: 37cecdef437e4f72ba5a0e9dafdf6bd5.usd
+      size:
+      - 0.056670188903808594
+      - 0.03021240234375
+      - 0.15303719168150565
+  obj_distractors:
+  - cf2b3e74a7b547e2a75dba0187584190
+  - _9338612e9fb54a79a42f9561fc22b697
+  obj_distractor_meta:
+    cf2b3e74a7b547e2a75dba0187584190:
+      category: remote control
+      detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+        grip.
+      usd_path: cf2b3e74a7b547e2a75dba0187584190.usd
+      size:
+      - 0.22077178955078125
+      - 0.225372314453125
+      - 0.05019793674000539
+    _9338612e9fb54a79a42f9561fc22b697:
+      category: remote control
+      detailed_caption: Slim, rectangular design with rounded edges; black surface; yellow and white buttons;
+        smooth back.
+      usd_path: 9338612e9fb54a79a42f9561fc22b697.usd
+      size:
+      - 0.08664190769195557
+      - 0.19473648071289062
+      - 0.05662405490875244
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: remote control
+      target_description: Remote control with a rectangular shape, smooth white surface, light gray accents,
+        and digital display.
+  - action: gaze_at
+    args:
+      target_category: remote control
+      target_description: Remote control with a rectangular shape, smooth white surface, light gray accents,
+        and digital display.
+  - action: pick
+    args:
+      target_category: remote control
+      target_description: Remote control with a rectangular shape, smooth white surface, light gray accents,
+        and digital display.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  placements:
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_6_at_verify_task_509:
+      position:
+      - 2.4664622937635534
+      - -1.2498709532256378
+      - 0.8145185905955441
+      furniture: cabinet_6
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_7_at_verify_task_509:
+      position:
+      - 0.871885997315228
+      - 1.6676225241087554
+      - 0.9330685931704648
+      furniture: cabinet_7
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_8_at_verify_task_509:
+      position:
+      - 4.573573257186321
+      - 2.8384488943084536
+      - 0.5470185774825223
+      furniture: cabinet_8
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_9_at_verify_task_509:
+      position:
+      - 6.063314344024791
+      - 1.2947408254423831
+      - 1.036518593456567
+      furniture: cabinet_9
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_10_at_verify_task_509:
+      position:
+      - 3.1100667552040067
+      - -0.7920327538184088
+      - 0.5695185858271725
+      furniture: cabinet_10
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+  final_positions:
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_6_at_verify_task_509:
+      initial_pos:
+      - 2.4664622937635534
+      - -1.2498709532256378
+      - 0.9145185905955441
+      final_pos:
+      - 2.4669830799102783
+      - -1.2498703002929688
+      - 0.7944261431694031
+      category: remote control
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_7_at_verify_task_509:
+      initial_pos:
+      - 0.871885997315228
+      - 1.6676225241087554
+      - 1.0330685931704648
+      final_pos:
+      - 0.9730525016784668
+      - 1.6689296960830688
+      - 0.8644960522651672
+      category: remote control
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_8_at_verify_task_509:
+      initial_pos:
+      - 4.573573257186321
+      - 2.8384488943084536
+      - 0.6470185774825222
+      final_pos:
+      - 4.574094772338867
+      - 2.8384499549865723
+      - 0.5269261598587036
+      category: remote control
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_9_at_verify_task_509:
+      initial_pos:
+      - 6.063314344024791
+      - 1.2947408254423831
+      - 1.1365185934565671
+      final_pos:
+      - 6.164286136627197
+      - 1.296055793762207
+      - 0.9679461717605591
+      category: remote control
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+    _37cecdef437e4f72ba5a0e9dafdf6bd5_on_cabinet_10_at_verify_task_509:
+      initial_pos:
+      - 3.1100667552040067
+      - -0.7920327538184088
+      - 0.6695185858271725
+      final_pos:
+      - 3.1105873584747314
+      - -0.7920303344726562
+      - 0.5494264960289001
+      category: remote control
+      original_id: _37cecdef437e4f72ba5a0e9dafdf6bd5
+  family: FDP
+  benchmark_task_id: FDP/verify_task_509
+  benchmark_instruction: First, drive to black wood grain nightstand cabinet to find the remote control
+    with a rectangular shape, smooth white surface, light gray accents, and digital display, then deliver
+    it to bed with all-white bed sheet.
+  global_index: 67
+  target_object_id: _37cecdef437e4f72ba5a0e9dafdf6bd5

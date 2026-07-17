@@ -1,0 +1,260 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _18e3dd35bbad47748a0bd546d520e83d_on_desk_1_at_verify_task_310:
+    original_id: _18e3dd35bbad47748a0bd546d520e83d
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/18e3dd35bbad47748a0bd546d520e83d.usd
+    usd_scale:
+    - 0.11459510197920088
+    - 0.10969704935552617
+    - 0.10522154495620764
+    position:
+    - -0.09763942332707547
+    - -2.740547351654349
+    - 0.7646211508649867
+    size:
+    - 0.11696624755859375
+    - 0.01174163818359375
+    - 0.013242231158073992
+    detailed_caption: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+      core.
+  _18e3dd35bbad47748a0bd546d520e83d_on_desk_2_at_verify_task_310:
+    original_id: _18e3dd35bbad47748a0bd546d520e83d
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/18e3dd35bbad47748a0bd546d520e83d.usd
+    usd_scale:
+    - 0.11459510197920088
+    - 0.10969704935552617
+    - 0.10522154495620764
+    position:
+    - 4.338806533245058
+    - 1.832413046887676
+    - 0.7720636848348659
+    size:
+    - 0.11696624755859375
+    - 0.01174163818359375
+    - 0.013242231158073992
+    detailed_caption: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+      core.
+episodes:
+- task_id: verify_task_310
+  episode_idx: 60
+  original_idx: 310
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+    core from white desk with rectangular wooden handles and put it on bed with dark satin bedding.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _18e3dd35bbad47748a0bd546d520e83d
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _18e3dd35bbad47748a0bd546d520e83d
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _18e3dd35bbad47748a0bd546d520e83d
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: bed_2
+  dest_distractors:
+  - bed_1
+  obj_meta:
+    _18e3dd35bbad47748a0bd546d520e83d:
+      category: pencil
+      detailed_caption: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+      usd_path: 18e3dd35bbad47748a0bd546d520e83d.usd
+      size:
+      - 0.11696624755859375
+      - 0.01174163818359375
+      - 0.013242231158073992
+  obj_distractors:
+  - f6980f8fc24547348d15627d2af99c0c
+  - _48fd553e592e4289bec9a1df3c4a01cc
+  obj_distractor_meta:
+    f6980f8fc24547348d15627d2af99c0c:
+      category: pencil
+      detailed_caption: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+        on one end.
+      usd_path: f6980f8fc24547348d15627d2af99c0c.usd
+      size:
+      - 0.14197731018066406
+      - 0.008210897445678711
+      - 0.008104576147161424
+    _48fd553e592e4289bec9a1df3c4a01cc:
+      category: pencil
+      detailed_caption: Yellow cylindrical pencil with a smooth wooden surface, sharpened graphite point,
+        and pink eraser.
+      usd_path: 48fd553e592e4289bec9a1df3c4a01cc.usd
+      size:
+      - 0.028095245361328125
+      - 1.4167423248291016
+      - 0.0009987720077333506
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: pencil
+      target_description: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+  - action: gaze_at
+    args:
+      target_category: pencil
+      target_description: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+  - action: pick
+    args:
+      target_category: pencil
+      target_description: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: place
+    args:
+      receptacle_name: bed_2
+  placements:
+    _18e3dd35bbad47748a0bd546d520e83d_on_desk_1_at_verify_task_310:
+      position:
+      - -0.09763942332707547
+      - -2.740547351654349
+      - 0.7646211508649867
+      furniture: desk_1
+      original_id: _18e3dd35bbad47748a0bd546d520e83d
+    _18e3dd35bbad47748a0bd546d520e83d_on_desk_2_at_verify_task_310:
+      position:
+      - 4.338806533245058
+      - 1.832413046887676
+      - 0.7720636848348659
+      furniture: desk_2
+      original_id: _18e3dd35bbad47748a0bd546d520e83d
+  final_positions:
+    _18e3dd35bbad47748a0bd546d520e83d_on_desk_1_at_verify_task_310:
+      initial_pos:
+      - -0.09763942332707547
+      - -2.740547351654349
+      - 0.8646211508649867
+      final_pos:
+      - -0.09722432494163513
+      - -2.740630626678467
+      - 0.7433984875679016
+      category: pencil
+      original_id: _18e3dd35bbad47748a0bd546d520e83d
+    _18e3dd35bbad47748a0bd546d520e83d_on_desk_2_at_verify_task_310:
+      initial_pos:
+      - 4.338806533245058
+      - 1.832413046887676
+      - 0.8720636848348658
+      final_pos:
+      - 4.338931083679199
+      - 1.796189308166504
+      - 0.7236972451210022
+      category: pencil
+      original_id: _18e3dd35bbad47748a0bd546d520e83d
+  family: FDP
+  benchmark_task_id: FDP/verify_task_310
+  benchmark_instruction: Take the cylindrical wooden pencil with a sharp tip, smooth finish, and visible
+    graphite core from white desk with rectangular wooden handles and put it on bed with dark satin bedding.
+  global_index: 60
+  target_object_id: _18e3dd35bbad47748a0bd546d520e83d

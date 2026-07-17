@@ -1,0 +1,339 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  f7210155d18f429c9b85f9771de02cb1_on_bed_1_at_verify_task_42:
+    original_id: f7210155d18f429c9b85f9771de02cb1
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/f7210155d18f429c9b85f9771de02cb1.usd
+    usd_scale:
+    - 0.6711755379677729
+    - 0.09728724120138148
+    - 0.012181073122214097
+    position:
+    - 3.657093928711069
+    - 3.62465362454575
+    - 0.511237765625101
+    size:
+    - 0.33725738525390625
+    - 0.4125795364379883
+    - 0.0379052282869452
+    detailed_caption: Closed book with blue cover, gold lettering, thick, rounded edges, textured finish,
+      marked spine.
+  _81a3a49fd57a48ccb005e2c925973a14_on_bed_1_at_verify_task_42:
+    original_id: _81a3a49fd57a48ccb005e2c925973a14
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/81a3a49fd57a48ccb005e2c925973a14.usd
+    usd_scale:
+    - 83.83397866362014
+    - 60.03807793710231
+    - 73.4649882246099
+    position:
+    - 3.160150580178209
+    - 3.982867245827016
+    - 0.5069941994547844
+    size:
+    - 0.16311979293823242
+    - 0.18452201783657074
+    - 0.02941809594631195
+    detailed_caption: Rectangular book with a smooth brown leather cover, thin, slightly visible spine,
+      vintage appearance.
+  cee4802cafe3483c9d72f27d6f3e06d1_on_bed_1_at_verify_task_42:
+    original_id: cee4802cafe3483c9d72f27d6f3e06d1
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/cee4802cafe3483c9d72f27d6f3e06d1.usd
+    usd_scale:
+    - 9.402600897618548
+    - 9.189603103684675
+    - 8.917308526759847
+    position:
+    - 3.169818362039568
+    - 3.405393869701808
+    - 0.5145885968918447
+    size:
+    - 0.14457130432128906
+    - 0.22270965576171875
+    - 0.044606890820432454
+    detailed_caption: Rectangular notepad with spiral binding, colorful cover design, and slightly bent
+      sheets.
+  f7210155d18f429c9b85f9771de02cb1_on_bed_2_at_verify_task_42:
+    original_id: f7210155d18f429c9b85f9771de02cb1
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/f7210155d18f429c9b85f9771de02cb1.usd
+    usd_scale:
+    - 0.6711755379677729
+    - 0.09728724120138148
+    - 0.012181073122214097
+    position:
+    - 4.758987330020876
+    - -1.4425002494184869
+    - 0.5411018384247837
+    size:
+    - 0.33725738525390625
+    - 0.4125795364379883
+    - 0.0379052282869452
+    detailed_caption: Closed book with blue cover, gold lettering, thick, rounded edges, textured finish,
+      marked spine.
+episodes:
+- benchmark_task_id: FODP/verify_task_42
+  family: FODP
+  task_id: verify_task_42
+  episode_idx: 22
+  original_idx: 42
+  benchmark_instruction: Head over to bed with matte white mattress cover, fetch the closed book with
+    blue cover, gold lettering, thick, rounded edges, textured finish, marked spine, and bring it back
+    to the table much larger than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to bed with matte white mattress cover, fetch the closed book with blue
+    cover, gold lettering, thick, rounded edges, textured finish, marked spine, and bring it back to the
+    table much larger than another one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - f7210155d18f429c9b85f9771de02cb1
+      - _81a3a49fd57a48ccb005e2c925973a14
+      - cee4802cafe3483c9d72f27d6f3e06d1
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - f7210155d18f429c9b85f9771de02cb1
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - f7210155d18f429c9b85f9771de02cb1
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _81a3a49fd57a48ccb005e2c925973a14
+      - cee4802cafe3483c9d72f27d6f3e06d1
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - f7210155d18f429c9b85f9771de02cb1
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    f7210155d18f429c9b85f9771de02cb1:
+      category: book
+      detailed_caption: Closed book with blue cover, gold lettering, thick, rounded edges, textured finish,
+        marked spine.
+      usd_path: f7210155d18f429c9b85f9771de02cb1.usd
+      size:
+      - 0.33725738525390625
+      - 0.4125795364379883
+      - 0.0379052282869452
+  obj_distractors:
+  - _81a3a49fd57a48ccb005e2c925973a14
+  - cee4802cafe3483c9d72f27d6f3e06d1
+  obj_distractor_meta:
+    _81a3a49fd57a48ccb005e2c925973a14:
+      category: book
+      detailed_caption: Rectangular book with a smooth brown leather cover, thin, slightly visible spine,
+        vintage appearance.
+      usd_path: 81a3a49fd57a48ccb005e2c925973a14.usd
+      size:
+      - 0.16311979293823242
+      - 0.18452201783657074
+      - 0.02941809594631195
+    cee4802cafe3483c9d72f27d6f3e06d1:
+      category: notepad
+      detailed_caption: Rectangular notepad with spiral binding, colorful cover design, and slightly bent
+        sheets.
+      usd_path: cee4802cafe3483c9d72f27d6f3e06d1.usd
+      size:
+      - 0.14457130432128906
+      - 0.22270965576171875
+      - 0.044606890820432454
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: book
+      target_description: Closed book with blue cover, gold lettering, thick, rounded edges, textured
+        finish, marked spine.
+  - action: gaze_at
+    args:
+      target_category: book
+      target_description: Closed book with blue cover, gold lettering, thick, rounded edges, textured
+        finish, marked spine.
+  - action: pick
+    args:
+      target_category: book
+      target_description: Closed book with blue cover, gold lettering, thick, rounded edges, textured
+        finish, marked spine.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    f7210155d18f429c9b85f9771de02cb1_on_bed_1_at_verify_task_42:
+      position:
+      - 3.657093928711069
+      - 3.62465362454575
+      - 0.511237765625101
+      furniture: bed_1
+      original_id: f7210155d18f429c9b85f9771de02cb1
+    _81a3a49fd57a48ccb005e2c925973a14_on_bed_1_at_verify_task_42:
+      position:
+      - 3.160150580178209
+      - 3.982867245827016
+      - 0.5069941994547844
+      furniture: bed_1
+      original_id: _81a3a49fd57a48ccb005e2c925973a14
+    cee4802cafe3483c9d72f27d6f3e06d1_on_bed_1_at_verify_task_42:
+      position:
+      - 3.169818362039568
+      - 3.405393869701808
+      - 0.5145885968918447
+      furniture: bed_1
+      original_id: cee4802cafe3483c9d72f27d6f3e06d1
+    f7210155d18f429c9b85f9771de02cb1_on_bed_2_at_verify_task_42:
+      position:
+      - 4.758987330020876
+      - -1.4425002494184869
+      - 0.5411018384247837
+      furniture: bed_2
+      original_id: f7210155d18f429c9b85f9771de02cb1
+  final_positions:
+    f7210155d18f429c9b85f9771de02cb1_on_bed_1_at_verify_task_42:
+      initial_pos:
+      - 3.657093928711069
+      - 3.62465362454575
+      - 0.611237765625101
+      final_pos:
+      - 3.6571505069732666
+      - 3.6245229244232178
+      - 0.4839392304420471
+      category: book
+      original_id: f7210155d18f429c9b85f9771de02cb1
+    _81a3a49fd57a48ccb005e2c925973a14_on_bed_1_at_verify_task_42:
+      initial_pos:
+      - 3.160150580178209
+      - 3.982867245827016
+      - 0.6069941994547844
+      final_pos:
+      - 3.1637306213378906
+      - 3.8944103717803955
+      - 0.4709427058696747
+      category: book
+      original_id: _81a3a49fd57a48ccb005e2c925973a14
+    cee4802cafe3483c9d72f27d6f3e06d1_on_bed_1_at_verify_task_42:
+      initial_pos:
+      - 3.169818362039568
+      - 3.405393869701808
+      - 0.6145885968918446
+      final_pos:
+      - 3.1699728965759277
+      - 3.5305564403533936
+      - 0.4868181347846985
+      category: notepad
+      original_id: cee4802cafe3483c9d72f27d6f3e06d1
+    f7210155d18f429c9b85f9771de02cb1_on_bed_2_at_verify_task_42:
+      initial_pos:
+      - 4.758987330020876
+      - -1.4425002494184869
+      - 0.6411018384247836
+      final_pos:
+      - 4.760715007781982
+      - -1.4400458335876465
+      - 0.5625110268592834
+      category: book
+      original_id: f7210155d18f429c9b85f9771de02cb1
+  global_index: 94
+  target_object_id: f7210155d18f429c9b85f9771de02cb1

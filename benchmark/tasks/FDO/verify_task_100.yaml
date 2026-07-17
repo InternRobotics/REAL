@@ -1,0 +1,252 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  b090f4e5_42d0_43de_b32e_19a23921df9a_on_bed_1_at_verify_task_100:
+    original_id: b090f4e5_42d0_43de_b32e_19a23921df9a
+    category: snack
+    usd_path: ${MESATASK_USD_ROOT}/b090f4e5-42d0-43de-b32e-19a23921df9a.usd
+    usd_scale:
+    - 3.0689584447246614
+    - 3.0339743819230676
+    - 2.9884347709596053
+    position:
+    - 3.924290349137092
+    - 3.396407753179022
+    - 0.4986667942244094
+    size:
+    - 0.06110191345214844
+    - 0.05928802490234375
+    - 0.012763285485561937
+  b090f4e5_42d0_43de_b32e_19a23921df9a_on_bed_2_at_verify_task_100:
+    original_id: b090f4e5_42d0_43de_b32e_19a23921df9a
+    category: snack
+    usd_path: ${MESATASK_USD_ROOT}/b090f4e5-42d0-43de-b32e-19a23921df9a.usd
+    usd_scale:
+    - 3.0689584447246614
+    - 3.0339743819230676
+    - 2.9884347709596053
+    position:
+    - 4.725790721253087
+    - -1.9293749554391786
+    - 0.528530867024092
+    size:
+    - 0.06110191345214844
+    - 0.05928802490234375
+    - 0.012763285485561937
+episodes:
+- benchmark_task_id: FDO/verify_task_100
+  family: FDO
+  task_id: verify_task_100
+  episode_idx: 16
+  original_idx: 100
+  benchmark_instruction: Head over to layered grey and black bed, fetch a snack, and bring it back to
+    the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Head over to layered grey and black bed, fetch a snack, and bring it back to the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - b090f4e5_42d0_43de_b32e_19a23921df9a
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - b090f4e5_42d0_43de_b32e_19a23921df9a
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - b090f4e5_42d0_43de_b32e_19a23921df9a
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - b090f4e5_42d0_43de_b32e_19a23921df9a
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: bed_2
+  src_distractors:
+  - bed_1
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    b090f4e5_42d0_43de_b32e_19a23921df9a:
+      category: snack
+      usd_path: b090f4e5-42d0-43de-b32e-19a23921df9a.usd
+      size:
+      - 0.06110191345214844
+      - 0.05928802490234375
+      - 0.012763285485561937
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: find
+    args:
+      target_category: snack
+  - action: gaze_at
+    args:
+      target_category: snack
+  - action: pick
+    args:
+      target_category: snack
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    b090f4e5_42d0_43de_b32e_19a23921df9a_on_bed_1_at_verify_task_100:
+      position:
+      - 3.924290349137092
+      - 3.396407753179022
+      - 0.4986667942244094
+      furniture: bed_1
+      original_id: b090f4e5_42d0_43de_b32e_19a23921df9a
+    b090f4e5_42d0_43de_b32e_19a23921df9a_on_bed_2_at_verify_task_100:
+      position:
+      - 4.725790721253087
+      - -1.9293749554391786
+      - 0.528530867024092
+      furniture: bed_2
+      original_id: b090f4e5_42d0_43de_b32e_19a23921df9a
+  final_positions:
+    b090f4e5_42d0_43de_b32e_19a23921df9a_on_bed_1_at_verify_task_100:
+      initial_pos:
+      - 3.924290349137092
+      - 3.396407753179022
+      - 0.5986667942244094
+      final_pos:
+      - 3.9297361373901367
+      - 3.3926899433135986
+      - 0.46538373827934265
+      category: snack
+      original_id: b090f4e5_42d0_43de_b32e_19a23921df9a
+    b090f4e5_42d0_43de_b32e_19a23921df9a_on_bed_2_at_verify_task_100:
+      initial_pos:
+      - 4.725790721253087
+      - -1.9293749554391786
+      - 0.628530867024092
+      final_pos:
+      - 4.717161655426025
+      - -1.9201383590698242
+      - 0.5428785681724548
+      category: snack
+      original_id: b090f4e5_42d0_43de_b32e_19a23921df9a
+  global_index: 144
+  target_object_id: b090f4e5_42d0_43de_b32e_19a23921df9a

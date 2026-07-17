@@ -1,0 +1,317 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _541be107_47ed_4c8a_95b7_f90b4ef70e6b_on_cabinet_7_at_verify_task_75:
+    original_id: _541be107_47ed_4c8a_95b7_f90b4ef70e6b
+    category: hand soap
+    usd_path: ${MESATASK_USD_ROOT}/541be107-47ed-4c8a-95b7-f90b4ef70e6b.usd
+    usd_scale:
+    - 10.929161455236375
+    - 10.816790651614747
+    - 10.258080458849605
+    position:
+    - 1.2594465468867437
+    - 1.6901953532521512
+    - 0.8912019611848518
+    size:
+    - 0.13389205932617188
+    - 0.2104043960571289
+    - 0.06930392771027982
+    detailed_caption: Cylindrical glass bottle, smooth, glossy finish, sleek design, secure cap, prominent
+      label.
+  _4ec32df4_6fec_400e_9767_f265b3c9f375_on_cabinet_7_at_verify_task_75:
+    original_id: _4ec32df4_6fec_400e_9767_f265b3c9f375
+    category: soap
+    usd_path: ${MESATASK_USD_ROOT}/4ec32df4-6fec-400e-9767-f265b3c9f375.usd
+    usd_scale:
+    - 9.740198945458422
+    - 10.221778079969482
+    - 8.977947182612374
+    position:
+    - 0.9003842517223739
+    - 1.676899156737526
+    - 0.884082396030426
+    size:
+    - 0.11316299438476562
+    - 0.2102222442626953
+    - 0.05506479740142822
+    detailed_caption: Sleek modern white soap bottle with an elegant shape and a pump dispenser.
+  _619563fb2e33466cb1286b5732da59f9_on_cabinet_7_at_verify_task_75:
+    original_id: _619563fb2e33466cb1286b5732da59f9
+    category: soap
+    usd_path: ${MESATASK_USD_ROOT}/619563fb2e33466cb1286b5732da59f9.usd
+    usd_scale:
+    - 5.447466573244001
+    - 5.281396561319802
+    - 4.754222854419283
+    position:
+    - 1.0734568322505837
+    - 1.6711715234877644
+    - 0.8784434226504527
+    size:
+    - 0.0713653564453125
+    - 0.13751983642578125
+    - 0.04378685064148158
+    detailed_caption: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base, decorative
+      label.
+episodes:
+- task_id: verify_task_75
+  episode_idx: 49
+  original_idx: 75
+  benchmark_instruction: Pick up a cleaning product from white cabinet with grey bottle and place it on
+    the table where we have dinner.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the cylindrical glass bottle, smooth, glossy finish, sleek design, secure
+    cap, prominent label from white cabinet with grey bottle and deposit it at the table where we have
+    dinner.
+  fuzzy_task_description: Pick up a cleaning product from white cabinet with grey bottle and place it
+    on the table where we have dinner.
+  purpose: cleaning product
+  purpose_group: cleaning
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _541be107_47ed_4c8a_95b7_f90b4ef70e6b
+      - _4ec32df4_6fec_400e_9767_f265b3c9f375
+      - _619563fb2e33466cb1286b5732da59f9
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _541be107_47ed_4c8a_95b7_f90b4ef70e6b
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _4ec32df4_6fec_400e_9767_f265b3c9f375
+      - _619563fb2e33466cb1286b5732da59f9
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_7
+  src_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _541be107_47ed_4c8a_95b7_f90b4ef70e6b:
+      category: hand soap
+      detailed_caption: Cylindrical glass bottle, smooth, glossy finish, sleek design, secure cap, prominent
+        label.
+      usd_path: 541be107-47ed-4c8a-95b7-f90b4ef70e6b.usd
+      size:
+      - 0.13389205932617188
+      - 0.2104043960571289
+      - 0.06930392771027982
+  obj_distractors:
+  - _4ec32df4_6fec_400e_9767_f265b3c9f375
+  - _619563fb2e33466cb1286b5732da59f9
+  obj_distractor_meta:
+    _4ec32df4_6fec_400e_9767_f265b3c9f375:
+      category: soap
+      detailed_caption: Sleek modern white soap bottle with an elegant shape and a pump dispenser.
+      usd_path: 4ec32df4-6fec-400e-9767-f265b3c9f375.usd
+      size:
+      - 0.11316299438476562
+      - 0.2102222442626953
+      - 0.05506479740142822
+    _619563fb2e33466cb1286b5732da59f9:
+      category: soap
+      detailed_caption: Pink semi-transparent liquid soap bottle with pump, narrow neck, wide base, decorative
+        label.
+      usd_path: 619563fb2e33466cb1286b5732da59f9.usd
+      size:
+      - 0.0713653564453125
+      - 0.13751983642578125
+      - 0.04378685064148158
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: find
+    args:
+      target_category: hand soap
+      target_description: Cylindrical glass bottle, smooth, glossy finish, sleek design, secure cap, prominent
+        label.
+  - action: gaze_at
+    args:
+      target_category: hand soap
+      target_description: Cylindrical glass bottle, smooth, glossy finish, sleek design, secure cap, prominent
+        label.
+  - action: pick
+    args:
+      target_category: hand soap
+      target_description: Cylindrical glass bottle, smooth, glossy finish, sleek design, secure cap, prominent
+        label.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Retrieve the cylindrical glass bottle, smooth, glossy finish, sleek design,
+    secure cap, prominent label from white cabinet with grey bottle and deposit it at the table where
+    we have dinner.
+  placements:
+    _541be107_47ed_4c8a_95b7_f90b4ef70e6b_on_cabinet_7_at_verify_task_75:
+      position:
+      - 1.2594465468867437
+      - 1.6901953532521512
+      - 0.8912019611848518
+      furniture: cabinet_7
+      original_id: _541be107_47ed_4c8a_95b7_f90b4ef70e6b
+    _4ec32df4_6fec_400e_9767_f265b3c9f375_on_cabinet_7_at_verify_task_75:
+      position:
+      - 0.9003842517223739
+      - 1.676899156737526
+      - 0.884082396030426
+      furniture: cabinet_7
+      original_id: _4ec32df4_6fec_400e_9767_f265b3c9f375
+    _619563fb2e33466cb1286b5732da59f9_on_cabinet_7_at_verify_task_75:
+      position:
+      - 1.0734568322505837
+      - 1.6711715234877644
+      - 0.8784434226504527
+      furniture: cabinet_7
+      original_id: _619563fb2e33466cb1286b5732da59f9
+  final_positions:
+    _541be107_47ed_4c8a_95b7_f90b4ef70e6b_on_cabinet_7_at_verify_task_75:
+      initial_pos:
+      - 1.2594465468867437
+      - 1.6901953532521512
+      - 0.9912019611848518
+      final_pos:
+      - 1.1529362201690674
+      - 1.6351666450500488
+      - 0.8721628785133362
+      category: soap
+      original_id: _541be107_47ed_4c8a_95b7_f90b4ef70e6b
+    _4ec32df4_6fec_400e_9767_f265b3c9f375_on_cabinet_7_at_verify_task_75:
+      initial_pos:
+      - 0.9003842517223739
+      - 1.676899156737526
+      - 0.984082396030426
+      final_pos:
+      - 0.7849982380867004
+      - 1.5935709476470947
+      - 0.8665168881416321
+      category: soap dish
+      original_id: _4ec32df4_6fec_400e_9767_f265b3c9f375
+    _619563fb2e33466cb1286b5732da59f9_on_cabinet_7_at_verify_task_75:
+      initial_pos:
+      - 1.0734568322505837
+      - 1.6711715234877644
+      - 0.9784434226504527
+      final_pos:
+      - 1.0328254699707031
+      - 1.6332228183746338
+      - 0.8600244522094727
+      category: soap
+      original_id: _619563fb2e33466cb1286b5732da59f9
+  family: SUL
+  benchmark_task_id: SUL/verify_task_75
+  global_index: 225
+  target_object_id: _541be107_47ed_4c8a_95b7_f90b4ef70e6b

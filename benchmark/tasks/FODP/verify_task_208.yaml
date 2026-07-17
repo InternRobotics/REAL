@@ -1,0 +1,336 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0ce234c918ef438c9c919848b137d7ba_on_table_1_at_verify_task_208:
+    original_id: _0ce234c918ef438c9c919848b137d7ba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0ce234c918ef438c9c919848b137d7ba.usd
+    usd_scale:
+    - 0.21267695671131023
+    - 0.2121924462983215
+    - 0.2126520976650876
+    position:
+    - -1.5743968007155504
+    - -1.3861490469127242
+    - 0.8315517467958853
+    size:
+    - 0.17091894149780273
+    - 0.20502662658691406
+    - 0.13510369672439992
+    detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+      fluffy surface.
+  _0ce234c918ef438c9c919848b137d7ba_on_table_2_at_verify_task_208:
+    original_id: _0ce234c918ef438c9c919848b137d7ba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0ce234c918ef438c9c919848b137d7ba.usd
+    usd_scale:
+    - 0.21267695671131023
+    - 0.2121924462983215
+    - 0.2126520976650876
+    position:
+    - -1.9892455492872556
+    - 3.028007128463308
+    - 0.3575398487551138
+    size:
+    - 0.17091894149780273
+    - 0.20502662658691406
+    - 0.13510369672439992
+    detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+      fluffy surface.
+  c752c932af1a477a8fd37f6bb0ec5f64_on_table_2_at_verify_task_208:
+    original_id: c752c932af1a477a8fd37f6bb0ec5f64
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/c752c932af1a477a8fd37f6bb0ec5f64.usd
+    usd_scale:
+    - 0.31466242779919734
+    - 0.3143001087584315
+    - 0.31534752588490816
+    position:
+    - -2.5094223953556636
+    - 2.8769658034704113
+    - 0.39016463512554767
+    size:
+    - 0.2529454231262207
+    - 0.30280303955078125
+    - 0.20035326946526766
+    detailed_caption: Soft brown teddy bear with prominent ears, button eyes, light brown belly patch,
+      round face.
+  _550c42a971ce4208867459ec96251eba_on_table_2_at_verify_task_208:
+    original_id: _550c42a971ce4208867459ec96251eba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/550c42a971ce4208867459ec96251eba.usd
+    usd_scale:
+    - 0.18904618374338686
+    - 0.18879277803484745
+    - 0.18844779386580934
+    position:
+    - -1.8342147148833654
+    - 2.632056816631099
+    - 0.3498482056707144
+    size:
+    - 0.1518557071685791
+    - 0.18286705017089844
+    - 0.11972041055560112
+    detailed_caption: Soft, plush teddy bear with a rounded body, small limbs, circular belly patch, and
+      large ears.
+episodes:
+- benchmark_task_id: FODP/verify_task_208
+  family: FODP
+  task_id: verify_task_208
+  episode_idx: 45
+  original_idx: 208
+  benchmark_instruction: Navigate to the table to place my snack for watching TV, grasp the soft, plush
+    teddy bear; rounded body, small ears, button-like eyes, light blue, fluffy surface, and carry it to
+    the desk with black handle.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to the table to place my snack for watching TV, grasp the soft, plush teddy
+    bear; rounded body, small ears, button-like eyes, light blue, fluffy surface, and carry it to the
+    desk with black handle.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+      - c752c932af1a477a8fd37f6bb0ec5f64
+      - _550c42a971ce4208867459ec96251eba
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - c752c932af1a477a8fd37f6bb0ec5f64
+      - _550c42a971ce4208867459ec96251eba
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _0ce234c918ef438c9c919848b137d7ba:
+      category: teddy bear
+      detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+      usd_path: 0ce234c918ef438c9c919848b137d7ba.usd
+      size:
+      - 0.17091894149780273
+      - 0.20502662658691406
+      - 0.13510369672439992
+  obj_distractors:
+  - c752c932af1a477a8fd37f6bb0ec5f64
+  - _550c42a971ce4208867459ec96251eba
+  obj_distractor_meta:
+    c752c932af1a477a8fd37f6bb0ec5f64:
+      category: teddy bear
+      detailed_caption: Soft brown teddy bear with prominent ears, button eyes, light brown belly patch,
+        round face.
+      usd_path: c752c932af1a477a8fd37f6bb0ec5f64.usd
+      size:
+      - 0.2529454231262207
+      - 0.30280303955078125
+      - 0.20035326946526766
+    _550c42a971ce4208867459ec96251eba:
+      category: teddy bear
+      detailed_caption: Soft, plush teddy bear with a rounded body, small limbs, circular belly patch,
+        and large ears.
+      usd_path: 550c42a971ce4208867459ec96251eba.usd
+      size:
+      - 0.1518557071685791
+      - 0.18286705017089844
+      - 0.11972041055560112
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: gaze_at
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: pick
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    _0ce234c918ef438c9c919848b137d7ba_on_table_1_at_verify_task_208:
+      position:
+      - -1.5743968007155504
+      - -1.3861490469127242
+      - 0.8315517467958853
+      furniture: table_1
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_table_2_at_verify_task_208:
+      position:
+      - -1.9892455492872556
+      - 3.028007128463308
+      - 0.3575398487551138
+      furniture: table_2
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    c752c932af1a477a8fd37f6bb0ec5f64_on_table_2_at_verify_task_208:
+      position:
+      - -2.5094223953556636
+      - 2.8769658034704113
+      - 0.39016463512554767
+      furniture: table_2
+      original_id: c752c932af1a477a8fd37f6bb0ec5f64
+    _550c42a971ce4208867459ec96251eba_on_table_2_at_verify_task_208:
+      position:
+      - -1.8342147148833654
+      - 2.632056816631099
+      - 0.3498482056707144
+      furniture: table_2
+      original_id: _550c42a971ce4208867459ec96251eba
+  final_positions:
+    _0ce234c918ef438c9c919848b137d7ba_on_table_1_at_verify_task_208:
+      initial_pos:
+      - -1.5743968007155504
+      - -1.3861490469127242
+      - 0.9315517467958853
+      final_pos:
+      - -1.5760345458984375
+      - -1.3801239728927612
+      - 0.8070244193077087
+      category: teddy bear
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_table_2_at_verify_task_208:
+      initial_pos:
+      - -1.9892455492872556
+      - 3.028007128463308
+      - 0.4575398487551138
+      final_pos:
+      - -1.9898420572280884
+      - 3.03403902053833
+      - 0.3330126702785492
+      category: teddy bear
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    c752c932af1a477a8fd37f6bb0ec5f64_on_table_2_at_verify_task_208:
+      initial_pos:
+      - -2.5094223953556636
+      - 2.8769658034704113
+      - 0.49016463512554764
+      final_pos:
+      - -2.511720895767212
+      - 2.887401819229126
+      - 0.36344894766807556
+      category: teddy bear
+      original_id: c752c932af1a477a8fd37f6bb0ec5f64
+    _550c42a971ce4208867459ec96251eba_on_table_2_at_verify_task_208:
+      initial_pos:
+      - -1.8342147148833654
+      - 2.632056816631099
+      - 0.4498482056707144
+      final_pos:
+      - -1.8359148502349854
+      - 2.6394853591918945
+      - 0.3258393108844757
+      category: teddy bear
+      original_id: _550c42a971ce4208867459ec96251eba
+  global_index: 117
+  target_object_id: _0ce234c918ef438c9c919848b137d7ba

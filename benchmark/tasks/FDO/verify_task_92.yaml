@@ -1,0 +1,361 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  f3dd3064db4f4e8880344425970cecad_on_cabinet_6_at_verify_task_92:
+    original_id: f3dd3064db4f4e8880344425970cecad
+    category: pear
+    usd_path: ${MESATASK_USD_ROOT}/f3dd3064db4f4e8880344425970cecad.usd
+    usd_scale:
+    - 1.1035395574882967
+    - 1.0999913197622684
+    - 1.1003400579855735
+    position:
+    - 2.554764767412973
+    - -0.9743237761633666
+    - 0.7897093748720363
+    size:
+    - 0.10564041137695312
+    - 0.14308929443359375
+    - 0.10341876023449004
+  f3dd3064db4f4e8880344425970cecad_on_cabinet_7_at_verify_task_92:
+    original_id: f3dd3064db4f4e8880344425970cecad
+    category: pear
+    usd_path: ${MESATASK_USD_ROOT}/f3dd3064db4f4e8880344425970cecad.usd
+    usd_scale:
+    - 1.1035395574882967
+    - 1.0999913197622684
+    - 1.1003400579855735
+    position:
+    - 1.1940193789581106
+    - 1.6345830803600712
+    - 0.908259377446957
+    size:
+    - 0.10564041137695312
+    - 0.14308929443359375
+    - 0.10341876023449004
+  f3dd3064db4f4e8880344425970cecad_on_cabinet_8_at_verify_task_92:
+    original_id: f3dd3064db4f4e8880344425970cecad
+    category: pear
+    usd_path: ${MESATASK_USD_ROOT}/f3dd3064db4f4e8880344425970cecad.usd
+    usd_scale:
+    - 1.1035395574882967
+    - 1.0999913197622684
+    - 1.1003400579855735
+    position:
+    - 4.562551095741151
+    - 2.959458046408076
+    - 0.5222093617590144
+    size:
+    - 0.10564041137695312
+    - 0.14308929443359375
+    - 0.10341876023449004
+  f3dd3064db4f4e8880344425970cecad_on_cabinet_9_at_verify_task_92:
+    original_id: f3dd3064db4f4e8880344425970cecad
+    category: pear
+    usd_path: ${MESATASK_USD_ROOT}/f3dd3064db4f4e8880344425970cecad.usd
+    usd_scale:
+    - 1.1035395574882967
+    - 1.0999913197622684
+    - 1.1003400579855735
+    position:
+    - 6.170398221727894
+    - 1.2953392970150652
+    - 1.0117093777330592
+    size:
+    - 0.10564041137695312
+    - 0.14308929443359375
+    - 0.10341876023449004
+  f3dd3064db4f4e8880344425970cecad_on_cabinet_10_at_verify_task_92:
+    original_id: f3dd3064db4f4e8880344425970cecad
+    category: pear
+    usd_path: ${MESATASK_USD_ROOT}/f3dd3064db4f4e8880344425970cecad.usd
+    usd_scale:
+    - 1.1035395574882967
+    - 1.0999913197622684
+    - 1.1003400579855735
+    position:
+    - 3.1566339088616484
+    - -0.5958780490447515
+    - 0.5447093701036647
+    size:
+    - 0.10564041137695312
+    - 0.14308929443359375
+    - 0.10341876023449004
+episodes:
+- benchmark_task_id: FDO/verify_task_92
+  family: FDO
+  task_id: verify_task_92
+  episode_idx: 11
+  original_idx: 92
+  benchmark_instruction: Retrieve a pear from the white cabinet next to the bedroom sink and deposit it
+    at the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Retrieve a pear from the white cabinet next to the bedroom sink and deposit it at
+    the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - f3dd3064db4f4e8880344425970cecad
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: cabinet_9
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_10
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    f3dd3064db4f4e8880344425970cecad:
+      category: pear
+      usd_path: f3dd3064db4f4e8880344425970cecad.usd
+      size:
+      - 0.10564041137695312
+      - 0.14308929443359375
+      - 0.10341876023449004
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: find
+    args:
+      target_category: pear
+  - action: gaze_at
+    args:
+      target_category: pear
+  - action: pick
+    args:
+      target_category: pear
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_6_at_verify_task_92:
+      position:
+      - 2.554764767412973
+      - -0.9743237761633666
+      - 0.7897093748720363
+      furniture: cabinet_6
+      original_id: f3dd3064db4f4e8880344425970cecad
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_7_at_verify_task_92:
+      position:
+      - 1.1940193789581106
+      - 1.6345830803600712
+      - 0.908259377446957
+      furniture: cabinet_7
+      original_id: f3dd3064db4f4e8880344425970cecad
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_8_at_verify_task_92:
+      position:
+      - 4.562551095741151
+      - 2.959458046408076
+      - 0.5222093617590144
+      furniture: cabinet_8
+      original_id: f3dd3064db4f4e8880344425970cecad
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_9_at_verify_task_92:
+      position:
+      - 6.170398221727894
+      - 1.2953392970150652
+      - 1.0117093777330592
+      furniture: cabinet_9
+      original_id: f3dd3064db4f4e8880344425970cecad
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_10_at_verify_task_92:
+      position:
+      - 3.1566339088616484
+      - -0.5958780490447515
+      - 0.5447093701036647
+      furniture: cabinet_10
+      original_id: f3dd3064db4f4e8880344425970cecad
+  final_positions:
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_6_at_verify_task_92:
+      initial_pos:
+      - 2.554764767412973
+      - -0.9743237761633666
+      - 0.8897093748720363
+      final_pos:
+      - 2.551107168197632
+      - -0.9451279640197754
+      - 0.7529799938201904
+      category: pear
+      original_id: f3dd3064db4f4e8880344425970cecad
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_7_at_verify_task_92:
+      initial_pos:
+      - 1.1940193789581106
+      - 1.6345830803600712
+      - 1.008259377446957
+      final_pos:
+      - 1.1903151273727417
+      - 1.6637732982635498
+      - 0.8715296387672424
+      category: pear
+      original_id: f3dd3064db4f4e8880344425970cecad
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_8_at_verify_task_92:
+      initial_pos:
+      - 4.562551095741151
+      - 2.959458046408076
+      - 0.6222093617590144
+      final_pos:
+      - 4.559020519256592
+      - 2.9886558055877686
+      - 0.4854792654514313
+      category: pear
+      original_id: f3dd3064db4f4e8880344425970cecad
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_9_at_verify_task_92:
+      initial_pos:
+      - 6.170398221727894
+      - 1.2953392970150652
+      - 1.1117093777330593
+      final_pos:
+      - 6.1670403480529785
+      - 1.324312686920166
+      - 0.9749798774719238
+      category: pear
+      original_id: f3dd3064db4f4e8880344425970cecad
+    f3dd3064db4f4e8880344425970cecad_on_cabinet_10_at_verify_task_92:
+      initial_pos:
+      - 3.1566339088616484
+      - -0.5958780490447515
+      - 0.6447093701036647
+      final_pos:
+      - 3.152759075164795
+      - -0.5665483474731445
+      - 0.5079790949821472
+      category: pear
+      original_id: f3dd3064db4f4e8880344425970cecad
+  global_index: 139
+  target_object_id: f3dd3064db4f4e8880344425970cecad

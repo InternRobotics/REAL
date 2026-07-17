@@ -1,0 +1,381 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_6_at_verify_task_31:
+    original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/6b6c7d7a476643f0b0a8e248268cbbfd.usd
+    usd_scale:
+    - 2.495895525788203
+    - 2.495615466418253
+    - 2.5020705931565015
+    position:
+    - 2.5294887493075486
+    - -1.0994653592543193
+    - 0.8331713846232742
+    size:
+    - 0.23070907592773438
+    - 0.20758819580078125
+    - 0.1903427797369659
+    detailed_caption: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy handle.
+  _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_7_at_verify_task_31:
+    original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/6b6c7d7a476643f0b0a8e248268cbbfd.usd
+    usd_scale:
+    - 2.495895525788203
+    - 2.495615466418253
+    - 2.5020705931565015
+    position:
+    - 1.1136628595550602
+    - 1.6894223236796215
+    - 0.9517213871981949
+    size:
+    - 0.23070907592773438
+    - 0.20758819580078125
+    - 0.1903427797369659
+    detailed_caption: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy handle.
+  _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_8_at_verify_task_31:
+    original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/6b6c7d7a476643f0b0a8e248268cbbfd.usd
+    usd_scale:
+    - 2.495895525788203
+    - 2.495615466418253
+    - 2.5020705931565015
+    position:
+    - 4.5426156977605725
+    - 2.9015417054487083
+    - 0.5656713715102524
+    size:
+    - 0.23070907592773438
+    - 0.20758819580078125
+    - 0.1903427797369659
+    detailed_caption: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy handle.
+  _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_9_at_verify_task_31:
+    original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/6b6c7d7a476643f0b0a8e248268cbbfd.usd
+    usd_scale:
+    - 2.495895525788203
+    - 2.495615466418253
+    - 2.5020705931565015
+    position:
+    - 6.075358447167192
+    - 1.2570083547672954
+    - 1.0551713874842972
+    size:
+    - 0.23070907592773438
+    - 0.20758819580078125
+    - 0.1903427797369659
+    detailed_caption: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy handle.
+  _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_10_at_verify_task_31:
+    original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/6b6c7d7a476643f0b0a8e248268cbbfd.usd
+    usd_scale:
+    - 2.495895525788203
+    - 2.495615466418253
+    - 2.5020705931565015
+    position:
+    - 3.2230956254689658
+    - -0.5935415076792016
+    - 0.5881713798549026
+    size:
+    - 0.23070907592773438
+    - 0.20758819580078125
+    - 0.1903427797369659
+    detailed_caption: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy handle.
+episodes:
+- task_id: verify_task_31
+  episode_idx: 21
+  original_idx: 31
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the round basket made of woven natural fibers, beige and gold, tight weave,
+    sturdy handle from white cabinet with yellow shelf back and deposit it at the table where we have
+    dinner.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _6b6c7d7a476643f0b0a8e248268cbbfd
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _6b6c7d7a476643f0b0a8e248268cbbfd
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _6b6c7d7a476643f0b0a8e248268cbbfd
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _6b6c7d7a476643f0b0a8e248268cbbfd
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _6b6c7d7a476643f0b0a8e248268cbbfd
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _6b6c7d7a476643f0b0a8e248268cbbfd
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_6
+  src_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _6b6c7d7a476643f0b0a8e248268cbbfd:
+      category: basket
+      detailed_caption: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy
+        handle.
+      usd_path: 6b6c7d7a476643f0b0a8e248268cbbfd.usd
+      size:
+      - 0.23070907592773438
+      - 0.20758819580078125
+      - 0.1903427797369659
+  obj_distractors:
+  - _7302438e_83d7_4224_ab6f_3c2c51bfb518
+  - _22f3dfe304c84967b7f7e00541dd68ad
+  obj_distractor_meta:
+    _7302438e_83d7_4224_ab6f_3c2c51bfb518:
+      category: basket
+      detailed_caption: Round wicker basket with dark finish, intricate lid designs, and two sturdy handles.
+      usd_path: 7302438e-83d7-4224-ab6f-3c2c51bfb518.usd
+      size:
+      - 0.35311126708984375
+      - 0.27234238386154175
+      - 0.12119496194645762
+    _22f3dfe304c84967b7f7e00541dd68ad:
+      category: basket
+      detailed_caption: Woven basket with a rounded shape, intricate pattern, and a handle.
+      usd_path: 22f3dfe304c84967b7f7e00541dd68ad.usd
+      size:
+      - 0.27050209045410156
+      - 0.2633686065673828
+      - 0.24784275225829333
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: find
+    args:
+      target_category: basket
+      target_description: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy
+        handle.
+  - action: gaze_at
+    args:
+      target_category: basket
+      target_description: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy
+        handle.
+  - action: pick
+    args:
+      target_category: basket
+      target_description: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy
+        handle.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_6_at_verify_task_31:
+      position:
+      - 2.5294887493075486
+      - -1.0994653592543193
+      - 0.8331713846232742
+      furniture: cabinet_6
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_7_at_verify_task_31:
+      position:
+      - 1.1136628595550602
+      - 1.6894223236796215
+      - 0.9517213871981949
+      furniture: cabinet_7
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_8_at_verify_task_31:
+      position:
+      - 4.5426156977605725
+      - 2.9015417054487083
+      - 0.5656713715102524
+      furniture: cabinet_8
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_9_at_verify_task_31:
+      position:
+      - 6.075358447167192
+      - 1.2570083547672954
+      - 1.0551713874842972
+      furniture: cabinet_9
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_10_at_verify_task_31:
+      position:
+      - 3.2230956254689658
+      - -0.5935415076792016
+      - 0.5881713798549026
+      furniture: cabinet_10
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+  final_positions:
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_6_at_verify_task_31:
+      initial_pos:
+      - 2.5294887493075486
+      - -1.0994653592543193
+      - 0.9331713846232742
+      final_pos:
+      - 2.5207245349884033
+      - -1.0356934070587158
+      - 0.7772607803344727
+      category: basket
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_7_at_verify_task_31:
+      initial_pos:
+      - 1.1136628595550602
+      - 1.6894223236796215
+      - 1.051721387198195
+      final_pos:
+      - 1.1394892930984497
+      - 1.7728500366210938
+      - 0.8959049582481384
+      category: basket
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_8_at_verify_task_31:
+      initial_pos:
+      - 4.5426156977605725
+      - 2.9015417054487083
+      - 0.6656713715102524
+      final_pos:
+      - 4.534862041473389
+      - 2.975219488143921
+      - 0.509760320186615
+      category: basket
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_9_at_verify_task_31:
+      initial_pos:
+      - 6.075358447167192
+      - 1.2570083547672954
+      - 1.1551713874842973
+      final_pos:
+      - 6.066949367523193
+      - 1.3210073709487915
+      - 0.999260425567627
+      category: basket
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_cabinet_10_at_verify_task_31:
+      initial_pos:
+      - 3.2230956254689658
+      - -0.5935415076792016
+      - 0.6881713798549026
+      final_pos:
+      - 3.225377082824707
+      - -0.5287048816680908
+      - 0.5319606065750122
+      category: basket
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+  family: FDP
+  benchmark_task_id: FDP/verify_task_31
+  benchmark_instruction: Retrieve the round basket made of woven natural fibers, beige and gold, tight
+    weave, sturdy handle from white cabinet with yellow shelf back and deposit it at the table where we
+    have dinner.
+  global_index: 21
+  target_object_id: _6b6c7d7a476643f0b0a8e248268cbbfd

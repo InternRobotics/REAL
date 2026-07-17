@@ -1,0 +1,217 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _25d43909c2e24fd8927ad722cadc4a18_on_electriccooker_0_at_verify_task_302:
+    original_id: _25d43909c2e24fd8927ad722cadc4a18
+    category: nut
+    usd_path: ${MESATASK_USD_ROOT}/25d43909c2e24fd8927ad722cadc4a18.usd
+    usd_scale:
+    - 5.243119180255013
+    - 5.245717877763553
+    - 5.216179743611458
+    position:
+    - -4.89604077329993
+    - -3.9822149314178765
+    - 1.0432405508868396
+    size:
+    - 0.08428692817687988
+    - 0.0806131362915039
+    - 0.037363736890256405
+episodes:
+- benchmark_task_id: FDO/verify_task_302
+  family: FDO
+  task_id: verify_task_302
+  episode_idx: 47
+  original_idx: 302
+  benchmark_instruction: Transport a nut at the only electriccooker in the scene to stainless steel double
+    sink.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: retrieve
+  task_description: Transport a nut at the only electriccooker in the scene to stainless steel double
+    sink.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _25d43909c2e24fd8927ad722cadc4a18
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content:
+      - _25d43909c2e24fd8927ad722cadc4a18
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: electriccooker_0
+  src_distractors: []
+  dest: sink_0
+  dest_distractors:
+  - sink_1
+  obj_meta:
+    _25d43909c2e24fd8927ad722cadc4a18:
+      category: nut
+      usd_path: 25d43909c2e24fd8927ad722cadc4a18.usd
+      size:
+      - 0.08428692817687988
+      - 0.0806131362915039
+      - 0.037363736890256405
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: find
+    args:
+      target_category: nut
+  - action: gaze_at
+    args:
+      target_category: nut
+  - action: pick
+    args:
+      target_category: nut
+  - action: nav_to
+    args:
+      receptacle_name: sink_1
+  - action: nav_to
+    args:
+      receptacle_name: sink_0
+  - action: place
+    args:
+      receptacle_name: sink_0
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _25d43909c2e24fd8927ad722cadc4a18_on_electriccooker_0_at_verify_task_302:
+      position:
+      - -4.89604077329993
+      - -3.9822149314178765
+      - 1.0432405508868396
+      furniture: electriccooker_0
+      original_id: _25d43909c2e24fd8927ad722cadc4a18
+  final_positions:
+    _25d43909c2e24fd8927ad722cadc4a18_on_electriccooker_0_at_verify_task_302:
+      initial_pos:
+      - -4.89604077329993
+      - -3.9822149314178765
+      - 1.1432405508868397
+      final_pos:
+      - -4.911816120147705
+      - -3.9367544651031494
+      - 1.0941840410232544
+      category: nut
+      original_id: _25d43909c2e24fd8927ad722cadc4a18
+  global_index: 175
+  target_object_id: _25d43909c2e24fd8927ad722cadc4a18

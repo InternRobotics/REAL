@@ -1,0 +1,294 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  ba8d288819be4cd0ab10df82e9d1ec2b_on_table_1_at_verify_task_12:
+    original_id: ba8d288819be4cd0ab10df82e9d1ec2b
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/ba8d288819be4cd0ab10df82e9d1ec2b.usd
+    usd_scale:
+    - 0.05544651217616908
+    - 0.05542218248606098
+    - 0.05613244979721279
+    position:
+    - -1.7263199884413813
+    - -1.2983191024277847
+    - 0.7797862288821489
+    size:
+    - 0.33283233642578125
+    - 0.3325233459472656
+    - 0.03157266089692712
+    detailed_caption: Round tray with a smooth, glossy surface and curved edges; simple, modern design.
+  _262da93cd8b64bcda24dcfd8752b634f_on_table_1_at_verify_task_12:
+    original_id: _262da93cd8b64bcda24dcfd8752b634f
+    category: plate
+    usd_path: ${MESATASK_USD_ROOT}/262da93cd8b64bcda24dcfd8752b634f.usd
+    usd_scale:
+    - 79.7067509108354
+    - 79.77058921931497
+    - 80.100759218062
+    position:
+    - -2.3318806538275707
+    - -1.2037186758036014
+    - 0.8021910956408829
+    size:
+    - 0.244049072265625
+    - 0.23810577392578125
+    - 0.0763823944143951
+    detailed_caption: Round white plate, smooth finish, slight lip, colorful assortment of pasta and vegetables.
+  dfa6aa249a084554ae007301f853e115_on_table_1_at_verify_task_12:
+    original_id: dfa6aa249a084554ae007301f853e115
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/dfa6aa249a084554ae007301f853e115.usd
+    usd_scale:
+    - 0.20617608669522425
+    - 0.2058480137610474
+    - 0.20540912057294902
+    position:
+    - -2.810303261621209
+    - -1.42522197099368
+    - 0.8712633272912353
+    size:
+    - 0.21658706665039062
+    - 0.2021503448486328
+    - 0.21452685771510005
+    detailed_caption: Round bowl with a smooth, glossy surface and four short, sturdy legs.
+episodes:
+- task_id: verify_task_12
+  episode_idx: 10
+  original_idx: 12
+  benchmark_instruction: Move a food serving container located at the table much larger than another one
+    to the rounded rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the round tray with a smooth, glossy surface and curved edges; simple, modern
+    design from the table much larger than another one to the rounded rectangular table.
+  fuzzy_task_description: Move a food serving container located at the table much larger than another
+    one to the rounded rectangular table.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - ba8d288819be4cd0ab10df82e9d1ec2b
+      - _262da93cd8b64bcda24dcfd8752b634f
+      - dfa6aa249a084554ae007301f853e115
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _262da93cd8b64bcda24dcfd8752b634f
+      - dfa6aa249a084554ae007301f853e115
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - ba8d288819be4cd0ab10df82e9d1ec2b
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    ba8d288819be4cd0ab10df82e9d1ec2b:
+      category: tray
+      detailed_caption: Round tray with a smooth, glossy surface and curved edges; simple, modern design.
+      usd_path: ba8d288819be4cd0ab10df82e9d1ec2b.usd
+      size:
+      - 0.33283233642578125
+      - 0.3325233459472656
+      - 0.03157266089692712
+  obj_distractors:
+  - _262da93cd8b64bcda24dcfd8752b634f
+  - dfa6aa249a084554ae007301f853e115
+  obj_distractor_meta:
+    _262da93cd8b64bcda24dcfd8752b634f:
+      category: plate
+      detailed_caption: Round white plate, smooth finish, slight lip, colorful assortment of pasta and
+        vegetables.
+      usd_path: 262da93cd8b64bcda24dcfd8752b634f.usd
+      size:
+      - 0.244049072265625
+      - 0.23810577392578125
+      - 0.0763823944143951
+    dfa6aa249a084554ae007301f853e115:
+      category: bowl
+      detailed_caption: Round bowl with a smooth, glossy surface and four short, sturdy legs.
+      usd_path: dfa6aa249a084554ae007301f853e115.usd
+      size:
+      - 0.21658706665039062
+      - 0.2021503448486328
+      - 0.21452685771510005
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Round tray with a smooth, glossy surface and curved edges; simple, modern design.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Round tray with a smooth, glossy surface and curved edges; simple, modern design.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Round tray with a smooth, glossy surface and curved edges; simple, modern design.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  physics_task_description: Bring the round tray with a smooth, glossy surface and curved edges; simple,
+    modern design from the table much larger than another one to the rounded rectangular table.
+  placements:
+    ba8d288819be4cd0ab10df82e9d1ec2b_on_table_1_at_verify_task_12:
+      position:
+      - -1.7263199884413813
+      - -1.2983191024277847
+      - 0.7797862288821489
+      furniture: table_1
+      original_id: ba8d288819be4cd0ab10df82e9d1ec2b
+    _262da93cd8b64bcda24dcfd8752b634f_on_table_1_at_verify_task_12:
+      position:
+      - -2.3318806538275707
+      - -1.2037186758036014
+      - 0.8021910956408829
+      furniture: table_1
+      original_id: _262da93cd8b64bcda24dcfd8752b634f
+    dfa6aa249a084554ae007301f853e115_on_table_1_at_verify_task_12:
+      position:
+      - -2.810303261621209
+      - -1.42522197099368
+      - 0.8712633272912353
+      furniture: table_1
+      original_id: dfa6aa249a084554ae007301f853e115
+  final_positions:
+    ba8d288819be4cd0ab10df82e9d1ec2b_on_table_1_at_verify_task_12:
+      initial_pos:
+      - -1.7263199884413813
+      - -1.2983191024277847
+      - 0.8797862288821489
+      final_pos:
+      - -1.7270004749298096
+      - -1.3746623992919922
+      - 0.7556097507476807
+      category: tray
+      original_id: ba8d288819be4cd0ab10df82e9d1ec2b
+    _262da93cd8b64bcda24dcfd8752b634f_on_table_1_at_verify_task_12:
+      initial_pos:
+      - -2.3318806538275707
+      - -1.2037186758036014
+      - 0.9021910956408828
+      final_pos:
+      - -2.3731298446655273
+      - -1.0699909925460815
+      - 0.7679762840270996
+      category: plate
+      original_id: _262da93cd8b64bcda24dcfd8752b634f
+    dfa6aa249a084554ae007301f853e115_on_table_1_at_verify_task_12:
+      initial_pos:
+      - -2.810303261621209
+      - -1.42522197099368
+      - 0.9712633272912353
+      final_pos:
+      - -2.6969101428985596
+      - -1.4818308353424072
+      - 0.8210178017616272
+      category: bowl
+      original_id: dfa6aa249a084554ae007301f853e115
+  family: SUL
+  benchmark_task_id: SUL/verify_task_12
+  global_index: 186
+  target_object_id: ba8d288819be4cd0ab10df82e9d1ec2b

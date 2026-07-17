@@ -30,9 +30,7 @@ from pathlib import Path
 from collections import defaultdict
 from copy import deepcopy
 
-import yaml
-
-from mcp_server.config import resolve_repo_path
+from mcp_server.config import load_task_config, resolve_repo_path
 from mcp_server.interaction import build_simulated_user_context
 
 # =============================================================================
@@ -49,8 +47,7 @@ _cfg_path = resolve_repo_path(
 )
 assert _cfg_path.exists(), f"Task config not found: {_cfg_path}"
 
-with open(_cfg_path) as _f:
-    _task_cfg = yaml.safe_load(_f)
+_task_cfg = load_task_config(_cfg_path)
 
 
 def _resolve(p: str) -> Path:
@@ -335,8 +332,13 @@ for _ep_idx, _ep in enumerate(_task_cfg.get("episodes", [])):
     processed_eval_episodes.append(
         {
             "task_id": _ep["task_id"],
+            **{
+                field: _ep[field]
+                for field in ("benchmark_task_id", "family", "global_index")
+                if field in _ep
+            },
             "original_idx": _ep_idx,
-            "task_description": _ep["task_description"],
+            "task_description": _ep.get("benchmark_instruction", _ep["task_description"]),
             "initial_world_graph": _build_world_graph(_placements),
             "placements": _placements,
             "execution_plan": _ep.get("execution_plan", []),

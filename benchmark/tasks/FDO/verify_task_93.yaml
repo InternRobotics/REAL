@@ -1,0 +1,362 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  f54556a921e4469ca05e3be621be8254_on_cabinet_6_at_verify_task_93:
+    original_id: f54556a921e4469ca05e3be621be8254
+    category: peanut
+    usd_path: ${MESATASK_USD_ROOT}/f54556a921e4469ca05e3be621be8254.usd
+    usd_scale:
+    - 7.255964678767448
+    - 7.196830443673207
+    - 7.227198613878211
+    position:
+    - 2.480917756573348
+    - -0.9810597967973087
+    - 0.7647302031796426
+    size:
+    - 0.1145782470703125
+    - 0.11831283569335938
+    - 0.0534604168497026
+  f54556a921e4469ca05e3be621be8254_on_cabinet_7_at_verify_task_93:
+    original_id: f54556a921e4469ca05e3be621be8254
+    category: peanut
+    usd_path: ${MESATASK_USD_ROOT}/f54556a921e4469ca05e3be621be8254.usd
+    usd_scale:
+    - 7.255964678767448
+    - 7.196830443673207
+    - 7.227198613878211
+    position:
+    - 1.2872315761878448
+    - 1.6923556827138684
+    - 0.8832802057545632
+    size:
+    - 0.1145782470703125
+    - 0.11831283569335938
+    - 0.0534604168497026
+  f54556a921e4469ca05e3be621be8254_on_cabinet_8_at_verify_task_93:
+    original_id: f54556a921e4469ca05e3be621be8254
+    category: peanut
+    usd_path: ${MESATASK_USD_ROOT}/f54556a921e4469ca05e3be621be8254.usd
+    usd_scale:
+    - 7.255964678767448
+    - 7.196830443673207
+    - 7.227198613878211
+    position:
+    - 4.527881811533731
+    - 2.9924488123491932
+    - 0.4972301900666207
+    size:
+    - 0.1145782470703125
+    - 0.11831283569335938
+    - 0.0534604168497026
+  f54556a921e4469ca05e3be621be8254_on_cabinet_9_at_verify_task_93:
+    original_id: f54556a921e4469ca05e3be621be8254
+    category: peanut
+    usd_path: ${MESATASK_USD_ROOT}/f54556a921e4469ca05e3be621be8254.usd
+    usd_scale:
+    - 7.255964678767448
+    - 7.196830443673207
+    - 7.227198613878211
+    position:
+    - 6.0204007639295725
+    - 1.3169293694758901
+    - 0.9867302060406655
+    size:
+    - 0.1145782470703125
+    - 0.11831283569335938
+    - 0.0534604168497026
+  f54556a921e4469ca05e3be621be8254_on_cabinet_10_at_verify_task_93:
+    original_id: f54556a921e4469ca05e3be621be8254
+    category: peanut
+    usd_path: ${MESATASK_USD_ROOT}/f54556a921e4469ca05e3be621be8254.usd
+    usd_scale:
+    - 7.255964678767448
+    - 7.196830443673207
+    - 7.227198613878211
+    position:
+    - 3.236028692252024
+    - -0.5226546547119739
+    - 0.519730198411271
+    size:
+    - 0.1145782470703125
+    - 0.11831283569335938
+    - 0.0534604168497026
+episodes:
+- benchmark_task_id: FDO/verify_task_93
+  family: FDO
+  task_id: verify_task_93
+  episode_idx: 12
+  original_idx: 93
+  benchmark_instruction: Bring a peanut from the white cabinet next to the bedroom sink to the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Bring a peanut from the white cabinet next to the bedroom sink to the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - f54556a921e4469ca05e3be621be8254
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - f54556a921e4469ca05e3be621be8254
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: cabinet_9
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_10
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    f54556a921e4469ca05e3be621be8254:
+      category: peanut
+      usd_path: f54556a921e4469ca05e3be621be8254.usd
+      size:
+      - 0.1145782470703125
+      - 0.11831283569335938
+      - 0.0534604168497026
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: find
+    args:
+      target_category: peanut
+  - action: gaze_at
+    args:
+      target_category: peanut
+  - action: pick
+    args:
+      target_category: peanut
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    f54556a921e4469ca05e3be621be8254_on_cabinet_6_at_verify_task_93:
+      position:
+      - 2.480917756573348
+      - -0.9810597967973087
+      - 0.7647302031796426
+      furniture: cabinet_6
+      original_id: f54556a921e4469ca05e3be621be8254
+    f54556a921e4469ca05e3be621be8254_on_cabinet_7_at_verify_task_93:
+      position:
+      - 1.2872315761878448
+      - 1.6923556827138684
+      - 0.8832802057545632
+      furniture: cabinet_7
+      original_id: f54556a921e4469ca05e3be621be8254
+    f54556a921e4469ca05e3be621be8254_on_cabinet_8_at_verify_task_93:
+      position:
+      - 4.527881811533731
+      - 2.9924488123491932
+      - 0.4972301900666207
+      furniture: cabinet_8
+      original_id: f54556a921e4469ca05e3be621be8254
+    f54556a921e4469ca05e3be621be8254_on_cabinet_9_at_verify_task_93:
+      position:
+      - 6.0204007639295725
+      - 1.3169293694758901
+      - 0.9867302060406655
+      furniture: cabinet_9
+      original_id: f54556a921e4469ca05e3be621be8254
+    f54556a921e4469ca05e3be621be8254_on_cabinet_10_at_verify_task_93:
+      position:
+      - 3.236028692252024
+      - -0.5226546547119739
+      - 0.519730198411271
+      furniture: cabinet_10
+      original_id: f54556a921e4469ca05e3be621be8254
+  final_positions:
+    f54556a921e4469ca05e3be621be8254_on_cabinet_6_at_verify_task_93:
+      initial_pos:
+      - 2.480917756573348
+      - -0.9810597967973087
+      - 0.8647302031796426
+      final_pos:
+      - 2.47025990486145
+      - -1.0719587802886963
+      - 0.7423850297927856
+      category: peanut
+      original_id: f54556a921e4469ca05e3be621be8254
+    f54556a921e4469ca05e3be621be8254_on_cabinet_7_at_verify_task_93:
+      initial_pos:
+      - 1.2872315761878448
+      - 1.6923556827138684
+      - 0.9832802057545632
+      final_pos:
+      - 1.2236499786376953
+      - 1.626554012298584
+      - 0.8608198761940002
+      category: peanut
+      original_id: f54556a921e4469ca05e3be621be8254
+    f54556a921e4469ca05e3be621be8254_on_cabinet_8_at_verify_task_93:
+      initial_pos:
+      - 4.527881811533731
+      - 2.9924488123491932
+      - 0.5972301900666207
+      final_pos:
+      - 4.508196830749512
+      - 2.9037859439849854
+      - 0.4748845100402832
+      category: peanut
+      original_id: f54556a921e4469ca05e3be621be8254
+    f54556a921e4469ca05e3be621be8254_on_cabinet_9_at_verify_task_93:
+      initial_pos:
+      - 6.0204007639295725
+      - 1.3169293694758901
+      - 1.0867302060406656
+      final_pos:
+      - 5.957162857055664
+      - 1.2517837285995483
+      - 0.9642696380615234
+      category: peanut
+      original_id: f54556a921e4469ca05e3be621be8254
+    f54556a921e4469ca05e3be621be8254_on_cabinet_10_at_verify_task_93:
+      initial_pos:
+      - 3.236028692252024
+      - -0.5226546547119739
+      - 0.619730198411271
+      final_pos:
+      - 3.232492446899414
+      - -0.6129981875419617
+      - 0.49767208099365234
+      category: peanut
+      original_id: f54556a921e4469ca05e3be621be8254
+  global_index: 140
+  target_object_id: f54556a921e4469ca05e3be621be8254

@@ -1,0 +1,261 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  f87b7d4d3dc8487f89a77acd3ac884b6_on_table_1_at_verify_task_192:
+    original_id: f87b7d4d3dc8487f89a77acd3ac884b6
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/f87b7d4d3dc8487f89a77acd3ac884b6.usd
+    usd_scale:
+    - 10.777586206896551
+    - 9.627583911501674
+    - 10.61379057292341
+    position:
+    - -2.8916996647260467
+    - -1.1080661925726827
+    - 0.8170689749717792
+    size:
+    - 0.10777568817138672
+    - 0.09627628326416016
+    - 0.10613815307618779
+    detailed_caption: Modern square clock with a white face, black hands, gray cubic case, minimalist
+      design.
+  f87b7d4d3dc8487f89a77acd3ac884b6_on_table_2_at_verify_task_192:
+    original_id: f87b7d4d3dc8487f89a77acd3ac884b6
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/f87b7d4d3dc8487f89a77acd3ac884b6.usd
+    usd_scale:
+    - 10.777586206896551
+    - 9.627583911501674
+    - 10.61379057292341
+    position:
+    - -2.472775880164534
+    - 3.1882771671679415
+    - 0.34305707693100773
+    size:
+    - 0.10777568817138672
+    - 0.09627628326416016
+    - 0.10613815307618779
+    detailed_caption: Modern square clock with a white face, black hands, gray cubic case, minimalist
+      design.
+episodes:
+- task_id: verify_task_192
+  episode_idx: 41
+  original_idx: 192
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the modern square clock with a white face, black hands, gray cubic case,
+    minimalist design from the rounded rectangular table and deposit it at white desk in front of the
+    blank wall.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - f87b7d4d3dc8487f89a77acd3ac884b6
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - f87b7d4d3dc8487f89a77acd3ac884b6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - f87b7d4d3dc8487f89a77acd3ac884b6
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    f87b7d4d3dc8487f89a77acd3ac884b6:
+      category: clock
+      detailed_caption: Modern square clock with a white face, black hands, gray cubic case, minimalist
+        design.
+      usd_path: f87b7d4d3dc8487f89a77acd3ac884b6.usd
+      size:
+      - 0.10777568817138672
+      - 0.09627628326416016
+      - 0.10613815307618779
+  obj_distractors:
+  - b01c06636ed24d55b39e8254ee3c4600
+  - _5f528103_90e2_4a1b_9693_7b3805f796db
+  obj_distractor_meta:
+    b01c06636ed24d55b39e8254ee3c4600:
+      category: clock
+      detailed_caption: Round wall clock with a wooden frame, white face, black numbers, and red hands.
+      usd_path: b01c06636ed24d55b39e8254ee3c4600.usd
+      size:
+      - 0.13578033447265625
+      - 0.10095596313476562
+      - 0.05625004880130291
+    _5f528103_90e2_4a1b_9693_7b3805f796db:
+      category: clock
+      detailed_caption: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+      usd_path: 5f528103-90e2-4a1b-9693-7b3805f796db.usd
+      size:
+      - 0.254540029913187
+      - 0.20325279235839844
+      - 0.10450849030166864
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: clock
+      target_description: Modern square clock with a white face, black hands, gray cubic case, minimalist
+        design.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Modern square clock with a white face, black hands, gray cubic case, minimalist
+        design.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Modern square clock with a white face, black hands, gray cubic case, minimalist
+        design.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    f87b7d4d3dc8487f89a77acd3ac884b6_on_table_1_at_verify_task_192:
+      position:
+      - -2.8916996647260467
+      - -1.1080661925726827
+      - 0.8170689749717792
+      furniture: table_1
+      original_id: f87b7d4d3dc8487f89a77acd3ac884b6
+    f87b7d4d3dc8487f89a77acd3ac884b6_on_table_2_at_verify_task_192:
+      position:
+      - -2.472775880164534
+      - 3.1882771671679415
+      - 0.34305707693100773
+      furniture: table_2
+      original_id: f87b7d4d3dc8487f89a77acd3ac884b6
+  final_positions:
+    f87b7d4d3dc8487f89a77acd3ac884b6_on_table_1_at_verify_task_192:
+      initial_pos:
+      - -2.8916996647260467
+      - -1.1080661925726827
+      - 0.9170689749717792
+      final_pos:
+      - -2.893075704574585
+      - -1.1079251766204834
+      - 0.7970688343048096
+      category: clock
+      original_id: f87b7d4d3dc8487f89a77acd3ac884b6
+    f87b7d4d3dc8487f89a77acd3ac884b6_on_table_2_at_verify_task_192:
+      initial_pos:
+      - -2.472775880164534
+      - 3.1882771671679415
+      - 0.4430570769310077
+      final_pos:
+      - -2.4726569652557373
+      - 3.188328266143799
+      - 0.3230569362640381
+      category: clock
+      original_id: f87b7d4d3dc8487f89a77acd3ac884b6
+  family: FDP
+  benchmark_task_id: FDP/verify_task_192
+  benchmark_instruction: Retrieve the modern square clock with a white face, black hands, gray cubic case,
+    minimalist design from the rounded rectangular table and deposit it at white desk in front of the
+    blank wall.
+  global_index: 41
+  target_object_id: f87b7d4d3dc8487f89a77acd3ac884b6

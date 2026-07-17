@@ -1,0 +1,262 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a2771221af4c434281a35fd3a69778e6_on_desk_1_at_verify_task_24:
+    original_id: a2771221af4c434281a35fd3a69778e6
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/a2771221af4c434281a35fd3a69778e6.usd
+    usd_scale:
+    - 1.3128232882026665
+    - 1.3121319086058225
+    - 1.3285054599295505
+    position:
+    - 0.08986809463610672
+    - -3.3943962651781945
+    - 0.7648839952048729
+    size:
+    - 0.1632847785949707
+    - 0.008113861083984375
+    - 0.01376791983784642
+    detailed_caption: Slender yellow hexagonal pencil with a sharpened tip and pink eraser at the end.
+  a2771221af4c434281a35fd3a69778e6_on_desk_2_at_verify_task_24:
+    original_id: a2771221af4c434281a35fd3a69778e6
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/a2771221af4c434281a35fd3a69778e6.usd
+    usd_scale:
+    - 1.3128232882026665
+    - 1.3121319086058225
+    - 1.3285054599295505
+    position:
+    - 4.348152116482666
+    - 2.0239923371200153
+    - 0.7723265291747521
+    size:
+    - 0.1632847785949707
+    - 0.008113861083984375
+    - 0.01376791983784642
+    detailed_caption: Slender yellow hexagonal pencil with a sharpened tip and pink eraser at the end.
+episodes:
+- task_id: verify_task_24
+  episode_idx: 16
+  original_idx: 24
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to white unit with flat wood handles, fetch the slender yellow hexagonal
+    pencil with a sharpened tip and pink eraser at the end, and bring it back to the table where we have
+    dinner.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - a2771221af4c434281a35fd3a69778e6
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - a2771221af4c434281a35fd3a69778e6
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - a2771221af4c434281a35fd3a69778e6
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    a2771221af4c434281a35fd3a69778e6:
+      category: pencil
+      detailed_caption: Slender yellow hexagonal pencil with a sharpened tip and pink eraser at the end.
+      usd_path: a2771221af4c434281a35fd3a69778e6.usd
+      size:
+      - 0.1632847785949707
+      - 0.008113861083984375
+      - 0.01376791983784642
+  obj_distractors:
+  - _5899d997_4d52_4918_97b5_32195cbe58fb
+  - _48fd553e592e4289bec9a1df3c4a01cc
+  obj_distractor_meta:
+    _5899d997_4d52_4918_97b5_32195cbe58fb:
+      category: stack
+      detailed_caption: Multiple rectangular stacks of smooth, shiny white printing paper, varying in
+        height.
+      usd_path: 5899d997-4d52-4918-97b5-32195cbe58fb.usd
+      size:
+      - 0.190826416015625
+      - 0.23894691467285156
+      - 0.025974980962928385
+    _48fd553e592e4289bec9a1df3c4a01cc:
+      category: pencil
+      detailed_caption: Yellow cylindrical pencil with a smooth wooden surface, sharpened graphite point,
+        and pink eraser.
+      usd_path: 48fd553e592e4289bec9a1df3c4a01cc.usd
+      size:
+      - 0.028095245361328125
+      - 1.4167423248291016
+      - 0.0009987720077333506
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: pencil
+      target_description: Slender yellow hexagonal pencil with a sharpened tip and pink eraser at the
+        end.
+  - action: gaze_at
+    args:
+      target_category: pencil
+      target_description: Slender yellow hexagonal pencil with a sharpened tip and pink eraser at the
+        end.
+  - action: pick
+    args:
+      target_category: pencil
+      target_description: Slender yellow hexagonal pencil with a sharpened tip and pink eraser at the
+        end.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    a2771221af4c434281a35fd3a69778e6_on_desk_1_at_verify_task_24:
+      position:
+      - 0.08986809463610672
+      - -3.3943962651781945
+      - 0.7648839952048729
+      furniture: desk_1
+      original_id: a2771221af4c434281a35fd3a69778e6
+    a2771221af4c434281a35fd3a69778e6_on_desk_2_at_verify_task_24:
+      position:
+      - 4.348152116482666
+      - 2.0239923371200153
+      - 0.7723265291747521
+      furniture: desk_2
+      original_id: a2771221af4c434281a35fd3a69778e6
+  final_positions:
+    a2771221af4c434281a35fd3a69778e6_on_desk_1_at_verify_task_24:
+      initial_pos:
+      - 0.08986809463610672
+      - -3.3943962651781945
+      - 0.8648839952048729
+      final_pos:
+      - 0.0898803099989891
+      - -3.3939881324768066
+      - 0.7446970343589783
+      category: pencil
+      original_id: a2771221af4c434281a35fd3a69778e6
+    a2771221af4c434281a35fd3a69778e6_on_desk_2_at_verify_task_24:
+      initial_pos:
+      - 4.348152116482666
+      - 2.0239923371200153
+      - 0.8723265291747521
+      final_pos:
+      - 4.348089694976807
+      - 2.023930788040161
+      - 0.7253599166870117
+      category: pencil
+      original_id: a2771221af4c434281a35fd3a69778e6
+  family: FDP
+  benchmark_task_id: FDP/verify_task_24
+  benchmark_instruction: Head over to white unit with flat wood handles, fetch the slender yellow hexagonal
+    pencil with a sharpened tip and pink eraser at the end, and bring it back to the table where we have
+    dinner.
+  global_index: 16
+  target_object_id: a2771221af4c434281a35fd3a69778e6

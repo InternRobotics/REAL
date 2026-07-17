@@ -1,0 +1,302 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _67a4c51ce9894a218dab77cae5187518_on_desk_1_at_verify_task_35:
+    original_id: _67a4c51ce9894a218dab77cae5187518
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/67a4c51ce9894a218dab77cae5187518.usd
+    usd_scale:
+    - 1.0553979383701764
+    - 0.889956688775051
+    - 1.07887841890673
+    position:
+    - 0.14088392558034385
+    - -3.1572743305846664
+    - 0.7900668235775083
+    size:
+    - 0.1146697998046875
+    - 0.13949966430664062
+    - 0.06413357658311725
+    detailed_caption: Classic round alarm clock with black casing, metallic bells, beige face, and black
+      hour markers.
+  _99ca0cd55e234273a589ebaceb5f0c93_on_desk_1_at_verify_task_35:
+    original_id: _99ca0cd55e234273a589ebaceb5f0c93
+    category: watch
+    usd_path: ${MESATASK_USD_ROOT}/99ca0cd55e234273a589ebaceb5f0c93.usd
+    usd_scale:
+    - 1.4988199930187485
+    - 1.2922116303420523
+    - 1.7072979618623239
+    position:
+    - -0.14084046685858026
+    - -2.3325502136291223
+    - 0.7945976420119405
+    size:
+    - 0.11234092712402344
+    - 0.09805679321289062
+    - 0.07319521345198154
+    detailed_caption: Sleek silver wristwatch with a round face, black dial, and metallic link band.
+  _62aeeb7d51ae470c909c3b7fbdcdefb7_on_desk_1_at_verify_task_35:
+    original_id: _62aeeb7d51ae470c909c3b7fbdcdefb7
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/62aeeb7d51ae470c909c3b7fbdcdefb7.usd
+    usd_scale:
+    - 10.656368159628315
+    - 10.645510550544847
+    - 10.469998751878888
+    position:
+    - -0.11043118553308626
+    - -2.5747480222940657
+    - 0.8202086469527967
+    size:
+    - 0.12780523300170898
+    - 0.2130756378173828
+    - 0.12441722333369398
+    detailed_caption: Hourglass with a wooden frame, two glass bulbs, narrow neck, octagonal base, polished
+      finish.
+episodes:
+- task_id: verify_task_35
+  episode_idx: 28
+  original_idx: 35
+  benchmark_instruction: Get a timekeeping device from white desk with rectangular wooden handles and
+    move it to the table much larger than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the classic round alarm clock with black casing, metallic bells, beige face,
+    and black hour markers located at white desk with rectangular wooden handles to the table much larger
+    than another one.
+  fuzzy_task_description: Get a timekeeping device from white desk with rectangular wooden handles and
+    move it to the table much larger than another one.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _67a4c51ce9894a218dab77cae5187518
+      - _99ca0cd55e234273a589ebaceb5f0c93
+      - _62aeeb7d51ae470c909c3b7fbdcdefb7
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _67a4c51ce9894a218dab77cae5187518
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _99ca0cd55e234273a589ebaceb5f0c93
+      - _62aeeb7d51ae470c909c3b7fbdcdefb7
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _67a4c51ce9894a218dab77cae5187518:
+      category: clock
+      detailed_caption: Classic round alarm clock with black casing, metallic bells, beige face, and black
+        hour markers.
+      usd_path: 67a4c51ce9894a218dab77cae5187518.usd
+      size:
+      - 0.1146697998046875
+      - 0.13949966430664062
+      - 0.06413357658311725
+  obj_distractors:
+  - _99ca0cd55e234273a589ebaceb5f0c93
+  - _62aeeb7d51ae470c909c3b7fbdcdefb7
+  obj_distractor_meta:
+    _99ca0cd55e234273a589ebaceb5f0c93:
+      category: watch
+      detailed_caption: Sleek silver wristwatch with a round face, black dial, and metallic link band.
+      usd_path: 99ca0cd55e234273a589ebaceb5f0c93.usd
+      size:
+      - 0.11234092712402344
+      - 0.09805679321289062
+      - 0.07319521345198154
+    _62aeeb7d51ae470c909c3b7fbdcdefb7:
+      category: hourglass
+      detailed_caption: Hourglass with a wooden frame, two glass bulbs, narrow neck, octagonal base, polished
+        finish.
+      usd_path: 62aeeb7d51ae470c909c3b7fbdcdefb7.usd
+      size:
+      - 0.12780523300170898
+      - 0.2130756378173828
+      - 0.12441722333369398
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Classic round alarm clock with black casing, metallic bells, beige face, and
+        black hour markers.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Classic round alarm clock with black casing, metallic bells, beige face, and
+        black hour markers.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Classic round alarm clock with black casing, metallic bells, beige face, and
+        black hour markers.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Move the classic round alarm clock with black casing, metallic bells, beige
+    face, and black hour markers located at white desk with rectangular wooden handles to the table much
+    larger than another one.
+  placements:
+    _67a4c51ce9894a218dab77cae5187518_on_desk_1_at_verify_task_35:
+      position:
+      - 0.14088392558034385
+      - -3.1572743305846664
+      - 0.7900668235775083
+      furniture: desk_1
+      original_id: _67a4c51ce9894a218dab77cae5187518
+    _99ca0cd55e234273a589ebaceb5f0c93_on_desk_1_at_verify_task_35:
+      position:
+      - -0.14084046685858026
+      - -2.3325502136291223
+      - 0.7945976420119405
+      furniture: desk_1
+      original_id: _99ca0cd55e234273a589ebaceb5f0c93
+    _62aeeb7d51ae470c909c3b7fbdcdefb7_on_desk_1_at_verify_task_35:
+      position:
+      - -0.11043118553308626
+      - -2.5747480222940657
+      - 0.8202086469527967
+      furniture: desk_1
+      original_id: _62aeeb7d51ae470c909c3b7fbdcdefb7
+  final_positions:
+    _67a4c51ce9894a218dab77cae5187518_on_desk_1_at_verify_task_35:
+      initial_pos:
+      - 0.14088392558034385
+      - -3.1572743305846664
+      - 0.8900668235775083
+      final_pos:
+      - 0.14747771620750427
+      - -3.182656764984131
+      - 0.7704917192459106
+      category: clock
+      original_id: _67a4c51ce9894a218dab77cae5187518
+    _99ca0cd55e234273a589ebaceb5f0c93_on_desk_1_at_verify_task_35:
+      initial_pos:
+      - -0.14084046685858026
+      - -2.3325502136291223
+      - 0.8945976420119405
+      final_pos:
+      - -0.1091771349310875
+      - -2.415574312210083
+      - 0.7579551339149475
+      category: watch
+      original_id: _99ca0cd55e234273a589ebaceb5f0c93
+    _62aeeb7d51ae470c909c3b7fbdcdefb7_on_desk_1_at_verify_task_35:
+      initial_pos:
+      - -0.11043118553308626
+      - -2.5747480222940657
+      - 0.9202086469527967
+      final_pos:
+      - -0.11981521546840668
+      - -2.581696033477783
+      - 0.7994022369384766
+      category: hourglass
+      original_id: _62aeeb7d51ae470c909c3b7fbdcdefb7
+  family: SUL
+  benchmark_task_id: SUL/verify_task_35
+  global_index: 204
+  target_object_id: _67a4c51ce9894a218dab77cae5187518

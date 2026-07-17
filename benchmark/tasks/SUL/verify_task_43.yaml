@@ -1,0 +1,303 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  acbd811c2a8b4581ba3c7716aa316878_on_desk_1_at_verify_task_43:
+    original_id: acbd811c2a8b4581ba3c7716aa316878
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/acbd811c2a8b4581ba3c7716aa316878.usd
+    usd_scale:
+    - 0.8330411743559495
+    - 0.8271015671934326
+    - 0.8207602196222472
+    position:
+    - -0.11584054413625007
+    - -3.0744415924932156
+    - 0.7617892850062344
+    size:
+    - 0.13573074340820312
+    - 0.056429386138916016
+    - 0.007578499440569431
+    detailed_caption: Sleek, slender pen with a metallic finish, comfortable grip, clip, and smooth design.
+  gen_335ab012_6c35_413c_882b_425a7975d7a6_on_desk_1_at_verify_task_43:
+    original_id: gen_335ab012_6c35_413c_882b_425a7975d7a6
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/gen_335ab012-6c35-413c-882b-425a7975d7a6.usd
+    usd_scale:
+    - 8.849305804242062
+    - 8.874410521514633
+    - 8.911910881806167
+    position:
+    - 0.011089772739096115
+    - -3.3361029414291647
+    - 0.8051599609712139
+    size:
+    - 0.09401321411132812
+    - 0.17902183532714844
+    - 0.09431985137052834
+    detailed_caption: Cylindrical white ceramic holder with a smooth, glossy finish, filled with colored
+      pencils.
+  dd60831f_c27e_4cbd_be5a_3e6c26a9187a_on_desk_1_at_verify_task_43:
+    original_id: dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/dd60831f-c27e-4cbd-be5a-3e6c26a9187a.usd
+    usd_scale:
+    - 10.13058693253368
+    - 9.534615442749525
+    - 10.112140385502295
+    position:
+    - 0.1573635858929805
+    - -3.23540344979444
+    - 0.7616328174440423
+    size:
+    - 0.007747650146484375
+    - 0.1894989013671875
+    - 0.007265564316185191
+    detailed_caption: Yellow pencil, sharpened wooden body, eraser on top, metal ferrule, smooth cylindrical
+      shape.
+episodes:
+- task_id: verify_task_43
+  episode_idx: 33
+  original_idx: 43
+  benchmark_instruction: Retrieve a writing instrument from white desk with rectangular wooden handles
+    and deposit it at the table where we have dinner.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to white desk with rectangular wooden handles, pick up the sleek, slender pen with
+    a metallic finish, comfortable grip, clip, and smooth design, then travel to the table where we have
+    dinner to place it.
+  fuzzy_task_description: Retrieve a writing instrument from white desk with rectangular wooden handles
+    and deposit it at the table where we have dinner.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - acbd811c2a8b4581ba3c7716aa316878
+      - gen_335ab012_6c35_413c_882b_425a7975d7a6
+      - dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - acbd811c2a8b4581ba3c7716aa316878
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - gen_335ab012_6c35_413c_882b_425a7975d7a6
+      - dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    acbd811c2a8b4581ba3c7716aa316878:
+      category: pen
+      detailed_caption: Sleek, slender pen with a metallic finish, comfortable grip, clip, and smooth
+        design.
+      usd_path: acbd811c2a8b4581ba3c7716aa316878.usd
+      size:
+      - 0.13573074340820312
+      - 0.056429386138916016
+      - 0.007578499440569431
+  obj_distractors:
+  - gen_335ab012_6c35_413c_882b_425a7975d7a6
+  - dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+  obj_distractor_meta:
+    gen_335ab012_6c35_413c_882b_425a7975d7a6:
+      category: pencil
+      detailed_caption: Cylindrical white ceramic holder with a smooth, glossy finish, filled with colored
+        pencils.
+      usd_path: gen_335ab012-6c35-413c-882b-425a7975d7a6.usd
+      size:
+      - 0.09401321411132812
+      - 0.17902183532714844
+      - 0.09431985137052834
+    dd60831f_c27e_4cbd_be5a_3e6c26a9187a:
+      category: pencil
+      detailed_caption: Yellow pencil, sharpened wooden body, eraser on top, metal ferrule, smooth cylindrical
+        shape.
+      usd_path: dd60831f-c27e-4cbd-be5a-3e6c26a9187a.usd
+      size:
+      - 0.007747650146484375
+      - 0.1894989013671875
+      - 0.007265564316185191
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: Sleek, slender pen with a metallic finish, comfortable grip, clip, and smooth
+        design.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Sleek, slender pen with a metallic finish, comfortable grip, clip, and smooth
+        design.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Sleek, slender pen with a metallic finish, comfortable grip, clip, and smooth
+        design.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Go to white desk with rectangular wooden handles, pick up the sleek, slender
+    pen with a metallic finish, comfortable grip, clip, and smooth design, then travel to the table where
+    we have dinner to place it.
+  placements:
+    acbd811c2a8b4581ba3c7716aa316878_on_desk_1_at_verify_task_43:
+      position:
+      - -0.11584054413625007
+      - -3.0744415924932156
+      - 0.7617892850062344
+      furniture: desk_1
+      original_id: acbd811c2a8b4581ba3c7716aa316878
+    gen_335ab012_6c35_413c_882b_425a7975d7a6_on_desk_1_at_verify_task_43:
+      position:
+      - 0.011089772739096115
+      - -3.3361029414291647
+      - 0.8051599609712139
+      furniture: desk_1
+      original_id: gen_335ab012_6c35_413c_882b_425a7975d7a6
+    dd60831f_c27e_4cbd_be5a_3e6c26a9187a_on_desk_1_at_verify_task_43:
+      position:
+      - 0.1573635858929805
+      - -3.23540344979444
+      - 0.7616328174440423
+      furniture: desk_1
+      original_id: dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+  final_positions:
+    acbd811c2a8b4581ba3c7716aa316878_on_desk_1_at_verify_task_43:
+      initial_pos:
+      - -0.11584054413625007
+      - -3.0744415924932156
+      - 0.8617892850062344
+      final_pos:
+      - -0.043110884726047516
+      - -3.0450360774993896
+      - 0.7411782145500183
+      category: pen
+      original_id: acbd811c2a8b4581ba3c7716aa316878
+    gen_335ab012_6c35_413c_882b_425a7975d7a6_on_desk_1_at_verify_task_43:
+      initial_pos:
+      - 0.011089772739096115
+      - -3.3361029414291647
+      - 0.9051599609712139
+      final_pos:
+      - 0.00881684385240078
+      - -3.3379547595977783
+      - 0.7792378664016724
+      category: pencil holder
+      original_id: gen_335ab012_6c35_413c_882b_425a7975d7a6
+    dd60831f_c27e_4cbd_be5a_3e6c26a9187a_on_desk_1_at_verify_task_43:
+      initial_pos:
+      - 0.1573635858929805
+      - -3.23540344979444
+      - 0.8616328174440423
+      final_pos:
+      - 0.15786384046077728
+      - -3.2353856563568115
+      - 0.7409512400627136
+      category: pencil
+      original_id: dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+  family: SUL
+  benchmark_task_id: SUL/verify_task_43
+  global_index: 209
+  target_object_id: acbd811c2a8b4581ba3c7716aa316878

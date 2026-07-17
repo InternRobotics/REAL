@@ -1,0 +1,374 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_6_at_verify_task_511:
+    original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+    usd_scale:
+    - 26.676207502786607
+    - 26.79114528206183
+    - 27.195716757061277
+    position:
+    - 2.4969505111157067
+    - -1.0914133166385296
+    - 0.7691992963477969
+    size:
+    - 0.1697005033493042
+    - 0.1944732666015625
+    - 0.062398603186011314
+    detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and polished
+      finish.
+  _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_7_at_verify_task_511:
+    original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+    usd_scale:
+    - 26.676207502786607
+    - 26.79114528206183
+    - 27.195716757061277
+    position:
+    - 1.1883603627017318
+    - 1.6608909433917765
+    - 0.8877492989227176
+    size:
+    - 0.1697005033493042
+    - 0.1944732666015625
+    - 0.062398603186011314
+    detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and polished
+      finish.
+  _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_8_at_verify_task_511:
+    original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+    usd_scale:
+    - 26.676207502786607
+    - 26.79114528206183
+    - 27.195716757061277
+    position:
+    - 4.5123961267468395
+    - 2.9591266193854624
+    - 0.5016992832347751
+    size:
+    - 0.1697005033493042
+    - 0.1944732666015625
+    - 0.062398603186011314
+    detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and polished
+      finish.
+  _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_9_at_verify_task_511:
+    original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+    usd_scale:
+    - 26.676207502786607
+    - 26.79114528206183
+    - 27.195716757061277
+    position:
+    - 6.164268794402611
+    - 1.2408146461783118
+    - 0.9911992992088199
+    size:
+    - 0.1697005033493042
+    - 0.1944732666015625
+    - 0.062398603186011314
+    detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and polished
+      finish.
+  _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_10_at_verify_task_511:
+    original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+    usd_scale:
+    - 26.676207502786607
+    - 26.79114528206183
+    - 27.195716757061277
+    position:
+    - 3.202999629562862
+    - -0.48317590745732086
+    - 0.5241992915794254
+    size:
+    - 0.1697005033493042
+    - 0.1944732666015625
+    - 0.062398603186011314
+    detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and polished
+      finish.
+episodes:
+- task_id: verify_task_511
+  episode_idx: 68
+  original_idx: 511
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the ceramic horse figurine with a glossy brown coat, detailed saddle markings,
+    and polished finish at black wood grain nightstand cabinet to bed with matte white mattress cover.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5:
+      category: figurine
+      detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and
+        polished finish.
+      usd_path: 5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+      size:
+      - 0.1697005033493042
+      - 0.1944732666015625
+      - 0.062398603186011314
+  obj_distractors:
+  - _09533e32ffec46ebb63b0910a7206a75
+  - _05aaa6414f4e4b6eb5432dbcf20290f6
+  obj_distractor_meta:
+    _09533e32ffec46ebb63b0910a7206a75:
+      category: figurine
+      detailed_caption: Small white dog figurine, seated, smooth surface, slight texturing, realistic
+        proportions, upright posture.
+      usd_path: 09533e32ffec46ebb63b0910a7206a75.usd
+      size:
+      - 0.14359580539166927
+      - 0.2441387176513672
+      - 0.10966081591323018
+    _05aaa6414f4e4b6eb5432dbcf20290f6:
+      category: figurine
+      detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+      usd_path: 05aaa6414f4e4b6eb5432dbcf20290f6.usd
+      size:
+      - 0.06312370300292969
+      - 0.2378683090209961
+      - 0.0644194787601009
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and
+        polished finish.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and
+        polished finish.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and
+        polished finish.
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  placements:
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_6_at_verify_task_511:
+      position:
+      - 2.4969505111157067
+      - -1.0914133166385296
+      - 0.7691992963477969
+      furniture: cabinet_6
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_7_at_verify_task_511:
+      position:
+      - 1.1883603627017318
+      - 1.6608909433917765
+      - 0.8877492989227176
+      furniture: cabinet_7
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_8_at_verify_task_511:
+      position:
+      - 4.5123961267468395
+      - 2.9591266193854624
+      - 0.5016992832347751
+      furniture: cabinet_8
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_9_at_verify_task_511:
+      position:
+      - 6.164268794402611
+      - 1.2408146461783118
+      - 0.9911992992088199
+      furniture: cabinet_9
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_10_at_verify_task_511:
+      position:
+      - 3.202999629562862
+      - -0.48317590745732086
+      - 0.5241992915794254
+      furniture: cabinet_10
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+  final_positions:
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_6_at_verify_task_511:
+      initial_pos:
+      - 2.4969505111157067
+      - -1.0914133166385296
+      - 0.8691992963477969
+      final_pos:
+      - 2.522108316421509
+      - -1.0726099014282227
+      - 0.752479076385498
+      category: decorative object
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_7_at_verify_task_511:
+      initial_pos:
+      - 1.1883603627017318
+      - 1.6608909433917765
+      - 0.9877492989227176
+      final_pos:
+      - 1.2164733409881592
+      - 1.678698182106018
+      - 0.8710293173789978
+      category: decorative object
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_8_at_verify_task_511:
+      initial_pos:
+      - 4.5123961267468395
+      - 2.9591266193854624
+      - 0.6016992832347751
+      final_pos:
+      - 4.537707328796387
+      - 2.9777073860168457
+      - 0.48497897386550903
+      category: decorative object
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_9_at_verify_task_511:
+      initial_pos:
+      - 6.164268794402611
+      - 1.2408146461783118
+      - 1.09119929920882
+      final_pos:
+      - 6.192378997802734
+      - 1.2586190700531006
+      - 0.9744788408279419
+      category: decorative object
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_cabinet_10_at_verify_task_511:
+      initial_pos:
+      - 3.202999629562862
+      - -0.48317590745732086
+      - 0.6241992915794253
+      final_pos:
+      - 3.23416805267334
+      - -0.4646918475627899
+      - 0.5074791312217712
+      category: decorative object
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+  family: FDP
+  benchmark_task_id: FDP/verify_task_511
+  benchmark_instruction: Transport the ceramic horse figurine with a glossy brown coat, detailed saddle
+    markings, and polished finish at black wood grain nightstand cabinet to bed with matte white mattress
+    cover.
+  global_index: 68
+  target_object_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5

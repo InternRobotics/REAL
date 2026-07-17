@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  gen_07009137_0f0d_4994_ab73_c0e6f82f0f39_on_table_1_at_verify_task_124:
+    original_id: gen_07009137_0f0d_4994_ab73_c0e6f82f0f39
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_07009137-0f0d-4994-ab73-c0e6f82f0f39.usd
+    usd_scale:
+    - 9.222581704673722
+    - 8.895634084703943
+    - 9.535315808709475
+    position:
+    - -2.758987987608398
+    - -1.383939408345115
+    - 0.8593215987016447
+    size:
+    - 0.16397476196289062
+    - 0.13458633422851562
+    - 0.19064340053591877
+    detailed_caption: Spiral-bound notebook with a blue cover, triangular shape when open, sturdy spine.
+  _7cd5c7e5be624ca48e072326ed6a1da2_on_table_1_at_verify_task_124:
+    original_id: _7cd5c7e5be624ca48e072326ed6a1da2
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/7cd5c7e5be624ca48e072326ed6a1da2.usd
+    usd_scale:
+    - 0.7060032384836681
+    - 0.7193164011948056
+    - 0.7256693063436551
+    position:
+    - -2.084735336957803
+    - -1.6138953456661849
+    - 0.7701852625282481
+    size:
+    - 0.08932876586914062
+    - 0.09185791015625
+    - 0.012370728189125657
+    detailed_caption: Square-shaped note pad with yellow sticky notes, black text, and slightly curled
+      edges.
+  gen_5730a550_65d7_4148_ae84_0acb6134e374_on_table_1_at_verify_task_124:
+    original_id: gen_5730a550_65d7_4148_ae84_0acb6134e374
+    category: binder
+    usd_path: ${MESATASK_USD_ROOT}/gen_5730a550-65d7-4148-ae84-0acb6134e374.usd
+    usd_scale:
+    - 12.333347557496737
+    - 14.717653379708523
+    - 11.76316827336169
+    position:
+    - -2.465460674991867
+    - -1.1775369339912087
+    - 0.8002878339425661
+    size:
+    - 0.20619964599609375
+    - 0.2936897277832031
+    - 0.07257587101776153
+    detailed_caption: Bright red, smooth exterior, rectangular shape, clear front pocket, spine label.
+episodes:
+- task_id: verify_task_124
+  episode_idx: 79
+  original_idx: 124
+  benchmark_instruction: Go to the rectangular table, pick up a notebook, then travel to the desk near
+    my bed to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the rectangular table to find the spiral-bound notebook with a blue
+    cover, triangular shape when open, sturdy spine, then deliver it to the desk near my bed.
+  fuzzy_task_description: Go to the rectangular table, pick up a notebook, then travel to the desk near
+    my bed to place it.
+  purpose: notebook
+  purpose_group: notebooks
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_07009137_0f0d_4994_ab73_c0e6f82f0f39
+      - _7cd5c7e5be624ca48e072326ed6a1da2
+      - gen_5730a550_65d7_4148_ae84_0acb6134e374
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _7cd5c7e5be624ca48e072326ed6a1da2
+      - gen_5730a550_65d7_4148_ae84_0acb6134e374
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - gen_07009137_0f0d_4994_ab73_c0e6f82f0f39
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    gen_07009137_0f0d_4994_ab73_c0e6f82f0f39:
+      category: notebook
+      detailed_caption: Spiral-bound notebook with a blue cover, triangular shape when open, sturdy spine.
+      usd_path: gen_07009137-0f0d-4994-ab73-c0e6f82f0f39.usd
+      size:
+      - 0.16397476196289062
+      - 0.13458633422851562
+      - 0.19064340053591877
+  obj_distractors:
+  - _7cd5c7e5be624ca48e072326ed6a1da2
+  - gen_5730a550_65d7_4148_ae84_0acb6134e374
+  obj_distractor_meta:
+    _7cd5c7e5be624ca48e072326ed6a1da2:
+      category: notepad
+      detailed_caption: Square-shaped note pad with yellow sticky notes, black text, and slightly curled
+        edges.
+      usd_path: 7cd5c7e5be624ca48e072326ed6a1da2.usd
+      size:
+      - 0.08932876586914062
+      - 0.09185791015625
+      - 0.012370728189125657
+    gen_5730a550_65d7_4148_ae84_0acb6134e374:
+      category: binder
+      detailed_caption: Bright red, smooth exterior, rectangular shape, clear front pocket, spine label.
+      usd_path: gen_5730a550-65d7-4148-ae84-0acb6134e374.usd
+      size:
+      - 0.20619964599609375
+      - 0.2936897277832031
+      - 0.07257587101776153
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a blue cover, triangular shape when open, sturdy
+        spine.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a blue cover, triangular shape when open, sturdy
+        spine.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a blue cover, triangular shape when open, sturdy
+        spine.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  physics_task_description: First, drive to the rectangular table to find the spiral-bound notebook with
+    a blue cover, triangular shape when open, sturdy spine, then deliver it to the desk near my bed.
+  placements:
+    gen_07009137_0f0d_4994_ab73_c0e6f82f0f39_on_table_1_at_verify_task_124:
+      position:
+      - -2.758987987608398
+      - -1.383939408345115
+      - 0.8593215987016447
+      furniture: table_1
+      original_id: gen_07009137_0f0d_4994_ab73_c0e6f82f0f39
+    _7cd5c7e5be624ca48e072326ed6a1da2_on_table_1_at_verify_task_124:
+      position:
+      - -2.084735336957803
+      - -1.6138953456661849
+      - 0.7701852625282481
+      furniture: table_1
+      original_id: _7cd5c7e5be624ca48e072326ed6a1da2
+    gen_5730a550_65d7_4148_ae84_0acb6134e374_on_table_1_at_verify_task_124:
+      position:
+      - -2.465460674991867
+      - -1.1775369339912087
+      - 0.8002878339425661
+      furniture: table_1
+      original_id: gen_5730a550_65d7_4148_ae84_0acb6134e374
+  final_positions:
+    gen_07009137_0f0d_4994_ab73_c0e6f82f0f39_on_table_1_at_verify_task_124:
+      initial_pos:
+      - -2.758987987608398
+      - -1.383939408345115
+      - 0.9593215987016447
+      final_pos:
+      - -2.759016513824463
+      - -1.384478211402893
+      - 0.839062511920929
+      category: notebook
+      original_id: gen_07009137_0f0d_4994_ab73_c0e6f82f0f39
+    _7cd5c7e5be624ca48e072326ed6a1da2_on_table_1_at_verify_task_124:
+      initial_pos:
+      - -2.084735336957803
+      - -1.6138953456661849
+      - 0.8701852625282481
+      final_pos:
+      - -2.0844922065734863
+      - -1.5692602396011353
+      - 0.7440005540847778
+      category: sticky note
+      original_id: _7cd5c7e5be624ca48e072326ed6a1da2
+    gen_5730a550_65d7_4148_ae84_0acb6134e374_on_table_1_at_verify_task_124:
+      initial_pos:
+      - -2.465460674991867
+      - -1.1775369339912087
+      - 0.9002878339425661
+      final_pos:
+      - -2.4676671028137207
+      - -1.1767207384109497
+      - 0.7650066614151001
+      category: binder
+      original_id: gen_5730a550_65d7_4148_ae84_0acb6134e374
+  family: SUL
+  benchmark_task_id: SUL/verify_task_124
+  global_index: 239
+  target_object_id: gen_07009137_0f0d_4994_ab73_c0e6f82f0f39

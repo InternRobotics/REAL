@@ -1,0 +1,367 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0eb601aa649c40caa3eff35a383049b9_on_cabinet_6_at_verify_task_95:
+    original_id: _0eb601aa649c40caa3eff35a383049b9
+    category: fruit
+    usd_path: ${MESATASK_USD_ROOT}/0eb601aa649c40caa3eff35a383049b9.usd
+    usd_scale:
+    - 1.6624313899980359
+    - 1.6631006524466188
+    - 1.6606558791870616
+    position:
+    - 2.5773591578388757
+    - -1.019783398986175
+    - 0.7840607411740348
+    size:
+    - 0.10074424743652344
+    - 0.09914016723632812
+    - 0.09212149283848703
+  _0eb601aa649c40caa3eff35a383049b9_on_cabinet_7_at_verify_task_95:
+    original_id: _0eb601aa649c40caa3eff35a383049b9
+    category: fruit
+    usd_path: ${MESATASK_USD_ROOT}/0eb601aa649c40caa3eff35a383049b9.usd
+    usd_scale:
+    - 1.6624313899980359
+    - 1.6631006524466188
+    - 1.6606558791870616
+    position:
+    - 0.932009573806411
+    - 1.6246520762903376
+    - 0.9026107437489554
+    size:
+    - 0.10074424743652344
+    - 0.09914016723632812
+    - 0.09212149283848703
+  _0eb601aa649c40caa3eff35a383049b9_on_cabinet_8_at_verify_task_95:
+    original_id: _0eb601aa649c40caa3eff35a383049b9
+    category: fruit
+    usd_path: ${MESATASK_USD_ROOT}/0eb601aa649c40caa3eff35a383049b9.usd
+    usd_scale:
+    - 1.6624313899980359
+    - 1.6631006524466188
+    - 1.6606558791870616
+    position:
+    - 4.49050853413058
+    - 2.840837140987741
+    - 0.5165607280610129
+    size:
+    - 0.10074424743652344
+    - 0.09914016723632812
+    - 0.09212149283848703
+  _0eb601aa649c40caa3eff35a383049b9_on_cabinet_9_at_verify_task_95:
+    original_id: _0eb601aa649c40caa3eff35a383049b9
+    category: fruit
+    usd_path: ${MESATASK_USD_ROOT}/0eb601aa649c40caa3eff35a383049b9.usd
+    usd_scale:
+    - 1.6624313899980359
+    - 1.6631006524466188
+    - 1.6606558791870616
+    position:
+    - 5.9006102123973525
+    - 1.256193852505808
+    - 1.0060607440350577
+    size:
+    - 0.10074424743652344
+    - 0.09914016723632812
+    - 0.09212149283848703
+  _0eb601aa649c40caa3eff35a383049b9_on_cabinet_10_at_verify_task_95:
+    original_id: _0eb601aa649c40caa3eff35a383049b9
+    category: fruit
+    usd_path: ${MESATASK_USD_ROOT}/0eb601aa649c40caa3eff35a383049b9.usd
+    usd_scale:
+    - 1.6624313899980359
+    - 1.6631006524466188
+    - 1.6606558791870616
+    position:
+    - 3.1989655397885493
+    - -0.6411301014911835
+    - 0.5390607364056632
+    size:
+    - 0.10074424743652344
+    - 0.09914016723632812
+    - 0.09212149283848703
+episodes:
+- benchmark_task_id: FDO/verify_task_95
+  family: FDO
+  task_id: verify_task_95
+  episode_idx: 13
+  original_idx: 95
+  benchmark_instruction: Bring a fruit from the white cabinet next to the bedroom sink to the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Bring a fruit from the white cabinet next to the bedroom sink to the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _0eb601aa649c40caa3eff35a383049b9
+      door: false
+  src: cabinet_9
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_10
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _0eb601aa649c40caa3eff35a383049b9:
+      category: fruit
+      usd_path: 0eb601aa649c40caa3eff35a383049b9.usd
+      size:
+      - 0.10074424743652344
+      - 0.09914016723632812
+      - 0.09212149283848703
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: find
+    args:
+      target_category: fruit
+  - action: gaze_at
+    args:
+      target_category: fruit
+  - action: pick
+    args:
+      target_category: fruit
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_6_at_verify_task_95:
+      position:
+      - 2.5773591578388757
+      - -1.019783398986175
+      - 0.7840607411740348
+      furniture: cabinet_6
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_7_at_verify_task_95:
+      position:
+      - 0.932009573806411
+      - 1.6246520762903376
+      - 0.9026107437489554
+      furniture: cabinet_7
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_8_at_verify_task_95:
+      position:
+      - 4.49050853413058
+      - 2.840837140987741
+      - 0.5165607280610129
+      furniture: cabinet_8
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_9_at_verify_task_95:
+      position:
+      - 5.9006102123973525
+      - 1.256193852505808
+      - 1.0060607440350577
+      furniture: cabinet_9
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_10_at_verify_task_95:
+      position:
+      - 3.1989655397885493
+      - -0.6411301014911835
+      - 0.5390607364056632
+      furniture: cabinet_10
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+  final_positions:
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_6_at_verify_task_95:
+      initial_pos:
+      - 2.5773591578388757
+      - -1.019783398986175
+      - 0.8840607411740348
+      final_pos:
+      - 2.5652458667755127
+      - -0.9684595465660095
+      - 0.7569913268089294
+      category: fruit
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_7_at_verify_task_95:
+      initial_pos:
+      - 0.932009573806411
+      - 1.6246520762903376
+      - 1.0026107437489555
+      final_pos:
+      - 0.9196882247924805
+      - 1.6758604049682617
+      - 0.8755408525466919
+      category: fruit
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_8_at_verify_task_95:
+      initial_pos:
+      - 4.49050853413058
+      - 2.840837140987741
+      - 0.6165607280610129
+      final_pos:
+      - 4.478559494018555
+      - 2.89213228225708
+      - 0.4894908666610718
+      category: fruit
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_9_at_verify_task_95:
+      initial_pos:
+      - 5.9006102123973525
+      - 1.256193852505808
+      - 1.1060607440350578
+      final_pos:
+      - 5.888605117797852
+      - 1.307418942451477
+      - 0.978990912437439
+      category: fruit
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+    _0eb601aa649c40caa3eff35a383049b9_on_cabinet_10_at_verify_task_95:
+      initial_pos:
+      - 3.1989655397885493
+      - -0.6411301014911835
+      - 0.6390607364056632
+      final_pos:
+      - 3.1868927478790283
+      - -0.5898884534835815
+      - 0.5119912028312683
+      category: fruit
+      original_id: _0eb601aa649c40caa3eff35a383049b9
+  global_index: 141
+  target_object_id: _0eb601aa649c40caa3eff35a383049b9

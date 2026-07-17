@@ -1,0 +1,364 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _16070edff1ef4765a963158a3c541a06_on_cabinet_6_at_verify_task_116:
+    original_id: _16070edff1ef4765a963158a3c541a06
+    category: egg
+    usd_path: ${MESATASK_USD_ROOT}/16070edff1ef4765a963158a3c541a06.usd
+    usd_scale:
+    - 193.20513333566353
+    - 193.19403076602322
+    - 192.61724314893632
+    position:
+    - 2.4698195418717335
+    - -1.203985661352902
+    - 0.7848559517692775
+    size:
+    - 0.09356498718261719
+    - 0.11711597442626953
+    - 0.09371191402897239
+  _16070edff1ef4765a963158a3c541a06_on_cabinet_7_at_verify_task_116:
+    original_id: _16070edff1ef4765a963158a3c541a06
+    category: egg
+    usd_path: ${MESATASK_USD_ROOT}/16070edff1ef4765a963158a3c541a06.usd
+    usd_scale:
+    - 193.20513333566353
+    - 193.19403076602322
+    - 192.61724314893632
+    position:
+    - 1.1854908873885168
+    - 1.6568544318564054
+    - 0.9034059543441981
+    size:
+    - 0.09356498718261719
+    - 0.11711597442626953
+    - 0.09371191402897239
+  _16070edff1ef4765a963158a3c541a06_on_cabinet_8_at_verify_task_116:
+    original_id: _16070edff1ef4765a963158a3c541a06
+    category: egg
+    usd_path: ${MESATASK_USD_ROOT}/16070edff1ef4765a963158a3c541a06.usd
+    usd_scale:
+    - 193.20513333566353
+    - 193.19403076602322
+    - 192.61724314893632
+    position:
+    - 4.5040525475430915
+    - 2.9910745673053416
+    - 0.5173559386562556
+    size:
+    - 0.09356498718261719
+    - 0.11711597442626953
+    - 0.09371191402897239
+  _16070edff1ef4765a963158a3c541a06_on_cabinet_9_at_verify_task_116:
+    original_id: _16070edff1ef4765a963158a3c541a06
+    category: egg
+    usd_path: ${MESATASK_USD_ROOT}/16070edff1ef4765a963158a3c541a06.usd
+    usd_scale:
+    - 193.20513333566353
+    - 193.19403076602322
+    - 192.61724314893632
+    position:
+    - 5.970753301412363
+    - 1.304302118711008
+    - 1.0068559546303004
+    size:
+    - 0.09356498718261719
+    - 0.11711597442626953
+    - 0.09371191402897239
+  _16070edff1ef4765a963158a3c541a06_on_cabinet_10_at_verify_task_116:
+    original_id: _16070edff1ef4765a963158a3c541a06
+    category: egg
+    usd_path: ${MESATASK_USD_ROOT}/16070edff1ef4765a963158a3c541a06.usd
+    usd_scale:
+    - 193.20513333566353
+    - 193.19403076602322
+    - 192.61724314893632
+    position:
+    - 3.2527689236005592
+    - -0.591271916483036
+    - 0.5398559470009059
+    size:
+    - 0.09356498718261719
+    - 0.11711597442626953
+    - 0.09371191402897239
+episodes:
+- benchmark_task_id: FDO/verify_task_116
+  family: FDO
+  task_id: verify_task_116
+  episode_idx: 27
+  original_idx: 116
+  benchmark_instruction: Head over to black wood grain nightstand cabinet, fetch an egg, and bring it
+    back to the only electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Head over to black wood grain nightstand cabinet, fetch an egg, and bring it back
+    to the only electriccooker in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _16070edff1ef4765a963158a3c541a06
+      door: false
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _16070edff1ef4765a963158a3c541a06:
+      category: egg
+      usd_path: 16070edff1ef4765a963158a3c541a06.usd
+      size:
+      - 0.09356498718261719
+      - 0.11711597442626953
+      - 0.09371191402897239
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: egg
+  - action: gaze_at
+    args:
+      target_category: egg
+  - action: pick
+    args:
+      target_category: egg
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_6_at_verify_task_116:
+      position:
+      - 2.4698195418717335
+      - -1.203985661352902
+      - 0.7848559517692775
+      furniture: cabinet_6
+      original_id: _16070edff1ef4765a963158a3c541a06
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_7_at_verify_task_116:
+      position:
+      - 1.1854908873885168
+      - 1.6568544318564054
+      - 0.9034059543441981
+      furniture: cabinet_7
+      original_id: _16070edff1ef4765a963158a3c541a06
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_8_at_verify_task_116:
+      position:
+      - 4.5040525475430915
+      - 2.9910745673053416
+      - 0.5173559386562556
+      furniture: cabinet_8
+      original_id: _16070edff1ef4765a963158a3c541a06
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_9_at_verify_task_116:
+      position:
+      - 5.970753301412363
+      - 1.304302118711008
+      - 1.0068559546303004
+      furniture: cabinet_9
+      original_id: _16070edff1ef4765a963158a3c541a06
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_10_at_verify_task_116:
+      position:
+      - 3.2527689236005592
+      - -0.591271916483036
+      - 0.5398559470009059
+      furniture: cabinet_10
+      original_id: _16070edff1ef4765a963158a3c541a06
+  final_positions:
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_6_at_verify_task_116:
+      initial_pos:
+      - 2.4698195418717335
+      - -1.203985661352902
+      - 0.8848559517692774
+      final_pos:
+      - 2.452610969543457
+      - -1.1996281147003174
+      - 0.7592176198959351
+      category: egg
+      original_id: _16070edff1ef4765a963158a3c541a06
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_7_at_verify_task_116:
+      initial_pos:
+      - 1.1854908873885168
+      - 1.6568544318564054
+      - 1.0034059543441982
+      final_pos:
+      - 1.1686599254608154
+      - 1.6616592407226562
+      - 0.8777675628662109
+      category: egg
+      original_id: _16070edff1ef4765a963158a3c541a06
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_8_at_verify_task_116:
+      initial_pos:
+      - 4.5040525475430915
+      - 2.9910745673053416
+      - 0.6173559386562556
+      final_pos:
+      - 4.486876964569092
+      - 2.995461940765381
+      - 0.49171745777130127
+      category: egg
+      original_id: _16070edff1ef4765a963158a3c541a06
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_9_at_verify_task_116:
+      initial_pos:
+      - 5.970753301412363
+      - 1.304302118711008
+      - 1.1068559546303005
+      final_pos:
+      - 5.953856945037842
+      - 1.3091202974319458
+      - 0.9812180399894714
+      category: egg
+      original_id: _16070edff1ef4765a963158a3c541a06
+    _16070edff1ef4765a963158a3c541a06_on_cabinet_10_at_verify_task_116:
+      initial_pos:
+      - 3.2527689236005592
+      - -0.591271916483036
+      - 0.6398559470009059
+      final_pos:
+      - 3.235548496246338
+      - -0.5868945717811584
+      - 0.5142171382904053
+      category: egg
+      original_id: _16070edff1ef4765a963158a3c541a06
+  global_index: 155
+  target_object_id: _16070edff1ef4765a963158a3c541a06

@@ -1,0 +1,305 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0da2d6c0_a4ea_4724_b6fe_38a743925a51_on_table_1_at_verify_task_78:
+    original_id: _0da2d6c0_a4ea_4724_b6fe_38a743925a51
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/0da2d6c0-a4ea-4724-b6fe-38a743925a51.usd
+    usd_scale:
+    - 11.286429535918023
+    - 11.34790253843353
+    - 11.589994443931065
+    position:
+    - -1.6488603814032972
+    - -1.350368013634183
+    - 0.7785040367703187
+    size:
+    - 0.17944812774658203
+    - 0.22415924072265625
+    - 0.029008276673266664
+    detailed_caption: A spiral-bound notebook with a sleek black cover, white pages, and rectangular shape.
+  gen_919b53ee_319b_4c80_bb39_e9abe4717fc3_on_table_1_at_verify_task_78:
+    original_id: gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+    category: binder
+    usd_path: ${MESATASK_USD_ROOT}/gen_919b53ee-319b-4c80-bb39-e9abe4717fc3.usd
+    usd_scale:
+    - 3.2149153584946366
+    - 3.168800216089203
+    - 3.141364799289659
+    position:
+    - -2.714054091705168
+    - -1.1987357233930929
+    - 0.7791823622205993
+    size:
+    - 0.05378532409667969
+    - 0.055950164794921875
+    - 0.030364927573828027
+    detailed_caption: Medium-sized black binder clip with a shiny silver metal handle and rectangular
+      upper surface.
+  c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_table_1_at_verify_task_78:
+    original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/c2f58583-d0fd-4a60-b45e-5bfc4321ea1c.usd
+    usd_scale:
+    - 9.96080179331549
+    - 9.934250012546055
+    - 10.610273543496273
+    position:
+    - -2.5864582664220412
+    - -1.424682400906823
+    - 0.768722351174365
+    size:
+    - 0.14281845092773438
+    - 0.19748306274414062
+    - 0.009444905481359456
+    detailed_caption: White ruled notepad, leather-bound top, perforated edges, rectangular shape, clean
+      lined pages.
+episodes:
+- task_id: verify_task_78
+  episode_idx: 51
+  original_idx: 78
+  benchmark_instruction: Go to the rectangular table, pick up a notebook, then travel to bed with plain
+    white bedding to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to the rectangular table, fetch the a spiral-bound notebook with a sleek
+    black cover, white pages, and rectangular shape, and bring it back to bed with plain white bedding.
+  fuzzy_task_description: Go to the rectangular table, pick up a notebook, then travel to bed with plain
+    white bedding to place it.
+  purpose: notebook
+  purpose_group: notebooks
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0da2d6c0_a4ea_4724_b6fe_38a743925a51
+      - gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+      - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+      - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _0da2d6c0_a4ea_4724_b6fe_38a743925a51
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _0da2d6c0_a4ea_4724_b6fe_38a743925a51:
+      category: notebook
+      detailed_caption: A spiral-bound notebook with a sleek black cover, white pages, and rectangular
+        shape.
+      usd_path: 0da2d6c0-a4ea-4724-b6fe-38a743925a51.usd
+      size:
+      - 0.17944812774658203
+      - 0.22415924072265625
+      - 0.029008276673266664
+  obj_distractors:
+  - gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+  - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+  obj_distractor_meta:
+    gen_919b53ee_319b_4c80_bb39_e9abe4717fc3:
+      category: binder
+      detailed_caption: Medium-sized black binder clip with a shiny silver metal handle and rectangular
+        upper surface.
+      usd_path: gen_919b53ee-319b-4c80-bb39-e9abe4717fc3.usd
+      size:
+      - 0.05378532409667969
+      - 0.055950164794921875
+      - 0.030364927573828027
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c:
+      category: notepad
+      detailed_caption: White ruled notepad, leather-bound top, perforated edges, rectangular shape, clean
+        lined pages.
+      usd_path: c2f58583-d0fd-4a60-b45e-5bfc4321ea1c.usd
+      size:
+      - 0.14281845092773438
+      - 0.19748306274414062
+      - 0.009444905481359456
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: A spiral-bound notebook with a sleek black cover, white pages, and rectangular
+        shape.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: A spiral-bound notebook with a sleek black cover, white pages, and rectangular
+        shape.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: A spiral-bound notebook with a sleek black cover, white pages, and rectangular
+        shape.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  physics_task_description: Head over to the rectangular table, fetch the a spiral-bound notebook with
+    a sleek black cover, white pages, and rectangular shape, and bring it back to bed with plain white
+    bedding.
+  placements:
+    _0da2d6c0_a4ea_4724_b6fe_38a743925a51_on_table_1_at_verify_task_78:
+      position:
+      - -1.6488603814032972
+      - -1.350368013634183
+      - 0.7785040367703187
+      furniture: table_1
+      original_id: _0da2d6c0_a4ea_4724_b6fe_38a743925a51
+    gen_919b53ee_319b_4c80_bb39_e9abe4717fc3_on_table_1_at_verify_task_78:
+      position:
+      - -2.714054091705168
+      - -1.1987357233930929
+      - 0.7791823622205993
+      furniture: table_1
+      original_id: gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_table_1_at_verify_task_78:
+      position:
+      - -2.5864582664220412
+      - -1.424682400906823
+      - 0.768722351174365
+      furniture: table_1
+      original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+  final_positions:
+    _0da2d6c0_a4ea_4724_b6fe_38a743925a51_on_table_1_at_verify_task_78:
+      initial_pos:
+      - -1.6488603814032972
+      - -1.350368013634183
+      - 0.8785040367703186
+      final_pos:
+      - -1.648363709449768
+      - -1.350334644317627
+      - 0.7577281594276428
+      category: notebook
+      original_id: _0da2d6c0_a4ea_4724_b6fe_38a743925a51
+    gen_919b53ee_319b_4c80_bb39_e9abe4717fc3_on_table_1_at_verify_task_78:
+      initial_pos:
+      - -2.714054091705168
+      - -1.1987357233930929
+      - 0.8791823622205993
+      final_pos:
+      - -2.7294952869415283
+      - -1.1830991506576538
+      - 0.7518607378005981
+      category: binder clip
+      original_id: gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_table_1_at_verify_task_78:
+      initial_pos:
+      - -2.5864582664220412
+      - -1.424682400906823
+      - 0.868722351174365
+      final_pos:
+      - -2.5864665508270264
+      - -1.4245613813400269
+      - 0.7473395466804504
+      category: notepad
+      original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+  family: SUL
+  benchmark_task_id: SUL/verify_task_78
+  global_index: 227
+  target_object_id: _0da2d6c0_a4ea_4724_b6fe_38a743925a51

@@ -1,0 +1,385 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0ce234c918ef438c9c919848b137d7ba_on_cabinet_6_at_verify_task_508:
+    original_id: _0ce234c918ef438c9c919848b137d7ba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0ce234c918ef438c9c919848b137d7ba.usd
+    usd_scale:
+    - 0.21267695671131023
+    - 0.2121924462983215
+    - 0.2126520976650876
+    position:
+    - 2.527180893279652
+    - -1.0314751160439912
+    - 0.8055518431169912
+    size:
+    - 0.17091894149780273
+    - 0.20502662658691406
+    - 0.13510369672439992
+    detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+      fluffy surface.
+  _0ce234c918ef438c9c919848b137d7ba_on_cabinet_7_at_verify_task_508:
+    original_id: _0ce234c918ef438c9c919848b137d7ba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0ce234c918ef438c9c919848b137d7ba.usd
+    usd_scale:
+    - 0.21267695671131023
+    - 0.2121924462983215
+    - 0.2126520976650876
+    position:
+    - 0.9099973737961021
+    - 1.669547794945134
+    - 0.9241018456919119
+    size:
+    - 0.17091894149780273
+    - 0.20502662658691406
+    - 0.13510369672439992
+    detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+      fluffy surface.
+  _0ce234c918ef438c9c919848b137d7ba_on_cabinet_8_at_verify_task_508:
+    original_id: _0ce234c918ef438c9c919848b137d7ba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0ce234c918ef438c9c919848b137d7ba.usd
+    usd_scale:
+    - 0.21267695671131023
+    - 0.2121924462983215
+    - 0.2126520976650876
+    position:
+    - 4.510099758848072
+    - 2.9183197887776107
+    - 0.5380518300039694
+    size:
+    - 0.17091894149780273
+    - 0.20502662658691406
+    - 0.13510369672439992
+    detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+      fluffy surface.
+  _0ce234c918ef438c9c919848b137d7ba_on_cabinet_9_at_verify_task_508:
+    original_id: _0ce234c918ef438c9c919848b137d7ba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0ce234c918ef438c9c919848b137d7ba.usd
+    usd_scale:
+    - 0.21267695671131023
+    - 0.2121924462983215
+    - 0.2126520976650876
+    position:
+    - 6.0381044198246485
+    - 1.2535074716603882
+    - 1.0275518459780142
+    size:
+    - 0.17091894149780273
+    - 0.20502662658691406
+    - 0.13510369672439992
+    detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+      fluffy surface.
+  _0ce234c918ef438c9c919848b137d7ba_on_cabinet_10_at_verify_task_508:
+    original_id: _0ce234c918ef438c9c919848b137d7ba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0ce234c918ef438c9c919848b137d7ba.usd
+    usd_scale:
+    - 0.21267695671131023
+    - 0.2121924462983215
+    - 0.2126520976650876
+    position:
+    - 3.2252175465972597
+    - -0.5710262598136155
+    - 0.5605518383486197
+    size:
+    - 0.17091894149780273
+    - 0.20502662658691406
+    - 0.13510369672439992
+    detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+      fluffy surface.
+episodes:
+- task_id: verify_task_508
+  episode_idx: 66
+  original_idx: 508
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to whole-black cabinet with flat base, grasp the soft, plush teddy bear;
+    rounded body, small ears, button-like eyes, light blue, fluffy surface, and carry it to bed with plain
+    white bedding.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _0ce234c918ef438c9c919848b137d7ba:
+      category: teddy bear
+      detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+      usd_path: 0ce234c918ef438c9c919848b137d7ba.usd
+      size:
+      - 0.17091894149780273
+      - 0.20502662658691406
+      - 0.13510369672439992
+  obj_distractors:
+  - _550c42a971ce4208867459ec96251eba
+  - c752c932af1a477a8fd37f6bb0ec5f64
+  obj_distractor_meta:
+    _550c42a971ce4208867459ec96251eba:
+      category: teddy bear
+      detailed_caption: Soft, plush teddy bear with a rounded body, small limbs, circular belly patch,
+        and large ears.
+      usd_path: 550c42a971ce4208867459ec96251eba.usd
+      size:
+      - 0.1518557071685791
+      - 0.18286705017089844
+      - 0.11972041055560112
+    c752c932af1a477a8fd37f6bb0ec5f64:
+      category: teddy bear
+      detailed_caption: Soft brown teddy bear with prominent ears, button eyes, light brown belly patch,
+        round face.
+      usd_path: c752c932af1a477a8fd37f6bb0ec5f64.usd
+      size:
+      - 0.2529454231262207
+      - 0.30280303955078125
+      - 0.20035326946526766
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: gaze_at
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: pick
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  placements:
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_6_at_verify_task_508:
+      position:
+      - 2.527180893279652
+      - -1.0314751160439912
+      - 0.8055518431169912
+      furniture: cabinet_6
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_7_at_verify_task_508:
+      position:
+      - 0.9099973737961021
+      - 1.669547794945134
+      - 0.9241018456919119
+      furniture: cabinet_7
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_8_at_verify_task_508:
+      position:
+      - 4.510099758848072
+      - 2.9183197887776107
+      - 0.5380518300039694
+      furniture: cabinet_8
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_9_at_verify_task_508:
+      position:
+      - 6.0381044198246485
+      - 1.2535074716603882
+      - 1.0275518459780142
+      furniture: cabinet_9
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_10_at_verify_task_508:
+      position:
+      - 3.2252175465972597
+      - -0.5710262598136155
+      - 0.5605518383486197
+      furniture: cabinet_10
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+  final_positions:
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_6_at_verify_task_508:
+      initial_pos:
+      - 2.527180893279652
+      - -1.0314751160439912
+      - 0.9055518431169912
+      final_pos:
+      - 2.5252983570098877
+      - -1.0301851034164429
+      - 0.7810252904891968
+      category: teddy bear
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_7_at_verify_task_508:
+      initial_pos:
+      - 0.9099973737961021
+      - 1.669547794945134
+      - 1.024101845691912
+      final_pos:
+      - 0.908256471157074
+      - 1.6709260940551758
+      - 0.8995747566223145
+      category: teddy bear
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_8_at_verify_task_508:
+      initial_pos:
+      - 4.510099758848072
+      - 2.9183197887776107
+      - 0.6380518300039694
+      final_pos:
+      - 4.508378982543945
+      - 2.9197874069213867
+      - 0.5135246515274048
+      category: teddy bear
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_9_at_verify_task_508:
+      initial_pos:
+      - 6.0381044198246485
+      - 1.2535074716603882
+      - 1.1275518459780143
+      final_pos:
+      - 6.036491394042969
+      - 1.2550266981124878
+      - 1.0030243396759033
+      category: teddy bear
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+    _0ce234c918ef438c9c919848b137d7ba_on_cabinet_10_at_verify_task_508:
+      initial_pos:
+      - 3.2252175465972597
+      - -0.5710262598136155
+      - 0.6605518383486196
+      final_pos:
+      - 3.2233047485351562
+      - -0.5689601302146912
+      - 0.5360245108604431
+      category: teddy bear
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+  family: FDP
+  benchmark_task_id: FDP/verify_task_508
+  benchmark_instruction: Navigate to whole-black cabinet with flat base, grasp the soft, plush teddy bear;
+    rounded body, small ears, button-like eyes, light blue, fluffy surface, and carry it to bed with plain
+    white bedding.
+  global_index: 66
+  target_object_id: _0ce234c918ef438c9c919848b137d7ba

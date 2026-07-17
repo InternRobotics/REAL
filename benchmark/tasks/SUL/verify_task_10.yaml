@@ -1,0 +1,297 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _94a7782580604ae5a81c001c12dcd769_on_table_1_at_verify_task_10:
+    original_id: _94a7782580604ae5a81c001c12dcd769
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/94a7782580604ae5a81c001c12dcd769.usd
+    usd_scale:
+    - 9.070285942391328
+    - 17.272844191095455
+    - 9.962841518613889
+    position:
+    - -1.6682732531248028
+    - -1.3165081156194565
+    - 0.8143894551717676
+    size:
+    - 0.3353691101074219
+    - 0.17069458216428757
+    - 0.10077911347616464
+    detailed_caption: Rectangular tray with sloped sides, central divide, and warm brown rustic material.
+  a135e3e2325448f9aa18797fd9903efc_on_table_1_at_verify_task_10:
+    original_id: a135e3e2325448f9aa18797fd9903efc
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/a135e3e2325448f9aa18797fd9903efc.usd
+    usd_scale:
+    - 0.22490356414178278
+    - 0.22484281145655563
+    - 0.28864291592555186
+    position:
+    - -2.5145053282870142
+    - -1.4042834973138558
+    - 0.7945873448438943
+    size:
+    - 0.24294281005859375
+    - 0.2269287109375
+    - 0.06117489282041788
+    detailed_caption: Decorative bowl with a blue floral design, golden rim, smooth glossy surface, and
+      shallow depth.
+  ebd40b3a66934aa69d847b8e138ab752_on_table_1_at_verify_task_10:
+    original_id: ebd40b3a66934aa69d847b8e138ab752
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/ebd40b3a66934aa69d847b8e138ab752.usd
+    usd_scale:
+    - 65.0386668363353
+    - 65.16417116605194
+    - 61.418770684497886
+    position:
+    - -2.0636284584195774
+    - -1.2626567133260622
+    - 0.8163621274684556
+    size:
+    - 0.19393634796142578
+    - 0.1868886947631836
+    - 0.10472445806954056
+    detailed_caption: Round, shallow bowl with irregular edge, matte finish, rough ceramic, neutral gray
+      colors, textured.
+episodes:
+- task_id: verify_task_10
+  episode_idx: 8
+  original_idx: 10
+  benchmark_instruction: Retrieve a food serving container from the rectangular table and deposit it at
+    the table to place my snack for watching TV.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the rectangular tray with sloped sides, central divide, and warm brown rustic
+    material at the rectangular table to the table to place my snack for watching TV.
+  fuzzy_task_description: Retrieve a food serving container from the rectangular table and deposit it
+    at the table to place my snack for watching TV.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _94a7782580604ae5a81c001c12dcd769
+      - a135e3e2325448f9aa18797fd9903efc
+      - ebd40b3a66934aa69d847b8e138ab752
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - a135e3e2325448f9aa18797fd9903efc
+      - ebd40b3a66934aa69d847b8e138ab752
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _94a7782580604ae5a81c001c12dcd769
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _94a7782580604ae5a81c001c12dcd769:
+      category: tray
+      detailed_caption: Rectangular tray with sloped sides, central divide, and warm brown rustic material.
+      usd_path: 94a7782580604ae5a81c001c12dcd769.usd
+      size:
+      - 0.3353691101074219
+      - 0.17069458216428757
+      - 0.10077911347616464
+  obj_distractors:
+  - a135e3e2325448f9aa18797fd9903efc
+  - ebd40b3a66934aa69d847b8e138ab752
+  obj_distractor_meta:
+    a135e3e2325448f9aa18797fd9903efc:
+      category: bowl
+      detailed_caption: Decorative bowl with a blue floral design, golden rim, smooth glossy surface,
+        and shallow depth.
+      usd_path: a135e3e2325448f9aa18797fd9903efc.usd
+      size:
+      - 0.24294281005859375
+      - 0.2269287109375
+      - 0.06117489282041788
+    ebd40b3a66934aa69d847b8e138ab752:
+      category: bowl
+      detailed_caption: Round, shallow bowl with irregular edge, matte finish, rough ceramic, neutral
+        gray colors, textured.
+      usd_path: ebd40b3a66934aa69d847b8e138ab752.usd
+      size:
+      - 0.19393634796142578
+      - 0.1868886947631836
+      - 0.10472445806954056
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular tray with sloped sides, central divide, and warm brown rustic material.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular tray with sloped sides, central divide, and warm brown rustic material.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular tray with sloped sides, central divide, and warm brown rustic material.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  physics_task_description: Transport the rectangular tray with sloped sides, central divide, and warm
+    brown rustic material at the rectangular table to the table to place my snack for watching TV.
+  placements:
+    _94a7782580604ae5a81c001c12dcd769_on_table_1_at_verify_task_10:
+      position:
+      - -1.6682732531248028
+      - -1.3165081156194565
+      - 0.8143894551717676
+      furniture: table_1
+      original_id: _94a7782580604ae5a81c001c12dcd769
+    a135e3e2325448f9aa18797fd9903efc_on_table_1_at_verify_task_10:
+      position:
+      - -2.5145053282870142
+      - -1.4042834973138558
+      - 0.7945873448438943
+      furniture: table_1
+      original_id: a135e3e2325448f9aa18797fd9903efc
+    ebd40b3a66934aa69d847b8e138ab752_on_table_1_at_verify_task_10:
+      position:
+      - -2.0636284584195774
+      - -1.2626567133260622
+      - 0.8163621274684556
+      furniture: table_1
+      original_id: ebd40b3a66934aa69d847b8e138ab752
+  final_positions:
+    _94a7782580604ae5a81c001c12dcd769_on_table_1_at_verify_task_10:
+      initial_pos:
+      - -1.6682732531248028
+      - -1.3165081156194565
+      - 0.9143894551717676
+      final_pos:
+      - -1.6682921648025513
+      - -1.31680428981781
+      - 0.7939636707305908
+      category: tray
+      original_id: _94a7782580604ae5a81c001c12dcd769
+    a135e3e2325448f9aa18797fd9903efc_on_table_1_at_verify_task_10:
+      initial_pos:
+      - -2.5145053282870142
+      - -1.4042834973138558
+      - 0.8945873448438942
+      final_pos:
+      - -2.5153021812438965
+      - -1.5608277320861816
+      - 0.7667334079742432
+      category: bowl
+      original_id: a135e3e2325448f9aa18797fd9903efc
+    ebd40b3a66934aa69d847b8e138ab752_on_table_1_at_verify_task_10:
+      initial_pos:
+      - -2.0636284584195774
+      - -1.2626567133260622
+      - 0.9163621274684556
+      final_pos:
+      - -2.078209161758423
+      - -1.3500617742538452
+      - 0.7875949144363403
+      category: bowl
+      original_id: ebd40b3a66934aa69d847b8e138ab752
+  family: SUL
+  benchmark_task_id: SUL/verify_task_10
+  global_index: 184
+  target_object_id: _94a7782580604ae5a81c001c12dcd769

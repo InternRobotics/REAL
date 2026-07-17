@@ -1,0 +1,8 @@
+-r requirements.txt
+
+# Install a CUDA-compatible PyTorch build for the target machine separately.
+# accelerate enables automatic/sharded placement; single-device loading has a
+# built-in fallback when accelerate is unavailable.
+accelerate
+peft
+transformers

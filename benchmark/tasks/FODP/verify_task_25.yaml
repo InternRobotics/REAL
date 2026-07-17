@@ -1,0 +1,339 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_1_at_verify_task_25:
+    original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/5f528103-90e2-4a1b-9693-7b3805f796db.usd
+    usd_scale:
+    - 12.415322090227361
+    - 12.565136342225646
+    - 12.606095137356798
+    position:
+    - -2.2014374622661768
+    - -1.3385905016577997
+    - 0.8162541435845196
+    size:
+    - 0.254540029913187
+    - 0.20325279235839844
+    - 0.10450849030166864
+    detailed_caption: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+      and small legs.
+  _99ca0cd55e234273a589ebaceb5f0c93_on_table_1_at_verify_task_25:
+    original_id: _99ca0cd55e234273a589ebaceb5f0c93
+    category: watch
+    usd_path: ${MESATASK_USD_ROOT}/99ca0cd55e234273a589ebaceb5f0c93.usd
+    usd_scale:
+    - 1.4988199930187485
+    - 1.2922116303420523
+    - 1.7072979618623239
+    position:
+    - -2.3922098614142158
+    - -1.0379237277628603
+    - 0.8005975051596761
+    size:
+    - 0.11234092712402344
+    - 0.09805679321289062
+    - 0.07319521345198154
+    detailed_caption: Sleek silver wristwatch with a round face, black dial, and metallic link band.
+  _73c023c90f8d45fb88294bccade836c0_on_table_1_at_verify_task_25:
+    original_id: _73c023c90f8d45fb88294bccade836c0
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/73c023c90f8d45fb88294bccade836c0.usd
+    usd_scale:
+    - 0.5480286971415117
+    - 0.5448382508390787
+    - 0.5460125183032325
+    position:
+    - -1.7732611952519581
+    - -1.1890236554669833
+    - 0.7923387393634767
+    size:
+    - 0.10976600646972656
+    - 0.1682281494140625
+    - 0.05667768185958266
+    detailed_caption: Round metal body, clear glass face, two bells, black finish, short legs.
+  _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_2_at_verify_task_25:
+    original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/5f528103-90e2-4a1b-9693-7b3805f796db.usd
+    usd_scale:
+    - 12.415322090227361
+    - 12.565136342225646
+    - 12.606095137356798
+    position:
+    - -1.8980599820647583
+    - 2.86212265312421
+    - 0.34224224554374816
+    size:
+    - 0.254540029913187
+    - 0.20325279235839844
+    - 0.10450849030166864
+    detailed_caption: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+      and small legs.
+episodes:
+- benchmark_task_id: FODP/verify_task_25
+  family: FODP
+  task_id: verify_task_25
+  episode_idx: 16
+  original_idx: 25
+  benchmark_instruction: Move the vintage alarm clock with a rounded metallic body, worn brass finish,
+    white face, and small legs located at the rectangular table to white cabinet with yellow shelf back.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the vintage alarm clock with a rounded metallic body, worn brass finish, white
+    face, and small legs located at the rectangular table to white cabinet with yellow shelf back.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _5f528103_90e2_4a1b_9693_7b3805f796db
+      - _99ca0cd55e234273a589ebaceb5f0c93
+      - _73c023c90f8d45fb88294bccade836c0
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _5f528103_90e2_4a1b_9693_7b3805f796db
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _99ca0cd55e234273a589ebaceb5f0c93
+      - _73c023c90f8d45fb88294bccade836c0
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _5f528103_90e2_4a1b_9693_7b3805f796db
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _5f528103_90e2_4a1b_9693_7b3805f796db
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _5f528103_90e2_4a1b_9693_7b3805f796db:
+      category: clock
+      detailed_caption: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+      usd_path: 5f528103-90e2-4a1b-9693-7b3805f796db.usd
+      size:
+      - 0.254540029913187
+      - 0.20325279235839844
+      - 0.10450849030166864
+  obj_distractors:
+  - _99ca0cd55e234273a589ebaceb5f0c93
+  - _73c023c90f8d45fb88294bccade836c0
+  obj_distractor_meta:
+    _99ca0cd55e234273a589ebaceb5f0c93:
+      category: watch
+      detailed_caption: Sleek silver wristwatch with a round face, black dial, and metallic link band.
+      usd_path: 99ca0cd55e234273a589ebaceb5f0c93.usd
+      size:
+      - 0.11234092712402344
+      - 0.09805679321289062
+      - 0.07319521345198154
+    _73c023c90f8d45fb88294bccade836c0:
+      category: clock
+      detailed_caption: Round metal body, clear glass face, two bells, black finish, short legs.
+      usd_path: 73c023c90f8d45fb88294bccade836c0.usd
+      size:
+      - 0.10976600646972656
+      - 0.1682281494140625
+      - 0.05667768185958266
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  placements:
+    _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_1_at_verify_task_25:
+      position:
+      - -2.2014374622661768
+      - -1.3385905016577997
+      - 0.8162541435845196
+      furniture: table_1
+      original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+    _99ca0cd55e234273a589ebaceb5f0c93_on_table_1_at_verify_task_25:
+      position:
+      - -2.3922098614142158
+      - -1.0379237277628603
+      - 0.8005975051596761
+      furniture: table_1
+      original_id: _99ca0cd55e234273a589ebaceb5f0c93
+    _73c023c90f8d45fb88294bccade836c0_on_table_1_at_verify_task_25:
+      position:
+      - -1.7732611952519581
+      - -1.1890236554669833
+      - 0.7923387393634767
+      furniture: table_1
+      original_id: _73c023c90f8d45fb88294bccade836c0
+    _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_2_at_verify_task_25:
+      position:
+      - -1.8980599820647583
+      - 2.86212265312421
+      - 0.34224224554374816
+      furniture: table_2
+      original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+  final_positions:
+    _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_1_at_verify_task_25:
+      initial_pos:
+      - -2.2014374622661768
+      - -1.3385905016577997
+      - 0.9162541435845196
+      final_pos:
+      - -2.07863187789917
+      - -1.343493103981018
+      - 0.783449649810791
+      category: clock
+      original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+    _99ca0cd55e234273a589ebaceb5f0c93_on_table_1_at_verify_task_25:
+      initial_pos:
+      - -2.3922098614142158
+      - -1.0379237277628603
+      - 0.9005975051596761
+      final_pos:
+      - -2.358837127685547
+      - -1.1400812864303589
+      - 0.7639551758766174
+      category: watch
+      original_id: _99ca0cd55e234273a589ebaceb5f0c93
+    _73c023c90f8d45fb88294bccade836c0_on_table_1_at_verify_task_25:
+      initial_pos:
+      - -1.7732611952519581
+      - -1.1890236554669833
+      - 0.8923387393634766
+      final_pos:
+      - -1.773592472076416
+      - -1.1978784799575806
+      - 0.7703091502189636
+      category: clock
+      original_id: _73c023c90f8d45fb88294bccade836c0
+    _5f528103_90e2_4a1b_9693_7b3805f796db_on_table_2_at_verify_task_25:
+      initial_pos:
+      - -1.8980599820647583
+      - 2.86212265312421
+      - 0.44224224554374814
+      final_pos:
+      - -1.780832290649414
+      - 2.858971357345581
+      - 0.3094378709793091
+      category: clock
+      original_id: _5f528103_90e2_4a1b_9693_7b3805f796db
+  global_index: 88
+  target_object_id: _5f528103_90e2_4a1b_9693_7b3805f796db

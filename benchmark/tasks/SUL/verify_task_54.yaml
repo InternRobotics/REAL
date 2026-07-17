@@ -1,0 +1,319 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _6376baa9579e4e2b9328a41b4cc0ee3d_on_table_1_at_verify_task_54:
+    original_id: _6376baa9579e4e2b9328a41b4cc0ee3d
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/6376baa9579e4e2b9328a41b4cc0ee3d.usd
+    usd_scale:
+    - 4.234113080678218
+    - 4.236371662877019
+    - 4.229367853487212
+    position:
+    - -2.146575885446424
+    - -1.1419290195197875
+    - 0.8864578264579177
+    size:
+    - 0.2508087158203125
+    - 0.14803695678710938
+    - 0.24491585604846478
+    detailed_caption: A round woven basket with two handles, featuring a natural texture and lightweight
+      appearance.
+  _81dc088e5036400c80862f6815c8a3c8_on_table_1_at_verify_task_54:
+    original_id: _81dc088e5036400c80862f6815c8a3c8
+    category: jar
+    usd_path: ${MESATASK_USD_ROOT}/81dc088e5036400c80862f6815c8a3c8.usd
+    usd_scale:
+    - 318.2839423131075
+    - 320.230736491907
+    - 366.0816994716545
+    position:
+    - -1.6509164386966557
+    - -1.2814431315680648
+    - 0.8395561589673162
+    size:
+    - 0.1313934326171875
+    - 0.1638317108154297
+    - 0.1511125210672617
+    detailed_caption: Cylindrical container with a black lid, chalkboard design, smooth surface, minimalist
+      appearance.
+  f834c1621eeb43b6997e396025b8b1f5_on_table_1_at_verify_task_54:
+    original_id: f834c1621eeb43b6997e396025b8b1f5
+    category: wooden box
+    usd_path: ${MESATASK_USD_ROOT}/f834c1621eeb43b6997e396025b8b1f5.usd
+    usd_scale:
+    - 2.3405859210045636
+    - 2.2883336243100008
+    - 2.4482608283486282
+    position:
+    - -2.579851107396631
+    - -1.112094658800955
+    - 0.8558103602705569
+    size:
+    - 0.2703753709793091
+    - 0.093231201171875
+    - 0.18362092367374316
+    detailed_caption: Rectangular wooden box with a smooth finish, light color, darker accents, decorative
+      lid design.
+episodes:
+- task_id: verify_task_54
+  episode_idx: 39
+  original_idx: 54
+  benchmark_instruction: Retrieve a storage container from the table much larger than another one and
+    deposit it at white cabinet with yellow shelf back.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the a round woven basket with two handles, featuring a natural texture and
+    lightweight appearance at the table much larger than another one to white cabinet with yellow shelf
+    back.
+  fuzzy_task_description: Retrieve a storage container from the table much larger than another one and
+    deposit it at white cabinet with yellow shelf back.
+  purpose: storage container
+  purpose_group: storage_containers
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _6376baa9579e4e2b9328a41b4cc0ee3d
+      - _81dc088e5036400c80862f6815c8a3c8
+      - f834c1621eeb43b6997e396025b8b1f5
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _81dc088e5036400c80862f6815c8a3c8
+      - f834c1621eeb43b6997e396025b8b1f5
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _6376baa9579e4e2b9328a41b4cc0ee3d
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _6376baa9579e4e2b9328a41b4cc0ee3d:
+      category: basket
+      detailed_caption: A round woven basket with two handles, featuring a natural texture and lightweight
+        appearance.
+      usd_path: 6376baa9579e4e2b9328a41b4cc0ee3d.usd
+      size:
+      - 0.2508087158203125
+      - 0.14803695678710938
+      - 0.24491585604846478
+  obj_distractors:
+  - _81dc088e5036400c80862f6815c8a3c8
+  - f834c1621eeb43b6997e396025b8b1f5
+  obj_distractor_meta:
+    _81dc088e5036400c80862f6815c8a3c8:
+      category: jar
+      detailed_caption: Cylindrical container with a black lid, chalkboard design, smooth surface, minimalist
+        appearance.
+      usd_path: 81dc088e5036400c80862f6815c8a3c8.usd
+      size:
+      - 0.1313934326171875
+      - 0.1638317108154297
+      - 0.1511125210672617
+    f834c1621eeb43b6997e396025b8b1f5:
+      category: wooden box
+      detailed_caption: Rectangular wooden box with a smooth finish, light color, darker accents, decorative
+        lid design.
+      usd_path: f834c1621eeb43b6997e396025b8b1f5.usd
+      size:
+      - 0.2703753709793091
+      - 0.093231201171875
+      - 0.18362092367374316
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: basket
+      target_description: A round woven basket with two handles, featuring a natural texture and lightweight
+        appearance.
+  - action: gaze_at
+    args:
+      target_category: basket
+      target_description: A round woven basket with two handles, featuring a natural texture and lightweight
+        appearance.
+  - action: pick
+    args:
+      target_category: basket
+      target_description: A round woven basket with two handles, featuring a natural texture and lightweight
+        appearance.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  physics_task_description: Transport the a round woven basket with two handles, featuring a natural texture
+    and lightweight appearance at the table much larger than another one to white cabinet with yellow
+    shelf back.
+  placements:
+    _6376baa9579e4e2b9328a41b4cc0ee3d_on_table_1_at_verify_task_54:
+      position:
+      - -2.146575885446424
+      - -1.1419290195197875
+      - 0.8864578264579177
+      furniture: table_1
+      original_id: _6376baa9579e4e2b9328a41b4cc0ee3d
+    _81dc088e5036400c80862f6815c8a3c8_on_table_1_at_verify_task_54:
+      position:
+      - -1.6509164386966557
+      - -1.2814431315680648
+      - 0.8395561589673162
+      furniture: table_1
+      original_id: _81dc088e5036400c80862f6815c8a3c8
+    f834c1621eeb43b6997e396025b8b1f5_on_table_1_at_verify_task_54:
+      position:
+      - -2.579851107396631
+      - -1.112094658800955
+      - 0.8558103602705569
+      furniture: table_1
+      original_id: f834c1621eeb43b6997e396025b8b1f5
+  final_positions:
+    _6376baa9579e4e2b9328a41b4cc0ee3d_on_table_1_at_verify_task_54:
+      initial_pos:
+      - -2.146575885446424
+      - -1.1419290195197875
+      - 0.9864578264579177
+      final_pos:
+      - -2.1546430587768555
+      - -1.146524429321289
+      - 0.8597329258918762
+      category: basket
+      original_id: _6376baa9579e4e2b9328a41b4cc0ee3d
+    _81dc088e5036400c80862f6815c8a3c8_on_table_1_at_verify_task_54:
+      initial_pos:
+      - -1.6509164386966557
+      - -1.2814431315680648
+      - 0.9395561589673161
+      final_pos:
+      - -1.7717578411102295
+      - -1.2864629030227661
+      - 0.8077282905578613
+      category: container
+      original_id: _81dc088e5036400c80862f6815c8a3c8
+    f834c1621eeb43b6997e396025b8b1f5_on_table_1_at_verify_task_54:
+      initial_pos:
+      - -2.579851107396631
+      - -1.112094658800955
+      - 0.9558103602705569
+      final_pos:
+      - -2.5795607566833496
+      - -1.1111936569213867
+      - 0.8357793092727661
+      category: wooden box
+      original_id: f834c1621eeb43b6997e396025b8b1f5
+  family: SUL
+  benchmark_task_id: SUL/verify_task_54
+  global_index: 215
+  target_object_id: _6376baa9579e4e2b9328a41b4cc0ee3d

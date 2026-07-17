@@ -1,0 +1,262 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _09533e32ffec46ebb63b0910a7206a75_on_table_1_at_verify_task_194:
+    original_id: _09533e32ffec46ebb63b0910a7206a75
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/09533e32ffec46ebb63b0910a7206a75.usd
+    usd_scale:
+    - 0.21515694956848613
+    - 0.22561604634868976
+    - 0.21809257774900206
+    position:
+    - -1.731450944675672
+    - -1.4565127462061913
+    - 0.8188303063903004
+    size:
+    - 0.14359580539166927
+    - 0.2441387176513672
+    - 0.10966081591323018
+    detailed_caption: Small white dog figurine, seated, smooth surface, slight texturing, realistic proportions,
+      upright posture.
+  _09533e32ffec46ebb63b0910a7206a75_on_table_2_at_verify_task_194:
+    original_id: _09533e32ffec46ebb63b0910a7206a75
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/09533e32ffec46ebb63b0910a7206a75.usd
+    usd_scale:
+    - 0.21515694956848613
+    - 0.22561604634868976
+    - 0.21809257774900206
+    position:
+    - -1.986443559974098
+    - 3.1030586089414713
+    - 0.3448184083495289
+    size:
+    - 0.14359580539166927
+    - 0.2441387176513672
+    - 0.10966081591323018
+    detailed_caption: Small white dog figurine, seated, smooth surface, slight texturing, realistic proportions,
+      upright posture.
+episodes:
+- task_id: verify_task_194
+  episode_idx: 43
+  original_idx: 194
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the small white dog figurine, seated, smooth surface, slight texturing, realistic
+    proportions, upright posture from the rounded rectangular table and deposit it at the desk with black
+    handle.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _09533e32ffec46ebb63b0910a7206a75
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _09533e32ffec46ebb63b0910a7206a75
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _09533e32ffec46ebb63b0910a7206a75
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _09533e32ffec46ebb63b0910a7206a75:
+      category: figurine
+      detailed_caption: Small white dog figurine, seated, smooth surface, slight texturing, realistic
+        proportions, upright posture.
+      usd_path: 09533e32ffec46ebb63b0910a7206a75.usd
+      size:
+      - 0.14359580539166927
+      - 0.2441387176513672
+      - 0.10966081591323018
+  obj_distractors:
+  - _59c9ae5b7a04431ca6f3997c4b405bca
+  - _0df095c0471b45c48f67baa440714e8d
+  obj_distractor_meta:
+    _59c9ae5b7a04431ca6f3997c4b405bca:
+      category: figurine
+      detailed_caption: Small decorative figurine resembling a seated figure with exaggerated facial features
+        and textured stone-like surface.
+      usd_path: 59c9ae5b7a04431ca6f3997c4b405bca.usd
+      size:
+      - 0.10097503662109375
+      - 0.1988058090209961
+      - 0.09567428263835609
+    _0df095c0471b45c48f67baa440714e8d:
+      category: figurine
+      detailed_caption: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression,
+        rounded body, curled tail.
+      usd_path: 0df095c0471b45c48f67baa440714e8d.usd
+      size:
+      - 0.14583587646484375
+      - 0.240814208984375
+      - 0.15583013533614576
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Small white dog figurine, seated, smooth surface, slight texturing, realistic
+        proportions, upright posture.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Small white dog figurine, seated, smooth surface, slight texturing, realistic
+        proportions, upright posture.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Small white dog figurine, seated, smooth surface, slight texturing, realistic
+        proportions, upright posture.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    _09533e32ffec46ebb63b0910a7206a75_on_table_1_at_verify_task_194:
+      position:
+      - -1.731450944675672
+      - -1.4565127462061913
+      - 0.8188303063903004
+      furniture: table_1
+      original_id: _09533e32ffec46ebb63b0910a7206a75
+    _09533e32ffec46ebb63b0910a7206a75_on_table_2_at_verify_task_194:
+      position:
+      - -1.986443559974098
+      - 3.1030586089414713
+      - 0.3448184083495289
+      furniture: table_2
+      original_id: _09533e32ffec46ebb63b0910a7206a75
+  final_positions:
+    _09533e32ffec46ebb63b0910a7206a75_on_table_1_at_verify_task_194:
+      initial_pos:
+      - -1.731450944675672
+      - -1.4565127462061913
+      - 0.9188303063903004
+      final_pos:
+      - -1.6777136325836182
+      - -1.4500657320022583
+      - 0.7961366772651672
+      category: figurine
+      original_id: _09533e32ffec46ebb63b0910a7206a75
+    _09533e32ffec46ebb63b0910a7206a75_on_table_2_at_verify_task_194:
+      initial_pos:
+      - -1.986443559974098
+      - 3.1030586089414713
+      - 0.4448184083495289
+      final_pos:
+      - -1.9351471662521362
+      - 3.1151933670043945
+      - 0.3221243619918823
+      category: figurine
+      original_id: _09533e32ffec46ebb63b0910a7206a75
+  family: FDP
+  benchmark_task_id: FDP/verify_task_194
+  benchmark_instruction: Retrieve the small white dog figurine, seated, smooth surface, slight texturing,
+    realistic proportions, upright posture from the rounded rectangular table and deposit it at the desk
+    with black handle.
+  global_index: 43
+  target_object_id: _09533e32ffec46ebb63b0910a7206a75

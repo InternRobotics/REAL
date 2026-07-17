@@ -1,0 +1,254 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _2d89f86c5af845abacec24b6203c873a_on_table_1_at_verify_task_174:
+    original_id: _2d89f86c5af845abacec24b6203c873a
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/2d89f86c5af845abacec24b6203c873a.usd
+    usd_scale:
+    - 693.3133095998618
+    - 534.0302537063125
+    - 242.2282353231856
+    position:
+    - -1.938078982519815
+    - -1.4083967879806312
+    - 0.7920552096143365
+    size:
+    - 0.268707275390625
+    - 0.2504463195800781
+    - 0.056110622361302376
+    detailed_caption: Colorful book with a black cover and turquoise circles, flat design.
+  _2d89f86c5af845abacec24b6203c873a_on_table_2_at_verify_task_174:
+    original_id: _2d89f86c5af845abacec24b6203c873a
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/2d89f86c5af845abacec24b6203c873a.usd
+    usd_scale:
+    - 693.3133095998618
+    - 534.0302537063125
+    - 242.2282353231856
+    position:
+    - -2.1690281036999024
+    - 2.559847300664298
+    - 0.318043311573565
+    size:
+    - 0.268707275390625
+    - 0.2504463195800781
+    - 0.056110622361302376
+    detailed_caption: Colorful book with a black cover and turquoise circles, flat design.
+episodes:
+- task_id: verify_task_174
+  episode_idx: 34
+  original_idx: 174
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to the table much smaller than another one, grasp the colorful book with
+    a black cover and turquoise circles, flat design, and carry it to bed with plain white bedding.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _2d89f86c5af845abacec24b6203c873a
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _2d89f86c5af845abacec24b6203c873a
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _2d89f86c5af845abacec24b6203c873a
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _2d89f86c5af845abacec24b6203c873a:
+      category: book
+      detailed_caption: Colorful book with a black cover and turquoise circles, flat design.
+      usd_path: 2d89f86c5af845abacec24b6203c873a.usd
+      size:
+      - 0.268707275390625
+      - 0.2504463195800781
+      - 0.056110622361302376
+  obj_distractors:
+  - _0e1b2ad0b24645e1a390a0b3e97f801a
+  - f195dede7ec64824a73bbb40c3ad8295
+  obj_distractor_meta:
+    _0e1b2ad0b24645e1a390a0b3e97f801a:
+      category: magazine
+      detailed_caption: Vibrant, multi-colored, ornate cover, elegant title on spine, rectangular shape,
+        smooth finish.
+      usd_path: 0e1b2ad0b24645e1a390a0b3e97f801a.usd
+      size:
+      - 0.2143383026123047
+      - 0.06500244140625
+      - 0.29991937159502413
+    f195dede7ec64824a73bbb40c3ad8295:
+      category: book
+      detailed_caption: Closed book, rectangular shape, sturdy cover, embossed gold lettering, textured
+        spine, multiple pages, classic look.
+      usd_path: f195dede7ec64824a73bbb40c3ad8295.usd
+      size:
+      - 0.20955657958984375
+      - 0.07516670227050781
+      - 0.26801615715032767
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: book
+      target_description: Colorful book with a black cover and turquoise circles, flat design.
+  - action: gaze_at
+    args:
+      target_category: book
+      target_description: Colorful book with a black cover and turquoise circles, flat design.
+  - action: pick
+    args:
+      target_category: book
+      target_description: Colorful book with a black cover and turquoise circles, flat design.
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  placements:
+    _2d89f86c5af845abacec24b6203c873a_on_table_1_at_verify_task_174:
+      position:
+      - -1.938078982519815
+      - -1.4083967879806312
+      - 0.7920552096143365
+      furniture: table_1
+      original_id: _2d89f86c5af845abacec24b6203c873a
+    _2d89f86c5af845abacec24b6203c873a_on_table_2_at_verify_task_174:
+      position:
+      - -2.1690281036999024
+      - 2.559847300664298
+      - 0.318043311573565
+      furniture: table_2
+      original_id: _2d89f86c5af845abacec24b6203c873a
+  final_positions:
+    _2d89f86c5af845abacec24b6203c873a_on_table_1_at_verify_task_174:
+      initial_pos:
+      - -1.938078982519815
+      - -1.4083967879806312
+      - 0.8920552096143365
+      final_pos:
+      - -1.9595662355422974
+      - -1.423660397529602
+      - 0.7546778917312622
+      category: book
+      original_id: _2d89f86c5af845abacec24b6203c873a
+    _2d89f86c5af845abacec24b6203c873a_on_table_2_at_verify_task_174:
+      initial_pos:
+      - -2.1690281036999024
+      - 2.559847300664298
+      - 0.418043311573565
+      final_pos:
+      - -2.1934683322906494
+      - 2.545095205307007
+      - 0.2806661128997803
+      category: book
+      original_id: _2d89f86c5af845abacec24b6203c873a
+  family: FDP
+  benchmark_task_id: FDP/verify_task_174
+  benchmark_instruction: Navigate to the table much smaller than another one, grasp the colorful book
+    with a black cover and turquoise circles, flat design, and carry it to bed with plain white bedding.
+  global_index: 34
+  target_object_id: _2d89f86c5af845abacec24b6203c873a

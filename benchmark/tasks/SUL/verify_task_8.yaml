@@ -1,0 +1,307 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _87da4f1a_4947_4201_a8be_ae1946bc6b6e_on_table_1_at_verify_task_8:
+    original_id: _87da4f1a_4947_4201_a8be_ae1946bc6b6e
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/87da4f1a-4947-4201-a8be-ae1946bc6b6e.usd
+    usd_scale:
+    - 22.0801314409725
+    - 25.97567388963519
+    - 24.09628904366464
+    position:
+    - -2.8630384650981164
+    - -1.4760924605280332
+    - 0.7881034703564365
+    size:
+    - 0.4388427734375
+    - 0.2674856185913086
+    - 0.04820714384550229
+    detailed_caption: Rectangular wooden tray with polished finish, contrasting leather pad, raised edges,
+      modern aesthetic.
+  c15f713a9c5f41e7a3ee46ee5e60a872_on_table_1_at_verify_task_8:
+    original_id: c15f713a9c5f41e7a3ee46ee5e60a872
+    category: saucer
+    usd_path: ${MESATASK_USD_ROOT}/c15f713a9c5f41e7a3ee46ee5e60a872.usd
+    usd_scale:
+    - 8.13047510459629
+    - 11.231002257081814
+    - 5.595915293870926
+    position:
+    - -1.9767758653492231
+    - -1.3477713093429489
+    - 0.8109425253747031
+    size:
+    - 0.1930379867553711
+    - 0.266998291015625
+    - 0.09388525388203561
+    detailed_caption: Delicate porcelain cup and saucer; rounded shape, vintage pink and white floral
+      pattern, glossy finish.
+  _5769ce1d4c964e1ca60486df01d87968_on_table_1_at_verify_task_8:
+    original_id: _5769ce1d4c964e1ca60486df01d87968
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/5769ce1d4c964e1ca60486df01d87968.usd
+    usd_scale:
+    - 0.896308022554342
+    - 0.8965985019491136
+    - 0.7778625999398195
+    position:
+    - -2.299968507813383
+    - -1.0729743242920855
+    - 0.8481483864411712
+    size:
+    - 0.2069244384765625
+    - 0.1654644012451172
+    - 0.16829697601497173
+    detailed_caption: Smooth, shallow bowl with a wide rim, slightly concave base, creamy ceramic, speckled
+      pattern, glazed finish.
+episodes:
+- task_id: verify_task_8
+  episode_idx: 6
+  original_idx: 8
+  benchmark_instruction: Pick up a food serving container from the rectangular table and place it on the
+    table much smaller than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the rectangular wooden tray with polished finish, contrasting leather pad,
+    raised edges, modern aesthetic from the rectangular table and place it on the table much smaller than
+    another one.
+  fuzzy_task_description: Pick up a food serving container from the rectangular table and place it on
+    the table much smaller than another one.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _87da4f1a_4947_4201_a8be_ae1946bc6b6e
+      - c15f713a9c5f41e7a3ee46ee5e60a872
+      - _5769ce1d4c964e1ca60486df01d87968
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - c15f713a9c5f41e7a3ee46ee5e60a872
+      - _5769ce1d4c964e1ca60486df01d87968
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _87da4f1a_4947_4201_a8be_ae1946bc6b6e
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _87da4f1a_4947_4201_a8be_ae1946bc6b6e:
+      category: tray
+      detailed_caption: Rectangular wooden tray with polished finish, contrasting leather pad, raised
+        edges, modern aesthetic.
+      usd_path: 87da4f1a-4947-4201-a8be-ae1946bc6b6e.usd
+      size:
+      - 0.4388427734375
+      - 0.2674856185913086
+      - 0.04820714384550229
+  obj_distractors:
+  - c15f713a9c5f41e7a3ee46ee5e60a872
+  - _5769ce1d4c964e1ca60486df01d87968
+  obj_distractor_meta:
+    c15f713a9c5f41e7a3ee46ee5e60a872:
+      category: saucer
+      detailed_caption: Delicate porcelain cup and saucer; rounded shape, vintage pink and white floral
+        pattern, glossy finish.
+      usd_path: c15f713a9c5f41e7a3ee46ee5e60a872.usd
+      size:
+      - 0.1930379867553711
+      - 0.266998291015625
+      - 0.09388525388203561
+    _5769ce1d4c964e1ca60486df01d87968:
+      category: bowl
+      detailed_caption: Smooth, shallow bowl with a wide rim, slightly concave base, creamy ceramic, speckled
+        pattern, glazed finish.
+      usd_path: 5769ce1d4c964e1ca60486df01d87968.usd
+      size:
+      - 0.2069244384765625
+      - 0.1654644012451172
+      - 0.16829697601497173
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with polished finish, contrasting leather pad, raised
+        edges, modern aesthetic.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with polished finish, contrasting leather pad, raised
+        edges, modern aesthetic.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with polished finish, contrasting leather pad, raised
+        edges, modern aesthetic.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  physics_task_description: Pick up the rectangular wooden tray with polished finish, contrasting leather
+    pad, raised edges, modern aesthetic from the rectangular table and place it on the table much smaller
+    than another one.
+  placements:
+    _87da4f1a_4947_4201_a8be_ae1946bc6b6e_on_table_1_at_verify_task_8:
+      position:
+      - -2.8630384650981164
+      - -1.4760924605280332
+      - 0.7881034703564365
+      furniture: table_1
+      original_id: _87da4f1a_4947_4201_a8be_ae1946bc6b6e
+    c15f713a9c5f41e7a3ee46ee5e60a872_on_table_1_at_verify_task_8:
+      position:
+      - -1.9767758653492231
+      - -1.3477713093429489
+      - 0.8109425253747031
+      furniture: table_1
+      original_id: c15f713a9c5f41e7a3ee46ee5e60a872
+    _5769ce1d4c964e1ca60486df01d87968_on_table_1_at_verify_task_8:
+      position:
+      - -2.299968507813383
+      - -1.0729743242920855
+      - 0.8481483864411712
+      furniture: table_1
+      original_id: _5769ce1d4c964e1ca60486df01d87968
+  final_positions:
+    _87da4f1a_4947_4201_a8be_ae1946bc6b6e_on_table_1_at_verify_task_8:
+      initial_pos:
+      - -2.8630384650981164
+      - -1.4760924605280332
+      - 0.8881034703564364
+      final_pos:
+      - -2.863041639328003
+      - -1.4761347770690918
+      - 0.7667825222015381
+      category: tray
+      original_id: _87da4f1a_4947_4201_a8be_ae1946bc6b6e
+    c15f713a9c5f41e7a3ee46ee5e60a872_on_table_1_at_verify_task_8:
+      initial_pos:
+      - -1.9767758653492231
+      - -1.3477713093429489
+      - 0.9109425253747031
+      final_pos:
+      - -1.9733691215515137
+      - -1.352756381034851
+      - 0.7856215834617615
+      category: saucer
+      original_id: c15f713a9c5f41e7a3ee46ee5e60a872
+    _5769ce1d4c964e1ca60486df01d87968_on_table_1_at_verify_task_8:
+      initial_pos:
+      - -2.299968507813383
+      - -1.0729743242920855
+      - 0.9481483864411712
+      final_pos:
+      - -2.2996392250061035
+      - -1.093675136566162
+      - 0.8064733147621155
+      category: bowl
+      original_id: _5769ce1d4c964e1ca60486df01d87968
+  family: SUL
+  benchmark_task_id: SUL/verify_task_8
+  global_index: 182
+  target_object_id: _87da4f1a_4947_4201_a8be_ae1946bc6b6e

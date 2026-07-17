@@ -1,0 +1,260 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_1_at_verify_task_4:
+    original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/7c1b2c8a2c7b40f5bcd213bcdb55aca7.usd
+    usd_scale:
+    - 30.031864948933023
+    - 30.027619161457
+    - 30.016986648919207
+    position:
+    - -2.6852355398738785
+    - -1.4236577344603347
+    - 0.7791034845681861
+    size:
+    - 0.09523391723632812
+    - 0.0938425064086914
+    - 0.030207172269001603
+    detailed_caption: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+      plate.
+  _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_2_at_verify_task_4:
+    original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/7c1b2c8a2c7b40f5bcd213bcdb55aca7.usd
+    usd_scale:
+    - 30.031864948933023
+    - 30.027619161457
+    - 30.016986648919207
+    position:
+    - -2.5192814482884724
+    - 2.9371294771145
+    - 0.30509158652741464
+    size:
+    - 0.09523391723632812
+    - 0.0938425064086914
+    - 0.030207172269001603
+    detailed_caption: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+      plate.
+episodes:
+- task_id: verify_task_4
+  episode_idx: 1
+  original_idx: 4
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the round chocolate cake with smooth frosting and colorful sprinkles, on
+    a metallic plate at the rectangular table to the rounded rectangular table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7:
+      category: cake
+      detailed_caption: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+        plate.
+      usd_path: 7c1b2c8a2c7b40f5bcd213bcdb55aca7.usd
+      size:
+      - 0.09523391723632812
+      - 0.0938425064086914
+      - 0.030207172269001603
+  obj_distractors:
+  - _0c961bcd4cd64c568ec524b5f0030af7
+  - bd2b824c98b34bd2a09462524452492c
+  obj_distractor_meta:
+    _0c961bcd4cd64c568ec524b5f0030af7:
+      category: dessert
+      detailed_caption: A rectangular slice of cake with a smooth golden exterior, layered fruit topping,
+        and powdered sugar.
+      usd_path: 0c961bcd4cd64c568ec524b5f0030af7.usd
+      size:
+      - 0.09669876098632812
+      - 0.0727386474609375
+      - 0.1348189532291144
+    bd2b824c98b34bd2a09462524452492c:
+      category: cake
+      detailed_caption: Round layered cake with smooth cream frosting, light-colored sponge, white filling,
+        and pink decorations.
+      usd_path: bd2b824c98b34bd2a09462524452492c.usd
+      size:
+      - 0.14382553100585938
+      - 0.080596923828125
+      - 0.14398890966549516
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: cake
+      target_description: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+        plate.
+  - action: gaze_at
+    args:
+      target_category: cake
+      target_description: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+        plate.
+  - action: pick
+    args:
+      target_category: cake
+      target_description: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+        plate.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_1_at_verify_task_4:
+      position:
+      - -2.6852355398738785
+      - -1.4236577344603347
+      - 0.7791034845681861
+      furniture: table_1
+      original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_2_at_verify_task_4:
+      position:
+      - -2.5192814482884724
+      - 2.9371294771145
+      - 0.30509158652741464
+      furniture: table_2
+      original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+  final_positions:
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_1_at_verify_task_4:
+      initial_pos:
+      - -2.6852355398738785
+      - -1.4236577344603347
+      - 0.8791034845681861
+      final_pos:
+      - -2.6779372692108154
+      - -1.372495174407959
+      - 0.7559641003608704
+      category: dessert
+      original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_2_at_verify_task_4:
+      initial_pos:
+      - -2.5192814482884724
+      - 2.9371294771145
+      - 0.4050915865274146
+      final_pos:
+      - -2.522347927093506
+      - 2.9866669178009033
+      - 0.28195202350616455
+      category: dessert
+      original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+  family: FDP
+  benchmark_task_id: FDP/verify_task_4
+  benchmark_instruction: Transport the round chocolate cake with smooth frosting and colorful sprinkles,
+    on a metallic plate at the rectangular table to the rounded rectangular table.
+  global_index: 1
+  target_object_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7

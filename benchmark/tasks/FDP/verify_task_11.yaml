@@ -1,0 +1,262 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  d8b5a5be_8c29_4423_a607_cd5c9e673879_on_table_1_at_verify_task_11:
+    original_id: d8b5a5be_8c29_4423_a607_cd5c9e673879
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/d8b5a5be-8c29-4423-a607-cd5c9e673879.usd
+    usd_scale:
+    - 11.01109130845712
+    - 11.005497911310707
+    - 10.355531256832924
+    position:
+    - -2.76883611417055
+    - -1.513551049232293
+    - 0.8079191137617454
+    size:
+    - 0.2183208465576172
+    - 0.21858978271484375
+    - 0.08783843065612018
+    detailed_caption: Round, textured cake with a dark, rough exterior and white speckles; slightly domed
+      shape.
+  d8b5a5be_8c29_4423_a607_cd5c9e673879_on_table_2_at_verify_task_11:
+    original_id: d8b5a5be_8c29_4423_a607_cd5c9e673879
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/d8b5a5be-8c29-4423-a607-cd5c9e673879.usd
+    usd_scale:
+    - 11.01109130845712
+    - 11.005497911310707
+    - 10.355531256832924
+    position:
+    - -2.3027258764945024
+    - 2.66941907735865
+    - 0.3339072157209739
+    size:
+    - 0.2183208465576172
+    - 0.21858978271484375
+    - 0.08783843065612018
+    detailed_caption: Round, textured cake with a dark, rough exterior and white speckles; slightly domed
+      shape.
+episodes:
+- task_id: verify_task_11
+  episode_idx: 5
+  original_idx: 11
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the table much smaller than another one to find the round, textured
+    cake with a dark, rough exterior and white speckles; slightly domed shape, then deliver it to the
+    table where we have dinner.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - d8b5a5be_8c29_4423_a607_cd5c9e673879
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - d8b5a5be_8c29_4423_a607_cd5c9e673879
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - d8b5a5be_8c29_4423_a607_cd5c9e673879
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    d8b5a5be_8c29_4423_a607_cd5c9e673879:
+      category: cake
+      detailed_caption: Round, textured cake with a dark, rough exterior and white speckles; slightly
+        domed shape.
+      usd_path: d8b5a5be-8c29-4423-a607-cd5c9e673879.usd
+      size:
+      - 0.2183208465576172
+      - 0.21858978271484375
+      - 0.08783843065612018
+  obj_distractors:
+  - _0c961bcd4cd64c568ec524b5f0030af7
+  - _8327c239c4eb41c2aaedf3a3fd682fcc
+  obj_distractor_meta:
+    _0c961bcd4cd64c568ec524b5f0030af7:
+      category: dessert
+      detailed_caption: A rectangular slice of cake with a smooth golden exterior, layered fruit topping,
+        and powdered sugar.
+      usd_path: 0c961bcd4cd64c568ec524b5f0030af7.usd
+      size:
+      - 0.09669876098632812
+      - 0.0727386474609375
+      - 0.1348189532291144
+    _8327c239c4eb41c2aaedf3a3fd682fcc:
+      category: cake
+      detailed_caption: Round cake with soft pink icing, adorned with roses, smooth finish, on a golden
+        tray.
+      usd_path: 8327c239c4eb41c2aaedf3a3fd682fcc.usd
+      size:
+      - 0.2260761260986328
+      - 0.1405181884765625
+      - 0.07252120436169207
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: cake
+      target_description: Round, textured cake with a dark, rough exterior and white speckles; slightly
+        domed shape.
+  - action: gaze_at
+    args:
+      target_category: cake
+      target_description: Round, textured cake with a dark, rough exterior and white speckles; slightly
+        domed shape.
+  - action: pick
+    args:
+      target_category: cake
+      target_description: Round, textured cake with a dark, rough exterior and white speckles; slightly
+        domed shape.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    d8b5a5be_8c29_4423_a607_cd5c9e673879_on_table_1_at_verify_task_11:
+      position:
+      - -2.76883611417055
+      - -1.513551049232293
+      - 0.8079191137617454
+      furniture: table_1
+      original_id: d8b5a5be_8c29_4423_a607_cd5c9e673879
+    d8b5a5be_8c29_4423_a607_cd5c9e673879_on_table_2_at_verify_task_11:
+      position:
+      - -2.3027258764945024
+      - 2.66941907735865
+      - 0.3339072157209739
+      furniture: table_2
+      original_id: d8b5a5be_8c29_4423_a607_cd5c9e673879
+  final_positions:
+    d8b5a5be_8c29_4423_a607_cd5c9e673879_on_table_1_at_verify_task_11:
+      initial_pos:
+      - -2.76883611417055
+      - -1.513551049232293
+      - 0.9079191137617454
+      final_pos:
+      - -2.757155656814575
+      - -1.5145912170410156
+      - 0.7839536666870117
+      category: cake
+      original_id: d8b5a5be_8c29_4423_a607_cd5c9e673879
+    d8b5a5be_8c29_4423_a607_cd5c9e673879_on_table_2_at_verify_task_11:
+      initial_pos:
+      - -2.3027258764945024
+      - 2.66941907735865
+      - 0.4339072157209739
+      final_pos:
+      - -2.2914652824401855
+      - 2.671480894088745
+      - 0.3099360466003418
+      category: cake
+      original_id: d8b5a5be_8c29_4423_a607_cd5c9e673879
+  family: FDP
+  benchmark_task_id: FDP/verify_task_11
+  benchmark_instruction: First, drive to the table much smaller than another one to find the round, textured
+    cake with a dark, rough exterior and white speckles; slightly domed shape, then deliver it to the
+    table where we have dinner.
+  global_index: 5
+  target_object_id: d8b5a5be_8c29_4423_a607_cd5c9e673879

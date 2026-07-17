@@ -1,0 +1,380 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_6_at_verify_task_167:
+    original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/9a346431-c2eb-46fa-acb6-0941ab7a99a6.usd
+    usd_scale:
+    - 9.805704636187134
+    - 9.779875333762288
+    - 10.084406198126063
+    position:
+    - 2.5295097137064455
+    - -1.0316431319337893
+    - 0.7984213221166283
+    size:
+    - 0.20168685913085938
+    - 0.1266940066125244
+    - 0.12084265472367406
+    detailed_caption: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant design.
+  _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_7_at_verify_task_167:
+    original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/9a346431-c2eb-46fa-acb6-0941ab7a99a6.usd
+    usd_scale:
+    - 9.805704636187134
+    - 9.779875333762288
+    - 10.084406198126063
+    position:
+    - 1.20406070851445
+    - 1.6361321707498548
+    - 0.916971324691549
+    size:
+    - 0.20168685913085938
+    - 0.1266940066125244
+    - 0.12084265472367406
+    detailed_caption: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant design.
+  _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_8_at_verify_task_167:
+    original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/9a346431-c2eb-46fa-acb6-0941ab7a99a6.usd
+    usd_scale:
+    - 9.805704636187134
+    - 9.779875333762288
+    - 10.084406198126063
+    position:
+    - 4.51710903046635
+    - 2.9193187242586913
+    - 0.5309213090036065
+    size:
+    - 0.20168685913085938
+    - 0.1266940066125244
+    - 0.12084265472367406
+    detailed_caption: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant design.
+  _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_9_at_verify_task_167:
+    original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/9a346431-c2eb-46fa-acb6-0941ab7a99a6.usd
+    usd_scale:
+    - 9.805704636187134
+    - 9.779875333762288
+    - 10.084406198126063
+    position:
+    - 5.989234080105163
+    - 1.2742406201334304
+    - 1.0204213249776513
+    size:
+    - 0.20168685913085938
+    - 0.1266940066125244
+    - 0.12084265472367406
+    detailed_caption: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant design.
+  _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_10_at_verify_task_167:
+    original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    category: towel
+    usd_path: ${MESATASK_USD_ROOT}/9a346431-c2eb-46fa-acb6-0941ab7a99a6.usd
+    usd_scale:
+    - 9.805704636187134
+    - 9.779875333762288
+    - 10.084406198126063
+    position:
+    - 3.1834731717321385
+    - -0.5429990043120414
+    - 0.5534213173482567
+    size:
+    - 0.20168685913085938
+    - 0.1266940066125244
+    - 0.12084265472367406
+    detailed_caption: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant design.
+episodes:
+- task_id: verify_task_167
+  episode_idx: 31
+  original_idx: 167
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the cylindrical paper towel holder with a wooden base, smooth finish, and
+    elegant design at white cabinet with grey bottle to the rounded rectangular table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_7
+  src_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6:
+      category: towel
+      detailed_caption: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant
+        design.
+      usd_path: 9a346431-c2eb-46fa-acb6-0941ab7a99a6.usd
+      size:
+      - 0.20168685913085938
+      - 0.1266940066125244
+      - 0.12084265472367406
+  obj_distractors:
+  - _5ed11541_0b88_4306_a744_384c4521bb27
+  - f9fcc1295bb24189b1ad6e8fe864d5a5
+  obj_distractor_meta:
+    _5ed11541_0b88_4306_a744_384c4521bb27:
+      category: hand towel
+      detailed_caption: Soft kitchen towel with a subtle grid pattern, light color, and compact shape.
+      usd_path: 5ed11541-0b88-4306-a744-384c4521bb27.usd
+      size:
+      - 0.07781600952148438
+      - 0.25563812255859375
+      - 0.07446569832973182
+    f9fcc1295bb24189b1ad6e8fe864d5a5:
+      category: cotton pads
+      detailed_caption: White cylindrical paper towel roll with a smooth surface and multiple layers of
+        absorbent paper.
+      usd_path: f9fcc1295bb24189b1ad6e8fe864d5a5.usd
+      size:
+      - 0.10395050048828125
+      - 0.11407089233398438
+      - 0.10355396330351141
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: find
+    args:
+      target_category: towel
+      target_description: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant
+        design.
+  - action: gaze_at
+    args:
+      target_category: towel
+      target_description: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant
+        design.
+  - action: pick
+    args:
+      target_category: towel
+      target_description: Cylindrical paper towel holder with a wooden base, smooth finish, and elegant
+        design.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_6_at_verify_task_167:
+      position:
+      - 2.5295097137064455
+      - -1.0316431319337893
+      - 0.7984213221166283
+      furniture: cabinet_6
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_7_at_verify_task_167:
+      position:
+      - 1.20406070851445
+      - 1.6361321707498548
+      - 0.916971324691549
+      furniture: cabinet_7
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_8_at_verify_task_167:
+      position:
+      - 4.51710903046635
+      - 2.9193187242586913
+      - 0.5309213090036065
+      furniture: cabinet_8
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_9_at_verify_task_167:
+      position:
+      - 5.989234080105163
+      - 1.2742406201334304
+      - 1.0204213249776513
+      furniture: cabinet_9
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_10_at_verify_task_167:
+      position:
+      - 3.1834731717321385
+      - -0.5429990043120414
+      - 0.5534213173482567
+      furniture: cabinet_10
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+  final_positions:
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_6_at_verify_task_167:
+      initial_pos:
+      - 2.5295097137064455
+      - -1.0316431319337893
+      - 0.8984213221166283
+      final_pos:
+      - 2.5895745754241943
+      - -0.9281253814697266
+      - 0.7645025849342346
+      category: paper towel holder
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_7_at_verify_task_167:
+      initial_pos:
+      - 1.20406070851445
+      - 1.6361321707498548
+      - 1.016971324691549
+      final_pos:
+      - 1.244946002960205
+      - 1.9904412031173706
+      - 0.7188500165939331
+      category: paper towel holder
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_8_at_verify_task_167:
+      initial_pos:
+      - 4.51710903046635
+      - 2.9193187242586913
+      - 0.6309213090036064
+      final_pos:
+      - 4.551257133483887
+      - 3.1307830810546875
+      - 0.49461397528648376
+      category: paper towel holder
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_9_at_verify_task_167:
+      initial_pos:
+      - 5.989234080105163
+      - 1.2742406201334304
+      - 1.1204213249776513
+      final_pos:
+      - 6.103177070617676
+      - 1.398405909538269
+      - 0.9877241253852844
+      category: paper towel holder
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+    _9a346431_c2eb_46fa_acb6_0941ab7a99a6_on_cabinet_10_at_verify_task_167:
+      initial_pos:
+      - 3.1834731717321385
+      - -0.5429990043120414
+      - 0.6534213173482567
+      final_pos:
+      - 3.2675342559814453
+      - -0.39632362127304077
+      - 0.5218024849891663
+      category: paper towel holder
+      original_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6
+  family: FDP
+  benchmark_task_id: FDP/verify_task_167
+  benchmark_instruction: Transport the cylindrical paper towel holder with a wooden base, smooth finish,
+    and elegant design at white cabinet with grey bottle to the rounded rectangular table.
+  global_index: 31
+  target_object_id: _9a346431_c2eb_46fa_acb6_0941ab7a99a6

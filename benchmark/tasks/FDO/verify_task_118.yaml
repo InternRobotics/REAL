@@ -1,0 +1,373 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_6_at_verify_task_118:
+    original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/0ec03fdacb62498c83cf4f644ef1a253.usd
+    usd_scale:
+    - 0.1333156475612026
+    - 0.1329580924116052
+    - 0.1331173406011606
+    position:
+    - 2.600860713819741
+    - -1.0947478062175597
+    - 0.7890636008046568
+    size:
+    - 0.10911130905151367
+    - 0.1104283332824707
+    - 0.10212721209973097
+  _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_7_at_verify_task_118:
+    original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/0ec03fdacb62498c83cf4f644ef1a253.usd
+    usd_scale:
+    - 0.1333156475612026
+    - 0.1329580924116052
+    - 0.1331173406011606
+    position:
+    - 0.9331765270277369
+    - 1.7275154348319957
+    - 0.9076136033795774
+    size:
+    - 0.10911130905151367
+    - 0.1104283332824707
+    - 0.10212721209973097
+  _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_8_at_verify_task_118:
+    original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/0ec03fdacb62498c83cf4f644ef1a253.usd
+    usd_scale:
+    - 0.1333156475612026
+    - 0.1329580924116052
+    - 0.1331173406011606
+    position:
+    - 4.520465584302964
+    - 2.908961444935778
+    - 0.5215635876916349
+    size:
+    - 0.10911130905151367
+    - 0.1104283332824707
+    - 0.10212721209973097
+  _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_9_at_verify_task_118:
+    original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/0ec03fdacb62498c83cf4f644ef1a253.usd
+    usd_scale:
+    - 0.1333156475612026
+    - 0.1329580924116052
+    - 0.1331173406011606
+    position:
+    - 6.174694808128305
+    - 1.2143192259789235
+    - 1.0110636036656797
+    size:
+    - 0.10911130905151367
+    - 0.1104283332824707
+    - 0.10212721209973097
+  _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_10_at_verify_task_118:
+    original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/0ec03fdacb62498c83cf4f644ef1a253.usd
+    usd_scale:
+    - 0.1333156475612026
+    - 0.1329580924116052
+    - 0.1331173406011606
+    position:
+    - 3.243060664083637
+    - -0.5042929354230443
+    - 0.5440635960362852
+    size:
+    - 0.10911130905151367
+    - 0.1104283332824707
+    - 0.10212721209973097
+episodes:
+- benchmark_task_id: FDO/verify_task_118
+  family: FDO
+  task_id: verify_task_118
+  episode_idx: 29
+  original_idx: 118
+  benchmark_instruction: Bring an apple from dark rounded cabinet bedside table to the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Bring an apple from dark rounded cabinet bedside table to the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _0ec03fdacb62498c83cf4f644ef1a253
+      door: false
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _0ec03fdacb62498c83cf4f644ef1a253:
+      category: apple
+      usd_path: 0ec03fdacb62498c83cf4f644ef1a253.usd
+      size:
+      - 0.10911130905151367
+      - 0.1104283332824707
+      - 0.10212721209973097
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: apple
+  - action: gaze_at
+    args:
+      target_category: apple
+  - action: pick
+    args:
+      target_category: apple
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_6_at_verify_task_118:
+      position:
+      - 2.600860713819741
+      - -1.0947478062175597
+      - 0.7890636008046568
+      furniture: cabinet_6
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_7_at_verify_task_118:
+      position:
+      - 0.9331765270277369
+      - 1.7275154348319957
+      - 0.9076136033795774
+      furniture: cabinet_7
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_8_at_verify_task_118:
+      position:
+      - 4.520465584302964
+      - 2.908961444935778
+      - 0.5215635876916349
+      furniture: cabinet_8
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_9_at_verify_task_118:
+      position:
+      - 6.174694808128305
+      - 1.2143192259789235
+      - 1.0110636036656797
+      furniture: cabinet_9
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_10_at_verify_task_118:
+      position:
+      - 3.243060664083637
+      - -0.5042929354230443
+      - 0.5440635960362852
+      furniture: cabinet_10
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+  final_positions:
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_6_at_verify_task_118:
+      initial_pos:
+      - 2.600860713819741
+      - -1.0947478062175597
+      - 0.8890636008046567
+      final_pos:
+      - 2.618346691131592
+      - -1.1043540239334106
+      - 0.7649585008621216
+      category: apple
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_7_at_verify_task_118:
+      initial_pos:
+      - 0.9331765270277369
+      - 1.7275154348319957
+      - 1.0076136033795775
+      final_pos:
+      - 0.9506194591522217
+      - 1.7178676128387451
+      - 0.8835083246231079
+      category: apple
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_8_at_verify_task_118:
+      initial_pos:
+      - 4.520465584302964
+      - 2.908961444935778
+      - 0.6215635876916349
+      final_pos:
+      - 4.538008689880371
+      - 2.89941668510437
+      - 0.49745863676071167
+      category: apple
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_9_at_verify_task_118:
+      initial_pos:
+      - 6.174694808128305
+      - 1.2143192259789235
+      - 1.1110636036656798
+      final_pos:
+      - 6.1921586990356445
+      - 1.20468008518219
+      - 0.9869584441184998
+      category: apple
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+    _0ec03fdacb62498c83cf4f644ef1a253_on_cabinet_10_at_verify_task_118:
+      initial_pos:
+      - 3.243060664083637
+      - -0.5042929354230443
+      - 0.6440635960362852
+      final_pos:
+      - 3.260500907897949
+      - -0.5139842629432678
+      - 0.51995849609375
+      category: apple
+      original_id: _0ec03fdacb62498c83cf4f644ef1a253
+  global_index: 157
+  target_object_id: _0ec03fdacb62498c83cf4f644ef1a253

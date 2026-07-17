@@ -1,0 +1,306 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _4842e147554b4a06ad061cc2ab89ccda_on_table_1_at_verify_task_24:
+    original_id: _4842e147554b4a06ad061cc2ab89ccda
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/4842e147554b4a06ad061cc2ab89ccda.usd
+    usd_scale:
+    - 1.8167223757991056
+    - 1.873958497656261
+    - 2.2932000173351095
+    position:
+    - -2.6890608600405175
+    - -1.4455732521116669
+    - 0.7686785048386082
+    size:
+    - 0.15587806701660156
+    - 0.0077762603759765625
+    - 0.009357212809845805
+    detailed_caption: A yellow cylindrical pencil with a smooth surface, sharpened tip, and eraser at
+      one end.
+  a2771221af4c434281a35fd3a69778e6_on_table_1_at_verify_task_24:
+    original_id: a2771221af4c434281a35fd3a69778e6
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/a2771221af4c434281a35fd3a69778e6.usd
+    usd_scale:
+    - 1.3128232882026665
+    - 1.3121319086058225
+    - 1.3285054599295505
+    position:
+    - -1.6922595064164794
+    - -1.1028590224106138
+    - 0.7708838583526085
+    size:
+    - 0.1632847785949707
+    - 0.008113861083984375
+    - 0.01376791983784642
+    detailed_caption: Slender yellow hexagonal pencil with a sharpened tip and pink eraser at the end.
+  _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_24:
+    original_id: _748724f9761f4029807de5618ae50c3c
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/748724f9761f4029807de5618ae50c3c.usd
+    usd_scale:
+    - 9.475818065842008
+    - 0.6009338806833411
+    - 0.04894884318016047
+    position:
+    - -1.5588329972229913
+    - -1.3349767729174067
+    - 0.7645293563669111
+    size:
+    - 0.2049999237060547
+    - 0.19643020629882812
+    - 0.0010589158664515708
+    detailed_caption: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood, silver
+      ferrule.
+episodes:
+- task_id: verify_task_24
+  episode_idx: 20
+  original_idx: 24
+  benchmark_instruction: Pick up a writing instrument from the rectangular table and place it on white
+    desk in front of a picture.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the a yellow cylindrical pencil with a smooth surface, sharpened tip, and
+    eraser at one end from the rectangular table and deposit it at white desk in front of a picture.
+  fuzzy_task_description: Pick up a writing instrument from the rectangular table and place it on white
+    desk in front of a picture.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _4842e147554b4a06ad061cc2ab89ccda
+      - a2771221af4c434281a35fd3a69778e6
+      - _748724f9761f4029807de5618ae50c3c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - a2771221af4c434281a35fd3a69778e6
+      - _748724f9761f4029807de5618ae50c3c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _4842e147554b4a06ad061cc2ab89ccda
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    _4842e147554b4a06ad061cc2ab89ccda:
+      category: pen
+      detailed_caption: A yellow cylindrical pencil with a smooth surface, sharpened tip, and eraser at
+        one end.
+      usd_path: 4842e147554b4a06ad061cc2ab89ccda.usd
+      size:
+      - 0.15587806701660156
+      - 0.0077762603759765625
+      - 0.009357212809845805
+  obj_distractors:
+  - a2771221af4c434281a35fd3a69778e6
+  - _748724f9761f4029807de5618ae50c3c
+  obj_distractor_meta:
+    a2771221af4c434281a35fd3a69778e6:
+      category: pencil
+      detailed_caption: Slender yellow hexagonal pencil with a sharpened tip and pink eraser at the end.
+      usd_path: a2771221af4c434281a35fd3a69778e6.usd
+      size:
+      - 0.1632847785949707
+      - 0.008113861083984375
+      - 0.01376791983784642
+    _748724f9761f4029807de5618ae50c3c:
+      category: pencil
+      detailed_caption: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood,
+        silver ferrule.
+      usd_path: 748724f9761f4029807de5618ae50c3c.usd
+      size:
+      - 0.2049999237060547
+      - 0.19643020629882812
+      - 0.0010589158664515708
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: A yellow cylindrical pencil with a smooth surface, sharpened tip, and eraser
+        at one end.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: A yellow cylindrical pencil with a smooth surface, sharpened tip, and eraser
+        at one end.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: A yellow cylindrical pencil with a smooth surface, sharpened tip, and eraser
+        at one end.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  physics_task_description: Retrieve the a yellow cylindrical pencil with a smooth surface, sharpened
+    tip, and eraser at one end from the rectangular table and deposit it at white desk in front of a picture.
+  placements:
+    _4842e147554b4a06ad061cc2ab89ccda_on_table_1_at_verify_task_24:
+      position:
+      - -2.6890608600405175
+      - -1.4455732521116669
+      - 0.7686785048386082
+      furniture: table_1
+      original_id: _4842e147554b4a06ad061cc2ab89ccda
+    a2771221af4c434281a35fd3a69778e6_on_table_1_at_verify_task_24:
+      position:
+      - -1.6922595064164794
+      - -1.1028590224106138
+      - 0.7708838583526085
+      furniture: table_1
+      original_id: a2771221af4c434281a35fd3a69778e6
+    _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_24:
+      position:
+      - -1.5588329972229913
+      - -1.3349767729174067
+      - 0.7645293563669111
+      furniture: table_1
+      original_id: _748724f9761f4029807de5618ae50c3c
+  final_positions:
+    _4842e147554b4a06ad061cc2ab89ccda_on_table_1_at_verify_task_24:
+      initial_pos:
+      - -2.6890608600405175
+      - -1.4455732521116669
+      - 0.8686785048386082
+      final_pos:
+      - -2.689060926437378
+      - -1.4455732107162476
+      - 0.7486401200294495
+      category: pencil
+      original_id: _4842e147554b4a06ad061cc2ab89ccda
+    a2771221af4c434281a35fd3a69778e6_on_table_1_at_verify_task_24:
+      initial_pos:
+      - -1.6922595064164794
+      - -1.1028590224106138
+      - 0.8708838583526085
+      final_pos:
+      - -1.6924030780792236
+      - -1.1022251844406128
+      - 0.7506970167160034
+      category: pencil
+      original_id: a2771221af4c434281a35fd3a69778e6
+    _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_24:
+      initial_pos:
+      - -1.5588329972229913
+      - -1.3349767729174067
+      - 0.8645293563669111
+      final_pos:
+      - -1.5588328838348389
+      - -1.334977626800537
+      - 0.7444931864738464
+      category: pencil
+      original_id: _748724f9761f4029807de5618ae50c3c
+  family: SUL
+  benchmark_task_id: SUL/verify_task_24
+  global_index: 196
+  target_object_id: _4842e147554b4a06ad061cc2ab89ccda

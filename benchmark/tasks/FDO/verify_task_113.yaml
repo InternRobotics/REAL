@@ -1,0 +1,373 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_6_at_verify_task_113:
+    original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/8327c239c4eb41c2aaedf3a3fd682fcc.usd
+    usd_scale:
+    - 0.37400431163234127
+    - 0.3754929534742245
+    - 0.3903233417410767
+    position:
+    - 2.5466672795779424
+    - -0.975152633484167
+    - 0.7742605969356373
+    size:
+    - 0.2260761260986328
+    - 0.1405181884765625
+    - 0.07252120436169207
+  _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_7_at_verify_task_113:
+    original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/8327c239c4eb41c2aaedf3a3fd682fcc.usd
+    usd_scale:
+    - 0.37400431163234127
+    - 0.3754929534742245
+    - 0.3903233417410767
+    position:
+    - 0.9826634325135752
+    - 1.695521411396781
+    - 0.892810599510558
+    size:
+    - 0.2260761260986328
+    - 0.1405181884765625
+    - 0.07252120436169207
+  _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_8_at_verify_task_113:
+    original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/8327c239c4eb41c2aaedf3a3fd682fcc.usd
+    usd_scale:
+    - 0.37400431163234127
+    - 0.3754929534742245
+    - 0.3903233417410767
+    position:
+    - 4.544951839956316
+    - 2.918049096967222
+    - 0.5067605838226155
+    size:
+    - 0.2260761260986328
+    - 0.1405181884765625
+    - 0.07252120436169207
+  _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_9_at_verify_task_113:
+    original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/8327c239c4eb41c2aaedf3a3fd682fcc.usd
+    usd_scale:
+    - 0.37400431163234127
+    - 0.3754929534742245
+    - 0.3903233417410767
+    position:
+    - 6.062929709954687
+    - 1.2305040905122064
+    - 0.9962605997966603
+    size:
+    - 0.2260761260986328
+    - 0.1405181884765625
+    - 0.07252120436169207
+  _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_10_at_verify_task_113:
+    original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/8327c239c4eb41c2aaedf3a3fd682fcc.usd
+    usd_scale:
+    - 0.37400431163234127
+    - 0.3754929534742245
+    - 0.3903233417410767
+    position:
+    - 3.20110804927482
+    - -0.6966580896150467
+    - 0.5292605921672657
+    size:
+    - 0.2260761260986328
+    - 0.1405181884765625
+    - 0.07252120436169207
+episodes:
+- benchmark_task_id: FDO/verify_task_113
+  family: FDO
+  task_id: verify_task_113
+  episode_idx: 24
+  original_idx: 113
+  benchmark_instruction: Go to whole-black cabinet with flat base, pick up a cake, then travel to the
+    washingmachine to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Go to whole-black cabinet with flat base, pick up a cake, then travel to the washingmachine
+    to place it.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _8327c239c4eb41c2aaedf3a3fd682fcc
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: cabinet_10
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    _8327c239c4eb41c2aaedf3a3fd682fcc:
+      category: cake
+      usd_path: 8327c239c4eb41c2aaedf3a3fd682fcc.usd
+      size:
+      - 0.2260761260986328
+      - 0.1405181884765625
+      - 0.07252120436169207
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: find
+    args:
+      target_category: cake
+  - action: gaze_at
+    args:
+      target_category: cake
+  - action: pick
+    args:
+      target_category: cake
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_6_at_verify_task_113:
+      position:
+      - 2.5466672795779424
+      - -0.975152633484167
+      - 0.7742605969356373
+      furniture: cabinet_6
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_7_at_verify_task_113:
+      position:
+      - 0.9826634325135752
+      - 1.695521411396781
+      - 0.892810599510558
+      furniture: cabinet_7
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_8_at_verify_task_113:
+      position:
+      - 4.544951839956316
+      - 2.918049096967222
+      - 0.5067605838226155
+      furniture: cabinet_8
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_9_at_verify_task_113:
+      position:
+      - 6.062929709954687
+      - 1.2305040905122064
+      - 0.9962605997966603
+      furniture: cabinet_9
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_10_at_verify_task_113:
+      position:
+      - 3.20110804927482
+      - -0.6966580896150467
+      - 0.5292605921672657
+      furniture: cabinet_10
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+  final_positions:
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_6_at_verify_task_113:
+      initial_pos:
+      - 2.5466672795779424
+      - -0.975152633484167
+      - 0.8742605969356373
+      final_pos:
+      - 2.490250587463379
+      - -0.8979378342628479
+      - 0.7507678270339966
+      category: cake
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_7_at_verify_task_113:
+      initial_pos:
+      - 0.9826634325135752
+      - 1.695521411396781
+      - 0.992810599510558
+      final_pos:
+      - 0.9249146580696106
+      - 1.7859188318252563
+      - 0.8683170676231384
+      category: cake
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_8_at_verify_task_113:
+      initial_pos:
+      - 4.544951839956316
+      - 2.918049096967222
+      - 0.6067605838226154
+      final_pos:
+      - 4.4880828857421875
+      - 3.0081584453582764
+      - 0.48226743936538696
+      category: cake
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_9_at_verify_task_113:
+      initial_pos:
+      - 6.062929709954687
+      - 1.2305040905122064
+      - 1.0962605997966604
+      final_pos:
+      - 6.004262924194336
+      - 1.3207179307937622
+      - 0.971767008304596
+      category: cake
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+    _8327c239c4eb41c2aaedf3a3fd682fcc_on_cabinet_10_at_verify_task_113:
+      initial_pos:
+      - 3.20110804927482
+      - -0.6966580896150467
+      - 0.6292605921672657
+      final_pos:
+      - 3.143195390701294
+      - -0.6071932911872864
+      - 0.5047671794891357
+      category: cake
+      original_id: _8327c239c4eb41c2aaedf3a3fd682fcc
+  global_index: 152
+  target_object_id: _8327c239c4eb41c2aaedf3a3fd682fcc

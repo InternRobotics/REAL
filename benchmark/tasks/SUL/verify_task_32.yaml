@@ -1,0 +1,305 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _215a41d8b6d44ecdbd70cc9680c0f585_on_table_1_at_verify_task_32:
+    original_id: _215a41d8b6d44ecdbd70cc9680c0f585
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/215a41d8b6d44ecdbd70cc9680c0f585.usd
+    usd_scale:
+    - 0.0494539607251338
+    - 0.04886954352458966
+    - 0.049673290213181974
+    position:
+    - -2.1608707458113217
+    - -1.3550811519703092
+    - 0.7975745373219252
+    size:
+    - 0.10674238204956055
+    - 0.13869476318359375
+    - 0.06714927777647972
+    detailed_caption: Round blue alarm clock with classic design, sad face, dial, rim, and hanging loop.
+  _21914c3f_36de_4b36_a436_ee1c3cd62ba2_on_table_1_at_verify_task_32:
+    original_id: _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/21914c3f-36de-4b36-a436-ee1c3cd62ba2.usd
+    usd_scale:
+    - 9.145275719936933
+    - 8.809009934539331
+    - 9.225952422459844
+    position:
+    - -2.83868870383553
+    - -1.1027718688485877
+    - 0.7968170790513978
+    size:
+    - 0.14471435546875
+    - 0.18292999267578125
+    - 0.06563436123542488
+    detailed_caption: Vintage alarm clock with circular brass body, white clock face, two metallic bells,
+      worn back.
+  _2dc619299f1c412c806cd5c190728523_on_table_1_at_verify_task_32:
+    original_id: _2dc619299f1c412c806cd5c190728523
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/2dc619299f1c412c806cd5c190728523.usd
+    usd_scale:
+    - 1.021126145311794
+    - 1.0211259180215864
+    - 0.9192074448746357
+    position:
+    - -2.472860396448898
+    - -1.2978612978465374
+    - 0.8435119718010538
+    size:
+    - 0.17491436004638672
+    - 0.30715882778167725
+    - 0.15902414673473686
+    detailed_caption: Elegant hourglass with a wooden frame, glass body, circular polished wood top, symmetrical
+      chambers.
+episodes:
+- task_id: verify_task_32
+  episode_idx: 27
+  original_idx: 32
+  benchmark_instruction: Navigate to the table much larger than another one, grasp a timekeeping device,
+    and carry it to white desk in front of a picture.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the table much larger than another one to find the round blue alarm
+    clock with classic design, sad face, dial, rim, and hanging loop, then deliver it to white desk in
+    front of a picture.
+  fuzzy_task_description: Navigate to the table much larger than another one, grasp a timekeeping device,
+    and carry it to white desk in front of a picture.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _215a41d8b6d44ecdbd70cc9680c0f585
+      - _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+      - _2dc619299f1c412c806cd5c190728523
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+      - _2dc619299f1c412c806cd5c190728523
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _215a41d8b6d44ecdbd70cc9680c0f585
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    _215a41d8b6d44ecdbd70cc9680c0f585:
+      category: clock
+      detailed_caption: Round blue alarm clock with classic design, sad face, dial, rim, and hanging loop.
+      usd_path: 215a41d8b6d44ecdbd70cc9680c0f585.usd
+      size:
+      - 0.10674238204956055
+      - 0.13869476318359375
+      - 0.06714927777647972
+  obj_distractors:
+  - _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+  - _2dc619299f1c412c806cd5c190728523
+  obj_distractor_meta:
+    _21914c3f_36de_4b36_a436_ee1c3cd62ba2:
+      category: alarm clock
+      detailed_caption: Vintage alarm clock with circular brass body, white clock face, two metallic bells,
+        worn back.
+      usd_path: 21914c3f-36de-4b36-a436-ee1c3cd62ba2.usd
+      size:
+      - 0.14471435546875
+      - 0.18292999267578125
+      - 0.06563436123542488
+    _2dc619299f1c412c806cd5c190728523:
+      category: hourglass
+      detailed_caption: Elegant hourglass with a wooden frame, glass body, circular polished wood top,
+        symmetrical chambers.
+      usd_path: 2dc619299f1c412c806cd5c190728523.usd
+      size:
+      - 0.17491436004638672
+      - 0.30715882778167725
+      - 0.15902414673473686
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Round blue alarm clock with classic design, sad face, dial, rim, and hanging
+        loop.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Round blue alarm clock with classic design, sad face, dial, rim, and hanging
+        loop.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Round blue alarm clock with classic design, sad face, dial, rim, and hanging
+        loop.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  physics_task_description: First, drive to the table much larger than another one to find the round blue
+    alarm clock with classic design, sad face, dial, rim, and hanging loop, then deliver it to white desk
+    in front of a picture.
+  placements:
+    _215a41d8b6d44ecdbd70cc9680c0f585_on_table_1_at_verify_task_32:
+      position:
+      - -2.1608707458113217
+      - -1.3550811519703092
+      - 0.7975745373219252
+      furniture: table_1
+      original_id: _215a41d8b6d44ecdbd70cc9680c0f585
+    _21914c3f_36de_4b36_a436_ee1c3cd62ba2_on_table_1_at_verify_task_32:
+      position:
+      - -2.83868870383553
+      - -1.1027718688485877
+      - 0.7968170790513978
+      furniture: table_1
+      original_id: _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+    _2dc619299f1c412c806cd5c190728523_on_table_1_at_verify_task_32:
+      position:
+      - -2.472860396448898
+      - -1.2978612978465374
+      - 0.8435119718010538
+      furniture: table_1
+      original_id: _2dc619299f1c412c806cd5c190728523
+  final_positions:
+    _215a41d8b6d44ecdbd70cc9680c0f585_on_table_1_at_verify_task_32:
+      initial_pos:
+      - -2.1608707458113217
+      - -1.3550811519703092
+      - 0.8975745373219252
+      final_pos:
+      - -2.1679537296295166
+      - -1.3621824979782104
+      - 0.7763286232948303
+      category: clock
+      original_id: _215a41d8b6d44ecdbd70cc9680c0f585
+    _21914c3f_36de_4b36_a436_ee1c3cd62ba2_on_table_1_at_verify_task_32:
+      initial_pos:
+      - -2.83868870383553
+      - -1.1027718688485877
+      - 0.8968170790513977
+      final_pos:
+      - -2.8336713314056396
+      - -1.003650188446045
+      - 0.7721234560012817
+      category: alarm clock
+      original_id: _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+    _2dc619299f1c412c806cd5c190728523_on_table_1_at_verify_task_32:
+      initial_pos:
+      - -2.472860396448898
+      - -1.2978612978465374
+      - 0.9435119718010537
+      final_pos:
+      - -2.463458299636841
+      - -1.2981635332107544
+      - 0.8222769498825073
+      category: hourglass
+      original_id: _2dc619299f1c412c806cd5c190728523
+  family: SUL
+  benchmark_task_id: SUL/verify_task_32
+  global_index: 203
+  target_object_id: _215a41d8b6d44ecdbd70cc9680c0f585

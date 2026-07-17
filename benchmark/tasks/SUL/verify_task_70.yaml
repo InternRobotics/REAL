@@ -1,0 +1,319 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  ce24cbe06bd14df190698f68a7046862_on_table_1_at_verify_task_70:
+    original_id: ce24cbe06bd14df190698f68a7046862
+    category: cleaning spray
+    usd_path: ${MESATASK_USD_ROOT}/ce24cbe06bd14df190698f68a7046862.usd
+    usd_scale:
+    - 0.23044051790262615
+    - 0.22924141497687814
+    - 0.23037012285978567
+    position:
+    - -2.971058284637583
+    - -1.2984786697520996
+    - 0.8036944898963339
+    size:
+    - 0.08350372314453125
+    - 0.2646980285644531
+    - 0.07938918292529706
+    detailed_caption: Cylindrical bottle, smooth semi-gloss finish, predominantly white with red label
+      accents.
+  _64075bd8_1126_4ca3_9c76_9ce8f06442e8_on_table_1_at_verify_task_70:
+    original_id: _64075bd8_1126_4ca3_9c76_9ce8f06442e8
+    category: soap dispenser
+    usd_path: ${MESATASK_USD_ROOT}/64075bd8-1126-4ca3-9c76-9ce8f06442e8.usd
+    usd_scale:
+    - 10.722976740808248
+    - 10.7108946134781
+    - 10.926051673217328
+    position:
+    - -2.688988842321036
+    - -1.1025925690976177
+    - 0.8137178340507671
+    size:
+    - 0.22388839721679688
+    - 0.11722946166992188
+    - 0.09943587123416364
+    detailed_caption: Sleek, cylindrical soap dispenser with shiny chrome pump and smooth textured surface.
+  b26b71d4_c230_46b6_b2ee_a983583e94f0_on_table_1_at_verify_task_70:
+    original_id: b26b71d4_c230_46b6_b2ee_a983583e94f0
+    category: soap dispenser
+    usd_path: ${MESATASK_USD_ROOT}/b26b71d4-c230-46b6-b2ee-a983583e94f0.usd
+    usd_scale:
+    - 13.845690760920695
+    - 13.879015864740062
+    - 13.288241424594403
+    position:
+    - -2.571377756489101
+    - -1.5163918443721254
+    - 0.8069006118180551
+    size:
+    - 0.24890899658203125
+    - 0.22315263748168945
+    - 0.08580142676873947
+    detailed_caption: A sleek, cylindrical liquid soap dispenser with a white surface and metallic pump
+      top.
+episodes:
+- task_id: verify_task_70
+  episode_idx: 46
+  original_idx: 70
+  benchmark_instruction: Head over to the table much larger than another one, fetch a cleaning product,
+    and bring it back to white cabinet with grey bottle.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the cylindrical bottle, smooth semi-gloss finish, predominantly white with red
+    label accents located at the table much larger than another one to white cabinet with grey bottle.
+  fuzzy_task_description: Head over to the table much larger than another one, fetch a cleaning product,
+    and bring it back to white cabinet with grey bottle.
+  purpose: cleaning product
+  purpose_group: cleaning
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - ce24cbe06bd14df190698f68a7046862
+      - _64075bd8_1126_4ca3_9c76_9ce8f06442e8
+      - b26b71d4_c230_46b6_b2ee_a983583e94f0
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _64075bd8_1126_4ca3_9c76_9ce8f06442e8
+      - b26b71d4_c230_46b6_b2ee_a983583e94f0
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - ce24cbe06bd14df190698f68a7046862
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_7
+  dest_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    ce24cbe06bd14df190698f68a7046862:
+      category: cleaning spray
+      detailed_caption: Cylindrical bottle, smooth semi-gloss finish, predominantly white with red label
+        accents.
+      usd_path: ce24cbe06bd14df190698f68a7046862.usd
+      size:
+      - 0.08350372314453125
+      - 0.2646980285644531
+      - 0.07938918292529706
+  obj_distractors:
+  - _64075bd8_1126_4ca3_9c76_9ce8f06442e8
+  - b26b71d4_c230_46b6_b2ee_a983583e94f0
+  obj_distractor_meta:
+    _64075bd8_1126_4ca3_9c76_9ce8f06442e8:
+      category: soap dispenser
+      detailed_caption: Sleek, cylindrical soap dispenser with shiny chrome pump and smooth textured surface.
+      usd_path: 64075bd8-1126-4ca3-9c76-9ce8f06442e8.usd
+      size:
+      - 0.22388839721679688
+      - 0.11722946166992188
+      - 0.09943587123416364
+    b26b71d4_c230_46b6_b2ee_a983583e94f0:
+      category: soap dispenser
+      detailed_caption: A sleek, cylindrical liquid soap dispenser with a white surface and metallic pump
+        top.
+      usd_path: b26b71d4-c230-46b6-b2ee-a983583e94f0.usd
+      size:
+      - 0.24890899658203125
+      - 0.22315263748168945
+      - 0.08580142676873947
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: cleaning spray
+      target_description: Cylindrical bottle, smooth semi-gloss finish, predominantly white with red label
+        accents.
+  - action: gaze_at
+    args:
+      target_category: cleaning spray
+      target_description: Cylindrical bottle, smooth semi-gloss finish, predominantly white with red label
+        accents.
+  - action: pick
+    args:
+      target_category: cleaning spray
+      target_description: Cylindrical bottle, smooth semi-gloss finish, predominantly white with red label
+        accents.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: place
+    args:
+      receptacle_name: cabinet_7
+  physics_task_description: Move the cylindrical bottle, smooth semi-gloss finish, predominantly white
+    with red label accents located at the table much larger than another one to white cabinet with grey
+    bottle.
+  placements:
+    ce24cbe06bd14df190698f68a7046862_on_table_1_at_verify_task_70:
+      position:
+      - -2.971058284637583
+      - -1.2984786697520996
+      - 0.8036944898963339
+      furniture: table_1
+      original_id: ce24cbe06bd14df190698f68a7046862
+    _64075bd8_1126_4ca3_9c76_9ce8f06442e8_on_table_1_at_verify_task_70:
+      position:
+      - -2.688988842321036
+      - -1.1025925690976177
+      - 0.8137178340507671
+      furniture: table_1
+      original_id: _64075bd8_1126_4ca3_9c76_9ce8f06442e8
+    b26b71d4_c230_46b6_b2ee_a983583e94f0_on_table_1_at_verify_task_70:
+      position:
+      - -2.571377756489101
+      - -1.5163918443721254
+      - 0.8069006118180551
+      furniture: table_1
+      original_id: b26b71d4_c230_46b6_b2ee_a983583e94f0
+  final_positions:
+    ce24cbe06bd14df190698f68a7046862_on_table_1_at_verify_task_70:
+      initial_pos:
+      - -2.971058284637583
+      - -1.2984786697520996
+      - 0.9036944898963338
+      final_pos:
+      - -2.9710373878479004
+      - -1.298517107963562
+      - 0.7836946249008179
+      category: cleaning spray
+      original_id: ce24cbe06bd14df190698f68a7046862
+    _64075bd8_1126_4ca3_9c76_9ce8f06442e8_on_table_1_at_verify_task_70:
+      initial_pos:
+      - -2.688988842321036
+      - -1.1025925690976177
+      - 0.9137178340507671
+      final_pos:
+      - -2.8370983600616455
+      - -1.1239956617355347
+      - 0.7972623109817505
+      category: soap dispenser
+      original_id: _64075bd8_1126_4ca3_9c76_9ce8f06442e8
+    b26b71d4_c230_46b6_b2ee_a983583e94f0_on_table_1_at_verify_task_70:
+      initial_pos:
+      - -2.571377756489101
+      - -1.5163918443721254
+      - 0.906900611818055
+      final_pos:
+      - -2.7186410427093506
+      - -1.6029980182647705
+      - 0.7879316806793213
+      category: soap dispenser
+      original_id: b26b71d4_c230_46b6_b2ee_a983583e94f0
+  family: SUL
+  benchmark_task_id: SUL/verify_task_70
+  global_index: 222
+  target_object_id: ce24cbe06bd14df190698f68a7046862

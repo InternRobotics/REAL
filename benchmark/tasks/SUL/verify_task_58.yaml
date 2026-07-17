@@ -1,0 +1,310 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  d971961e_c476_4279_bbcf_e3e07ab5f468_on_table_1_at_verify_task_58:
+    original_id: d971961e_c476_4279_bbcf_e3e07ab5f468
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/d971961e-c476-4279-bbcf-e3e07ab5f468.usd
+    usd_scale:
+    - 6.392587001270669
+    - 6.4477965682746445
+    - 6.454336858450224
+    position:
+    - -3.0690761615424837
+    - -1.5874310478563323
+    - 0.7693055813756655
+    size:
+    - 0.01287841796875
+    - 0.12793731689453125
+    - 0.010611365883960389
+    detailed_caption: Sleek retractable pen with a blue plastic barrel and metal accents, streamlined
+      design.
+  dd60831f_c27e_4cbd_be5a_3e6c26a9187a_on_table_1_at_verify_task_58:
+    original_id: dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/dd60831f-c27e-4cbd-be5a-3e6c26a9187a.usd
+    usd_scale:
+    - 10.13058693253368
+    - 9.534615442749525
+    - 10.112140385502295
+    position:
+    - -2.207020323203952
+    - -1.5545103768188544
+    - 0.7676326805917779
+    size:
+    - 0.007747650146484375
+    - 0.1894989013671875
+    - 0.007265564316185191
+    detailed_caption: Yellow pencil, sharpened wooden body, eraser on top, metal ferrule, smooth cylindrical
+      shape.
+  _18e3dd35bbad47748a0bd546d520e83d_on_table_1_at_verify_task_58:
+    original_id: _18e3dd35bbad47748a0bd546d520e83d
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/18e3dd35bbad47748a0bd546d520e83d.usd
+    usd_scale:
+    - 0.11459510197920088
+    - 0.10969704935552617
+    - 0.10522154495620764
+    position:
+    - -2.8963387191236754
+    - -1.066216443500592
+    - 0.7706210140127223
+    size:
+    - 0.11696624755859375
+    - 0.01174163818359375
+    - 0.013242231158073992
+    detailed_caption: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+      core.
+episodes:
+- task_id: verify_task_58
+  episode_idx: 41
+  original_idx: 58
+  benchmark_instruction: Take a writing instrument from the table much larger than another one and put
+    it on cabinet with drawers with orange inner backing.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the sleek retractable pen with a blue plastic barrel and metal accents, streamlined
+    design from the table much larger than another one and place it on cabinet with drawers with orange
+    inner backing.
+  fuzzy_task_description: Take a writing instrument from the table much larger than another one and put
+    it on cabinet with drawers with orange inner backing.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - d971961e_c476_4279_bbcf_e3e07ab5f468
+      - dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+      - _18e3dd35bbad47748a0bd546d520e83d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+      - _18e3dd35bbad47748a0bd546d520e83d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - d971961e_c476_4279_bbcf_e3e07ab5f468
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    d971961e_c476_4279_bbcf_e3e07ab5f468:
+      category: pen
+      detailed_caption: Sleek retractable pen with a blue plastic barrel and metal accents, streamlined
+        design.
+      usd_path: d971961e-c476-4279-bbcf-e3e07ab5f468.usd
+      size:
+      - 0.01287841796875
+      - 0.12793731689453125
+      - 0.010611365883960389
+  obj_distractors:
+  - dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+  - _18e3dd35bbad47748a0bd546d520e83d
+  obj_distractor_meta:
+    dd60831f_c27e_4cbd_be5a_3e6c26a9187a:
+      category: pencil
+      detailed_caption: Yellow pencil, sharpened wooden body, eraser on top, metal ferrule, smooth cylindrical
+        shape.
+      usd_path: dd60831f-c27e-4cbd-be5a-3e6c26a9187a.usd
+      size:
+      - 0.007747650146484375
+      - 0.1894989013671875
+      - 0.007265564316185191
+    _18e3dd35bbad47748a0bd546d520e83d:
+      category: pencil
+      detailed_caption: Cylindrical wooden pencil with a sharp tip, smooth finish, and visible graphite
+        core.
+      usd_path: 18e3dd35bbad47748a0bd546d520e83d.usd
+      size:
+      - 0.11696624755859375
+      - 0.01174163818359375
+      - 0.013242231158073992
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: Sleek retractable pen with a blue plastic barrel and metal accents, streamlined
+        design.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Sleek retractable pen with a blue plastic barrel and metal accents, streamlined
+        design.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Sleek retractable pen with a blue plastic barrel and metal accents, streamlined
+        design.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  physics_task_description: Pick up the sleek retractable pen with a blue plastic barrel and metal accents,
+    streamlined design from the table much larger than another one and place it on cabinet with drawers
+    with orange inner backing.
+  placements:
+    d971961e_c476_4279_bbcf_e3e07ab5f468_on_table_1_at_verify_task_58:
+      position:
+      - -3.0690761615424837
+      - -1.5874310478563323
+      - 0.7693055813756655
+      furniture: table_1
+      original_id: d971961e_c476_4279_bbcf_e3e07ab5f468
+    dd60831f_c27e_4cbd_be5a_3e6c26a9187a_on_table_1_at_verify_task_58:
+      position:
+      - -2.207020323203952
+      - -1.5545103768188544
+      - 0.7676326805917779
+      furniture: table_1
+      original_id: dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+    _18e3dd35bbad47748a0bd546d520e83d_on_table_1_at_verify_task_58:
+      position:
+      - -2.8963387191236754
+      - -1.066216443500592
+      - 0.7706210140127223
+      furniture: table_1
+      original_id: _18e3dd35bbad47748a0bd546d520e83d
+  final_positions:
+    d971961e_c476_4279_bbcf_e3e07ab5f468_on_table_1_at_verify_task_58:
+      initial_pos:
+      - -3.0690761615424837
+      - -1.5874310478563323
+      - 0.8693055813756655
+      final_pos:
+      - -3.073824167251587
+      - -1.587357759475708
+      - 0.7479555010795593
+      category: pen
+      original_id: d971961e_c476_4279_bbcf_e3e07ab5f468
+    dd60831f_c27e_4cbd_be5a_3e6c26a9187a_on_table_1_at_verify_task_58:
+      initial_pos:
+      - -2.207020323203952
+      - -1.5545103768188544
+      - 0.8676326805917779
+      final_pos:
+      - -2.2066166400909424
+      - -1.5544935464859009
+      - 0.7469513416290283
+      category: pencil
+      original_id: dd60831f_c27e_4cbd_be5a_3e6c26a9187a
+    _18e3dd35bbad47748a0bd546d520e83d_on_table_1_at_verify_task_58:
+      initial_pos:
+      - -2.8963387191236754
+      - -1.066216443500592
+      - 0.8706210140127223
+      final_pos:
+      - -2.896066665649414
+      - -1.0661698579788208
+      - 0.7493988871574402
+      category: pencil
+      original_id: _18e3dd35bbad47748a0bd546d520e83d
+  family: SUL
+  benchmark_task_id: SUL/verify_task_58
+  global_index: 217
+  target_object_id: d971961e_c476_4279_bbcf_e3e07ab5f468

@@ -1,0 +1,340 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _4ea8025cffa1406a937bc457f71bfd20_on_table_1_at_verify_task_184:
+    original_id: _4ea8025cffa1406a937bc457f71bfd20
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/4ea8025cffa1406a937bc457f71bfd20.usd
+    usd_scale:
+    - 0.11125994907616862
+    - 0.11123883232608152
+    - 0.10484212513645234
+    position:
+    - -2.2753268698291462
+    - -1.2909683284872435
+    - 0.8761105495318771
+    size:
+    - 0.24233245849609375
+    - 0.3004322052001953
+    - 0.22422130219638348
+    detailed_caption: Woven basket, cylindrical shape, light brown color, decorative pattern, lid with
+      knob, curved handle.
+  _4ea8025cffa1406a937bc457f71bfd20_on_table_2_at_verify_task_184:
+    original_id: _4ea8025cffa1406a937bc457f71bfd20
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/4ea8025cffa1406a937bc457f71bfd20.usd
+    usd_scale:
+    - 0.11125994907616862
+    - 0.11123883232608152
+    - 0.10484212513645234
+    position:
+    - -1.8511703727527626
+    - 3.044274068288101
+    - 0.4020986514911056
+    size:
+    - 0.24233245849609375
+    - 0.3004322052001953
+    - 0.22422130219638348
+    detailed_caption: Woven basket, cylindrical shape, light brown color, decorative pattern, lid with
+      knob, curved handle.
+  _8010f691aacf44dfbd1486e32220593e_on_table_2_at_verify_task_184:
+    original_id: _8010f691aacf44dfbd1486e32220593e
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/8010f691aacf44dfbd1486e32220593e.usd
+    usd_scale:
+    - 0.059406702053275535
+    - 0.09132005250852131
+    - 0.036651139584876896
+    position:
+    - -2.2092014018695423
+    - 2.911636884427217
+    - 0.3413558171410114
+    size:
+    - 0.2699127197265625
+    - 0.4087104797363281
+    - 0.10273563349619508
+    detailed_caption: Hand-woven basket, round shape, natural fibers, light tan color, flat bottom, rustic
+      woven texture.
+  _6b6c7d7a476643f0b0a8e248268cbbfd_on_table_2_at_verify_task_184:
+    original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+    category: basket
+    usd_path: ${MESATASK_USD_ROOT}/6b6c7d7a476643f0b0a8e248268cbbfd.usd
+    usd_scale:
+    - 2.495895525788203
+    - 2.495615466418253
+    - 2.5020705931565015
+    position:
+    - -1.8979583251214518
+    - 2.634691181036878
+    - 0.3851593902613968
+    size:
+    - 0.23070907592773438
+    - 0.20758819580078125
+    - 0.1903427797369659
+    detailed_caption: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy handle.
+episodes:
+- benchmark_task_id: FODP/verify_task_184
+  family: FODP
+  task_id: verify_task_184
+  episode_idx: 34
+  original_idx: 184
+  benchmark_instruction: Take the woven basket, cylindrical shape, light brown color, decorative pattern,
+    lid with knob, curved handle from the rounded rectangular table and put it on box table with circle
+    insert.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the woven basket, cylindrical shape, light brown color, decorative pattern, lid
+    with knob, curved handle from the rounded rectangular table and put it on box table with circle insert.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _4ea8025cffa1406a937bc457f71bfd20
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _4ea8025cffa1406a937bc457f71bfd20
+      - _8010f691aacf44dfbd1486e32220593e
+      - _6b6c7d7a476643f0b0a8e248268cbbfd
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _4ea8025cffa1406a937bc457f71bfd20
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _8010f691aacf44dfbd1486e32220593e
+      - _6b6c7d7a476643f0b0a8e248268cbbfd
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _4ea8025cffa1406a937bc457f71bfd20
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _4ea8025cffa1406a937bc457f71bfd20:
+      category: basket
+      detailed_caption: Woven basket, cylindrical shape, light brown color, decorative pattern, lid with
+        knob, curved handle.
+      usd_path: 4ea8025cffa1406a937bc457f71bfd20.usd
+      size:
+      - 0.24233245849609375
+      - 0.3004322052001953
+      - 0.22422130219638348
+  obj_distractors:
+  - _8010f691aacf44dfbd1486e32220593e
+  - _6b6c7d7a476643f0b0a8e248268cbbfd
+  obj_distractor_meta:
+    _8010f691aacf44dfbd1486e32220593e:
+      category: basket
+      detailed_caption: Hand-woven basket, round shape, natural fibers, light tan color, flat bottom,
+        rustic woven texture.
+      usd_path: 8010f691aacf44dfbd1486e32220593e.usd
+      size:
+      - 0.2699127197265625
+      - 0.4087104797363281
+      - 0.10273563349619508
+    _6b6c7d7a476643f0b0a8e248268cbbfd:
+      category: basket
+      detailed_caption: Round basket made of woven natural fibers, beige and gold, tight weave, sturdy
+        handle.
+      usd_path: 6b6c7d7a476643f0b0a8e248268cbbfd.usd
+      size:
+      - 0.23070907592773438
+      - 0.20758819580078125
+      - 0.1903427797369659
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: basket
+      target_description: Woven basket, cylindrical shape, light brown color, decorative pattern, lid
+        with knob, curved handle.
+  - action: gaze_at
+    args:
+      target_category: basket
+      target_description: Woven basket, cylindrical shape, light brown color, decorative pattern, lid
+        with knob, curved handle.
+  - action: pick
+    args:
+      target_category: basket
+      target_description: Woven basket, cylindrical shape, light brown color, decorative pattern, lid
+        with knob, curved handle.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  placements:
+    _4ea8025cffa1406a937bc457f71bfd20_on_table_1_at_verify_task_184:
+      position:
+      - -2.2753268698291462
+      - -1.2909683284872435
+      - 0.8761105495318771
+      furniture: table_1
+      original_id: _4ea8025cffa1406a937bc457f71bfd20
+    _4ea8025cffa1406a937bc457f71bfd20_on_table_2_at_verify_task_184:
+      position:
+      - -1.8511703727527626
+      - 3.044274068288101
+      - 0.4020986514911056
+      furniture: table_2
+      original_id: _4ea8025cffa1406a937bc457f71bfd20
+    _8010f691aacf44dfbd1486e32220593e_on_table_2_at_verify_task_184:
+      position:
+      - -2.2092014018695423
+      - 2.911636884427217
+      - 0.3413558171410114
+      furniture: table_2
+      original_id: _8010f691aacf44dfbd1486e32220593e
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_table_2_at_verify_task_184:
+      position:
+      - -1.8979583251214518
+      - 2.634691181036878
+      - 0.3851593902613968
+      furniture: table_2
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+  final_positions:
+    _4ea8025cffa1406a937bc457f71bfd20_on_table_1_at_verify_task_184:
+      initial_pos:
+      - -2.2753268698291462
+      - -1.2909683284872435
+      - 0.976110549531877
+      final_pos:
+      - -2.279573917388916
+      - -1.2725180387496948
+      - 0.8382982611656189
+      category: basket
+      original_id: _4ea8025cffa1406a937bc457f71bfd20
+    _4ea8025cffa1406a937bc457f71bfd20_on_table_2_at_verify_task_184:
+      initial_pos:
+      - -1.8511703727527626
+      - 3.044274068288101
+      - 0.5020986514911056
+      final_pos:
+      - -1.8285585641860962
+      - 3.0438787937164307
+      - 0.37030696868896484
+      category: basket
+      original_id: _4ea8025cffa1406a937bc457f71bfd20
+    _8010f691aacf44dfbd1486e32220593e_on_table_2_at_verify_task_184:
+      initial_pos:
+      - -2.2092014018695423
+      - 2.911636884427217
+      - 0.44135581714101135
+      final_pos:
+      - -2.2144744396209717
+      - 2.9068901538848877
+      - 0.316866397857666
+      category: basket
+      original_id: _8010f691aacf44dfbd1486e32220593e
+    _6b6c7d7a476643f0b0a8e248268cbbfd_on_table_2_at_verify_task_184:
+      initial_pos:
+      - -1.8979583251214518
+      - 2.634691181036878
+      - 0.48515939026139676
+      final_pos:
+      - -1.9061636924743652
+      - 2.698352575302124
+      - 0.3292480707168579
+      category: basket
+      original_id: _6b6c7d7a476643f0b0a8e248268cbbfd
+  global_index: 106
+  target_object_id: _4ea8025cffa1406a937bc457f71bfd20

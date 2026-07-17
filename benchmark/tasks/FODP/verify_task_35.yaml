@@ -1,0 +1,336 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _69db4aa6_83b2_4468_8580_87e873ba11f2_on_table_1_at_verify_task_35:
+    original_id: _69db4aa6_83b2_4468_8580_87e873ba11f2
+    category: toothbrush
+    usd_path: ${MESATASK_USD_ROOT}/69db4aa6-83b2-4468-8580-87e873ba11f2.usd
+    usd_scale:
+    - 9.965818746761085
+    - 10.213984241551184
+    - 10.078732789341931
+    position:
+    - -1.903108665366039
+    - -1.3105582579237522
+    - 0.7733449143520557
+    size:
+    - 0.19785308837890625
+    - 0.01711273193359375
+    - 0.018690031836740673
+    detailed_caption: Sleek toothbrush with a blue and white curved handle and soft bristles.
+  _7a798f79_2448_4375_ac67_ce2e99d0e0f1_on_table_1_at_verify_task_35:
+    original_id: _7a798f79_2448_4375_ac67_ce2e99d0e0f1
+    category: hand brush
+    usd_path: ${MESATASK_USD_ROOT}/7a798f79-2448-4375-ac67-ce2e99d0e0f1.usd
+    usd_scale:
+    - 12.201074076054509
+    - 12.186881434913174
+    - 7.545997505063294
+    position:
+    - -2.817234916834737
+    - -1.1552106709951215
+    - 0.7668399330041393
+    size:
+    - 0.01866912841796875
+    - 0.242340087890625
+    - 0.005680069140908017
+    detailed_caption: Wooden toothbrush with a slender handle and bristles, featuring a natural wood finish.
+  _11e4635a824e48a8bba8b17b0bd4d19c_on_table_1_at_verify_task_35:
+    original_id: _11e4635a824e48a8bba8b17b0bd4d19c
+    category: toothbrush
+    usd_path: ${MESATASK_USD_ROOT}/11e4635a824e48a8bba8b17b0bd4d19c.usd
+    usd_scale:
+    - 0.5783230231049855
+    - 0.578882386798647
+    - 0.5852905744041174
+    position:
+    - -2.0756192142350125
+    - -1.6107803950966595
+    - 0.7786941792797006
+    size:
+    - 0.18804550170898438
+    - 0.054515838623046875
+    - 0.029388561692030635
+    detailed_caption: A toothbrush with a blue handle, multi-colored bristle head, and curved ergonomic
+      design.
+  _69db4aa6_83b2_4468_8580_87e873ba11f2_on_table_2_at_verify_task_35:
+    original_id: _69db4aa6_83b2_4468_8580_87e873ba11f2
+    category: toothbrush
+    usd_path: ${MESATASK_USD_ROOT}/69db4aa6-83b2-4468-8580-87e873ba11f2.usd
+    usd_scale:
+    - 9.965818746761085
+    - 10.213984241551184
+    - 10.078732789341931
+    position:
+    - -1.9075358189505023
+    - 3.068560000173876
+    - 0.2993330163112842
+    size:
+    - 0.19785308837890625
+    - 0.01711273193359375
+    - 0.018690031836740673
+    detailed_caption: Sleek toothbrush with a blue and white curved handle and soft bristles.
+episodes:
+- benchmark_task_id: FODP/verify_task_35
+  family: FODP
+  task_id: verify_task_35
+  episode_idx: 20
+  original_idx: 35
+  benchmark_instruction: Take the sleek toothbrush with a blue and white curved handle and soft bristles
+    from the table where we have dinner and put it on white cabinet with grey bottle.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the sleek toothbrush with a blue and white curved handle and soft bristles from
+    the table where we have dinner and put it on white cabinet with grey bottle.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _69db4aa6_83b2_4468_8580_87e873ba11f2
+      - _7a798f79_2448_4375_ac67_ce2e99d0e0f1
+      - _11e4635a824e48a8bba8b17b0bd4d19c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _69db4aa6_83b2_4468_8580_87e873ba11f2
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _7a798f79_2448_4375_ac67_ce2e99d0e0f1
+      - _11e4635a824e48a8bba8b17b0bd4d19c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _69db4aa6_83b2_4468_8580_87e873ba11f2
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _69db4aa6_83b2_4468_8580_87e873ba11f2
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_7
+  dest_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _69db4aa6_83b2_4468_8580_87e873ba11f2:
+      category: toothbrush
+      detailed_caption: Sleek toothbrush with a blue and white curved handle and soft bristles.
+      usd_path: 69db4aa6-83b2-4468-8580-87e873ba11f2.usd
+      size:
+      - 0.19785308837890625
+      - 0.01711273193359375
+      - 0.018690031836740673
+  obj_distractors:
+  - _7a798f79_2448_4375_ac67_ce2e99d0e0f1
+  - _11e4635a824e48a8bba8b17b0bd4d19c
+  obj_distractor_meta:
+    _7a798f79_2448_4375_ac67_ce2e99d0e0f1:
+      category: hand brush
+      detailed_caption: Wooden toothbrush with a slender handle and bristles, featuring a natural wood
+        finish.
+      usd_path: 7a798f79-2448-4375-ac67-ce2e99d0e0f1.usd
+      size:
+      - 0.01866912841796875
+      - 0.242340087890625
+      - 0.005680069140908017
+    _11e4635a824e48a8bba8b17b0bd4d19c:
+      category: toothbrush
+      detailed_caption: A toothbrush with a blue handle, multi-colored bristle head, and curved ergonomic
+        design.
+      usd_path: 11e4635a824e48a8bba8b17b0bd4d19c.usd
+      size:
+      - 0.18804550170898438
+      - 0.054515838623046875
+      - 0.029388561692030635
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: toothbrush
+      target_description: Sleek toothbrush with a blue and white curved handle and soft bristles.
+  - action: gaze_at
+    args:
+      target_category: toothbrush
+      target_description: Sleek toothbrush with a blue and white curved handle and soft bristles.
+  - action: pick
+    args:
+      target_category: toothbrush
+      target_description: Sleek toothbrush with a blue and white curved handle and soft bristles.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: place
+    args:
+      receptacle_name: cabinet_7
+  placements:
+    _69db4aa6_83b2_4468_8580_87e873ba11f2_on_table_1_at_verify_task_35:
+      position:
+      - -1.903108665366039
+      - -1.3105582579237522
+      - 0.7733449143520557
+      furniture: table_1
+      original_id: _69db4aa6_83b2_4468_8580_87e873ba11f2
+    _7a798f79_2448_4375_ac67_ce2e99d0e0f1_on_table_1_at_verify_task_35:
+      position:
+      - -2.817234916834737
+      - -1.1552106709951215
+      - 0.7668399330041393
+      furniture: table_1
+      original_id: _7a798f79_2448_4375_ac67_ce2e99d0e0f1
+    _11e4635a824e48a8bba8b17b0bd4d19c_on_table_1_at_verify_task_35:
+      position:
+      - -2.0756192142350125
+      - -1.6107803950966595
+      - 0.7786941792797006
+      furniture: table_1
+      original_id: _11e4635a824e48a8bba8b17b0bd4d19c
+    _69db4aa6_83b2_4468_8580_87e873ba11f2_on_table_2_at_verify_task_35:
+      position:
+      - -1.9075358189505023
+      - 3.068560000173876
+      - 0.2993330163112842
+      furniture: table_2
+      original_id: _69db4aa6_83b2_4468_8580_87e873ba11f2
+  final_positions:
+    _69db4aa6_83b2_4468_8580_87e873ba11f2_on_table_1_at_verify_task_35:
+      initial_pos:
+      - -1.903108665366039
+      - -1.3105582579237522
+      - 0.8733449143520556
+      final_pos:
+      - -1.9037046432495117
+      - -1.3107320070266724
+      - 0.7507879734039307
+      category: toothbrush
+      original_id: _69db4aa6_83b2_4468_8580_87e873ba11f2
+    _7a798f79_2448_4375_ac67_ce2e99d0e0f1_on_table_1_at_verify_task_35:
+      initial_pos:
+      - -2.817234916834737
+      - -1.1552106709951215
+      - 0.8668399330041393
+      final_pos:
+      - -2.8208773136138916
+      - -1.1558301448822021
+      - 0.7465069890022278
+      category: hand brush
+      original_id: _7a798f79_2448_4375_ac67_ce2e99d0e0f1
+    _11e4635a824e48a8bba8b17b0bd4d19c_on_table_1_at_verify_task_35:
+      initial_pos:
+      - -2.0756192142350125
+      - -1.6107803950966595
+      - 0.8786941792797006
+      final_pos:
+      - -2.0753965377807617
+      - -1.5767444372177124
+      - 0.7499746680259705
+      category: toothbrush
+      original_id: _11e4635a824e48a8bba8b17b0bd4d19c
+    _69db4aa6_83b2_4468_8580_87e873ba11f2_on_table_2_at_verify_task_35:
+      initial_pos:
+      - -1.9075358189505023
+      - 3.068560000173876
+      - 0.39933301631128415
+      final_pos:
+      - -1.9075182676315308
+      - 3.0666885375976562
+      - 0.2771787941455841
+      category: toothbrush
+      original_id: _69db4aa6_83b2_4468_8580_87e873ba11f2
+  global_index: 92
+  target_object_id: _69db4aa6_83b2_4468_8580_87e873ba11f2

@@ -1,0 +1,307 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _980d648049bd43329f4662b2f8e7c575_on_table_1_at_verify_task_30:
+    original_id: _980d648049bd43329f4662b2f8e7c575
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/980d648049bd43329f4662b2f8e7c575.usd
+    usd_scale:
+    - 6.3996586739657895
+    - 6.270117631525324
+    - 6.392857142857143
+    position:
+    - -2.316207534539136
+    - -1.533662075890324
+    - 0.7986908812704496
+    size:
+    - 0.12396860122680664
+    - 0.13295269012451172
+    - 0.06938196567352861
+    detailed_caption: Vintage red alarm clock, round shape, glass face, metal knobs, distressed finish,
+      black numerals, beige background.
+  _98acd80e57204118ba67acf93b3ad735_on_table_1_at_verify_task_30:
+    original_id: _98acd80e57204118ba67acf93b3ad735
+    category: watch
+    usd_path: ${MESATASK_USD_ROOT}/98acd80e57204118ba67acf93b3ad735.usd
+    usd_scale:
+    - 8.101452032700916
+    - 8.191254751347781
+    - 8.592814903555672
+    position:
+    - -1.760260085284199
+    - -1.2960394220718143
+    - 0.767999909974169
+    size:
+    - 0.0952606201171875
+    - 0.1350434646010399
+    - 0.008000023080967367
+    detailed_caption: Round face, black leather strap, minimalistic dial, stainless steel casing, elegant
+      appearance.
+  _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_table_1_at_verify_task_30:
+    original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/79e2e966-6284-4217-8b9d-2e8159a68d5e.usd
+    usd_scale:
+    - 12.914418231997116
+    - 12.91305249662835
+    - 12.33636876463263
+    position:
+    - -2.146204298700694
+    - -1.2066729054740488
+    - 0.8866371470681043
+    size:
+    - 0.11730003356933594
+    - 0.11744308471679688
+    - 0.24527449726883788
+    detailed_caption: Classic hourglass of dark wood, symmetrical design, transparent glass, fine white
+      sand visible.
+episodes:
+- task_id: verify_task_30
+  episode_idx: 25
+  original_idx: 30
+  benchmark_instruction: Move a timekeeping device located at the rectangular table to white unit with
+    flat wood handles.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to the rectangular table, grasp the vintage red alarm clock, round shape,
+    glass face, metal knobs, distressed finish, black numerals, beige background, and carry it to white
+    unit with flat wood handles.
+  fuzzy_task_description: Move a timekeeping device located at the rectangular table to white unit with
+    flat wood handles.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _980d648049bd43329f4662b2f8e7c575
+      - _98acd80e57204118ba67acf93b3ad735
+      - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _98acd80e57204118ba67acf93b3ad735
+      - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _980d648049bd43329f4662b2f8e7c575
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    _980d648049bd43329f4662b2f8e7c575:
+      category: clock
+      detailed_caption: Vintage red alarm clock, round shape, glass face, metal knobs, distressed finish,
+        black numerals, beige background.
+      usd_path: 980d648049bd43329f4662b2f8e7c575.usd
+      size:
+      - 0.12396860122680664
+      - 0.13295269012451172
+      - 0.06938196567352861
+  obj_distractors:
+  - _98acd80e57204118ba67acf93b3ad735
+  - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+  obj_distractor_meta:
+    _98acd80e57204118ba67acf93b3ad735:
+      category: watch
+      detailed_caption: Round face, black leather strap, minimalistic dial, stainless steel casing, elegant
+        appearance.
+      usd_path: 98acd80e57204118ba67acf93b3ad735.usd
+      size:
+      - 0.0952606201171875
+      - 0.1350434646010399
+      - 0.008000023080967367
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e:
+      category: hourglass
+      detailed_caption: Classic hourglass of dark wood, symmetrical design, transparent glass, fine white
+        sand visible.
+      usd_path: 79e2e966-6284-4217-8b9d-2e8159a68d5e.usd
+      size:
+      - 0.11730003356933594
+      - 0.11744308471679688
+      - 0.24527449726883788
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Vintage red alarm clock, round shape, glass face, metal knobs, distressed finish,
+        black numerals, beige background.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Vintage red alarm clock, round shape, glass face, metal knobs, distressed finish,
+        black numerals, beige background.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Vintage red alarm clock, round shape, glass face, metal knobs, distressed finish,
+        black numerals, beige background.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  physics_task_description: Navigate to the rectangular table, grasp the vintage red alarm clock, round
+    shape, glass face, metal knobs, distressed finish, black numerals, beige background, and carry it
+    to white unit with flat wood handles.
+  placements:
+    _980d648049bd43329f4662b2f8e7c575_on_table_1_at_verify_task_30:
+      position:
+      - -2.316207534539136
+      - -1.533662075890324
+      - 0.7986908812704496
+      furniture: table_1
+      original_id: _980d648049bd43329f4662b2f8e7c575
+    _98acd80e57204118ba67acf93b3ad735_on_table_1_at_verify_task_30:
+      position:
+      - -1.760260085284199
+      - -1.2960394220718143
+      - 0.767999909974169
+      furniture: table_1
+      original_id: _98acd80e57204118ba67acf93b3ad735
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_table_1_at_verify_task_30:
+      position:
+      - -2.146204298700694
+      - -1.2066729054740488
+      - 0.8866371470681043
+      furniture: table_1
+      original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+  final_positions:
+    _980d648049bd43329f4662b2f8e7c575_on_table_1_at_verify_task_30:
+      initial_pos:
+      - -2.316207534539136
+      - -1.533662075890324
+      - 0.8986908812704496
+      final_pos:
+      - -2.3173131942749023
+      - -1.554145336151123
+      - 0.7691532969474792
+      category: clock
+      original_id: _980d648049bd43329f4662b2f8e7c575
+    _98acd80e57204118ba67acf93b3ad735_on_table_1_at_verify_task_30:
+      initial_pos:
+      - -1.760260085284199
+      - -1.2960394220718143
+      - 0.867999909974169
+      final_pos:
+      - -1.8027846813201904
+      - -1.2159703969955444
+      - 0.7478326559066772
+      category: watch
+      original_id: _98acd80e57204118ba67acf93b3ad735
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_table_1_at_verify_task_30:
+      initial_pos:
+      - -2.146204298700694
+      - -1.2066729054740488
+      - 0.9866371470681042
+      final_pos:
+      - -2.146177291870117
+      - -1.2065367698669434
+      - 0.8661124110221863
+      category: hourglass
+      original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+  family: SUL
+  benchmark_task_id: SUL/verify_task_30
+  global_index: 201
+  target_object_id: _980d648049bd43329f4662b2f8e7c575

@@ -1,0 +1,260 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _968c587c84734a14b441b0dfe36d458c_on_table_1_at_verify_task_170:
+    original_id: _968c587c84734a14b441b0dfe36d458c
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/968c587c84734a14b441b0dfe36d458c.usd
+    usd_scale:
+    - 0.8247355030867899
+    - 0.8556648887445911
+    - 0.8659423905653392
+    position:
+    - -1.8675922314463267
+    - -1.367968341640053
+    - 0.7691024893824943
+    size:
+    - 0.12368011474609375
+    - 0.04669952392578125
+    - 0.010205181897617877
+    detailed_caption: Sleek retractable ballpoint pen with a silver barrel and subtle engraving details.
+  _968c587c84734a14b441b0dfe36d458c_on_table_2_at_verify_task_170:
+    original_id: _968c587c84734a14b441b0dfe36d458c
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/968c587c84734a14b441b0dfe36d458c.usd
+    usd_scale:
+    - 0.8247355030867899
+    - 0.8556648887445911
+    - 0.8659423905653392
+    position:
+    - -2.153704528747514
+    - 2.788270587277258
+    - 0.2950905913417228
+    size:
+    - 0.12368011474609375
+    - 0.04669952392578125
+    - 0.010205181897617877
+    detailed_caption: Sleek retractable ballpoint pen with a silver barrel and subtle engraving details.
+episodes:
+- task_id: verify_task_170
+  episode_idx: 32
+  original_idx: 170
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the table much smaller than another one to find the sleek retractable
+    ballpoint pen with a silver barrel and subtle engraving details, then deliver it to white cabinet
+    next to the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _968c587c84734a14b441b0dfe36d458c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _968c587c84734a14b441b0dfe36d458c
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _968c587c84734a14b441b0dfe36d458c
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: cabinet_7
+  dest_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _968c587c84734a14b441b0dfe36d458c:
+      category: pen
+      detailed_caption: Sleek retractable ballpoint pen with a silver barrel and subtle engraving details.
+      usd_path: 968c587c84734a14b441b0dfe36d458c.usd
+      size:
+      - 0.12368011474609375
+      - 0.04669952392578125
+      - 0.010205181897617877
+  obj_distractors:
+  - ca13bdd67bb14e0a9f9579ae3152d1d3
+  - _1960e99ce77446979392ef0ecd49d129
+  obj_distractor_meta:
+    ca13bdd67bb14e0a9f9579ae3152d1d3:
+      category: pen
+      detailed_caption: A ballpoint pen with a sleek design, blue tip, and wooden body.
+      usd_path: ca13bdd67bb14e0a9f9579ae3152d1d3.usd
+      size:
+      - 0.12482070922851562
+      - 0.0071048736572265625
+      - 0.009911764369462617
+    _1960e99ce77446979392ef0ecd49d129:
+      category: pen
+      detailed_caption: Sleek, slender black pen with a smooth matte barrel, fine tip, and clip.
+      usd_path: 1960e99ce77446979392ef0ecd49d129.usd
+      size:
+      - 0.03385162353515625
+      - 0.100341796875
+      - 0.005715212057111785
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: pen
+      target_description: Sleek retractable ballpoint pen with a silver barrel and subtle engraving details.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Sleek retractable ballpoint pen with a silver barrel and subtle engraving details.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Sleek retractable ballpoint pen with a silver barrel and subtle engraving details.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: place
+    args:
+      receptacle_name: cabinet_7
+  placements:
+    _968c587c84734a14b441b0dfe36d458c_on_table_1_at_verify_task_170:
+      position:
+      - -1.8675922314463267
+      - -1.367968341640053
+      - 0.7691024893824943
+      furniture: table_1
+      original_id: _968c587c84734a14b441b0dfe36d458c
+    _968c587c84734a14b441b0dfe36d458c_on_table_2_at_verify_task_170:
+      position:
+      - -2.153704528747514
+      - 2.788270587277258
+      - 0.2950905913417228
+      furniture: table_2
+      original_id: _968c587c84734a14b441b0dfe36d458c
+  final_positions:
+    _968c587c84734a14b441b0dfe36d458c_on_table_1_at_verify_task_170:
+      initial_pos:
+      - -1.8675922314463267
+      - -1.367968341640053
+      - 0.8691024893824942
+      final_pos:
+      - -1.9396878480911255
+      - -1.3749243021011353
+      - 0.7479738593101501
+      category: pen
+      original_id: _968c587c84734a14b441b0dfe36d458c
+    _968c587c84734a14b441b0dfe36d458c_on_table_2_at_verify_task_170:
+      initial_pos:
+      - -2.153704528747514
+      - 2.788270587277258
+      - 0.39509059134172275
+      final_pos:
+      - -2.2257983684539795
+      - 2.774367332458496
+      - 0.2745133638381958
+      category: pen
+      original_id: _968c587c84734a14b441b0dfe36d458c
+  family: FDP
+  benchmark_task_id: FDP/verify_task_170
+  benchmark_instruction: First, drive to the table much smaller than another one to find the sleek retractable
+    ballpoint pen with a silver barrel and subtle engraving details, then deliver it to white cabinet
+    next to the washingmachine.
+  global_index: 32
+  target_object_id: _968c587c84734a14b441b0dfe36d458c

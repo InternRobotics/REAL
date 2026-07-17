@@ -1,0 +1,261 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _371649e5a884457a827a9f4215951c47_on_bed_1_at_verify_task_176:
+    original_id: _371649e5a884457a827a9f4215951c47
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/371649e5a884457a827a9f4215951c47.usd
+    usd_scale:
+    - 5.55
+    - 4.0
+    - 72.19972751588803
+    position:
+    - 3.8658737711286792
+    - 3.462013049142622
+    - 0.5190353360772133
+    size:
+    - 0.11099624633789062
+    - 0.07999801635742188
+    - 0.05350036919116974
+    detailed_caption: Round clock with minimalistic face, thin circular frame, clean lines, modern aesthetics.
+  _371649e5a884457a827a9f4215951c47_on_bed_2_at_verify_task_176:
+    original_id: _371649e5a884457a827a9f4215951c47
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/371649e5a884457a827a9f4215951c47.usd
+    usd_scale:
+    - 5.55
+    - 4.0
+    - 72.19972751588803
+    position:
+    - 4.9948892371539175
+    - -2.4084523400926177
+    - 0.5488994088768959
+    size:
+    - 0.11099624633789062
+    - 0.07999801635742188
+    - 0.05350036919116974
+    detailed_caption: Round clock with minimalistic face, thin circular frame, clean lines, modern aesthetics.
+episodes:
+- task_id: verify_task_176
+  episode_idx: 35
+  original_idx: 176
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to bed with all-white bed sheet, fetch the round clock with minimalistic
+    face, thin circular frame, clean lines, modern aesthetics, and bring it back to the table much smaller
+    than another one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _371649e5a884457a827a9f4215951c47
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _371649e5a884457a827a9f4215951c47
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _371649e5a884457a827a9f4215951c47
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _371649e5a884457a827a9f4215951c47:
+      category: clock
+      detailed_caption: Round clock with minimalistic face, thin circular frame, clean lines, modern aesthetics.
+      usd_path: 371649e5a884457a827a9f4215951c47.usd
+      size:
+      - 0.11099624633789062
+      - 0.07999801635742188
+      - 0.05350036919116974
+  obj_distractors:
+  - f5653a6c7cce43bab2f1bd5eca6984aa
+  - _4c820629af294e50af725ad1f5f01cb0
+  obj_distractor_meta:
+    f5653a6c7cce43bab2f1bd5eca6984aa:
+      category: clock
+      detailed_caption: Vintage alarm clock with rounded wooden body, two metallic bells, classic design,
+        slightly worn.
+      usd_path: f5653a6c7cce43bab2f1bd5eca6984aa.usd
+      size:
+      - 0.12114715576171875
+      - 0.1632031723856926
+      - 0.050311622908338904
+    _4c820629af294e50af725ad1f5f01cb0:
+      category: clock
+      detailed_caption: A vintage red alarm clock with a round face, two bells, and black hands.
+      usd_path: 4c820629af294e50af725ad1f5f01cb0.usd
+      size:
+      - 0.11966323852539062
+      - 0.12358665466308594
+      - 0.061429754830896854
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Round clock with minimalistic face, thin circular frame, clean lines, modern
+        aesthetics.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Round clock with minimalistic face, thin circular frame, clean lines, modern
+        aesthetics.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Round clock with minimalistic face, thin circular frame, clean lines, modern
+        aesthetics.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _371649e5a884457a827a9f4215951c47_on_bed_1_at_verify_task_176:
+      position:
+      - 3.8658737711286792
+      - 3.462013049142622
+      - 0.5190353360772133
+      furniture: bed_1
+      original_id: _371649e5a884457a827a9f4215951c47
+    _371649e5a884457a827a9f4215951c47_on_bed_2_at_verify_task_176:
+      position:
+      - 4.9948892371539175
+      - -2.4084523400926177
+      - 0.5488994088768959
+      furniture: bed_2
+      original_id: _371649e5a884457a827a9f4215951c47
+  final_positions:
+    _371649e5a884457a827a9f4215951c47_on_bed_1_at_verify_task_176:
+      initial_pos:
+      - 3.8658737711286792
+      - 3.462013049142622
+      - 0.6190353360772133
+      final_pos:
+      - 3.9621849060058594
+      - 3.3405609130859375
+      - 0.5906262397766113
+      category: desk clock
+      original_id: _371649e5a884457a827a9f4215951c47
+    _371649e5a884457a827a9f4215951c47_on_bed_2_at_verify_task_176:
+      initial_pos:
+      - 4.9948892371539175
+      - -2.4084523400926177
+      - 0.6488994088768959
+      final_pos:
+      - 5.378574848175049
+      - -2.335700035095215
+      - 0.9179182648658752
+      category: desk clock
+      original_id: _371649e5a884457a827a9f4215951c47
+  family: FDP
+  benchmark_task_id: FDP/verify_task_176
+  benchmark_instruction: Head over to bed with all-white bed sheet, fetch the round clock with minimalistic
+    face, thin circular frame, clean lines, modern aesthetics, and bring it back to the table much smaller
+    than another one.
+  global_index: 35
+  target_object_id: _371649e5a884457a827a9f4215951c47

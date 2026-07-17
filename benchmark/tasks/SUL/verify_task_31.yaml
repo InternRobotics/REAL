@@ -1,0 +1,305 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _634df929cd7943368142f17c44f34f89_on_desk_1_at_verify_task_31:
+    original_id: _634df929cd7943368142f17c44f34f89
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/634df929cd7943368142f17c44f34f89.usd
+    usd_scale:
+    - 31.37608920863168
+    - 31.30989689979079
+    - 31.245560084864955
+    position:
+    - 0.05411701455231785
+    - -3.292033509908759
+    - 0.8141265412955545
+    size:
+    - 0.11814117431640625
+    - 0.07520008087158203
+    - 0.11225301201920956
+    detailed_caption: Modern wristwatch with a round face, sleek black strap, and metallic bezel. Minimalistic
+      design.
+  e1570963f72a486686aa7d095ace5f03_on_desk_1_at_verify_task_31:
+    original_id: e1570963f72a486686aa7d095ace5f03
+    category: timer
+    usd_path: ${MESATASK_USD_ROOT}/e1570963f72a486686aa7d095ace5f03.usd
+    usd_scale:
+    - 1.8601464045427547
+    - 1.8608107853252336
+    - 1.8636138368177166
+    position:
+    - 0.007411959874311244
+    - -2.9857043894456887
+    - 0.7766331085981801
+    size:
+    - 0.16184616088867188
+    - 0.165863037109375
+    - 0.037266146624460816
+    detailed_caption: Round, compact timer with a glossy orange finish, digital display, and top buttons.
+  _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_desk_1_at_verify_task_31:
+    original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/79e2e966-6284-4217-8b9d-2e8159a68d5e.usd
+    usd_scale:
+    - 12.914418231997116
+    - 12.91305249662835
+    - 12.33636876463263
+    position:
+    - -0.12459778672833395
+    - -2.272464151038728
+    - 0.8806372839203687
+    size:
+    - 0.11730003356933594
+    - 0.11744308471679688
+    - 0.24527449726883788
+    detailed_caption: Classic hourglass of dark wood, symmetrical design, transparent glass, fine white
+      sand visible.
+episodes:
+- task_id: verify_task_31
+  episode_idx: 26
+  original_idx: 31
+  benchmark_instruction: Take a timekeeping device from white unit with flat wood handles and put it on
+    the rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to white unit with flat wood handles, fetch the modern wristwatch with a
+    round face, sleek black strap, and metallic bezel. Minimalistic design, and bring it back to the rectangular
+    table.
+  fuzzy_task_description: Take a timekeeping device from white unit with flat wood handles and put it
+    on the rectangular table.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _634df929cd7943368142f17c44f34f89
+      - e1570963f72a486686aa7d095ace5f03
+      - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _634df929cd7943368142f17c44f34f89
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - e1570963f72a486686aa7d095ace5f03
+      - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _634df929cd7943368142f17c44f34f89:
+      category: clock
+      detailed_caption: Modern wristwatch with a round face, sleek black strap, and metallic bezel. Minimalistic
+        design.
+      usd_path: 634df929cd7943368142f17c44f34f89.usd
+      size:
+      - 0.11814117431640625
+      - 0.07520008087158203
+      - 0.11225301201920956
+  obj_distractors:
+  - e1570963f72a486686aa7d095ace5f03
+  - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+  obj_distractor_meta:
+    e1570963f72a486686aa7d095ace5f03:
+      category: timer
+      detailed_caption: Round, compact timer with a glossy orange finish, digital display, and top buttons.
+      usd_path: e1570963f72a486686aa7d095ace5f03.usd
+      size:
+      - 0.16184616088867188
+      - 0.165863037109375
+      - 0.037266146624460816
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e:
+      category: hourglass
+      detailed_caption: Classic hourglass of dark wood, symmetrical design, transparent glass, fine white
+        sand visible.
+      usd_path: 79e2e966-6284-4217-8b9d-2e8159a68d5e.usd
+      size:
+      - 0.11730003356933594
+      - 0.11744308471679688
+      - 0.24527449726883788
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Modern wristwatch with a round face, sleek black strap, and metallic bezel.
+        Minimalistic design.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Modern wristwatch with a round face, sleek black strap, and metallic bezel.
+        Minimalistic design.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Modern wristwatch with a round face, sleek black strap, and metallic bezel.
+        Minimalistic design.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Head over to white unit with flat wood handles, fetch the modern wristwatch
+    with a round face, sleek black strap, and metallic bezel. Minimalistic design, and bring it back to
+    the rectangular table.
+  placements:
+    _634df929cd7943368142f17c44f34f89_on_desk_1_at_verify_task_31:
+      position:
+      - 0.05411701455231785
+      - -3.292033509908759
+      - 0.8141265412955545
+      furniture: desk_1
+      original_id: _634df929cd7943368142f17c44f34f89
+    e1570963f72a486686aa7d095ace5f03_on_desk_1_at_verify_task_31:
+      position:
+      - 0.007411959874311244
+      - -2.9857043894456887
+      - 0.7766331085981801
+      furniture: desk_1
+      original_id: e1570963f72a486686aa7d095ace5f03
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_desk_1_at_verify_task_31:
+      position:
+      - -0.12459778672833395
+      - -2.272464151038728
+      - 0.8806372839203687
+      furniture: desk_1
+      original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+  final_positions:
+    _634df929cd7943368142f17c44f34f89_on_desk_1_at_verify_task_31:
+      initial_pos:
+      - 0.05411701455231785
+      - -3.292033509908759
+      - 0.9141265412955545
+      final_pos:
+      - 0.1513051837682724
+      - -3.291856288909912
+      - 0.7922849059104919
+      category: clock
+      original_id: _634df929cd7943368142f17c44f34f89
+    e1570963f72a486686aa7d095ace5f03_on_desk_1_at_verify_task_31:
+      initial_pos:
+      - 0.007411959874311244
+      - -2.9857043894456887
+      - 0.8766331085981801
+      final_pos:
+      - 0.03647180646657944
+      - -2.8725194931030273
+      - 0.7525637149810791
+      category: timer
+      original_id: e1570963f72a486686aa7d095ace5f03
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_desk_1_at_verify_task_31:
+      initial_pos:
+      - -0.12459778672833395
+      - -2.272464151038728
+      - 0.9806372839203686
+      final_pos:
+      - -0.12457206100225449
+      - -2.2723329067230225
+      - 0.8601130247116089
+      category: hourglass
+      original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+  family: SUL
+  benchmark_task_id: SUL/verify_task_31
+  global_index: 202
+  target_object_id: _634df929cd7943368142f17c44f34f89

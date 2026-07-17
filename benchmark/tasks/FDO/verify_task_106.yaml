@@ -1,0 +1,250 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _37e00109d5b04b859f7116742a9c3955_on_bed_1_at_verify_task_106:
+    original_id: _37e00109d5b04b859f7116742a9c3955
+    category: pie
+    usd_path: ${MESATASK_USD_ROOT}/37e00109d5b04b859f7116742a9c3955.usd
+    usd_scale:
+    - 0.7571491416449806
+    - 0.7574096574836423
+    - 0.756563024202995
+    position:
+    - 3.065636779088308
+    - 3.8823526406075493
+    - 0.5181731593143195
+    size:
+    - 0.2632102966308594
+    - 0.2631988525390625
+    - 0.05177601566538215
+  _37e00109d5b04b859f7116742a9c3955_on_bed_2_at_verify_task_106:
+    original_id: _37e00109d5b04b859f7116742a9c3955
+    category: pie
+    usd_path: ${MESATASK_USD_ROOT}/37e00109d5b04b859f7116742a9c3955.usd
+    usd_scale:
+    - 0.7571491416449806
+    - 0.7574096574836423
+    - 0.756563024202995
+    position:
+    - 4.682061743016919
+    - -1.5158302867068953
+    - 0.5480372321140021
+    size:
+    - 0.2632102966308594
+    - 0.2631988525390625
+    - 0.05177601566538215
+episodes:
+- benchmark_task_id: FDO/verify_task_106
+  family: FDO
+  task_id: verify_task_106
+  episode_idx: 19
+  original_idx: 106
+  benchmark_instruction: Take a pie from bed with dark satin bedding and put it on the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Take a pie from bed with dark satin bedding and put it on the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - _37e00109d5b04b859f7116742a9c3955
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _37e00109d5b04b859f7116742a9c3955
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - _37e00109d5b04b859f7116742a9c3955
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _37e00109d5b04b859f7116742a9c3955
+      door: false
+  src: bed_2
+  src_distractors:
+  - bed_1
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _37e00109d5b04b859f7116742a9c3955:
+      category: pie
+      usd_path: 37e00109d5b04b859f7116742a9c3955.usd
+      size:
+      - 0.2632102966308594
+      - 0.2631988525390625
+      - 0.05177601566538215
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: find
+    args:
+      target_category: pie
+  - action: gaze_at
+    args:
+      target_category: pie
+  - action: pick
+    args:
+      target_category: pie
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _37e00109d5b04b859f7116742a9c3955_on_bed_1_at_verify_task_106:
+      position:
+      - 3.065636779088308
+      - 3.8823526406075493
+      - 0.5181731593143195
+      furniture: bed_1
+      original_id: _37e00109d5b04b859f7116742a9c3955
+    _37e00109d5b04b859f7116742a9c3955_on_bed_2_at_verify_task_106:
+      position:
+      - 4.682061743016919
+      - -1.5158302867068953
+      - 0.5480372321140021
+      furniture: bed_2
+      original_id: _37e00109d5b04b859f7116742a9c3955
+  final_positions:
+    _37e00109d5b04b859f7116742a9c3955_on_bed_1_at_verify_task_106:
+      initial_pos:
+      - 3.065636779088308
+      - 3.8823526406075493
+      - 0.6181731593143195
+      final_pos:
+      - 3.066566228866577
+      - 4.0277018547058105
+      - 0.4876248836517334
+      category: pie
+      original_id: _37e00109d5b04b859f7116742a9c3955
+    _37e00109d5b04b859f7116742a9c3955_on_bed_2_at_verify_task_106:
+      initial_pos:
+      - 4.682061743016919
+      - -1.5158302867068953
+      - 0.6480372321140021
+      final_pos:
+      - 4.752260684967041
+      - -1.369972586631775
+      - 0.5622457265853882
+      category: pie
+      original_id: _37e00109d5b04b859f7116742a9c3955
+  global_index: 147
+  target_object_id: _37e00109d5b04b859f7116742a9c3955

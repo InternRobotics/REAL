@@ -1,0 +1,341 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  b2c4bdc0_820c_443a_aca2_dc23d3663c85_on_desk_1_at_verify_task_528:
+    original_id: b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/b2c4bdc0-820c-443a-aca2-dc23d3663c85.usd
+    usd_scale:
+    - 8.570902660070598
+    - 8.415094950345917
+    - 8.797018238746865
+    position:
+    - -0.08728729816343009
+    - -2.454673727205291
+    - 0.764756127576693
+    size:
+    - 0.01441812515258789
+    - 0.16611099243164062
+    - 0.013512184581486508
+    detailed_caption: Sleek, minimalistic fountain pen with a polished metal body and distinctive nib.
+  b2c4bdc0_820c_443a_aca2_dc23d3663c85_on_desk_2_at_verify_task_528:
+    original_id: b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/b2c4bdc0-820c-443a-aca2-dc23d3663c85.usd
+    usd_scale:
+    - 8.570902660070598
+    - 8.415094950345917
+    - 8.797018238746865
+    position:
+    - 4.410688030565029
+    - 1.7676851938211868
+    - 0.7721986615465721
+    size:
+    - 0.01441812515258789
+    - 0.16611099243164062
+    - 0.013512184581486508
+    detailed_caption: Sleek, minimalistic fountain pen with a polished metal body and distinctive nib.
+  f6980f8fc24547348d15627d2af99c0c_on_desk_2_at_verify_task_528:
+    original_id: f6980f8fc24547348d15627d2af99c0c
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/f6980f8fc24547348d15627d2af99c0c.usd
+    usd_scale:
+    - 1.527514815113432
+    - 1.543312533775513
+    - 1.5728818964988114
+    position:
+    - 4.427082910124673
+    - 1.6090640295944472
+    - 0.7694948573294096
+    size:
+    - 0.14197731018066406
+    - 0.008210897445678711
+    - 0.008104576147161424
+    detailed_caption: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+      on one end.
+  _0be004df7a6243aa8f21b95e8675b9c1_on_desk_2_at_verify_task_528:
+    original_id: _0be004df7a6243aa8f21b95e8675b9c1
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/0be004df7a6243aa8f21b95e8675b9c1.usd
+    usd_scale:
+    - 1.1688259963114804
+    - 1.158403598614655
+    - 1.1719509047956422
+    position:
+    - 4.592669935069764
+    - 1.9892515583271
+    - 0.7711113532818854
+    size:
+    - 0.11608266830444336
+    - 0.06706023216247559
+    - 0.011337568052113056
+    detailed_caption: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+episodes:
+- benchmark_task_id: FODP/verify_task_528
+  family: FODP
+  task_id: verify_task_528
+  episode_idx: 55
+  original_idx: 528
+  benchmark_instruction: Retrieve the sleek, minimalistic fountain pen with a polished metal body and
+    distinctive nib from the desk near my bed and deposit it at the green nightstand cabinet.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the sleek, minimalistic fountain pen with a polished metal body and distinctive
+    nib from the desk near my bed and deposit it at the green nightstand cabinet.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - b2c4bdc0_820c_443a_aca2_dc23d3663c85
+      - f6980f8fc24547348d15627d2af99c0c
+      - _0be004df7a6243aa8f21b95e8675b9c1
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    desk_2:
+      room: bedroom/0
+      content:
+      - f6980f8fc24547348d15627d2af99c0c
+      - _0be004df7a6243aa8f21b95e8675b9c1
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    b2c4bdc0_820c_443a_aca2_dc23d3663c85:
+      category: pen
+      detailed_caption: Sleek, minimalistic fountain pen with a polished metal body and distinctive nib.
+      usd_path: b2c4bdc0-820c-443a-aca2-dc23d3663c85.usd
+      size:
+      - 0.01441812515258789
+      - 0.16611099243164062
+      - 0.013512184581486508
+  obj_distractors:
+  - f6980f8fc24547348d15627d2af99c0c
+  - _0be004df7a6243aa8f21b95e8675b9c1
+  obj_distractor_meta:
+    f6980f8fc24547348d15627d2af99c0c:
+      category: pencil
+      detailed_caption: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+        on one end.
+      usd_path: f6980f8fc24547348d15627d2af99c0c.usd
+      size:
+      - 0.14197731018066406
+      - 0.008210897445678711
+      - 0.008104576147161424
+    _0be004df7a6243aa8f21b95e8675b9c1:
+      category: pen
+      detailed_caption: Cylindrical pen with a pink cap, white barrel, smooth surface, and a clip.
+      usd_path: 0be004df7a6243aa8f21b95e8675b9c1.usd
+      size:
+      - 0.11608266830444336
+      - 0.06706023216247559
+      - 0.011337568052113056
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: pen
+      target_description: Sleek, minimalistic fountain pen with a polished metal body and distinctive
+        nib.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Sleek, minimalistic fountain pen with a polished metal body and distinctive
+        nib.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Sleek, minimalistic fountain pen with a polished metal body and distinctive
+        nib.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  placements:
+    b2c4bdc0_820c_443a_aca2_dc23d3663c85_on_desk_1_at_verify_task_528:
+      position:
+      - -0.08728729816343009
+      - -2.454673727205291
+      - 0.764756127576693
+      furniture: desk_1
+      original_id: b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    b2c4bdc0_820c_443a_aca2_dc23d3663c85_on_desk_2_at_verify_task_528:
+      position:
+      - 4.410688030565029
+      - 1.7676851938211868
+      - 0.7721986615465721
+      furniture: desk_2
+      original_id: b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    f6980f8fc24547348d15627d2af99c0c_on_desk_2_at_verify_task_528:
+      position:
+      - 4.427082910124673
+      - 1.6090640295944472
+      - 0.7694948573294096
+      furniture: desk_2
+      original_id: f6980f8fc24547348d15627d2af99c0c
+    _0be004df7a6243aa8f21b95e8675b9c1_on_desk_2_at_verify_task_528:
+      position:
+      - 4.592669935069764
+      - 1.9892515583271
+      - 0.7711113532818854
+      furniture: desk_2
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+  final_positions:
+    b2c4bdc0_820c_443a_aca2_dc23d3663c85_on_desk_1_at_verify_task_528:
+      initial_pos:
+      - -0.08728729816343009
+      - -2.454673727205291
+      - 0.864756127576693
+      final_pos:
+      - -0.07889925688505173
+      - -2.454650640487671
+      - 0.7434060573577881
+      category: pen
+      original_id: b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    b2c4bdc0_820c_443a_aca2_dc23d3663c85_on_desk_2_at_verify_task_528:
+      initial_pos:
+      - 4.410688030565029
+      - 1.7676851938211868
+      - 0.8721986615465721
+      final_pos:
+      - 4.410165786743164
+      - 1.7677985429763794
+      - 0.7245573997497559
+      category: pen
+      original_id: b2c4bdc0_820c_443a_aca2_dc23d3663c85
+    f6980f8fc24547348d15627d2af99c0c_on_desk_2_at_verify_task_528:
+      initial_pos:
+      - 4.427082910124673
+      - 1.6090640295944472
+      - 0.8694948573294096
+      final_pos:
+      - 4.426732063293457
+      - 1.610919713973999
+      - 0.7223695516586304
+      category: pencil
+      original_id: f6980f8fc24547348d15627d2af99c0c
+    _0be004df7a6243aa8f21b95e8675b9c1_on_desk_2_at_verify_task_528:
+      initial_pos:
+      - 4.592669935069764
+      - 1.9892515583271
+      - 0.8711113532818854
+      final_pos:
+      - 4.523369789123535
+      - 1.9867442846298218
+      - 0.7238192558288574
+      category: pen
+      original_id: _0be004df7a6243aa8f21b95e8675b9c1
+  global_index: 127
+  target_object_id: b2c4bdc0_820c_443a_aca2_dc23d3663c85

@@ -1,0 +1,254 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_1_at_verify_task_23:
+    original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/2442d6cbb5bf42a0a6e9ea7e1a03d295.usd
+    usd_scale:
+    - 23.8239851313981
+    - 23.82712424491061
+    - 22.869612082212583
+    position:
+    - -1.6764089992562574
+    - -1.4202643233238792
+    - 0.891710631181486
+    size:
+    - 0.23159360885620117
+    - 0.3685493469238281
+    - 0.2554214654956013
+    detailed_caption: Compact coffee maker with a sleek navy blue body and a glass carafe.
+  _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_2_at_verify_task_23:
+    original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/2442d6cbb5bf42a0a6e9ea7e1a03d295.usd
+    usd_scale:
+    - 23.8239851313981
+    - 23.82712424491061
+    - 22.869612082212583
+    position:
+    - -2.1105323056588157
+    - 2.8797738581140027
+    - 0.4176987331407145
+    size:
+    - 0.23159360885620117
+    - 0.3685493469238281
+    - 0.2554214654956013
+    detailed_caption: Compact coffee maker with a sleek navy blue body and a glass carafe.
+episodes:
+- task_id: verify_task_23
+  episode_idx: 15
+  original_idx: 23
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to the table where we have dinner, fetch the compact coffee maker with a
+    sleek navy blue body and a glass carafe, and bring it back to white unit with flat wood handles.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295:
+      category: coffee maker
+      detailed_caption: Compact coffee maker with a sleek navy blue body and a glass carafe.
+      usd_path: 2442d6cbb5bf42a0a6e9ea7e1a03d295.usd
+      size:
+      - 0.23159360885620117
+      - 0.3685493469238281
+      - 0.2554214654956013
+  obj_distractors:
+  - c54bbb4e11d447adbc631b496d649145
+  - _81dc088e5036400c80862f6815c8a3c8
+  obj_distractor_meta:
+    c54bbb4e11d447adbc631b496d649145:
+      category: coffee maker
+      detailed_caption: Compact coffee maker with a sleek white exterior, circular base, control panel,
+        and transparent lid.
+      usd_path: c54bbb4e11d447adbc631b496d649145.usd
+      size:
+      - 0.1963329315185547
+      - 0.2915630340576172
+      - 0.2871505236626035
+    _81dc088e5036400c80862f6815c8a3c8:
+      category: container
+      detailed_caption: Cylindrical container with a black lid, chalkboard design, smooth surface, minimalist
+        appearance.
+      usd_path: 81dc088e5036400c80862f6815c8a3c8.usd
+      size:
+      - 0.1313934326171875
+      - 0.1638317108154297
+      - 0.1511125210672617
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek navy blue body and a glass carafe.
+  - action: gaze_at
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek navy blue body and a glass carafe.
+  - action: pick
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek navy blue body and a glass carafe.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  placements:
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_1_at_verify_task_23:
+      position:
+      - -1.6764089992562574
+      - -1.4202643233238792
+      - 0.891710631181486
+      furniture: table_1
+      original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_2_at_verify_task_23:
+      position:
+      - -2.1105323056588157
+      - 2.8797738581140027
+      - 0.4176987331407145
+      furniture: table_2
+      original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+  final_positions:
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_1_at_verify_task_23:
+      initial_pos:
+      - -1.6764089992562574
+      - -1.4202643233238792
+      - 0.991710631181486
+      final_pos:
+      - -1.613320231437683
+      - -1.4166022539138794
+      - 0.8614771962165833
+      category: coffee maker
+      original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_2_at_verify_task_23:
+      initial_pos:
+      - -2.1105323056588157
+      - 2.8797738581140027
+      - 0.5176987331407145
+      final_pos:
+      - -2.04708194732666
+      - 2.882354736328125
+      - 0.3872806131839752
+      category: coffee maker
+      original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+  family: FDP
+  benchmark_task_id: FDP/verify_task_23
+  benchmark_instruction: Head over to the table where we have dinner, fetch the compact coffee maker with
+    a sleek navy blue body and a glass carafe, and bring it back to white unit with flat wood handles.
+  global_index: 15
+  target_object_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295

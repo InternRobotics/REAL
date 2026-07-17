@@ -1,0 +1,301 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _3c8651138db5487aaee94ef87413bb7d_on_couch_2_at_verify_task_5:
+    original_id: _3c8651138db5487aaee94ef87413bb7d
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/3c8651138db5487aaee94ef87413bb7d.usd
+    usd_scale:
+    - 0.1074143980152744
+    - 0.10748741135613832
+    - 0.10781160047842056
+    position:
+    - -3.660071160135568
+    - 2.4635105188042155
+    - 0.4403430600464344
+    size:
+    - 0.08204793930053711
+    - 0.08475112915039062
+    - 0.08892903476953506
+    detailed_caption: Shiny red apple, round shape, smooth surface, brown stem, color variations from
+      red to yellow-green.
+  de1f77087aa84632a8d113dacafdc860_on_couch_2_at_verify_task_5:
+    original_id: de1f77087aa84632a8d113dacafdc860
+    category: avocado
+    usd_path: ${MESATASK_USD_ROOT}/de1f77087aa84632a8d113dacafdc860.usd
+    usd_scale:
+    - 2.7761590933487623
+    - 3.190119516962294
+    - 2.487444776473464
+    position:
+    - -3.4841707695651323
+    - 2.4319614941551104
+    - 0.45188641127198936
+    size:
+    - 0.12667465209960938
+    - 0.2091655731201172
+    - 0.11201573722064495
+    detailed_caption: Ripe avocado, smooth green skin, slightly bumpy texture, oval shape, small stem
+      at top.
+  _37992a4f5eb346e6807d8b9cfc168b26_on_couch_2_at_verify_task_5:
+    original_id: _37992a4f5eb346e6807d8b9cfc168b26
+    category: orange
+    usd_path: ${MESATASK_USD_ROOT}/37992a4f5eb346e6807d8b9cfc168b26.usd
+    usd_scale:
+    - 39.98372387216209
+    - 39.950295031696115
+    - 39.89618963733432
+    position:
+    - -3.7473532918184675
+    - 2.755277150798542
+    - 0.4352101848740131
+    size:
+    - 0.08678340911865234
+    - 0.08931732177734375
+    - 0.07866328442469239
+    detailed_caption: Vibrant orange, round shape, textured surface, bright yellow-orange exterior, light
+      yellow inner flesh.
+episodes:
+- task_id: verify_task_5
+  episode_idx: 3
+  original_idx: 5
+  benchmark_instruction: Transport a fruit at the couch in front of the TV to the table where we have
+    dinner.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the shiny red apple, round shape, smooth surface, brown stem, color variations
+    from red to yellow-green at the couch in front of the TV to the table where we have dinner.
+  fuzzy_task_description: Transport a fruit at the couch in front of the TV to the table where we have
+    dinner.
+  purpose: fruit
+  purpose_group: fruits
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content:
+      - _3c8651138db5487aaee94ef87413bb7d
+      - de1f77087aa84632a8d113dacafdc860
+      - _37992a4f5eb346e6807d8b9cfc168b26
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _3c8651138db5487aaee94ef87413bb7d
+    couch_2:
+      room: living room/0
+      content:
+      - de1f77087aa84632a8d113dacafdc860
+      - _37992a4f5eb346e6807d8b9cfc168b26
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: couch_2
+  src_distractors: []
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _3c8651138db5487aaee94ef87413bb7d:
+      category: apple
+      detailed_caption: Shiny red apple, round shape, smooth surface, brown stem, color variations from
+        red to yellow-green.
+      usd_path: 3c8651138db5487aaee94ef87413bb7d.usd
+      size:
+      - 0.08204793930053711
+      - 0.08475112915039062
+      - 0.08892903476953506
+  obj_distractors:
+  - de1f77087aa84632a8d113dacafdc860
+  - _37992a4f5eb346e6807d8b9cfc168b26
+  obj_distractor_meta:
+    de1f77087aa84632a8d113dacafdc860:
+      category: avocado
+      detailed_caption: Ripe avocado, smooth green skin, slightly bumpy texture, oval shape, small stem
+        at top.
+      usd_path: de1f77087aa84632a8d113dacafdc860.usd
+      size:
+      - 0.12667465209960938
+      - 0.2091655731201172
+      - 0.11201573722064495
+    _37992a4f5eb346e6807d8b9cfc168b26:
+      category: orange
+      detailed_caption: Vibrant orange, round shape, textured surface, bright yellow-orange exterior,
+        light yellow inner flesh.
+      usd_path: 37992a4f5eb346e6807d8b9cfc168b26.usd
+      size:
+      - 0.08678340911865234
+      - 0.08931732177734375
+      - 0.07866328442469239
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: couch_2
+  - action: find
+    args:
+      target_category: apple
+      target_description: Shiny red apple, round shape, smooth surface, brown stem, color variations from
+        red to yellow-green.
+  - action: gaze_at
+    args:
+      target_category: apple
+      target_description: Shiny red apple, round shape, smooth surface, brown stem, color variations from
+        red to yellow-green.
+  - action: pick
+    args:
+      target_category: apple
+      target_description: Shiny red apple, round shape, smooth surface, brown stem, color variations from
+        red to yellow-green.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Transport the shiny red apple, round shape, smooth surface, brown stem, color
+    variations from red to yellow-green at the couch in front of the TV to the table where we have dinner.
+  placements:
+    _3c8651138db5487aaee94ef87413bb7d_on_couch_2_at_verify_task_5:
+      position:
+      - -3.660071160135568
+      - 2.4635105188042155
+      - 0.4403430600464344
+      furniture: couch_2
+      original_id: _3c8651138db5487aaee94ef87413bb7d
+    de1f77087aa84632a8d113dacafdc860_on_couch_2_at_verify_task_5:
+      position:
+      - -3.4841707695651323
+      - 2.4319614941551104
+      - 0.45188641127198936
+      furniture: couch_2
+      original_id: de1f77087aa84632a8d113dacafdc860
+    _37992a4f5eb346e6807d8b9cfc168b26_on_couch_2_at_verify_task_5:
+      position:
+      - -3.7473532918184675
+      - 2.755277150798542
+      - 0.4352101848740131
+      furniture: couch_2
+      original_id: _37992a4f5eb346e6807d8b9cfc168b26
+  final_positions:
+    _3c8651138db5487aaee94ef87413bb7d_on_couch_2_at_verify_task_5:
+      initial_pos:
+      - -3.660071160135568
+      - 2.4635105188042155
+      - 0.5403430600464344
+      final_pos:
+      - -3.7898170948028564
+      - 2.421156406402588
+      - 0.3959455192089081
+      category: apple
+      original_id: _3c8651138db5487aaee94ef87413bb7d
+    de1f77087aa84632a8d113dacafdc860_on_couch_2_at_verify_task_5:
+      initial_pos:
+      - -3.4841707695651323
+      - 2.4319614941551104
+      - 0.5518864112719893
+      final_pos:
+      - -3.4685282707214355
+      - 2.435314178466797
+      - 0.41559574007987976
+      category: avocado
+      original_id: de1f77087aa84632a8d113dacafdc860
+    _37992a4f5eb346e6807d8b9cfc168b26_on_couch_2_at_verify_task_5:
+      initial_pos:
+      - -3.7473532918184675
+      - 2.755277150798542
+      - 0.5352101848740131
+      final_pos:
+      - -3.7872891426086426
+      - 2.7329888343811035
+      - 0.3888026773929596
+      category: orange
+      original_id: _37992a4f5eb346e6807d8b9cfc168b26
+  family: SUL
+  benchmark_task_id: SUL/verify_task_5
+  global_index: 179
+  target_object_id: _3c8651138db5487aaee94ef87413bb7d

@@ -1,0 +1,301 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _229ed69900594de188c9e6b8ad3d7bd3_on_couch_2_at_verify_task_1:
+    original_id: _229ed69900594de188c9e6b8ad3d7bd3
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/229ed69900594de188c9e6b8ad3d7bd3.usd
+    usd_scale:
+    - 12.4447712088288
+    - 12.43273073226407
+    - 12.48489600584814
+    position:
+    - -3.3161874386827104
+    - 2.550519715582802
+    - 0.44208411311730744
+    size:
+    - 0.091949462890625
+    - 0.08811569213867188
+    - 0.09241114091128111
+    detailed_caption: Round apple with a smooth, shiny surface, gradient of green and red hues, small
+      stem.
+  _7b2a96dc42fd43b4bdd56bfecc29d56f_on_couch_2_at_verify_task_1:
+    original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+    category: banana
+    usd_path: ${MESATASK_USD_ROOT}/7b2a96dc42fd43b4bdd56bfecc29d56f.usd
+    usd_scale:
+    - 12.616035619035632
+    - 18.279250802766626
+    - 7.207714278973467
+    position:
+    - -3.724160109589193
+    - 2.6080177662621424
+    - 0.4217103897058405
+    size:
+    - 0.08189964294433594
+    - 0.27899932861328125
+    - 0.051663694088347256
+    detailed_caption: Bunch of bananas, slightly curved shape, yellow skin with brown speckles, natural
+      texture.
+  _4ad47c6172c84ca88da0b0ded8f99429_on_couch_2_at_verify_task_1:
+    original_id: _4ad47c6172c84ca88da0b0ded8f99429
+    category: pear
+    usd_path: ${MESATASK_USD_ROOT}/4ad47c6172c84ca88da0b0ded8f99429.usd
+    usd_scale:
+    - 0.28558571741145744
+    - 0.3294756951464373
+    - 0.26017180538551304
+    position:
+    - -3.4925356378777255
+    - 2.6318704873206196
+    - 0.4390840719966218
+    size:
+    - 0.09479141235351562
+    - 0.19657516479492188
+    - 0.08641105866990983
+    detailed_caption: Smooth, green pear; rounded shape tapering at the bottom; small brown stem; glossy
+      surface.
+episodes:
+- task_id: verify_task_1
+  episode_idx: 0
+  original_idx: 1
+  benchmark_instruction: Take a fruit from the couch in front of the TV and put it on the rectangular
+    table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the round apple with a smooth, shiny surface, gradient of green and red hues,
+    small stem from the couch in front of the TV and put it on the rectangular table.
+  fuzzy_task_description: Take a fruit from the couch in front of the TV and put it on the rectangular
+    table.
+  purpose: fruit
+  purpose_group: fruits
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content:
+      - _229ed69900594de188c9e6b8ad3d7bd3
+      - _7b2a96dc42fd43b4bdd56bfecc29d56f
+      - _4ad47c6172c84ca88da0b0ded8f99429
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _229ed69900594de188c9e6b8ad3d7bd3
+    couch_2:
+      room: living room/0
+      content:
+      - _7b2a96dc42fd43b4bdd56bfecc29d56f
+      - _4ad47c6172c84ca88da0b0ded8f99429
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: couch_2
+  src_distractors: []
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _229ed69900594de188c9e6b8ad3d7bd3:
+      category: apple
+      detailed_caption: Round apple with a smooth, shiny surface, gradient of green and red hues, small
+        stem.
+      usd_path: 229ed69900594de188c9e6b8ad3d7bd3.usd
+      size:
+      - 0.091949462890625
+      - 0.08811569213867188
+      - 0.09241114091128111
+  obj_distractors:
+  - _7b2a96dc42fd43b4bdd56bfecc29d56f
+  - _4ad47c6172c84ca88da0b0ded8f99429
+  obj_distractor_meta:
+    _7b2a96dc42fd43b4bdd56bfecc29d56f:
+      category: banana
+      detailed_caption: Bunch of bananas, slightly curved shape, yellow skin with brown speckles, natural
+        texture.
+      usd_path: 7b2a96dc42fd43b4bdd56bfecc29d56f.usd
+      size:
+      - 0.08189964294433594
+      - 0.27899932861328125
+      - 0.051663694088347256
+    _4ad47c6172c84ca88da0b0ded8f99429:
+      category: pear
+      detailed_caption: Smooth, green pear; rounded shape tapering at the bottom; small brown stem; glossy
+        surface.
+      usd_path: 4ad47c6172c84ca88da0b0ded8f99429.usd
+      size:
+      - 0.09479141235351562
+      - 0.19657516479492188
+      - 0.08641105866990983
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: couch_2
+  - action: find
+    args:
+      target_category: apple
+      target_description: Round apple with a smooth, shiny surface, gradient of green and red hues, small
+        stem.
+  - action: gaze_at
+    args:
+      target_category: apple
+      target_description: Round apple with a smooth, shiny surface, gradient of green and red hues, small
+        stem.
+  - action: pick
+    args:
+      target_category: apple
+      target_description: Round apple with a smooth, shiny surface, gradient of green and red hues, small
+        stem.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Take the round apple with a smooth, shiny surface, gradient of green and red
+    hues, small stem from the couch in front of the TV and put it on the rectangular table.
+  placements:
+    _229ed69900594de188c9e6b8ad3d7bd3_on_couch_2_at_verify_task_1:
+      position:
+      - -3.3161874386827104
+      - 2.550519715582802
+      - 0.44208411311730744
+      furniture: couch_2
+      original_id: _229ed69900594de188c9e6b8ad3d7bd3
+    _7b2a96dc42fd43b4bdd56bfecc29d56f_on_couch_2_at_verify_task_1:
+      position:
+      - -3.724160109589193
+      - 2.6080177662621424
+      - 0.4217103897058405
+      furniture: couch_2
+      original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+    _4ad47c6172c84ca88da0b0ded8f99429_on_couch_2_at_verify_task_1:
+      position:
+      - -3.4925356378777255
+      - 2.6318704873206196
+      - 0.4390840719966218
+      furniture: couch_2
+      original_id: _4ad47c6172c84ca88da0b0ded8f99429
+  final_positions:
+    _229ed69900594de188c9e6b8ad3d7bd3_on_couch_2_at_verify_task_1:
+      initial_pos:
+      - -3.3161874386827104
+      - 2.550519715582802
+      - 0.5420841131173074
+      final_pos:
+      - -3.3004446029663086
+      - 2.482578754425049
+      - 0.3974706530570984
+      category: apple
+      original_id: _229ed69900594de188c9e6b8ad3d7bd3
+    _7b2a96dc42fd43b4bdd56bfecc29d56f_on_couch_2_at_verify_task_1:
+      initial_pos:
+      - -3.724160109589193
+      - 2.6080177662621424
+      - 0.5217103897058405
+      final_pos:
+      - -3.711069107055664
+      - 2.6014814376831055
+      - 0.38976189494132996
+      category: banana
+      original_id: _7b2a96dc42fd43b4bdd56bfecc29d56f
+    _4ad47c6172c84ca88da0b0ded8f99429_on_couch_2_at_verify_task_1:
+      initial_pos:
+      - -3.4925356378777255
+      - 2.6318704873206196
+      - 0.5390840719966218
+      final_pos:
+      - -3.356064796447754
+      - 2.741049289703369
+      - 0.3936013877391815
+      category: pear
+      original_id: _4ad47c6172c84ca88da0b0ded8f99429
+  family: SUL
+  benchmark_task_id: SUL/verify_task_1
+  global_index: 176
+  target_object_id: _229ed69900594de188c9e6b8ad3d7bd3

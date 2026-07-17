@@ -1,0 +1,300 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_88:
+    original_id: dfb60be05b914116b7178579e93516ed
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/dfb60be05b914116b7178579e93516ed.usd
+    usd_scale:
+    - 0.018298897491465328
+    - 0.01763507245730863
+    - 0.018331101247054563
+    position:
+    - -2.3105443014530627
+    - -1.2843158689651664
+    - 0.7678793365880847
+    size:
+    - 0.12268638610839844
+    - 0.06080317497253418
+    - 0.00775887630879879
+    detailed_caption: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+  _0dd8be84d117499d9adfae347dc5a389_on_table_1_at_verify_task_88:
+    original_id: _0dd8be84d117499d9adfae347dc5a389
+    category: marker
+    usd_path: ${MESATASK_USD_ROOT}/0dd8be84d117499d9adfae347dc5a389.usd
+    usd_scale:
+    - 1.65559836991715
+    - 1.6510703442585255
+    - 1.631141599126809
+    position:
+    - -1.7000650699099455
+    - -1.0179336065180205
+    - 0.7703548476961442
+    size:
+    - 0.13348960876464844
+    - 0.014392852783203125
+    - 0.012709898524917662
+    detailed_caption: Black marker with a rounded tip, cylindrical body, and white label.
+  f6980f8fc24547348d15627d2af99c0c_on_table_1_at_verify_task_88:
+    original_id: f6980f8fc24547348d15627d2af99c0c
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/f6980f8fc24547348d15627d2af99c0c.usd
+    usd_scale:
+    - 1.527514815113432
+    - 1.543312533775513
+    - 1.5728818964988114
+    position:
+    - -2.7580711943440392
+    - -1.1317842592495322
+    - 0.768052186507266
+    size:
+    - 0.14197731018066406
+    - 0.008210897445678711
+    - 0.008104576147161424
+    detailed_caption: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+      on one end.
+episodes:
+- task_id: verify_task_88
+  episode_idx: 60
+  original_idx: 88
+  benchmark_instruction: First, drive to the table much larger than another one to find a writing instrument,
+    then deliver it to bed with matte white mattress cover.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to the table much larger than another one, grasp the cylindrical pen with
+    a sleek, smooth, shiny exterior and decorative elements, and carry it to bed with matte white mattress
+    cover.
+  fuzzy_task_description: First, drive to the table much larger than another one to find a writing instrument,
+    then deliver it to bed with matte white mattress cover.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - dfb60be05b914116b7178579e93516ed
+      - _0dd8be84d117499d9adfae347dc5a389
+      - f6980f8fc24547348d15627d2af99c0c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0dd8be84d117499d9adfae347dc5a389
+      - f6980f8fc24547348d15627d2af99c0c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - dfb60be05b914116b7178579e93516ed
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    dfb60be05b914116b7178579e93516ed:
+      category: pen
+      detailed_caption: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+      usd_path: dfb60be05b914116b7178579e93516ed.usd
+      size:
+      - 0.12268638610839844
+      - 0.06080317497253418
+      - 0.00775887630879879
+  obj_distractors:
+  - _0dd8be84d117499d9adfae347dc5a389
+  - f6980f8fc24547348d15627d2af99c0c
+  obj_distractor_meta:
+    _0dd8be84d117499d9adfae347dc5a389:
+      category: marker
+      detailed_caption: Black marker with a rounded tip, cylindrical body, and white label.
+      usd_path: 0dd8be84d117499d9adfae347dc5a389.usd
+      size:
+      - 0.13348960876464844
+      - 0.014392852783203125
+      - 0.012709898524917662
+    f6980f8fc24547348d15627d2af99c0c:
+      category: pencil
+      detailed_caption: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+        on one end.
+      usd_path: f6980f8fc24547348d15627d2af99c0c.usd
+      size:
+      - 0.14197731018066406
+      - 0.008210897445678711
+      - 0.008104576147161424
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  physics_task_description: Navigate to the table much larger than another one, grasp the cylindrical
+    pen with a sleek, smooth, shiny exterior and decorative elements, and carry it to bed with matte white
+    mattress cover.
+  placements:
+    dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_88:
+      position:
+      - -2.3105443014530627
+      - -1.2843158689651664
+      - 0.7678793365880847
+      furniture: table_1
+      original_id: dfb60be05b914116b7178579e93516ed
+    _0dd8be84d117499d9adfae347dc5a389_on_table_1_at_verify_task_88:
+      position:
+      - -1.7000650699099455
+      - -1.0179336065180205
+      - 0.7703548476961442
+      furniture: table_1
+      original_id: _0dd8be84d117499d9adfae347dc5a389
+    f6980f8fc24547348d15627d2af99c0c_on_table_1_at_verify_task_88:
+      position:
+      - -2.7580711943440392
+      - -1.1317842592495322
+      - 0.768052186507266
+      furniture: table_1
+      original_id: f6980f8fc24547348d15627d2af99c0c
+  final_positions:
+    dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_88:
+      initial_pos:
+      - -2.3105443014530627
+      - -1.2843158689651664
+      - 0.8678793365880847
+      final_pos:
+      - -2.2447783946990967
+      - -1.3188509941101074
+      - 0.7473320960998535
+      category: pencil pen
+      original_id: dfb60be05b914116b7178579e93516ed
+    _0dd8be84d117499d9adfae347dc5a389_on_table_1_at_verify_task_88:
+      initial_pos:
+      - -1.7000650699099455
+      - -1.0179336065180205
+      - 0.8703548476961441
+      final_pos:
+      - -1.700053095817566
+      - -1.0145089626312256
+      - 0.7487271428108215
+      category: marker
+      original_id: _0dd8be84d117499d9adfae347dc5a389
+    f6980f8fc24547348d15627d2af99c0c_on_table_1_at_verify_task_88:
+      initial_pos:
+      - -2.7580711943440392
+      - -1.1317842592495322
+      - 0.868052186507266
+      final_pos:
+      - -2.758153200149536
+      - -1.1301560401916504
+      - 0.747725248336792
+      category: pencil
+      original_id: f6980f8fc24547348d15627d2af99c0c
+  family: SUL
+  benchmark_task_id: SUL/verify_task_88
+  global_index: 235
+  target_object_id: dfb60be05b914116b7178579e93516ed

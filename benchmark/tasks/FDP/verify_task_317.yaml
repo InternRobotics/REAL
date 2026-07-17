@@ -1,0 +1,258 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_desk_1_at_verify_task_317:
+    original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/fe530220-cc28-4bc9-a9e6-e04655f2ce9a.usd
+    usd_scale:
+    - 16.47221989716394
+    - 16.08443661898932
+    - 16.382463388965867
+    position:
+    - -0.01703947003085661
+    - -3.0260115603990627
+    - 0.7981740938080475
+    size:
+    - 0.3285636901855469
+    - 0.1690673828125
+    - 0.08034811704419553
+    detailed_caption: Sleek, modern alarm clock; rectangular shape; black plastic body; large digital
+      display; buttons.
+  fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_desk_2_at_verify_task_317:
+    original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/fe530220-cc28-4bc9-a9e6-e04655f2ce9a.usd
+    usd_scale:
+    - 16.47221989716394
+    - 16.08443661898932
+    - 16.382463388965867
+    position:
+    - 4.486802089679973
+    - 2.1091046681970225
+    - 0.8056166277779266
+    size:
+    - 0.3285636901855469
+    - 0.1690673828125
+    - 0.08034811704419553
+    detailed_caption: Sleek, modern alarm clock; rectangular shape; black plastic body; large digital
+      display; buttons.
+episodes:
+- task_id: verify_task_317
+  episode_idx: 63
+  original_idx: 317
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the sleek, modern alarm clock; rectangular shape; black plastic body; large
+    digital display; buttons from white unit with flat wood handles and deposit it at layered grey and
+    black bed.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: bed_2
+  dest_distractors:
+  - bed_1
+  obj_meta:
+    fe530220_cc28_4bc9_a9e6_e04655f2ce9a:
+      category: alarm clock
+      detailed_caption: Sleek, modern alarm clock; rectangular shape; black plastic body; large digital
+        display; buttons.
+      usd_path: fe530220-cc28-4bc9-a9e6-e04655f2ce9a.usd
+      size:
+      - 0.3285636901855469
+      - 0.1690673828125
+      - 0.08034811704419553
+  obj_distractors:
+  - _980d648049bd43329f4662b2f8e7c575
+  - _73c023c90f8d45fb88294bccade836c0
+  obj_distractor_meta:
+    _980d648049bd43329f4662b2f8e7c575:
+      category: clock
+      detailed_caption: Vintage red alarm clock, round shape, glass face, metal knobs, distressed finish,
+        black numerals, beige background.
+      usd_path: 980d648049bd43329f4662b2f8e7c575.usd
+      size:
+      - 0.12396860122680664
+      - 0.13295269012451172
+      - 0.06938196567352861
+    _73c023c90f8d45fb88294bccade836c0:
+      category: clock
+      detailed_caption: Round metal body, clear glass face, two bells, black finish, short legs.
+      usd_path: 73c023c90f8d45fb88294bccade836c0.usd
+      size:
+      - 0.10976600646972656
+      - 0.1682281494140625
+      - 0.05667768185958266
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: alarm clock
+      target_description: Sleek, modern alarm clock; rectangular shape; black plastic body; large digital
+        display; buttons.
+  - action: gaze_at
+    args:
+      target_category: alarm clock
+      target_description: Sleek, modern alarm clock; rectangular shape; black plastic body; large digital
+        display; buttons.
+  - action: pick
+    args:
+      target_category: alarm clock
+      target_description: Sleek, modern alarm clock; rectangular shape; black plastic body; large digital
+        display; buttons.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: place
+    args:
+      receptacle_name: bed_2
+  placements:
+    fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_desk_1_at_verify_task_317:
+      position:
+      - -0.01703947003085661
+      - -3.0260115603990627
+      - 0.7981740938080475
+      furniture: desk_1
+      original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_desk_2_at_verify_task_317:
+      position:
+      - 4.486802089679973
+      - 2.1091046681970225
+      - 0.8056166277779266
+      furniture: desk_2
+      original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+  final_positions:
+    fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_desk_1_at_verify_task_317:
+      initial_pos:
+      - -0.01703947003085661
+      - -3.0260115603990627
+      - 0.8981740938080475
+      final_pos:
+      - -0.01841830089688301
+      - -3.107152223587036
+      - 0.764207124710083
+      category: alarm clock
+      original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_desk_2_at_verify_task_317:
+      initial_pos:
+      - 4.486802089679973
+      - 2.1091046681970225
+      - 0.9056166277779266
+      final_pos:
+      - 4.489492416381836
+      - 2.0252552032470703
+      - 0.7448514699935913
+      category: alarm clock
+      original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+  family: FDP
+  benchmark_task_id: FDP/verify_task_317
+  benchmark_instruction: Retrieve the sleek, modern alarm clock; rectangular shape; black plastic body;
+    large digital display; buttons from white unit with flat wood handles and deposit it at layered grey
+    and black bed.
+  global_index: 63
+  target_object_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a

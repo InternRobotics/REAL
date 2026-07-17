@@ -1,0 +1,317 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _3472b26905214ce1b611f3ed1ab32313_on_table_1_at_verify_task_60:
+    original_id: _3472b26905214ce1b611f3ed1ab32313
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/3472b26905214ce1b611f3ed1ab32313.usd
+    usd_scale:
+    - 2.332726455766994
+    - 2.3698653929578297
+    - 2.362815959803183
+    position:
+    - -1.6741357964585346
+    - -1.5353394529482622
+    - 0.7731671994875069
+    size:
+    - 0.1439647674560547
+    - 0.03310394287109375
+    - 0.01833460210764315
+    detailed_caption: Blue pens with a sleek cylindrical design, metal clip, pointed nib, and contrasting
+      cap.
+  _0dd8be84d117499d9adfae347dc5a389_on_table_1_at_verify_task_60:
+    original_id: _0dd8be84d117499d9adfae347dc5a389
+    category: marker
+    usd_path: ${MESATASK_USD_ROOT}/0dd8be84d117499d9adfae347dc5a389.usd
+    usd_scale:
+    - 1.65559836991715
+    - 1.6510703442585255
+    - 1.631141599126809
+    position:
+    - -1.5966508289917847
+    - -1.1595279334350321
+    - 0.7703548476961442
+    size:
+    - 0.13348960876464844
+    - 0.014392852783203125
+    - 0.012709898524917662
+    detailed_caption: Black marker with a rounded tip, cylindrical body, and white label.
+  _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_60:
+    original_id: _748724f9761f4029807de5618ae50c3c
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/748724f9761f4029807de5618ae50c3c.usd
+    usd_scale:
+    - 9.475818065842008
+    - 0.6009338806833411
+    - 0.04894884318016047
+    position:
+    - -2.1394321806853926
+    - -1.2590542215640017
+    - 0.7645293563669111
+    size:
+    - 0.2049999237060547
+    - 0.19643020629882812
+    - 0.0010589158664515708
+    detailed_caption: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood, silver
+      ferrule.
+episodes:
+- task_id: verify_task_60
+  episode_idx: 42
+  original_idx: 60
+  benchmark_instruction: Retrieve a writing instrument from the table where we have dinner and deposit
+    it at white cabinet with yellow shelf back.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to the table where we have dinner, pick up the blue pens with a sleek cylindrical
+    design, metal clip, pointed nib, and contrasting cap, then travel to white cabinet with yellow shelf
+    back to place it.
+  fuzzy_task_description: Retrieve a writing instrument from the table where we have dinner and deposit
+    it at white cabinet with yellow shelf back.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _3472b26905214ce1b611f3ed1ab32313
+      - _0dd8be84d117499d9adfae347dc5a389
+      - _748724f9761f4029807de5618ae50c3c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0dd8be84d117499d9adfae347dc5a389
+      - _748724f9761f4029807de5618ae50c3c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _3472b26905214ce1b611f3ed1ab32313
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _3472b26905214ce1b611f3ed1ab32313:
+      category: pen
+      detailed_caption: Blue pens with a sleek cylindrical design, metal clip, pointed nib, and contrasting
+        cap.
+      usd_path: 3472b26905214ce1b611f3ed1ab32313.usd
+      size:
+      - 0.1439647674560547
+      - 0.03310394287109375
+      - 0.01833460210764315
+  obj_distractors:
+  - _0dd8be84d117499d9adfae347dc5a389
+  - _748724f9761f4029807de5618ae50c3c
+  obj_distractor_meta:
+    _0dd8be84d117499d9adfae347dc5a389:
+      category: marker
+      detailed_caption: Black marker with a rounded tip, cylindrical body, and white label.
+      usd_path: 0dd8be84d117499d9adfae347dc5a389.usd
+      size:
+      - 0.13348960876464844
+      - 0.014392852783203125
+      - 0.012709898524917662
+    _748724f9761f4029807de5618ae50c3c:
+      category: pencil
+      detailed_caption: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood,
+        silver ferrule.
+      usd_path: 748724f9761f4029807de5618ae50c3c.usd
+      size:
+      - 0.2049999237060547
+      - 0.19643020629882812
+      - 0.0010589158664515708
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: Blue pens with a sleek cylindrical design, metal clip, pointed nib, and contrasting
+        cap.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Blue pens with a sleek cylindrical design, metal clip, pointed nib, and contrasting
+        cap.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Blue pens with a sleek cylindrical design, metal clip, pointed nib, and contrasting
+        cap.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  physics_task_description: Go to the table where we have dinner, pick up the blue pens with a sleek cylindrical
+    design, metal clip, pointed nib, and contrasting cap, then travel to white cabinet with yellow shelf
+    back to place it.
+  placements:
+    _3472b26905214ce1b611f3ed1ab32313_on_table_1_at_verify_task_60:
+      position:
+      - -1.6741357964585346
+      - -1.5353394529482622
+      - 0.7731671994875069
+      furniture: table_1
+      original_id: _3472b26905214ce1b611f3ed1ab32313
+    _0dd8be84d117499d9adfae347dc5a389_on_table_1_at_verify_task_60:
+      position:
+      - -1.5966508289917847
+      - -1.1595279334350321
+      - 0.7703548476961442
+      furniture: table_1
+      original_id: _0dd8be84d117499d9adfae347dc5a389
+    _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_60:
+      position:
+      - -2.1394321806853926
+      - -1.2590542215640017
+      - 0.7645293563669111
+      furniture: table_1
+      original_id: _748724f9761f4029807de5618ae50c3c
+  final_positions:
+    _3472b26905214ce1b611f3ed1ab32313_on_table_1_at_verify_task_60:
+      initial_pos:
+      - -1.6741357964585346
+      - -1.5353394529482622
+      - 0.8731671994875069
+      final_pos:
+      - -1.5913288593292236
+      - -1.4979149103164673
+      - 0.7526834607124329
+      category: pen
+      original_id: _3472b26905214ce1b611f3ed1ab32313
+    _0dd8be84d117499d9adfae347dc5a389_on_table_1_at_verify_task_60:
+      initial_pos:
+      - -1.5966508289917847
+      - -1.1595279334350321
+      - 0.8703548476961441
+      final_pos:
+      - -1.5966068506240845
+      - -1.1558830738067627
+      - 0.7487273812294006
+      category: marker
+      original_id: _0dd8be84d117499d9adfae347dc5a389
+    _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_60:
+      initial_pos:
+      - -2.1394321806853926
+      - -1.2590542215640017
+      - 0.8645293563669111
+      final_pos:
+      - -2.139155387878418
+      - -1.259242057800293
+      - 0.7500311732292175
+      category: pencil
+      original_id: _748724f9761f4029807de5618ae50c3c
+  family: SUL
+  benchmark_task_id: SUL/verify_task_60
+  global_index: 218
+  target_object_id: _3472b26905214ce1b611f3ed1ab32313

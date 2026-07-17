@@ -1,0 +1,330 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_1_at_verify_task_0:
+    original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/05aaa6414f4e4b6eb5432dbcf20290f6.usd
+    usd_scale:
+    - 1.2429552628370415
+    - 1.2276162272094766
+    - 1.2361208837344122
+    position:
+    - -2.8987369697019627
+    - -1.2536729795937451
+    - 0.7962096378137358
+    size:
+    - 0.06312370300292969
+    - 0.2378683090209961
+    - 0.0644194787601009
+    detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+  _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_0:
+    original_id: _19f846a920864afb86a015fb79d1424c
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/19f846a920864afb86a015fb79d1424c.usd
+    usd_scale:
+    - 0.13438533143066458
+    - 0.13629921104269854
+    - 0.13385686147421313
+    position:
+    - -2.618587037792805
+    - -1.3709276492623539
+    - 0.7772341181294178
+    size:
+    - 0.13190841674804688
+    - 0.14513397216796875
+    - 0.026468439391464926
+    detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+      outfit, distinct facial features.
+  _0df095c0471b45c48f67baa440714e8d_on_table_1_at_verify_task_0:
+    original_id: _0df095c0471b45c48f67baa440714e8d
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/0df095c0471b45c48f67baa440714e8d.usd
+    usd_scale:
+    - 3.179280676078348
+    - 3.183207211636635
+    - 3.1821521492704794
+    position:
+    - -1.719304782537394
+    - -1.4442843465008364
+    - 0.8419149661017582
+    size:
+    - 0.14583587646484375
+    - 0.240814208984375
+    - 0.15583013533614576
+    detailed_caption: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression, rounded
+      body, curled tail.
+  _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_0:
+    original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/05aaa6414f4e4b6eb5432dbcf20290f6.usd
+    usd_scale:
+    - 1.2429552628370415
+    - 1.2276162272094766
+    - 1.2361208837344122
+    position:
+    - -2.414324833144988
+    - 2.558393097718354
+    - 0.3221977397729643
+    size:
+    - 0.06312370300292969
+    - 0.2378683090209961
+    - 0.0644194787601009
+    detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+episodes:
+- benchmark_task_id: FODP/verify_task_0
+  family: FODP
+  task_id: verify_task_0
+  episode_idx: 0
+  original_idx: 0
+  benchmark_instruction: Move the stylized figurine with a rounded head, small body, short-sleeved shirt,
+    and shorts located at the rectangular table to the couch in front of the TV.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the stylized figurine with a rounded head, small body, short-sleeved shirt, and
+    shorts located at the rectangular table to the couch in front of the TV.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+      - _19f846a920864afb86a015fb79d1424c
+      - _0df095c0471b45c48f67baa440714e8d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _19f846a920864afb86a015fb79d1424c
+      - _0df095c0471b45c48f67baa440714e8d
+    couch_2:
+      room: living room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    table_2:
+      room: living room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: couch_2
+  dest_distractors: []
+  obj_meta:
+    _05aaa6414f4e4b6eb5432dbcf20290f6:
+      category: figurine
+      detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+      usd_path: 05aaa6414f4e4b6eb5432dbcf20290f6.usd
+      size:
+      - 0.06312370300292969
+      - 0.2378683090209961
+      - 0.0644194787601009
+  obj_distractors:
+  - _19f846a920864afb86a015fb79d1424c
+  - _0df095c0471b45c48f67baa440714e8d
+  obj_distractor_meta:
+    _19f846a920864afb86a015fb79d1424c:
+      category: figurine
+      detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+        outfit, distinct facial features.
+      usd_path: 19f846a920864afb86a015fb79d1424c.usd
+      size:
+      - 0.13190841674804688
+      - 0.14513397216796875
+      - 0.026468439391464926
+    _0df095c0471b45c48f67baa440714e8d:
+      category: figurine
+      detailed_caption: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression,
+        rounded body, curled tail.
+      usd_path: 0df095c0471b45c48f67baa440714e8d.usd
+      size:
+      - 0.14583587646484375
+      - 0.240814208984375
+      - 0.15583013533614576
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: nav_to
+    args:
+      receptacle_name: couch_2
+  - action: place
+    args:
+      receptacle_name: couch_2
+  placements:
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_1_at_verify_task_0:
+      position:
+      - -2.8987369697019627
+      - -1.2536729795937451
+      - 0.7962096378137358
+      furniture: table_1
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_0:
+      position:
+      - -2.618587037792805
+      - -1.3709276492623539
+      - 0.7772341181294178
+      furniture: table_1
+      original_id: _19f846a920864afb86a015fb79d1424c
+    _0df095c0471b45c48f67baa440714e8d_on_table_1_at_verify_task_0:
+      position:
+      - -1.719304782537394
+      - -1.4442843465008364
+      - 0.8419149661017582
+      furniture: table_1
+      original_id: _0df095c0471b45c48f67baa440714e8d
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_0:
+      position:
+      - -2.414324833144988
+      - 2.558393097718354
+      - 0.3221977397729643
+      furniture: table_2
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+  final_positions:
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_1_at_verify_task_0:
+      initial_pos:
+      - -2.8987369697019627
+      - -1.2536729795937451
+      - 0.8962096378137357
+      final_pos:
+      - -2.8980040550231934
+      - -1.2596832513809204
+      - 0.7650552988052368
+      category: figurine
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_0:
+      initial_pos:
+      - -2.618587037792805
+      - -1.3709276492623539
+      - 0.8772341181294178
+      final_pos:
+      - -2.6172587871551514
+      - -1.374329924583435
+      - 0.7551820278167725
+      category: figurine
+      original_id: _19f846a920864afb86a015fb79d1424c
+    _0df095c0471b45c48f67baa440714e8d_on_table_1_at_verify_task_0:
+      initial_pos:
+      - -1.719304782537394
+      - -1.4442843465008364
+      - 0.9419149661017582
+      final_pos:
+      - -1.7222803831100464
+      - -1.4012103080749512
+      - 0.7795631289482117
+      category: figurine
+      original_id: _0df095c0471b45c48f67baa440714e8d
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_2_at_verify_task_0:
+      initial_pos:
+      - -2.414324833144988
+      - 2.558393097718354
+      - 0.42219773977296426
+      final_pos:
+      - -2.406747341156006
+      - 2.5557022094726562
+      - 0.2914220690727234
+      category: figurine
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+  global_index: 72
+  target_object_id: _05aaa6414f4e4b6eb5432dbcf20290f6

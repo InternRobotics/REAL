@@ -1,0 +1,302 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a738bab81bb541e2883d952df498a51d_on_table_1_at_verify_task_22:
+    original_id: a738bab81bb541e2883d952df498a51d
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/a738bab81bb541e2883d952df498a51d.usd
+    usd_scale:
+    - 30.771150695691517
+    - 30.76538776922353
+    - 30.94361148803513
+    position:
+    - -2.697634431434861
+    - -1.1489505706393404
+    - 0.8181882116291672
+    size:
+    - 0.651790976524353
+    - 0.3463275767862797
+    - 0.10837662639096379
+    detailed_caption: Rectangular tray with slightly raised edges, smooth surface, subtle texture, lightweight.
+  _7ca59375ad544ecc845a707b8d9a26fc_on_table_1_at_verify_task_22:
+    original_id: _7ca59375ad544ecc845a707b8d9a26fc
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/7ca59375ad544ecc845a707b8d9a26fc.usd
+    usd_scale:
+    - 45.98014758365508
+    - 46.08507981835264
+    - 41.91542460064565
+    position:
+    - -2.2784251694441697
+    - -1.5181557073279581
+    - 0.7944012738021411
+    size:
+    - 0.19271087646484375
+    - 0.19278335571289062
+    - 0.06080275073691155
+    detailed_caption: Bowl with a rounded shape, smooth interior, decorative blue and white patterns,
+      glossy finish.
+  _1669f0e8e23d4160ae064c39867f6218_on_table_1_at_verify_task_22:
+    original_id: _1669f0e8e23d4160ae064c39867f6218
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/1669f0e8e23d4160ae064c39867f6218.usd
+    usd_scale:
+    - 5.674813863538129
+    - 5.6618380066465965
+    - 5.948900158843522
+    position:
+    - -1.8317640892460645
+    - -1.4776949032014983
+    - 0.8031051702378318
+    size:
+    - 0.2834348678588867
+    - 0.2830009460449219
+    - 0.07821054360829294
+    detailed_caption: Decorative bowl with intricate blue patterns on white ceramic, slight curve, smooth
+      surface, elevated rim.
+episodes:
+- task_id: verify_task_22
+  episode_idx: 19
+  original_idx: 22
+  benchmark_instruction: First, drive to the table where we have dinner to find a food serving container,
+    then deliver it to the table to place my snack for watching TV.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the table where we have dinner to find the rectangular tray with slightly
+    raised edges, smooth surface, subtle texture, lightweight, then deliver it to the table to place my
+    snack for watching TV.
+  fuzzy_task_description: First, drive to the table where we have dinner to find a food serving container,
+    then deliver it to the table to place my snack for watching TV.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - a738bab81bb541e2883d952df498a51d
+      - _7ca59375ad544ecc845a707b8d9a26fc
+      - _1669f0e8e23d4160ae064c39867f6218
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _7ca59375ad544ecc845a707b8d9a26fc
+      - _1669f0e8e23d4160ae064c39867f6218
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - a738bab81bb541e2883d952df498a51d
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    a738bab81bb541e2883d952df498a51d:
+      category: tray
+      detailed_caption: Rectangular tray with slightly raised edges, smooth surface, subtle texture, lightweight.
+      usd_path: a738bab81bb541e2883d952df498a51d.usd
+      size:
+      - 0.651790976524353
+      - 0.3463275767862797
+      - 0.10837662639096379
+  obj_distractors:
+  - _7ca59375ad544ecc845a707b8d9a26fc
+  - _1669f0e8e23d4160ae064c39867f6218
+  obj_distractor_meta:
+    _7ca59375ad544ecc845a707b8d9a26fc:
+      category: bowl
+      detailed_caption: Bowl with a rounded shape, smooth interior, decorative blue and white patterns,
+        glossy finish.
+      usd_path: 7ca59375ad544ecc845a707b8d9a26fc.usd
+      size:
+      - 0.19271087646484375
+      - 0.19278335571289062
+      - 0.06080275073691155
+    _1669f0e8e23d4160ae064c39867f6218:
+      category: bowl
+      detailed_caption: Decorative bowl with intricate blue patterns on white ceramic, slight curve, smooth
+        surface, elevated rim.
+      usd_path: 1669f0e8e23d4160ae064c39867f6218.usd
+      size:
+      - 0.2834348678588867
+      - 0.2830009460449219
+      - 0.07821054360829294
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular tray with slightly raised edges, smooth surface, subtle texture,
+        lightweight.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular tray with slightly raised edges, smooth surface, subtle texture,
+        lightweight.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular tray with slightly raised edges, smooth surface, subtle texture,
+        lightweight.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  physics_task_description: First, drive to the table where we have dinner to find the rectangular tray
+    with slightly raised edges, smooth surface, subtle texture, lightweight, then deliver it to the table
+    to place my snack for watching TV.
+  placements:
+    a738bab81bb541e2883d952df498a51d_on_table_1_at_verify_task_22:
+      position:
+      - -2.697634431434861
+      - -1.1489505706393404
+      - 0.8181882116291672
+      furniture: table_1
+      original_id: a738bab81bb541e2883d952df498a51d
+    _7ca59375ad544ecc845a707b8d9a26fc_on_table_1_at_verify_task_22:
+      position:
+      - -2.2784251694441697
+      - -1.5181557073279581
+      - 0.7944012738021411
+      furniture: table_1
+      original_id: _7ca59375ad544ecc845a707b8d9a26fc
+    _1669f0e8e23d4160ae064c39867f6218_on_table_1_at_verify_task_22:
+      position:
+      - -1.8317640892460645
+      - -1.4776949032014983
+      - 0.8031051702378318
+      furniture: table_1
+      original_id: _1669f0e8e23d4160ae064c39867f6218
+  final_positions:
+    a738bab81bb541e2883d952df498a51d_on_table_1_at_verify_task_22:
+      initial_pos:
+      - -2.697634431434861
+      - -1.1489505706393404
+      - 0.9181882116291672
+      final_pos:
+      - -2.693091869354248
+      - -1.3577969074249268
+      - 0.7947960495948792
+      category: tray
+      original_id: a738bab81bb541e2883d952df498a51d
+    _7ca59375ad544ecc845a707b8d9a26fc_on_table_1_at_verify_task_22:
+      initial_pos:
+      - -2.2784251694441697
+      - -1.5181557073279581
+      - 0.8944012738021411
+      final_pos:
+      - -2.2928874492645264
+      - -1.615148901939392
+      - 0.773442268371582
+      category: bowl
+      original_id: _7ca59375ad544ecc845a707b8d9a26fc
+    _1669f0e8e23d4160ae064c39867f6218_on_table_1_at_verify_task_22:
+      initial_pos:
+      - -1.8317640892460645
+      - -1.4776949032014983
+      - 0.9031051702378318
+      final_pos:
+      - -1.827075719833374
+      - -1.6425325870513916
+      - 0.7801821827888489
+      category: bowl
+      original_id: _1669f0e8e23d4160ae064c39867f6218
+  family: SUL
+  benchmark_task_id: SUL/verify_task_22
+  global_index: 195
+  target_object_id: a738bab81bb541e2883d952df498a51d

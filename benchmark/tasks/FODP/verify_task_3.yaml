@@ -1,0 +1,294 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  dc5a0c0c439942d58d038a10d7064c91_on_couch_2_at_verify_task_3:
+    original_id: dc5a0c0c439942d58d038a10d7064c91
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/dc5a0c0c439942d58d038a10d7064c91.usd
+    usd_scale:
+    - 1.8184679214462942
+    - 1.817769334022752
+    - 1.8160994361088831
+    position:
+    - -3.3397419012122174
+    - 2.4734111092710633
+    - 0.44331574112176897
+    size:
+    - 0.09364986419677734
+    - 0.11052703857421875
+    - 0.09487439692020416
+    detailed_caption: Round, glossy red apple with yellow undertones, slight dimples, small speckles,
+      and slender stem.
+  _7ac716f5c0bc4b7c9123dea08e83dd52_on_couch_2_at_verify_task_3:
+    original_id: _7ac716f5c0bc4b7c9123dea08e83dd52
+    category: apple
+    usd_path: ${MESATASK_USD_ROOT}/7ac716f5c0bc4b7c9123dea08e83dd52.usd
+    usd_scale:
+    - 122.1159011814819
+    - 121.47995224408578
+    - 120.75015269807129
+    position:
+    - -3.696428482053881
+    - 2.659657750503051
+    - 0.44202869936591016
+    size:
+    - 0.10888290405273438
+    - 0.127294659614563
+    - 0.09230031340848655
+    detailed_caption: Realistic apple, slightly asymmetrical round shape, glossy red skin, green leaf,
+      yellowish patch.
+  _6e9e9739295e4a0f92a0faced5a8753a_on_couch_2_at_verify_task_3:
+    original_id: _6e9e9739295e4a0f92a0faced5a8753a
+    category: orange apple
+    usd_path: ${MESATASK_USD_ROOT}/6e9e9739295e4a0f92a0faced5a8753a.usd
+    usd_scale:
+    - 1.3539253913987854
+    - 1.353214325127627
+    - 1.3537170669121077
+    position:
+    - -3.4606876853711457
+    - 2.6713037800148545
+    - 0.4357207102980465
+    size:
+    - 0.0829010009765625
+    - 0.08532348275184631
+    - 0.0796843352727592
+    detailed_caption: Round apple with smooth, shiny red and yellow skin, small stem, glossy finish.
+episodes:
+- benchmark_task_id: FODP/verify_task_3
+  family: FODP
+  task_id: verify_task_3
+  episode_idx: 1
+  original_idx: 3
+  benchmark_instruction: Take the round, glossy red apple with yellow undertones, slight dimples, small
+    speckles, and slender stem from the couch in front of the TV and put it on the table where we have
+    dinner.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the round, glossy red apple with yellow undertones, slight dimples, small speckles,
+    and slender stem from the couch in front of the TV and put it on the table where we have dinner.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content:
+      - dc5a0c0c439942d58d038a10d7064c91
+      - _7ac716f5c0bc4b7c9123dea08e83dd52
+      - _6e9e9739295e4a0f92a0faced5a8753a
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - dc5a0c0c439942d58d038a10d7064c91
+    couch_2:
+      room: living room/0
+      content:
+      - _7ac716f5c0bc4b7c9123dea08e83dd52
+      - _6e9e9739295e4a0f92a0faced5a8753a
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: couch_2
+  src_distractors: []
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    dc5a0c0c439942d58d038a10d7064c91:
+      category: apple
+      detailed_caption: Round, glossy red apple with yellow undertones, slight dimples, small speckles,
+        and slender stem.
+      usd_path: dc5a0c0c439942d58d038a10d7064c91.usd
+      size:
+      - 0.09364986419677734
+      - 0.11052703857421875
+      - 0.09487439692020416
+  obj_distractors:
+  - _7ac716f5c0bc4b7c9123dea08e83dd52
+  - _6e9e9739295e4a0f92a0faced5a8753a
+  obj_distractor_meta:
+    _7ac716f5c0bc4b7c9123dea08e83dd52:
+      category: apple
+      detailed_caption: Realistic apple, slightly asymmetrical round shape, glossy red skin, green leaf,
+        yellowish patch.
+      usd_path: 7ac716f5c0bc4b7c9123dea08e83dd52.usd
+      size:
+      - 0.10888290405273438
+      - 0.127294659614563
+      - 0.09230031340848655
+    _6e9e9739295e4a0f92a0faced5a8753a:
+      category: orange apple
+      detailed_caption: Round apple with smooth, shiny red and yellow skin, small stem, glossy finish.
+      usd_path: 6e9e9739295e4a0f92a0faced5a8753a.usd
+      size:
+      - 0.0829010009765625
+      - 0.08532348275184631
+      - 0.0796843352727592
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: couch_2
+  - action: find
+    args:
+      target_category: apple
+      target_description: Round, glossy red apple with yellow undertones, slight dimples, small speckles,
+        and slender stem.
+  - action: gaze_at
+    args:
+      target_category: apple
+      target_description: Round, glossy red apple with yellow undertones, slight dimples, small speckles,
+        and slender stem.
+  - action: pick
+    args:
+      target_category: apple
+      target_description: Round, glossy red apple with yellow undertones, slight dimples, small speckles,
+        and slender stem.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    dc5a0c0c439942d58d038a10d7064c91_on_couch_2_at_verify_task_3:
+      position:
+      - -3.3397419012122174
+      - 2.4734111092710633
+      - 0.44331574112176897
+      furniture: couch_2
+      original_id: dc5a0c0c439942d58d038a10d7064c91
+    _7ac716f5c0bc4b7c9123dea08e83dd52_on_couch_2_at_verify_task_3:
+      position:
+      - -3.696428482053881
+      - 2.659657750503051
+      - 0.44202869936591016
+      furniture: couch_2
+      original_id: _7ac716f5c0bc4b7c9123dea08e83dd52
+    _6e9e9739295e4a0f92a0faced5a8753a_on_couch_2_at_verify_task_3:
+      position:
+      - -3.4606876853711457
+      - 2.6713037800148545
+      - 0.4357207102980465
+      furniture: couch_2
+      original_id: _6e9e9739295e4a0f92a0faced5a8753a
+  final_positions:
+    dc5a0c0c439942d58d038a10d7064c91_on_couch_2_at_verify_task_3:
+      initial_pos:
+      - -3.3397419012122174
+      - 2.4734111092710633
+      - 0.543315741121769
+      final_pos:
+      - -3.4319331645965576
+      - 2.4421589374542236
+      - 0.40895479917526245
+      category: apple
+      original_id: dc5a0c0c439942d58d038a10d7064c91
+    _7ac716f5c0bc4b7c9123dea08e83dd52_on_couch_2_at_verify_task_3:
+      initial_pos:
+      - -3.696428482053881
+      - 2.659657750503051
+      - 0.5420286993659101
+      final_pos:
+      - -3.7067792415618896
+      - 2.6823837757110596
+      - 0.4011572599411011
+      category: apple
+      original_id: _7ac716f5c0bc4b7c9123dea08e83dd52
+    _6e9e9739295e4a0f92a0faced5a8753a_on_couch_2_at_verify_task_3:
+      initial_pos:
+      - -3.4606876853711457
+      - 2.6713037800148545
+      - 0.5357207102980465
+      final_pos:
+      - -3.563004970550537
+      - 2.9044675827026367
+      - 0.3518519401550293
+      category: orange apple
+      original_id: _6e9e9739295e4a0f92a0faced5a8753a
+  global_index: 73
+  target_object_id: dc5a0c0c439942d58d038a10d7064c91

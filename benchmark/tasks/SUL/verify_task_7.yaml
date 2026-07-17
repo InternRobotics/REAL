@@ -1,0 +1,305 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _7f233bc4e7c24407874aa76d4ff6e721_on_table_2_at_verify_task_7:
+    original_id: _7f233bc4e7c24407874aa76d4ff6e721
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/7f233bc4e7c24407874aa76d4ff6e721.usd
+    usd_scale:
+    - 1.2740956495591926
+    - 1.0935431978723418
+    - 0.9541537580086167
+    position:
+    - -2.204772776599963
+    - 2.7604447157938723
+    - 0.4037349548936118
+    size:
+    - 0.3602733612060547
+    - 0.2736020088195801
+    - 0.22749390900139588
+    detailed_caption: Decorative wooden tray with intricate cut-out design, sturdy handle, square shape,
+      rich brown finish.
+  _03f37ab74d1d48a08bac0c88374e4fef_on_table_2_at_verify_task_7:
+    original_id: _03f37ab74d1d48a08bac0c88374e4fef
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/03f37ab74d1d48a08bac0c88374e4fef.usd
+    usd_scale:
+    - 46.378073845820374
+    - 46.37845841455851
+    - 49.77731619217682
+    position:
+    - -2.0398402632221933
+    - 3.3141597368632403
+    - 0.3228987206052989
+    size:
+    - 0.18334007263183594
+    - 0.18332481384277344
+    - 0.06582144042477012
+    detailed_caption: Round ceramic bowl with intricate floral designs, smooth edges, glossy green and
+      white finish.
+  _1c0bedab21bc441fb846f6a9003f020e_on_table_2_at_verify_task_7:
+    original_id: _1c0bedab21bc441fb846f6a9003f020e
+    category: bowl plate
+    usd_path: ${MESATASK_USD_ROOT}/1c0bedab21bc441fb846f6a9003f020e.usd
+    usd_scale:
+    - 103.3496188491241
+    - 102.54274819845018
+    - 106.02856747684943
+    position:
+    - -2.4654555398922926
+    - 3.32030184329548
+    - 0.30170578528079206
+    size:
+    - 0.25884246826171875
+    - 0.2568225860595703
+    - 0.02343556977575645
+    detailed_caption: Round ceramic plate with a smooth white surface and blue cracked pattern around
+      the rim.
+episodes:
+- task_id: verify_task_7
+  episode_idx: 5
+  original_idx: 7
+  benchmark_instruction: Go to the rounded rectangular table, pick up a food serving container, then travel
+    to the rectangular table to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the decorative wooden tray with intricate cut-out design, sturdy handle, square
+    shape, rich brown finish located at the rounded rectangular table to the rectangular table.
+  fuzzy_task_description: Go to the rounded rectangular table, pick up a food serving container, then
+    travel to the rectangular table to place it.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7f233bc4e7c24407874aa76d4ff6e721
+      - _03f37ab74d1d48a08bac0c88374e4fef
+      - _1c0bedab21bc441fb846f6a9003f020e
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _7f233bc4e7c24407874aa76d4ff6e721
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _03f37ab74d1d48a08bac0c88374e4fef
+      - _1c0bedab21bc441fb846f6a9003f020e
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _7f233bc4e7c24407874aa76d4ff6e721:
+      category: tray
+      detailed_caption: Decorative wooden tray with intricate cut-out design, sturdy handle, square shape,
+        rich brown finish.
+      usd_path: 7f233bc4e7c24407874aa76d4ff6e721.usd
+      size:
+      - 0.3602733612060547
+      - 0.2736020088195801
+      - 0.22749390900139588
+  obj_distractors:
+  - _03f37ab74d1d48a08bac0c88374e4fef
+  - _1c0bedab21bc441fb846f6a9003f020e
+  obj_distractor_meta:
+    _03f37ab74d1d48a08bac0c88374e4fef:
+      category: bowl
+      detailed_caption: Round ceramic bowl with intricate floral designs, smooth edges, glossy green and
+        white finish.
+      usd_path: 03f37ab74d1d48a08bac0c88374e4fef.usd
+      size:
+      - 0.18334007263183594
+      - 0.18332481384277344
+      - 0.06582144042477012
+    _1c0bedab21bc441fb846f6a9003f020e:
+      category: bowl plate
+      detailed_caption: Round ceramic plate with a smooth white surface and blue cracked pattern around
+        the rim.
+      usd_path: 1c0bedab21bc441fb846f6a9003f020e.usd
+      size:
+      - 0.25884246826171875
+      - 0.2568225860595703
+      - 0.02343556977575645
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: tray
+      target_description: Decorative wooden tray with intricate cut-out design, sturdy handle, square
+        shape, rich brown finish.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Decorative wooden tray with intricate cut-out design, sturdy handle, square
+        shape, rich brown finish.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Decorative wooden tray with intricate cut-out design, sturdy handle, square
+        shape, rich brown finish.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Move the decorative wooden tray with intricate cut-out design, sturdy handle,
+    square shape, rich brown finish located at the rounded rectangular table to the rectangular table.
+  placements:
+    _7f233bc4e7c24407874aa76d4ff6e721_on_table_2_at_verify_task_7:
+      position:
+      - -2.204772776599963
+      - 2.7604447157938723
+      - 0.4037349548936118
+      furniture: table_2
+      original_id: _7f233bc4e7c24407874aa76d4ff6e721
+    _03f37ab74d1d48a08bac0c88374e4fef_on_table_2_at_verify_task_7:
+      position:
+      - -2.0398402632221933
+      - 3.3141597368632403
+      - 0.3228987206052989
+      furniture: table_2
+      original_id: _03f37ab74d1d48a08bac0c88374e4fef
+    _1c0bedab21bc441fb846f6a9003f020e_on_table_2_at_verify_task_7:
+      position:
+      - -2.4654555398922926
+      - 3.32030184329548
+      - 0.30170578528079206
+      furniture: table_2
+      original_id: _1c0bedab21bc441fb846f6a9003f020e
+  final_positions:
+    _7f233bc4e7c24407874aa76d4ff6e721_on_table_2_at_verify_task_7:
+      initial_pos:
+      - -2.204772776599963
+      - 2.7604447157938723
+      - 0.5037349548936118
+      final_pos:
+      - -2.204772710800171
+      - 2.760443925857544
+      - 0.383734792470932
+      category: tray
+      original_id: _7f233bc4e7c24407874aa76d4ff6e721
+    _03f37ab74d1d48a08bac0c88374e4fef_on_table_2_at_verify_task_7:
+      initial_pos:
+      - -2.0398402632221933
+      - 3.3141597368632403
+      - 0.4228987206052989
+      final_pos:
+      - -2.1054954528808594
+      - 3.471728563308716
+      - 0.29881250858306885
+      category: bowl
+      original_id: _03f37ab74d1d48a08bac0c88374e4fef
+    _1c0bedab21bc441fb846f6a9003f020e_on_table_2_at_verify_task_7:
+      initial_pos:
+      - -2.4654555398922926
+      - 3.32030184329548
+      - 0.40170578528079204
+      final_pos:
+      - -2.4656331539154053
+      - 3.1880342960357666
+      - 0.28098568320274353
+      category: plate
+      original_id: _1c0bedab21bc441fb846f6a9003f020e
+  family: SUL
+  benchmark_task_id: SUL/verify_task_7
+  global_index: 181
+  target_object_id: _7f233bc4e7c24407874aa76d4ff6e721

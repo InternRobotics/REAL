@@ -1,0 +1,312 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_1_at_verify_task_96:
+    original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/54e9f74c-7eb5-450b-9ad5-da7112b27bf7.usd
+    usd_scale:
+    - 8.344767609174683
+    - 9.812347474679028
+    - 7.766891330907154
+    position:
+    - -1.8482789529868875
+    - -1.1019775924103583
+    - 0.7876038565114141
+    size:
+    - 0.12025070190429688
+    - 0.2004833221435547
+    - 0.0472079161554575
+    detailed_caption: Round, white alarm clock with a classic design, two bells on top, and smooth surface.
+  cb0e7bf9c2c34681a1c46510298eca2e_on_table_1_at_verify_task_96:
+    original_id: cb0e7bf9c2c34681a1c46510298eca2e
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/cb0e7bf9c2c34681a1c46510298eca2e.usd
+    usd_scale:
+    - 103.11874723490796
+    - 106.41837054341505
+    - 125.86986305014719
+    position:
+    - -1.608667655513152
+    - -1.4744165685603208
+    - 0.842146562859416
+    size:
+    - 0.12539970874786377
+    - 0.2917900085449219
+    - 0.1562933288514614
+    detailed_caption: Wooden frame, two glass bulbs, narrow neck, sturdy base, natural wood finish, classic
+      design.
+  fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_table_1_at_verify_task_96:
+    original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/fe530220-cc28-4bc9-a9e6-e04655f2ce9a.usd
+    usd_scale:
+    - 16.47221989716394
+    - 16.08443661898932
+    - 16.382463388965867
+    position:
+    - -2.361188657489419
+    - -1.3307495469432433
+    - 0.8041739569557831
+    size:
+    - 0.3285636901855469
+    - 0.1690673828125
+    - 0.08034811704419553
+    detailed_caption: Sleek, modern alarm clock; rectangular shape; black plastic body; large digital
+      display; buttons.
+episodes:
+- task_id: verify_task_96
+  episode_idx: 64
+  original_idx: 96
+  benchmark_instruction: Transport a timekeeping device at the rectangular table to the green nightstand
+    cabinet.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the round, white alarm clock with a classic design, two bells on top, and smooth
+    surface from the rectangular table to the green nightstand cabinet.
+  fuzzy_task_description: Transport a timekeeping device at the rectangular table to the green nightstand
+    cabinet.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+      - cb0e7bf9c2c34681a1c46510298eca2e
+      - fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - cb0e7bf9c2c34681a1c46510298eca2e
+      - fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7:
+      category: clock
+      detailed_caption: Round, white alarm clock with a classic design, two bells on top, and smooth surface.
+      usd_path: 54e9f74c-7eb5-450b-9ad5-da7112b27bf7.usd
+      size:
+      - 0.12025070190429688
+      - 0.2004833221435547
+      - 0.0472079161554575
+  obj_distractors:
+  - cb0e7bf9c2c34681a1c46510298eca2e
+  - fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+  obj_distractor_meta:
+    cb0e7bf9c2c34681a1c46510298eca2e:
+      category: hourglass
+      detailed_caption: Wooden frame, two glass bulbs, narrow neck, sturdy base, natural wood finish,
+        classic design.
+      usd_path: cb0e7bf9c2c34681a1c46510298eca2e.usd
+      size:
+      - 0.12539970874786377
+      - 0.2917900085449219
+      - 0.1562933288514614
+    fe530220_cc28_4bc9_a9e6_e04655f2ce9a:
+      category: alarm clock
+      detailed_caption: Sleek, modern alarm clock; rectangular shape; black plastic body; large digital
+        display; buttons.
+      usd_path: fe530220-cc28-4bc9-a9e6-e04655f2ce9a.usd
+      size:
+      - 0.3285636901855469
+      - 0.1690673828125
+      - 0.08034811704419553
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  physics_task_description: Bring the round, white alarm clock with a classic design, two bells on top,
+    and smooth surface from the rectangular table to the green nightstand cabinet.
+  placements:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_1_at_verify_task_96:
+      position:
+      - -1.8482789529868875
+      - -1.1019775924103583
+      - 0.7876038565114141
+      furniture: table_1
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    cb0e7bf9c2c34681a1c46510298eca2e_on_table_1_at_verify_task_96:
+      position:
+      - -1.608667655513152
+      - -1.4744165685603208
+      - 0.842146562859416
+      furniture: table_1
+      original_id: cb0e7bf9c2c34681a1c46510298eca2e
+    fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_table_1_at_verify_task_96:
+      position:
+      - -2.361188657489419
+      - -1.3307495469432433
+      - 0.8041739569557831
+      furniture: table_1
+      original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+  final_positions:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_1_at_verify_task_96:
+      initial_pos:
+      - -1.8482789529868875
+      - -1.1019775924103583
+      - 0.887603856511414
+      final_pos:
+      - -1.8584898710250854
+      - -1.1965299844741821
+      - 0.7711217403411865
+      category: alarm clock
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    cb0e7bf9c2c34681a1c46510298eca2e_on_table_1_at_verify_task_96:
+      initial_pos:
+      - -1.608667655513152
+      - -1.4744165685603208
+      - 0.942146562859416
+      final_pos:
+      - -1.7421927452087402
+      - -1.4747387170791626
+      - 0.8076783418655396
+      category: hourglass
+      original_id: cb0e7bf9c2c34681a1c46510298eca2e
+    fe530220_cc28_4bc9_a9e6_e04655f2ce9a_on_table_1_at_verify_task_96:
+      initial_pos:
+      - -2.361188657489419
+      - -1.3307495469432433
+      - 0.9041739569557831
+      final_pos:
+      - -2.3604202270507812
+      - -1.415136694908142
+      - 0.7702067494392395
+      category: alarm clock
+      original_id: fe530220_cc28_4bc9_a9e6_e04655f2ce9a
+  family: SUL
+  benchmark_task_id: SUL/verify_task_96
+  global_index: 236
+  target_object_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7

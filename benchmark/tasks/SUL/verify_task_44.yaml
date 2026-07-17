@@ -1,0 +1,300 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _73c023c90f8d45fb88294bccade836c0_on_table_1_at_verify_task_44:
+    original_id: _73c023c90f8d45fb88294bccade836c0
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/73c023c90f8d45fb88294bccade836c0.usd
+    usd_scale:
+    - 0.5480286971415117
+    - 0.5448382508390787
+    - 0.5460125183032325
+    position:
+    - -2.053663357460052
+    - -1.1151404756565155
+    - 0.7923387393634767
+    size:
+    - 0.10976600646972656
+    - 0.1682281494140625
+    - 0.05667768185958266
+    detailed_caption: Round metal body, clear glass face, two bells, black finish, short legs.
+  _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_44:
+    original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    category: watch
+    usd_path: ${MESATASK_USD_ROOT}/6eefeb5c1bee4d4d9134b62cd9fc99d8.usd
+    usd_scale:
+    - 12.027450463412933
+    - 12.088888888888889
+    - 11.949723925295546
+    position:
+    - -2.194899896625814
+    - -1.5390365137031083
+    - 0.7703888950486726
+    size:
+    - 0.035556793212890625
+    - 0.2417774200439453
+    - 0.012777993229974527
+    detailed_caption: Sleek wristwatch with a round silver case, slim black leather strap, and clear glass
+      face.
+  _29f2859da57b491dbca907164a8014f0_on_table_1_at_verify_task_44:
+    original_id: _29f2859da57b491dbca907164a8014f0
+    category: timer
+    usd_path: ${MESATASK_USD_ROOT}/29f2859da57b491dbca907164a8014f0.usd
+    usd_scale:
+    - 4.232228688917186
+    - 18.739195875697934
+    - 1.8662093983496244
+    position:
+    - -2.858565099903828
+    - -1.383263096547732
+    - 0.7673485683090076
+    size:
+    - 0.17275238037109375
+    - 0.40416908264160156
+    - 0.00669733975064446
+    detailed_caption: Sleek, glossy rectangular clock with blue LED display; thin body, minimalist and
+      elegant design.
+episodes:
+- task_id: verify_task_44
+  episode_idx: 34
+  original_idx: 44
+  benchmark_instruction: Navigate to the table where we have dinner, grasp a timekeeping device, and carry
+    it to wide desk with orange drawer pulls.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the round metal body, clear glass face, two bells, black finish, short legs from
+    the table where we have dinner and put it on wide desk with orange drawer pulls.
+  fuzzy_task_description: Navigate to the table where we have dinner, grasp a timekeeping device, and
+    carry it to wide desk with orange drawer pulls.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _73c023c90f8d45fb88294bccade836c0
+      - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+      - _29f2859da57b491dbca907164a8014f0
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+      - _29f2859da57b491dbca907164a8014f0
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _73c023c90f8d45fb88294bccade836c0
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    _73c023c90f8d45fb88294bccade836c0:
+      category: clock
+      detailed_caption: Round metal body, clear glass face, two bells, black finish, short legs.
+      usd_path: 73c023c90f8d45fb88294bccade836c0.usd
+      size:
+      - 0.10976600646972656
+      - 0.1682281494140625
+      - 0.05667768185958266
+  obj_distractors:
+  - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+  - _29f2859da57b491dbca907164a8014f0
+  obj_distractor_meta:
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8:
+      category: watch
+      detailed_caption: Sleek wristwatch with a round silver case, slim black leather strap, and clear
+        glass face.
+      usd_path: 6eefeb5c1bee4d4d9134b62cd9fc99d8.usd
+      size:
+      - 0.035556793212890625
+      - 0.2417774200439453
+      - 0.012777993229974527
+    _29f2859da57b491dbca907164a8014f0:
+      category: timer
+      detailed_caption: Sleek, glossy rectangular clock with blue LED display; thin body, minimalist and
+        elegant design.
+      usd_path: 29f2859da57b491dbca907164a8014f0.usd
+      size:
+      - 0.17275238037109375
+      - 0.40416908264160156
+      - 0.00669733975064446
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Round metal body, clear glass face, two bells, black finish, short legs.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Round metal body, clear glass face, two bells, black finish, short legs.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Round metal body, clear glass face, two bells, black finish, short legs.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  physics_task_description: Take the round metal body, clear glass face, two bells, black finish, short
+    legs from the table where we have dinner and put it on wide desk with orange drawer pulls.
+  placements:
+    _73c023c90f8d45fb88294bccade836c0_on_table_1_at_verify_task_44:
+      position:
+      - -2.053663357460052
+      - -1.1151404756565155
+      - 0.7923387393634767
+      furniture: table_1
+      original_id: _73c023c90f8d45fb88294bccade836c0
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_44:
+      position:
+      - -2.194899896625814
+      - -1.5390365137031083
+      - 0.7703888950486726
+      furniture: table_1
+      original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    _29f2859da57b491dbca907164a8014f0_on_table_1_at_verify_task_44:
+      position:
+      - -2.858565099903828
+      - -1.383263096547732
+      - 0.7673485683090076
+      furniture: table_1
+      original_id: _29f2859da57b491dbca907164a8014f0
+  final_positions:
+    _73c023c90f8d45fb88294bccade836c0_on_table_1_at_verify_task_44:
+      initial_pos:
+      - -2.053663357460052
+      - -1.1151404756565155
+      - 0.8923387393634766
+      final_pos:
+      - -2.053659200668335
+      - -1.1155264377593994
+      - 0.7703090906143188
+      category: clock
+      original_id: _73c023c90f8d45fb88294bccade836c0
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_44:
+      initial_pos:
+      - -2.194899896625814
+      - -1.5390365137031083
+      - 0.8703888950486726
+      final_pos:
+      - -2.193157196044922
+      - -1.4133812189102173
+      - 0.7503737807273865
+      category: watch
+      original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    _29f2859da57b491dbca907164a8014f0_on_table_1_at_verify_task_44:
+      initial_pos:
+      - -2.858565099903828
+      - -1.383263096547732
+      - 0.8673485683090075
+      final_pos:
+      - -2.858567476272583
+      - -1.3832638263702393
+      - 0.7473489046096802
+      category: timer
+      original_id: _29f2859da57b491dbca907164a8014f0
+  family: SUL
+  benchmark_task_id: SUL/verify_task_44
+  global_index: 210
+  target_object_id: _73c023c90f8d45fb88294bccade836c0

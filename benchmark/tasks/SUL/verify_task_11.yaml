@@ -1,0 +1,306 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0207eb132ec4478eb4716b0e37a8bfc3_on_table_2_at_verify_task_11:
+    original_id: _0207eb132ec4478eb4716b0e37a8bfc3
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/0207eb132ec4478eb4716b0e37a8bfc3.usd
+    usd_scale:
+    - 6.156704979062244
+    - 6.0450090444505555
+    - 5.820366336473765
+    position:
+    - -2.374238917219124
+    - 3.1401591341174986
+    - 0.41197970598934264
+    size:
+    - 0.40679931640625
+    - 0.03614234924316406
+    - 0.2439834111928576
+    detailed_caption: Rectangular tray with two compartments, sleek design, rounded edges, smooth surface,
+      soft pink and gray colors.
+  _3508e1dfb4334a2f8a54a8bb6763043d_on_table_2_at_verify_task_11:
+    original_id: _3508e1dfb4334a2f8a54a8bb6763043d
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/3508e1dfb4334a2f8a54a8bb6763043d.usd
+    usd_scale:
+    - 1.1052657757673736
+    - 1.1036858257371702
+    - 1.1019569791944988
+    position:
+    - -2.224885927523417
+    - 2.55823002157128
+    - 0.4636358604580164
+    size:
+    - 0.3965625762939453
+    - 0.3564300537109375
+    - 0.34729572013020515
+    detailed_caption: Circular dark ceramic bowl with a slightly raised outer edge and smooth rustic texture.
+  _1c0bedab21bc441fb846f6a9003f020e_on_table_2_at_verify_task_11:
+    original_id: _1c0bedab21bc441fb846f6a9003f020e
+    category: bowl plate
+    usd_path: ${MESATASK_USD_ROOT}/1c0bedab21bc441fb846f6a9003f020e.usd
+    usd_scale:
+    - 103.3496188491241
+    - 102.54274819845018
+    - 106.02856747684943
+    position:
+    - -1.9126411238419445
+    - 3.0969011588995663
+    - 0.30170578528079206
+    size:
+    - 0.25884246826171875
+    - 0.2568225860595703
+    - 0.02343556977575645
+    detailed_caption: Round ceramic plate with a smooth white surface and blue cracked pattern around
+      the rim.
+episodes:
+- task_id: verify_task_11
+  episode_idx: 9
+  original_idx: 11
+  benchmark_instruction: Bring a food serving container from the table to place my snack for watching
+    TV to the rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the table to place my snack for watching TV to find the rectangular
+    tray with two compartments, sleek design, rounded edges, smooth surface, soft pink and gray colors,
+    then deliver it to the rectangular table.
+  fuzzy_task_description: Bring a food serving container from the table to place my snack for watching
+    TV to the rectangular table.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _0207eb132ec4478eb4716b0e37a8bfc3
+      - _3508e1dfb4334a2f8a54a8bb6763043d
+      - _1c0bedab21bc441fb846f6a9003f020e
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0207eb132ec4478eb4716b0e37a8bfc3
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _3508e1dfb4334a2f8a54a8bb6763043d
+      - _1c0bedab21bc441fb846f6a9003f020e
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _0207eb132ec4478eb4716b0e37a8bfc3:
+      category: tray
+      detailed_caption: Rectangular tray with two compartments, sleek design, rounded edges, smooth surface,
+        soft pink and gray colors.
+      usd_path: 0207eb132ec4478eb4716b0e37a8bfc3.usd
+      size:
+      - 0.40679931640625
+      - 0.03614234924316406
+      - 0.2439834111928576
+  obj_distractors:
+  - _3508e1dfb4334a2f8a54a8bb6763043d
+  - _1c0bedab21bc441fb846f6a9003f020e
+  obj_distractor_meta:
+    _3508e1dfb4334a2f8a54a8bb6763043d:
+      category: bowl
+      detailed_caption: Circular dark ceramic bowl with a slightly raised outer edge and smooth rustic
+        texture.
+      usd_path: 3508e1dfb4334a2f8a54a8bb6763043d.usd
+      size:
+      - 0.3965625762939453
+      - 0.3564300537109375
+      - 0.34729572013020515
+    _1c0bedab21bc441fb846f6a9003f020e:
+      category: bowl plate
+      detailed_caption: Round ceramic plate with a smooth white surface and blue cracked pattern around
+        the rim.
+      usd_path: 1c0bedab21bc441fb846f6a9003f020e.usd
+      size:
+      - 0.25884246826171875
+      - 0.2568225860595703
+      - 0.02343556977575645
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular tray with two compartments, sleek design, rounded edges, smooth
+        surface, soft pink and gray colors.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular tray with two compartments, sleek design, rounded edges, smooth
+        surface, soft pink and gray colors.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular tray with two compartments, sleek design, rounded edges, smooth
+        surface, soft pink and gray colors.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: First, drive to the table to place my snack for watching TV to find the rectangular
+    tray with two compartments, sleek design, rounded edges, smooth surface, soft pink and gray colors,
+    then deliver it to the rectangular table.
+  placements:
+    _0207eb132ec4478eb4716b0e37a8bfc3_on_table_2_at_verify_task_11:
+      position:
+      - -2.374238917219124
+      - 3.1401591341174986
+      - 0.41197970598934264
+      furniture: table_2
+      original_id: _0207eb132ec4478eb4716b0e37a8bfc3
+    _3508e1dfb4334a2f8a54a8bb6763043d_on_table_2_at_verify_task_11:
+      position:
+      - -2.224885927523417
+      - 2.55823002157128
+      - 0.4636358604580164
+      furniture: table_2
+      original_id: _3508e1dfb4334a2f8a54a8bb6763043d
+    _1c0bedab21bc441fb846f6a9003f020e_on_table_2_at_verify_task_11:
+      position:
+      - -1.9126411238419445
+      - 3.0969011588995663
+      - 0.30170578528079206
+      furniture: table_2
+      original_id: _1c0bedab21bc441fb846f6a9003f020e
+  final_positions:
+    _0207eb132ec4478eb4716b0e37a8bfc3_on_table_2_at_verify_task_11:
+      initial_pos:
+      - -2.374238917219124
+      - 3.1401591341174986
+      - 0.5119797059893426
+      final_pos:
+      - -2.3742148876190186
+      - 3.140171766281128
+      - 0.3919796347618103
+      category: tray
+      original_id: _0207eb132ec4478eb4716b0e37a8bfc3
+    _3508e1dfb4334a2f8a54a8bb6763043d_on_table_2_at_verify_task_11:
+      initial_pos:
+      - -2.224885927523417
+      - 2.55823002157128
+      - 0.5636358604580164
+      final_pos:
+      - -2.3741800785064697
+      - 2.204878091812134
+      - 0.3964615762233734
+      category: bowl
+      original_id: _3508e1dfb4334a2f8a54a8bb6763043d
+    _1c0bedab21bc441fb846f6a9003f020e_on_table_2_at_verify_task_11:
+      initial_pos:
+      - -1.9126411238419445
+      - 3.0969011588995663
+      - 0.40170578528079204
+      final_pos:
+      - -1.9121336936950684
+      - 2.9612135887145996
+      - 0.281049519777298
+      category: plate
+      original_id: _1c0bedab21bc441fb846f6a9003f020e
+  family: SUL
+  benchmark_task_id: SUL/verify_task_11
+  global_index: 185
+  target_object_id: _0207eb132ec4478eb4716b0e37a8bfc3

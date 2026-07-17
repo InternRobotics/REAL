@@ -1,0 +1,311 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a525a7ee829c486288c5e4881624801a_on_table_1_at_verify_task_104:
+    original_id: a525a7ee829c486288c5e4881624801a
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/a525a7ee829c486288c5e4881624801a.usd
+    usd_scale:
+    - 29.598861876498127
+    - 28.7432866812658
+    - 29.42932029313719
+    position:
+    - -2.201254359791042
+    - -1.212117677015464
+    - 0.8878763943898957
+    size:
+    - 0.35833263397216797
+    - 0.30697059631347656
+    - 0.24775299191242084
+    detailed_caption: Sleek silver laptop, modern thin profile, large display, vivid graphic lid, ventilated
+      underside.
+  _3f31ff8f9f9742558339d2476e49db19_on_table_1_at_verify_task_104:
+    original_id: _3f31ff8f9f9742558339d2476e49db19
+    category: binder
+    usd_path: ${MESATASK_USD_ROOT}/3f31ff8f9f9742558339d2476e49db19.usd
+    usd_scale:
+    - 0.011224520777843288
+    - 0.006973019027689595
+    - 0.038995447720104895
+    position:
+    - -1.763654390083536
+    - -1.3079508187290672
+    - 0.8134707365930081
+    size:
+    - 0.14324188232421875
+    - 0.11981174349784851
+    - 0.09894167631864548
+    detailed_caption: Closed hardback book, decorative cover with golden patterns, sturdy spine, glossy
+      finish.
+  gen_919b53ee_319b_4c80_bb39_e9abe4717fc3_on_table_1_at_verify_task_104:
+    original_id: gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+    category: binder
+    usd_path: ${MESATASK_USD_ROOT}/gen_919b53ee-319b-4c80-bb39-e9abe4717fc3.usd
+    usd_scale:
+    - 3.2149153584946366
+    - 3.168800216089203
+    - 3.141364799289659
+    position:
+    - -3.0665170659893937
+    - -1.620880931853732
+    - 0.7791823622205993
+    size:
+    - 0.05378532409667969
+    - 0.055950164794921875
+    - 0.030364927573828027
+    detailed_caption: Medium-sized black binder clip with a shiny silver metal handle and rectangular
+      upper surface.
+episodes:
+- task_id: verify_task_104
+  episode_idx: 68
+  original_idx: 104
+  benchmark_instruction: Navigate to the table much larger than another one, grasp a notebook, and carry
+    it to the green nightstand cabinet.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the sleek silver laptop, modern thin profile, large display, vivid graphic lid,
+    ventilated underside from the table much larger than another one to the green nightstand cabinet.
+  fuzzy_task_description: Navigate to the table much larger than another one, grasp a notebook, and carry
+    it to the green nightstand cabinet.
+  purpose: notebook
+  purpose_group: notebooks
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - a525a7ee829c486288c5e4881624801a
+      - _3f31ff8f9f9742558339d2476e49db19
+      - gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _3f31ff8f9f9742558339d2476e49db19
+      - gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - a525a7ee829c486288c5e4881624801a
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    a525a7ee829c486288c5e4881624801a:
+      category: notebook
+      detailed_caption: Sleek silver laptop, modern thin profile, large display, vivid graphic lid, ventilated
+        underside.
+      usd_path: a525a7ee829c486288c5e4881624801a.usd
+      size:
+      - 0.35833263397216797
+      - 0.30697059631347656
+      - 0.24775299191242084
+  obj_distractors:
+  - _3f31ff8f9f9742558339d2476e49db19
+  - gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+  obj_distractor_meta:
+    _3f31ff8f9f9742558339d2476e49db19:
+      category: binder
+      detailed_caption: Closed hardback book, decorative cover with golden patterns, sturdy spine, glossy
+        finish.
+      usd_path: 3f31ff8f9f9742558339d2476e49db19.usd
+      size:
+      - 0.14324188232421875
+      - 0.11981174349784851
+      - 0.09894167631864548
+    gen_919b53ee_319b_4c80_bb39_e9abe4717fc3:
+      category: binder
+      detailed_caption: Medium-sized black binder clip with a shiny silver metal handle and rectangular
+        upper surface.
+      usd_path: gen_919b53ee-319b-4c80-bb39-e9abe4717fc3.usd
+      size:
+      - 0.05378532409667969
+      - 0.055950164794921875
+      - 0.030364927573828027
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Sleek silver laptop, modern thin profile, large display, vivid graphic lid,
+        ventilated underside.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Sleek silver laptop, modern thin profile, large display, vivid graphic lid,
+        ventilated underside.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Sleek silver laptop, modern thin profile, large display, vivid graphic lid,
+        ventilated underside.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  physics_task_description: Bring the sleek silver laptop, modern thin profile, large display, vivid graphic
+    lid, ventilated underside from the table much larger than another one to the green nightstand cabinet.
+  placements:
+    a525a7ee829c486288c5e4881624801a_on_table_1_at_verify_task_104:
+      position:
+      - -2.201254359791042
+      - -1.212117677015464
+      - 0.8878763943898957
+      furniture: table_1
+      original_id: a525a7ee829c486288c5e4881624801a
+    _3f31ff8f9f9742558339d2476e49db19_on_table_1_at_verify_task_104:
+      position:
+      - -1.763654390083536
+      - -1.3079508187290672
+      - 0.8134707365930081
+      furniture: table_1
+      original_id: _3f31ff8f9f9742558339d2476e49db19
+    gen_919b53ee_319b_4c80_bb39_e9abe4717fc3_on_table_1_at_verify_task_104:
+      position:
+      - -3.0665170659893937
+      - -1.620880931853732
+      - 0.7791823622205993
+      furniture: table_1
+      original_id: gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+  final_positions:
+    a525a7ee829c486288c5e4881624801a_on_table_1_at_verify_task_104:
+      initial_pos:
+      - -2.201254359791042
+      - -1.212117677015464
+      - 0.9878763943898957
+      final_pos:
+      - -2.202265501022339
+      - -1.2303190231323242
+      - 0.8666256070137024
+      category: notebook
+      original_id: a525a7ee829c486288c5e4881624801a
+    _3f31ff8f9f9742558339d2476e49db19_on_table_1_at_verify_task_104:
+      initial_pos:
+      - -1.763654390083536
+      - -1.3079508187290672
+      - 0.913470736593008
+      final_pos:
+      - -2.002326250076294
+      - -1.4604796171188354
+      - 0.7525954246520996
+      category: binder
+      original_id: _3f31ff8f9f9742558339d2476e49db19
+    gen_919b53ee_319b_4c80_bb39_e9abe4717fc3_on_table_1_at_verify_task_104:
+      initial_pos:
+      - -3.0665170659893937
+      - -1.620880931853732
+      - 0.8791823622205993
+      final_pos:
+      - -3.0864028930664062
+      - -1.60529363155365
+      - 0.7518607974052429
+      category: binder clip
+      original_id: gen_919b53ee_319b_4c80_bb39_e9abe4717fc3
+  family: SUL
+  benchmark_task_id: SUL/verify_task_104
+  global_index: 237
+  target_object_id: a525a7ee829c486288c5e4881624801a

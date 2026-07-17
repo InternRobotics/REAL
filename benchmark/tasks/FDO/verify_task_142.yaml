@@ -1,0 +1,211 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _434b04afb75d4525ae5eb272282d736d_on_potlid_0_at_verify_task_142:
+    original_id: _434b04afb75d4525ae5eb272282d736d
+    category: cookie
+    usd_path: ${MESATASK_USD_ROOT}/434b04afb75d4525ae5eb272282d736d.usd
+    usd_scale:
+    - 6.823591450511418
+    - 6.853526021291376
+    - 7.511750036768558
+    position:
+    - -5.186575533437829
+    - -5.625156239542741
+    - 1.028722186437808
+    size:
+    - 0.11743807792663574
+    - 0.11690330505371094
+    - 0.02840256760828197
+episodes:
+- benchmark_task_id: FDO/verify_task_142
+  family: FDO
+  task_id: verify_task_142
+  episode_idx: 30
+  original_idx: 142
+  benchmark_instruction: Transport a cookie at the pot lid to the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Transport a cookie at the pot lid to the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content:
+      - _434b04afb75d4525ae5eb272282d736d
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - _434b04afb75d4525ae5eb272282d736d
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: potlid_0
+  src_distractors: []
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    _434b04afb75d4525ae5eb272282d736d:
+      category: cookie
+      usd_path: 434b04afb75d4525ae5eb272282d736d.usd
+      size:
+      - 0.11743807792663574
+      - 0.11690330505371094
+      - 0.02840256760828197
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: potlid_0
+  - action: find
+    args:
+      target_category: cookie
+  - action: gaze_at
+    args:
+      target_category: cookie
+  - action: pick
+    args:
+      target_category: cookie
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    _434b04afb75d4525ae5eb272282d736d_on_potlid_0_at_verify_task_142:
+      position:
+      - -5.186575533437829
+      - -5.625156239542741
+      - 1.028722186437808
+      furniture: potlid_0
+      original_id: _434b04afb75d4525ae5eb272282d736d
+  final_positions:
+    _434b04afb75d4525ae5eb272282d736d_on_potlid_0_at_verify_task_142:
+      initial_pos:
+      - -5.186575533437829
+      - -5.625156239542741
+      - 1.128722186437808
+      final_pos:
+      - -5.019050121307373
+      - -5.683466911315918
+      - 0.8571321964263916
+      category: cookie
+      original_id: _434b04afb75d4525ae5eb272282d736d
+  global_index: 158
+  target_object_id: _434b04afb75d4525ae5eb272282d736d

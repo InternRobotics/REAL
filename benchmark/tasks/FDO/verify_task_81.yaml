@@ -1,0 +1,250 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _7516177f_7231_4636_9216_9fe7500e0b55_on_desk_1_at_verify_task_81:
+    original_id: _7516177f_7231_4636_9216_9fe7500e0b55
+    category: vegetable
+    usd_path: ${MESATASK_USD_ROOT}/7516177f-7231-4636-9216-9fe7500e0b55.usd
+    usd_scale:
+    - 7.725126660807373
+    - 7.70259954420597
+    - 7.696460565097369
+    position:
+    - 0.11557950758227342
+    - -3.0822901546147583
+    - 0.7946968297287822
+    size:
+    - 0.14923429489135742
+    - 0.076873779296875
+    - 0.07339358888566494
+  _7516177f_7231_4636_9216_9fe7500e0b55_on_desk_2_at_verify_task_81:
+    original_id: _7516177f_7231_4636_9216_9fe7500e0b55
+    category: vegetable
+    usd_path: ${MESATASK_USD_ROOT}/7516177f-7231-4636-9216-9fe7500e0b55.usd
+    usd_scale:
+    - 7.725126660807373
+    - 7.70259954420597
+    - 7.696460565097369
+    position:
+    - 4.580033098242968
+    - 2.202722677750251
+    - 0.8021393636986613
+    size:
+    - 0.14923429489135742
+    - 0.076873779296875
+    - 0.07339358888566494
+episodes:
+- benchmark_task_id: FDO/verify_task_81
+  family: FDO
+  task_id: verify_task_81
+  episode_idx: 3
+  original_idx: 81
+  benchmark_instruction: Go to the desk near my bed, pick up a vegetable, then travel to the washingmachine
+    to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Go to the desk near my bed, pick up a vegetable, then travel to the washingmachine
+    to place it.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _7516177f_7231_4636_9216_9fe7500e0b55
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _7516177f_7231_4636_9216_9fe7500e0b55
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _7516177f_7231_4636_9216_9fe7500e0b55
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - _7516177f_7231_4636_9216_9fe7500e0b55
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    _7516177f_7231_4636_9216_9fe7500e0b55:
+      category: vegetable
+      usd_path: 7516177f-7231-4636-9216-9fe7500e0b55.usd
+      size:
+      - 0.14923429489135742
+      - 0.076873779296875
+      - 0.07339358888566494
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: vegetable
+  - action: gaze_at
+    args:
+      target_category: vegetable
+  - action: pick
+    args:
+      target_category: vegetable
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    _7516177f_7231_4636_9216_9fe7500e0b55_on_desk_1_at_verify_task_81:
+      position:
+      - 0.11557950758227342
+      - -3.0822901546147583
+      - 0.7946968297287822
+      furniture: desk_1
+      original_id: _7516177f_7231_4636_9216_9fe7500e0b55
+    _7516177f_7231_4636_9216_9fe7500e0b55_on_desk_2_at_verify_task_81:
+      position:
+      - 4.580033098242968
+      - 2.202722677750251
+      - 0.8021393636986613
+      furniture: desk_2
+      original_id: _7516177f_7231_4636_9216_9fe7500e0b55
+  final_positions:
+    _7516177f_7231_4636_9216_9fe7500e0b55_on_desk_1_at_verify_task_81:
+      initial_pos:
+      - 0.11557950758227342
+      - -3.0822901546147583
+      - 0.8946968297287822
+      final_pos:
+      - 0.1389971822500229
+      - -3.0973410606384277
+      - 0.762017011642456
+      category: vegetable
+      original_id: _7516177f_7231_4636_9216_9fe7500e0b55
+    _7516177f_7231_4636_9216_9fe7500e0b55_on_desk_2_at_verify_task_81:
+      initial_pos:
+      - 4.580033098242968
+      - 2.202722677750251
+      - 0.9021393636986613
+      final_pos:
+      - 4.60977029800415
+      - 2.1901800632476807
+      - 0.7422128915786743
+      category: vegetable
+      original_id: _7516177f_7231_4636_9216_9fe7500e0b55
+  global_index: 131
+  target_object_id: _7516177f_7231_4636_9216_9fe7500e0b55

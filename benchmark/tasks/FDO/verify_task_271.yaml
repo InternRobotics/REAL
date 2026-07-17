@@ -1,0 +1,217 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _82bb619702da4d40b8efb747cbc63ee7_on_electriccooker_0_at_verify_task_271:
+    original_id: _82bb619702da4d40b8efb747cbc63ee7
+    category: tomato
+    usd_path: ${MESATASK_USD_ROOT}/82bb619702da4d40b8efb747cbc63ee7.usd
+    usd_scale:
+    - 4.468981131586288
+    - 4.468926706278899
+    - 4.481006486271436
+    position:
+    - -4.89382070218419
+    - -3.982763503920223
+    - 1.062685545166023
+    size:
+    - 0.08446693420410156
+    - 0.07913970947265625
+    - 0.0762537254486233
+episodes:
+- benchmark_task_id: FDO/verify_task_271
+  family: FDO
+  task_id: verify_task_271
+  episode_idx: 42
+  original_idx: 271
+  benchmark_instruction: Transport a tomato at the only electriccooker in the scene to bed with matte
+    white mattress cover.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: retrieve
+  task_description: Transport a tomato at the only electriccooker in the scene to bed with matte white
+    mattress cover.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _82bb619702da4d40b8efb747cbc63ee7
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - _82bb619702da4d40b8efb747cbc63ee7
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: electriccooker_0
+  src_distractors: []
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _82bb619702da4d40b8efb747cbc63ee7:
+      category: tomato
+      usd_path: 82bb619702da4d40b8efb747cbc63ee7.usd
+      size:
+      - 0.08446693420410156
+      - 0.07913970947265625
+      - 0.0762537254486233
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: find
+    args:
+      target_category: tomato
+  - action: gaze_at
+    args:
+      target_category: tomato
+  - action: pick
+    args:
+      target_category: tomato
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _82bb619702da4d40b8efb747cbc63ee7_on_electriccooker_0_at_verify_task_271:
+      position:
+      - -4.89382070218419
+      - -3.982763503920223
+      - 1.062685545166023
+      furniture: electriccooker_0
+      original_id: _82bb619702da4d40b8efb747cbc63ee7
+  final_positions:
+    _82bb619702da4d40b8efb747cbc63ee7_on_electriccooker_0_at_verify_task_271:
+      initial_pos:
+      - -4.89382070218419
+      - -3.982763503920223
+      - 1.1626855451660232
+      final_pos:
+      - -4.900529861450195
+      - -3.9466636180877686
+      - 1.1108158826828003
+      category: tomato
+      original_id: _82bb619702da4d40b8efb747cbc63ee7
+  global_index: 170
+  target_object_id: _82bb619702da4d40b8efb747cbc63ee7

@@ -1,0 +1,260 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a168f82493e54feda127d0361d8f0936_on_desk_1_at_verify_task_527:
+    original_id: a168f82493e54feda127d0361d8f0936
+    category: headphones
+    usd_path: ${MESATASK_USD_ROOT}/a168f82493e54feda127d0361d8f0936.usd
+    usd_scale:
+    - 5.064480445765724
+    - 4.916851051585438
+    - 5.3517198359482006
+    position:
+    - -0.05706437753184504
+    - -2.6092867036033027
+    - 0.7982387181650847
+    size:
+    - 0.145660400390625
+    - 0.15006637573242188
+    - 0.08047736575827003
+    detailed_caption: Pair of over-ear headphones; rounded, padded design; sleek matte black finish.
+  a168f82493e54feda127d0361d8f0936_on_desk_2_at_verify_task_527:
+    original_id: a168f82493e54feda127d0361d8f0936
+    category: headphones
+    usd_path: ${MESATASK_USD_ROOT}/a168f82493e54feda127d0361d8f0936.usd
+    usd_scale:
+    - 5.064480445765724
+    - 4.916851051585438
+    - 5.3517198359482006
+    position:
+    - 4.556313132403732
+    - 1.5840500978307297
+    - 0.8056812521349639
+    size:
+    - 0.145660400390625
+    - 0.15006637573242188
+    - 0.08047736575827003
+    detailed_caption: Pair of over-ear headphones; rounded, padded design; sleek matte black finish.
+episodes:
+- task_id: verify_task_527
+  episode_idx: 71
+  original_idx: 527
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to white desk in front of the blank wall, fetch the pair of over-ear headphones;
+    rounded, padded design; sleek matte black finish, and bring it back to the green nightstand cabinet.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - a168f82493e54feda127d0361d8f0936
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - a168f82493e54feda127d0361d8f0936
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - a168f82493e54feda127d0361d8f0936
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    a168f82493e54feda127d0361d8f0936:
+      category: headphones
+      detailed_caption: Pair of over-ear headphones; rounded, padded design; sleek matte black finish.
+      usd_path: a168f82493e54feda127d0361d8f0936.usd
+      size:
+      - 0.145660400390625
+      - 0.15006637573242188
+      - 0.08047736575827003
+  obj_distractors:
+  - _5d182a8c2baf4134be22071a6fbd0be2
+  - _4e902017e4624547b440da0a6658a689
+  obj_distractor_meta:
+    _5d182a8c2baf4134be22071a6fbd0be2:
+      category: mouse
+      detailed_caption: Sleek, curved black mouse with subtle purple accents and a smooth surface.
+      usd_path: 5d182a8c2baf4134be22071a6fbd0be2.usd
+      size:
+      - 0.057285308837890625
+      - 0.03194141387939453
+      - 0.09891955139119091
+    _4e902017e4624547b440da0a6658a689:
+      category: headphones
+      detailed_caption: Glossy black over-ear headphones with cushioned ear pads and adjustable headband.
+        Modern design.
+      usd_path: 4e902017e4624547b440da0a6658a689.usd
+      size:
+      - 0.18924999237060547
+      - 0.4871482849121094
+      - 0.03217245568521321
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: headphones
+      target_description: Pair of over-ear headphones; rounded, padded design; sleek matte black finish.
+  - action: gaze_at
+    args:
+      target_category: headphones
+      target_description: Pair of over-ear headphones; rounded, padded design; sleek matte black finish.
+  - action: pick
+    args:
+      target_category: headphones
+      target_description: Pair of over-ear headphones; rounded, padded design; sleek matte black finish.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  placements:
+    a168f82493e54feda127d0361d8f0936_on_desk_1_at_verify_task_527:
+      position:
+      - -0.05706437753184504
+      - -2.6092867036033027
+      - 0.7982387181650847
+      furniture: desk_1
+      original_id: a168f82493e54feda127d0361d8f0936
+    a168f82493e54feda127d0361d8f0936_on_desk_2_at_verify_task_527:
+      position:
+      - 4.556313132403732
+      - 1.5840500978307297
+      - 0.8056812521349639
+      furniture: desk_2
+      original_id: a168f82493e54feda127d0361d8f0936
+  final_positions:
+    a168f82493e54feda127d0361d8f0936_on_desk_1_at_verify_task_527:
+      initial_pos:
+      - -0.05706437753184504
+      - -2.6092867036033027
+      - 0.8982387181650847
+      final_pos:
+      - -0.051015179604291916
+      - -2.725200891494751
+      - 0.7638097405433655
+      category: headphones
+      original_id: a168f82493e54feda127d0361d8f0936
+    a168f82493e54feda127d0361d8f0936_on_desk_2_at_verify_task_527:
+      initial_pos:
+      - 4.556313132403732
+      - 1.5840500978307297
+      - 0.9056812521349639
+      final_pos:
+      - 4.55950927734375
+      - 1.4654502868652344
+      - 0.7444545030593872
+      category: headphones
+      original_id: a168f82493e54feda127d0361d8f0936
+  family: FDP
+  benchmark_task_id: FDP/verify_task_527
+  benchmark_instruction: Head over to white desk in front of the blank wall, fetch the pair of over-ear
+    headphones; rounded, padded design; sleek matte black finish, and bring it back to the green nightstand
+    cabinet.
+  global_index: 71
+  target_object_id: a168f82493e54feda127d0361d8f0936

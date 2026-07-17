@@ -1,0 +1,332 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0cff9d2044b34ddbae54a61d51789224_on_desk_1_at_verify_task_309:
+    original_id: _0cff9d2044b34ddbae54a61d51789224
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/0cff9d2044b34ddbae54a61d51789224.usd
+    usd_scale:
+    - 2.499814852815135
+    - 2.4762247891173748
+    - 2.4627659817938863
+    position:
+    - -0.13953562551087786
+    - -2.4737981984629913
+    - 0.8324269953368639
+    size:
+    - 0.021331787109375
+    - 0.014746665954589844
+    - 0.1488539201018284
+    detailed_caption: Green cylindrical pen with a tapered tip, gray cap, and textured grip.
+  _83fefaeffaed4586aa0bbae2fbfac6ff_on_desk_1_at_verify_task_309:
+    original_id: _83fefaeffaed4586aa0bbae2fbfac6ff
+    category: cara
+    usd_path: ${MESATASK_USD_ROOT}/83fefaeffaed4586aa0bbae2fbfac6ff.usd
+    usd_scale:
+    - 82.95224816155444
+    - 82.95227876933136
+    - 83.07850193716295
+    position:
+    - 0.015458178145125068
+    - -2.5258962127908657
+    - 0.8253941747639328
+    size:
+    - 0.1344776153564453
+    - 0.09222793579101562
+    - 0.13478827895596623
+    detailed_caption: Rectangular control panel box, matte black finish, metallic dials, red indicator
+      lights, labeled controls.
+  _0dd8be84d117499d9adfae347dc5a389_on_desk_1_at_verify_task_309:
+    original_id: _0dd8be84d117499d9adfae347dc5a389
+    category: marker
+    usd_path: ${MESATASK_USD_ROOT}/0dd8be84d117499d9adfae347dc5a389.usd
+    usd_scale:
+    - 1.65559836991715
+    - 1.6510703442585255
+    - 1.631141599126809
+    position:
+    - 0.09572713831222207
+    - -2.2089046440904943
+    - 0.7643549845484086
+    size:
+    - 0.13348960876464844
+    - 0.014392852783203125
+    - 0.012709898524917662
+    detailed_caption: Black marker with a rounded tip, cylindrical body, and white label.
+  _0cff9d2044b34ddbae54a61d51789224_on_desk_2_at_verify_task_309:
+    original_id: _0cff9d2044b34ddbae54a61d51789224
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/0cff9d2044b34ddbae54a61d51789224.usd
+    usd_scale:
+    - 2.499814852815135
+    - 2.4762247891173748
+    - 2.4627659817938863
+    position:
+    - 4.490758656356748
+    - 1.4338209677653193
+    - 0.8398695293067431
+    size:
+    - 0.021331787109375
+    - 0.014746665954589844
+    - 0.1488539201018284
+    detailed_caption: Green cylindrical pen with a tapered tip, gray cap, and textured grip.
+episodes:
+- benchmark_task_id: FODP/verify_task_309
+  family: FODP
+  task_id: verify_task_309
+  episode_idx: 48
+  original_idx: 309
+  benchmark_instruction: Take the green cylindrical pen with a tapered tip, gray cap, and textured grip
+    from white desk in front of a picture and put it on bed with dark satin bedding.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the green cylindrical pen with a tapered tip, gray cap, and textured grip from
+    white desk in front of a picture and put it on bed with dark satin bedding.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _0cff9d2044b34ddbae54a61d51789224
+      - _83fefaeffaed4586aa0bbae2fbfac6ff
+      - _0dd8be84d117499d9adfae347dc5a389
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _0cff9d2044b34ddbae54a61d51789224
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _83fefaeffaed4586aa0bbae2fbfac6ff
+      - _0dd8be84d117499d9adfae347dc5a389
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _0cff9d2044b34ddbae54a61d51789224
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _0cff9d2044b34ddbae54a61d51789224
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: bed_2
+  dest_distractors:
+  - bed_1
+  obj_meta:
+    _0cff9d2044b34ddbae54a61d51789224:
+      category: pen
+      detailed_caption: Green cylindrical pen with a tapered tip, gray cap, and textured grip.
+      usd_path: 0cff9d2044b34ddbae54a61d51789224.usd
+      size:
+      - 0.021331787109375
+      - 0.014746665954589844
+      - 0.1488539201018284
+  obj_distractors:
+  - _83fefaeffaed4586aa0bbae2fbfac6ff
+  - _0dd8be84d117499d9adfae347dc5a389
+  obj_distractor_meta:
+    _83fefaeffaed4586aa0bbae2fbfac6ff:
+      category: cara
+      detailed_caption: Rectangular control panel box, matte black finish, metallic dials, red indicator
+        lights, labeled controls.
+      usd_path: 83fefaeffaed4586aa0bbae2fbfac6ff.usd
+      size:
+      - 0.1344776153564453
+      - 0.09222793579101562
+      - 0.13478827895596623
+    _0dd8be84d117499d9adfae347dc5a389:
+      category: marker
+      detailed_caption: Black marker with a rounded tip, cylindrical body, and white label.
+      usd_path: 0dd8be84d117499d9adfae347dc5a389.usd
+      size:
+      - 0.13348960876464844
+      - 0.014392852783203125
+      - 0.012709898524917662
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: Green cylindrical pen with a tapered tip, gray cap, and textured grip.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Green cylindrical pen with a tapered tip, gray cap, and textured grip.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Green cylindrical pen with a tapered tip, gray cap, and textured grip.
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: place
+    args:
+      receptacle_name: bed_2
+  placements:
+    _0cff9d2044b34ddbae54a61d51789224_on_desk_1_at_verify_task_309:
+      position:
+      - -0.13953562551087786
+      - -2.4737981984629913
+      - 0.8324269953368639
+      furniture: desk_1
+      original_id: _0cff9d2044b34ddbae54a61d51789224
+    _83fefaeffaed4586aa0bbae2fbfac6ff_on_desk_1_at_verify_task_309:
+      position:
+      - 0.015458178145125068
+      - -2.5258962127908657
+      - 0.8253941747639328
+      furniture: desk_1
+      original_id: _83fefaeffaed4586aa0bbae2fbfac6ff
+    _0dd8be84d117499d9adfae347dc5a389_on_desk_1_at_verify_task_309:
+      position:
+      - 0.09572713831222207
+      - -2.2089046440904943
+      - 0.7643549845484086
+      furniture: desk_1
+      original_id: _0dd8be84d117499d9adfae347dc5a389
+    _0cff9d2044b34ddbae54a61d51789224_on_desk_2_at_verify_task_309:
+      position:
+      - 4.490758656356748
+      - 1.4338209677653193
+      - 0.8398695293067431
+      furniture: desk_2
+      original_id: _0cff9d2044b34ddbae54a61d51789224
+  final_positions:
+    _0cff9d2044b34ddbae54a61d51789224_on_desk_1_at_verify_task_309:
+      initial_pos:
+      - -0.13953562551087786
+      - -2.4737981984629913
+      - 0.9324269953368639
+      final_pos:
+      - -0.14429202675819397
+      - -2.5525031089782715
+      - 0.7450338006019592
+      category: pen
+      original_id: _0cff9d2044b34ddbae54a61d51789224
+    _83fefaeffaed4586aa0bbae2fbfac6ff_on_desk_1_at_verify_task_309:
+      initial_pos:
+      - 0.015458178145125068
+      - -2.5258962127908657
+      - 0.9253941747639328
+      final_pos:
+      - 0.017446044832468033
+      - -2.5296249389648438
+      - 0.8033407926559448
+      category: cara
+      original_id: _83fefaeffaed4586aa0bbae2fbfac6ff
+    _0dd8be84d117499d9adfae347dc5a389_on_desk_1_at_verify_task_309:
+      initial_pos:
+      - 0.09572713831222207
+      - -2.2089046440904943
+      - 0.8643549845484085
+      final_pos:
+      - 0.09571182727813721
+      - -2.2057759761810303
+      - 0.7427278161048889
+      category: marker
+      original_id: _0dd8be84d117499d9adfae347dc5a389
+    _0cff9d2044b34ddbae54a61d51789224_on_desk_2_at_verify_task_309:
+      initial_pos:
+      - 4.490758656356748
+      - 1.4338209677653193
+      - 0.9398695293067431
+      final_pos:
+      - 4.513522148132324
+      - 1.3562756776809692
+      - 0.7256787419319153
+      category: pen
+      original_id: _0cff9d2044b34ddbae54a61d51789224
+  global_index: 120
+  target_object_id: _0cff9d2044b34ddbae54a61d51789224

@@ -1,0 +1,337 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_1_at_verify_task_177:
+    original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/54e9f74c-7eb5-450b-9ad5-da7112b27bf7.usd
+    usd_scale:
+    - 8.344767609174683
+    - 9.812347474679028
+    - 7.766891330907154
+    position:
+    - -1.5482023228515756
+    - -1.0740742953003293
+    - 0.7876038565114141
+    size:
+    - 0.12025070190429688
+    - 0.2004833221435547
+    - 0.0472079161554575
+    detailed_caption: Round, white alarm clock with a classic design, two bells on top, and smooth surface.
+  _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_2_at_verify_task_177:
+    original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/54e9f74c-7eb5-450b-9ad5-da7112b27bf7.usd
+    usd_scale:
+    - 8.344767609174683
+    - 9.812347474679028
+    - 7.766891330907154
+    position:
+    - -1.985617134177474
+    - 3.304308171305345
+    - 0.3135919584706426
+    size:
+    - 0.12025070190429688
+    - 0.2004833221435547
+    - 0.0472079161554575
+    detailed_caption: Round, white alarm clock with a classic design, two bells on top, and smooth surface.
+  _67a4c51ce9894a218dab77cae5187518_on_table_2_at_verify_task_177:
+    original_id: _67a4c51ce9894a218dab77cae5187518
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/67a4c51ce9894a218dab77cae5187518.usd
+    usd_scale:
+    - 1.0553979383701764
+    - 0.889956688775051
+    - 1.07887841890673
+    position:
+    - -2.0578792437863402
+    - 2.472908738628386
+    - 0.32205478868447246
+    size:
+    - 0.1146697998046875
+    - 0.13949966430664062
+    - 0.06413357658311725
+    detailed_caption: Classic round alarm clock with black casing, metallic bells, beige face, and black
+      hour markers.
+  _215a41d8b6d44ecdbd70cc9680c0f585_on_table_2_at_verify_task_177:
+    original_id: _215a41d8b6d44ecdbd70cc9680c0f585
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/215a41d8b6d44ecdbd70cc9680c0f585.usd
+    usd_scale:
+    - 0.0494539607251338
+    - 0.04886954352458966
+    - 0.049673290213181974
+    position:
+    - -2.387080804329539
+    - 3.250991670345094
+    - 0.3235626392811537
+    size:
+    - 0.10674238204956055
+    - 0.13869476318359375
+    - 0.06714927777647972
+    detailed_caption: Round blue alarm clock with classic design, sad face, dial, rim, and hanging loop.
+episodes:
+- benchmark_task_id: FODP/verify_task_177
+  family: FODP
+  task_id: verify_task_177
+  episode_idx: 31
+  original_idx: 177
+  benchmark_instruction: Retrieve the round, white alarm clock with a classic design, two bells on top,
+    and smooth surface from the table much smaller than another one and deposit it at bed with matte white
+    mattress cover.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the round, white alarm clock with a classic design, two bells on top, and
+    smooth surface from the table much smaller than another one and deposit it at bed with matte white
+    mattress cover.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+      - _67a4c51ce9894a218dab77cae5187518
+      - _215a41d8b6d44ecdbd70cc9680c0f585
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _67a4c51ce9894a218dab77cae5187518
+      - _215a41d8b6d44ecdbd70cc9680c0f585
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7:
+      category: alarm clock
+      detailed_caption: Round, white alarm clock with a classic design, two bells on top, and smooth surface.
+      usd_path: 54e9f74c-7eb5-450b-9ad5-da7112b27bf7.usd
+      size:
+      - 0.12025070190429688
+      - 0.2004833221435547
+      - 0.0472079161554575
+  obj_distractors:
+  - _67a4c51ce9894a218dab77cae5187518
+  - _215a41d8b6d44ecdbd70cc9680c0f585
+  obj_distractor_meta:
+    _67a4c51ce9894a218dab77cae5187518:
+      category: clock
+      detailed_caption: Classic round alarm clock with black casing, metallic bells, beige face, and black
+        hour markers.
+      usd_path: 67a4c51ce9894a218dab77cae5187518.usd
+      size:
+      - 0.1146697998046875
+      - 0.13949966430664062
+      - 0.06413357658311725
+    _215a41d8b6d44ecdbd70cc9680c0f585:
+      category: clock
+      detailed_caption: Round blue alarm clock with classic design, sad face, dial, rim, and hanging loop.
+      usd_path: 215a41d8b6d44ecdbd70cc9680c0f585.usd
+      size:
+      - 0.10674238204956055
+      - 0.13869476318359375
+      - 0.06714927777647972
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: alarm clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: gaze_at
+    args:
+      target_category: alarm clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: pick
+    args:
+      target_category: alarm clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  placements:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_1_at_verify_task_177:
+      position:
+      - -1.5482023228515756
+      - -1.0740742953003293
+      - 0.7876038565114141
+      furniture: table_1
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_2_at_verify_task_177:
+      position:
+      - -1.985617134177474
+      - 3.304308171305345
+      - 0.3135919584706426
+      furniture: table_2
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    _67a4c51ce9894a218dab77cae5187518_on_table_2_at_verify_task_177:
+      position:
+      - -2.0578792437863402
+      - 2.472908738628386
+      - 0.32205478868447246
+      furniture: table_2
+      original_id: _67a4c51ce9894a218dab77cae5187518
+    _215a41d8b6d44ecdbd70cc9680c0f585_on_table_2_at_verify_task_177:
+      position:
+      - -2.387080804329539
+      - 3.250991670345094
+      - 0.3235626392811537
+      furniture: table_2
+      original_id: _215a41d8b6d44ecdbd70cc9680c0f585
+  final_positions:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_1_at_verify_task_177:
+      initial_pos:
+      - -1.5482023228515756
+      - -1.0740742953003293
+      - 0.887603856511414
+      final_pos:
+      - -1.5594183206558228
+      - -1.1674636602401733
+      - 0.771121621131897
+      category: alarm clock
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_table_2_at_verify_task_177:
+      initial_pos:
+      - -1.985617134177474
+      - 3.304308171305345
+      - 0.41359195847064256
+      final_pos:
+      - -1.9882564544677734
+      - 3.2083418369293213
+      - 0.29710954427719116
+      category: alarm clock
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    _67a4c51ce9894a218dab77cae5187518_on_table_2_at_verify_task_177:
+      initial_pos:
+      - -2.0578792437863402
+      - 2.472908738628386
+      - 0.42205478868447244
+      final_pos:
+      - -2.0591657161712646
+      - 2.449049234390259
+      - 0.30247941613197327
+      category: clock
+      original_id: _67a4c51ce9894a218dab77cae5187518
+    _215a41d8b6d44ecdbd70cc9680c0f585_on_table_2_at_verify_task_177:
+      initial_pos:
+      - -2.387080804329539
+      - 3.250991670345094
+      - 0.4235626392811537
+      final_pos:
+      - -2.396409034729004
+      - 3.2426917552948
+      - 0.3023163676261902
+      category: clock
+      original_id: _215a41d8b6d44ecdbd70cc9680c0f585
+  global_index: 103
+  target_object_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7

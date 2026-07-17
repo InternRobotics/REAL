@@ -1,0 +1,265 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _76703d06_7adf_442e_be95_7dde6ce265e6_on_desk_1_at_verify_task_209:
+    original_id: _76703d06_7adf_442e_be95_7dde6ce265e6
+    category: calculator
+    usd_path: ${MESATASK_USD_ROOT}/76703d06-7adf-442e-be95-7dde6ce265e6.usd
+    usd_scale:
+    - 7.600819426514539
+    - 7.404265372360845
+    - 7.843673597848285
+    position:
+    - 0.08315138929199736
+    - -3.137374986342742
+    - 0.7705647066864185
+    size:
+    - 0.09321784973144531
+    - 0.148956298828125
+    - 0.025129342800937593
+    detailed_caption: Sleek black calculator, rectangular shape, prominent display, white and yellow labeled
+      buttons.
+  _76703d06_7adf_442e_be95_7dde6ce265e6_on_desk_2_at_verify_task_209:
+    original_id: _76703d06_7adf_442e_be95_7dde6ce265e6
+    category: calculator
+    usd_path: ${MESATASK_USD_ROOT}/76703d06-7adf-442e-be95-7dde6ce265e6.usd
+    usd_scale:
+    - 7.600819426514539
+    - 7.404265372360845
+    - 7.843673597848285
+    position:
+    - 4.504282552662971
+    - 2.0095148079506733
+    - 0.7780072406562977
+    size:
+    - 0.09321784973144531
+    - 0.148956298828125
+    - 0.025129342800937593
+    detailed_caption: Sleek black calculator, rectangular shape, prominent display, white and yellow labeled
+      buttons.
+episodes:
+- task_id: verify_task_209
+  episode_idx: 56
+  original_idx: 209
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to the desk with black handle, fetch the sleek black calculator, rectangular
+    shape, prominent display, white and yellow labeled buttons, and bring it back to the table to place
+    my snack for watching TV.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _76703d06_7adf_442e_be95_7dde6ce265e6
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _76703d06_7adf_442e_be95_7dde6ce265e6
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _76703d06_7adf_442e_be95_7dde6ce265e6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _76703d06_7adf_442e_be95_7dde6ce265e6:
+      category: calculator
+      detailed_caption: Sleek black calculator, rectangular shape, prominent display, white and yellow
+        labeled buttons.
+      usd_path: 76703d06-7adf-442e-be95-7dde6ce265e6.usd
+      size:
+      - 0.09321784973144531
+      - 0.148956298828125
+      - 0.025129342800937593
+  obj_distractors:
+  - _9cad169b913545f683ae2a27080ca270
+  - _79bff744c1b74462af7d3c0b9b19267b
+  obj_distractor_meta:
+    _9cad169b913545f683ae2a27080ca270:
+      category: keyboard
+      detailed_caption: Rectangular, slim-profile keyboard with a smooth surface, rounded edges, and white
+        keys.
+      usd_path: 9cad169b913545f683ae2a27080ca270.usd
+      size:
+      - 0.3187141418457031
+      - 0.11109542846679688
+      - 0.021682621685613412
+    _79bff744c1b74462af7d3c0b9b19267b:
+      category: remote control
+      detailed_caption: Sleek, rectangular remote control with a black body and large, brightly colored
+        buttons.
+      usd_path: 79bff744c1b74462af7d3c0b9b19267b.usd
+      size:
+      - 0.08931159973144531
+      - 0.224365234375
+      - 0.027959939965512604
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: calculator
+      target_description: Sleek black calculator, rectangular shape, prominent display, white and yellow
+        labeled buttons.
+  - action: gaze_at
+    args:
+      target_category: calculator
+      target_description: Sleek black calculator, rectangular shape, prominent display, white and yellow
+        labeled buttons.
+  - action: pick
+    args:
+      target_category: calculator
+      target_description: Sleek black calculator, rectangular shape, prominent display, white and yellow
+        labeled buttons.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _76703d06_7adf_442e_be95_7dde6ce265e6_on_desk_1_at_verify_task_209:
+      position:
+      - 0.08315138929199736
+      - -3.137374986342742
+      - 0.7705647066864185
+      furniture: desk_1
+      original_id: _76703d06_7adf_442e_be95_7dde6ce265e6
+    _76703d06_7adf_442e_be95_7dde6ce265e6_on_desk_2_at_verify_task_209:
+      position:
+      - 4.504282552662971
+      - 2.0095148079506733
+      - 0.7780072406562977
+      furniture: desk_2
+      original_id: _76703d06_7adf_442e_be95_7dde6ce265e6
+  final_positions:
+    _76703d06_7adf_442e_be95_7dde6ce265e6_on_desk_1_at_verify_task_209:
+      initial_pos:
+      - 0.08315138929199736
+      - -3.137374986342742
+      - 0.8705647066864185
+      final_pos:
+      - 0.08313030749559402
+      - -3.136262893676758
+      - 0.7424284815788269
+      category: calculator
+      original_id: _76703d06_7adf_442e_be95_7dde6ce265e6
+    _76703d06_7adf_442e_be95_7dde6ce265e6_on_desk_2_at_verify_task_209:
+      initial_pos:
+      - 4.504282552662971
+      - 2.0095148079506733
+      - 0.8780072406562976
+      final_pos:
+      - 4.504467964172363
+      - 2.0090889930725098
+      - 0.7228424549102783
+      category: calculator
+      original_id: _76703d06_7adf_442e_be95_7dde6ce265e6
+  family: FDP
+  benchmark_task_id: FDP/verify_task_209
+  benchmark_instruction: Head over to the desk with black handle, fetch the sleek black calculator, rectangular
+    shape, prominent display, white and yellow labeled buttons, and bring it back to the table to place
+    my snack for watching TV.
+  global_index: 56
+  target_object_id: _76703d06_7adf_442e_be95_7dde6ce265e6

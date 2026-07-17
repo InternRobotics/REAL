@@ -1,0 +1,368 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_6_at_verify_task_44:
+    original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+    usd_scale:
+    - 12.380533588081919
+    - 12.995205453223841
+    - 14.755287127585984
+    position:
+    - 2.52503025490247
+    - -0.9667557240437106
+    - 0.8851011148831458
+    size:
+    - 0.18028736114501953
+    - 0.1647653579711914
+    - 0.29420224025670905
+    detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_7_at_verify_task_44:
+    original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+    usd_scale:
+    - 12.380533588081919
+    - 12.995205453223841
+    - 14.755287127585984
+    position:
+    - 0.915315659489261
+    - 1.6823745316672534
+    - 1.0036511174580665
+    size:
+    - 0.18028736114501953
+    - 0.1647653579711914
+    - 0.29420224025670905
+    detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_8_at_verify_task_44:
+    original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+    usd_scale:
+    - 12.380533588081919
+    - 12.995205453223841
+    - 14.755287127585984
+    position:
+    - 4.537400618759253
+    - 2.9205349213153653
+    - 0.617601101770124
+    size:
+    - 0.18028736114501953
+    - 0.1647653579711914
+    - 0.29420224025670905
+    detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_9_at_verify_task_44:
+    original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+    usd_scale:
+    - 12.380533588081919
+    - 12.995205453223841
+    - 14.755287127585984
+    position:
+    - 6.048676910294218
+    - 1.2836751471453751
+    - 1.1071011177441688
+    size:
+    - 0.18028736114501953
+    - 0.1647653579711914
+    - 0.29420224025670905
+    detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_10_at_verify_task_44:
+    original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+    usd_scale:
+    - 12.380533588081919
+    - 12.995205453223841
+    - 14.755287127585984
+    position:
+    - 3.228132184863298
+    - -0.5408623639568215
+    - 0.6401011101147742
+    size:
+    - 0.18028736114501953
+    - 0.1647653579711914
+    - 0.29420224025670905
+    detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+episodes:
+- task_id: verify_task_44
+  episode_idx: 26
+  original_idx: 44
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Get the notebook with spiral binding, colorful cover images, and blank rectangular
+    pages from cabinet with  grey cube with round mesh grill and move it to the rectangular table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_8
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b:
+      category: notebook
+      detailed_caption: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+      usd_path: gen_d625b2b5-0204-4f79-8f3f-8515642b3d3b.usd
+      size:
+      - 0.18028736114501953
+      - 0.1647653579711914
+      - 0.29420224025670905
+  obj_distractors:
+  - _0776c9b2_83ac_4d73_b437_5122596ca239
+  - _485e8ea7bd4947428521570a747fd459
+  obj_distractor_meta:
+    _0776c9b2_83ac_4d73_b437_5122596ca239:
+      category: notebook
+      detailed_caption: Sleek, rectangular notebook with a textured brown cover and white elastic band;
+        smooth edges.
+      usd_path: 0776c9b2-83ac-4d73-b437-5122596ca239.usd
+      size:
+      - 0.18336868286132812
+      - 0.2635364532470703
+      - 0.025157602736726403
+    _485e8ea7bd4947428521570a747fd459:
+      category: notebook
+      detailed_caption: Colorful stacked notebooks with textured peach and white covers, soft rounded
+        edges, and rings.
+      usd_path: 485e8ea7bd4947428521570a747fd459.usd
+      size:
+      - 0.20863723754882812
+      - 0.05665314197540283
+      - 0.23478987393900752
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Notebook with spiral binding, colorful cover images, and blank rectangular pages.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_6_at_verify_task_44:
+      position:
+      - 2.52503025490247
+      - -0.9667557240437106
+      - 0.8851011148831458
+      furniture: cabinet_6
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_7_at_verify_task_44:
+      position:
+      - 0.915315659489261
+      - 1.6823745316672534
+      - 1.0036511174580665
+      furniture: cabinet_7
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_8_at_verify_task_44:
+      position:
+      - 4.537400618759253
+      - 2.9205349213153653
+      - 0.617601101770124
+      furniture: cabinet_8
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_9_at_verify_task_44:
+      position:
+      - 6.048676910294218
+      - 1.2836751471453751
+      - 1.1071011177441688
+      furniture: cabinet_9
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_10_at_verify_task_44:
+      position:
+      - 3.228132184863298
+      - -0.5408623639568215
+      - 0.6401011101147742
+      furniture: cabinet_10
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+  final_positions:
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_6_at_verify_task_44:
+      initial_pos:
+      - 2.52503025490247
+      - -0.9667557240437106
+      - 0.9851011148831458
+      final_pos:
+      - 2.5308444499969482
+      - -0.9642065763473511
+      - 0.864467442035675
+      category: notebook
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_7_at_verify_task_44:
+      initial_pos:
+      - 0.915315659489261
+      - 1.6823745316672534
+      - 1.1036511174580665
+      final_pos:
+      - 0.9403559565544128
+      - 1.934361457824707
+      - 0.8564257621765137
+      category: notebook
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_8_at_verify_task_44:
+      initial_pos:
+      - 4.537400618759253
+      - 2.9205349213153653
+      - 0.7176011017701239
+      final_pos:
+      - 4.58050537109375
+      - 3.04890513420105
+      - 0.5940983891487122
+      category: notebook
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_9_at_verify_task_44:
+      initial_pos:
+      - 6.048676910294218
+      - 1.2836751471453751
+      - 1.2071011177441688
+      final_pos:
+      - 6.049901962280273
+      - 1.6442844867706299
+      - 0.9782582521438599
+      category: notebook
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+    gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b_on_cabinet_10_at_verify_task_44:
+      initial_pos:
+      - 3.228132184863298
+      - -0.5408623639568215
+      - 0.7401011101147742
+      final_pos:
+      - 3.335885763168335
+      - -0.3836705982685089
+      - 0.5269243717193604
+      category: notebook
+      original_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b
+  family: FDP
+  benchmark_task_id: FDP/verify_task_44
+  benchmark_instruction: Get the notebook with spiral binding, colorful cover images, and blank rectangular
+    pages from cabinet with  grey cube with round mesh grill and move it to the rectangular table.
+  global_index: 26
+  target_object_id: gen_d625b2b5_0204_4f79_8f3f_8515642b3d3b

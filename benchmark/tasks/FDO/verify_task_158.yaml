@@ -1,0 +1,213 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _4fc98176958f45dea72f0f000762d0dd_on_pot_0_at_verify_task_158:
+    original_id: _4fc98176958f45dea72f0f000762d0dd
+    category: cookie
+    usd_path: ${MESATASK_USD_ROOT}/4fc98176958f45dea72f0f000762d0dd.usd
+    usd_scale:
+    - 3.282986753037734
+    - 3.2944681927723827
+    - 3.5142581485458235
+    position:
+    - -5.205776255911846
+    - -5.64088366048347
+    - 0.997458635577932
+    size:
+    - 0.09363460540771484
+    - 0.09640121459960938
+    - 0.03929050685837865
+episodes:
+- benchmark_task_id: FDO/verify_task_158
+  family: FDO
+  task_id: verify_task_158
+  episode_idx: 38
+  original_idx: 158
+  benchmark_instruction: Retrieve a cookie from the pot on the stove and deposit it at the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Retrieve a cookie from the pot on the stove and deposit it at the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content:
+      - _4fc98176958f45dea72f0f000762d0dd
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _4fc98176958f45dea72f0f000762d0dd
+      door: false
+  src: pot_0
+  src_distractors: []
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _4fc98176958f45dea72f0f000762d0dd:
+      category: cookie
+      usd_path: 4fc98176958f45dea72f0f000762d0dd.usd
+      size:
+      - 0.09363460540771484
+      - 0.09640121459960938
+      - 0.03929050685837865
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: pot_0
+  - action: find
+    args:
+      target_category: cookie
+  - action: gaze_at
+    args:
+      target_category: cookie
+  - action: pick
+    args:
+      target_category: cookie
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _4fc98176958f45dea72f0f000762d0dd_on_pot_0_at_verify_task_158:
+      position:
+      - -5.205776255911846
+      - -5.64088366048347
+      - 0.997458635577932
+      furniture: pot_0
+      original_id: _4fc98176958f45dea72f0f000762d0dd
+  final_positions:
+    _4fc98176958f45dea72f0f000762d0dd_on_pot_0_at_verify_task_158:
+      initial_pos:
+      - -5.205776255911846
+      - -5.64088366048347
+      - 1.097458635577932
+      final_pos:
+      - -5.23087739944458
+      - -5.594156265258789
+      - 0.9033852219581604
+      category: cookie
+      original_id: _4fc98176958f45dea72f0f000762d0dd
+  global_index: 166
+  target_object_id: _4fc98176958f45dea72f0f000762d0dd

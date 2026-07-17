@@ -1,0 +1,253 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_bed_1_at_verify_task_108:
+    original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    category: sushi
+    usd_path: ${MESATASK_USD_ROOT}/3bfe6dee7eeb4ed5bbfaf2baf1672ee3.usd
+    usd_scale:
+    - 0.22992208586223145
+    - 0.23194067389338438
+    - 0.20535574335650453
+    position:
+    - 3.2147476682026723
+    - 3.5946365797619864
+    - 0.5219872940320056
+    size:
+    - 0.15363311767578125
+    - 0.09233474731445312
+    - 0.05940428510075435
+  _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_bed_2_at_verify_task_108:
+    original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    category: sushi
+    usd_path: ${MESATASK_USD_ROOT}/3bfe6dee7eeb4ed5bbfaf2baf1672ee3.usd
+    usd_scale:
+    - 0.22992208586223145
+    - 0.23194067389338438
+    - 0.20535574335650453
+    position:
+    - 4.854547972285844
+    - -2.1224337974789567
+    - 0.5518513668316882
+    size:
+    - 0.15363311767578125
+    - 0.09233474731445312
+    - 0.05940428510075435
+episodes:
+- benchmark_task_id: FDO/verify_task_108
+  family: FDO
+  task_id: verify_task_108
+  episode_idx: 21
+  original_idx: 108
+  benchmark_instruction: Head over to bed with dark satin bedding, fetch a sushi, and bring it back to
+    the only electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Head over to bed with dark satin bedding, fetch a sushi, and bring it back to the
+    only electriccooker in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+      door: false
+  src: bed_2
+  src_distractors:
+  - bed_1
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _3bfe6dee7eeb4ed5bbfaf2baf1672ee3:
+      category: sushi
+      usd_path: 3bfe6dee7eeb4ed5bbfaf2baf1672ee3.usd
+      size:
+      - 0.15363311767578125
+      - 0.09233474731445312
+      - 0.05940428510075435
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: find
+    args:
+      target_category: sushi
+  - action: gaze_at
+    args:
+      target_category: sushi
+  - action: pick
+    args:
+      target_category: sushi
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_bed_1_at_verify_task_108:
+      position:
+      - 3.2147476682026723
+      - 3.5946365797619864
+      - 0.5219872940320056
+      furniture: bed_1
+      original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_bed_2_at_verify_task_108:
+      position:
+      - 4.854547972285844
+      - -2.1224337974789567
+      - 0.5518513668316882
+      furniture: bed_2
+      original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+  final_positions:
+    _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_bed_1_at_verify_task_108:
+      initial_pos:
+      - 3.2147476682026723
+      - 3.5946365797619864
+      - 0.6219872940320056
+      final_pos:
+      - 3.2828369140625
+      - 3.6003034114837646
+      - 0.4938434064388275
+      category: sushi
+      original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_bed_2_at_verify_task_108:
+      initial_pos:
+      - 4.854547972285844
+      - -2.1224337974789567
+      - 0.6518513668316882
+      final_pos:
+      - 4.931131362915039
+      - -2.1261541843414307
+      - 0.5569472312927246
+      category: sushi
+      original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+  global_index: 149
+  target_object_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3

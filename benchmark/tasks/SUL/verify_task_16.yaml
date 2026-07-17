@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _3142a95d8eb044d9906ffe040acddbce_on_table_1_at_verify_task_16:
+    original_id: _3142a95d8eb044d9906ffe040acddbce
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/3142a95d8eb044d9906ffe040acddbce.usd
+    usd_scale:
+    - 0.024131944444444445
+    - 0.025135869565217392
+    - 0.027213541666666667
+    position:
+    - -2.7685750200908688
+    - -1.1415848295986861
+    - 0.8453684267401695
+    size:
+    - 0.3257789611816406
+    - 0.03016984462738037
+    - 0.16273705661296844
+    detailed_caption: Rectangular tray with multiple compartments, smooth surface, clean lines, minimalistic
+      style, light color.
+  _521f3e4a156145899537cc2e84a2d89b_on_table_1_at_verify_task_16:
+    original_id: _521f3e4a156145899537cc2e84a2d89b
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/521f3e4a156145899537cc2e84a2d89b.usd
+    usd_scale:
+    - 64.87347380083953
+    - 64.97889169832614
+    - 79.92679492301453
+    position:
+    - -2.381373939150901
+    - -1.0936305839409517
+    - 0.8053894047439099
+    size:
+    - 0.2772979736328125
+    - 0.14518260955810547
+    - 0.08277901262044907
+    detailed_caption: Oval bowl with a smooth, textured surface, light wood finish, and raised lip.
+  a025ab8cf8494b7d83b5360bfbd62d46_on_table_1_at_verify_task_16:
+    original_id: a025ab8cf8494b7d83b5360bfbd62d46
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/a025ab8cf8494b7d83b5360bfbd62d46.usd
+    usd_scale:
+    - 4.846027615431651
+    - 4.849487705246739
+    - 4.375603929660453
+    position:
+    - -2.8767123545186655
+    - -1.325858755956605
+    - 0.811191051304395
+    size:
+    - 0.20293807983398438
+    - 0.21263408660888672
+    - 0.09438230574141926
+    detailed_caption: Shallow, round bowl with a smooth, glossy lip, textured base, and earthy color gradient.
+episodes:
+- task_id: verify_task_16
+  episode_idx: 14
+  original_idx: 16
+  benchmark_instruction: Navigate to the table much larger than another one, grasp a food serving container,
+    and carry it to the table to place my snack for watching TV.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the rectangular tray with multiple compartments, smooth surface, clean lines,
+    minimalistic style, light color from the table much larger than another one and put it on the table
+    to place my snack for watching TV.
+  fuzzy_task_description: Navigate to the table much larger than another one, grasp a food serving container,
+    and carry it to the table to place my snack for watching TV.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _3142a95d8eb044d9906ffe040acddbce
+      - _521f3e4a156145899537cc2e84a2d89b
+      - a025ab8cf8494b7d83b5360bfbd62d46
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _521f3e4a156145899537cc2e84a2d89b
+      - a025ab8cf8494b7d83b5360bfbd62d46
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _3142a95d8eb044d9906ffe040acddbce
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _3142a95d8eb044d9906ffe040acddbce:
+      category: tray
+      detailed_caption: Rectangular tray with multiple compartments, smooth surface, clean lines, minimalistic
+        style, light color.
+      usd_path: 3142a95d8eb044d9906ffe040acddbce.usd
+      size:
+      - 0.3257789611816406
+      - 0.03016984462738037
+      - 0.16273705661296844
+  obj_distractors:
+  - _521f3e4a156145899537cc2e84a2d89b
+  - a025ab8cf8494b7d83b5360bfbd62d46
+  obj_distractor_meta:
+    _521f3e4a156145899537cc2e84a2d89b:
+      category: bowl
+      detailed_caption: Oval bowl with a smooth, textured surface, light wood finish, and raised lip.
+      usd_path: 521f3e4a156145899537cc2e84a2d89b.usd
+      size:
+      - 0.2772979736328125
+      - 0.14518260955810547
+      - 0.08277901262044907
+    a025ab8cf8494b7d83b5360bfbd62d46:
+      category: bowl
+      detailed_caption: Shallow, round bowl with a smooth, glossy lip, textured base, and earthy color
+        gradient.
+      usd_path: a025ab8cf8494b7d83b5360bfbd62d46.usd
+      size:
+      - 0.20293807983398438
+      - 0.21263408660888672
+      - 0.09438230574141926
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular tray with multiple compartments, smooth surface, clean lines, minimalistic
+        style, light color.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular tray with multiple compartments, smooth surface, clean lines, minimalistic
+        style, light color.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular tray with multiple compartments, smooth surface, clean lines, minimalistic
+        style, light color.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  physics_task_description: Take the rectangular tray with multiple compartments, smooth surface, clean
+    lines, minimalistic style, light color from the table much larger than another one and put it on the
+    table to place my snack for watching TV.
+  placements:
+    _3142a95d8eb044d9906ffe040acddbce_on_table_1_at_verify_task_16:
+      position:
+      - -2.7685750200908688
+      - -1.1415848295986861
+      - 0.8453684267401695
+      furniture: table_1
+      original_id: _3142a95d8eb044d9906ffe040acddbce
+    _521f3e4a156145899537cc2e84a2d89b_on_table_1_at_verify_task_16:
+      position:
+      - -2.381373939150901
+      - -1.0936305839409517
+      - 0.8053894047439099
+      furniture: table_1
+      original_id: _521f3e4a156145899537cc2e84a2d89b
+    a025ab8cf8494b7d83b5360bfbd62d46_on_table_1_at_verify_task_16:
+      position:
+      - -2.8767123545186655
+      - -1.325858755956605
+      - 0.811191051304395
+      furniture: table_1
+      original_id: a025ab8cf8494b7d83b5360bfbd62d46
+  final_positions:
+    _3142a95d8eb044d9906ffe040acddbce_on_table_1_at_verify_task_16:
+      initial_pos:
+      - -2.7685750200908688
+      - -1.1415848295986861
+      - 0.9453684267401695
+      final_pos:
+      - -2.7685749530792236
+      - -1.1415852308273315
+      - 0.8253684639930725
+      category: tray
+      original_id: _3142a95d8eb044d9906ffe040acddbce
+    _521f3e4a156145899537cc2e84a2d89b_on_table_1_at_verify_task_16:
+      initial_pos:
+      - -2.381373939150901
+      - -1.0936305839409517
+      - 0.9053894047439098
+      final_pos:
+      - -2.387220621109009
+      - -1.1983275413513184
+      - 0.774662971496582
+      category: bowl
+      original_id: _521f3e4a156145899537cc2e84a2d89b
+    a025ab8cf8494b7d83b5360bfbd62d46_on_table_1_at_verify_task_16:
+      initial_pos:
+      - -2.8767123545186655
+      - -1.325858755956605
+      - 0.9111910513043949
+      final_pos:
+      - -2.874865770339966
+      - -1.4437720775604248
+      - 0.7894697785377502
+      category: sauce
+      original_id: a025ab8cf8494b7d83b5360bfbd62d46
+  family: SUL
+  benchmark_task_id: SUL/verify_task_16
+  global_index: 190
+  target_object_id: _3142a95d8eb044d9906ffe040acddbce

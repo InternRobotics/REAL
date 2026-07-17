@@ -1,0 +1,336 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_1_at_verify_task_4:
+    original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/7c1b2c8a2c7b40f5bcd213bcdb55aca7.usd
+    usd_scale:
+    - 30.031864948933023
+    - 30.027619161457
+    - 30.016986648919207
+    position:
+    - -1.5308387176430969
+    - -1.2396097172180625
+    - 0.7791034845681861
+    size:
+    - 0.09523391723632812
+    - 0.0938425064086914
+    - 0.030207172269001603
+    detailed_caption: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+      plate.
+  _0c961bcd4cd64c568ec524b5f0030af7_on_table_1_at_verify_task_4:
+    original_id: _0c961bcd4cd64c568ec524b5f0030af7
+    category: dessert
+    usd_path: ${MESATASK_USD_ROOT}/0c961bcd4cd64c568ec524b5f0030af7.usd
+    usd_scale:
+    - 40.47579966969671
+    - 40.5354603359803
+    - 40.828066635799026
+    position:
+    - -2.4880182952478602
+    - -1.3802236597643032
+    - 0.8314093750482425
+    size:
+    - 0.09669876098632812
+    - 0.0727386474609375
+    - 0.1348189532291144
+    detailed_caption: A rectangular slice of cake with a smooth golden exterior, layered fruit topping,
+      and powdered sugar.
+  bd2b824c98b34bd2a09462524452492c_on_table_1_at_verify_task_4:
+    original_id: bd2b824c98b34bd2a09462524452492c
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/bd2b824c98b34bd2a09462524452492c.usd
+    usd_scale:
+    - 6.454032200555278
+    - 6.456387175056996
+    - 6.458389943542643
+    position:
+    - -2.216997224016248
+    - -1.3227373924204542
+    - 0.8359943532664329
+    size:
+    - 0.14382553100585938
+    - 0.080596923828125
+    - 0.14398890966549516
+    detailed_caption: Round layered cake with smooth cream frosting, light-colored sponge, white filling,
+      and pink decorations.
+  _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_2_at_verify_task_4:
+    original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    category: cake
+    usd_path: ${MESATASK_USD_ROOT}/7c1b2c8a2c7b40f5bcd213bcdb55aca7.usd
+    usd_scale:
+    - 30.031864948933023
+    - 30.027619161457
+    - 30.016986648919207
+    position:
+    - -2.5613276790124613
+    - 2.8896659095129804
+    - 0.30509158652741464
+    size:
+    - 0.09523391723632812
+    - 0.0938425064086914
+    - 0.030207172269001603
+    detailed_caption: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+      plate.
+episodes:
+- benchmark_task_id: FODP/verify_task_4
+  family: FODP
+  task_id: verify_task_4
+  episode_idx: 2
+  original_idx: 4
+  benchmark_instruction: Transport the round chocolate cake with smooth frosting and colorful sprinkles,
+    on a metallic plate at the rectangular table to the rounded rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the round chocolate cake with smooth frosting and colorful sprinkles, on
+    a metallic plate at the rectangular table to the rounded rectangular table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+      - _0c961bcd4cd64c568ec524b5f0030af7
+      - bd2b824c98b34bd2a09462524452492c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0c961bcd4cd64c568ec524b5f0030af7
+      - bd2b824c98b34bd2a09462524452492c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7:
+      category: cake
+      detailed_caption: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+        plate.
+      usd_path: 7c1b2c8a2c7b40f5bcd213bcdb55aca7.usd
+      size:
+      - 0.09523391723632812
+      - 0.0938425064086914
+      - 0.030207172269001603
+  obj_distractors:
+  - _0c961bcd4cd64c568ec524b5f0030af7
+  - bd2b824c98b34bd2a09462524452492c
+  obj_distractor_meta:
+    _0c961bcd4cd64c568ec524b5f0030af7:
+      category: dessert
+      detailed_caption: A rectangular slice of cake with a smooth golden exterior, layered fruit topping,
+        and powdered sugar.
+      usd_path: 0c961bcd4cd64c568ec524b5f0030af7.usd
+      size:
+      - 0.09669876098632812
+      - 0.0727386474609375
+      - 0.1348189532291144
+    bd2b824c98b34bd2a09462524452492c:
+      category: cake
+      detailed_caption: Round layered cake with smooth cream frosting, light-colored sponge, white filling,
+        and pink decorations.
+      usd_path: bd2b824c98b34bd2a09462524452492c.usd
+      size:
+      - 0.14382553100585938
+      - 0.080596923828125
+      - 0.14398890966549516
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: cake
+      target_description: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+        plate.
+  - action: gaze_at
+    args:
+      target_category: cake
+      target_description: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+        plate.
+  - action: pick
+    args:
+      target_category: cake
+      target_description: Round chocolate cake with smooth frosting and colorful sprinkles, on a metallic
+        plate.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_1_at_verify_task_4:
+      position:
+      - -1.5308387176430969
+      - -1.2396097172180625
+      - 0.7791034845681861
+      furniture: table_1
+      original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    _0c961bcd4cd64c568ec524b5f0030af7_on_table_1_at_verify_task_4:
+      position:
+      - -2.4880182952478602
+      - -1.3802236597643032
+      - 0.8314093750482425
+      furniture: table_1
+      original_id: _0c961bcd4cd64c568ec524b5f0030af7
+    bd2b824c98b34bd2a09462524452492c_on_table_1_at_verify_task_4:
+      position:
+      - -2.216997224016248
+      - -1.3227373924204542
+      - 0.8359943532664329
+      furniture: table_1
+      original_id: bd2b824c98b34bd2a09462524452492c
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_2_at_verify_task_4:
+      position:
+      - -2.5613276790124613
+      - 2.8896659095129804
+      - 0.30509158652741464
+      furniture: table_2
+      original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+  final_positions:
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_1_at_verify_task_4:
+      initial_pos:
+      - -1.5308387176430969
+      - -1.2396097172180625
+      - 0.8791034845681861
+      final_pos:
+      - -1.5211199522018433
+      - -1.1881084442138672
+      - 0.7559640407562256
+      category: dessert
+      original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+    _0c961bcd4cd64c568ec524b5f0030af7_on_table_1_at_verify_task_4:
+      initial_pos:
+      - -2.4880182952478602
+      - -1.3802236597643032
+      - 0.9314093750482425
+      final_pos:
+      - -2.478424310684204
+      - -1.3745427131652832
+      - 0.8095110058784485
+      category: dessert
+      original_id: _0c961bcd4cd64c568ec524b5f0030af7
+    bd2b824c98b34bd2a09462524452492c_on_table_1_at_verify_task_4:
+      initial_pos:
+      - -2.216997224016248
+      - -1.3227373924204542
+      - 0.9359943532664329
+      final_pos:
+      - -2.1964633464813232
+      - -1.3175938129425049
+      - 0.8125299215316772
+      category: cake
+      original_id: bd2b824c98b34bd2a09462524452492c
+    _7c1b2c8a2c7b40f5bcd213bcdb55aca7_on_table_2_at_verify_task_4:
+      initial_pos:
+      - -2.5613276790124613
+      - 2.8896659095129804
+      - 0.4050915865274146
+      final_pos:
+      - -2.550853729248047
+      - 2.9437501430511475
+      - 0.28195205330848694
+      category: dessert
+      original_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7
+  global_index: 74
+  target_object_id: _7c1b2c8a2c7b40f5bcd213bcdb55aca7

@@ -1,0 +1,306 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_6_at_verify_task_63:
+    original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/51055f66-fd44-4966-85bc-d55cbd06276c.usd
+    usd_scale:
+    - 7.483435468307241
+    - 7.3609456969620295
+    - 8.504848010179122
+    position:
+    - 2.500251701938706
+    - -1.2168223612303173
+    - 0.7396133582910989
+    size:
+    - 0.032745361328125
+    - 0.14551424980163574
+    - 0.0032267270726151764
+    detailed_caption: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+      grip.
+  c2d225488fe84a0ab451717100132495_on_cabinet_6_at_verify_task_63:
+    original_id: c2d225488fe84a0ab451717100132495
+    category: marker
+    usd_path: ${MESATASK_USD_ROOT}/c2d225488fe84a0ab451717100132495.usd
+    usd_scale:
+    - 3.543353513625197
+    - 3.5433554379739
+    - 3.568540801108354
+    position:
+    - 2.5598671198527634
+    - -1.0081046092524468
+    - 0.7749551469273865
+    size:
+    - 0.07042312622070312
+    - 0.15536999702453613
+    - 0.07391030434519053
+    detailed_caption: Cylindrical can with a vibrant green exterior, printed label, and graphic of a cat.
+  _2d1f086ba9064fc59c6c2ea757f4f576_on_cabinet_6_at_verify_task_63:
+    original_id: _2d1f086ba9064fc59c6c2ea757f4f576
+    category: stylus
+    usd_path: ${MESATASK_USD_ROOT}/2d1f086ba9064fc59c6c2ea757f4f576.usd
+    usd_scale:
+    - 3.524507489059508
+    - 3.5091458113054723
+    - 3.53251438805949
+    position:
+    - 2.4537249646538544
+    - -0.9438372424161928
+    - 0.8671042788737577
+    size:
+    - 0.039501190185546875
+    - 0.037746429443359375
+    - 0.2582085682379329
+    detailed_caption: Sleek, futuristic pen or stylus, silver and black finish, rounded tip, ergonomic
+      design.
+episodes:
+- task_id: verify_task_63
+  episode_idx: 44
+  original_idx: 63
+  benchmark_instruction: Navigate to cabinet with vertical slatted wall unit, grasp a writing instrument,
+    and carry it to the table where we have dinner.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to cabinet with vertical slatted wall unit, pick up the sleek metallic pen with
+    a streamlined shape, pointed tip, and elegant, comfortable grip, then travel to the table where we
+    have dinner to place it.
+  fuzzy_task_description: Navigate to cabinet with vertical slatted wall unit, grasp a writing instrument,
+    and carry it to the table where we have dinner.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _51055f66_fd44_4966_85bc_d55cbd06276c
+      - c2d225488fe84a0ab451717100132495
+      - _2d1f086ba9064fc59c6c2ea757f4f576
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _51055f66_fd44_4966_85bc_d55cbd06276c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - c2d225488fe84a0ab451717100132495
+      - _2d1f086ba9064fc59c6c2ea757f4f576
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_6
+  src_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _51055f66_fd44_4966_85bc_d55cbd06276c:
+      category: pen
+      detailed_caption: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+        grip.
+      usd_path: 51055f66-fd44-4966-85bc-d55cbd06276c.usd
+      size:
+      - 0.032745361328125
+      - 0.14551424980163574
+      - 0.0032267270726151764
+  obj_distractors:
+  - c2d225488fe84a0ab451717100132495
+  - _2d1f086ba9064fc59c6c2ea757f4f576
+  obj_distractor_meta:
+    c2d225488fe84a0ab451717100132495:
+      category: marker
+      detailed_caption: Cylindrical can with a vibrant green exterior, printed label, and graphic of a
+        cat.
+      usd_path: c2d225488fe84a0ab451717100132495.usd
+      size:
+      - 0.07042312622070312
+      - 0.15536999702453613
+      - 0.07391030434519053
+    _2d1f086ba9064fc59c6c2ea757f4f576:
+      category: stylus
+      detailed_caption: Sleek, futuristic pen or stylus, silver and black finish, rounded tip, ergonomic
+        design.
+      usd_path: 2d1f086ba9064fc59c6c2ea757f4f576.usd
+      size:
+      - 0.039501190185546875
+      - 0.037746429443359375
+      - 0.2582085682379329
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: find
+    args:
+      target_category: pen
+      target_description: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+        grip.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+        grip.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+        grip.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Go to cabinet with vertical slatted wall unit, pick up the sleek metallic
+    pen with a streamlined shape, pointed tip, and elegant, comfortable grip, then travel to the table
+    where we have dinner to place it.
+  placements:
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_6_at_verify_task_63:
+      position:
+      - 2.500251701938706
+      - -1.2168223612303173
+      - 0.7396133582910989
+      furniture: cabinet_6
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    c2d225488fe84a0ab451717100132495_on_cabinet_6_at_verify_task_63:
+      position:
+      - 2.5598671198527634
+      - -1.0081046092524468
+      - 0.7749551469273865
+      furniture: cabinet_6
+      original_id: c2d225488fe84a0ab451717100132495
+    _2d1f086ba9064fc59c6c2ea757f4f576_on_cabinet_6_at_verify_task_63:
+      position:
+      - 2.4537249646538544
+      - -0.9438372424161928
+      - 0.8671042788737577
+      furniture: cabinet_6
+      original_id: _2d1f086ba9064fc59c6c2ea757f4f576
+  final_positions:
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_6_at_verify_task_63:
+      initial_pos:
+      - 2.500251701938706
+      - -1.2168223612303173
+      - 0.8396133582910988
+      final_pos:
+      - 2.500222682952881
+      - -1.216752052307129
+      - 0.7184613347053528
+      category: pen
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    c2d225488fe84a0ab451717100132495_on_cabinet_6_at_verify_task_63:
+      initial_pos:
+      - 2.5598671198527634
+      - -1.0081046092524468
+      - 0.8749551469273865
+      final_pos:
+      - 2.553631067276001
+      - -1.0091155767440796
+      - 0.7515398263931274
+      category: marker
+      original_id: c2d225488fe84a0ab451717100132495
+    _2d1f086ba9064fc59c6c2ea757f4f576_on_cabinet_6_at_verify_task_63:
+      initial_pos:
+      - 2.4537249646538544
+      - -0.9438372424161928
+      - 0.9671042788737577
+      final_pos:
+      - 2.5653774738311768
+      - -0.87857586145401
+      - 0.7315481305122375
+      category: stylus
+      original_id: _2d1f086ba9064fc59c6c2ea757f4f576
+  family: SUL
+  benchmark_task_id: SUL/verify_task_63
+  global_index: 220
+  target_object_id: _51055f66_fd44_4966_85bc_d55cbd06276c

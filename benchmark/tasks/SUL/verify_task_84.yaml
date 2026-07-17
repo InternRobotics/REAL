@@ -1,0 +1,308 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _158566fdd0e643ddb22eaf920c1a82ac_on_table_1_at_verify_task_84:
+    original_id: _158566fdd0e643ddb22eaf920c1a82ac
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/158566fdd0e643ddb22eaf920c1a82ac.usd
+    usd_scale:
+    - 1.1402775227318247
+    - 1.1402779624478292
+    - 1.1238268656330295
+    position:
+    - -1.6580384908357422
+    - -1.4419147418548612
+    - 0.7786395004327642
+    size:
+    - 0.2814929485321045
+    - 0.281494140625
+    - 0.029279203998157755
+    detailed_caption: Round pocket clock with an antique design and textured golden rim, featuring two
+      face styles.
+  b5f015819fa4449587c2eae78a785c94_on_table_1_at_verify_task_84:
+    original_id: b5f015819fa4449587c2eae78a785c94
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/b5f015819fa4449587c2eae78a785c94.usd
+    usd_scale:
+    - 0.07323800406765202
+    - 0.07336299721456936
+    - 0.0589219873515957
+    position:
+    - -2.800287005199392
+    - -1.380794354117635
+    - 0.8295271891797893
+    size:
+    - 0.16817808151245117
+    - 0.5061359405517578
+    - 0.13105458149220794
+    detailed_caption: Hourglass with a wooden frame, symmetrical shape, glass bulbs, and gold accents.
+  _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_84:
+    original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    category: watch
+    usd_path: ${MESATASK_USD_ROOT}/6eefeb5c1bee4d4d9134b62cd9fc99d8.usd
+    usd_scale:
+    - 12.027450463412933
+    - 12.088888888888889
+    - 11.949723925295546
+    position:
+    - -2.486142809601177
+    - -1.47645234052018
+    - 0.7703888950486726
+    size:
+    - 0.035556793212890625
+    - 0.2417774200439453
+    - 0.012777993229974527
+    detailed_caption: Sleek wristwatch with a round silver case, slim black leather strap, and clear glass
+      face.
+episodes:
+- task_id: verify_task_84
+  episode_idx: 56
+  original_idx: 84
+  benchmark_instruction: Take a timekeeping device from the table much larger than another one and put
+    it on bed with plain white bedding.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to the table much larger than another one, fetch the round pocket clock
+    with an antique design and textured golden rim, featuring two face styles, and bring it back to bed
+    with plain white bedding.
+  fuzzy_task_description: Take a timekeeping device from the table much larger than another one and put
+    it on bed with plain white bedding.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _158566fdd0e643ddb22eaf920c1a82ac
+      - b5f015819fa4449587c2eae78a785c94
+      - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - b5f015819fa4449587c2eae78a785c94
+      - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _158566fdd0e643ddb22eaf920c1a82ac
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    _158566fdd0e643ddb22eaf920c1a82ac:
+      category: clock
+      detailed_caption: Round pocket clock with an antique design and textured golden rim, featuring two
+        face styles.
+      usd_path: 158566fdd0e643ddb22eaf920c1a82ac.usd
+      size:
+      - 0.2814929485321045
+      - 0.281494140625
+      - 0.029279203998157755
+  obj_distractors:
+  - b5f015819fa4449587c2eae78a785c94
+  - _6eefeb5c1bee4d4d9134b62cd9fc99d8
+  obj_distractor_meta:
+    b5f015819fa4449587c2eae78a785c94:
+      category: hourglass
+      detailed_caption: Hourglass with a wooden frame, symmetrical shape, glass bulbs, and gold accents.
+      usd_path: b5f015819fa4449587c2eae78a785c94.usd
+      size:
+      - 0.16817808151245117
+      - 0.5061359405517578
+      - 0.13105458149220794
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8:
+      category: watch
+      detailed_caption: Sleek wristwatch with a round silver case, slim black leather strap, and clear
+        glass face.
+      usd_path: 6eefeb5c1bee4d4d9134b62cd9fc99d8.usd
+      size:
+      - 0.035556793212890625
+      - 0.2417774200439453
+      - 0.012777993229974527
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Round pocket clock with an antique design and textured golden rim, featuring
+        two face styles.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Round pocket clock with an antique design and textured golden rim, featuring
+        two face styles.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Round pocket clock with an antique design and textured golden rim, featuring
+        two face styles.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  physics_task_description: Head over to the table much larger than another one, fetch the round pocket
+    clock with an antique design and textured golden rim, featuring two face styles, and bring it back
+    to bed with plain white bedding.
+  placements:
+    _158566fdd0e643ddb22eaf920c1a82ac_on_table_1_at_verify_task_84:
+      position:
+      - -1.6580384908357422
+      - -1.4419147418548612
+      - 0.7786395004327642
+      furniture: table_1
+      original_id: _158566fdd0e643ddb22eaf920c1a82ac
+    b5f015819fa4449587c2eae78a785c94_on_table_1_at_verify_task_84:
+      position:
+      - -2.800287005199392
+      - -1.380794354117635
+      - 0.8295271891797893
+      furniture: table_1
+      original_id: b5f015819fa4449587c2eae78a785c94
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_84:
+      position:
+      - -2.486142809601177
+      - -1.47645234052018
+      - 0.7703888950486726
+      furniture: table_1
+      original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+  final_positions:
+    _158566fdd0e643ddb22eaf920c1a82ac_on_table_1_at_verify_task_84:
+      initial_pos:
+      - -1.6580384908357422
+      - -1.4419147418548612
+      - 0.8786395004327642
+      final_pos:
+      - -1.6630480289459229
+      - -1.2880911827087402
+      - 0.7585618495941162
+      category: clock
+      original_id: _158566fdd0e643ddb22eaf920c1a82ac
+    b5f015819fa4449587c2eae78a785c94_on_table_1_at_verify_task_84:
+      initial_pos:
+      - -2.800287005199392
+      - -1.380794354117635
+      - 0.9295271891797893
+      final_pos:
+      - -2.790173053741455
+      - -1.3803284168243408
+      - 0.8074496984481812
+      category: hourglass
+      original_id: b5f015819fa4449587c2eae78a785c94
+    _6eefeb5c1bee4d4d9134b62cd9fc99d8_on_table_1_at_verify_task_84:
+      initial_pos:
+      - -2.486142809601177
+      - -1.47645234052018
+      - 0.8703888950486726
+      final_pos:
+      - -2.487009286880493
+      - -1.3509377241134644
+      - 0.750464677810669
+      category: watch
+      original_id: _6eefeb5c1bee4d4d9134b62cd9fc99d8
+  family: SUL
+  benchmark_task_id: SUL/verify_task_84
+  global_index: 232
+  target_object_id: _158566fdd0e643ddb22eaf920c1a82ac

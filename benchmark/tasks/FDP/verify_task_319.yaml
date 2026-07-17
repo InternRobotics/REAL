@@ -1,0 +1,257 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_desk_1_at_verify_task_319:
+    original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/54e9f74c-7eb5-450b-9ad5-da7112b27bf7.usd
+    usd_scale:
+    - 8.344767609174683
+    - 9.812347474679028
+    - 7.766891330907154
+    position:
+    - 0.011322984620268761
+    - -2.9246315263953084
+    - 0.7816039933636785
+    size:
+    - 0.12025070190429688
+    - 0.2004833221435547
+    - 0.0472079161554575
+    detailed_caption: Round, white alarm clock with a classic design, two bells on top, and smooth surface.
+  _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_desk_2_at_verify_task_319:
+    original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/54e9f74c-7eb5-450b-9ad5-da7112b27bf7.usd
+    usd_scale:
+    - 8.344767609174683
+    - 9.812347474679028
+    - 7.766891330907154
+    position:
+    - 4.406668158399898
+    - 1.4630959145756426
+    - 0.7890465273335576
+    size:
+    - 0.12025070190429688
+    - 0.2004833221435547
+    - 0.0472079161554575
+    detailed_caption: Round, white alarm clock with a classic design, two bells on top, and smooth surface.
+episodes:
+- task_id: verify_task_319
+  episode_idx: 64
+  original_idx: 319
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the round, white alarm clock with a classic design, two bells on top, and
+    smooth surface from white unit with flat wood handles and place it on bed with silky black bed runner.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: bed_2
+  dest_distractors:
+  - bed_1
+  obj_meta:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7:
+      category: alarm clock
+      detailed_caption: Round, white alarm clock with a classic design, two bells on top, and smooth surface.
+      usd_path: 54e9f74c-7eb5-450b-9ad5-da7112b27bf7.usd
+      size:
+      - 0.12025070190429688
+      - 0.2004833221435547
+      - 0.0472079161554575
+  obj_distractors:
+  - _215a41d8b6d44ecdbd70cc9680c0f585
+  - _401805e6a2ee4d74902b4343a38ca5d7
+  obj_distractor_meta:
+    _215a41d8b6d44ecdbd70cc9680c0f585:
+      category: clock
+      detailed_caption: Round blue alarm clock with classic design, sad face, dial, rim, and hanging loop.
+      usd_path: 215a41d8b6d44ecdbd70cc9680c0f585.usd
+      size:
+      - 0.10674238204956055
+      - 0.13869476318359375
+      - 0.06714927777647972
+    _401805e6a2ee4d74902b4343a38ca5d7:
+      category: alarm clock
+      detailed_caption: Round face, black body, white clock face, bell-shaped alarms, minimalistic hands,
+        short legs.
+      usd_path: 401805e6a2ee4d74902b4343a38ca5d7.usd
+      size:
+      - 0.10478782653808594
+      - 0.12144088745117188
+      - 0.05224818002898246
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: alarm clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: gaze_at
+    args:
+      target_category: alarm clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: pick
+    args:
+      target_category: alarm clock
+      target_description: Round, white alarm clock with a classic design, two bells on top, and smooth
+        surface.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: place
+    args:
+      receptacle_name: bed_2
+  placements:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_desk_1_at_verify_task_319:
+      position:
+      - 0.011322984620268761
+      - -2.9246315263953084
+      - 0.7816039933636785
+      furniture: desk_1
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_desk_2_at_verify_task_319:
+      position:
+      - 4.406668158399898
+      - 1.4630959145756426
+      - 0.7890465273335576
+      furniture: desk_2
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+  final_positions:
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_desk_1_at_verify_task_319:
+      initial_pos:
+      - 0.011322984620268761
+      - -2.9246315263953084
+      - 0.8816039933636785
+      final_pos:
+      - -0.010550175793468952
+      - -3.019688129425049
+      - 0.7651216983795166
+      category: alarm clock
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+    _54e9f74c_7eb5_450b_9ad5_da7112b27bf7_on_desk_2_at_verify_task_319:
+      initial_pos:
+      - 4.406668158399898
+      - 1.4630959145756426
+      - 0.8890465273335576
+      final_pos:
+      - 4.483343601226807
+      - 2.015047073364258
+      - 0.8166459798812866
+      category: alarm clock
+      original_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7
+  family: FDP
+  benchmark_task_id: FDP/verify_task_319
+  benchmark_instruction: Pick up the round, white alarm clock with a classic design, two bells on top,
+    and smooth surface from white unit with flat wood handles and place it on bed with silky black bed
+    runner.
+  global_index: 64
+  target_object_id: _54e9f74c_7eb5_450b_9ad5_da7112b27bf7

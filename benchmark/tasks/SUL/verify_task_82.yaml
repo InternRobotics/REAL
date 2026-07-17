@@ -1,0 +1,300 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  ba130486_7327_407e_ae42_167064d632e5_on_table_1_at_verify_task_82:
+    original_id: ba130486_7327_407e_ae42_167064d632e5
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/ba130486-7327-407e-ae42-167064d632e5.usd
+    usd_scale:
+    - 12.818037145880737
+    - 12.841274616522696
+    - 13.931515175217829
+    position:
+    - -2.7538797910608515
+    - -1.2611943874740068
+    - 0.772314053621376
+    size:
+    - 0.20691680908203125
+    - 0.26374053955078125
+    - 0.01662831037538126
+    detailed_caption: Rectangular notebook with a textured brown cover, subtle patterns, and side binding.
+  gen_a3fd1be6_3ece_4350_829c_e466b0750646_on_table_1_at_verify_task_82:
+    original_id: gen_a3fd1be6_3ece_4350_829c_e466b0750646
+    category: binder
+    usd_path: ${MESATASK_USD_ROOT}/gen_a3fd1be6-3ece-4350-829c-e466b0750646.usd
+    usd_scale:
+    - 12.718397200215092
+    - 17.688387051476912
+    - 11.691209571415595
+    position:
+    - -2.0907220006841563
+    - -1.3258045100931557
+    - 0.7907124525913969
+    size:
+    - 0.23638153076171875
+    - 0.3521995544433594
+    - 0.05342510831542313
+    detailed_caption: A blue binder with a curved spine, clasp closure, durable finish, and visible wear
+      marks.
+  c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_table_1_at_verify_task_82:
+    original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/c2f58583-d0fd-4a60-b45e-5bfc4321ea1c.usd
+    usd_scale:
+    - 9.96080179331549
+    - 9.934250012546055
+    - 10.610273543496273
+    position:
+    - -2.978868703264937
+    - -1.3303906493625082
+    - 0.768722351174365
+    size:
+    - 0.14281845092773438
+    - 0.19748306274414062
+    - 0.009444905481359456
+    detailed_caption: White ruled notepad, leather-bound top, perforated edges, rectangular shape, clean
+      lined pages.
+episodes:
+- task_id: verify_task_82
+  episode_idx: 54
+  original_idx: 82
+  benchmark_instruction: Take a notebook from the rectangular table and put it on bed with matte white
+    mattress cover.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Get the rectangular notebook with a textured brown cover, subtle patterns, and side
+    binding from the rectangular table and move it to bed with matte white mattress cover.
+  fuzzy_task_description: Take a notebook from the rectangular table and put it on bed with matte white
+    mattress cover.
+  purpose: notebook
+  purpose_group: notebooks
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - ba130486_7327_407e_ae42_167064d632e5
+      - gen_a3fd1be6_3ece_4350_829c_e466b0750646
+      - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_a3fd1be6_3ece_4350_829c_e466b0750646
+      - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - ba130486_7327_407e_ae42_167064d632e5
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: bed_1
+  dest_distractors:
+  - bed_2
+  obj_meta:
+    ba130486_7327_407e_ae42_167064d632e5:
+      category: notebook
+      detailed_caption: Rectangular notebook with a textured brown cover, subtle patterns, and side binding.
+      usd_path: ba130486-7327-407e-ae42-167064d632e5.usd
+      size:
+      - 0.20691680908203125
+      - 0.26374053955078125
+      - 0.01662831037538126
+  obj_distractors:
+  - gen_a3fd1be6_3ece_4350_829c_e466b0750646
+  - c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+  obj_distractor_meta:
+    gen_a3fd1be6_3ece_4350_829c_e466b0750646:
+      category: binder
+      detailed_caption: A blue binder with a curved spine, clasp closure, durable finish, and visible
+        wear marks.
+      usd_path: gen_a3fd1be6-3ece-4350-829c-e466b0750646.usd
+      size:
+      - 0.23638153076171875
+      - 0.3521995544433594
+      - 0.05342510831542313
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c:
+      category: notepad
+      detailed_caption: White ruled notepad, leather-bound top, perforated edges, rectangular shape, clean
+        lined pages.
+      usd_path: c2f58583-d0fd-4a60-b45e-5bfc4321ea1c.usd
+      size:
+      - 0.14281845092773438
+      - 0.19748306274414062
+      - 0.009444905481359456
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Rectangular notebook with a textured brown cover, subtle patterns, and side
+        binding.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Rectangular notebook with a textured brown cover, subtle patterns, and side
+        binding.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Rectangular notebook with a textured brown cover, subtle patterns, and side
+        binding.
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: place
+    args:
+      receptacle_name: bed_1
+  physics_task_description: Get the rectangular notebook with a textured brown cover, subtle patterns,
+    and side binding from the rectangular table and move it to bed with matte white mattress cover.
+  placements:
+    ba130486_7327_407e_ae42_167064d632e5_on_table_1_at_verify_task_82:
+      position:
+      - -2.7538797910608515
+      - -1.2611943874740068
+      - 0.772314053621376
+      furniture: table_1
+      original_id: ba130486_7327_407e_ae42_167064d632e5
+    gen_a3fd1be6_3ece_4350_829c_e466b0750646_on_table_1_at_verify_task_82:
+      position:
+      - -2.0907220006841563
+      - -1.3258045100931557
+      - 0.7907124525913969
+      furniture: table_1
+      original_id: gen_a3fd1be6_3ece_4350_829c_e466b0750646
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_table_1_at_verify_task_82:
+      position:
+      - -2.978868703264937
+      - -1.3303906493625082
+      - 0.768722351174365
+      furniture: table_1
+      original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+  final_positions:
+    ba130486_7327_407e_ae42_167064d632e5_on_table_1_at_verify_task_82:
+      initial_pos:
+      - -2.7538797910608515
+      - -1.2611943874740068
+      - 0.8723140536213759
+      final_pos:
+      - -2.754244804382324
+      - -1.2611596584320068
+      - 0.7485488653182983
+      category: notebook
+      original_id: ba130486_7327_407e_ae42_167064d632e5
+    gen_a3fd1be6_3ece_4350_829c_e466b0750646_on_table_1_at_verify_task_82:
+      initial_pos:
+      - -2.0907220006841563
+      - -1.3258045100931557
+      - 0.8907124525913969
+      final_pos:
+      - -2.087773084640503
+      - -1.3278063535690308
+      - 0.7504691481590271
+      category: binder
+      original_id: gen_a3fd1be6_3ece_4350_829c_e466b0750646
+    c2f58583_d0fd_4a60_b45e_5bfc4321ea1c_on_table_1_at_verify_task_82:
+      initial_pos:
+      - -2.978868703264937
+      - -1.3303906493625082
+      - 0.868722351174365
+      final_pos:
+      - -2.97888445854187
+      - -1.330236792564392
+      - 0.7473405003547668
+      category: notepad
+      original_id: c2f58583_d0fd_4a60_b45e_5bfc4321ea1c
+  family: SUL
+  benchmark_task_id: SUL/verify_task_82
+  global_index: 230
+  target_object_id: ba130486_7327_407e_ae42_167064d632e5

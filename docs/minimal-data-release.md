@@ -103,20 +103,20 @@ Publish the exact 241 REAL-Bench task definitions used by the paper, with:
 
 ```text
 benchmark/
-  tasks/{family}/*.yaml
-  splits.json
-  counts.json
+  README.md
+  tasks/
+    FDP/<task_id>.yaml
+    FODP/<task_id>.yaml
+    FDO/<task_id>.yaml
+    SUL/<task_id>.yaml
   mesa_required.txt
-  manifest.json
-  DATASET_CARD.md
+  manifest.yaml
 ```
 
-Do not label an unfiltered development directory as REAL-Bench. The current
-development benchmark folder contains 413 episodes (31 articulation, 64
-visual-PnP, 230 visual-PnP-distractor, and 88 commutative), whereas the README
-claims 241 paper tasks. It also references 438 unique MesaTask objects. The
-release gate must reproduce the exact paper selection, emit a basename-only
-object lock, and assert both the total and per-family counts before upload.
+Each task file must be a complete eval-server configuration with `scene_id`,
+portable `paths`, the runtime `objects` registry, and exactly one episode. The
+release gate loads all 241 files through the eval-server config parser, emits a
+basename-only object lock, and asserts both total and per-family counts.
 
 The task artifact contains metadata and object basenames only. It must not
 contain MesaTask USDs, replay PKLs, model responses, or rendered trajectories.

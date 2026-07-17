@@ -1,0 +1,265 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  d055bb3497bd423ba1ff2dc0c4d5be18_on_bed_1_at_verify_task_41:
+    original_id: d055bb3497bd423ba1ff2dc0c4d5be18
+    category: fruit
+    usd_path: ${MESATASK_USD_ROOT}/d055bb3497bd423ba1ff2dc0c4d5be18.usd
+    usd_scale:
+    - 1.15765639834179
+    - 1.167484695876232
+    - 1.1245135248663598
+    position:
+    - 3.809122094926879
+    - 4.155573261711992
+    - 0.517154818760464
+    size:
+    - 0.12779521942138672
+    - 0.08453750610351562
+    - 0.0497393345576711
+    detailed_caption: Segmented orange fruit, bright orange color, smooth texture, glossy surface, curved
+      segments, visible internal lines.
+  d055bb3497bd423ba1ff2dc0c4d5be18_on_bed_2_at_verify_task_41:
+    original_id: d055bb3497bd423ba1ff2dc0c4d5be18
+    category: fruit
+    usd_path: ${MESATASK_USD_ROOT}/d055bb3497bd423ba1ff2dc0c4d5be18.usd
+    usd_scale:
+    - 1.15765639834179
+    - 1.167484695876232
+    - 1.1245135248663598
+    position:
+    - 4.844866491121785
+    - -2.3845146761104505
+    - 0.5470188915601466
+    size:
+    - 0.12779521942138672
+    - 0.08453750610351562
+    - 0.0497393345576711
+    detailed_caption: Segmented orange fruit, bright orange color, smooth texture, glossy surface, curved
+      segments, visible internal lines.
+episodes:
+- task_id: verify_task_41
+  episode_idx: 24
+  original_idx: 41
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Get the segmented orange fruit, bright orange color, smooth texture, glossy surface,
+    curved segments, visible internal lines from bed with all-white bed sheet and move it to the table
+    much larger than another one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - d055bb3497bd423ba1ff2dc0c4d5be18
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - d055bb3497bd423ba1ff2dc0c4d5be18
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - d055bb3497bd423ba1ff2dc0c4d5be18
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    d055bb3497bd423ba1ff2dc0c4d5be18:
+      category: fruit
+      detailed_caption: Segmented orange fruit, bright orange color, smooth texture, glossy surface, curved
+        segments, visible internal lines.
+      usd_path: d055bb3497bd423ba1ff2dc0c4d5be18.usd
+      size:
+      - 0.12779521942138672
+      - 0.08453750610351562
+      - 0.0497393345576711
+  obj_distractors:
+  - e3ef4566_5d74_4d65_8e7e_788dd02c2a00
+  - _06e0fd63f25d41c2967aba9a09cfe1fb
+  obj_distractor_meta:
+    e3ef4566_5d74_4d65_8e7e_788dd02c2a00:
+      category: fruit
+      detailed_caption: Spherical green melon, slightly rough texture, small stem, varied shading, natural
+        appearance.
+      usd_path: e3ef4566-5d74-4d65-8e7e-788dd02c2a00.usd
+      size:
+      - 0.07581710815429688
+      - 0.07184457778930664
+      - 0.07259498327039182
+    _06e0fd63f25d41c2967aba9a09cfe1fb:
+      category: bowl
+      detailed_caption: White ceramic cup with ribbed texture, handle, on octagonal saucer with a green
+        leaf.
+      usd_path: 06e0fd63f25d41c2967aba9a09cfe1fb.usd
+      size:
+      - 0.18564224243164062
+      - 0.17905426025390625
+      - 0.1306053197477013
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: fruit
+      target_description: Segmented orange fruit, bright orange color, smooth texture, glossy surface,
+        curved segments, visible internal lines.
+  - action: gaze_at
+    args:
+      target_category: fruit
+      target_description: Segmented orange fruit, bright orange color, smooth texture, glossy surface,
+        curved segments, visible internal lines.
+  - action: pick
+    args:
+      target_category: fruit
+      target_description: Segmented orange fruit, bright orange color, smooth texture, glossy surface,
+        curved segments, visible internal lines.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    d055bb3497bd423ba1ff2dc0c4d5be18_on_bed_1_at_verify_task_41:
+      position:
+      - 3.809122094926879
+      - 4.155573261711992
+      - 0.517154818760464
+      furniture: bed_1
+      original_id: d055bb3497bd423ba1ff2dc0c4d5be18
+    d055bb3497bd423ba1ff2dc0c4d5be18_on_bed_2_at_verify_task_41:
+      position:
+      - 4.844866491121785
+      - -2.3845146761104505
+      - 0.5470188915601466
+      furniture: bed_2
+      original_id: d055bb3497bd423ba1ff2dc0c4d5be18
+  final_positions:
+    d055bb3497bd423ba1ff2dc0c4d5be18_on_bed_1_at_verify_task_41:
+      initial_pos:
+      - 3.809122094926879
+      - 4.155573261711992
+      - 0.617154818760464
+      final_pos:
+      - 3.7819631099700928
+      - 4.072160720825195
+      - 0.47399067878723145
+      category: fruit bowl
+      original_id: d055bb3497bd423ba1ff2dc0c4d5be18
+    d055bb3497bd423ba1ff2dc0c4d5be18_on_bed_2_at_verify_task_41:
+      initial_pos:
+      - 4.844866491121785
+      - -2.3845146761104505
+      - 0.6470188915601466
+      final_pos:
+      - 4.895141124725342
+      - -2.466653347015381
+      - 0.539821982383728
+      category: fruit bowl
+      original_id: d055bb3497bd423ba1ff2dc0c4d5be18
+  family: FDP
+  benchmark_task_id: FDP/verify_task_41
+  benchmark_instruction: Get the segmented orange fruit, bright orange color, smooth texture, glossy surface,
+    curved segments, visible internal lines from bed with all-white bed sheet and move it to the table
+    much larger than another one.
+  global_index: 24
+  target_object_id: d055bb3497bd423ba1ff2dc0c4d5be18

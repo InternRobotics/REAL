@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _721bb93d169a4d5f9e8dd15ad45a367f_on_desk_1_at_verify_task_25:
+    original_id: _721bb93d169a4d5f9e8dd15ad45a367f
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/721bb93d169a4d5f9e8dd15ad45a367f.usd
+    usd_scale:
+    - 3.211064892109098
+    - 2.9567529857629693
+    - 3.086406668897275
+    position:
+    - -0.10172080780246723
+    - -3.1690271194931303
+    - 0.890840598940049
+    size:
+    - 0.17487525939941406
+    - 0.022779464721679688
+    - 0.2656811273081985
+    detailed_caption: Rectangular notebook with a blue cover, white label, smooth surface, and rounded
+      edges.
+  _3f31ff8f9f9742558339d2476e49db19_on_desk_1_at_verify_task_25:
+    original_id: _3f31ff8f9f9742558339d2476e49db19
+    category: binder
+    usd_path: ${MESATASK_USD_ROOT}/3f31ff8f9f9742558339d2476e49db19.usd
+    usd_scale:
+    - 0.011224520777843288
+    - 0.006973019027689595
+    - 0.038995447720104895
+    position:
+    - 0.016713352798540193
+    - -2.4234831274982556
+    - 0.8074708734452725
+    size:
+    - 0.14324188232421875
+    - 0.11981174349784851
+    - 0.09894167631864548
+    detailed_caption: Closed hardback book, decorative cover with golden patterns, sturdy spine, glossy
+      finish.
+  _5899d997_4d52_4918_97b5_32195cbe58fb_on_desk_1_at_verify_task_25:
+    original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/5899d997-4d52-4918-97b5-32195cbe58fb.usd
+    usd_scale:
+    - 12.161976199833912
+    - 12.044591764280078
+    - 13.308264737502707
+    position:
+    - 0.09817578954972768
+    - -2.792519455962423
+    - 0.7709875257674139
+    size:
+    - 0.190826416015625
+    - 0.23894691467285156
+    - 0.025974980962928385
+    detailed_caption: Multiple rectangular stacks of smooth, shiny white printing paper, varying in height.
+episodes:
+- task_id: verify_task_25
+  episode_idx: 21
+  original_idx: 25
+  benchmark_instruction: Head over to white desk in front of a picture, fetch a notebook, and bring it
+    back to the rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the rectangular notebook with a blue cover, white label, smooth surface, and
+    rounded edges from white desk in front of a picture and place it on the rectangular table.
+  fuzzy_task_description: Head over to white desk in front of a picture, fetch a notebook, and bring it
+    back to the rectangular table.
+  purpose: notebook
+  purpose_group: notebooks
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _721bb93d169a4d5f9e8dd15ad45a367f
+      - _3f31ff8f9f9742558339d2476e49db19
+      - _5899d997_4d52_4918_97b5_32195cbe58fb
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _721bb93d169a4d5f9e8dd15ad45a367f
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _3f31ff8f9f9742558339d2476e49db19
+      - _5899d997_4d52_4918_97b5_32195cbe58fb
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _721bb93d169a4d5f9e8dd15ad45a367f:
+      category: notebook
+      detailed_caption: Rectangular notebook with a blue cover, white label, smooth surface, and rounded
+        edges.
+      usd_path: 721bb93d169a4d5f9e8dd15ad45a367f.usd
+      size:
+      - 0.17487525939941406
+      - 0.022779464721679688
+      - 0.2656811273081985
+  obj_distractors:
+  - _3f31ff8f9f9742558339d2476e49db19
+  - _5899d997_4d52_4918_97b5_32195cbe58fb
+  obj_distractor_meta:
+    _3f31ff8f9f9742558339d2476e49db19:
+      category: binder
+      detailed_caption: Closed hardback book, decorative cover with golden patterns, sturdy spine, glossy
+        finish.
+      usd_path: 3f31ff8f9f9742558339d2476e49db19.usd
+      size:
+      - 0.14324188232421875
+      - 0.11981174349784851
+      - 0.09894167631864548
+    _5899d997_4d52_4918_97b5_32195cbe58fb:
+      category: notepad
+      detailed_caption: Multiple rectangular stacks of smooth, shiny white printing paper, varying in
+        height.
+      usd_path: 5899d997-4d52-4918-97b5-32195cbe58fb.usd
+      size:
+      - 0.190826416015625
+      - 0.23894691467285156
+      - 0.025974980962928385
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Rectangular notebook with a blue cover, white label, smooth surface, and rounded
+        edges.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Rectangular notebook with a blue cover, white label, smooth surface, and rounded
+        edges.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Rectangular notebook with a blue cover, white label, smooth surface, and rounded
+        edges.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Pick up the rectangular notebook with a blue cover, white label, smooth surface,
+    and rounded edges from white desk in front of a picture and place it on the rectangular table.
+  placements:
+    _721bb93d169a4d5f9e8dd15ad45a367f_on_desk_1_at_verify_task_25:
+      position:
+      - -0.10172080780246723
+      - -3.1690271194931303
+      - 0.890840598940049
+      furniture: desk_1
+      original_id: _721bb93d169a4d5f9e8dd15ad45a367f
+    _3f31ff8f9f9742558339d2476e49db19_on_desk_1_at_verify_task_25:
+      position:
+      - 0.016713352798540193
+      - -2.4234831274982556
+      - 0.8074708734452725
+      furniture: desk_1
+      original_id: _3f31ff8f9f9742558339d2476e49db19
+    _5899d997_4d52_4918_97b5_32195cbe58fb_on_desk_1_at_verify_task_25:
+      position:
+      - 0.09817578954972768
+      - -2.792519455962423
+      - 0.7709875257674139
+      furniture: desk_1
+      original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+  final_positions:
+    _721bb93d169a4d5f9e8dd15ad45a367f_on_desk_1_at_verify_task_25:
+      initial_pos:
+      - -0.10172080780246723
+      - -3.1690271194931303
+      - 0.9908405989400489
+      final_pos:
+      - -0.10402845591306686
+      - -3.169023275375366
+      - 0.8696774244308472
+      category: notebook
+      original_id: _721bb93d169a4d5f9e8dd15ad45a367f
+    _3f31ff8f9f9742558339d2476e49db19_on_desk_1_at_verify_task_25:
+      initial_pos:
+      - 0.016713352798540193
+      - -2.4234831274982556
+      - 0.9074708734452724
+      final_pos:
+      - 0.022846579551696777
+      - -2.421820640563965
+      - 1.0630378723144531
+      category: binder
+      original_id: _3f31ff8f9f9742558339d2476e49db19
+    _5899d997_4d52_4918_97b5_32195cbe58fb_on_desk_1_at_verify_task_25:
+      initial_pos:
+      - 0.09817578954972768
+      - -2.792519455962423
+      - 0.8709875257674139
+      final_pos:
+      - 0.09816469252109528
+      - -2.7925145626068115
+      - 0.7503131031990051
+      category: stack
+      original_id: _5899d997_4d52_4918_97b5_32195cbe58fb
+  family: SUL
+  benchmark_task_id: SUL/verify_task_25
+  global_index: 197
+  target_object_id: _721bb93d169a4d5f9e8dd15ad45a367f

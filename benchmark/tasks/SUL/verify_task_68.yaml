@@ -1,0 +1,308 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  aa3bcafdc110450e854464da704c9c4f_on_table_1_at_verify_task_68:
+    original_id: aa3bcafdc110450e854464da704c9c4f
+    category: knife
+    usd_path: ${MESATASK_USD_ROOT}/aa3bcafdc110450e854464da704c9c4f.usd
+    usd_scale:
+    - 0.6451087991477484
+    - 1.3042872680651585
+    - 0.32038306491815677
+    position:
+    - -2.536508146807733
+    - -1.3010969751151702
+    - 0.7686796063603833
+    size:
+    - 0.21363258361816406
+    - 0.07737350463867188
+    - 0.009359415853396058
+    detailed_caption: A sleek knife with a slender shiny steel blade and textured brown handle.
+  fe575974_2c16_4676_b09d_f79c2ce24812_on_table_1_at_verify_task_68:
+    original_id: fe575974_2c16_4676_b09d_f79c2ce24812
+    category: spoon
+    usd_path: ${MESATASK_USD_ROOT}/fe575974-2c16-4676-b09d-f79c2ce24812.usd
+    usd_scale:
+    - 11.599099533086909
+    - 11.510351397779171
+    - 14.25436022422189
+    position:
+    - -2.850379231615151
+    - -1.1138792524882288
+    - 0.7735330458777026
+    size:
+    - 0.04847431182861328
+    - 0.2292938232421875
+    - 0.019066294888034463
+    detailed_caption: Sleek stainless steel spoon with an oval-shaped bowl and a polished, narrow handle.
+  _2597a1a067ee45ec9cbd2beca51073ac_on_table_1_at_verify_task_68:
+    original_id: _2597a1a067ee45ec9cbd2beca51073ac
+    category: spoon
+    usd_path: ${MESATASK_USD_ROOT}/2597a1a067ee45ec9cbd2beca51073ac.usd
+    usd_scale:
+    - 1.868045417801325
+    - 1.9057739825818374
+    - 2.0320069444430597
+    position:
+    - -2.1961913812912135
+    - -1.5331147925647466
+    - 0.7752038250432816
+    size:
+    - 0.057346343994140625
+    - 0.23378372192382812
+    - 0.022407853219192475
+    detailed_caption: A sleek metallic spoon with a smooth, elongated bowl and finely tapered handle.
+episodes:
+- task_id: verify_task_68
+  episode_idx: 45
+  original_idx: 68
+  benchmark_instruction: Head over to the rectangular table, fetch a eating utensil, and bring it back
+    to white cabinet next to the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the a sleek knife with a slender shiny steel blade and textured brown handle
+    located at the rectangular table to white cabinet next to the washingmachine.
+  fuzzy_task_description: Head over to the rectangular table, fetch a eating utensil, and bring it back
+    to white cabinet next to the washingmachine.
+  purpose: eating utensil
+  purpose_group: eating_utensils
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - aa3bcafdc110450e854464da704c9c4f
+      - fe575974_2c16_4676_b09d_f79c2ce24812
+      - _2597a1a067ee45ec9cbd2beca51073ac
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - fe575974_2c16_4676_b09d_f79c2ce24812
+      - _2597a1a067ee45ec9cbd2beca51073ac
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - aa3bcafdc110450e854464da704c9c4f
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_7
+  dest_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    aa3bcafdc110450e854464da704c9c4f:
+      category: knife
+      detailed_caption: A sleek knife with a slender shiny steel blade and textured brown handle.
+      usd_path: aa3bcafdc110450e854464da704c9c4f.usd
+      size:
+      - 0.21363258361816406
+      - 0.07737350463867188
+      - 0.009359415853396058
+  obj_distractors:
+  - fe575974_2c16_4676_b09d_f79c2ce24812
+  - _2597a1a067ee45ec9cbd2beca51073ac
+  obj_distractor_meta:
+    fe575974_2c16_4676_b09d_f79c2ce24812:
+      category: spoon
+      detailed_caption: Sleek stainless steel spoon with an oval-shaped bowl and a polished, narrow handle.
+      usd_path: fe575974-2c16-4676-b09d-f79c2ce24812.usd
+      size:
+      - 0.04847431182861328
+      - 0.2292938232421875
+      - 0.019066294888034463
+    _2597a1a067ee45ec9cbd2beca51073ac:
+      category: spoon
+      detailed_caption: A sleek metallic spoon with a smooth, elongated bowl and finely tapered handle.
+      usd_path: 2597a1a067ee45ec9cbd2beca51073ac.usd
+      size:
+      - 0.057346343994140625
+      - 0.23378372192382812
+      - 0.022407853219192475
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: knife
+      target_description: A sleek knife with a slender shiny steel blade and textured brown handle.
+  - action: gaze_at
+    args:
+      target_category: knife
+      target_description: A sleek knife with a slender shiny steel blade and textured brown handle.
+  - action: pick
+    args:
+      target_category: knife
+      target_description: A sleek knife with a slender shiny steel blade and textured brown handle.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: place
+    args:
+      receptacle_name: cabinet_7
+  physics_task_description: Move the a sleek knife with a slender shiny steel blade and textured brown
+    handle located at the rectangular table to white cabinet next to the washingmachine.
+  placements:
+    aa3bcafdc110450e854464da704c9c4f_on_table_1_at_verify_task_68:
+      position:
+      - -2.536508146807733
+      - -1.3010969751151702
+      - 0.7686796063603833
+      furniture: table_1
+      original_id: aa3bcafdc110450e854464da704c9c4f
+    fe575974_2c16_4676_b09d_f79c2ce24812_on_table_1_at_verify_task_68:
+      position:
+      - -2.850379231615151
+      - -1.1138792524882288
+      - 0.7735330458777026
+      furniture: table_1
+      original_id: fe575974_2c16_4676_b09d_f79c2ce24812
+    _2597a1a067ee45ec9cbd2beca51073ac_on_table_1_at_verify_task_68:
+      position:
+      - -2.1961913812912135
+      - -1.5331147925647466
+      - 0.7752038250432816
+      furniture: table_1
+      original_id: _2597a1a067ee45ec9cbd2beca51073ac
+  final_positions:
+    aa3bcafdc110450e854464da704c9c4f_on_table_1_at_verify_task_68:
+      initial_pos:
+      - -2.536508146807733
+      - -1.3010969751151702
+      - 0.8686796063603833
+      final_pos:
+      - -2.536921977996826
+      - -1.301086664199829
+      - 0.7474638819694519
+      category: knife
+      original_id: aa3bcafdc110450e854464da704c9c4f
+    fe575974_2c16_4676_b09d_f79c2ce24812_on_table_1_at_verify_task_68:
+      initial_pos:
+      - -2.850379231615151
+      - -1.1138792524882288
+      - 0.8735330458777025
+      final_pos:
+      - -2.8507943153381348
+      - -1.1128315925598145
+      - 0.7449188232421875
+      category: spoon
+      original_id: fe575974_2c16_4676_b09d_f79c2ce24812
+    _2597a1a067ee45ec9cbd2beca51073ac_on_table_1_at_verify_task_68:
+      initial_pos:
+      - -2.1961913812912135
+      - -1.5331147925647466
+      - 0.8752038250432815
+      final_pos:
+      - -2.165361166000366
+      - -1.408984661102295
+      - 0.7523797750473022
+      category: spoon
+      original_id: _2597a1a067ee45ec9cbd2beca51073ac
+  family: SUL
+  benchmark_task_id: SUL/verify_task_68
+  global_index: 221
+  target_object_id: aa3bcafdc110450e854464da704c9c4f

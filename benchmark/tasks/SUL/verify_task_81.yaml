@@ -1,0 +1,302 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  c8acdbc61406494680ac47700670ea22_on_bed_1_at_verify_task_81:
+    original_id: c8acdbc61406494680ac47700670ea22
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/c8acdbc61406494680ac47700670ea22.usd
+    usd_scale:
+    - 0.05480124271848954
+    - 0.05468067300731272
+    - 0.05479292006117666
+    position:
+    - 3.2379368510836994
+    - 4.0413451321825535
+    - 0.5362132941186428
+    size:
+    - 0.15329480171203613
+    - 0.27294111251831055
+    - 0.08785628527402878
+    detailed_caption: Ceramic figurine with a round head, stylized features, textured surface, and warm
+      colors.
+  _76ad0e6444f64b25a70bf847b5b9b2c9_on_bed_1_at_verify_task_81:
+    original_id: _76ad0e6444f64b25a70bf847b5b9b2c9
+    category: decorative bowl
+    usd_path: ${MESATASK_USD_ROOT}/76ad0e6444f64b25a70bf847b5b9b2c9.usd
+    usd_scale:
+    - 0.45672979902807714
+    - 0.45519861614811685
+    - 0.328337348962123
+    position:
+    - 3.593551451210975
+    - 3.414566009661966
+    - 0.5049420436657965
+    size:
+    - 0.11166763305664062
+    - 0.11101913452148438
+    - 0.0253137843683362
+    detailed_caption: Shallow, circular clay bowl with a slightly raised rim and textured, painted decorative
+      designs.
+  _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_bed_1_at_verify_task_81:
+    original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    category: decorative object
+    usd_path: ${MESATASK_USD_ROOT}/5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+    usd_scale:
+    - 26.676207502786607
+    - 26.79114528206183
+    - 27.195716757061277
+    position:
+    - 3.680179637304084
+    - 3.749444830107086
+    - 0.5234844530746341
+    size:
+    - 0.1697005033493042
+    - 0.1944732666015625
+    - 0.062398603186011314
+    detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and polished
+      finish.
+episodes:
+- task_id: verify_task_81
+  episode_idx: 53
+  original_idx: 81
+  benchmark_instruction: Navigate to bed with all-white bed sheet, grasp a decorative object, and carry
+    it to the rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Get the ceramic figurine with a round head, stylized features, textured surface, and
+    warm colors from bed with all-white bed sheet and move it to the rectangular table.
+  fuzzy_task_description: Navigate to bed with all-white bed sheet, grasp a decorative object, and carry
+    it to the rectangular table.
+  purpose: decorative object
+  purpose_group: decorative_objects
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - c8acdbc61406494680ac47700670ea22
+      - _76ad0e6444f64b25a70bf847b5b9b2c9
+      - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - c8acdbc61406494680ac47700670ea22
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _76ad0e6444f64b25a70bf847b5b9b2c9
+      - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    c8acdbc61406494680ac47700670ea22:
+      category: figurine
+      detailed_caption: Ceramic figurine with a round head, stylized features, textured surface, and warm
+        colors.
+      usd_path: c8acdbc61406494680ac47700670ea22.usd
+      size:
+      - 0.15329480171203613
+      - 0.27294111251831055
+      - 0.08785628527402878
+  obj_distractors:
+  - _76ad0e6444f64b25a70bf847b5b9b2c9
+  - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+  obj_distractor_meta:
+    _76ad0e6444f64b25a70bf847b5b9b2c9:
+      category: decorative bowl
+      detailed_caption: Shallow, circular clay bowl with a slightly raised rim and textured, painted decorative
+        designs.
+      usd_path: 76ad0e6444f64b25a70bf847b5b9b2c9.usd
+      size:
+      - 0.11166763305664062
+      - 0.11101913452148438
+      - 0.0253137843683362
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5:
+      category: decorative object
+      detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and
+        polished finish.
+      usd_path: 5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+      size:
+      - 0.1697005033493042
+      - 0.1944732666015625
+      - 0.062398603186011314
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Ceramic figurine with a round head, stylized features, textured surface, and
+        warm colors.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Ceramic figurine with a round head, stylized features, textured surface, and
+        warm colors.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Ceramic figurine with a round head, stylized features, textured surface, and
+        warm colors.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Get the ceramic figurine with a round head, stylized features, textured surface,
+    and warm colors from bed with all-white bed sheet and move it to the rectangular table.
+  placements:
+    c8acdbc61406494680ac47700670ea22_on_bed_1_at_verify_task_81:
+      position:
+      - 3.2379368510836994
+      - 4.0413451321825535
+      - 0.5362132941186428
+      furniture: bed_1
+      original_id: c8acdbc61406494680ac47700670ea22
+    _76ad0e6444f64b25a70bf847b5b9b2c9_on_bed_1_at_verify_task_81:
+      position:
+      - 3.593551451210975
+      - 3.414566009661966
+      - 0.5049420436657965
+      furniture: bed_1
+      original_id: _76ad0e6444f64b25a70bf847b5b9b2c9
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_bed_1_at_verify_task_81:
+      position:
+      - 3.680179637304084
+      - 3.749444830107086
+      - 0.5234844530746341
+      furniture: bed_1
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+  final_positions:
+    c8acdbc61406494680ac47700670ea22_on_bed_1_at_verify_task_81:
+      initial_pos:
+      - 3.2379368510836994
+      - 4.0413451321825535
+      - 0.6362132941186428
+      final_pos:
+      - 3.240330696105957
+      - 4.065031051635742
+      - 0.5042998194694519
+      category: figurine
+      original_id: c8acdbc61406494680ac47700670ea22
+    _76ad0e6444f64b25a70bf847b5b9b2c9_on_bed_1_at_verify_task_81:
+      initial_pos:
+      - 3.593551451210975
+      - 3.414566009661966
+      - 0.6049420436657965
+      final_pos:
+      - 3.5856494903564453
+      - 3.360276937484741
+      - 0.48136046528816223
+      category: decorative bowl
+      original_id: _76ad0e6444f64b25a70bf847b5b9b2c9
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5_on_bed_1_at_verify_task_81:
+      initial_pos:
+      - 3.680179637304084
+      - 3.749444830107086
+      - 0.6234844530746341
+      final_pos:
+      - 3.7193470001220703
+      - 3.7510592937469482
+      - 0.5002797245979309
+      category: decorative object
+      original_id: _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+  family: SUL
+  benchmark_task_id: SUL/verify_task_81
+  global_index: 229
+  target_object_id: c8acdbc61406494680ac47700670ea22

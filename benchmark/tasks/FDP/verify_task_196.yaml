@@ -1,0 +1,257 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _05aaa6414f4e4b6eb5432dbcf20290f6_on_desk_1_at_verify_task_196:
+    original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/05aaa6414f4e4b6eb5432dbcf20290f6.usd
+    usd_scale:
+    - 1.2429552628370415
+    - 1.2276162272094766
+    - 1.2361208837344122
+    position:
+    - -0.026474927868345655
+    - -2.942930288764285
+    - 0.7902097746660002
+    size:
+    - 0.06312370300292969
+    - 0.2378683090209961
+    - 0.0644194787601009
+    detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+  _05aaa6414f4e4b6eb5432dbcf20290f6_on_desk_2_at_verify_task_196:
+    original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/05aaa6414f4e4b6eb5432dbcf20290f6.usd
+    usd_scale:
+    - 1.2429552628370415
+    - 1.2276162272094766
+    - 1.2361208837344122
+    position:
+    - 4.5348400561290285
+    - 1.9760815508263008
+    - 0.7976523086358793
+    size:
+    - 0.06312370300292969
+    - 0.2378683090209961
+    - 0.0644194787601009
+    detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+episodes:
+- task_id: verify_task_196
+  episode_idx: 45
+  original_idx: 196
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the stylized figurine with a rounded head, small body, short-sleeved shirt,
+    and shorts from the desk near my bed and deposit it at the rounded rectangular table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _05aaa6414f4e4b6eb5432dbcf20290f6:
+      category: figurine
+      detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+      usd_path: 05aaa6414f4e4b6eb5432dbcf20290f6.usd
+      size:
+      - 0.06312370300292969
+      - 0.2378683090209961
+      - 0.0644194787601009
+  obj_distractors:
+  - _19f846a920864afb86a015fb79d1424c
+  - _5e2b5b2c9c2944c2a8fb6abfe094b8d5
+  obj_distractor_meta:
+    _19f846a920864afb86a015fb79d1424c:
+      category: figurine
+      detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+        outfit, distinct facial features.
+      usd_path: 19f846a920864afb86a015fb79d1424c.usd
+      size:
+      - 0.13190841674804688
+      - 0.14513397216796875
+      - 0.026468439391464926
+    _5e2b5b2c9c2944c2a8fb6abfe094b8d5:
+      category: decorative object
+      detailed_caption: Ceramic horse figurine with a glossy brown coat, detailed saddle markings, and
+        polished finish.
+      usd_path: 5e2b5b2c9c2944c2a8fb6abfe094b8d5.usd
+      size:
+      - 0.1697005033493042
+      - 0.1944732666015625
+      - 0.062398603186011314
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_desk_1_at_verify_task_196:
+      position:
+      - -0.026474927868345655
+      - -2.942930288764285
+      - 0.7902097746660002
+      furniture: desk_1
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_desk_2_at_verify_task_196:
+      position:
+      - 4.5348400561290285
+      - 1.9760815508263008
+      - 0.7976523086358793
+      furniture: desk_2
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+  final_positions:
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_desk_1_at_verify_task_196:
+      initial_pos:
+      - -0.026474927868345655
+      - -2.942930288764285
+      - 0.8902097746660002
+      final_pos:
+      - -0.018649203702807426
+      - -2.9457268714904785
+      - 0.7594345211982727
+      category: figurine
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_desk_2_at_verify_task_196:
+      initial_pos:
+      - 4.5348400561290285
+      - 1.9760815508263008
+      - 0.8976523086358793
+      final_pos:
+      - 4.509228229522705
+      - 1.9756590127944946
+      - 0.7409088015556335
+      category: figurine
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+  family: FDP
+  benchmark_task_id: FDP/verify_task_196
+  benchmark_instruction: Retrieve the stylized figurine with a rounded head, small body, short-sleeved
+    shirt, and shorts from the desk near my bed and deposit it at the rounded rectangular table.
+  global_index: 45
+  target_object_id: _05aaa6414f4e4b6eb5432dbcf20290f6

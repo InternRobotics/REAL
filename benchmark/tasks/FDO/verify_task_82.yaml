@@ -1,0 +1,253 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  c65e566bf1004f5385770a4f28eec736_on_desk_1_at_verify_task_82:
+    original_id: c65e566bf1004f5385770a4f28eec736
+    category: pepper
+    usd_path: ${MESATASK_USD_ROOT}/c65e566bf1004f5385770a4f28eec736.usd
+    usd_scale:
+    - 9.049234773886601
+    - 9.060817549699218
+    - 8.943785814545391
+    position:
+    - -0.03994813545416062
+    - -2.2649883158933752
+    - 0.8036021292023361
+    size:
+    - 0.09051513671875
+    - 0.13232421875
+    - 0.09120418783277273
+  c65e566bf1004f5385770a4f28eec736_on_desk_2_at_verify_task_82:
+    original_id: c65e566bf1004f5385770a4f28eec736
+    category: pepper
+    usd_path: ${MESATASK_USD_ROOT}/c65e566bf1004f5385770a4f28eec736.usd
+    usd_scale:
+    - 9.049234773886601
+    - 9.060817549699218
+    - 8.943785814545391
+    position:
+    - 4.4841897826178645
+    - 2.0191315656851345
+    - 0.8110446631722152
+    size:
+    - 0.09051513671875
+    - 0.13232421875
+    - 0.09120418783277273
+episodes:
+- benchmark_task_id: FDO/verify_task_82
+  family: FDO
+  task_id: verify_task_82
+  episode_idx: 4
+  original_idx: 82
+  benchmark_instruction: Head over to white desk in front of the blank wall, fetch a pepper, and bring
+    it back to the washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Head over to white desk in front of the blank wall, fetch a pepper, and bring it back
+    to the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    c65e566bf1004f5385770a4f28eec736:
+      category: pepper
+      usd_path: c65e566bf1004f5385770a4f28eec736.usd
+      size:
+      - 0.09051513671875
+      - 0.13232421875
+      - 0.09120418783277273
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: pepper
+  - action: gaze_at
+    args:
+      target_category: pepper
+  - action: pick
+    args:
+      target_category: pepper
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    c65e566bf1004f5385770a4f28eec736_on_desk_1_at_verify_task_82:
+      position:
+      - -0.03994813545416062
+      - -2.2649883158933752
+      - 0.8036021292023361
+      furniture: desk_1
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_desk_2_at_verify_task_82:
+      position:
+      - 4.4841897826178645
+      - 2.0191315656851345
+      - 0.8110446631722152
+      furniture: desk_2
+      original_id: c65e566bf1004f5385770a4f28eec736
+  final_positions:
+    c65e566bf1004f5385770a4f28eec736_on_desk_1_at_verify_task_82:
+      initial_pos:
+      - -0.03994813545416062
+      - -2.2649883158933752
+      - 0.9036021292023361
+      final_pos:
+      - -0.06088247150182724
+      - -2.269867181777954
+      - 0.7776398658752441
+      category: pepper
+      original_id: c65e566bf1004f5385770a4f28eec736
+    c65e566bf1004f5385770a4f28eec736_on_desk_2_at_verify_task_82:
+      initial_pos:
+      - 4.4841897826178645
+      - 2.0191315656851345
+      - 0.9110446631722152
+      final_pos:
+      - 4.46365213394165
+      - 2.0120768547058105
+      - 0.7582842111587524
+      category: pepper
+      original_id: c65e566bf1004f5385770a4f28eec736
+  global_index: 132
+  target_object_id: c65e566bf1004f5385770a4f28eec736

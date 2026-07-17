@@ -40,7 +40,7 @@ import mcp_server.mcp_env_demo as _mcp_env_module
 
 sys.modules["mcp_server.mcp_env"] = _mcp_env_module
 
-from mcp_server.mcp_env_demo import (
+from mcp_server.mcp_env_demo import (  # noqa: E402
     env,
     camera,
     processed_eval_episodes,
@@ -48,9 +48,9 @@ from mcp_server.mcp_env_demo import (
     TARGET_SCENE_ID,
     object_per_room,
 )
-from mcp_server.perception_utils import init_annotators, get_rgb_image
-from mcp_server.tools import MCP_TOOLS
-from mcp_server.actions import (
+from mcp_server.perception_utils import init_annotators, get_rgb_image  # noqa: E402
+from mcp_server.tools import MCP_TOOLS  # noqa: E402
+from mcp_server.actions import (  # noqa: E402
     EvalState,
     dispatch_action,
     step_simulation,
@@ -179,7 +179,7 @@ def handle_finish() -> list:
         state.current_extra_assets = spawn_objects_by_world_graph(
             env, episode, state.current_extra_assets
         )
-    except Exception as e:
+    except Exception:
         import traceback
 
         return [
@@ -213,6 +213,11 @@ def handle_finish() -> list:
 
     task_info = {
         "task_id": episode["task_id"],
+        **{
+            field: episode[field]
+            for field in ("benchmark_task_id", "family", "global_index")
+            if field in episode
+        },
         "episode_idx": global_episode_idx,
         "episode_local_idx": current_episode_idx,
         "episode_range": [EPISODE_START_IDX, EPISODE_END_IDX],
@@ -294,9 +299,16 @@ def main():
     print(f"[DEMO] Scene: {TARGET_SCENE_ID}  (non-headless GUI mode)")
     print(f"[DEMO] Episodes: {len(eval_episodes)} (range [{EPISODE_START_IDX}, {EPISODE_END_IDX}))")
 
-    # Auto-load an episode at startup so objects are spawned for the demo.
-    # Prefer the first episode that has ≥2 placements for a richer demo scene.
-    if eval_episodes:
+    # Agent clients obtain their first task by calling `finish`, so preloading
+    # must be opt-in or that first call would skip the preloaded episode.  The
+    # preview mode remains available for standalone visual inspection.
+    auto_load_episode = os.getenv("AUTO_LOAD_EPISODE", "0").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }
+    if eval_episodes and auto_load_episode:
         global current_episode_idx
         demo_local_idx = next(
             (i for i, ep in enumerate(eval_episodes) if len(ep["placements"]) >= 2),
@@ -310,6 +322,8 @@ def main():
         )
         init_result = handle_finish()
         print(f"[DEMO] Spawn done: {init_result[0].text[:200] if init_result else 'none'}")
+    elif eval_episodes:
+        print("[DEMO] Waiting for an agent to request the first episode...")
 
     while env.simulation_app.is_running():
         _ensure_playing()
@@ -324,7 +338,7 @@ def main():
         try:
             result = execute_action(action_name, arguments)
             manager.return_result(result)
-        except Exception as e:
+        except Exception:
             import traceback
 
             error_msg = f"Error executing {action_name}: {traceback.format_exc()}"

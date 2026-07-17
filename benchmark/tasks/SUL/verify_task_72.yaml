@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  fff52005_4316_40df_923d_73f0585110ad_on_table_1_at_verify_task_72:
+    original_id: fff52005_4316_40df_923d_73f0585110ad
+    category: soap
+    usd_path: ${MESATASK_USD_ROOT}/fff52005-4316-40df-923d-73f0585110ad.usd
+    usd_scale:
+    - 10.122511042757983
+    - 10.105378950224688
+    - 10.081046793972739
+    position:
+    - -2.6513372226061773
+    - -1.2847950152651666
+    - 0.8137641916796565
+    size:
+    - 0.1226348876953125
+    - 0.20683936029672623
+    - 0.0995285864919424
+    detailed_caption: Liquid soap dispenser with a smooth, rounded white body and metallic pump.
+  fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24_on_table_1_at_verify_task_72:
+    original_id: fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24
+    category: hand soap
+    usd_path: ${MESATASK_USD_ROOT}/fa84c147-4a7e-4e5f-84c4-8e2c87ec5d24.usd
+    usd_scale:
+    - 12.112014616556472
+    - 12.115102702609583
+    - 11.918665158563776
+    position:
+    - -1.907954679313966
+    - -1.3995816057780999
+    - 0.805654450301081
+    size:
+    - 0.24366378784179688
+    - 0.14575719833374023
+    - 0.08330910373479128
+    detailed_caption: A transparent, frosted cylindrical bottle with a pump on top.
+  ec67d7141333464ca1061320452f06a2_on_table_1_at_verify_task_72:
+    original_id: ec67d7141333464ca1061320452f06a2
+    category: hand wash
+    usd_path: ${MESATASK_USD_ROOT}/ec67d7141333464ca1061320452f06a2.usd
+    usd_scale:
+    - 1.052521022603529
+    - 1.357987226351361
+    - 1.07444676469552
+    position:
+    - -2.044024116424818
+    - -1.0929456911983135
+    - 0.7823464989592321
+    size:
+    - 0.07122039794921875
+    - 0.24605178833007812
+    - 0.03669320105109364
+    detailed_caption: Cylindrical bottle, mint green color, narrow upper part, sleek silhouette, with
+      a label.
+episodes:
+- task_id: verify_task_72
+  episode_idx: 47
+  original_idx: 72
+  benchmark_instruction: Go to the table much larger than another one, pick up a cleaning product, then
+    travel to white cabinet next to the washingmachine to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the liquid soap dispenser with a smooth, rounded white body and metallic
+    pump at the table much larger than another one to white cabinet next to the washingmachine.
+  fuzzy_task_description: Go to the table much larger than another one, pick up a cleaning product, then
+    travel to white cabinet next to the washingmachine to place it.
+  purpose: cleaning product
+  purpose_group: cleaning
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - fff52005_4316_40df_923d_73f0585110ad
+      - fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24
+      - ec67d7141333464ca1061320452f06a2
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24
+      - ec67d7141333464ca1061320452f06a2
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - fff52005_4316_40df_923d_73f0585110ad
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_7
+  dest_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    fff52005_4316_40df_923d_73f0585110ad:
+      category: soap
+      detailed_caption: Liquid soap dispenser with a smooth, rounded white body and metallic pump.
+      usd_path: fff52005-4316-40df-923d-73f0585110ad.usd
+      size:
+      - 0.1226348876953125
+      - 0.20683936029672623
+      - 0.0995285864919424
+  obj_distractors:
+  - fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24
+  - ec67d7141333464ca1061320452f06a2
+  obj_distractor_meta:
+    fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24:
+      category: hand soap
+      detailed_caption: A transparent, frosted cylindrical bottle with a pump on top.
+      usd_path: fa84c147-4a7e-4e5f-84c4-8e2c87ec5d24.usd
+      size:
+      - 0.24366378784179688
+      - 0.14575719833374023
+      - 0.08330910373479128
+    ec67d7141333464ca1061320452f06a2:
+      category: hand wash
+      detailed_caption: Cylindrical bottle, mint green color, narrow upper part, sleek silhouette, with
+        a label.
+      usd_path: ec67d7141333464ca1061320452f06a2.usd
+      size:
+      - 0.07122039794921875
+      - 0.24605178833007812
+      - 0.03669320105109364
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: soap
+      target_description: Liquid soap dispenser with a smooth, rounded white body and metallic pump.
+  - action: gaze_at
+    args:
+      target_category: soap
+      target_description: Liquid soap dispenser with a smooth, rounded white body and metallic pump.
+  - action: pick
+    args:
+      target_category: soap
+      target_description: Liquid soap dispenser with a smooth, rounded white body and metallic pump.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: place
+    args:
+      receptacle_name: cabinet_7
+  physics_task_description: Transport the liquid soap dispenser with a smooth, rounded white body and
+    metallic pump at the table much larger than another one to white cabinet next to the washingmachine.
+  placements:
+    fff52005_4316_40df_923d_73f0585110ad_on_table_1_at_verify_task_72:
+      position:
+      - -2.6513372226061773
+      - -1.2847950152651666
+      - 0.8137641916796565
+      furniture: table_1
+      original_id: fff52005_4316_40df_923d_73f0585110ad
+    fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24_on_table_1_at_verify_task_72:
+      position:
+      - -1.907954679313966
+      - -1.3995816057780999
+      - 0.805654450301081
+      furniture: table_1
+      original_id: fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24
+    ec67d7141333464ca1061320452f06a2_on_table_1_at_verify_task_72:
+      position:
+      - -2.044024116424818
+      - -1.0929456911983135
+      - 0.7823464989592321
+      furniture: table_1
+      original_id: ec67d7141333464ca1061320452f06a2
+  final_positions:
+    fff52005_4316_40df_923d_73f0585110ad_on_table_1_at_verify_task_72:
+      initial_pos:
+      - -2.6513372226061773
+      - -1.2847950152651666
+      - 0.9137641916796565
+      final_pos:
+      - -2.665579080581665
+      - -1.4098495244979858
+      - 0.7885745763778687
+      category: soap dispenser
+      original_id: fff52005_4316_40df_923d_73f0585110ad
+    fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24_on_table_1_at_verify_task_72:
+      initial_pos:
+      - -1.907954679313966
+      - -1.3995816057780999
+      - 0.9056544503010809
+      final_pos:
+      - -2.0607452392578125
+      - -1.3588149547576904
+      - 0.7857388257980347
+      category: hand soap
+      original_id: fa84c147_4a7e_4e5f_84c4_8e2c87ec5d24
+    ec67d7141333464ca1061320452f06a2_on_table_1_at_verify_task_72:
+      initial_pos:
+      - -2.044024116424818
+      - -1.0929456911983135
+      - 0.8823464989592321
+      final_pos:
+      - -2.0405189990997314
+      - -1.0929889678955078
+      - 0.7607720494270325
+      category: hand wash
+      original_id: ec67d7141333464ca1061320452f06a2
+  family: SUL
+  benchmark_task_id: SUL/verify_task_72
+  global_index: 223
+  target_object_id: fff52005_4316_40df_923d_73f0585110ad

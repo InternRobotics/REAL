@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  f6980f8fc24547348d15627d2af99c0c_on_desk_1_at_verify_task_47:
+    original_id: f6980f8fc24547348d15627d2af99c0c
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/f6980f8fc24547348d15627d2af99c0c.usd
+    usd_scale:
+    - 1.527514815113432
+    - 1.543312533775513
+    - 1.5728818964988114
+    position:
+    - 0.060244434589163925
+    - -2.6343016629596527
+    - 0.7620523233595304
+    size:
+    - 0.14197731018066406
+    - 0.008210897445678711
+    - 0.008104576147161424
+    detailed_caption: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+      on one end.
+  ca13bdd67bb14e0a9f9579ae3152d1d3_on_desk_1_at_verify_task_47:
+    original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/ca13bdd67bb14e0a9f9579ae3152d1d3.usd
+    usd_scale:
+    - 1.439434700765824
+    - 1.415398485116941
+    - 1.4961662834086935
+    position:
+    - -0.05153777115793674
+    - -3.3270373537781417
+    - 0.762955917470681
+    size:
+    - 0.12482070922851562
+    - 0.0071048736572265625
+    - 0.009911764369462617
+    detailed_caption: A ballpoint pen with a sleek design, blue tip, and wooden body.
+  _2d090a51da824b8a9f3550f5e2f105e0_on_desk_1_at_verify_task_47:
+    original_id: _2d090a51da824b8a9f3550f5e2f105e0
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/2d090a51da824b8a9f3550f5e2f105e0.usd
+    usd_scale:
+    - 61.593841345131345
+    - 60.16355966903339
+    - 75.58052134647676
+    position:
+    - -0.058813600416017575
+    - -3.1459638814015096
+    - 0.7615905609086622
+    size:
+    - 0.11349678039550781
+    - 0.06548118591308594
+    - 0.0071810512454248965
+    detailed_caption: Sleek ballpoint pen, blue and orange color scheme, rounded tip, smooth barrel design,
+      lightweight.
+episodes:
+- task_id: verify_task_47
+  episode_idx: 37
+  original_idx: 47
+  benchmark_instruction: Head over to white unit with flat wood handles, fetch a writing instrument, and
+    bring it back to the table where we have dinner.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the cylindrical pencil, light green with gold accents, sharpened tip, attached
+    eraser on one end located at white unit with flat wood handles to the table where we have dinner.
+  fuzzy_task_description: Head over to white unit with flat wood handles, fetch a writing instrument,
+    and bring it back to the table where we have dinner.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - f6980f8fc24547348d15627d2af99c0c
+      - ca13bdd67bb14e0a9f9579ae3152d1d3
+      - _2d090a51da824b8a9f3550f5e2f105e0
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - f6980f8fc24547348d15627d2af99c0c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - ca13bdd67bb14e0a9f9579ae3152d1d3
+      - _2d090a51da824b8a9f3550f5e2f105e0
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    f6980f8fc24547348d15627d2af99c0c:
+      category: pencil
+      detailed_caption: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+        on one end.
+      usd_path: f6980f8fc24547348d15627d2af99c0c.usd
+      size:
+      - 0.14197731018066406
+      - 0.008210897445678711
+      - 0.008104576147161424
+  obj_distractors:
+  - ca13bdd67bb14e0a9f9579ae3152d1d3
+  - _2d090a51da824b8a9f3550f5e2f105e0
+  obj_distractor_meta:
+    ca13bdd67bb14e0a9f9579ae3152d1d3:
+      category: pen
+      detailed_caption: A ballpoint pen with a sleek design, blue tip, and wooden body.
+      usd_path: ca13bdd67bb14e0a9f9579ae3152d1d3.usd
+      size:
+      - 0.12482070922851562
+      - 0.0071048736572265625
+      - 0.009911764369462617
+    _2d090a51da824b8a9f3550f5e2f105e0:
+      category: pen
+      detailed_caption: Sleek ballpoint pen, blue and orange color scheme, rounded tip, smooth barrel
+        design, lightweight.
+      usd_path: 2d090a51da824b8a9f3550f5e2f105e0.usd
+      size:
+      - 0.11349678039550781
+      - 0.06548118591308594
+      - 0.0071810512454248965
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: pencil
+      target_description: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+        on one end.
+  - action: gaze_at
+    args:
+      target_category: pencil
+      target_description: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+        on one end.
+  - action: pick
+    args:
+      target_category: pencil
+      target_description: Cylindrical pencil, light green with gold accents, sharpened tip, attached eraser
+        on one end.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Move the cylindrical pencil, light green with gold accents, sharpened tip,
+    attached eraser on one end located at white unit with flat wood handles to the table where we have
+    dinner.
+  placements:
+    f6980f8fc24547348d15627d2af99c0c_on_desk_1_at_verify_task_47:
+      position:
+      - 0.060244434589163925
+      - -2.6343016629596527
+      - 0.7620523233595304
+      furniture: desk_1
+      original_id: f6980f8fc24547348d15627d2af99c0c
+    ca13bdd67bb14e0a9f9579ae3152d1d3_on_desk_1_at_verify_task_47:
+      position:
+      - -0.05153777115793674
+      - -3.3270373537781417
+      - 0.762955917470681
+      furniture: desk_1
+      original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+    _2d090a51da824b8a9f3550f5e2f105e0_on_desk_1_at_verify_task_47:
+      position:
+      - -0.058813600416017575
+      - -3.1459638814015096
+      - 0.7615905609086622
+      furniture: desk_1
+      original_id: _2d090a51da824b8a9f3550f5e2f105e0
+  final_positions:
+    f6980f8fc24547348d15627d2af99c0c_on_desk_1_at_verify_task_47:
+      initial_pos:
+      - 0.060244434589163925
+      - -2.6343016629596527
+      - 0.8620523233595304
+      final_pos:
+      - 0.06020515039563179
+      - -2.6323418617248535
+      - 0.7417248487472534
+      category: pencil
+      original_id: f6980f8fc24547348d15627d2af99c0c
+    ca13bdd67bb14e0a9f9579ae3152d1d3_on_desk_1_at_verify_task_47:
+      initial_pos:
+      - -0.05153777115793674
+      - -3.3270373537781417
+      - 0.862955917470681
+      final_pos:
+      - 0.017872978001832962
+      - -3.3264715671539307
+      - 0.741737425327301
+      category: pen
+      original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+    _2d090a51da824b8a9f3550f5e2f105e0_on_desk_1_at_verify_task_47:
+      initial_pos:
+      - -0.058813600416017575
+      - -3.1459638814015096
+      - 0.8615905609086622
+      final_pos:
+      - -0.137984961271286
+      - -3.1828668117523193
+      - 0.7406660318374634
+      category: pen
+      original_id: _2d090a51da824b8a9f3550f5e2f105e0
+  family: SUL
+  benchmark_task_id: SUL/verify_task_47
+  global_index: 213
+  target_object_id: f6980f8fc24547348d15627d2af99c0c

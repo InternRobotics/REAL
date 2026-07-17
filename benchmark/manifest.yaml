@@ -1,0 +1,17 @@
+benchmark: REAL-Bench
+total_tasks: 241
+family_counts:
+  FDP: 72
+  FODP: 56
+  FDO: 48
+  SUL: 65
+family_order:
+- FDP
+- FODP
+- FDO
+- SUL
+status: official
+files:
+  tasks/<family>/<task_id>.yaml: 241 single-episode configs directly loadable by the eval server
+  mesa_required.txt: sorted basenames of the 287 MesaTask USDs referenced by task object metadata
+mesa_required_count: 287

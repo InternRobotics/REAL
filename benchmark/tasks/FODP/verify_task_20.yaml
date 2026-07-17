@@ -1,0 +1,336 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _7342b56116334f0c8289b7ba497050df_on_table_1_at_verify_task_20:
+    original_id: _7342b56116334f0c8289b7ba497050df
+    category: calculator
+    usd_path: ${MESATASK_USD_ROOT}/7342b56116334f0c8289b7ba497050df.usd
+    usd_scale:
+    - 6.609750870227125
+    - 6.651481562583637
+    - 6.5624883305488915
+    position:
+    - -2.1893245958589533
+    - -1.155517997556838
+    - 0.7718749156588456
+    size:
+    - 0.06776905059814453
+    - 0.1460113525390625
+    - 0.015750034450320527
+    detailed_caption: Rectangular calculator with a black body, numeric keypad, display screen, and contrasting
+      colored keys.
+  _9cad169b913545f683ae2a27080ca270_on_table_1_at_verify_task_20:
+    original_id: _9cad169b913545f683ae2a27080ca270
+    category: keyboard
+    usd_path: ${MESATASK_USD_ROOT}/9cad169b913545f683ae2a27080ca270.usd
+    usd_scale:
+    - 15.935193569174844
+    - 16.159473750131305
+    - 16.054031478112496
+    position:
+    - -2.7477870349795657
+    - -1.0463533481164906
+    - 0.774841209276492
+    size:
+    - 0.3187141418457031
+    - 0.11109542846679688
+    - 0.021682621685613412
+    detailed_caption: Rectangular, slim-profile keyboard with a smooth surface, rounded edges, and white
+      keys.
+  _79bff744c1b74462af7d3c0b9b19267b_on_table_1_at_verify_task_20:
+    original_id: _79bff744c1b74462af7d3c0b9b19267b
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/79bff744c1b74462af7d3c0b9b19267b.usd
+    usd_scale:
+    - 2.2885093903977354
+    - 2.4589316029923878
+    - 2.4922745634304047
+    position:
+    - -1.8280741761412702
+    - -1.454558039582524
+    - 0.7779798684164416
+    size:
+    - 0.08931159973144531
+    - 0.224365234375
+    - 0.027959939965512604
+    detailed_caption: Sleek, rectangular remote control with a black body and large, brightly colored
+      buttons.
+  _7342b56116334f0c8289b7ba497050df_on_table_2_at_verify_task_20:
+    original_id: _7342b56116334f0c8289b7ba497050df
+    category: calculator
+    usd_path: ${MESATASK_USD_ROOT}/7342b56116334f0c8289b7ba497050df.usd
+    usd_scale:
+    - 6.609750870227125
+    - 6.651481562583637
+    - 6.5624883305488915
+    position:
+    - -2.64645943196481
+    - 2.949685111819949
+    - 0.2978630176180741
+    size:
+    - 0.06776905059814453
+    - 0.1460113525390625
+    - 0.015750034450320527
+    detailed_caption: Rectangular calculator with a black body, numeric keypad, display screen, and contrasting
+      colored keys.
+episodes:
+- benchmark_task_id: FODP/verify_task_20
+  family: FODP
+  task_id: verify_task_20
+  episode_idx: 12
+  original_idx: 20
+  benchmark_instruction: Move the rectangular calculator with a black body, numeric keypad, display screen,
+    and contrasting colored keys located at the table where we have dinner to white desk with rectangular
+    wooden handles.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the rectangular calculator with a black body, numeric keypad, display screen,
+    and contrasting colored keys located at the table where we have dinner to white desk with rectangular
+    wooden handles.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _7342b56116334f0c8289b7ba497050df
+      - _9cad169b913545f683ae2a27080ca270
+      - _79bff744c1b74462af7d3c0b9b19267b
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7342b56116334f0c8289b7ba497050df
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _9cad169b913545f683ae2a27080ca270
+      - _79bff744c1b74462af7d3c0b9b19267b
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7342b56116334f0c8289b7ba497050df
+    desk_1:
+      room: study room/0
+      content:
+      - _7342b56116334f0c8289b7ba497050df
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    _7342b56116334f0c8289b7ba497050df:
+      category: calculator
+      detailed_caption: Rectangular calculator with a black body, numeric keypad, display screen, and
+        contrasting colored keys.
+      usd_path: 7342b56116334f0c8289b7ba497050df.usd
+      size:
+      - 0.06776905059814453
+      - 0.1460113525390625
+      - 0.015750034450320527
+  obj_distractors:
+  - _9cad169b913545f683ae2a27080ca270
+  - _79bff744c1b74462af7d3c0b9b19267b
+  obj_distractor_meta:
+    _9cad169b913545f683ae2a27080ca270:
+      category: keyboard
+      detailed_caption: Rectangular, slim-profile keyboard with a smooth surface, rounded edges, and white
+        keys.
+      usd_path: 9cad169b913545f683ae2a27080ca270.usd
+      size:
+      - 0.3187141418457031
+      - 0.11109542846679688
+      - 0.021682621685613412
+    _79bff744c1b74462af7d3c0b9b19267b:
+      category: remote control
+      detailed_caption: Sleek, rectangular remote control with a black body and large, brightly colored
+        buttons.
+      usd_path: 79bff744c1b74462af7d3c0b9b19267b.usd
+      size:
+      - 0.08931159973144531
+      - 0.224365234375
+      - 0.027959939965512604
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: calculator
+      target_description: Rectangular calculator with a black body, numeric keypad, display screen, and
+        contrasting colored keys.
+  - action: gaze_at
+    args:
+      target_category: calculator
+      target_description: Rectangular calculator with a black body, numeric keypad, display screen, and
+        contrasting colored keys.
+  - action: pick
+    args:
+      target_category: calculator
+      target_description: Rectangular calculator with a black body, numeric keypad, display screen, and
+        contrasting colored keys.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  placements:
+    _7342b56116334f0c8289b7ba497050df_on_table_1_at_verify_task_20:
+      position:
+      - -2.1893245958589533
+      - -1.155517997556838
+      - 0.7718749156588456
+      furniture: table_1
+      original_id: _7342b56116334f0c8289b7ba497050df
+    _9cad169b913545f683ae2a27080ca270_on_table_1_at_verify_task_20:
+      position:
+      - -2.7477870349795657
+      - -1.0463533481164906
+      - 0.774841209276492
+      furniture: table_1
+      original_id: _9cad169b913545f683ae2a27080ca270
+    _79bff744c1b74462af7d3c0b9b19267b_on_table_1_at_verify_task_20:
+      position:
+      - -1.8280741761412702
+      - -1.454558039582524
+      - 0.7779798684164416
+      furniture: table_1
+      original_id: _79bff744c1b74462af7d3c0b9b19267b
+    _7342b56116334f0c8289b7ba497050df_on_table_2_at_verify_task_20:
+      position:
+      - -2.64645943196481
+      - 2.949685111819949
+      - 0.2978630176180741
+      furniture: table_2
+      original_id: _7342b56116334f0c8289b7ba497050df
+  final_positions:
+    _7342b56116334f0c8289b7ba497050df_on_table_1_at_verify_task_20:
+      initial_pos:
+      - -2.1893245958589533
+      - -1.155517997556838
+      - 0.8718749156588456
+      final_pos:
+      - -2.189615249633789
+      - -1.1552884578704834
+      - 0.8160231709480286
+      category: calculator
+      original_id: _7342b56116334f0c8289b7ba497050df
+    _9cad169b913545f683ae2a27080ca270_on_table_1_at_verify_task_20:
+      initial_pos:
+      - -2.7477870349795657
+      - -1.0463533481164906
+      - 0.874841209276492
+      final_pos:
+      - -2.747734785079956
+      - -0.9897657036781311
+      - 0.7514438033103943
+      category: keyboard
+      original_id: _9cad169b913545f683ae2a27080ca270
+    _79bff744c1b74462af7d3c0b9b19267b_on_table_1_at_verify_task_20:
+      initial_pos:
+      - -1.8280741761412702
+      - -1.454558039582524
+      - 0.8779798684164416
+      final_pos:
+      - -1.8239163160324097
+      - -1.325679063796997
+      - 0.7572895288467407
+      category: remote control
+      original_id: _79bff744c1b74462af7d3c0b9b19267b
+    _7342b56116334f0c8289b7ba497050df_on_table_2_at_verify_task_20:
+      initial_pos:
+      - -2.64645943196481
+      - 2.949685111819949
+      - 0.3978630176180741
+      final_pos:
+      - -2.646763801574707
+      - 2.9498188495635986
+      - 0.34201690554618835
+      category: calculator
+      original_id: _7342b56116334f0c8289b7ba497050df
+  global_index: 84
+  target_object_id: _7342b56116334f0c8289b7ba497050df

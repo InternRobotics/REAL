@@ -1,0 +1,253 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _434b04afb75d4525ae5eb272282d736d_on_desk_1_at_verify_task_35:
+    original_id: _434b04afb75d4525ae5eb272282d736d
+    category: cookie
+    usd_path: ${MESATASK_USD_ROOT}/434b04afb75d4525ae5eb272282d736d.usd
+    usd_scale:
+    - 6.823591450511418
+    - 6.853526021291376
+    - 7.511750036768558
+    position:
+    - 0.1344893698717698
+    - -2.7971928157937
+    - 0.7722013190900907
+    size:
+    - 0.11743807792663574
+    - 0.11690330505371094
+    - 0.02840256760828197
+  _434b04afb75d4525ae5eb272282d736d_on_desk_2_at_verify_task_35:
+    original_id: _434b04afb75d4525ae5eb272282d736d
+    category: cookie
+    usd_path: ${MESATASK_USD_ROOT}/434b04afb75d4525ae5eb272282d736d.usd
+    usd_scale:
+    - 6.823591450511418
+    - 6.853526021291376
+    - 7.511750036768558
+    position:
+    - 4.597549326498351
+    - 1.4186038724770176
+    - 0.7796438530599699
+    size:
+    - 0.11743807792663574
+    - 0.11690330505371094
+    - 0.02840256760828197
+episodes:
+- benchmark_task_id: FDO/verify_task_35
+  family: FDO
+  task_id: verify_task_35
+  episode_idx: 1
+  original_idx: 35
+  benchmark_instruction: Retrieve a cookie from white desk with rectangular wooden handles and deposit
+    it at the only electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Retrieve a cookie from white desk with rectangular wooden handles and deposit it at
+    the only electriccooker in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _434b04afb75d4525ae5eb272282d736d
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _434b04afb75d4525ae5eb272282d736d
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _434b04afb75d4525ae5eb272282d736d
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _434b04afb75d4525ae5eb272282d736d
+      door: false
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _434b04afb75d4525ae5eb272282d736d:
+      category: cookie
+      usd_path: 434b04afb75d4525ae5eb272282d736d.usd
+      size:
+      - 0.11743807792663574
+      - 0.11690330505371094
+      - 0.02840256760828197
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: cookie
+  - action: gaze_at
+    args:
+      target_category: cookie
+  - action: pick
+    args:
+      target_category: cookie
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _434b04afb75d4525ae5eb272282d736d_on_desk_1_at_verify_task_35:
+      position:
+      - 0.1344893698717698
+      - -2.7971928157937
+      - 0.7722013190900907
+      furniture: desk_1
+      original_id: _434b04afb75d4525ae5eb272282d736d
+    _434b04afb75d4525ae5eb272282d736d_on_desk_2_at_verify_task_35:
+      position:
+      - 4.597549326498351
+      - 1.4186038724770176
+      - 0.7796438530599699
+      furniture: desk_2
+      original_id: _434b04afb75d4525ae5eb272282d736d
+  final_positions:
+    _434b04afb75d4525ae5eb272282d736d_on_desk_1_at_verify_task_35:
+      initial_pos:
+      - 0.1344893698717698
+      - -2.7971928157937
+      - 0.8722013190900907
+      final_pos:
+      - 0.14553755521774292
+      - -2.7274856567382812
+      - 0.7470865249633789
+      category: cookie
+      original_id: _434b04afb75d4525ae5eb272282d736d
+    _434b04afb75d4525ae5eb272282d736d_on_desk_2_at_verify_task_35:
+      initial_pos:
+      - 4.597549326498351
+      - 1.4186038724770176
+      - 0.8796438530599698
+      final_pos:
+      - 4.606413841247559
+      - 1.4818003177642822
+      - 0.7277899384498596
+      category: cookie
+      original_id: _434b04afb75d4525ae5eb272282d736d
+  global_index: 129
+  target_object_id: _434b04afb75d4525ae5eb272282d736d

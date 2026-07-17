@@ -1,0 +1,265 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _119d5abe285545559f2a8b25760f7354_on_bed_1_at_verify_task_507:
+    original_id: _119d5abe285545559f2a8b25760f7354
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/119d5abe285545559f2a8b25760f7354.usd
+    usd_scale:
+    - 0.49211721494477484
+    - 0.4561450753214522
+    - 0.47061460994017335
+    position:
+    - 3.475431425716633
+    - 3.9546795746281855
+    - 0.5068237122136634
+    size:
+    - 0.19731521606445312
+    - 0.24782752990722656
+    - 0.029077121464069933
+    detailed_caption: Spiral-bound notebook with a textured white cover, red edge, and lined pages with
+      sketches.
+  _119d5abe285545559f2a8b25760f7354_on_bed_2_at_verify_task_507:
+    original_id: _119d5abe285545559f2a8b25760f7354
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/119d5abe285545559f2a8b25760f7354.usd
+    usd_scale:
+    - 0.49211721494477484
+    - 0.4561450753214522
+    - 0.47061460994017335
+    position:
+    - 4.9419859497785605
+    - -1.5653266439790081
+    - 0.536687785013346
+    size:
+    - 0.19731521606445312
+    - 0.24782752990722656
+    - 0.029077121464069933
+    detailed_caption: Spiral-bound notebook with a textured white cover, red edge, and lined pages with
+      sketches.
+episodes:
+- task_id: verify_task_507
+  episode_idx: 65
+  original_idx: 507
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the spiral-bound notebook with a textured white cover, red edge, and lined
+    pages with sketches from bed with plain white bedding and deposit it at whole-black cabinet with flat
+    base.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _119d5abe285545559f2a8b25760f7354
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _119d5abe285545559f2a8b25760f7354
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _119d5abe285545559f2a8b25760f7354
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: cabinet_10
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  obj_meta:
+    _119d5abe285545559f2a8b25760f7354:
+      category: notebook
+      detailed_caption: Spiral-bound notebook with a textured white cover, red edge, and lined pages with
+        sketches.
+      usd_path: 119d5abe285545559f2a8b25760f7354.usd
+      size:
+      - 0.19731521606445312
+      - 0.24782752990722656
+      - 0.029077121464069933
+  obj_distractors:
+  - _9cad169b913545f683ae2a27080ca270
+  - _5b08ececfd6b4e9ca93490b6c7abd6bd
+  obj_distractor_meta:
+    _9cad169b913545f683ae2a27080ca270:
+      category: keyboard
+      detailed_caption: Rectangular, slim-profile keyboard with a smooth surface, rounded edges, and white
+        keys.
+      usd_path: 9cad169b913545f683ae2a27080ca270.usd
+      size:
+      - 0.3187141418457031
+      - 0.11109542846679688
+      - 0.021682621685613412
+    _5b08ececfd6b4e9ca93490b6c7abd6bd:
+      category: laptop
+      detailed_caption: Sleek, modern laptop, black exterior, textured keyboard, light-colored screen,
+        distinct logo, USB ports visible.
+      usd_path: 5b08ececfd6b4e9ca93490b6c7abd6bd.usd
+      size:
+      - 0.47218477725982666
+      - 0.2588825225830078
+      - 0.21138070581946522
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a textured white cover, red edge, and lined pages
+        with sketches.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a textured white cover, red edge, and lined pages
+        with sketches.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a textured white cover, red edge, and lined pages
+        with sketches.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: place
+    args:
+      receptacle_name: cabinet_10
+  placements:
+    _119d5abe285545559f2a8b25760f7354_on_bed_1_at_verify_task_507:
+      position:
+      - 3.475431425716633
+      - 3.9546795746281855
+      - 0.5068237122136634
+      furniture: bed_1
+      original_id: _119d5abe285545559f2a8b25760f7354
+    _119d5abe285545559f2a8b25760f7354_on_bed_2_at_verify_task_507:
+      position:
+      - 4.9419859497785605
+      - -1.5653266439790081
+      - 0.536687785013346
+      furniture: bed_2
+      original_id: _119d5abe285545559f2a8b25760f7354
+  final_positions:
+    _119d5abe285545559f2a8b25760f7354_on_bed_1_at_verify_task_507:
+      initial_pos:
+      - 3.475431425716633
+      - 3.9546795746281855
+      - 0.6068237122136634
+      final_pos:
+      - 3.4751639366149902
+      - 3.8139097690582275
+      - 0.476988285779953
+      category: notebook
+      original_id: _119d5abe285545559f2a8b25760f7354
+    _119d5abe285545559f2a8b25760f7354_on_bed_2_at_verify_task_507:
+      initial_pos:
+      - 4.9419859497785605
+      - -1.5653266439790081
+      - 0.636687785013346
+      final_pos:
+      - 5.046107769012451
+      - -1.6310418844223022
+      - 0.5442297458648682
+      category: notebook
+      original_id: _119d5abe285545559f2a8b25760f7354
+  family: FDP
+  benchmark_task_id: FDP/verify_task_507
+  benchmark_instruction: Retrieve the spiral-bound notebook with a textured white cover, red edge, and
+    lined pages with sketches from bed with plain white bedding and deposit it at whole-black cabinet
+    with flat base.
+  global_index: 65
+  target_object_id: _119d5abe285545559f2a8b25760f7354

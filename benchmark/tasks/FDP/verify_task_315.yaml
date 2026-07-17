@@ -1,0 +1,259 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _7342b56116334f0c8289b7ba497050df_on_desk_1_at_verify_task_315:
+    original_id: _7342b56116334f0c8289b7ba497050df
+    category: calculator
+    usd_path: ${MESATASK_USD_ROOT}/7342b56116334f0c8289b7ba497050df.usd
+    usd_scale:
+    - 6.609750870227125
+    - 6.651481562583637
+    - 6.5624883305488915
+    position:
+    - -0.12564293951975508
+    - -2.5214857466332736
+    - 0.76587505251111
+    size:
+    - 0.06776905059814453
+    - 0.1460113525390625
+    - 0.015750034450320527
+    detailed_caption: Rectangular calculator with a black body, numeric keypad, display screen, and contrasting
+      colored keys.
+  _7342b56116334f0c8289b7ba497050df_on_desk_2_at_verify_task_315:
+    original_id: _7342b56116334f0c8289b7ba497050df
+    category: calculator
+    usd_path: ${MESATASK_USD_ROOT}/7342b56116334f0c8289b7ba497050df.usd
+    usd_scale:
+    - 6.609750870227125
+    - 6.651481562583637
+    - 6.5624883305488915
+    position:
+    - 4.553601046654978
+    - 1.6289550578321628
+    - 0.7733175864809891
+    size:
+    - 0.06776905059814453
+    - 0.1460113525390625
+    - 0.015750034450320527
+    detailed_caption: Rectangular calculator with a black body, numeric keypad, display screen, and contrasting
+      colored keys.
+episodes:
+- task_id: verify_task_315
+  episode_idx: 62
+  original_idx: 315
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to wide desk with orange drawer pulls, fetch the rectangular calculator
+    with a black body, numeric keypad, display screen, and contrasting colored keys, and bring it back
+    to bed with silky black bed runner.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _7342b56116334f0c8289b7ba497050df
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _7342b56116334f0c8289b7ba497050df
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _7342b56116334f0c8289b7ba497050df
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: bed_2
+  dest_distractors:
+  - bed_1
+  obj_meta:
+    _7342b56116334f0c8289b7ba497050df:
+      category: calculator
+      detailed_caption: Rectangular calculator with a black body, numeric keypad, display screen, and
+        contrasting colored keys.
+      usd_path: 7342b56116334f0c8289b7ba497050df.usd
+      size:
+      - 0.06776905059814453
+      - 0.1460113525390625
+      - 0.015750034450320527
+  obj_distractors:
+  - _79bff744c1b74462af7d3c0b9b19267b
+  - _9cad169b913545f683ae2a27080ca270
+  obj_distractor_meta:
+    _79bff744c1b74462af7d3c0b9b19267b:
+      category: remote control
+      detailed_caption: Sleek, rectangular remote control with a black body and large, brightly colored
+        buttons.
+      usd_path: 79bff744c1b74462af7d3c0b9b19267b.usd
+      size:
+      - 0.08931159973144531
+      - 0.224365234375
+      - 0.027959939965512604
+    _9cad169b913545f683ae2a27080ca270:
+      category: keyboard
+      detailed_caption: Rectangular, slim-profile keyboard with a smooth surface, rounded edges, and white
+        keys.
+      usd_path: 9cad169b913545f683ae2a27080ca270.usd
+      size:
+      - 0.3187141418457031
+      - 0.11109542846679688
+      - 0.021682621685613412
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: calculator
+      target_description: Rectangular calculator with a black body, numeric keypad, display screen, and
+        contrasting colored keys.
+  - action: gaze_at
+    args:
+      target_category: calculator
+      target_description: Rectangular calculator with a black body, numeric keypad, display screen, and
+        contrasting colored keys.
+  - action: pick
+    args:
+      target_category: calculator
+      target_description: Rectangular calculator with a black body, numeric keypad, display screen, and
+        contrasting colored keys.
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: place
+    args:
+      receptacle_name: bed_2
+  placements:
+    _7342b56116334f0c8289b7ba497050df_on_desk_1_at_verify_task_315:
+      position:
+      - -0.12564293951975508
+      - -2.5214857466332736
+      - 0.76587505251111
+      furniture: desk_1
+      original_id: _7342b56116334f0c8289b7ba497050df
+    _7342b56116334f0c8289b7ba497050df_on_desk_2_at_verify_task_315:
+      position:
+      - 4.553601046654978
+      - 1.6289550578321628
+      - 0.7733175864809891
+      furniture: desk_2
+      original_id: _7342b56116334f0c8289b7ba497050df
+  final_positions:
+    _7342b56116334f0c8289b7ba497050df_on_desk_1_at_verify_task_315:
+      initial_pos:
+      - -0.12564293951975508
+      - -2.5214857466332736
+      - 0.86587505251111
+      final_pos:
+      - -0.12564267218112946
+      - -2.521482229232788
+      - 0.8100234866142273
+      category: calculator
+      original_id: _7342b56116334f0c8289b7ba497050df
+    _7342b56116334f0c8289b7ba497050df_on_desk_2_at_verify_task_315:
+      initial_pos:
+      - 4.553601046654978
+      - 1.6289550578321628
+      - 0.8733175864809891
+      final_pos:
+      - 4.553442478179932
+      - 1.6223671436309814
+      - 0.7906866073608398
+      category: calculator
+      original_id: _7342b56116334f0c8289b7ba497050df
+  family: FDP
+  benchmark_task_id: FDP/verify_task_315
+  benchmark_instruction: Head over to wide desk with orange drawer pulls, fetch the rectangular calculator
+    with a black body, numeric keypad, display screen, and contrasting colored keys, and bring it back
+    to bed with silky black bed runner.
+  global_index: 62
+  target_object_id: _7342b56116334f0c8289b7ba497050df

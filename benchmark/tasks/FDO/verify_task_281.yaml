@@ -1,0 +1,214 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _1265f0e5d42f44958057f0158e33faf8_on_electriccooker_0_at_verify_task_281:
+    original_id: _1265f0e5d42f44958057f0158e33faf8
+    category: orange
+    usd_path: ${MESATASK_USD_ROOT}/1265f0e5d42f44958057f0158e33faf8.usd
+    usd_scale:
+    - 0.5387641978459758
+    - 0.5336521832065547
+    - 0.5324357711244276
+    position:
+    - -4.906773916772867
+    - -3.9788401142191065
+    - 1.0564886947209016
+    size:
+    - 0.06459617614746094
+    - 0.0641641616821289
+    - 0.06386002455838025
+episodes:
+- benchmark_task_id: FDO/verify_task_281
+  family: FDO
+  task_id: verify_task_281
+  episode_idx: 43
+  original_idx: 281
+  benchmark_instruction: Take an orange from the only electriccooker in the scene and put it on the desk
+    with black handle.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: retrieve
+  task_description: Take an orange from the only electriccooker in the scene and put it on the desk with
+    black handle.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _1265f0e5d42f44958057f0158e33faf8
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _1265f0e5d42f44958057f0158e33faf8
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: electriccooker_0
+  src_distractors: []
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _1265f0e5d42f44958057f0158e33faf8:
+      category: orange
+      usd_path: 1265f0e5d42f44958057f0158e33faf8.usd
+      size:
+      - 0.06459617614746094
+      - 0.0641641616821289
+      - 0.06386002455838025
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: find
+    args:
+      target_category: orange
+  - action: gaze_at
+    args:
+      target_category: orange
+  - action: pick
+    args:
+      target_category: orange
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _1265f0e5d42f44958057f0158e33faf8_on_electriccooker_0_at_verify_task_281:
+      position:
+      - -4.906773916772867
+      - -3.9788401142191065
+      - 1.0564886947209016
+      furniture: electriccooker_0
+      original_id: _1265f0e5d42f44958057f0158e33faf8
+  final_positions:
+    _1265f0e5d42f44958057f0158e33faf8_on_electriccooker_0_at_verify_task_281:
+      initial_pos:
+      - -4.906773916772867
+      - -3.9788401142191065
+      - 1.1564886947209017
+      final_pos:
+      - -4.8855671882629395
+      - -3.946530342102051
+      - 1.1086421012878418
+      category: orange
+      original_id: _1265f0e5d42f44958057f0158e33faf8
+  global_index: 171
+  target_object_id: _1265f0e5d42f44958057f0158e33faf8

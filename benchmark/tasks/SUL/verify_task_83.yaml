@@ -1,0 +1,305 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _67a4c51ce9894a218dab77cae5187518_on_bed_1_at_verify_task_83:
+    original_id: _67a4c51ce9894a218dab77cae5187518
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/67a4c51ce9894a218dab77cae5187518.usd
+    usd_scale:
+    - 1.0553979383701764
+    - 0.889956688775051
+    - 1.07887841890673
+    position:
+    - 2.935435110128886
+    - 3.5551302642835316
+    - 0.5243519397731871
+    size:
+    - 0.1146697998046875
+    - 0.13949966430664062
+    - 0.06413357658311725
+    detailed_caption: Classic round alarm clock with black casing, metallic bells, beige face, and black
+      hour markers.
+  eceb4b045a2c426da93ddb2dca81f94a_on_bed_1_at_verify_task_83:
+    original_id: eceb4b045a2c426da93ddb2dca81f94a
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/eceb4b045a2c426da93ddb2dca81f94a.usd
+    usd_scale:
+    - 6.3395458344458016
+    - 6.3395458344458016
+    - 6.32171385227223
+    position:
+    - 3.747811768223939
+    - 3.442776278299161
+    - 0.5655027958750805
+    size:
+    - 0.14717602729797363
+    - 0.375152587890625
+    - 0.14643528878690404
+    detailed_caption: Hourglass with two glass bulbs, wooden frame, and fine brown sand inside.
+  _21914c3f_36de_4b36_a436_ee1c3cd62ba2_on_bed_1_at_verify_task_83:
+    original_id: _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+    category: alarm clock
+    usd_path: ${MESATASK_USD_ROOT}/21914c3f-36de-4b36-a436-ee1c3cd62ba2.usd
+    usd_scale:
+    - 9.145275719936933
+    - 8.809009934539331
+    - 9.225952422459844
+    position:
+    - 3.4137026959697327
+    - 3.6200433000824397
+    - 0.5251023320993409
+    size:
+    - 0.14471435546875
+    - 0.18292999267578125
+    - 0.06563436123542488
+    detailed_caption: Vintage alarm clock with circular brass body, white clock face, two metallic bells,
+      worn back.
+episodes:
+- task_id: verify_task_83
+  episode_idx: 55
+  original_idx: 83
+  benchmark_instruction: Pick up a timekeeping device from bed with matte white mattress cover and place
+    it on the rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to bed with matte white mattress cover, pick up the classic round alarm clock with
+    black casing, metallic bells, beige face, and black hour markers, then travel to the rectangular table
+    to place it.
+  fuzzy_task_description: Pick up a timekeeping device from bed with matte white mattress cover and place
+    it on the rectangular table.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _67a4c51ce9894a218dab77cae5187518
+      - eceb4b045a2c426da93ddb2dca81f94a
+      - _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _67a4c51ce9894a218dab77cae5187518
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - eceb4b045a2c426da93ddb2dca81f94a
+      - _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _67a4c51ce9894a218dab77cae5187518:
+      category: clock
+      detailed_caption: Classic round alarm clock with black casing, metallic bells, beige face, and black
+        hour markers.
+      usd_path: 67a4c51ce9894a218dab77cae5187518.usd
+      size:
+      - 0.1146697998046875
+      - 0.13949966430664062
+      - 0.06413357658311725
+  obj_distractors:
+  - eceb4b045a2c426da93ddb2dca81f94a
+  - _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+  obj_distractor_meta:
+    eceb4b045a2c426da93ddb2dca81f94a:
+      category: hourglass
+      detailed_caption: Hourglass with two glass bulbs, wooden frame, and fine brown sand inside.
+      usd_path: eceb4b045a2c426da93ddb2dca81f94a.usd
+      size:
+      - 0.14717602729797363
+      - 0.375152587890625
+      - 0.14643528878690404
+    _21914c3f_36de_4b36_a436_ee1c3cd62ba2:
+      category: alarm clock
+      detailed_caption: Vintage alarm clock with circular brass body, white clock face, two metallic bells,
+        worn back.
+      usd_path: 21914c3f-36de-4b36-a436-ee1c3cd62ba2.usd
+      size:
+      - 0.14471435546875
+      - 0.18292999267578125
+      - 0.06563436123542488
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Classic round alarm clock with black casing, metallic bells, beige face, and
+        black hour markers.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Classic round alarm clock with black casing, metallic bells, beige face, and
+        black hour markers.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Classic round alarm clock with black casing, metallic bells, beige face, and
+        black hour markers.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Go to bed with matte white mattress cover, pick up the classic round alarm
+    clock with black casing, metallic bells, beige face, and black hour markers, then travel to the rectangular
+    table to place it.
+  placements:
+    _67a4c51ce9894a218dab77cae5187518_on_bed_1_at_verify_task_83:
+      position:
+      - 2.935435110128886
+      - 3.5551302642835316
+      - 0.5243519397731871
+      furniture: bed_1
+      original_id: _67a4c51ce9894a218dab77cae5187518
+    eceb4b045a2c426da93ddb2dca81f94a_on_bed_1_at_verify_task_83:
+      position:
+      - 3.747811768223939
+      - 3.442776278299161
+      - 0.5655027958750805
+      furniture: bed_1
+      original_id: eceb4b045a2c426da93ddb2dca81f94a
+    _21914c3f_36de_4b36_a436_ee1c3cd62ba2_on_bed_1_at_verify_task_83:
+      position:
+      - 3.4137026959697327
+      - 3.6200433000824397
+      - 0.5251023320993409
+      furniture: bed_1
+      original_id: _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+  final_positions:
+    _67a4c51ce9894a218dab77cae5187518_on_bed_1_at_verify_task_83:
+      initial_pos:
+      - 2.935435110128886
+      - 3.5551302642835316
+      - 0.624351939773187
+      final_pos:
+      - 2.9287173748016357
+      - 3.530576229095459
+      - 0.4896140992641449
+      category: clock
+      original_id: _67a4c51ce9894a218dab77cae5187518
+    eceb4b045a2c426da93ddb2dca81f94a_on_bed_1_at_verify_task_83:
+      initial_pos:
+      - 3.747811768223939
+      - 3.442776278299161
+      - 0.6655027958750804
+      final_pos:
+      - 3.7646567821502686
+      - 3.4527926445007324
+      - 0.5345352292060852
+      category: hourglass
+      original_id: eceb4b045a2c426da93ddb2dca81f94a
+    _21914c3f_36de_4b36_a436_ee1c3cd62ba2_on_bed_1_at_verify_task_83:
+      initial_pos:
+      - 3.4137026959697327
+      - 3.6200433000824397
+      - 0.6251023320993409
+      final_pos:
+      - 3.4028637409210205
+      - 3.717435598373413
+      - 0.4936896860599518
+      category: alarm clock
+      original_id: _21914c3f_36de_4b36_a436_ee1c3cd62ba2
+  family: SUL
+  benchmark_task_id: SUL/verify_task_83
+  global_index: 231
+  target_object_id: _67a4c51ce9894a218dab77cae5187518

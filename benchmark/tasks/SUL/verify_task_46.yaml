@@ -1,0 +1,303 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  gen_91331a5e_c820_4849_ab8e_73724d71a589_on_table_1_at_verify_task_46:
+    original_id: gen_91331a5e_c820_4849_ab8e_73724d71a589
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_91331a5e-c820-4849-ab8e-73724d71a589.usd
+    usd_scale:
+    - 7.710256589037887
+    - 7.8445069644787555
+    - 6.652130877506416
+    position:
+    - -1.6415173264129284
+    - -1.2711341417241904
+    - 0.7676577946508769
+    size:
+    - 0.16245079040527344
+    - 0.1655120849609375
+    - 0.007315792434383184
+    detailed_caption: Rectangular sheet of slightly wrinkled light yellow paper with varying shades.
+  cee4802cafe3483c9d72f27d6f3e06d1_on_table_1_at_verify_task_46:
+    original_id: cee4802cafe3483c9d72f27d6f3e06d1
+    category: notepad
+    usd_path: ${MESATASK_USD_ROOT}/cee4802cafe3483c9d72f27d6f3e06d1.usd
+    usd_scale:
+    - 9.402600897618548
+    - 9.189603103684675
+    - 8.917308526759847
+    position:
+    - -2.679309754293048
+    - -1.1857696459145477
+    - 0.7863033438439015
+    size:
+    - 0.14457130432128906
+    - 0.22270965576171875
+    - 0.044606890820432454
+    detailed_caption: Rectangular notepad with spiral binding, colorful cover design, and slightly bent
+      sheets.
+  _1377778b07044ab3826b41412f230c5a_on_table_1_at_verify_task_46:
+    original_id: _1377778b07044ab3826b41412f230c5a
+    category: binder
+    usd_path: ${MESATASK_USD_ROOT}/1377778b07044ab3826b41412f230c5a.usd
+    usd_scale:
+    - 0.38023669705097424
+    - 2.83836786383604
+    - 0.3061903916159722
+    position:
+    - -1.9293345137566997
+    - -1.3281766251396836
+    - 0.7659630631492473
+    size:
+    - 0.13887786865234375
+    - 0.5182380676269531
+    - 0.0039263294311240315
+    detailed_caption: Rectangular box with flat surface, smooth finish, and a mix of black, yellow, and
+      grey colors.
+episodes:
+- task_id: verify_task_46
+  episode_idx: 36
+  original_idx: 46
+  benchmark_instruction: First, drive to the table where we have dinner to find a notebook, then deliver
+    it to white unit with flat wood handles.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the rectangular sheet of slightly wrinkled light yellow paper with varying
+    shades at the table where we have dinner to white unit with flat wood handles.
+  fuzzy_task_description: First, drive to the table where we have dinner to find a notebook, then deliver
+    it to white unit with flat wood handles.
+  purpose: notebook
+  purpose_group: notebooks
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_91331a5e_c820_4849_ab8e_73724d71a589
+      - cee4802cafe3483c9d72f27d6f3e06d1
+      - _1377778b07044ab3826b41412f230c5a
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - cee4802cafe3483c9d72f27d6f3e06d1
+      - _1377778b07044ab3826b41412f230c5a
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - gen_91331a5e_c820_4849_ab8e_73724d71a589
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    gen_91331a5e_c820_4849_ab8e_73724d71a589:
+      category: notebook
+      detailed_caption: Rectangular sheet of slightly wrinkled light yellow paper with varying shades.
+      usd_path: gen_91331a5e-c820-4849-ab8e-73724d71a589.usd
+      size:
+      - 0.16245079040527344
+      - 0.1655120849609375
+      - 0.007315792434383184
+  obj_distractors:
+  - cee4802cafe3483c9d72f27d6f3e06d1
+  - _1377778b07044ab3826b41412f230c5a
+  obj_distractor_meta:
+    cee4802cafe3483c9d72f27d6f3e06d1:
+      category: notepad
+      detailed_caption: Rectangular notepad with spiral binding, colorful cover design, and slightly bent
+        sheets.
+      usd_path: cee4802cafe3483c9d72f27d6f3e06d1.usd
+      size:
+      - 0.14457130432128906
+      - 0.22270965576171875
+      - 0.044606890820432454
+    _1377778b07044ab3826b41412f230c5a:
+      category: binder
+      detailed_caption: Rectangular box with flat surface, smooth finish, and a mix of black, yellow,
+        and grey colors.
+      usd_path: 1377778b07044ab3826b41412f230c5a.usd
+      size:
+      - 0.13887786865234375
+      - 0.5182380676269531
+      - 0.0039263294311240315
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Rectangular sheet of slightly wrinkled light yellow paper with varying shades.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Rectangular sheet of slightly wrinkled light yellow paper with varying shades.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Rectangular sheet of slightly wrinkled light yellow paper with varying shades.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  physics_task_description: Transport the rectangular sheet of slightly wrinkled light yellow paper with
+    varying shades at the table where we have dinner to white unit with flat wood handles.
+  placements:
+    gen_91331a5e_c820_4849_ab8e_73724d71a589_on_table_1_at_verify_task_46:
+      position:
+      - -1.6415173264129284
+      - -1.2711341417241904
+      - 0.7676577946508769
+      furniture: table_1
+      original_id: gen_91331a5e_c820_4849_ab8e_73724d71a589
+    cee4802cafe3483c9d72f27d6f3e06d1_on_table_1_at_verify_task_46:
+      position:
+      - -2.679309754293048
+      - -1.1857696459145477
+      - 0.7863033438439015
+      furniture: table_1
+      original_id: cee4802cafe3483c9d72f27d6f3e06d1
+    _1377778b07044ab3826b41412f230c5a_on_table_1_at_verify_task_46:
+      position:
+      - -1.9293345137566997
+      - -1.3281766251396836
+      - 0.7659630631492473
+      furniture: table_1
+      original_id: _1377778b07044ab3826b41412f230c5a
+  final_positions:
+    gen_91331a5e_c820_4849_ab8e_73724d71a589_on_table_1_at_verify_task_46:
+      initial_pos:
+      - -1.6415173264129284
+      - -1.2711341417241904
+      - 0.8676577946508769
+      final_pos:
+      - -1.64397132396698
+      - -1.201094150543213
+      - 0.7446527481079102
+      category: notepad
+      original_id: gen_91331a5e_c820_4849_ab8e_73724d71a589
+    cee4802cafe3483c9d72f27d6f3e06d1_on_table_1_at_verify_task_46:
+      initial_pos:
+      - -2.679309754293048
+      - -1.1857696459145477
+      - 0.8863033438439015
+      final_pos:
+      - -2.6769418716430664
+      - -1.060382604598999
+      - 0.76688152551651
+      category: notepad
+      original_id: cee4802cafe3483c9d72f27d6f3e06d1
+    _1377778b07044ab3826b41412f230c5a_on_table_1_at_verify_task_46:
+      initial_pos:
+      - -1.9293345137566997
+      - -1.3281766251396836
+      - 0.8659630631492473
+      final_pos:
+      - -1.9288086891174316
+      - -1.3281736373901367
+      - 0.7453317642211914
+      category: binder
+      original_id: _1377778b07044ab3826b41412f230c5a
+  family: SUL
+  benchmark_task_id: SUL/verify_task_46
+  global_index: 212
+  target_object_id: gen_91331a5e_c820_4849_ab8e_73724d71a589

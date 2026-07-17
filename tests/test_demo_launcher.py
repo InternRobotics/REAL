@@ -27,7 +27,7 @@ def test_launcher_loads_env_file_without_overwriting_caller(tmp_path):
     fake_python.write_text(
         "#!/usr/bin/env bash\n"
         'printf \'%s\\n\' "$OPENAI_API_KEY" "$OPENAI_API_BASE_URL" '
-        '"$OPENAI_MODEL" "$PWD" "$DEMO_TASK_CONFIG" '
+        '"$OPENAI_MODEL" "$AUTO_LOAD_EPISODE" "$PWD" "$DEMO_TASK_CONFIG" '
         '> "$CAPTURE_PATH"\n',
         encoding="utf-8",
     )
@@ -40,6 +40,7 @@ def test_launcher_loads_env_file_without_overwriting_caller(tmp_path):
             "ENV_FILE": str(env_file),
             "CAPTURE_PATH": str(capture),
             "OPENAI_API_KEY": "from-caller",
+            "AUTO_LOAD_EPISODE": "1",
             # Isaac Sim's conda hook exports this misleading value.  The
             # launcher must still locate the REAL checkout through $0.
             "BASH_SOURCE": "/isaac-sim/setup_python_env.sh",
@@ -61,6 +62,7 @@ def test_launcher_loads_env_file_without_overwriting_caller(tmp_path):
         "from-caller",
         "https://file.example/v1",
         "file-model",
+        "1",
         str(REPO_ROOT),
         str(REPO_ROOT / "configs" / "demo_task.yaml"),
     ]

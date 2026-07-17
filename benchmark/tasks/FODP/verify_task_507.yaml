@@ -1,0 +1,342 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _119d5abe285545559f2a8b25760f7354_on_bed_1_at_verify_task_507:
+    original_id: _119d5abe285545559f2a8b25760f7354
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/119d5abe285545559f2a8b25760f7354.usd
+    usd_scale:
+    - 0.49211721494477484
+    - 0.4561450753214522
+    - 0.47061460994017335
+    position:
+    - 3.816033810626606
+    - 4.048293299335348
+    - 0.5068237122136634
+    size:
+    - 0.19731521606445312
+    - 0.24782752990722656
+    - 0.029077121464069933
+    detailed_caption: Spiral-bound notebook with a textured white cover, red edge, and lined pages with
+      sketches.
+  _9cad169b913545f683ae2a27080ca270_on_bed_1_at_verify_task_507:
+    original_id: _9cad169b913545f683ae2a27080ca270
+    category: keyboard
+    usd_path: ${MESATASK_USD_ROOT}/9cad169b913545f683ae2a27080ca270.usd
+    usd_scale:
+    - 15.935193569174844
+    - 16.159473750131305
+    - 16.054031478112496
+    position:
+    - 3.5043608623914606
+    - 3.8088391039317013
+    - 0.5031264623244351
+    size:
+    - 0.3187141418457031
+    - 0.11109542846679688
+    - 0.021682621685613412
+    detailed_caption: Rectangular, slim-profile keyboard with a smooth surface, rounded edges, and white
+      keys.
+  _5b08ececfd6b4e9ca93490b6c7abd6bd_on_bed_1_at_verify_task_507:
+    original_id: _5b08ececfd6b4e9ca93490b6c7abd6bd
+    category: laptop
+    usd_path: ${MESATASK_USD_ROOT}/5b08ececfd6b4e9ca93490b6c7abd6bd.usd
+    usd_scale:
+    - 1.8873424657534243
+    - 2.0085530966233374
+    - 2.1065726447998365
+    position:
+    - 3.4156597171559167
+    - 3.480783994251165
+    - 0.597975504391361
+    size:
+    - 0.47218477725982666
+    - 0.2588825225830078
+    - 0.21138070581946522
+    detailed_caption: Sleek, modern laptop, black exterior, textured keyboard, light-colored screen, distinct
+      logo, USB ports visible.
+  _119d5abe285545559f2a8b25760f7354_on_bed_2_at_verify_task_507:
+    original_id: _119d5abe285545559f2a8b25760f7354
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/119d5abe285545559f2a8b25760f7354.usd
+    usd_scale:
+    - 0.49211721494477484
+    - 0.4561450753214522
+    - 0.47061460994017335
+    position:
+    - 4.804853207447178
+    - -2.230925067732831
+    - 0.536687785013346
+    size:
+    - 0.19731521606445312
+    - 0.24782752990722656
+    - 0.029077121464069933
+    detailed_caption: Spiral-bound notebook with a textured white cover, red edge, and lined pages with
+      sketches.
+episodes:
+- benchmark_task_id: FODP/verify_task_507
+  family: FODP
+  task_id: verify_task_507
+  episode_idx: 52
+  original_idx: 507
+  benchmark_instruction: Retrieve the spiral-bound notebook with a textured white cover, red edge, and
+    lined pages with sketches from bed with plain white bedding and deposit it at whole-black cabinet
+    with flat base.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the spiral-bound notebook with a textured white cover, red edge, and lined
+    pages with sketches from bed with plain white bedding and deposit it at whole-black cabinet with flat
+    base.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _119d5abe285545559f2a8b25760f7354
+      - _9cad169b913545f683ae2a27080ca270
+      - _5b08ececfd6b4e9ca93490b6c7abd6bd
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _119d5abe285545559f2a8b25760f7354
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _9cad169b913545f683ae2a27080ca270
+      - _5b08ececfd6b4e9ca93490b6c7abd6bd
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - _119d5abe285545559f2a8b25760f7354
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _119d5abe285545559f2a8b25760f7354
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: cabinet_10
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  obj_meta:
+    _119d5abe285545559f2a8b25760f7354:
+      category: notebook
+      detailed_caption: Spiral-bound notebook with a textured white cover, red edge, and lined pages with
+        sketches.
+      usd_path: 119d5abe285545559f2a8b25760f7354.usd
+      size:
+      - 0.19731521606445312
+      - 0.24782752990722656
+      - 0.029077121464069933
+  obj_distractors:
+  - _9cad169b913545f683ae2a27080ca270
+  - _5b08ececfd6b4e9ca93490b6c7abd6bd
+  obj_distractor_meta:
+    _9cad169b913545f683ae2a27080ca270:
+      category: keyboard
+      detailed_caption: Rectangular, slim-profile keyboard with a smooth surface, rounded edges, and white
+        keys.
+      usd_path: 9cad169b913545f683ae2a27080ca270.usd
+      size:
+      - 0.3187141418457031
+      - 0.11109542846679688
+      - 0.021682621685613412
+    _5b08ececfd6b4e9ca93490b6c7abd6bd:
+      category: laptop
+      detailed_caption: Sleek, modern laptop, black exterior, textured keyboard, light-colored screen,
+        distinct logo, USB ports visible.
+      usd_path: 5b08ececfd6b4e9ca93490b6c7abd6bd.usd
+      size:
+      - 0.47218477725982666
+      - 0.2588825225830078
+      - 0.21138070581946522
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a textured white cover, red edge, and lined pages
+        with sketches.
+  - action: gaze_at
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a textured white cover, red edge, and lined pages
+        with sketches.
+  - action: pick
+    args:
+      target_category: notebook
+      target_description: Spiral-bound notebook with a textured white cover, red edge, and lined pages
+        with sketches.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: place
+    args:
+      receptacle_name: cabinet_10
+  placements:
+    _119d5abe285545559f2a8b25760f7354_on_bed_1_at_verify_task_507:
+      position:
+      - 3.816033810626606
+      - 4.048293299335348
+      - 0.5068237122136634
+      furniture: bed_1
+      original_id: _119d5abe285545559f2a8b25760f7354
+    _9cad169b913545f683ae2a27080ca270_on_bed_1_at_verify_task_507:
+      position:
+      - 3.5043608623914606
+      - 3.8088391039317013
+      - 0.5031264623244351
+      furniture: bed_1
+      original_id: _9cad169b913545f683ae2a27080ca270
+    _5b08ececfd6b4e9ca93490b6c7abd6bd_on_bed_1_at_verify_task_507:
+      position:
+      - 3.4156597171559167
+      - 3.480783994251165
+      - 0.597975504391361
+      furniture: bed_1
+      original_id: _5b08ececfd6b4e9ca93490b6c7abd6bd
+    _119d5abe285545559f2a8b25760f7354_on_bed_2_at_verify_task_507:
+      position:
+      - 4.804853207447178
+      - -2.230925067732831
+      - 0.536687785013346
+      furniture: bed_2
+      original_id: _119d5abe285545559f2a8b25760f7354
+  final_positions:
+    _119d5abe285545559f2a8b25760f7354_on_bed_1_at_verify_task_507:
+      initial_pos:
+      - 3.816033810626606
+      - 4.048293299335348
+      - 0.6068237122136634
+      final_pos:
+      - 3.8162953853607178
+      - 3.908583402633667
+      - 0.4742472767829895
+      category: notebook
+      original_id: _119d5abe285545559f2a8b25760f7354
+    _9cad169b913545f683ae2a27080ca270_on_bed_1_at_verify_task_507:
+      initial_pos:
+      - 3.5043608623914606
+      - 3.8088391039317013
+      - 0.6031264623244351
+      final_pos:
+      - 3.5044286251068115
+      - 3.8639755249023438
+      - 0.46951955556869507
+      category: keyboard
+      original_id: _9cad169b913545f683ae2a27080ca270
+    _5b08ececfd6b4e9ca93490b6c7abd6bd_on_bed_1_at_verify_task_507:
+      initial_pos:
+      - 3.4156597171559167
+      - 3.480783994251165
+      - 0.697975504391361
+      final_pos:
+      - 3.4151394367218018
+      - 3.4567978382110596
+      - 0.5669048428535461
+      category: laptop
+      original_id: _5b08ececfd6b4e9ca93490b6c7abd6bd
+    _119d5abe285545559f2a8b25760f7354_on_bed_2_at_verify_task_507:
+      initial_pos:
+      - 4.804853207447178
+      - -2.230925067732831
+      - 0.636687785013346
+      final_pos:
+      - 4.748178005218506
+      - -2.3970401287078857
+      - 0.5603569746017456
+      category: notebook
+      original_id: _119d5abe285545559f2a8b25760f7354
+  global_index: 124
+  target_object_id: _119d5abe285545559f2a8b25760f7354

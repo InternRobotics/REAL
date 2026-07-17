@@ -1,0 +1,301 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_36:
+    original_id: _748724f9761f4029807de5618ae50c3c
+    category: pencil
+    usd_path: ${MESATASK_USD_ROOT}/748724f9761f4029807de5618ae50c3c.usd
+    usd_scale:
+    - 9.475818065842008
+    - 0.6009338806833411
+    - 0.04894884318016047
+    position:
+    - -2.9579068416739047
+    - -1.3564857874771998
+    - 0.7645293563669111
+    size:
+    - 0.2049999237060547
+    - 0.19643020629882812
+    - 0.0010589158664515708
+    detailed_caption: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood, silver
+      ferrule.
+  gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_1_at_verify_task_36:
+    original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/gen_39647c11-3911-439b-88a3-f898aeed7493.usd
+    usd_scale:
+    - 9.891376839841328
+    - 9.887116102704567
+    - 9.573258153983087
+    position:
+    - -1.9163010781854615
+    - -1.1712297129128275
+    - 0.8032847291283542
+    size:
+    - 0.12579727172851562
+    - 0.19942283630371094
+    - 0.07856966138933785
+    detailed_caption: Cylindrical pen holder with a metallic shine and a black base. Various colored pencils
+      and pens.
+  dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_36:
+    original_id: dfb60be05b914116b7178579e93516ed
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/dfb60be05b914116b7178579e93516ed.usd
+    usd_scale:
+    - 0.018298897491465328
+    - 0.01763507245730863
+    - 0.018331101247054563
+    position:
+    - -2.5611453196177147
+    - -1.4368663623358247
+    - 0.7678793365880847
+    size:
+    - 0.12268638610839844
+    - 0.06080317497253418
+    - 0.00775887630879879
+    detailed_caption: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+episodes:
+- task_id: verify_task_36
+  episode_idx: 29
+  original_idx: 36
+  benchmark_instruction: Take a writing instrument from the table much larger than another one and put
+    it on wide desk with orange drawer pulls.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Bring the yellow cylindrical pencil with graphite tip, pink eraser, smooth colored
+    wood, silver ferrule from the table much larger than another one to wide desk with orange drawer pulls.
+  fuzzy_task_description: Take a writing instrument from the table much larger than another one and put
+    it on wide desk with orange drawer pulls.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _748724f9761f4029807de5618ae50c3c
+      - gen_39647c11_3911_439b_88a3_f898aeed7493
+      - dfb60be05b914116b7178579e93516ed
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_39647c11_3911_439b_88a3_f898aeed7493
+      - dfb60be05b914116b7178579e93516ed
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _748724f9761f4029807de5618ae50c3c
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    _748724f9761f4029807de5618ae50c3c:
+      category: pencil
+      detailed_caption: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood,
+        silver ferrule.
+      usd_path: 748724f9761f4029807de5618ae50c3c.usd
+      size:
+      - 0.2049999237060547
+      - 0.19643020629882812
+      - 0.0010589158664515708
+  obj_distractors:
+  - gen_39647c11_3911_439b_88a3_f898aeed7493
+  - dfb60be05b914116b7178579e93516ed
+  obj_distractor_meta:
+    gen_39647c11_3911_439b_88a3_f898aeed7493:
+      category: pen
+      detailed_caption: Cylindrical pen holder with a metallic shine and a black base. Various colored
+        pencils and pens.
+      usd_path: gen_39647c11-3911-439b-88a3-f898aeed7493.usd
+      size:
+      - 0.12579727172851562
+      - 0.19942283630371094
+      - 0.07856966138933785
+    dfb60be05b914116b7178579e93516ed:
+      category: pen
+      detailed_caption: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+      usd_path: dfb60be05b914116b7178579e93516ed.usd
+      size:
+      - 0.12268638610839844
+      - 0.06080317497253418
+      - 0.00775887630879879
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: pencil
+      target_description: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood,
+        silver ferrule.
+  - action: gaze_at
+    args:
+      target_category: pencil
+      target_description: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood,
+        silver ferrule.
+  - action: pick
+    args:
+      target_category: pencil
+      target_description: Yellow cylindrical pencil with graphite tip, pink eraser, smooth colored wood,
+        silver ferrule.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  physics_task_description: Bring the yellow cylindrical pencil with graphite tip, pink eraser, smooth
+    colored wood, silver ferrule from the table much larger than another one to wide desk with orange
+    drawer pulls.
+  placements:
+    _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_36:
+      position:
+      - -2.9579068416739047
+      - -1.3564857874771998
+      - 0.7645293563669111
+      furniture: table_1
+      original_id: _748724f9761f4029807de5618ae50c3c
+    gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_1_at_verify_task_36:
+      position:
+      - -1.9163010781854615
+      - -1.1712297129128275
+      - 0.8032847291283542
+      furniture: table_1
+      original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+    dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_36:
+      position:
+      - -2.5611453196177147
+      - -1.4368663623358247
+      - 0.7678793365880847
+      furniture: table_1
+      original_id: dfb60be05b914116b7178579e93516ed
+  final_positions:
+    _748724f9761f4029807de5618ae50c3c_on_table_1_at_verify_task_36:
+      initial_pos:
+      - -2.9579068416739047
+      - -1.3564857874771998
+      - 0.8645293563669111
+      final_pos:
+      - -2.9578559398651123
+      - -1.356490969657898
+      - 0.7444931268692017
+      category: pencil
+      original_id: _748724f9761f4029807de5618ae50c3c
+    gen_39647c11_3911_439b_88a3_f898aeed7493_on_table_1_at_verify_task_36:
+      initial_pos:
+      - -1.9163010781854615
+      - -1.1712297129128275
+      - 0.9032847291283542
+      final_pos:
+      - -1.8744300603866577
+      - -1.1720505952835083
+      - 0.7740452289581299
+      category: pen holder
+      original_id: gen_39647c11_3911_439b_88a3_f898aeed7493
+    dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_36:
+      initial_pos:
+      - -2.5611453196177147
+      - -1.4368663623358247
+      - 0.8678793365880847
+      final_pos:
+      - -2.4954168796539307
+      - -1.4714003801345825
+      - 0.747331976890564
+      category: pencil pen
+      original_id: dfb60be05b914116b7178579e93516ed
+  family: SUL
+  benchmark_task_id: SUL/verify_task_36
+  global_index: 205
+  target_object_id: _748724f9761f4029807de5618ae50c3c

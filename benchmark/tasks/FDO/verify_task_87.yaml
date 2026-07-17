@@ -1,0 +1,253 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _88c2101fe95941ac96e91c0835f61cac_on_desk_1_at_verify_task_87:
+    original_id: _88c2101fe95941ac96e91c0835f61cac
+    category: soup
+    usd_path: ${MESATASK_USD_ROOT}/88c2101fe95941ac96e91c0835f61cac.usd
+    usd_scale:
+    - 1.7219427603878976
+    - 1.7228266318301508
+    - 1.589158820563508
+    position:
+    - -0.038596294290048544
+    - -3.2633659271724844
+    - 0.8086799045372755
+    size:
+    - 0.1878833770751953
+    - 0.1866302490234375
+    - 0.10135973850265145
+  _88c2101fe95941ac96e91c0835f61cac_on_desk_2_at_verify_task_87:
+    original_id: _88c2101fe95941ac96e91c0835f61cac
+    category: soup
+    usd_path: ${MESATASK_USD_ROOT}/88c2101fe95941ac96e91c0835f61cac.usd
+    usd_scale:
+    - 1.7219427603878976
+    - 1.7228266318301508
+    - 1.589158820563508
+    position:
+    - 4.390336876584882
+    - 1.996287259083591
+    - 0.8161224385071546
+    size:
+    - 0.1878833770751953
+    - 0.1866302490234375
+    - 0.10135973850265145
+episodes:
+- benchmark_task_id: FDO/verify_task_87
+  family: FDO
+  task_id: verify_task_87
+  episode_idx: 7
+  original_idx: 87
+  benchmark_instruction: Move a soup located at the desk with black handle to the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Move a soup located at the desk with black handle to the only electriccooker in the
+    scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _88c2101fe95941ac96e91c0835f61cac
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _88c2101fe95941ac96e91c0835f61cac
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _88c2101fe95941ac96e91c0835f61cac
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _88c2101fe95941ac96e91c0835f61cac
+      door: false
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _88c2101fe95941ac96e91c0835f61cac:
+      category: soup
+      usd_path: 88c2101fe95941ac96e91c0835f61cac.usd
+      size:
+      - 0.1878833770751953
+      - 0.1866302490234375
+      - 0.10135973850265145
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: soup
+  - action: gaze_at
+    args:
+      target_category: soup
+  - action: pick
+    args:
+      target_category: soup
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _88c2101fe95941ac96e91c0835f61cac_on_desk_1_at_verify_task_87:
+      position:
+      - -0.038596294290048544
+      - -3.2633659271724844
+      - 0.8086799045372755
+      furniture: desk_1
+      original_id: _88c2101fe95941ac96e91c0835f61cac
+    _88c2101fe95941ac96e91c0835f61cac_on_desk_2_at_verify_task_87:
+      position:
+      - 4.390336876584882
+      - 1.996287259083591
+      - 0.8161224385071546
+      furniture: desk_2
+      original_id: _88c2101fe95941ac96e91c0835f61cac
+  final_positions:
+    _88c2101fe95941ac96e91c0835f61cac_on_desk_1_at_verify_task_87:
+      initial_pos:
+      - -0.038596294290048544
+      - -3.2633659271724844
+      - 0.9086799045372754
+      final_pos:
+      - -0.03970750421285629
+      - -3.3714444637298584
+      - 0.791578471660614
+      category: soup
+      original_id: _88c2101fe95941ac96e91c0835f61cac
+    _88c2101fe95941ac96e91c0835f61cac_on_desk_2_at_verify_task_87:
+      initial_pos:
+      - 4.390336876584882
+      - 1.996287259083591
+      - 0.9161224385071546
+      final_pos:
+      - 4.415820598602295
+      - 1.8386859893798828
+      - 0.7816005349159241
+      category: soup
+      original_id: _88c2101fe95941ac96e91c0835f61cac
+  global_index: 135
+  target_object_id: _88c2101fe95941ac96e91c0835f61cac

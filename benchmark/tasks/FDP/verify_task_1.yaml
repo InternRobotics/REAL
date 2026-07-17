@@ -1,0 +1,223 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0ce234c918ef438c9c919848b137d7ba_on_couch_2_at_verify_task_1:
+    original_id: _0ce234c918ef438c9c919848b137d7ba
+    category: teddy bear
+    usd_path: ${MESATASK_USD_ROOT}/0ce234c918ef438c9c919848b137d7ba.usd
+    usd_scale:
+    - 0.21267695671131023
+    - 0.2121924462983215
+    - 0.2126520976650876
+    position:
+    - -3.4371323955144497
+    - 2.5224510030363345
+    - 0.46343039102386685
+    size:
+    - 0.17091894149780273
+    - 0.20502662658691406
+    - 0.13510369672439992
+    detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+      fluffy surface.
+episodes:
+- task_id: verify_task_1
+  episode_idx: 0
+  original_idx: 1
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the couch in front of the TV to find the soft, plush teddy bear; rounded
+    body, small ears, button-like eyes, light blue, fluffy surface, then deliver it to the rectangular
+    table.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0ce234c918ef438c9c919848b137d7ba
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: couch_2
+  src_distractors: []
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _0ce234c918ef438c9c919848b137d7ba:
+      category: teddy bear
+      detailed_caption: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+      usd_path: 0ce234c918ef438c9c919848b137d7ba.usd
+      size:
+      - 0.17091894149780273
+      - 0.20502662658691406
+      - 0.13510369672439992
+  obj_distractors:
+  - _3ab5f94d4f3745a48c7b8e5023836f8e
+  - _0f27ac8853b7498892751acef48299cc
+  obj_distractor_meta:
+    _3ab5f94d4f3745a48c7b8e5023836f8e:
+      category: teddy bear
+      detailed_caption: A teddy bear with soft fur, small wings, round belly, and button-like eyes.
+      usd_path: 3ab5f94d4f3745a48c7b8e5023836f8e.usd
+      size:
+      - 0.17863845825195312
+      - 0.19546127319335938
+      - 0.1770838350057602
+    _0f27ac8853b7498892751acef48299cc:
+      category: teddy bear
+      detailed_caption: A teddy bear figure with a round body, outstretched arms, light brown color, smooth
+        texture.
+      usd_path: 0f27ac8853b7498892751acef48299cc.usd
+      size:
+      - 0.3871042728424072
+      - 0.4038982391357422
+      - 0.2237654661294073
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: couch_2
+  - action: find
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: gaze_at
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: pick
+    args:
+      target_category: teddy bear
+      target_description: Soft, plush teddy bear; rounded body, small ears, button-like eyes, light blue,
+        fluffy surface.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    _0ce234c918ef438c9c919848b137d7ba_on_couch_2_at_verify_task_1:
+      position:
+      - -3.4371323955144497
+      - 2.5224510030363345
+      - 0.46343039102386685
+      furniture: couch_2
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+  final_positions:
+    _0ce234c918ef438c9c919848b137d7ba_on_couch_2_at_verify_task_1:
+      initial_pos:
+      - -3.4371323955144497
+      - 2.5224510030363345
+      - 0.5634303910238668
+      final_pos:
+      - -3.4398458003997803
+      - 2.529048442840576
+      - 0.4273466169834137
+      category: teddy bear
+      original_id: _0ce234c918ef438c9c919848b137d7ba
+  family: FDP
+  benchmark_task_id: FDP/verify_task_1
+  benchmark_instruction: First, drive to the couch in front of the TV to find the soft, plush teddy bear;
+    rounded body, small ears, button-like eyes, light blue, fluffy surface, then deliver it to the rectangular
+    table.
+  global_index: 0
+  target_object_id: _0ce234c918ef438c9c919848b137d7ba

@@ -1,0 +1,217 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a8e94e67_1fc6_483b_baae_d43260c7fb41_on_electriccooker_0_at_verify_task_259:
+    original_id: a8e94e67_1fc6_483b_baae_d43260c7fb41
+    category: egg
+    usd_path: ${MESATASK_USD_ROOT}/a8e94e67-1fc6-483b-baae-d43260c7fb41.usd
+    usd_scale:
+    - 4.593174890912324
+    - 4.739191687257532
+    - 4.168613621512017
+    position:
+    - -4.894511608434565
+    - -3.9744118082841
+    - 1.055808758722851
+    size:
+    - 0.086212158203125
+    - 0.07420492172241211
+    - 0.06250015256227925
+episodes:
+- benchmark_task_id: FDO/verify_task_259
+  family: FDO
+  task_id: verify_task_259
+  episode_idx: 41
+  original_idx: 259
+  benchmark_instruction: Move an egg located at the only electriccooker in the scene to white unit with
+    flat wood handles.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: retrieve
+  task_description: Move an egg located at the only electriccooker in the scene to white unit with flat
+    wood handles.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - a8e94e67_1fc6_483b_baae_d43260c7fb41
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - a8e94e67_1fc6_483b_baae_d43260c7fb41
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: electriccooker_0
+  src_distractors: []
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    a8e94e67_1fc6_483b_baae_d43260c7fb41:
+      category: egg
+      usd_path: a8e94e67-1fc6-483b-baae-d43260c7fb41.usd
+      size:
+      - 0.086212158203125
+      - 0.07420492172241211
+      - 0.06250015256227925
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: find
+    args:
+      target_category: egg
+  - action: gaze_at
+    args:
+      target_category: egg
+  - action: pick
+    args:
+      target_category: egg
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    a8e94e67_1fc6_483b_baae_d43260c7fb41_on_electriccooker_0_at_verify_task_259:
+      position:
+      - -4.894511608434565
+      - -3.9744118082841
+      - 1.055808758722851
+      furniture: electriccooker_0
+      original_id: a8e94e67_1fc6_483b_baae_d43260c7fb41
+  final_positions:
+    a8e94e67_1fc6_483b_baae_d43260c7fb41_on_electriccooker_0_at_verify_task_259:
+      initial_pos:
+      - -4.894511608434565
+      - -3.9744118082841
+      - 1.1558087587228512
+      final_pos:
+      - -4.828920364379883
+      - -3.9765286445617676
+      - 1.1130216121673584
+      category: egg
+      original_id: a8e94e67_1fc6_483b_baae_d43260c7fb41
+  global_index: 169
+  target_object_id: a8e94e67_1fc6_483b_baae_d43260c7fb41

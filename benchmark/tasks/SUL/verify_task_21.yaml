@@ -1,0 +1,300 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  df44fd1299e2413eadf9988b75bc6016_on_table_2_at_verify_task_21:
+    original_id: df44fd1299e2413eadf9988b75bc6016
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/df44fd1299e2413eadf9988b75bc6016.usd
+    usd_scale:
+    - 0.16020135001806413
+    - 0.1617695464048316
+    - 0.15115826299050503
+    position:
+    - -2.4543084504610193
+    - 2.9585793786168004
+    - 0.346828957795442
+    size:
+    - 0.49301910400390625
+    - 0.23620223999023438
+    - 0.1136819148050563
+    detailed_caption: Rectangular tray with low sides, smooth glossy surface, rounded corners, and sturdy
+      legs.
+  _7b5c4f45ce5b4821a007cc53c7b02832_on_table_2_at_verify_task_21:
+    original_id: _7b5c4f45ce5b4821a007cc53c7b02832
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/7b5c4f45ce5b4821a007cc53c7b02832.usd
+    usd_scale:
+    - 0.3172392668992932
+    - 0.31734807024419937
+    - 0.25842796918348926
+    position:
+    - -2.452059738390737
+    - 2.4913646550973723
+    - 0.3792877476476133
+    size:
+    - 0.23151779174804688
+    - 0.20578384399414062
+    - 0.17859949450939894
+    detailed_caption: Round ceramic bowl, smooth surface, subtle design, light color with earthy tones,
+      flared rim.
+  dfa6aa249a084554ae007301f853e115_on_table_2_at_verify_task_21:
+    original_id: dfa6aa249a084554ae007301f853e115
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/dfa6aa249a084554ae007301f853e115.usd
+    usd_scale:
+    - 0.20617608669522425
+    - 0.2058480137610474
+    - 0.20540912057294902
+    position:
+    - -2.2145621600257894
+    - 3.2804577450247727
+    - 0.39725142925046386
+    size:
+    - 0.21658706665039062
+    - 0.2021503448486328
+    - 0.21452685771510005
+    detailed_caption: Round bowl with a smooth, glossy surface and four short, sturdy legs.
+episodes:
+- task_id: verify_task_21
+  episode_idx: 18
+  original_idx: 21
+  benchmark_instruction: First, drive to the table much smaller than another one to find a food serving
+    container, then deliver it to the table where we have dinner.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the rectangular tray with low sides, smooth glossy surface, rounded corners,
+    and sturdy legs located at the table much smaller than another one to the table where we have dinner.
+  fuzzy_task_description: First, drive to the table much smaller than another one to find a food serving
+    container, then deliver it to the table where we have dinner.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - df44fd1299e2413eadf9988b75bc6016
+      - _7b5c4f45ce5b4821a007cc53c7b02832
+      - dfa6aa249a084554ae007301f853e115
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - df44fd1299e2413eadf9988b75bc6016
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _7b5c4f45ce5b4821a007cc53c7b02832
+      - dfa6aa249a084554ae007301f853e115
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    df44fd1299e2413eadf9988b75bc6016:
+      category: tray
+      detailed_caption: Rectangular tray with low sides, smooth glossy surface, rounded corners, and sturdy
+        legs.
+      usd_path: df44fd1299e2413eadf9988b75bc6016.usd
+      size:
+      - 0.49301910400390625
+      - 0.23620223999023438
+      - 0.1136819148050563
+  obj_distractors:
+  - _7b5c4f45ce5b4821a007cc53c7b02832
+  - dfa6aa249a084554ae007301f853e115
+  obj_distractor_meta:
+    _7b5c4f45ce5b4821a007cc53c7b02832:
+      category: bowl
+      detailed_caption: Round ceramic bowl, smooth surface, subtle design, light color with earthy tones,
+        flared rim.
+      usd_path: 7b5c4f45ce5b4821a007cc53c7b02832.usd
+      size:
+      - 0.23151779174804688
+      - 0.20578384399414062
+      - 0.17859949450939894
+    dfa6aa249a084554ae007301f853e115:
+      category: bowl
+      detailed_caption: Round bowl with a smooth, glossy surface and four short, sturdy legs.
+      usd_path: dfa6aa249a084554ae007301f853e115.usd
+      size:
+      - 0.21658706665039062
+      - 0.2021503448486328
+      - 0.21452685771510005
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular tray with low sides, smooth glossy surface, rounded corners, and
+        sturdy legs.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular tray with low sides, smooth glossy surface, rounded corners, and
+        sturdy legs.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular tray with low sides, smooth glossy surface, rounded corners, and
+        sturdy legs.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Move the rectangular tray with low sides, smooth glossy surface, rounded corners,
+    and sturdy legs located at the table much smaller than another one to the table where we have dinner.
+  placements:
+    df44fd1299e2413eadf9988b75bc6016_on_table_2_at_verify_task_21:
+      position:
+      - -2.4543084504610193
+      - 2.9585793786168004
+      - 0.346828957795442
+      furniture: table_2
+      original_id: df44fd1299e2413eadf9988b75bc6016
+    _7b5c4f45ce5b4821a007cc53c7b02832_on_table_2_at_verify_task_21:
+      position:
+      - -2.452059738390737
+      - 2.4913646550973723
+      - 0.3792877476476133
+      furniture: table_2
+      original_id: _7b5c4f45ce5b4821a007cc53c7b02832
+    dfa6aa249a084554ae007301f853e115_on_table_2_at_verify_task_21:
+      position:
+      - -2.2145621600257894
+      - 3.2804577450247727
+      - 0.39725142925046386
+      furniture: table_2
+      original_id: dfa6aa249a084554ae007301f853e115
+  final_positions:
+    df44fd1299e2413eadf9988b75bc6016_on_table_2_at_verify_task_21:
+      initial_pos:
+      - -2.4543084504610193
+      - 2.9585793786168004
+      - 0.44682895779544196
+      final_pos:
+      - -2.442821741104126
+      - 2.83195161819458
+      - 0.3263062536716461
+      category: tray
+      original_id: df44fd1299e2413eadf9988b75bc6016
+    _7b5c4f45ce5b4821a007cc53c7b02832_on_table_2_at_verify_task_21:
+      initial_pos:
+      - -2.452059738390737
+      - 2.4913646550973723
+      - 0.4792877476476133
+      final_pos:
+      - -2.4462316036224365
+      - 2.432466506958008
+      - 0.33097395300865173
+      category: bowl
+      original_id: _7b5c4f45ce5b4821a007cc53c7b02832
+    dfa6aa249a084554ae007301f853e115_on_table_2_at_verify_task_21:
+      initial_pos:
+      - -2.2145621600257894
+      - 3.2804577450247727
+      - 0.49725142925046384
+      final_pos:
+      - -2.100769519805908
+      - 3.228593349456787
+      - 0.34700581431388855
+      category: bowl
+      original_id: dfa6aa249a084554ae007301f853e115
+  family: SUL
+  benchmark_task_id: SUL/verify_task_21
+  global_index: 194
+  target_object_id: df44fd1299e2413eadf9988b75bc6016

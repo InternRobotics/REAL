@@ -1,0 +1,262 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_15:
+    original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/2a7bbe16-c154-4ecb-adb6-9cd3548c588d.usd
+    usd_scale:
+    - 22.417340605209134
+    - 20.832840710833366
+    - 22.872220378479863
+    position:
+    - -2.937956658188712
+    - -1.3161859810008298
+    - 0.9413099920598325
+    size:
+    - 0.16703033447265625
+    - 0.413726806640625
+    - 0.35462018725229427
+    detailed_caption: Compact espresso coffee maker with a shiny black and white exterior, textured base,
+      and brewing head.
+  _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_2_at_verify_task_15:
+    original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/2a7bbe16-c154-4ecb-adb6-9cd3548c588d.usd
+    usd_scale:
+    - 22.417340605209134
+    - 20.832840710833366
+    - 22.872220378479863
+    position:
+    - -2.212183263978381
+    - 2.897262479054541
+    - 0.46729809401906097
+    size:
+    - 0.16703033447265625
+    - 0.413726806640625
+    - 0.35462018725229427
+    detailed_caption: Compact espresso coffee maker with a shiny black and white exterior, textured base,
+      and brewing head.
+episodes:
+- task_id: verify_task_15
+  episode_idx: 8
+  original_idx: 15
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the compact espresso coffee maker with a shiny black and white exterior,
+    textured base, and brewing head from the table much larger than another one and deposit it at white
+    desk in front of a picture.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d:
+      category: coffee maker
+      detailed_caption: Compact espresso coffee maker with a shiny black and white exterior, textured
+        base, and brewing head.
+      usd_path: 2a7bbe16-c154-4ecb-adb6-9cd3548c588d.usd
+      size:
+      - 0.16703033447265625
+      - 0.413726806640625
+      - 0.35462018725229427
+  obj_distractors:
+  - _81dc088e5036400c80862f6815c8a3c8
+  - _44decb6a_f7fc_4069_8232_88e0baa0ed6a
+  obj_distractor_meta:
+    _81dc088e5036400c80862f6815c8a3c8:
+      category: container
+      detailed_caption: Cylindrical container with a black lid, chalkboard design, smooth surface, minimalist
+        appearance.
+      usd_path: 81dc088e5036400c80862f6815c8a3c8.usd
+      size:
+      - 0.1313934326171875
+      - 0.1638317108154297
+      - 0.1511125210672617
+    _44decb6a_f7fc_4069_8232_88e0baa0ed6a:
+      category: coffee maker
+      detailed_caption: Modern coffee maker, sleek octagonal design, aluminum material, sturdy handle,
+        polished surface.
+      usd_path: 44decb6a-f7fc-4069-8232-88e0baa0ed6a.usd
+      size:
+      - 0.28307342529296875
+      - 0.3623027801513672
+      - 0.16473762271925807
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: coffee maker
+      target_description: Compact espresso coffee maker with a shiny black and white exterior, textured
+        base, and brewing head.
+  - action: gaze_at
+    args:
+      target_category: coffee maker
+      target_description: Compact espresso coffee maker with a shiny black and white exterior, textured
+        base, and brewing head.
+  - action: pick
+    args:
+      target_category: coffee maker
+      target_description: Compact espresso coffee maker with a shiny black and white exterior, textured
+        base, and brewing head.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  placements:
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_15:
+      position:
+      - -2.937956658188712
+      - -1.3161859810008298
+      - 0.9413099920598325
+      furniture: table_1
+      original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_2_at_verify_task_15:
+      position:
+      - -2.212183263978381
+      - 2.897262479054541
+      - 0.46729809401906097
+      furniture: table_2
+      original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+  final_positions:
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_15:
+      initial_pos:
+      - -2.937956658188712
+      - -1.3161859810008298
+      - 1.0413099920598325
+      final_pos:
+      - -2.676982879638672
+      - -1.3306082487106323
+      - 0.826032817363739
+      category: coffee maker
+      original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_2_at_verify_task_15:
+      initial_pos:
+      - -2.212183263978381
+      - 2.897262479054541
+      - 0.567298094019061
+      final_pos:
+      - -1.974226951599121
+      - 2.8774969577789307
+      - 0.35394495725631714
+      category: coffee maker
+      original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+  family: FDP
+  benchmark_task_id: FDP/verify_task_15
+  benchmark_instruction: Retrieve the compact espresso coffee maker with a shiny black and white exterior,
+    textured base, and brewing head from the table much larger than another one and deposit it at white
+    desk in front of a picture.
+  global_index: 8
+  target_object_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d

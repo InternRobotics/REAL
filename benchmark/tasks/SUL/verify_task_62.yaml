@@ -1,0 +1,308 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _489266e9e2c44b5fbba13b2d933956f8_on_table_1_at_verify_task_62:
+    original_id: _489266e9e2c44b5fbba13b2d933956f8
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/489266e9e2c44b5fbba13b2d933956f8.usd
+    usd_scale:
+    - 0.6655810428118916
+    - 0.62965343025755
+    - 0.6616748658791926
+    position:
+    - -1.9642532942327535
+    - -1.0992583694365488
+    - 0.7976247400042848
+    size:
+    - 0.11517524719238281
+    - 0.12517261505126953
+    - 0.06724968314119906
+    detailed_caption: Round clock with a black octagonal frame, clear glass, white background, and black
+      hands.
+  e1570963f72a486686aa7d095ace5f03_on_table_1_at_verify_task_62:
+    original_id: e1570963f72a486686aa7d095ace5f03
+    category: timer
+    usd_path: ${MESATASK_USD_ROOT}/e1570963f72a486686aa7d095ace5f03.usd
+    usd_scale:
+    - 1.8601464045427547
+    - 1.8608107853252336
+    - 1.8636138368177166
+    position:
+    - -3.0129451583365547
+    - -1.2952458348147302
+    - 0.7826329717459157
+    size:
+    - 0.16184616088867188
+    - 0.165863037109375
+    - 0.037266146624460816
+    detailed_caption: Round, compact timer with a glossy orange finish, digital display, and top buttons.
+  _98acd80e57204118ba67acf93b3ad735_on_table_1_at_verify_task_62:
+    original_id: _98acd80e57204118ba67acf93b3ad735
+    category: watch
+    usd_path: ${MESATASK_USD_ROOT}/98acd80e57204118ba67acf93b3ad735.usd
+    usd_scale:
+    - 8.101452032700916
+    - 8.191254751347781
+    - 8.592814903555672
+    position:
+    - -2.1537319080136683
+    - -1.0739308295394638
+    - 0.767999909974169
+    size:
+    - 0.0952606201171875
+    - 0.1350434646010399
+    - 0.008000023080967367
+    detailed_caption: Round face, black leather strap, minimalistic dial, stainless steel casing, elegant
+      appearance.
+episodes:
+- task_id: verify_task_62
+  episode_idx: 43
+  original_idx: 62
+  benchmark_instruction: Move a timekeeping device located at the table where we have dinner to cabinet
+    with vertical slatted wall unit.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to the table where we have dinner, pick up the round clock with a black octagonal
+    frame, clear glass, white background, and black hands, then travel to cabinet with vertical slatted
+    wall unit to place it.
+  fuzzy_task_description: Move a timekeeping device located at the table where we have dinner to cabinet
+    with vertical slatted wall unit.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _489266e9e2c44b5fbba13b2d933956f8
+      - e1570963f72a486686aa7d095ace5f03
+      - _98acd80e57204118ba67acf93b3ad735
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - e1570963f72a486686aa7d095ace5f03
+      - _98acd80e57204118ba67acf93b3ad735
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _489266e9e2c44b5fbba13b2d933956f8
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _489266e9e2c44b5fbba13b2d933956f8:
+      category: clock
+      detailed_caption: Round clock with a black octagonal frame, clear glass, white background, and black
+        hands.
+      usd_path: 489266e9e2c44b5fbba13b2d933956f8.usd
+      size:
+      - 0.11517524719238281
+      - 0.12517261505126953
+      - 0.06724968314119906
+  obj_distractors:
+  - e1570963f72a486686aa7d095ace5f03
+  - _98acd80e57204118ba67acf93b3ad735
+  obj_distractor_meta:
+    e1570963f72a486686aa7d095ace5f03:
+      category: timer
+      detailed_caption: Round, compact timer with a glossy orange finish, digital display, and top buttons.
+      usd_path: e1570963f72a486686aa7d095ace5f03.usd
+      size:
+      - 0.16184616088867188
+      - 0.165863037109375
+      - 0.037266146624460816
+    _98acd80e57204118ba67acf93b3ad735:
+      category: watch
+      detailed_caption: Round face, black leather strap, minimalistic dial, stainless steel casing, elegant
+        appearance.
+      usd_path: 98acd80e57204118ba67acf93b3ad735.usd
+      size:
+      - 0.0952606201171875
+      - 0.1350434646010399
+      - 0.008000023080967367
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: Round clock with a black octagonal frame, clear glass, white background, and
+        black hands.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Round clock with a black octagonal frame, clear glass, white background, and
+        black hands.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Round clock with a black octagonal frame, clear glass, white background, and
+        black hands.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  physics_task_description: Go to the table where we have dinner, pick up the round clock with a black
+    octagonal frame, clear glass, white background, and black hands, then travel to cabinet with vertical
+    slatted wall unit to place it.
+  placements:
+    _489266e9e2c44b5fbba13b2d933956f8_on_table_1_at_verify_task_62:
+      position:
+      - -1.9642532942327535
+      - -1.0992583694365488
+      - 0.7976247400042848
+      furniture: table_1
+      original_id: _489266e9e2c44b5fbba13b2d933956f8
+    e1570963f72a486686aa7d095ace5f03_on_table_1_at_verify_task_62:
+      position:
+      - -3.0129451583365547
+      - -1.2952458348147302
+      - 0.7826329717459157
+      furniture: table_1
+      original_id: e1570963f72a486686aa7d095ace5f03
+    _98acd80e57204118ba67acf93b3ad735_on_table_1_at_verify_task_62:
+      position:
+      - -2.1537319080136683
+      - -1.0739308295394638
+      - 0.767999909974169
+      furniture: table_1
+      original_id: _98acd80e57204118ba67acf93b3ad735
+  final_positions:
+    _489266e9e2c44b5fbba13b2d933956f8_on_table_1_at_verify_task_62:
+      initial_pos:
+      - -1.9642532942327535
+      - -1.0992583694365488
+      - 0.8976247400042848
+      final_pos:
+      - -1.963078498840332
+      - -1.0992047786712646
+      - 0.7775575518608093
+      category: clock
+      original_id: _489266e9e2c44b5fbba13b2d933956f8
+    e1570963f72a486686aa7d095ace5f03_on_table_1_at_verify_task_62:
+      initial_pos:
+      - -3.0129451583365547
+      - -1.2952458348147302
+      - 0.8826329717459157
+      final_pos:
+      - -2.9839746952056885
+      - -1.1842325925827026
+      - 0.7585635185241699
+      category: timer
+      original_id: e1570963f72a486686aa7d095ace5f03
+    _98acd80e57204118ba67acf93b3ad735_on_table_1_at_verify_task_62:
+      initial_pos:
+      - -2.1537319080136683
+      - -1.0739308295394638
+      - 0.867999909974169
+      final_pos:
+      - -2.1971282958984375
+      - -0.9945409893989563
+      - 0.7482261657714844
+      category: watch
+      original_id: _98acd80e57204118ba67acf93b3ad735
+  family: SUL
+  benchmark_task_id: SUL/verify_task_62
+  global_index: 219
+  target_object_id: _489266e9e2c44b5fbba13b2d933956f8

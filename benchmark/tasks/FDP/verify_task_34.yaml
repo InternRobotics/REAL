@@ -1,0 +1,374 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _6ee880f18770404998bbaea14fb8d35a_on_cabinet_6_at_verify_task_34:
+    original_id: _6ee880f18770404998bbaea14fb8d35a
+    category: toothbrush
+    usd_path: ${MESATASK_USD_ROOT}/6ee880f18770404998bbaea14fb8d35a.usd
+    usd_scale:
+    - 2.6158933110038687
+    - 2.519210942314545
+    - 2.5775233387656664
+    position:
+    - 2.626662897395751
+    - -1.0624249440851103
+    - 0.7449253399495501
+    size:
+    - 0.01807403564453125
+    - 0.19624090194702148
+    - 0.013850690389517695
+    detailed_caption: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip surface,
+      bright colors.
+  _6ee880f18770404998bbaea14fb8d35a_on_cabinet_7_at_verify_task_34:
+    original_id: _6ee880f18770404998bbaea14fb8d35a
+    category: toothbrush
+    usd_path: ${MESATASK_USD_ROOT}/6ee880f18770404998bbaea14fb8d35a.usd
+    usd_scale:
+    - 2.6158933110038687
+    - 2.519210942314545
+    - 2.5775233387656664
+    position:
+    - 1.3261113058007914
+    - 1.6829611126804418
+    - 0.8634753425244708
+    size:
+    - 0.01807403564453125
+    - 0.19624090194702148
+    - 0.013850690389517695
+    detailed_caption: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip surface,
+      bright colors.
+  _6ee880f18770404998bbaea14fb8d35a_on_cabinet_8_at_verify_task_34:
+    original_id: _6ee880f18770404998bbaea14fb8d35a
+    category: toothbrush
+    usd_path: ${MESATASK_USD_ROOT}/6ee880f18770404998bbaea14fb8d35a.usd
+    usd_scale:
+    - 2.6158933110038687
+    - 2.519210942314545
+    - 2.5775233387656664
+    position:
+    - 4.631826629104572
+    - 2.877250242189788
+    - 0.4774253268365283
+    size:
+    - 0.01807403564453125
+    - 0.19624090194702148
+    - 0.013850690389517695
+    detailed_caption: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip surface,
+      bright colors.
+  _6ee880f18770404998bbaea14fb8d35a_on_cabinet_9_at_verify_task_34:
+    original_id: _6ee880f18770404998bbaea14fb8d35a
+    category: toothbrush
+    usd_path: ${MESATASK_USD_ROOT}/6ee880f18770404998bbaea14fb8d35a.usd
+    usd_scale:
+    - 2.6158933110038687
+    - 2.519210942314545
+    - 2.5775233387656664
+    position:
+    - 6.090574555083936
+    - 1.2808936111659979
+    - 0.9669253428105731
+    size:
+    - 0.01807403564453125
+    - 0.19624090194702148
+    - 0.013850690389517695
+    detailed_caption: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip surface,
+      bright colors.
+  _6ee880f18770404998bbaea14fb8d35a_on_cabinet_10_at_verify_task_34:
+    original_id: _6ee880f18770404998bbaea14fb8d35a
+    category: toothbrush
+    usd_path: ${MESATASK_USD_ROOT}/6ee880f18770404998bbaea14fb8d35a.usd
+    usd_scale:
+    - 2.6158933110038687
+    - 2.519210942314545
+    - 2.5775233387656664
+    position:
+    - 3.2066744703570658
+    - -0.5428015410099327
+    - 0.49992533518117854
+    size:
+    - 0.01807403564453125
+    - 0.19624090194702148
+    - 0.013850690389517695
+    detailed_caption: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip surface,
+      bright colors.
+episodes:
+- task_id: verify_task_34
+  episode_idx: 23
+  original_idx: 34
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to white cabinet next to the washingmachine, grasp the slender toothbrush
+    with a soft bristle head, curved ergonomic handle, non-slip surface, bright colors, and carry it to
+    the table much larger than another one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _6ee880f18770404998bbaea14fb8d35a
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _6ee880f18770404998bbaea14fb8d35a
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _6ee880f18770404998bbaea14fb8d35a
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _6ee880f18770404998bbaea14fb8d35a
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _6ee880f18770404998bbaea14fb8d35a
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _6ee880f18770404998bbaea14fb8d35a
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_7
+  src_distractors:
+  - cabinet_6
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _6ee880f18770404998bbaea14fb8d35a:
+      category: toothbrush
+      detailed_caption: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip
+        surface, bright colors.
+      usd_path: 6ee880f18770404998bbaea14fb8d35a.usd
+      size:
+      - 0.01807403564453125
+      - 0.19624090194702148
+      - 0.013850690389517695
+  obj_distractors:
+  - _8be42d538a6543a0981e3e48b11410fe
+  - _69db4aa6_83b2_4468_8580_87e873ba11f2
+  obj_distractor_meta:
+    _8be42d538a6543a0981e3e48b11410fe:
+      category: brush
+      detailed_caption: Toothbrush with a light gray slender handle and blue bristles on the head.
+      usd_path: 8be42d538a6543a0981e3e48b11410fe.usd
+      size:
+      - 0.025630950927734375
+      - 1.6711559295654297
+      - 0.002148575775208883
+    _69db4aa6_83b2_4468_8580_87e873ba11f2:
+      category: toothbrush
+      detailed_caption: Sleek toothbrush with a blue and white curved handle and soft bristles.
+      usd_path: 69db4aa6-83b2-4468-8580-87e873ba11f2.usd
+      size:
+      - 0.19785308837890625
+      - 0.01711273193359375
+      - 0.018690031836740673
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: find
+    args:
+      target_category: toothbrush
+      target_description: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip
+        surface, bright colors.
+  - action: gaze_at
+    args:
+      target_category: toothbrush
+      target_description: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip
+        surface, bright colors.
+  - action: pick
+    args:
+      target_category: toothbrush
+      target_description: Slender toothbrush with a soft bristle head, curved ergonomic handle, non-slip
+        surface, bright colors.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_6_at_verify_task_34:
+      position:
+      - 2.626662897395751
+      - -1.0624249440851103
+      - 0.7449253399495501
+      furniture: cabinet_6
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_7_at_verify_task_34:
+      position:
+      - 1.3261113058007914
+      - 1.6829611126804418
+      - 0.8634753425244708
+      furniture: cabinet_7
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_8_at_verify_task_34:
+      position:
+      - 4.631826629104572
+      - 2.877250242189788
+      - 0.4774253268365283
+      furniture: cabinet_8
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_9_at_verify_task_34:
+      position:
+      - 6.090574555083936
+      - 1.2808936111659979
+      - 0.9669253428105731
+      furniture: cabinet_9
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_10_at_verify_task_34:
+      position:
+      - 3.2066744703570658
+      - -0.5428015410099327
+      - 0.49992533518117854
+      furniture: cabinet_10
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+  final_positions:
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_6_at_verify_task_34:
+      initial_pos:
+      - 2.626662897395751
+      - -1.0624249440851103
+      - 0.8449253399495501
+      final_pos:
+      - 2.626612901687622
+      - -0.9528612494468689
+      - 0.7205929160118103
+      category: brush
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_7_at_verify_task_34:
+      initial_pos:
+      - 1.3261113058007914
+      - 1.6829611126804418
+      - 0.9634753425244708
+      final_pos:
+      - 1.326348066329956
+      - 1.7939850091934204
+      - 0.8391425609588623
+      category: brush
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_8_at_verify_task_34:
+      initial_pos:
+      - 4.631826629104572
+      - 2.877250242189788
+      - 0.5774253268365283
+      final_pos:
+      - 4.631850242614746
+      - 2.9878437519073486
+      - 0.4530925750732422
+      category: brush
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_9_at_verify_task_34:
+      initial_pos:
+      - 6.090574555083936
+      - 1.2808936111659979
+      - 1.0669253428105732
+      final_pos:
+      - 6.090600490570068
+      - 1.3920248746871948
+      - 0.9425929188728333
+      category: brush
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+    _6ee880f18770404998bbaea14fb8d35a_on_cabinet_10_at_verify_task_34:
+      initial_pos:
+      - 3.2066744703570658
+      - -0.5428015410099327
+      - 0.5999253351811785
+      final_pos:
+      - 3.206521511077881
+      - -0.4319891035556793
+      - 0.47559261322021484
+      category: brush
+      original_id: _6ee880f18770404998bbaea14fb8d35a
+  family: FDP
+  benchmark_task_id: FDP/verify_task_34
+  benchmark_instruction: Navigate to white cabinet next to the washingmachine, grasp the slender toothbrush
+    with a soft bristle head, curved ergonomic handle, non-slip surface, bright colors, and carry it to
+    the table much larger than another one.
+  global_index: 23
+  target_object_id: _6ee880f18770404998bbaea14fb8d35a

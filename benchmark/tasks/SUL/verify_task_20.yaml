@@ -1,0 +1,310 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_20:
+    original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/9d0653ff-1a9d-46d6-91d0-f0d5739698e1.usd
+    usd_scale:
+    - 14.42849794144928
+    - 14.545888629114172
+    - 14.131672549110398
+    position:
+    - -2.1165241635001815
+    - -1.4904384238672952
+    - 0.7702914868668995
+    size:
+    - 0.2868843078613281
+    - 0.1930370330810547
+    - 0.012583176866428403
+    detailed_caption: Rectangular tray with a polished surface, sleek edges, reflective finish, and rounded
+      corners.
+  _1c0bedab21bc441fb846f6a9003f020e_on_table_1_at_verify_task_20:
+    original_id: _1c0bedab21bc441fb846f6a9003f020e
+    category: bowl plate
+    usd_path: ${MESATASK_USD_ROOT}/1c0bedab21bc441fb846f6a9003f020e.usd
+    usd_scale:
+    - 103.3496188491241
+    - 102.54274819845018
+    - 106.02856747684943
+    position:
+    - -1.7694140937751706
+    - -1.3038745274272208
+    - 0.7757176833215635
+    size:
+    - 0.25884246826171875
+    - 0.2568225860595703
+    - 0.02343556977575645
+    detailed_caption: Round ceramic plate with a smooth white surface and blue cracked pattern around
+      the rim.
+  _711b7ed943ff4dbaa4dbcc789cc9d047_on_table_1_at_verify_task_20:
+    original_id: _711b7ed943ff4dbaa4dbcc789cc9d047
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/711b7ed943ff4dbaa4dbcc789cc9d047.usd
+    usd_scale:
+    - 1.7215419405765506
+    - 1.6867850236962343
+    - 1.4421985146707132
+    position:
+    - -2.6087803693284366
+    - -1.2012045657607664
+    - 0.8566080522537232
+    size:
+    - 0.2153167724609375
+    - 0.22137451171875
+    - 0.18521630764007568
+    detailed_caption: Bowl with smooth, rounded shape, glossy finish, radiant yellow interior, soft white
+      exterior.
+episodes:
+- task_id: verify_task_20
+  episode_idx: 17
+  original_idx: 20
+  benchmark_instruction: Head over to the table where we have dinner, fetch a food serving container,
+    and bring it back to the table much smaller than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Take the rectangular tray with a polished surface, sleek edges, reflective finish,
+    and rounded corners from the table where we have dinner and put it on the table much smaller than
+    another one.
+  fuzzy_task_description: Head over to the table where we have dinner, fetch a food serving container,
+    and bring it back to the table much smaller than another one.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+      - _1c0bedab21bc441fb846f6a9003f020e
+      - _711b7ed943ff4dbaa4dbcc789cc9d047
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _1c0bedab21bc441fb846f6a9003f020e
+      - _711b7ed943ff4dbaa4dbcc789cc9d047
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1:
+      category: tray
+      detailed_caption: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+      usd_path: 9d0653ff-1a9d-46d6-91d0-f0d5739698e1.usd
+      size:
+      - 0.2868843078613281
+      - 0.1930370330810547
+      - 0.012583176866428403
+  obj_distractors:
+  - _1c0bedab21bc441fb846f6a9003f020e
+  - _711b7ed943ff4dbaa4dbcc789cc9d047
+  obj_distractor_meta:
+    _1c0bedab21bc441fb846f6a9003f020e:
+      category: bowl plate
+      detailed_caption: Round ceramic plate with a smooth white surface and blue cracked pattern around
+        the rim.
+      usd_path: 1c0bedab21bc441fb846f6a9003f020e.usd
+      size:
+      - 0.25884246826171875
+      - 0.2568225860595703
+      - 0.02343556977575645
+    _711b7ed943ff4dbaa4dbcc789cc9d047:
+      category: bowl
+      detailed_caption: Bowl with smooth, rounded shape, glossy finish, radiant yellow interior, soft
+        white exterior.
+      usd_path: 711b7ed943ff4dbaa4dbcc789cc9d047.usd
+      size:
+      - 0.2153167724609375
+      - 0.22137451171875
+      - 0.18521630764007568
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  physics_task_description: Take the rectangular tray with a polished surface, sleek edges, reflective
+    finish, and rounded corners from the table where we have dinner and put it on the table much smaller
+    than another one.
+  placements:
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_20:
+      position:
+      - -2.1165241635001815
+      - -1.4904384238672952
+      - 0.7702914868668995
+      furniture: table_1
+      original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    _1c0bedab21bc441fb846f6a9003f020e_on_table_1_at_verify_task_20:
+      position:
+      - -1.7694140937751706
+      - -1.3038745274272208
+      - 0.7757176833215635
+      furniture: table_1
+      original_id: _1c0bedab21bc441fb846f6a9003f020e
+    _711b7ed943ff4dbaa4dbcc789cc9d047_on_table_1_at_verify_task_20:
+      position:
+      - -2.6087803693284366
+      - -1.2012045657607664
+      - 0.8566080522537232
+      furniture: table_1
+      original_id: _711b7ed943ff4dbaa4dbcc789cc9d047
+  final_positions:
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_20:
+      initial_pos:
+      - -2.1165241635001815
+      - -1.4904384238672952
+      - 0.8702914868668995
+      final_pos:
+      - -2.1165237426757812
+      - -1.4904389381408691
+      - 0.749590277671814
+      category: tray
+      original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    _1c0bedab21bc441fb846f6a9003f020e_on_table_1_at_verify_task_20:
+      initial_pos:
+      - -1.7694140937751706
+      - -1.3038745274272208
+      - 0.8757176833215635
+      final_pos:
+      - -1.76924729347229
+      - -1.4378745555877686
+      - 0.7549975514411926
+      category: plate
+      original_id: _1c0bedab21bc441fb846f6a9003f020e
+    _711b7ed943ff4dbaa4dbcc789cc9d047_on_table_1_at_verify_task_20:
+      initial_pos:
+      - -2.6087803693284366
+      - -1.2012045657607664
+      - 0.9566080522537231
+      final_pos:
+      - -2.631948232650757
+      - -1.2160683870315552
+      - 0.8239659667015076
+      category: bowl
+      original_id: _711b7ed943ff4dbaa4dbcc789cc9d047
+  family: SUL
+  benchmark_task_id: SUL/verify_task_20
+  global_index: 193
+  target_object_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1

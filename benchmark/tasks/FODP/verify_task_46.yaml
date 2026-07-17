@@ -1,0 +1,335 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_46:
+    original_id: dfb60be05b914116b7178579e93516ed
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/dfb60be05b914116b7178579e93516ed.usd
+    usd_scale:
+    - 0.018298897491465328
+    - 0.01763507245730863
+    - 0.018331101247054563
+    position:
+    - -2.117146207626447
+    - -1.5920905109228072
+    - 0.7678793365880847
+    size:
+    - 0.12268638610839844
+    - 0.06080317497253418
+    - 0.00775887630879879
+    detailed_caption: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+  gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f_on_table_1_at_verify_task_46:
+    original_id: gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f
+    category: notebook
+    usd_path: ${MESATASK_USD_ROOT}/gen_eccdb0db-bdc5-4acb-bd31-5e8ab87d299f.usd
+    usd_scale:
+    - 6.71548566824704
+    - 6.7005464655984825
+    - 6.6913374696235755
+    position:
+    - -1.8952527908415515
+    - -1.1381945068510113
+    - 0.7924228948936798
+    size:
+    - 0.0613250732421875
+    - 0.13367462158203125
+    - 0.05684599291998893
+    detailed_caption: Cylindrical pen holder with a textured surface, vibrant exterior, unique graphic
+      designs, and sturdy base.
+  _1e305b5d90244f8ab23721d98150f425_on_table_1_at_verify_task_46:
+    original_id: _1e305b5d90244f8ab23721d98150f425
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/1e305b5d90244f8ab23721d98150f425.usd
+    usd_scale:
+    - 2.8832692827151476
+    - 2.8813974007342633
+    - 2.861801454098809
+    position:
+    - -2.1476306622791657
+    - -1.3584593936840026
+    - 0.7701847177773016
+    size:
+    - 0.12883949279785156
+    - 0.020580291748046875
+    - 0.01236963868723251
+    detailed_caption: Blue pen with turquoise cap and grip, sleek cylindrical shape, and fine tip.
+  dfb60be05b914116b7178579e93516ed_on_table_2_at_verify_task_46:
+    original_id: dfb60be05b914116b7178579e93516ed
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/dfb60be05b914116b7178579e93516ed.usd
+    usd_scale:
+    - 0.018298897491465328
+    - 0.01763507245730863
+    - 0.018331101247054563
+    position:
+    - -2.3082867332928076
+    - 3.4103222118881575
+    - 0.29386743854731323
+    size:
+    - 0.12268638610839844
+    - 0.06080317497253418
+    - 0.00775887630879879
+    detailed_caption: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+episodes:
+- benchmark_task_id: FODP/verify_task_46
+  family: FODP
+  task_id: verify_task_46
+  episode_idx: 23
+  original_idx: 46
+  benchmark_instruction: Head over to the rectangular table, fetch the cylindrical pen with a sleek, smooth,
+    shiny exterior and decorative elements, and bring it back to box table with circle insert.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Head over to the rectangular table, fetch the cylindrical pen with a sleek, smooth,
+    shiny exterior and decorative elements, and bring it back to box table with circle insert.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - dfb60be05b914116b7178579e93516ed
+      - gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f
+      - _1e305b5d90244f8ab23721d98150f425
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - dfb60be05b914116b7178579e93516ed
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f
+      - _1e305b5d90244f8ab23721d98150f425
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - dfb60be05b914116b7178579e93516ed
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - dfb60be05b914116b7178579e93516ed
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    dfb60be05b914116b7178579e93516ed:
+      category: pen
+      detailed_caption: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+      usd_path: dfb60be05b914116b7178579e93516ed.usd
+      size:
+      - 0.12268638610839844
+      - 0.06080317497253418
+      - 0.00775887630879879
+  obj_distractors:
+  - gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f
+  - _1e305b5d90244f8ab23721d98150f425
+  obj_distractor_meta:
+    gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f:
+      category: notebook
+      detailed_caption: Cylindrical pen holder with a textured surface, vibrant exterior, unique graphic
+        designs, and sturdy base.
+      usd_path: gen_eccdb0db-bdc5-4acb-bd31-5e8ab87d299f.usd
+      size:
+      - 0.0613250732421875
+      - 0.13367462158203125
+      - 0.05684599291998893
+    _1e305b5d90244f8ab23721d98150f425:
+      category: pen
+      detailed_caption: Blue pen with turquoise cap and grip, sleek cylindrical shape, and fine tip.
+      usd_path: 1e305b5d90244f8ab23721d98150f425.usd
+      size:
+      - 0.12883949279785156
+      - 0.020580291748046875
+      - 0.01236963868723251
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Cylindrical pen with a sleek, smooth, shiny exterior and decorative elements.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  placements:
+    dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_46:
+      position:
+      - -2.117146207626447
+      - -1.5920905109228072
+      - 0.7678793365880847
+      furniture: table_1
+      original_id: dfb60be05b914116b7178579e93516ed
+    gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f_on_table_1_at_verify_task_46:
+      position:
+      - -1.8952527908415515
+      - -1.1381945068510113
+      - 0.7924228948936798
+      furniture: table_1
+      original_id: gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f
+    _1e305b5d90244f8ab23721d98150f425_on_table_1_at_verify_task_46:
+      position:
+      - -2.1476306622791657
+      - -1.3584593936840026
+      - 0.7701847177773016
+      furniture: table_1
+      original_id: _1e305b5d90244f8ab23721d98150f425
+    dfb60be05b914116b7178579e93516ed_on_table_2_at_verify_task_46:
+      position:
+      - -2.3082867332928076
+      - 3.4103222118881575
+      - 0.29386743854731323
+      furniture: table_2
+      original_id: dfb60be05b914116b7178579e93516ed
+  final_positions:
+    dfb60be05b914116b7178579e93516ed_on_table_1_at_verify_task_46:
+      initial_pos:
+      - -2.117146207626447
+      - -1.5920905109228072
+      - 0.8678793365880847
+      final_pos:
+      - -2.0512983798980713
+      - -1.6265676021575928
+      - 0.7473319172859192
+      category: pencil pen
+      original_id: dfb60be05b914116b7178579e93516ed
+    gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f_on_table_1_at_verify_task_46:
+      initial_pos:
+      - -1.8952527908415515
+      - -1.1381945068510113
+      - 0.8924228948936798
+      final_pos:
+      - -1.9053770303726196
+      - -1.1377742290496826
+      - 0.7698792219161987
+      category: notebook
+      original_id: gen_eccdb0db_bdc5_4acb_bd31_5e8ab87d299f
+    _1e305b5d90244f8ab23721d98150f425_on_table_1_at_verify_task_46:
+      initial_pos:
+      - -2.1476306622791657
+      - -1.3584593936840026
+      - 0.8701847177773016
+      final_pos:
+      - -2.214820623397827
+      - -1.3462281227111816
+      - 0.7497263550758362
+      category: pen
+      original_id: _1e305b5d90244f8ab23721d98150f425
+    dfb60be05b914116b7178579e93516ed_on_table_2_at_verify_task_46:
+      initial_pos:
+      - -2.3082867332928076
+      - 3.4103222118881575
+      - 0.3938674385473132
+      final_pos:
+      - -2.243001937866211
+      - 3.372136354446411
+      - 0.27325719594955444
+      category: pencil pen
+      original_id: dfb60be05b914116b7178579e93516ed
+  global_index: 95
+  target_object_id: dfb60be05b914116b7178579e93516ed

@@ -1,0 +1,376 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_6_at_verify_task_190:
+    original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/51055f66-fd44-4966-85bc-d55cbd06276c.usd
+    usd_scale:
+    - 7.483435468307241
+    - 7.3609456969620295
+    - 8.504848010179122
+    position:
+    - 2.465519838080403
+    - -1.2438161920316813
+    - 0.7396133582910989
+    size:
+    - 0.032745361328125
+    - 0.14551424980163574
+    - 0.0032267270726151764
+    detailed_caption: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+      grip.
+  _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_7_at_verify_task_190:
+    original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/51055f66-fd44-4966-85bc-d55cbd06276c.usd
+    usd_scale:
+    - 7.483435468307241
+    - 7.3609456969620295
+    - 8.504848010179122
+    position:
+    - 0.9713133892687652
+    - 1.7125830070975971
+    - 0.8581633608660195
+    size:
+    - 0.032745361328125
+    - 0.14551424980163574
+    - 0.0032267270726151764
+    detailed_caption: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+      grip.
+  _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_8_at_verify_task_190:
+    original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/51055f66-fd44-4966-85bc-d55cbd06276c.usd
+    usd_scale:
+    - 7.483435468307241
+    - 7.3609456969620295
+    - 8.504848010179122
+    position:
+    - 4.43987268606821
+    - 2.9603295145699664
+    - 0.472113345178077
+    size:
+    - 0.032745361328125
+    - 0.14551424980163574
+    - 0.0032267270726151764
+    detailed_caption: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+      grip.
+  _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_9_at_verify_task_190:
+    original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/51055f66-fd44-4966-85bc-d55cbd06276c.usd
+    usd_scale:
+    - 7.483435468307241
+    - 7.3609456969620295
+    - 8.504848010179122
+    position:
+    - 6.170969493532671
+    - 1.2950927180801601
+    - 0.9616133611521218
+    size:
+    - 0.032745361328125
+    - 0.14551424980163574
+    - 0.0032267270726151764
+    detailed_caption: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+      grip.
+  _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_10_at_verify_task_190:
+    original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/51055f66-fd44-4966-85bc-d55cbd06276c.usd
+    usd_scale:
+    - 7.483435468307241
+    - 7.3609456969620295
+    - 8.504848010179122
+    position:
+    - 3.314486393154678
+    - -0.511063288782785
+    - 0.4946133535227273
+    size:
+    - 0.032745361328125
+    - 0.14551424980163574
+    - 0.0032267270726151764
+    detailed_caption: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+      grip.
+episodes:
+- task_id: verify_task_190
+  episode_idx: 40
+  original_idx: 190
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Pick up the sleek metallic pen with a streamlined shape, pointed tip, and elegant,
+    comfortable grip from cabinet with  grey cube with round mesh grill and place it on the table to place
+    my snack for watching TV.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _51055f66_fd44_4966_85bc_d55cbd06276c
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _51055f66_fd44_4966_85bc_d55cbd06276c
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _51055f66_fd44_4966_85bc_d55cbd06276c
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _51055f66_fd44_4966_85bc_d55cbd06276c
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _51055f66_fd44_4966_85bc_d55cbd06276c
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _51055f66_fd44_4966_85bc_d55cbd06276c
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_8
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _51055f66_fd44_4966_85bc_d55cbd06276c:
+      category: pen
+      detailed_caption: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+        grip.
+      usd_path: 51055f66-fd44-4966-85bc-d55cbd06276c.usd
+      size:
+      - 0.032745361328125
+      - 0.14551424980163574
+      - 0.0032267270726151764
+  obj_distractors:
+  - gen_39647c11_3911_439b_88a3_f898aeed7493
+  - _2d090a51da824b8a9f3550f5e2f105e0
+  obj_distractor_meta:
+    gen_39647c11_3911_439b_88a3_f898aeed7493:
+      category: pen holder
+      detailed_caption: Cylindrical pen holder with a metallic shine and a black base. Various colored
+        pencils and pens.
+      usd_path: gen_39647c11-3911-439b-88a3-f898aeed7493.usd
+      size:
+      - 0.12579727172851562
+      - 0.19942283630371094
+      - 0.07856966138933785
+    _2d090a51da824b8a9f3550f5e2f105e0:
+      category: pen
+      detailed_caption: Sleek ballpoint pen, blue and orange color scheme, rounded tip, smooth barrel
+        design, lightweight.
+      usd_path: 2d090a51da824b8a9f3550f5e2f105e0.usd
+      size:
+      - 0.11349678039550781
+      - 0.06548118591308594
+      - 0.0071810512454248965
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: find
+    args:
+      target_category: pen
+      target_description: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+        grip.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+        grip.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Sleek metallic pen with a streamlined shape, pointed tip, and elegant, comfortable
+        grip.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  placements:
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_6_at_verify_task_190:
+      position:
+      - 2.465519838080403
+      - -1.2438161920316813
+      - 0.7396133582910989
+      furniture: cabinet_6
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_7_at_verify_task_190:
+      position:
+      - 0.9713133892687652
+      - 1.7125830070975971
+      - 0.8581633608660195
+      furniture: cabinet_7
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_8_at_verify_task_190:
+      position:
+      - 4.43987268606821
+      - 2.9603295145699664
+      - 0.472113345178077
+      furniture: cabinet_8
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_9_at_verify_task_190:
+      position:
+      - 6.170969493532671
+      - 1.2950927180801601
+      - 0.9616133611521218
+      furniture: cabinet_9
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_10_at_verify_task_190:
+      position:
+      - 3.314486393154678
+      - -0.511063288782785
+      - 0.4946133535227273
+      furniture: cabinet_10
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+  final_positions:
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_6_at_verify_task_190:
+      initial_pos:
+      - 2.465519838080403
+      - -1.2438161920316813
+      - 0.8396133582910988
+      final_pos:
+      - 2.4654738903045654
+      - -1.2437509298324585
+      - 0.7184613943099976
+      category: pen
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_7_at_verify_task_190:
+      initial_pos:
+      - 0.9713133892687652
+      - 1.7125830070975971
+      - 0.9581633608660195
+      final_pos:
+      - 0.9713134169578552
+      - 1.7125855684280396
+      - 0.8370110988616943
+      category: pen
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_8_at_verify_task_190:
+      initial_pos:
+      - 4.43987268606821
+      - 2.9603295145699664
+      - 0.572113345178077
+      final_pos:
+      - 4.439826965332031
+      - 2.9603946208953857
+      - 0.450960636138916
+      category: pen
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_9_at_verify_task_190:
+      initial_pos:
+      - 6.170969493532671
+      - 1.2950927180801601
+      - 1.061613361152122
+      final_pos:
+      - 6.170967102050781
+      - 1.2950952053070068
+      - 0.9404609799385071
+      category: pen
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+    _51055f66_fd44_4966_85bc_d55cbd06276c_on_cabinet_10_at_verify_task_190:
+      initial_pos:
+      - 3.314486393154678
+      - -0.511063288782785
+      - 0.5946133535227273
+      final_pos:
+      - 3.3144400119781494
+      - -0.5109981298446655
+      - 0.47346046566963196
+      category: pen
+      original_id: _51055f66_fd44_4966_85bc_d55cbd06276c
+  family: FDP
+  benchmark_task_id: FDP/verify_task_190
+  benchmark_instruction: Pick up the sleek metallic pen with a streamlined shape, pointed tip, and elegant,
+    comfortable grip from cabinet with  grey cube with round mesh grill and place it on the table to place
+    my snack for watching TV.
+  global_index: 40
+  target_object_id: _51055f66_fd44_4966_85bc_d55cbd06276c

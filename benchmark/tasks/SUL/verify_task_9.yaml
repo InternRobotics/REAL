@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a77e88c7_f4a1_45e3_813a_df943607f8ff_on_table_2_at_verify_task_9:
+    original_id: a77e88c7_f4a1_45e3_813a_df943607f8ff
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/a77e88c7-f4a1-45e3-813a-df943607f8ff.usd
+    usd_scale:
+    - 21.062401659804586
+    - 17.886956687500913
+    - 19.928172914127284
+    position:
+    - -1.9957802296197373
+    - 3.220963418929001
+    - 0.30559490661791644
+    size:
+    - 0.3775520324707031
+    - 0.3553352355957031
+    - 0.031213812450005207
+    detailed_caption: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+      and elegant appearance.
+  _8ad22c7616da4ee39fe66fa982d840a2_on_table_2_at_verify_task_9:
+    original_id: _8ad22c7616da4ee39fe66fa982d840a2
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/8ad22c7616da4ee39fe66fa982d840a2.usd
+    usd_scale:
+    - 42.680487947620456
+    - 42.80807662106785
+    - 56.184123254015056
+    position:
+    - -2.4052728847865135
+    - 3.37725763018945
+    - 0.3230894808471203
+    size:
+    - 0.10409355163574219
+    - 0.10904693603515625
+    - 0.06620296090841293
+    detailed_caption: Bowl with rounded, irregular shape, rough texture, earthen coloration, and decorative
+      rim markings.
+  _976f5b6e9a1344628642051f680b176b_on_table_2_at_verify_task_9:
+    original_id: _976f5b6e9a1344628642051f680b176b
+    category: plate
+    usd_path: ${MESATASK_USD_ROOT}/976f5b6e9a1344628642051f680b176b.usd
+    usd_scale:
+    - 44.757950384792935
+    - 43.51541823427124
+    - 34.158146859662985
+    position:
+    - -2.2319364200906264
+    - 2.633658748862965
+    - 0.3140836916677654
+    size:
+    - 0.23193299025297165
+    - 0.22571182250976562
+    - 0.04819138254970312
+    detailed_caption: Round plate with two small handles, slightly raised edge, smooth rustic finish,
+      clay-like.
+episodes:
+- task_id: verify_task_9
+  episode_idx: 7
+  original_idx: 9
+  benchmark_instruction: Pick up a food serving container from the table much smaller than another one
+    and place it on the rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to the table much smaller than another one, grasp the sleek, rectangular
+    tray with raised edges, polished metallic surface, reflective and elegant appearance, and carry it
+    to the rectangular table.
+  fuzzy_task_description: Pick up a food serving container from the table much smaller than another one
+    and place it on the rectangular table.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - a77e88c7_f4a1_45e3_813a_df943607f8ff
+      - _8ad22c7616da4ee39fe66fa982d840a2
+      - _976f5b6e9a1344628642051f680b176b
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - a77e88c7_f4a1_45e3_813a_df943607f8ff
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _8ad22c7616da4ee39fe66fa982d840a2
+      - _976f5b6e9a1344628642051f680b176b
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    a77e88c7_f4a1_45e3_813a_df943607f8ff:
+      category: tray
+      detailed_caption: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+      usd_path: a77e88c7-f4a1-45e3-813a-df943607f8ff.usd
+      size:
+      - 0.3775520324707031
+      - 0.3553352355957031
+      - 0.031213812450005207
+  obj_distractors:
+  - _8ad22c7616da4ee39fe66fa982d840a2
+  - _976f5b6e9a1344628642051f680b176b
+  obj_distractor_meta:
+    _8ad22c7616da4ee39fe66fa982d840a2:
+      category: bowl
+      detailed_caption: Bowl with rounded, irregular shape, rough texture, earthen coloration, and decorative
+        rim markings.
+      usd_path: 8ad22c7616da4ee39fe66fa982d840a2.usd
+      size:
+      - 0.10409355163574219
+      - 0.10904693603515625
+      - 0.06620296090841293
+    _976f5b6e9a1344628642051f680b176b:
+      category: plate
+      detailed_caption: Round plate with two small handles, slightly raised edge, smooth rustic finish,
+        clay-like.
+      usd_path: 976f5b6e9a1344628642051f680b176b.usd
+      size:
+      - 0.23193299025297165
+      - 0.22571182250976562
+      - 0.04819138254970312
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: tray
+      target_description: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Navigate to the table much smaller than another one, grasp the sleek, rectangular
+    tray with raised edges, polished metallic surface, reflective and elegant appearance, and carry it
+    to the rectangular table.
+  placements:
+    a77e88c7_f4a1_45e3_813a_df943607f8ff_on_table_2_at_verify_task_9:
+      position:
+      - -1.9957802296197373
+      - 3.220963418929001
+      - 0.30559490661791644
+      furniture: table_2
+      original_id: a77e88c7_f4a1_45e3_813a_df943607f8ff
+    _8ad22c7616da4ee39fe66fa982d840a2_on_table_2_at_verify_task_9:
+      position:
+      - -2.4052728847865135
+      - 3.37725763018945
+      - 0.3230894808471203
+      furniture: table_2
+      original_id: _8ad22c7616da4ee39fe66fa982d840a2
+    _976f5b6e9a1344628642051f680b176b_on_table_2_at_verify_task_9:
+      position:
+      - -2.2319364200906264
+      - 2.633658748862965
+      - 0.3140836916677654
+      furniture: table_2
+      original_id: _976f5b6e9a1344628642051f680b176b
+  final_positions:
+    a77e88c7_f4a1_45e3_813a_df943607f8ff_on_table_2_at_verify_task_9:
+      initial_pos:
+      - -1.9957802296197373
+      - 3.220963418929001
+      - 0.4055949066179164
+      final_pos:
+      - -1.9957853555679321
+      - 3.2209744453430176
+      - 0.28447389602661133
+      category: tray
+      original_id: a77e88c7_f4a1_45e3_813a_df943607f8ff
+    _8ad22c7616da4ee39fe66fa982d840a2_on_table_2_at_verify_task_9:
+      initial_pos:
+      - -2.4052728847865135
+      - 3.37725763018945
+      - 0.4230894808471203
+      final_pos:
+      - -2.334925651550293
+      - 3.286956310272217
+      - 0.2923605740070343
+      category: bowl
+      original_id: _8ad22c7616da4ee39fe66fa982d840a2
+    _976f5b6e9a1344628642051f680b176b_on_table_2_at_verify_task_9:
+      initial_pos:
+      - -2.2319364200906264
+      - 2.633658748862965
+      - 0.4140836916677654
+      final_pos:
+      - -2.2775373458862305
+      - 2.5236895084381104
+      - 0.2988770008087158
+      category: plate
+      original_id: _976f5b6e9a1344628642051f680b176b
+  family: SUL
+  benchmark_task_id: SUL/verify_task_9
+  global_index: 183
+  target_object_id: a77e88c7_f4a1_45e3_813a_df943607f8ff

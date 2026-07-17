@@ -1,0 +1,256 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _15dcabb1_70ce_4726_adce_4970835529af_on_table_1_at_verify_task_199:
+    original_id: _15dcabb1_70ce_4726_adce_4970835529af
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/15dcabb1-70ce-4726-adce-4970835529af.usd
+    usd_scale:
+    - 52.98117606510016
+    - 19.70947559717589
+    - 3.220560104282455
+    position:
+    - -1.8063128838594094
+    - -1.200305085850424
+    - 0.7959821729341638
+    size:
+    - 0.2917947769165039
+    - 0.2847175598144531
+    - 0.06396454900095705
+    detailed_caption: Thick, square book with rounded edges, slightly textured cover, solid color finish.
+  _15dcabb1_70ce_4726_adce_4970835529af_on_table_2_at_verify_task_199:
+    original_id: _15dcabb1_70ce_4726_adce_4970835529af
+    category: book
+    usd_path: ${MESATASK_USD_ROOT}/15dcabb1-70ce-4726-adce-4970835529af.usd
+    usd_scale:
+    - 52.98117606510016
+    - 19.70947559717589
+    - 3.220560104282455
+    position:
+    - -2.385114664501499
+    - 2.7255347987455796
+    - 0.32197027489339236
+    size:
+    - 0.2917947769165039
+    - 0.2847175598144531
+    - 0.06396454900095705
+    detailed_caption: Thick, square book with rounded edges, slightly textured cover, solid color finish.
+episodes:
+- task_id: verify_task_199
+  episode_idx: 48
+  original_idx: 199
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the thick, square book with rounded edges, slightly textured cover, solid color
+    finish located at the table much smaller than another one to white desk in front of the blank wall.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _15dcabb1_70ce_4726_adce_4970835529af
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _15dcabb1_70ce_4726_adce_4970835529af
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _15dcabb1_70ce_4726_adce_4970835529af
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _15dcabb1_70ce_4726_adce_4970835529af:
+      category: book
+      detailed_caption: Thick, square book with rounded edges, slightly textured cover, solid color finish.
+      usd_path: 15dcabb1-70ce-4726-adce-4970835529af.usd
+      size:
+      - 0.2917947769165039
+      - 0.2847175598144531
+      - 0.06396454900095705
+  obj_distractors:
+  - a5cce410728140c492855a109f219ac1
+  - _67274dae2f9044f88f3198f7e83ffaa3
+  obj_distractor_meta:
+    a5cce410728140c492855a109f219ac1:
+      category: book
+      detailed_caption: Stack of two hardback books with dark blue glossy covers, bound with a green strap.
+      usd_path: a5cce410728140c492855a109f219ac1.usd
+      size:
+      - 0.2685661315917969
+      - 0.2966461181640625
+      - 0.10615757387131453
+    _67274dae2f9044f88f3198f7e83ffaa3:
+      category: book
+      detailed_caption: Rectangular book with a smooth cover, clean edges, and visible spine branding.
+      usd_path: 67274dae2f9044f88f3198f7e83ffaa3.usd
+      size:
+      - 0.21300125122070312
+      - 0.04344911687076092
+      - 0.2988793957233611
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: book
+      target_description: Thick, square book with rounded edges, slightly textured cover, solid color
+        finish.
+  - action: gaze_at
+    args:
+      target_category: book
+      target_description: Thick, square book with rounded edges, slightly textured cover, solid color
+        finish.
+  - action: pick
+    args:
+      target_category: book
+      target_description: Thick, square book with rounded edges, slightly textured cover, solid color
+        finish.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    _15dcabb1_70ce_4726_adce_4970835529af_on_table_1_at_verify_task_199:
+      position:
+      - -1.8063128838594094
+      - -1.200305085850424
+      - 0.7959821729341638
+      furniture: table_1
+      original_id: _15dcabb1_70ce_4726_adce_4970835529af
+    _15dcabb1_70ce_4726_adce_4970835529af_on_table_2_at_verify_task_199:
+      position:
+      - -2.385114664501499
+      - 2.7255347987455796
+      - 0.32197027489339236
+      furniture: table_2
+      original_id: _15dcabb1_70ce_4726_adce_4970835529af
+  final_positions:
+    _15dcabb1_70ce_4726_adce_4970835529af_on_table_1_at_verify_task_199:
+      initial_pos:
+      - -1.8063128838594094
+      - -1.200305085850424
+      - 0.8959821729341638
+      final_pos:
+      - -1.806328535079956
+      - -1.2002906799316406
+      - 0.7757682204246521
+      category: book
+      original_id: _15dcabb1_70ce_4726_adce_4970835529af
+    _15dcabb1_70ce_4726_adce_4970835529af_on_table_2_at_verify_task_199:
+      initial_pos:
+      - -2.385114664501499
+      - 2.7255347987455796
+      - 0.42197027489339234
+      final_pos:
+      - -2.3851215839385986
+      - 2.7255592346191406
+      - 0.3017560541629791
+      category: book
+      original_id: _15dcabb1_70ce_4726_adce_4970835529af
+  family: FDP
+  benchmark_task_id: FDP/verify_task_199
+  benchmark_instruction: Move the thick, square book with rounded edges, slightly textured cover, solid
+    color finish located at the table much smaller than another one to white desk in front of the blank
+    wall.
+  global_index: 48
+  target_object_id: _15dcabb1_70ce_4726_adce_4970835529af

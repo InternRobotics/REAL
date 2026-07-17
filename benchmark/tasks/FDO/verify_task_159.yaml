@@ -1,0 +1,211 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  c65e566bf1004f5385770a4f28eec736_on_pot_0_at_verify_task_159:
+    original_id: c65e566bf1004f5385770a4f28eec736
+    category: pepper
+    usd_path: ${MESATASK_USD_ROOT}/c65e566bf1004f5385770a4f28eec736.usd
+    usd_scale:
+    - 9.049234773886601
+    - 9.060817549699218
+    - 8.943785814545391
+    position:
+    - -5.194522501065336
+    - -5.628338936379512
+    - 1.023415476065129
+    size:
+    - 0.09051513671875
+    - 0.13232421875
+    - 0.09120418783277273
+episodes:
+- benchmark_task_id: FDO/verify_task_159
+  family: FDO
+  task_id: verify_task_159
+  episode_idx: 39
+  original_idx: 159
+  benchmark_instruction: Bring a pepper from the pot on the stove to the only electriccooker in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Bring a pepper from the pot on the stove to the only electriccooker in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - c65e566bf1004f5385770a4f28eec736
+      door: false
+  src: pot_0
+  src_distractors: []
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    c65e566bf1004f5385770a4f28eec736:
+      category: pepper
+      usd_path: c65e566bf1004f5385770a4f28eec736.usd
+      size:
+      - 0.09051513671875
+      - 0.13232421875
+      - 0.09120418783277273
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: pot_0
+  - action: find
+    args:
+      target_category: pepper
+  - action: gaze_at
+    args:
+      target_category: pepper
+  - action: pick
+    args:
+      target_category: pepper
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    c65e566bf1004f5385770a4f28eec736_on_pot_0_at_verify_task_159:
+      position:
+      - -5.194522501065336
+      - -5.628338936379512
+      - 1.023415476065129
+      furniture: pot_0
+      original_id: c65e566bf1004f5385770a4f28eec736
+  final_positions:
+    c65e566bf1004f5385770a4f28eec736_on_pot_0_at_verify_task_159:
+      initial_pos:
+      - -5.194522501065336
+      - -5.628338936379512
+      - 1.1234154760651291
+      final_pos:
+      - -5.227705478668213
+      - -5.622191429138184
+      - 0.9188833236694336
+      category: pepper
+      original_id: c65e566bf1004f5385770a4f28eec736
+  global_index: 167
+  target_object_id: c65e566bf1004f5385770a4f28eec736

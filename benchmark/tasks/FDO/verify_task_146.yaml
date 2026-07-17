@@ -1,0 +1,213 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _44612bb17e7d43e4adfbe57b7649027e_on_potlid_0_at_verify_task_146:
+    original_id: _44612bb17e7d43e4adfbe57b7649027e
+    category: fruit
+    usd_path: ${MESATASK_USD_ROOT}/44612bb17e7d43e4adfbe57b7649027e.usd
+    usd_scale:
+    - 4.3943398845645785
+    - 4.43242579183466
+    - 4.436723422446903
+    position:
+    - -5.1749498684903426
+    - -5.641580239876843
+    - 1.0546146371448413
+    size:
+    - 0.0871117115020752
+    - 0.0856781005859375
+    - 0.08018746902234852
+episodes:
+- benchmark_task_id: FDO/verify_task_146
+  family: FDO
+  task_id: verify_task_146
+  episode_idx: 31
+  original_idx: 146
+  benchmark_instruction: Navigate to the pot lid, grasp a fruit, and carry it to the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Navigate to the pot lid, grasp a fruit, and carry it to the only electriccooker in
+    the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content:
+      - _44612bb17e7d43e4adfbe57b7649027e
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _44612bb17e7d43e4adfbe57b7649027e
+      door: false
+  src: potlid_0
+  src_distractors: []
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _44612bb17e7d43e4adfbe57b7649027e:
+      category: fruit
+      usd_path: 44612bb17e7d43e4adfbe57b7649027e.usd
+      size:
+      - 0.0871117115020752
+      - 0.0856781005859375
+      - 0.08018746902234852
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: potlid_0
+  - action: find
+    args:
+      target_category: fruit
+  - action: gaze_at
+    args:
+      target_category: fruit
+  - action: pick
+    args:
+      target_category: fruit
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _44612bb17e7d43e4adfbe57b7649027e_on_potlid_0_at_verify_task_146:
+      position:
+      - -5.1749498684903426
+      - -5.641580239876843
+      - 1.0546146371448413
+      furniture: potlid_0
+      original_id: _44612bb17e7d43e4adfbe57b7649027e
+  final_positions:
+    _44612bb17e7d43e4adfbe57b7649027e_on_potlid_0_at_verify_task_146:
+      initial_pos:
+      - -5.1749498684903426
+      - -5.641580239876843
+      - 1.1546146371448414
+      final_pos:
+      - -5.017570972442627
+      - -5.823325157165527
+      - 0.8821887373924255
+      category: fruit
+      original_id: _44612bb17e7d43e4adfbe57b7649027e
+  global_index: 159
+  target_object_id: _44612bb17e7d43e4adfbe57b7649027e

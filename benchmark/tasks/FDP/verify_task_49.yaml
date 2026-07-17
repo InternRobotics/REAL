@@ -1,0 +1,275 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0df095c0471b45c48f67baa440714e8d_on_table_1_at_verify_task_49:
+    original_id: _0df095c0471b45c48f67baa440714e8d
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/0df095c0471b45c48f67baa440714e8d.usd
+    usd_scale:
+    - 3.179280676078348
+    - 3.183207211636635
+    - 3.1821521492704794
+    position:
+    - -2.2754034016099727
+    - -1.173611277728828
+    - 0.8419149661017582
+    size:
+    - 0.14583587646484375
+    - 0.240814208984375
+    - 0.15583013533614576
+    detailed_caption: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression, rounded
+      body, curled tail.
+  _0df095c0471b45c48f67baa440714e8d_on_table_2_at_verify_task_49:
+    original_id: _0df095c0471b45c48f67baa440714e8d
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/0df095c0471b45c48f67baa440714e8d.usd
+    usd_scale:
+    - 3.179280676078348
+    - 3.183207211636635
+    - 3.1821521492704794
+    position:
+    - -1.9516308444202468
+    - 2.925909615394081
+    - 0.3679030680609867
+    size:
+    - 0.14583587646484375
+    - 0.240814208984375
+    - 0.15583013533614576
+    detailed_caption: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression, rounded
+      body, curled tail.
+episodes:
+- task_id: verify_task_49
+  episode_idx: 29
+  original_idx: 49
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the ceramic cat figurine, smooth white with grey polka dots, cheerful expression,
+    rounded body, curled tail at the table much larger than another one to box table with circle insert.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _0df095c0471b45c48f67baa440714e8d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _0df095c0471b45c48f67baa440714e8d
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _0df095c0471b45c48f67baa440714e8d
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_8
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _0df095c0471b45c48f67baa440714e8d:
+      category: figurine
+      detailed_caption: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression,
+        rounded body, curled tail.
+      usd_path: 0df095c0471b45c48f67baa440714e8d.usd
+      size:
+      - 0.14583587646484375
+      - 0.240814208984375
+      - 0.15583013533614576
+  obj_distractors:
+  - _19487b5c0f9d474e815a2f6e78960840
+  - _1d3be6cf832c40c9a02d8c705af843b0
+  obj_distractor_meta:
+    _19487b5c0f9d474e815a2f6e78960840:
+      category: figurine
+      detailed_caption: Slender figurine with intricate attire details, circular base, and glossy finish.
+      usd_path: 19487b5c0f9d474e815a2f6e78960840.usd
+      size:
+      - 0.15396523475646973
+      - 0.28452301025390625
+      - 0.11584752559429035
+    _1d3be6cf832c40c9a02d8c705af843b0:
+      category: figurine
+      detailed_caption: Figurine with a round base, textured surface, distinct facial features, limbs,
+        clay material.
+      usd_path: 1d3be6cf832c40c9a02d8c705af843b0.usd
+      size:
+      - 0.17765605449676514
+      - 0.28366708755493164
+      - 0.10335724346805364
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression,
+        rounded body, curled tail.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression,
+        rounded body, curled tail.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Ceramic cat figurine, smooth white with grey polka dots, cheerful expression,
+        rounded body, curled tail.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: place
+    args:
+      receptacle_name: cabinet_8
+  placements:
+    _0df095c0471b45c48f67baa440714e8d_on_table_1_at_verify_task_49:
+      position:
+      - -2.2754034016099727
+      - -1.173611277728828
+      - 0.8419149661017582
+      furniture: table_1
+      original_id: _0df095c0471b45c48f67baa440714e8d
+    _0df095c0471b45c48f67baa440714e8d_on_table_2_at_verify_task_49:
+      position:
+      - -1.9516308444202468
+      - 2.925909615394081
+      - 0.3679030680609867
+      furniture: table_2
+      original_id: _0df095c0471b45c48f67baa440714e8d
+  final_positions:
+    _0df095c0471b45c48f67baa440714e8d_on_table_1_at_verify_task_49:
+      initial_pos:
+      - -2.2754034016099727
+      - -1.173611277728828
+      - 0.9419149661017582
+      final_pos:
+      - -2.28440523147583
+      - -1.1283488273620605
+      - 0.7795630693435669
+      category: figurine
+      original_id: _0df095c0471b45c48f67baa440714e8d
+    _0df095c0471b45c48f67baa440714e8d_on_table_2_at_verify_task_49:
+      initial_pos:
+      - -1.9516308444202468
+      - 2.925909615394081
+      - 0.4679030680609867
+      final_pos:
+      - -1.9596747159957886
+      - 2.972951889038086
+      - 0.30555108189582825
+      category: figurine
+      original_id: _0df095c0471b45c48f67baa440714e8d
+  family: FDP
+  benchmark_task_id: FDP/verify_task_49
+  benchmark_instruction: Transport the ceramic cat figurine, smooth white with grey polka dots, cheerful
+    expression, rounded body, curled tail at the table much larger than another one to box table with
+    circle insert.
+  global_index: 29
+  target_object_id: _0df095c0471b45c48f67baa440714e8d

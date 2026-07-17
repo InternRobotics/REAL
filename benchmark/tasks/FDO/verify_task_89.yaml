@@ -1,0 +1,253 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  a9deaf6a7bf94ad083f4d5cec02b4e0a_on_desk_1_at_verify_task_89:
+    original_id: a9deaf6a7bf94ad083f4d5cec02b4e0a
+    category: meat
+    usd_path: ${MESATASK_USD_ROOT}/a9deaf6a7bf94ad083f4d5cec02b4e0a.usd
+    usd_scale:
+    - 5.812136363512029
+    - 5.820456030046432
+    - 5.703772217125557
+    position:
+    - 0.008238854437561408
+    - -2.945726365028162
+    - 0.7769150888593868
+    size:
+    - 0.1583271026611328
+    - 0.18460845947265625
+    - 0.03783010714687407
+  a9deaf6a7bf94ad083f4d5cec02b4e0a_on_desk_2_at_verify_task_89:
+    original_id: a9deaf6a7bf94ad083f4d5cec02b4e0a
+    category: meat
+    usd_path: ${MESATASK_USD_ROOT}/a9deaf6a7bf94ad083f4d5cec02b4e0a.usd
+    usd_scale:
+    - 5.812136363512029
+    - 5.820456030046432
+    - 5.703772217125557
+    position:
+    - 4.440824285813938
+    - 2.2911551884090353
+    - 0.7843576228292659
+    size:
+    - 0.1583271026611328
+    - 0.18460845947265625
+    - 0.03783010714687407
+episodes:
+- benchmark_task_id: FDO/verify_task_89
+  family: FDO
+  task_id: verify_task_89
+  episode_idx: 8
+  original_idx: 89
+  benchmark_instruction: Move a meat located at white table with single dark knob to the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Move a meat located at white table with single dark knob to the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - a9deaf6a7bf94ad083f4d5cec02b4e0a
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - a9deaf6a7bf94ad083f4d5cec02b4e0a
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - a9deaf6a7bf94ad083f4d5cec02b4e0a
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - a9deaf6a7bf94ad083f4d5cec02b4e0a
+      door: false
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    a9deaf6a7bf94ad083f4d5cec02b4e0a:
+      category: meat
+      usd_path: a9deaf6a7bf94ad083f4d5cec02b4e0a.usd
+      size:
+      - 0.1583271026611328
+      - 0.18460845947265625
+      - 0.03783010714687407
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: meat
+  - action: gaze_at
+    args:
+      target_category: meat
+  - action: pick
+    args:
+      target_category: meat
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    a9deaf6a7bf94ad083f4d5cec02b4e0a_on_desk_1_at_verify_task_89:
+      position:
+      - 0.008238854437561408
+      - -2.945726365028162
+      - 0.7769150888593868
+      furniture: desk_1
+      original_id: a9deaf6a7bf94ad083f4d5cec02b4e0a
+    a9deaf6a7bf94ad083f4d5cec02b4e0a_on_desk_2_at_verify_task_89:
+      position:
+      - 4.440824285813938
+      - 2.2911551884090353
+      - 0.7843576228292659
+      furniture: desk_2
+      original_id: a9deaf6a7bf94ad083f4d5cec02b4e0a
+  final_positions:
+    a9deaf6a7bf94ad083f4d5cec02b4e0a_on_desk_1_at_verify_task_89:
+      initial_pos:
+      - 0.008238854437561408
+      - -2.945726365028162
+      - 0.8769150888593867
+      final_pos:
+      - -0.020729903131723404
+      - -3.0473506450653076
+      - 0.7561781406402588
+      category: meat
+      original_id: a9deaf6a7bf94ad083f4d5cec02b4e0a
+    a9deaf6a7bf94ad083f4d5cec02b4e0a_on_desk_2_at_verify_task_89:
+      initial_pos:
+      - 4.440824285813938
+      - 2.2911551884090353
+      - 0.8843576228292659
+      final_pos:
+      - 4.3571457862854
+      - 2.4085893630981445
+      - 0.7283511161804199
+      category: meat
+      original_id: a9deaf6a7bf94ad083f4d5cec02b4e0a
+  global_index: 136
+  target_object_id: a9deaf6a7bf94ad083f4d5cec02b4e0a

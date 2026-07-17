@@ -1,0 +1,303 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_1_at_verify_task_2:
+    original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/05aaa6414f4e4b6eb5432dbcf20290f6.usd
+    usd_scale:
+    - 1.2429552628370415
+    - 1.2276162272094766
+    - 1.2361208837344122
+    position:
+    - -2.5845793171404248
+    - -1.2871193122619786
+    - 0.7962096378137358
+    size:
+    - 0.06312370300292969
+    - 0.2378683090209961
+    - 0.0644194787601009
+    detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+  b7908d4fb06c49fc91d88a7ef8bd86dc_on_table_1_at_verify_task_2:
+    original_id: b7908d4fb06c49fc91d88a7ef8bd86dc
+    category: decorative figure
+    usd_path: ${MESATASK_USD_ROOT}/b7908d4fb06c49fc91d88a7ef8bd86dc.usd
+    usd_scale:
+    - 121.87485740672383
+    - 122.2800588683265
+    - 121.71373009168062
+    position:
+    - -1.547850223931645
+    - -1.363560684413485
+    - 0.8008837209595367
+    size:
+    - 0.10764312744140625
+    - 0.13161468505859375
+    - 0.07376764505170286
+    detailed_caption: Bird-shaped figurine, white material, rounded body, elongated neck, smooth surface
+      with minor wear.
+  _886546f5a4b2444288eab0d4818d21fe_on_table_1_at_verify_task_2:
+    original_id: _886546f5a4b2444288eab0d4818d21fe
+    category: decorative object
+    usd_path: ${MESATASK_USD_ROOT}/886546f5a4b2444288eab0d4818d21fe.usd
+    usd_scale:
+    - 0.215333316904705
+    - 0.215333316904705
+    - 0.2188196867686242
+    position:
+    - -2.1484846042967316
+    - -1.098919627466281
+    - 0.7820469589455752
+    size:
+    - 0.14217376708984375
+    - 0.14357757568359375
+    - 0.036094121023779735
+    detailed_caption: Circular shape, sharp-edged designs, glossy finish, reflective surfaces, pink shades.
+episodes:
+- task_id: verify_task_2
+  episode_idx: 1
+  original_idx: 2
+  benchmark_instruction: First, drive to the table much larger than another one to find a decorative object,
+    then deliver it to the couch in front of the TV.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the table much larger than another one to find the stylized figurine
+    with a rounded head, small body, short-sleeved shirt, and shorts, then deliver it to the couch in
+    front of the TV.
+  fuzzy_task_description: First, drive to the table much larger than another one to find a decorative
+    object, then deliver it to the couch in front of the TV.
+  purpose: decorative object
+  purpose_group: decorative_objects
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+      - b7908d4fb06c49fc91d88a7ef8bd86dc
+      - _886546f5a4b2444288eab0d4818d21fe
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - b7908d4fb06c49fc91d88a7ef8bd86dc
+      - _886546f5a4b2444288eab0d4818d21fe
+    couch_2:
+      room: living room/0
+      content:
+      - _05aaa6414f4e4b6eb5432dbcf20290f6
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: couch_2
+  dest_distractors: []
+  obj_meta:
+    _05aaa6414f4e4b6eb5432dbcf20290f6:
+      category: figurine
+      detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+      usd_path: 05aaa6414f4e4b6eb5432dbcf20290f6.usd
+      size:
+      - 0.06312370300292969
+      - 0.2378683090209961
+      - 0.0644194787601009
+  obj_distractors:
+  - b7908d4fb06c49fc91d88a7ef8bd86dc
+  - _886546f5a4b2444288eab0d4818d21fe
+  obj_distractor_meta:
+    b7908d4fb06c49fc91d88a7ef8bd86dc:
+      category: decorative figure
+      detailed_caption: Bird-shaped figurine, white material, rounded body, elongated neck, smooth surface
+        with minor wear.
+      usd_path: b7908d4fb06c49fc91d88a7ef8bd86dc.usd
+      size:
+      - 0.10764312744140625
+      - 0.13161468505859375
+      - 0.07376764505170286
+    _886546f5a4b2444288eab0d4818d21fe:
+      category: decorative object
+      detailed_caption: Circular shape, sharp-edged designs, glossy finish, reflective surfaces, pink
+        shades.
+      usd_path: 886546f5a4b2444288eab0d4818d21fe.usd
+      size:
+      - 0.14217376708984375
+      - 0.14357757568359375
+      - 0.036094121023779735
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Stylized figurine with a rounded head, small body, short-sleeved shirt, and
+        shorts.
+  - action: nav_to
+    args:
+      receptacle_name: couch_2
+  - action: place
+    args:
+      receptacle_name: couch_2
+  physics_task_description: First, drive to the table much larger than another one to find the stylized
+    figurine with a rounded head, small body, short-sleeved shirt, and shorts, then deliver it to the
+    couch in front of the TV.
+  placements:
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_1_at_verify_task_2:
+      position:
+      - -2.5845793171404248
+      - -1.2871193122619786
+      - 0.7962096378137358
+      furniture: table_1
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    b7908d4fb06c49fc91d88a7ef8bd86dc_on_table_1_at_verify_task_2:
+      position:
+      - -1.547850223931645
+      - -1.363560684413485
+      - 0.8008837209595367
+      furniture: table_1
+      original_id: b7908d4fb06c49fc91d88a7ef8bd86dc
+    _886546f5a4b2444288eab0d4818d21fe_on_table_1_at_verify_task_2:
+      position:
+      - -2.1484846042967316
+      - -1.098919627466281
+      - 0.7820469589455752
+      furniture: table_1
+      original_id: _886546f5a4b2444288eab0d4818d21fe
+  final_positions:
+    _05aaa6414f4e4b6eb5432dbcf20290f6_on_table_1_at_verify_task_2:
+      initial_pos:
+      - -2.5845793171404248
+      - -1.2871193122619786
+      - 0.8962096378137357
+      final_pos:
+      - -2.5771989822387695
+      - -1.2896498441696167
+      - 0.7654339075088501
+      category: figurine
+      original_id: _05aaa6414f4e4b6eb5432dbcf20290f6
+    b7908d4fb06c49fc91d88a7ef8bd86dc_on_table_1_at_verify_task_2:
+      initial_pos:
+      - -1.547850223931645
+      - -1.363560684413485
+      - 0.9008837209595367
+      final_pos:
+      - -1.5241070985794067
+      - -1.3698660135269165
+      - 0.7854840159416199
+      category: decorative figure
+      original_id: b7908d4fb06c49fc91d88a7ef8bd86dc
+    _886546f5a4b2444288eab0d4818d21fe_on_table_1_at_verify_task_2:
+      initial_pos:
+      - -2.1484846042967316
+      - -1.098919627466281
+      - 0.8820469589455752
+      final_pos:
+      - -2.146538019180298
+      - -1.0232431888580322
+      - 0.7543389201164246
+      category: decorative object
+      original_id: _886546f5a4b2444288eab0d4818d21fe
+  family: SUL
+  benchmark_task_id: SUL/verify_task_2
+  global_index: 177
+  target_object_id: _05aaa6414f4e4b6eb5432dbcf20290f6

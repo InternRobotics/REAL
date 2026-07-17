@@ -1,0 +1,369 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  bfd76db93f3c48289fa6922455677602_on_cabinet_6_at_verify_task_90:
+    original_id: bfd76db93f3c48289fa6922455677602
+    category: muffin
+    usd_path: ${MESATASK_USD_ROOT}/bfd76db93f3c48289fa6922455677602.usd
+    usd_scale:
+    - 0.10042502811348798
+    - 0.10029969445784544
+    - 0.10010784895255785
+    position:
+    - 2.4933790413342507
+    - -1.0135237535613824
+    - 0.7844061719765887
+    size:
+    - 0.10940933227539062
+    - 0.0877002477645874
+    - 0.09281235444359481
+  bfd76db93f3c48289fa6922455677602_on_cabinet_7_at_verify_task_90:
+    original_id: bfd76db93f3c48289fa6922455677602
+    category: muffin
+    usd_path: ${MESATASK_USD_ROOT}/bfd76db93f3c48289fa6922455677602.usd
+    usd_scale:
+    - 0.10042502811348798
+    - 0.10029969445784544
+    - 0.10010784895255785
+    position:
+    - 1.101477371533346
+    - 1.7501582423789048
+    - 0.9029561745515093
+    size:
+    - 0.10940933227539062
+    - 0.0877002477645874
+    - 0.09281235444359481
+  bfd76db93f3c48289fa6922455677602_on_cabinet_8_at_verify_task_90:
+    original_id: bfd76db93f3c48289fa6922455677602
+    category: muffin
+    usd_path: ${MESATASK_USD_ROOT}/bfd76db93f3c48289fa6922455677602.usd
+    usd_scale:
+    - 0.10042502811348798
+    - 0.10029969445784544
+    - 0.10010784895255785
+    position:
+    - 4.599671625066557
+    - 2.9954912011441905
+    - 0.5169061588635668
+    size:
+    - 0.10940933227539062
+    - 0.0877002477645874
+    - 0.09281235444359481
+  bfd76db93f3c48289fa6922455677602_on_cabinet_9_at_verify_task_90:
+    original_id: bfd76db93f3c48289fa6922455677602
+    category: muffin
+    usd_path: ${MESATASK_USD_ROOT}/bfd76db93f3c48289fa6922455677602.usd
+    usd_scale:
+    - 0.10042502811348798
+    - 0.10029969445784544
+    - 0.10010784895255785
+    position:
+    - 5.95839195003867
+    - 1.254657944886291
+    - 1.0064061748376116
+    size:
+    - 0.10940933227539062
+    - 0.0877002477645874
+    - 0.09281235444359481
+  bfd76db93f3c48289fa6922455677602_on_cabinet_10_at_verify_task_90:
+    original_id: bfd76db93f3c48289fa6922455677602
+    category: muffin
+    usd_path: ${MESATASK_USD_ROOT}/bfd76db93f3c48289fa6922455677602.usd
+    usd_scale:
+    - 0.10042502811348798
+    - 0.10029969445784544
+    - 0.10010784895255785
+    position:
+    - 3.1954682432583663
+    - -0.7638187346133916
+    - 0.5394061672082171
+    size:
+    - 0.10940933227539062
+    - 0.0877002477645874
+    - 0.09281235444359481
+episodes:
+- benchmark_task_id: FDO/verify_task_90
+  family: FDO
+  task_id: verify_task_90
+  episode_idx: 9
+  original_idx: 90
+  benchmark_instruction: Take a muffin from the white cabinet next to the bedroom sink and put it on the
+    washingmachine.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Take a muffin from the white cabinet next to the bedroom sink and put it on the washingmachine.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - bfd76db93f3c48289fa6922455677602
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - bfd76db93f3c48289fa6922455677602
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: cabinet_9
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_10
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    bfd76db93f3c48289fa6922455677602:
+      category: muffin
+      usd_path: bfd76db93f3c48289fa6922455677602.usd
+      size:
+      - 0.10940933227539062
+      - 0.0877002477645874
+      - 0.09281235444359481
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: find
+    args:
+      target_category: muffin
+  - action: gaze_at
+    args:
+      target_category: muffin
+  - action: pick
+    args:
+      target_category: muffin
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    bfd76db93f3c48289fa6922455677602_on_cabinet_6_at_verify_task_90:
+      position:
+      - 2.4933790413342507
+      - -1.0135237535613824
+      - 0.7844061719765887
+      furniture: cabinet_6
+      original_id: bfd76db93f3c48289fa6922455677602
+    bfd76db93f3c48289fa6922455677602_on_cabinet_7_at_verify_task_90:
+      position:
+      - 1.101477371533346
+      - 1.7501582423789048
+      - 0.9029561745515093
+      furniture: cabinet_7
+      original_id: bfd76db93f3c48289fa6922455677602
+    bfd76db93f3c48289fa6922455677602_on_cabinet_8_at_verify_task_90:
+      position:
+      - 4.599671625066557
+      - 2.9954912011441905
+      - 0.5169061588635668
+      furniture: cabinet_8
+      original_id: bfd76db93f3c48289fa6922455677602
+    bfd76db93f3c48289fa6922455677602_on_cabinet_9_at_verify_task_90:
+      position:
+      - 5.95839195003867
+      - 1.254657944886291
+      - 1.0064061748376116
+      furniture: cabinet_9
+      original_id: bfd76db93f3c48289fa6922455677602
+    bfd76db93f3c48289fa6922455677602_on_cabinet_10_at_verify_task_90:
+      position:
+      - 3.1954682432583663
+      - -0.7638187346133916
+      - 0.5394061672082171
+      furniture: cabinet_10
+      original_id: bfd76db93f3c48289fa6922455677602
+  final_positions:
+    bfd76db93f3c48289fa6922455677602_on_cabinet_6_at_verify_task_90:
+      initial_pos:
+      - 2.4933790413342507
+      - -1.0135237535613824
+      - 0.8844061719765887
+      final_pos:
+      - 2.547344923019409
+      - -1.0413264036178589
+      - 0.7624924182891846
+      category: muffin
+      original_id: bfd76db93f3c48289fa6922455677602
+    bfd76db93f3c48289fa6922455677602_on_cabinet_7_at_verify_task_90:
+      initial_pos:
+      - 1.101477371533346
+      - 1.7501582423789048
+      - 1.0029561745515094
+      final_pos:
+      - 1.1176875829696655
+      - 1.723510980606079
+      - 0.8753101229667664
+      category: muffin
+      original_id: bfd76db93f3c48289fa6922455677602
+    bfd76db93f3c48289fa6922455677602_on_cabinet_8_at_verify_task_90:
+      initial_pos:
+      - 4.599671625066557
+      - 2.9954912011441905
+      - 0.6169061588635668
+      final_pos:
+      - 4.653543472290039
+      - 2.9677798748016357
+      - 0.494992196559906
+      category: muffin
+      original_id: bfd76db93f3c48289fa6922455677602
+    bfd76db93f3c48289fa6922455677602_on_cabinet_9_at_verify_task_90:
+      initial_pos:
+      - 5.95839195003867
+      - 1.254657944886291
+      - 1.1064061748376117
+      final_pos:
+      - 5.9775800704956055
+      - 1.2306694984436035
+      - 0.9787601232528687
+      category: muffin
+      original_id: bfd76db93f3c48289fa6922455677602
+    bfd76db93f3c48289fa6922455677602_on_cabinet_10_at_verify_task_90:
+      initial_pos:
+      - 3.1954682432583663
+      - -0.7638187346133916
+      - 0.6394061672082171
+      final_pos:
+      - 3.249326229095459
+      - -0.791567325592041
+      - 0.5174921154975891
+      category: muffin
+      original_id: bfd76db93f3c48289fa6922455677602
+  global_index: 137
+  target_object_id: bfd76db93f3c48289fa6922455677602

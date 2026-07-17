@@ -1,0 +1,339 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  c54bbb4e11d447adbc631b496d649145_on_table_1_at_verify_task_17:
+    original_id: c54bbb4e11d447adbc631b496d649145
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/c54bbb4e11d447adbc631b496d649145.usd
+    usd_scale:
+    - 1.8684174774440203
+    - 1.8849881501521697
+    - 1.9822878883215942
+    position:
+    - -2.506570470726082
+    - -1.1476504979524633
+    - 0.9075751602649871
+    size:
+    - 0.1963329315185547
+    - 0.2915630340576172
+    - 0.2871505236626035
+    detailed_caption: Compact coffee maker with a sleek white exterior, circular base, control panel,
+      and transparent lid.
+  _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_17:
+    original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/2a7bbe16-c154-4ecb-adb6-9cd3548c588d.usd
+    usd_scale:
+    - 22.417340605209134
+    - 20.832840710833366
+    - 22.872220378479863
+    position:
+    - -2.088691608509259
+    - -1.4557179409422274
+    - 0.9413099920598325
+    size:
+    - 0.16703033447265625
+    - 0.413726806640625
+    - 0.35462018725229427
+    detailed_caption: Compact espresso coffee maker with a shiny black and white exterior, textured base,
+      and brewing head.
+  _64cfb7f1704148718a24b142645fe97d_on_table_1_at_verify_task_17:
+    original_id: _64cfb7f1704148718a24b142645fe97d
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/64cfb7f1704148718a24b142645fe97d.usd
+    usd_scale:
+    - 21.172438170754223
+    - 21.15696899777861
+    - 21.852620566656793
+    position:
+    - -2.842112406613683
+    - -1.1725526265890254
+    - 0.8763939895830117
+    size:
+    - 0.3114042282104492
+    - 0.33207273483276367
+    - 0.22478818229865283
+    detailed_caption: Compact, rectangular coffee maker with a sleek black finish and rounded edges; removable
+      glass carafe.
+  c54bbb4e11d447adbc631b496d649145_on_table_2_at_verify_task_17:
+    original_id: c54bbb4e11d447adbc631b496d649145
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/c54bbb4e11d447adbc631b496d649145.usd
+    usd_scale:
+    - 1.8684174774440203
+    - 1.8849881501521697
+    - 1.9822878883215942
+    position:
+    - -2.369023669619072
+    - 3.0347192718233984
+    - 0.4335632622242156
+    size:
+    - 0.1963329315185547
+    - 0.2915630340576172
+    - 0.2871505236626035
+    detailed_caption: Compact coffee maker with a sleek white exterior, circular base, control panel,
+      and transparent lid.
+episodes:
+- benchmark_task_id: FODP/verify_task_17
+  family: FODP
+  task_id: verify_task_17
+  episode_idx: 10
+  original_idx: 17
+  benchmark_instruction: Get the compact coffee maker with a sleek white exterior, circular base, control
+    panel, and transparent lid from the table much larger than another one and move it to white desk with
+    rectangular wooden handles.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Get the compact coffee maker with a sleek white exterior, circular base, control panel,
+    and transparent lid from the table much larger than another one and move it to white desk with rectangular
+    wooden handles.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - c54bbb4e11d447adbc631b496d649145
+      - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+      - _64cfb7f1704148718a24b142645fe97d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - c54bbb4e11d447adbc631b496d649145
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+      - _64cfb7f1704148718a24b142645fe97d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - c54bbb4e11d447adbc631b496d649145
+    desk_1:
+      room: study room/0
+      content:
+      - c54bbb4e11d447adbc631b496d649145
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    c54bbb4e11d447adbc631b496d649145:
+      category: coffee maker
+      detailed_caption: Compact coffee maker with a sleek white exterior, circular base, control panel,
+        and transparent lid.
+      usd_path: c54bbb4e11d447adbc631b496d649145.usd
+      size:
+      - 0.1963329315185547
+      - 0.2915630340576172
+      - 0.2871505236626035
+  obj_distractors:
+  - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+  - _64cfb7f1704148718a24b142645fe97d
+  obj_distractor_meta:
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d:
+      category: coffee maker
+      detailed_caption: Compact espresso coffee maker with a shiny black and white exterior, textured
+        base, and brewing head.
+      usd_path: 2a7bbe16-c154-4ecb-adb6-9cd3548c588d.usd
+      size:
+      - 0.16703033447265625
+      - 0.413726806640625
+      - 0.35462018725229427
+    _64cfb7f1704148718a24b142645fe97d:
+      category: coffee maker
+      detailed_caption: Compact, rectangular coffee maker with a sleek black finish and rounded edges;
+        removable glass carafe.
+      usd_path: 64cfb7f1704148718a24b142645fe97d.usd
+      size:
+      - 0.3114042282104492
+      - 0.33207273483276367
+      - 0.22478818229865283
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek white exterior, circular base, control panel,
+        and transparent lid.
+  - action: gaze_at
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek white exterior, circular base, control panel,
+        and transparent lid.
+  - action: pick
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek white exterior, circular base, control panel,
+        and transparent lid.
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  placements:
+    c54bbb4e11d447adbc631b496d649145_on_table_1_at_verify_task_17:
+      position:
+      - -2.506570470726082
+      - -1.1476504979524633
+      - 0.9075751602649871
+      furniture: table_1
+      original_id: c54bbb4e11d447adbc631b496d649145
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_17:
+      position:
+      - -2.088691608509259
+      - -1.4557179409422274
+      - 0.9413099920598325
+      furniture: table_1
+      original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    _64cfb7f1704148718a24b142645fe97d_on_table_1_at_verify_task_17:
+      position:
+      - -2.842112406613683
+      - -1.1725526265890254
+      - 0.8763939895830117
+      furniture: table_1
+      original_id: _64cfb7f1704148718a24b142645fe97d
+    c54bbb4e11d447adbc631b496d649145_on_table_2_at_verify_task_17:
+      position:
+      - -2.369023669619072
+      - 3.0347192718233984
+      - 0.4335632622242156
+      furniture: table_2
+      original_id: c54bbb4e11d447adbc631b496d649145
+  final_positions:
+    c54bbb4e11d447adbc631b496d649145_on_table_1_at_verify_task_17:
+      initial_pos:
+      - -2.506570470726082
+      - -1.1476504979524633
+      - 1.0075751602649872
+      final_pos:
+      - -2.506570339202881
+      - -1.1476507186889648
+      - 0.8875752687454224
+      category: coffee maker
+      original_id: c54bbb4e11d447adbc631b496d649145
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_17:
+      initial_pos:
+      - -2.088691608509259
+      - -1.4557179409422274
+      - 1.0413099920598325
+      final_pos:
+      - -1.8358598947525024
+      - -1.4830913543701172
+      - 0.8279567956924438
+      category: coffee maker
+      original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    _64cfb7f1704148718a24b142645fe97d_on_table_1_at_verify_task_17:
+      initial_pos:
+      - -2.842112406613683
+      - -1.1725526265890254
+      - 0.9763939895830117
+      final_pos:
+      - -2.842710018157959
+      - -1.1729563474655151
+      - 0.8559107780456543
+      category: coffee maker
+      original_id: _64cfb7f1704148718a24b142645fe97d
+    c54bbb4e11d447adbc631b496d649145_on_table_2_at_verify_task_17:
+      initial_pos:
+      - -2.369023669619072
+      - 3.0347192718233984
+      - 0.5335632622242156
+      final_pos:
+      - -2.3690297603607178
+      - 3.034721612930298
+      - 0.41356316208839417
+      category: coffee maker
+      original_id: c54bbb4e11d447adbc631b496d649145
+  global_index: 82
+  target_object_id: c54bbb4e11d447adbc631b496d649145

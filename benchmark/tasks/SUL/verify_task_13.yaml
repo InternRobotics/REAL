@@ -1,0 +1,308 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  e21bb2b8_3d5c_4c31_ac1f_3811ff003fba_on_table_2_at_verify_task_13:
+    original_id: e21bb2b8_3d5c_4c31_ac1f_3811ff003fba
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/e21bb2b8-3d5c-4c31-ac1f-3811ff003fba.usd
+    usd_scale:
+    - 15.33068076413815
+    - 15.313434674242142
+    - 21.617092566724203
+    position:
+    - -2.1913843987811883
+    - 2.7025148150012233
+    - 0.31333744078758174
+    size:
+    - 0.30576133728027344
+    - 0.2023029327392578
+    - 0.04669888078933582
+    detailed_caption: Rectangular wooden tray with a smooth surface, curved handles, and natural grain
+      finish.
+  _947aae43_ceec_41ea_9c9b_fb9432229f29_on_table_2_at_verify_task_13:
+    original_id: _947aae43_ceec_41ea_9c9b_fb9432229f29
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/947aae43-ceec-41ea-9c9b-fb9432229f29.usd
+    usd_scale:
+    - 11.896141719711212
+    - 11.865089476823808
+    - 13.382203088299812
+    position:
+    - -2.088242263465051
+    - 3.0113680169131456
+    - 0.3307509174151346
+    size:
+    - 0.23624801635742188
+    - 0.23131561279296875
+    - 0.08152583404444158
+    detailed_caption: Smooth, round bowl with a slightly elevated rim and polished copper finish.
+  d7dd0a08637748e29b995da42cee2154_on_table_2_at_verify_task_13:
+    original_id: d7dd0a08637748e29b995da42cee2154
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/d7dd0a08637748e29b995da42cee2154.usd
+    usd_scale:
+    - 0.18099788268281572
+    - 0.17919717608362107
+    - 0.1540072839900779
+    position:
+    - -2.4728698484553573
+    - 3.280460289683606
+    - 0.38375154077541085
+    size:
+    - 0.2135477066040039
+    - 0.20764923095703125
+    - 0.18752708076499403
+    detailed_caption: Rounded bowl with floral exterior design, smooth glossy finish, and plain white
+      interior.
+episodes:
+- task_id: verify_task_13
+  episode_idx: 11
+  original_idx: 13
+  benchmark_instruction: Pick up a food serving container from the rounded rectangular table and place
+    it on the table much larger than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the rectangular wooden tray with a smooth surface, curved handles, and natural
+    grain finish from the rounded rectangular table and deposit it at the table much larger than another
+    one.
+  fuzzy_task_description: Pick up a food serving container from the rounded rectangular table and place
+    it on the table much larger than another one.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - e21bb2b8_3d5c_4c31_ac1f_3811ff003fba
+      - _947aae43_ceec_41ea_9c9b_fb9432229f29
+      - d7dd0a08637748e29b995da42cee2154
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - e21bb2b8_3d5c_4c31_ac1f_3811ff003fba
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _947aae43_ceec_41ea_9c9b_fb9432229f29
+      - d7dd0a08637748e29b995da42cee2154
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    e21bb2b8_3d5c_4c31_ac1f_3811ff003fba:
+      category: tray
+      detailed_caption: Rectangular wooden tray with a smooth surface, curved handles, and natural grain
+        finish.
+      usd_path: e21bb2b8-3d5c-4c31-ac1f-3811ff003fba.usd
+      size:
+      - 0.30576133728027344
+      - 0.2023029327392578
+      - 0.04669888078933582
+  obj_distractors:
+  - _947aae43_ceec_41ea_9c9b_fb9432229f29
+  - d7dd0a08637748e29b995da42cee2154
+  obj_distractor_meta:
+    _947aae43_ceec_41ea_9c9b_fb9432229f29:
+      category: bowl
+      detailed_caption: Smooth, round bowl with a slightly elevated rim and polished copper finish.
+      usd_path: 947aae43-ceec-41ea-9c9b-fb9432229f29.usd
+      size:
+      - 0.23624801635742188
+      - 0.23131561279296875
+      - 0.08152583404444158
+    d7dd0a08637748e29b995da42cee2154:
+      category: bowl
+      detailed_caption: Rounded bowl with floral exterior design, smooth glossy finish, and plain white
+        interior.
+      usd_path: d7dd0a08637748e29b995da42cee2154.usd
+      size:
+      - 0.2135477066040039
+      - 0.20764923095703125
+      - 0.18752708076499403
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with a smooth surface, curved handles, and natural grain
+        finish.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with a smooth surface, curved handles, and natural grain
+        finish.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with a smooth surface, curved handles, and natural grain
+        finish.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Retrieve the rectangular wooden tray with a smooth surface, curved handles,
+    and natural grain finish from the rounded rectangular table and deposit it at the table much larger
+    than another one.
+  placements:
+    e21bb2b8_3d5c_4c31_ac1f_3811ff003fba_on_table_2_at_verify_task_13:
+      position:
+      - -2.1913843987811883
+      - 2.7025148150012233
+      - 0.31333744078758174
+      furniture: table_2
+      original_id: e21bb2b8_3d5c_4c31_ac1f_3811ff003fba
+    _947aae43_ceec_41ea_9c9b_fb9432229f29_on_table_2_at_verify_task_13:
+      position:
+      - -2.088242263465051
+      - 3.0113680169131456
+      - 0.3307509174151346
+      furniture: table_2
+      original_id: _947aae43_ceec_41ea_9c9b_fb9432229f29
+    d7dd0a08637748e29b995da42cee2154_on_table_2_at_verify_task_13:
+      position:
+      - -2.4728698484553573
+      - 3.280460289683606
+      - 0.38375154077541085
+      furniture: table_2
+      original_id: d7dd0a08637748e29b995da42cee2154
+  final_positions:
+    e21bb2b8_3d5c_4c31_ac1f_3811ff003fba_on_table_2_at_verify_task_13:
+      initial_pos:
+      - -2.1913843987811883
+      - 2.7025148150012233
+      - 0.4133374407875817
+      final_pos:
+      - -2.191389560699463
+      - 2.7025229930877686
+      - 0.29175513982772827
+      category: tray
+      original_id: e21bb2b8_3d5c_4c31_ac1f_3811ff003fba
+    _947aae43_ceec_41ea_9c9b_fb9432229f29_on_table_2_at_verify_task_13:
+      initial_pos:
+      - -2.088242263465051
+      - 3.0113680169131456
+      - 0.4307509174151346
+      final_pos:
+      - -2.089526653289795
+      - 3.013289213180542
+      - 0.3067685663700104
+      category: bowl
+      original_id: _947aae43_ceec_41ea_9c9b_fb9432229f29
+    d7dd0a08637748e29b995da42cee2154_on_table_2_at_verify_task_13:
+      initial_pos:
+      - -2.4728698484553573
+      - 3.280460289683606
+      - 0.4837515407754108
+      final_pos:
+      - -2.4808733463287354
+      - 3.2316997051239014
+      - 0.35346952080726624
+      category: salad
+      original_id: d7dd0a08637748e29b995da42cee2154
+  family: SUL
+  benchmark_task_id: SUL/verify_task_13
+  global_index: 187
+  target_object_id: e21bb2b8_3d5c_4c31_ac1f_3811ff003fba

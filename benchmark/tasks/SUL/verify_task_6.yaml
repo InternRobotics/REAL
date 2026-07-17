@@ -1,0 +1,305 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_6:
+    original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/9d0653ff-1a9d-46d6-91d0-f0d5739698e1.usd
+    usd_scale:
+    - 14.42849794144928
+    - 14.545888629114172
+    - 14.131672549110398
+    position:
+    - -2.0108994818310633
+    - -1.5688687353043556
+    - 0.7702914868668995
+    size:
+    - 0.2868843078613281
+    - 0.1930370330810547
+    - 0.012583176866428403
+    detailed_caption: Rectangular tray with a polished surface, sleek edges, reflective finish, and rounded
+      corners.
+  _275967704e5348689ab6b42fde76c775_on_table_1_at_verify_task_6:
+    original_id: _275967704e5348689ab6b42fde76c775
+    category: saucer
+    usd_path: ${MESATASK_USD_ROOT}/275967704e5348689ab6b42fde76c775.usd
+    usd_scale:
+    - 2.0372147533839398
+    - 2.0393401843601184
+    - 2.1505970409012147
+    position:
+    - -1.7848735857580715
+    - -1.1674538959228127
+    - 0.8081718315184117
+    size:
+    - 0.15892982482910156
+    - 0.15715789794921875
+    - 0.08834386616945267
+    detailed_caption: White porcelain teacup with a round body, curved handle, smooth surface, and matching
+      saucer.
+  a135e3e2325448f9aa18797fd9903efc_on_table_1_at_verify_task_6:
+    original_id: a135e3e2325448f9aa18797fd9903efc
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/a135e3e2325448f9aa18797fd9903efc.usd
+    usd_scale:
+    - 0.22490356414178278
+    - 0.22484281145655563
+    - 0.28864291592555186
+    position:
+    - -2.7442988083194577
+    - -1.122630098208899
+    - 0.7945873448438943
+    size:
+    - 0.24294281005859375
+    - 0.2269287109375
+    - 0.06117489282041788
+    detailed_caption: Decorative bowl with a blue floral design, golden rim, smooth glossy surface, and
+      shallow depth.
+episodes:
+- task_id: verify_task_6
+  episode_idx: 4
+  original_idx: 6
+  benchmark_instruction: Transport a food serving container at the rectangular table to the rounded rectangular
+    table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the rectangular tray with a polished surface, sleek edges, reflective finish,
+    and rounded corners from the rectangular table and deposit it at the rounded rectangular table.
+  fuzzy_task_description: Transport a food serving container at the rectangular table to the rounded rectangular
+    table.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+      - _275967704e5348689ab6b42fde76c775
+      - a135e3e2325448f9aa18797fd9903efc
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _275967704e5348689ab6b42fde76c775
+      - a135e3e2325448f9aa18797fd9903efc
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1:
+      category: tray
+      detailed_caption: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+      usd_path: 9d0653ff-1a9d-46d6-91d0-f0d5739698e1.usd
+      size:
+      - 0.2868843078613281
+      - 0.1930370330810547
+      - 0.012583176866428403
+  obj_distractors:
+  - _275967704e5348689ab6b42fde76c775
+  - a135e3e2325448f9aa18797fd9903efc
+  obj_distractor_meta:
+    _275967704e5348689ab6b42fde76c775:
+      category: saucer
+      detailed_caption: White porcelain teacup with a round body, curved handle, smooth surface, and matching
+        saucer.
+      usd_path: 275967704e5348689ab6b42fde76c775.usd
+      size:
+      - 0.15892982482910156
+      - 0.15715789794921875
+      - 0.08834386616945267
+    a135e3e2325448f9aa18797fd9903efc:
+      category: bowl
+      detailed_caption: Decorative bowl with a blue floral design, golden rim, smooth glossy surface,
+        and shallow depth.
+      usd_path: a135e3e2325448f9aa18797fd9903efc.usd
+      size:
+      - 0.24294281005859375
+      - 0.2269287109375
+      - 0.06117489282041788
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular tray with a polished surface, sleek edges, reflective finish, and
+        rounded corners.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  physics_task_description: Retrieve the rectangular tray with a polished surface, sleek edges, reflective
+    finish, and rounded corners from the rectangular table and deposit it at the rounded rectangular table.
+  placements:
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_6:
+      position:
+      - -2.0108994818310633
+      - -1.5688687353043556
+      - 0.7702914868668995
+      furniture: table_1
+      original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    _275967704e5348689ab6b42fde76c775_on_table_1_at_verify_task_6:
+      position:
+      - -1.7848735857580715
+      - -1.1674538959228127
+      - 0.8081718315184117
+      furniture: table_1
+      original_id: _275967704e5348689ab6b42fde76c775
+    a135e3e2325448f9aa18797fd9903efc_on_table_1_at_verify_task_6:
+      position:
+      - -2.7442988083194577
+      - -1.122630098208899
+      - 0.7945873448438943
+      furniture: table_1
+      original_id: a135e3e2325448f9aa18797fd9903efc
+  final_positions:
+    _9d0653ff_1a9d_46d6_91d0_f0d5739698e1_on_table_1_at_verify_task_6:
+      initial_pos:
+      - -2.0108994818310633
+      - -1.5688687353043556
+      - 0.8702914868668995
+      final_pos:
+      - -2.0108988285064697
+      - -1.5688691139221191
+      - 0.7495899796485901
+      category: tray
+      original_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1
+    _275967704e5348689ab6b42fde76c775_on_table_1_at_verify_task_6:
+      initial_pos:
+      - -1.7848735857580715
+      - -1.1674538959228127
+      - 0.9081718315184116
+      final_pos:
+      - -1.7831659317016602
+      - -1.0540233850479126
+      - 0.7840912342071533
+      category: tea cup
+      original_id: _275967704e5348689ab6b42fde76c775
+    a135e3e2325448f9aa18797fd9903efc_on_table_1_at_verify_task_6:
+      initial_pos:
+      - -2.7442988083194577
+      - -1.122630098208899
+      - 0.8945873448438942
+      final_pos:
+      - -2.743489980697632
+      - -1.2772670984268188
+      - 0.7667334079742432
+      category: bowl
+      original_id: a135e3e2325448f9aa18797fd9903efc
+  family: SUL
+  benchmark_task_id: SUL/verify_task_6
+  global_index: 180
+  target_object_id: _9d0653ff_1a9d_46d6_91d0_f0d5739698e1

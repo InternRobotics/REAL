@@ -1,0 +1,250 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  aef570243a09466e818dd97d27cbd9dc_on_bed_1_at_verify_task_102:
+    original_id: aef570243a09466e818dd97d27cbd9dc
+    category: bell pepper
+    usd_path: ${MESATASK_USD_ROOT}/aef570243a09466e818dd97d27cbd9dc.usd
+    usd_scale:
+    - 0.8978349952321714
+    - 0.8903264369806542
+    - 0.7150969952409634
+    position:
+    - 3.8008517340737438
+    - 3.5580818876348004
+    - 0.5297235557623208
+    size:
+    - 0.09290695190429688
+    - 0.14712047576904297
+    - 0.07487680856138468
+  aef570243a09466e818dd97d27cbd9dc_on_bed_2_at_verify_task_102:
+    original_id: aef570243a09466e818dd97d27cbd9dc
+    category: bell pepper
+    usd_path: ${MESATASK_USD_ROOT}/aef570243a09466e818dd97d27cbd9dc.usd
+    usd_scale:
+    - 0.8978349952321714
+    - 0.8903264369806542
+    - 0.7150969952409634
+    position:
+    - 4.931844497959807
+    - -1.2223207541947494
+    - 0.5595876285620034
+    size:
+    - 0.09290695190429688
+    - 0.14712047576904297
+    - 0.07487680856138468
+episodes:
+- benchmark_task_id: FDO/verify_task_102
+  family: FDO
+  task_id: verify_task_102
+  episode_idx: 17
+  original_idx: 102
+  benchmark_instruction: Go to bed with dark satin bedding, pick up a bell pepper, then travel to the
+    washingmachine to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Go to bed with dark satin bedding, pick up a bell pepper, then travel to the washingmachine
+    to place it.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - aef570243a09466e818dd97d27cbd9dc
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - aef570243a09466e818dd97d27cbd9dc
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content:
+      - aef570243a09466e818dd97d27cbd9dc
+      door: false
+    bed_1:
+      room: bedroom/0
+      content:
+      - aef570243a09466e818dd97d27cbd9dc
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: bed_2
+  src_distractors:
+  - bed_1
+  dest: washingmachine_1
+  dest_distractors: []
+  obj_meta:
+    aef570243a09466e818dd97d27cbd9dc:
+      category: bell pepper
+      usd_path: aef570243a09466e818dd97d27cbd9dc.usd
+      size:
+      - 0.09290695190429688
+      - 0.14712047576904297
+      - 0.07487680856138468
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: open
+    args:
+      receptacle_name: washingmachine_1
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: find
+    args:
+      target_category: bell pepper
+  - action: gaze_at
+    args:
+      target_category: bell pepper
+  - action: pick
+    args:
+      target_category: bell pepper
+  - action: nav_to
+    args:
+      receptacle_name: washingmachine_1
+  - action: place
+    args:
+      receptacle_name: washingmachine_1
+  - action: close
+    args:
+      receptacle_name: washingmachine_1
+  placements:
+    aef570243a09466e818dd97d27cbd9dc_on_bed_1_at_verify_task_102:
+      position:
+      - 3.8008517340737438
+      - 3.5580818876348004
+      - 0.5297235557623208
+      furniture: bed_1
+      original_id: aef570243a09466e818dd97d27cbd9dc
+    aef570243a09466e818dd97d27cbd9dc_on_bed_2_at_verify_task_102:
+      position:
+      - 4.931844497959807
+      - -1.2223207541947494
+      - 0.5595876285620034
+      furniture: bed_2
+      original_id: aef570243a09466e818dd97d27cbd9dc
+  final_positions:
+    aef570243a09466e818dd97d27cbd9dc_on_bed_1_at_verify_task_102:
+      initial_pos:
+      - 3.8008517340737438
+      - 3.5580818876348004
+      - 0.6297235557623208
+      final_pos:
+      - 3.8073291778564453
+      - 3.545299768447876
+      - 0.4968784749507904
+      category: bell pepper
+      original_id: aef570243a09466e818dd97d27cbd9dc
+    aef570243a09466e818dd97d27cbd9dc_on_bed_2_at_verify_task_102:
+      initial_pos:
+      - 4.931844497959807
+      - -1.2223207541947494
+      - 0.6595876285620034
+      final_pos:
+      - 4.9873270988464355
+      - -1.2231248617172241
+      - 0.533094048500061
+      category: bell pepper
+      original_id: aef570243a09466e818dd97d27cbd9dc
+  global_index: 145
+  target_object_id: aef570243a09466e818dd97d27cbd9dc

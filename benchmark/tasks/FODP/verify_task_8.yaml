@@ -1,0 +1,335 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  cf2b3e74a7b547e2a75dba0187584190_on_table_1_at_verify_task_8:
+    original_id: cf2b3e74a7b547e2a75dba0187584190
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/cf2b3e74a7b547e2a75dba0187584190.usd
+    usd_scale:
+    - 0.15257246027027485
+    - 0.15117129291725986
+    - 0.14418062139125867
+    position:
+    - -2.546581622582854
+    - -1.3138998604195824
+    - 0.789098866803688
+    size:
+    - 0.22077178955078125
+    - 0.225372314453125
+    - 0.05019793674000539
+    detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+      grip.
+  cf2b3e74a7b547e2a75dba0187584190_on_table_2_at_verify_task_8:
+    original_id: cf2b3e74a7b547e2a75dba0187584190
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/cf2b3e74a7b547e2a75dba0187584190.usd
+    usd_scale:
+    - 0.15257246027027485
+    - 0.15117129291725986
+    - 0.14418062139125867
+    position:
+    - -2.468801772215733
+    - 3.0844147053490527
+    - 0.31508696876291653
+    size:
+    - 0.22077178955078125
+    - 0.225372314453125
+    - 0.05019793674000539
+    detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+      grip.
+  _267f6fc623254562a150ee002f027179_on_table_2_at_verify_task_8:
+    original_id: _267f6fc623254562a150ee002f027179
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/267f6fc623254562a150ee002f027179.usd
+    usd_scale:
+    - 11.728801540301443
+    - 12.016666666666667
+    - 11.761948797151442
+    position:
+    - -2.209603584419741
+    - 3.4043354909108867
+    - 0.40760828299842844
+    size:
+    - 0.08344650268554688
+    - 0.026447296142578125
+    - 0.2352405652110292
+    detailed_caption: Sleek black remote control with a circular navigation button and multicolored buttons.
+      Compact design.
+  fc55a7410d674754a8963216cf728f80_on_table_2_at_verify_task_8:
+    original_id: fc55a7410d674754a8963216cf728f80
+    category: remote control
+    usd_path: ${MESATASK_USD_ROOT}/fc55a7410d674754a8963216cf728f80.usd
+    usd_scale:
+    - 122.24934194596563
+    - 129.1359232226095
+    - 142.7052871163435
+    position:
+    - -1.7681516012329652
+    - 2.721689654476129
+    - 0.3971806287132904
+    size:
+    - 0.05971384048461914
+    - 0.00995635986328125
+    - 0.21438525664075314
+    detailed_caption: Remote control, slim rectangular shape, smooth surface, primarily white with blue
+      accents.
+episodes:
+- benchmark_task_id: FODP/verify_task_8
+  family: FODP
+  task_id: verify_task_8
+  episode_idx: 5
+  original_idx: 8
+  benchmark_instruction: Move the sleek black remote control, curved design, glossy surface, colored buttons,
+    ergonomic grip located at the table much smaller than another one to the table much larger than another
+    one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Move the sleek black remote control, curved design, glossy surface, colored buttons,
+    ergonomic grip located at the table much smaller than another one to the table much larger than another
+    one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - cf2b3e74a7b547e2a75dba0187584190
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - cf2b3e74a7b547e2a75dba0187584190
+      - _267f6fc623254562a150ee002f027179
+      - fc55a7410d674754a8963216cf728f80
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - cf2b3e74a7b547e2a75dba0187584190
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _267f6fc623254562a150ee002f027179
+      - fc55a7410d674754a8963216cf728f80
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    cf2b3e74a7b547e2a75dba0187584190:
+      category: remote control
+      detailed_caption: Sleek black remote control, curved design, glossy surface, colored buttons, ergonomic
+        grip.
+      usd_path: cf2b3e74a7b547e2a75dba0187584190.usd
+      size:
+      - 0.22077178955078125
+      - 0.225372314453125
+      - 0.05019793674000539
+  obj_distractors:
+  - _267f6fc623254562a150ee002f027179
+  - fc55a7410d674754a8963216cf728f80
+  obj_distractor_meta:
+    _267f6fc623254562a150ee002f027179:
+      category: remote control
+      detailed_caption: Sleek black remote control with a circular navigation button and multicolored
+        buttons. Compact design.
+      usd_path: 267f6fc623254562a150ee002f027179.usd
+      size:
+      - 0.08344650268554688
+      - 0.026447296142578125
+      - 0.2352405652110292
+    fc55a7410d674754a8963216cf728f80:
+      category: remote control
+      detailed_caption: Remote control, slim rectangular shape, smooth surface, primarily white with blue
+        accents.
+      usd_path: fc55a7410d674754a8963216cf728f80.usd
+      size:
+      - 0.05971384048461914
+      - 0.00995635986328125
+      - 0.21438525664075314
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control, curved design, glossy surface, colored buttons,
+        ergonomic grip.
+  - action: gaze_at
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control, curved design, glossy surface, colored buttons,
+        ergonomic grip.
+  - action: pick
+    args:
+      target_category: remote control
+      target_description: Sleek black remote control, curved design, glossy surface, colored buttons,
+        ergonomic grip.
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    cf2b3e74a7b547e2a75dba0187584190_on_table_1_at_verify_task_8:
+      position:
+      - -2.546581622582854
+      - -1.3138998604195824
+      - 0.789098866803688
+      furniture: table_1
+      original_id: cf2b3e74a7b547e2a75dba0187584190
+    cf2b3e74a7b547e2a75dba0187584190_on_table_2_at_verify_task_8:
+      position:
+      - -2.468801772215733
+      - 3.0844147053490527
+      - 0.31508696876291653
+      furniture: table_2
+      original_id: cf2b3e74a7b547e2a75dba0187584190
+    _267f6fc623254562a150ee002f027179_on_table_2_at_verify_task_8:
+      position:
+      - -2.209603584419741
+      - 3.4043354909108867
+      - 0.40760828299842844
+      furniture: table_2
+      original_id: _267f6fc623254562a150ee002f027179
+    fc55a7410d674754a8963216cf728f80_on_table_2_at_verify_task_8:
+      position:
+      - -1.7681516012329652
+      - 2.721689654476129
+      - 0.3971806287132904
+      furniture: table_2
+      original_id: fc55a7410d674754a8963216cf728f80
+  final_positions:
+    cf2b3e74a7b547e2a75dba0187584190_on_table_1_at_verify_task_8:
+      initial_pos:
+      - -2.546581622582854
+      - -1.3138998604195824
+      - 0.889098866803688
+      final_pos:
+      - -2.5264344215393066
+      - -1.1364693641662598
+      - 0.7655129432678223
+      category: remote control
+      original_id: cf2b3e74a7b547e2a75dba0187584190
+    cf2b3e74a7b547e2a75dba0187584190_on_table_2_at_verify_task_8:
+      initial_pos:
+      - -2.468801772215733
+      - 3.0844147053490527
+      - 0.4150869687629165
+      final_pos:
+      - -2.461801290512085
+      - 3.2859668731689453
+      - 0.2915235757827759
+      category: remote control
+      original_id: cf2b3e74a7b547e2a75dba0187584190
+    _267f6fc623254562a150ee002f027179_on_table_2_at_verify_task_8:
+      initial_pos:
+      - -2.209603584419741
+      - 3.4043354909108867
+      - 0.5076082829984284
+      final_pos:
+      - -2.2095885276794434
+      - 3.4044065475463867
+      - 0.387607604265213
+      category: remote control
+      original_id: _267f6fc623254562a150ee002f027179
+    fc55a7410d674754a8963216cf728f80_on_table_2_at_verify_task_8:
+      initial_pos:
+      - -1.7681516012329652
+      - 2.721689654476129
+      - 0.4971806287132904
+      final_pos:
+      - -1.7681552171707153
+      - 2.7210686206817627
+      - 0.3772032856941223
+      category: remote control
+      original_id: fc55a7410d674754a8963216cf728f80
+  global_index: 77
+  target_object_id: cf2b3e74a7b547e2a75dba0187584190

@@ -1,0 +1,304 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _06708e597c60482d92161fe3cf770cf6_on_bed_1_at_verify_task_87:
+    original_id: _06708e597c60482d92161fe3cf770cf6
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/06708e597c60482d92161fe3cf770cf6.usd
+    usd_scale:
+    - 181.59991821419496
+    - 181.80549049150883
+    - 193.42106112553273
+    position:
+    - 3.3038892680429126
+    - 3.7174172888732264
+    - 0.49885718115139754
+    size:
+    - 0.13202285766601562
+    - 0.027782440185546875
+    - 0.013144059339538217
+    detailed_caption: Sleek blue pen with smooth design, metallic clip, glossy finish, and gold accent.
+  _2d1f086ba9064fc59c6c2ea757f4f576_on_bed_1_at_verify_task_87:
+    original_id: _2d1f086ba9064fc59c6c2ea757f4f576
+    category: stylus
+    usd_path: ${MESATASK_USD_ROOT}/2d1f086ba9064fc59c6c2ea757f4f576.usd
+    usd_scale:
+    - 3.524507489059508
+    - 3.5091458113054723
+    - 3.53251438805949
+    position:
+    - 3.529066106099541
+    - 3.9066652356320004
+    - 0.6213894356005949
+    size:
+    - 0.039501190185546875
+    - 0.037746429443359375
+    - 0.2582085682379329
+    detailed_caption: Sleek, futuristic pen or stylus, silver and black finish, rounded tip, ergonomic
+      design.
+  c2d225488fe84a0ab451717100132495_on_bed_1_at_verify_task_87:
+    original_id: c2d225488fe84a0ab451717100132495
+    category: marker
+    usd_path: ${MESATASK_USD_ROOT}/c2d225488fe84a0ab451717100132495.usd
+    usd_scale:
+    - 3.543353513625197
+    - 3.5433554379739
+    - 3.568540801108354
+    position:
+    - 3.1308064402653466
+    - 3.4960365277650816
+    - 0.5292403036542237
+    size:
+    - 0.07042312622070312
+    - 0.15536999702453613
+    - 0.07391030434519053
+    detailed_caption: Cylindrical can with a vibrant green exterior, printed label, and graphic of a cat.
+episodes:
+- task_id: verify_task_87
+  episode_idx: 59
+  original_idx: 87
+  benchmark_instruction: Bring a writing instrument from bed with all-white bed sheet to the table much
+    larger than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the sleek blue pen with smooth design, metallic clip, glossy finish, and
+    gold accent from bed with all-white bed sheet and deposit it at the table much larger than another
+    one.
+  fuzzy_task_description: Bring a writing instrument from bed with all-white bed sheet to the table much
+    larger than another one.
+  purpose: writing instrument
+  purpose_group: writing_instruments
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _06708e597c60482d92161fe3cf770cf6
+      - _2d1f086ba9064fc59c6c2ea757f4f576
+      - c2d225488fe84a0ab451717100132495
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _06708e597c60482d92161fe3cf770cf6
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - _2d1f086ba9064fc59c6c2ea757f4f576
+      - c2d225488fe84a0ab451717100132495
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_1
+  src_distractors:
+  - bed_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _06708e597c60482d92161fe3cf770cf6:
+      category: pen
+      detailed_caption: Sleek blue pen with smooth design, metallic clip, glossy finish, and gold accent.
+      usd_path: 06708e597c60482d92161fe3cf770cf6.usd
+      size:
+      - 0.13202285766601562
+      - 0.027782440185546875
+      - 0.013144059339538217
+  obj_distractors:
+  - _2d1f086ba9064fc59c6c2ea757f4f576
+  - c2d225488fe84a0ab451717100132495
+  obj_distractor_meta:
+    _2d1f086ba9064fc59c6c2ea757f4f576:
+      category: stylus
+      detailed_caption: Sleek, futuristic pen or stylus, silver and black finish, rounded tip, ergonomic
+        design.
+      usd_path: 2d1f086ba9064fc59c6c2ea757f4f576.usd
+      size:
+      - 0.039501190185546875
+      - 0.037746429443359375
+      - 0.2582085682379329
+    c2d225488fe84a0ab451717100132495:
+      category: marker
+      detailed_caption: Cylindrical can with a vibrant green exterior, printed label, and graphic of a
+        cat.
+      usd_path: c2d225488fe84a0ab451717100132495.usd
+      size:
+      - 0.07042312622070312
+      - 0.15536999702453613
+      - 0.07391030434519053
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: find
+    args:
+      target_category: pen
+      target_description: Sleek blue pen with smooth design, metallic clip, glossy finish, and gold accent.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: Sleek blue pen with smooth design, metallic clip, glossy finish, and gold accent.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: Sleek blue pen with smooth design, metallic clip, glossy finish, and gold accent.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Retrieve the sleek blue pen with smooth design, metallic clip, glossy finish,
+    and gold accent from bed with all-white bed sheet and deposit it at the table much larger than another
+    one.
+  placements:
+    _06708e597c60482d92161fe3cf770cf6_on_bed_1_at_verify_task_87:
+      position:
+      - 3.3038892680429126
+      - 3.7174172888732264
+      - 0.49885718115139754
+      furniture: bed_1
+      original_id: _06708e597c60482d92161fe3cf770cf6
+    _2d1f086ba9064fc59c6c2ea757f4f576_on_bed_1_at_verify_task_87:
+      position:
+      - 3.529066106099541
+      - 3.9066652356320004
+      - 0.6213894356005949
+      furniture: bed_1
+      original_id: _2d1f086ba9064fc59c6c2ea757f4f576
+    c2d225488fe84a0ab451717100132495_on_bed_1_at_verify_task_87:
+      position:
+      - 3.1308064402653466
+      - 3.4960365277650816
+      - 0.5292403036542237
+      furniture: bed_1
+      original_id: c2d225488fe84a0ab451717100132495
+  final_positions:
+    _06708e597c60482d92161fe3cf770cf6_on_bed_1_at_verify_task_87:
+      initial_pos:
+      - 3.3038892680429126
+      - 3.7174172888732264
+      - 0.5988571811513975
+      final_pos:
+      - 3.2850818634033203
+      - 3.7905919551849365
+      - 0.469906210899353
+      category: pen
+      original_id: _06708e597c60482d92161fe3cf770cf6
+    _2d1f086ba9064fc59c6c2ea757f4f576_on_bed_1_at_verify_task_87:
+      initial_pos:
+      - 3.529066106099541
+      - 3.9066652356320004
+      - 0.7213894356005949
+      final_pos:
+      - 3.6476802825927734
+      - 3.991813898086548
+      - 0.475387305021286
+      category: stylus
+      original_id: _2d1f086ba9064fc59c6c2ea757f4f576
+    c2d225488fe84a0ab451717100132495_on_bed_1_at_verify_task_87:
+      initial_pos:
+      - 3.1308064402653466
+      - 3.4960365277650816
+      - 0.6292403036542237
+      final_pos:
+      - 3.0893728733062744
+      - 3.399352788925171
+      - 0.49778300523757935
+      category: marker
+      original_id: c2d225488fe84a0ab451717100132495
+  family: SUL
+  benchmark_task_id: SUL/verify_task_87
+  global_index: 234
+  target_object_id: _06708e597c60482d92161fe3cf770cf6

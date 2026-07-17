@@ -1,0 +1,253 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _87126aab996b4aef83aeaeae238a02e6_on_desk_1_at_verify_task_86:
+    original_id: _87126aab996b4aef83aeaeae238a02e6
+    category: lettuce
+    usd_path: ${MESATASK_USD_ROOT}/87126aab996b4aef83aeaeae238a02e6.usd
+    usd_scale:
+    - 1.3213672885621395
+    - 1.3328703992815218
+    - 1.2546616390141674
+    position:
+    - -0.019845532279970712
+    - -2.409607896853479
+    - 0.8182468641421292
+    size:
+    - 0.1332082748413086
+    - 0.1251659393310547
+    - 0.12049365771235898
+  _87126aab996b4aef83aeaeae238a02e6_on_desk_2_at_verify_task_86:
+    original_id: _87126aab996b4aef83aeaeae238a02e6
+    category: lettuce
+    usd_path: ${MESATASK_USD_ROOT}/87126aab996b4aef83aeaeae238a02e6.usd
+    usd_scale:
+    - 1.3213672885621395
+    - 1.3328703992815218
+    - 1.2546616390141674
+    position:
+    - 4.347066252527618
+    - 1.2939593366731128
+    - 0.8256893981120084
+    size:
+    - 0.1332082748413086
+    - 0.1251659393310547
+    - 0.12049365771235898
+episodes:
+- benchmark_task_id: FDO/verify_task_86
+  family: FDO
+  task_id: verify_task_86
+  episode_idx: 6
+  original_idx: 86
+  benchmark_instruction: Retrieve a lettuce from the desk near my bed and deposit it at the only electriccooker
+    in the scene.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: store
+  task_description: Retrieve a lettuce from the desk near my bed and deposit it at the only electriccooker
+    in the scene.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _87126aab996b4aef83aeaeae238a02e6
+      door: false
+  src: desk_2
+  src_distractors:
+  - desk_1
+  dest: electriccooker_0
+  dest_distractors: []
+  obj_meta:
+    _87126aab996b4aef83aeaeae238a02e6:
+      category: lettuce
+      usd_path: 87126aab996b4aef83aeaeae238a02e6.usd
+      size:
+      - 0.1332082748413086
+      - 0.1251659393310547
+      - 0.12049365771235898
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: find
+    args:
+      target_category: lettuce
+  - action: gaze_at
+    args:
+      target_category: lettuce
+  - action: pick
+    args:
+      target_category: lettuce
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: place
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _87126aab996b4aef83aeaeae238a02e6_on_desk_1_at_verify_task_86:
+      position:
+      - -0.019845532279970712
+      - -2.409607896853479
+      - 0.8182468641421292
+      furniture: desk_1
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_desk_2_at_verify_task_86:
+      position:
+      - 4.347066252527618
+      - 1.2939593366731128
+      - 0.8256893981120084
+      furniture: desk_2
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+  final_positions:
+    _87126aab996b4aef83aeaeae238a02e6_on_desk_1_at_verify_task_86:
+      initial_pos:
+      - -0.019845532279970712
+      - -2.409607896853479
+      - 0.9182468641421292
+      final_pos:
+      - -0.023573148995637894
+      - -2.4113333225250244
+      - 0.7966972589492798
+      category: lettuce
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+    _87126aab996b4aef83aeaeae238a02e6_on_desk_2_at_verify_task_86:
+      initial_pos:
+      - 4.347066252527618
+      - 1.2939593366731128
+      - 0.9256893981120083
+      final_pos:
+      - 4.34698486328125
+      - 1.2996702194213867
+      - 0.7773414254188538
+      category: lettuce
+      original_id: _87126aab996b4aef83aeaeae238a02e6
+  global_index: 134
+  target_object_id: _87126aab996b4aef83aeaeae238a02e6

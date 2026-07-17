@@ -1,0 +1,310 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  c3802314587c40a4b705918346aaf622_on_table_2_at_verify_task_17:
+    original_id: c3802314587c40a4b705918346aaf622
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/c3802314587c40a4b705918346aaf622.usd
+    usd_scale:
+    - 419.302589094946
+    - 419.2943423130987
+    - 386.95684069805213
+    position:
+    - -2.350450785272482
+    - 2.6123115177294767
+    - 0.335407908288762
+    size:
+    - 0.3134307861328125
+    - 0.31015586853027344
+    - 0.09083981579169631
+    detailed_caption: Round, flat metal tray with smooth edges, reflective surface, shallow depth, polished
+      finish.
+  _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_table_2_at_verify_task_17:
+    original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    category: plate
+    usd_path: ${MESATASK_USD_ROOT}/3bfe6dee7eeb4ed5bbfaf2baf1672ee3.usd
+    usd_scale:
+    - 0.22992208586223145
+    - 0.23194067389338438
+    - 0.20535574335650453
+    position:
+    - -1.9772954067414341
+    - 3.1688595252196157
+    - 0.319690142943291
+    size:
+    - 0.15363311767578125
+    - 0.09233474731445312
+    - 0.05940428510075435
+    detailed_caption: Sushi piece with oval shape, vibrant orange salmon, smooth texture, and sticky glossy
+      rice.
+  _886ffd34edbe4a1da667befec0aef343_on_table_2_at_verify_task_17:
+    original_id: _886ffd34edbe4a1da667befec0aef343
+    category: plate
+    usd_path: ${MESATASK_USD_ROOT}/886ffd34edbe4a1da667befec0aef343.usd
+    usd_scale:
+    - 24.08636762793178
+    - 24.086021834698503
+    - 23.835835824717222
+    position:
+    - -1.9954603701284617
+    - 2.6965370913812734
+    - 0.30338221495505424
+    size:
+    - 0.1679248809814453
+    - 0.16781580448150635
+    - 0.02678842912428081
+    detailed_caption: Circular plate with raised edge, intricate embossed patterns, glossy surface, and
+      matte underside.
+episodes:
+- task_id: verify_task_17
+  episode_idx: 15
+  original_idx: 17
+  benchmark_instruction: Get a food serving container from the table to place my snack for watching TV
+    and move it to the table much larger than another one.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to the table to place my snack for watching TV, pick up the round, flat metal tray
+    with smooth edges, reflective surface, shallow depth, polished finish, then travel to the table much
+    larger than another one to place it.
+  fuzzy_task_description: Get a food serving container from the table to place my snack for watching TV
+    and move it to the table much larger than another one.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - c3802314587c40a4b705918346aaf622
+      - _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+      - _886ffd34edbe4a1da667befec0aef343
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - c3802314587c40a4b705918346aaf622
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+      - _886ffd34edbe4a1da667befec0aef343
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    c3802314587c40a4b705918346aaf622:
+      category: tray
+      detailed_caption: Round, flat metal tray with smooth edges, reflective surface, shallow depth, polished
+        finish.
+      usd_path: c3802314587c40a4b705918346aaf622.usd
+      size:
+      - 0.3134307861328125
+      - 0.31015586853027344
+      - 0.09083981579169631
+  obj_distractors:
+  - _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+  - _886ffd34edbe4a1da667befec0aef343
+  obj_distractor_meta:
+    _3bfe6dee7eeb4ed5bbfaf2baf1672ee3:
+      category: plate
+      detailed_caption: Sushi piece with oval shape, vibrant orange salmon, smooth texture, and sticky
+        glossy rice.
+      usd_path: 3bfe6dee7eeb4ed5bbfaf2baf1672ee3.usd
+      size:
+      - 0.15363311767578125
+      - 0.09233474731445312
+      - 0.05940428510075435
+    _886ffd34edbe4a1da667befec0aef343:
+      category: plate
+      detailed_caption: Circular plate with raised edge, intricate embossed patterns, glossy surface,
+        and matte underside.
+      usd_path: 886ffd34edbe4a1da667befec0aef343.usd
+      size:
+      - 0.1679248809814453
+      - 0.16781580448150635
+      - 0.02678842912428081
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: tray
+      target_description: Round, flat metal tray with smooth edges, reflective surface, shallow depth,
+        polished finish.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Round, flat metal tray with smooth edges, reflective surface, shallow depth,
+        polished finish.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Round, flat metal tray with smooth edges, reflective surface, shallow depth,
+        polished finish.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  physics_task_description: Go to the table to place my snack for watching TV, pick up the round, flat
+    metal tray with smooth edges, reflective surface, shallow depth, polished finish, then travel to the
+    table much larger than another one to place it.
+  placements:
+    c3802314587c40a4b705918346aaf622_on_table_2_at_verify_task_17:
+      position:
+      - -2.350450785272482
+      - 2.6123115177294767
+      - 0.335407908288762
+      furniture: table_2
+      original_id: c3802314587c40a4b705918346aaf622
+    _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_table_2_at_verify_task_17:
+      position:
+      - -1.9772954067414341
+      - 3.1688595252196157
+      - 0.319690142943291
+      furniture: table_2
+      original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    _886ffd34edbe4a1da667befec0aef343_on_table_2_at_verify_task_17:
+      position:
+      - -1.9954603701284617
+      - 2.6965370913812734
+      - 0.30338221495505424
+      furniture: table_2
+      original_id: _886ffd34edbe4a1da667befec0aef343
+  final_positions:
+    c3802314587c40a4b705918346aaf622_on_table_2_at_verify_task_17:
+      initial_pos:
+      - -2.350450785272482
+      - 2.6123115177294767
+      - 0.43540790828876197
+      final_pos:
+      - -2.356812000274658
+      - 2.4476232528686523
+      - 0.29949331283569336
+      category: tray
+      original_id: c3802314587c40a4b705918346aaf622
+    _3bfe6dee7eeb4ed5bbfaf2baf1672ee3_on_table_2_at_verify_task_17:
+      initial_pos:
+      - -1.9772954067414341
+      - 3.1688595252196157
+      - 0.419690142943291
+      final_pos:
+      - -1.922623872756958
+      - 3.1763484477996826
+      - 0.2997458875179291
+      category: sushi
+      original_id: _3bfe6dee7eeb4ed5bbfaf2baf1672ee3
+    _886ffd34edbe4a1da667befec0aef343_on_table_2_at_verify_task_17:
+      initial_pos:
+      - -1.9954603701284617
+      - 2.6965370913812734
+      - 0.4033822149550542
+      final_pos:
+      - -1.995163917541504
+      - 2.611123561859131
+      - 0.27928319573402405
+      category: plate
+      original_id: _886ffd34edbe4a1da667befec0aef343
+  family: SUL
+  benchmark_task_id: SUL/verify_task_17
+  global_index: 191
+  target_object_id: c3802314587c40a4b705918346aaf622

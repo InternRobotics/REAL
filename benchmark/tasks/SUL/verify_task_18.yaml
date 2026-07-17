@@ -1,0 +1,299 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _01cace88a48c42438dbd8d1a6f23a55a_on_table_1_at_verify_task_18:
+    original_id: _01cace88a48c42438dbd8d1a6f23a55a
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/01cace88a48c42438dbd8d1a6f23a55a.usd
+    usd_scale:
+    - 99.92391586037961
+    - 108.16263568039817
+    - 105.18984767017402
+    position:
+    - -2.5789865117846227
+    - -1.3141351329070787
+    - 0.7787231654615607
+    size:
+    - 0.452362060546875
+    - 0.32761383056640625
+    - 0.029446534055750817
+    detailed_caption: Rectangular wooden tray with smooth, round edges and a natural grain texture.
+  _19b4cd476c90421ba463423e6e04ef69_on_table_1_at_verify_task_18:
+    original_id: _19b4cd476c90421ba463423e6e04ef69
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/19b4cd476c90421ba463423e6e04ef69.usd
+    usd_scale:
+    - 0.092136604868062
+    - 0.092194484673388
+    - 0.08506297346539131
+    position:
+    - -1.5584570771309902
+    - -1.5573965573824784
+    - 0.8039728015824221
+    size:
+    - 0.18172979354858398
+    - 0.1824493408203125
+    - 0.07994580629747361
+    detailed_caption: Round, black bowl with a smooth surface, slightly curved shape, and various logos.
+  _2e5243eb355c4b0c90aed7281e93d5a6_on_table_1_at_verify_task_18:
+    original_id: _2e5243eb355c4b0c90aed7281e93d5a6
+    category: bowl
+    usd_path: ${MESATASK_USD_ROOT}/2e5243eb355c4b0c90aed7281e93d5a6.usd
+    usd_scale:
+    - 10.955725263060392
+    - 11.019102110314135
+    - 7.7355253936429875
+    position:
+    - -2.99844110668749
+    - -1.1111569089352957
+    - 0.8233089441014454
+    size:
+    - 0.16801071166992188
+    - 0.2303924560546875
+    - 0.11861809133552015
+    detailed_caption: Wooden bowl with a wide circular opening, tapered base, smooth finish, warm brown
+      color.
+episodes:
+- task_id: verify_task_18
+  episode_idx: 16
+  original_idx: 18
+  benchmark_instruction: Get a food serving container from the table where we have dinner and move it
+    to the rounded rectangular table.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: First, drive to the table where we have dinner to find the rectangular wooden tray
+    with smooth, round edges and a natural grain texture, then deliver it to the rounded rectangular table.
+  fuzzy_task_description: Get a food serving container from the table where we have dinner and move it
+    to the rounded rectangular table.
+  purpose: food serving container
+  purpose_group: food_serving
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _01cace88a48c42438dbd8d1a6f23a55a
+      - _19b4cd476c90421ba463423e6e04ef69
+      - _2e5243eb355c4b0c90aed7281e93d5a6
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _19b4cd476c90421ba463423e6e04ef69
+      - _2e5243eb355c4b0c90aed7281e93d5a6
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _01cace88a48c42438dbd8d1a6f23a55a
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: table_2
+  dest_distractors:
+  - table_1
+  obj_meta:
+    _01cace88a48c42438dbd8d1a6f23a55a:
+      category: tray
+      detailed_caption: Rectangular wooden tray with smooth, round edges and a natural grain texture.
+      usd_path: 01cace88a48c42438dbd8d1a6f23a55a.usd
+      size:
+      - 0.452362060546875
+      - 0.32761383056640625
+      - 0.029446534055750817
+  obj_distractors:
+  - _19b4cd476c90421ba463423e6e04ef69
+  - _2e5243eb355c4b0c90aed7281e93d5a6
+  obj_distractor_meta:
+    _19b4cd476c90421ba463423e6e04ef69:
+      category: bowl
+      detailed_caption: Round, black bowl with a smooth surface, slightly curved shape, and various logos.
+      usd_path: 19b4cd476c90421ba463423e6e04ef69.usd
+      size:
+      - 0.18172979354858398
+      - 0.1824493408203125
+      - 0.07994580629747361
+    _2e5243eb355c4b0c90aed7281e93d5a6:
+      category: bowl
+      detailed_caption: Wooden bowl with a wide circular opening, tapered base, smooth finish, warm brown
+        color.
+      usd_path: 2e5243eb355c4b0c90aed7281e93d5a6.usd
+      size:
+      - 0.16801071166992188
+      - 0.2303924560546875
+      - 0.11861809133552015
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with smooth, round edges and a natural grain texture.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with smooth, round edges and a natural grain texture.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular wooden tray with smooth, round edges and a natural grain texture.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: place
+    args:
+      receptacle_name: table_2
+  physics_task_description: First, drive to the table where we have dinner to find the rectangular wooden
+    tray with smooth, round edges and a natural grain texture, then deliver it to the rounded rectangular
+    table.
+  placements:
+    _01cace88a48c42438dbd8d1a6f23a55a_on_table_1_at_verify_task_18:
+      position:
+      - -2.5789865117846227
+      - -1.3141351329070787
+      - 0.7787231654615607
+      furniture: table_1
+      original_id: _01cace88a48c42438dbd8d1a6f23a55a
+    _19b4cd476c90421ba463423e6e04ef69_on_table_1_at_verify_task_18:
+      position:
+      - -1.5584570771309902
+      - -1.5573965573824784
+      - 0.8039728015824221
+      furniture: table_1
+      original_id: _19b4cd476c90421ba463423e6e04ef69
+    _2e5243eb355c4b0c90aed7281e93d5a6_on_table_1_at_verify_task_18:
+      position:
+      - -2.99844110668749
+      - -1.1111569089352957
+      - 0.8233089441014454
+      furniture: table_1
+      original_id: _2e5243eb355c4b0c90aed7281e93d5a6
+  final_positions:
+    _01cace88a48c42438dbd8d1a6f23a55a_on_table_1_at_verify_task_18:
+      initial_pos:
+      - -2.5789865117846227
+      - -1.3141351329070787
+      - 0.8787231654615607
+      final_pos:
+      - -2.589247941970825
+      - -1.4930553436279297
+      - 0.757927656173706
+      category: tray
+      original_id: _01cace88a48c42438dbd8d1a6f23a55a
+    _19b4cd476c90421ba463423e6e04ef69_on_table_1_at_verify_task_18:
+      initial_pos:
+      - -1.5584570771309902
+      - -1.5573965573824784
+      - 0.9039728015824221
+      final_pos:
+      - -1.5517479181289673
+      - -1.6612279415130615
+      - 0.7819064259529114
+      category: bowl
+      original_id: _19b4cd476c90421ba463423e6e04ef69
+    _2e5243eb355c4b0c90aed7281e93d5a6_on_table_1_at_verify_task_18:
+      initial_pos:
+      - -2.99844110668749
+      - -1.1111569089352957
+      - 0.9233089441014454
+      final_pos:
+      - -2.985468626022339
+      - -1.1393766403198242
+      - 0.7969582676887512
+      category: bowl
+      original_id: _2e5243eb355c4b0c90aed7281e93d5a6
+  family: SUL
+  benchmark_task_id: SUL/verify_task_18
+  global_index: 192
+  target_object_id: _01cace88a48c42438dbd8d1a6f23a55a

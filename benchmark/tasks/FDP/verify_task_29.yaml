@@ -1,0 +1,277 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _59c9ae5b7a04431ca6f3997c4b405bca_on_table_1_at_verify_task_29:
+    original_id: _59c9ae5b7a04431ca6f3997c4b405bca
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/59c9ae5b7a04431ca6f3997c4b405bca.usd
+    usd_scale:
+    - 38.530942127322824
+    - 44.17777110776846
+    - 38.96543860083998
+    position:
+    - -2.240130043882754
+    - -1.4060480351512257
+    - 0.8118370397528634
+    size:
+    - 0.10097503662109375
+    - 0.1988058090209961
+    - 0.09567428263835609
+    detailed_caption: Small decorative figurine resembling a seated figure with exaggerated facial features
+      and textured stone-like surface.
+  _59c9ae5b7a04431ca6f3997c4b405bca_on_table_2_at_verify_task_29:
+    original_id: _59c9ae5b7a04431ca6f3997c4b405bca
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/59c9ae5b7a04431ca6f3997c4b405bca.usd
+    usd_scale:
+    - 38.530942127322824
+    - 44.17777110776846
+    - 38.96543860083998
+    position:
+    - -2.2675431722358756
+    - 2.561386895363442
+    - 0.3378251417120919
+    size:
+    - 0.10097503662109375
+    - 0.1988058090209961
+    - 0.09567428263835609
+    detailed_caption: Small decorative figurine resembling a seated figure with exaggerated facial features
+      and textured stone-like surface.
+episodes:
+- task_id: verify_task_29
+  episode_idx: 19
+  original_idx: 29
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the small decorative figurine resembling a seated figure with exaggerated
+    facial features and textured stone-like surface at the table much larger than another one to cabinet
+    with drawers with orange inner backing.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _59c9ae5b7a04431ca6f3997c4b405bca
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _59c9ae5b7a04431ca6f3997c4b405bca
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _59c9ae5b7a04431ca6f3997c4b405bca
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _59c9ae5b7a04431ca6f3997c4b405bca:
+      category: figurine
+      detailed_caption: Small decorative figurine resembling a seated figure with exaggerated facial features
+        and textured stone-like surface.
+      usd_path: 59c9ae5b7a04431ca6f3997c4b405bca.usd
+      size:
+      - 0.10097503662109375
+      - 0.1988058090209961
+      - 0.09567428263835609
+  obj_distractors:
+  - _041704c459774b618b457a32f97a63f6
+  - _09533e32ffec46ebb63b0910a7206a75
+  obj_distractor_meta:
+    _041704c459774b618b457a32f97a63f6:
+      category: figurine
+      detailed_caption: Stylized dog-like creature with blue mane, bird-like beak, solid base, glossy
+        finish, intricate textures.
+      usd_path: 041704c459774b618b457a32f97a63f6.usd
+      size:
+      - 0.10040283203125
+      - 0.09164237976074219
+      - 0.11731644630344817
+    _09533e32ffec46ebb63b0910a7206a75:
+      category: figurine
+      detailed_caption: Small white dog figurine, seated, smooth surface, slight texturing, realistic
+        proportions, upright posture.
+      usd_path: 09533e32ffec46ebb63b0910a7206a75.usd
+      size:
+      - 0.14359580539166927
+      - 0.2441387176513672
+      - 0.10966081591323018
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Small decorative figurine resembling a seated figure with exaggerated facial
+        features and textured stone-like surface.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Small decorative figurine resembling a seated figure with exaggerated facial
+        features and textured stone-like surface.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Small decorative figurine resembling a seated figure with exaggerated facial
+        features and textured stone-like surface.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  placements:
+    _59c9ae5b7a04431ca6f3997c4b405bca_on_table_1_at_verify_task_29:
+      position:
+      - -2.240130043882754
+      - -1.4060480351512257
+      - 0.8118370397528634
+      furniture: table_1
+      original_id: _59c9ae5b7a04431ca6f3997c4b405bca
+    _59c9ae5b7a04431ca6f3997c4b405bca_on_table_2_at_verify_task_29:
+      position:
+      - -2.2675431722358756
+      - 2.561386895363442
+      - 0.3378251417120919
+      furniture: table_2
+      original_id: _59c9ae5b7a04431ca6f3997c4b405bca
+  final_positions:
+    _59c9ae5b7a04431ca6f3997c4b405bca_on_table_1_at_verify_task_29:
+      initial_pos:
+      - -2.240130043882754
+      - -1.4060480351512257
+      - 0.9118370397528633
+      final_pos:
+      - -2.217491388320923
+      - -1.3846571445465088
+      - 0.7752512097358704
+      category: figurine
+      original_id: _59c9ae5b7a04431ca6f3997c4b405bca
+    _59c9ae5b7a04431ca6f3997c4b405bca_on_table_2_at_verify_task_29:
+      initial_pos:
+      - -2.2675431722358756
+      - 2.561386895363442
+      - 0.43782514171209186
+      final_pos:
+      - -2.2490603923797607
+      - 2.5960986614227295
+      - 0.30123889446258545
+      category: figurine
+      original_id: _59c9ae5b7a04431ca6f3997c4b405bca
+  family: FDP
+  benchmark_task_id: FDP/verify_task_29
+  benchmark_instruction: Transport the small decorative figurine resembling a seated figure with exaggerated
+    facial features and textured stone-like surface at the table much larger than another one to cabinet
+    with drawers with orange inner backing.
+  global_index: 19
+  target_object_id: _59c9ae5b7a04431ca6f3997c4b405bca

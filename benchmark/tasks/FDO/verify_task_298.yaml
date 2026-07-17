@@ -1,0 +1,223 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _0349c93a75174dce821f05648aff5aa6_on_electriccooker_0_at_verify_task_298:
+    original_id: _0349c93a75174dce821f05648aff5aa6
+    category: broccoli
+    usd_path: ${MESATASK_USD_ROOT}/0349c93a75174dce821f05648aff5aa6.usd
+    usd_scale:
+    - 8.332372878408655
+    - 8.256143412987635
+    - 8.479106326253493
+    position:
+    - -4.894838123294172
+    - -3.9841580430650088
+    - 1.062595820967108
+    size:
+    - 0.08142566680908203
+    - 0.0778656005859375
+    - 0.07607427705079317
+episodes:
+- benchmark_task_id: FDO/verify_task_298
+  family: FDO
+  task_id: verify_task_298
+  episode_idx: 46
+  original_idx: 298
+  benchmark_instruction: Go to the only electriccooker in the scene, pick up a broccoli, then travel to
+    whole-black cabinet with flat base to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_type: retrieve
+  task_description: Go to the only electriccooker in the scene, pick up a broccoli, then travel to whole-black
+    cabinet with flat base to place it.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content:
+      - _0349c93a75174dce821f05648aff5aa6
+      door: false
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    washingmachine_1:
+      room: washingroom/0
+      content: []
+      door: false
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _0349c93a75174dce821f05648aff5aa6
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+    electriccooker_0:
+      room: kitchen/0
+      content: []
+      door: false
+  src: electriccooker_0
+  src_distractors: []
+  dest: cabinet_10
+  dest_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  obj_meta:
+    _0349c93a75174dce821f05648aff5aa6:
+      category: broccoli
+      usd_path: 0349c93a75174dce821f05648aff5aa6.usd
+      size:
+      - 0.08142566680908203
+      - 0.0778656005859375
+      - 0.07607427705079317
+  obj_distractors: []
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: open
+    args:
+      receptacle_name: electriccooker_0
+  - action: find
+    args:
+      target_category: broccoli
+  - action: gaze_at
+    args:
+      target_category: broccoli
+  - action: pick
+    args:
+      target_category: broccoli
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: place
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: electriccooker_0
+  - action: close
+    args:
+      receptacle_name: electriccooker_0
+  placements:
+    _0349c93a75174dce821f05648aff5aa6_on_electriccooker_0_at_verify_task_298:
+      position:
+      - -4.894838123294172
+      - -3.9841580430650088
+      - 1.062595820967108
+      furniture: electriccooker_0
+      original_id: _0349c93a75174dce821f05648aff5aa6
+  final_positions:
+    _0349c93a75174dce821f05648aff5aa6_on_electriccooker_0_at_verify_task_298:
+      initial_pos:
+      - -4.894838123294172
+      - -3.9841580430650088
+      - 1.1625958209671081
+      final_pos:
+      - -4.694753646850586
+      - -3.974653959274292
+      - 0.8743295669555664
+      category: broccoli
+      original_id: _0349c93a75174dce821f05648aff5aa6
+  global_index: 174
+  target_object_id: _0349c93a75174dce821f05648aff5aa6

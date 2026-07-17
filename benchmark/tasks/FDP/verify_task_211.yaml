@@ -1,0 +1,261 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_211:
+    original_id: _19f846a920864afb86a015fb79d1424c
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/19f846a920864afb86a015fb79d1424c.usd
+    usd_scale:
+    - 0.13438533143066458
+    - 0.13629921104269854
+    - 0.13385686147421313
+    position:
+    - -2.668799564911874
+    - -1.2241138665339173
+    - 0.7772341181294178
+    size:
+    - 0.13190841674804688
+    - 0.14513397216796875
+    - 0.026468439391464926
+    detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+      outfit, distinct facial features.
+  _19f846a920864afb86a015fb79d1424c_on_table_2_at_verify_task_211:
+    original_id: _19f846a920864afb86a015fb79d1424c
+    category: figurine
+    usd_path: ${MESATASK_USD_ROOT}/19f846a920864afb86a015fb79d1424c.usd
+    usd_scale:
+    - 0.13438533143066458
+    - 0.13629921104269854
+    - 0.13385686147421313
+    position:
+    - -2.1042767283653916
+    - 2.8385690991263317
+    - 0.3032222200886463
+    size:
+    - 0.13190841674804688
+    - 0.14513397216796875
+    - 0.026468439391464926
+    detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+      outfit, distinct facial features.
+episodes:
+- task_id: verify_task_211
+  episode_idx: 57
+  original_idx: 211
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the stylized white figurine, simplistic design, tuft of hair, arms outstretched,
+    buttoned outfit, distinct facial features at the table to place my snack for watching TV to white
+    desk with round black knob.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _19f846a920864afb86a015fb79d1424c
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _19f846a920864afb86a015fb79d1424c
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _19f846a920864afb86a015fb79d1424c
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: desk_2
+  dest_distractors:
+  - desk_1
+  obj_meta:
+    _19f846a920864afb86a015fb79d1424c:
+      category: figurine
+      detailed_caption: Stylized white figurine, simplistic design, tuft of hair, arms outstretched, buttoned
+        outfit, distinct facial features.
+      usd_path: 19f846a920864afb86a015fb79d1424c.usd
+      size:
+      - 0.13190841674804688
+      - 0.14513397216796875
+      - 0.026468439391464926
+  obj_distractors:
+  - _09533e32ffec46ebb63b0910a7206a75
+  - _05aaa6414f4e4b6eb5432dbcf20290f6
+  obj_distractor_meta:
+    _09533e32ffec46ebb63b0910a7206a75:
+      category: figurine
+      detailed_caption: Small white dog figurine, seated, smooth surface, slight texturing, realistic
+        proportions, upright posture.
+      usd_path: 09533e32ffec46ebb63b0910a7206a75.usd
+      size:
+      - 0.14359580539166927
+      - 0.2441387176513672
+      - 0.10966081591323018
+    _05aaa6414f4e4b6eb5432dbcf20290f6:
+      category: figurine
+      detailed_caption: Stylized figurine with a rounded head, small body, short-sleeved shirt, and shorts.
+      usd_path: 05aaa6414f4e4b6eb5432dbcf20290f6.usd
+      size:
+      - 0.06312370300292969
+      - 0.2378683090209961
+      - 0.0644194787601009
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: figurine
+      target_description: Stylized white figurine, simplistic design, tuft of hair, arms outstretched,
+        buttoned outfit, distinct facial features.
+  - action: gaze_at
+    args:
+      target_category: figurine
+      target_description: Stylized white figurine, simplistic design, tuft of hair, arms outstretched,
+        buttoned outfit, distinct facial features.
+  - action: pick
+    args:
+      target_category: figurine
+      target_description: Stylized white figurine, simplistic design, tuft of hair, arms outstretched,
+        buttoned outfit, distinct facial features.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: place
+    args:
+      receptacle_name: desk_2
+  placements:
+    _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_211:
+      position:
+      - -2.668799564911874
+      - -1.2241138665339173
+      - 0.7772341181294178
+      furniture: table_1
+      original_id: _19f846a920864afb86a015fb79d1424c
+    _19f846a920864afb86a015fb79d1424c_on_table_2_at_verify_task_211:
+      position:
+      - -2.1042767283653916
+      - 2.8385690991263317
+      - 0.3032222200886463
+      furniture: table_2
+      original_id: _19f846a920864afb86a015fb79d1424c
+  final_positions:
+    _19f846a920864afb86a015fb79d1424c_on_table_1_at_verify_task_211:
+      initial_pos:
+      - -2.668799564911874
+      - -1.2241138665339173
+      - 0.8772341181294178
+      final_pos:
+      - -2.668367385864258
+      - -1.2247315645217896
+      - 0.7551819086074829
+      category: figurine
+      original_id: _19f846a920864afb86a015fb79d1424c
+    _19f846a920864afb86a015fb79d1424c_on_table_2_at_verify_task_211:
+      initial_pos:
+      - -2.1042767283653916
+      - 2.8385690991263317
+      - 0.4032222200886463
+      final_pos:
+      - -2.103844165802002
+      - 2.837951421737671
+      - 0.2811697721481323
+      category: figurine
+      original_id: _19f846a920864afb86a015fb79d1424c
+  family: FDP
+  benchmark_task_id: FDP/verify_task_211
+  benchmark_instruction: Transport the stylized white figurine, simplistic design, tuft of hair, arms
+    outstretched, buttoned outfit, distinct facial features at the table to place my snack for watching
+    TV to white desk with round black knob.
+  global_index: 57
+  target_object_id: _19f846a920864afb86a015fb79d1424c

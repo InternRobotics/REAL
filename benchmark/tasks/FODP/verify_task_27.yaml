@@ -1,0 +1,339 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_1_at_verify_task_27:
+    original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/2442d6cbb5bf42a0a6e9ea7e1a03d295.usd
+    usd_scale:
+    - 23.8239851313981
+    - 23.82712424491061
+    - 22.869612082212583
+    position:
+    - -2.7178835980461535
+    - -1.4473900639340256
+    - 0.891710631181486
+    size:
+    - 0.23159360885620117
+    - 0.3685493469238281
+    - 0.2554214654956013
+    detailed_caption: Compact coffee maker with a sleek navy blue body and a glass carafe.
+  _9ccda2fddba846e6ba97eb774b8a09c6_on_table_1_at_verify_task_27:
+    original_id: _9ccda2fddba846e6ba97eb774b8a09c6
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/9ccda2fddba846e6ba97eb774b8a09c6.usd
+    usd_scale:
+    - 0.0477774688161441
+    - 0.04428709754229494
+    - 0.04550830943195279
+    position:
+    - -2.0982502548074167
+    - -1.2422656531133116
+    - 0.9465832489763852
+    size:
+    - 0.2250828742980957
+    - 0.3754711151123047
+    - 0.36516670108539984
+    detailed_caption: Coffee maker with a sleek black and silver design, featuring a carafe and drip basin.
+  _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_27:
+    original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/2a7bbe16-c154-4ecb-adb6-9cd3548c588d.usd
+    usd_scale:
+    - 22.417340605209134
+    - 20.832840710833366
+    - 22.872220378479863
+    position:
+    - -1.765681904114911
+    - -1.41353760579498
+    - 0.9413099920598325
+    size:
+    - 0.16703033447265625
+    - 0.413726806640625
+    - 0.35462018725229427
+    detailed_caption: Compact espresso coffee maker with a shiny black and white exterior, textured base,
+      and brewing head.
+  _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_2_at_verify_task_27:
+    original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    category: coffee maker
+    usd_path: ${MESATASK_USD_ROOT}/2442d6cbb5bf42a0a6e9ea7e1a03d295.usd
+    usd_scale:
+    - 23.8239851313981
+    - 23.82712424491061
+    - 22.869612082212583
+    position:
+    - -2.074994031071094
+    - 3.025668682447107
+    - 0.4176987331407145
+    size:
+    - 0.23159360885620117
+    - 0.3685493469238281
+    - 0.2554214654956013
+    detailed_caption: Compact coffee maker with a sleek navy blue body and a glass carafe.
+episodes:
+- benchmark_task_id: FODP/verify_task_27
+  family: FODP
+  task_id: verify_task_27
+  episode_idx: 17
+  original_idx: 27
+  benchmark_instruction: Retrieve the compact coffee maker with a sleek navy blue body and a glass carafe
+    from the table much larger than another one and deposit it at cabinet with vertical slatted wall unit.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Retrieve the compact coffee maker with a sleek navy blue body and a glass carafe from
+    the table much larger than another one and deposit it at cabinet with vertical slatted wall unit.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _2442d6cbb5bf42a0a6e9ea7e1a03d295
+      - _9ccda2fddba846e6ba97eb774b8a09c6
+      - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _9ccda2fddba846e6ba97eb774b8a09c6
+      - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295:
+      category: coffee maker
+      detailed_caption: Compact coffee maker with a sleek navy blue body and a glass carafe.
+      usd_path: 2442d6cbb5bf42a0a6e9ea7e1a03d295.usd
+      size:
+      - 0.23159360885620117
+      - 0.3685493469238281
+      - 0.2554214654956013
+  obj_distractors:
+  - _9ccda2fddba846e6ba97eb774b8a09c6
+  - _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+  obj_distractor_meta:
+    _9ccda2fddba846e6ba97eb774b8a09c6:
+      category: coffee maker
+      detailed_caption: Coffee maker with a sleek black and silver design, featuring a carafe and drip
+        basin.
+      usd_path: 9ccda2fddba846e6ba97eb774b8a09c6.usd
+      size:
+      - 0.2250828742980957
+      - 0.3754711151123047
+      - 0.36516670108539984
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d:
+      category: coffee maker
+      detailed_caption: Compact espresso coffee maker with a shiny black and white exterior, textured
+        base, and brewing head.
+      usd_path: 2a7bbe16-c154-4ecb-adb6-9cd3548c588d.usd
+      size:
+      - 0.16703033447265625
+      - 0.413726806640625
+      - 0.35462018725229427
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek navy blue body and a glass carafe.
+  - action: gaze_at
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek navy blue body and a glass carafe.
+  - action: pick
+    args:
+      target_category: coffee maker
+      target_description: Compact coffee maker with a sleek navy blue body and a glass carafe.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_7
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  placements:
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_1_at_verify_task_27:
+      position:
+      - -2.7178835980461535
+      - -1.4473900639340256
+      - 0.891710631181486
+      furniture: table_1
+      original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    _9ccda2fddba846e6ba97eb774b8a09c6_on_table_1_at_verify_task_27:
+      position:
+      - -2.0982502548074167
+      - -1.2422656531133116
+      - 0.9465832489763852
+      furniture: table_1
+      original_id: _9ccda2fddba846e6ba97eb774b8a09c6
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_27:
+      position:
+      - -1.765681904114911
+      - -1.41353760579498
+      - 0.9413099920598325
+      furniture: table_1
+      original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_2_at_verify_task_27:
+      position:
+      - -2.074994031071094
+      - 3.025668682447107
+      - 0.4176987331407145
+      furniture: table_2
+      original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+  final_positions:
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_1_at_verify_task_27:
+      initial_pos:
+      - -2.7178835980461535
+      - -1.4473900639340256
+      - 0.991710631181486
+      final_pos:
+      - -2.683537721633911
+      - -1.4472604990005493
+      - 0.8639772534370422
+      category: coffee maker
+      original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+    _9ccda2fddba846e6ba97eb774b8a09c6_on_table_1_at_verify_task_27:
+      initial_pos:
+      - -2.0982502548074167
+      - -1.2422656531133116
+      - 1.0465832489763853
+      final_pos:
+      - -2.093916893005371
+      - -1.2205300331115723
+      - 0.9198256731033325
+      category: coffee maker
+      original_id: _9ccda2fddba846e6ba97eb774b8a09c6
+    _2a7bbe16_c154_4ecb_adb6_9cd3548c588d_on_table_1_at_verify_task_27:
+      initial_pos:
+      - -1.765681904114911
+      - -1.41353760579498
+      - 1.0413099920598325
+      final_pos:
+      - -1.4664772748947144
+      - -1.4489715099334717
+      - 0.8260326385498047
+      category: coffee maker
+      original_id: _2a7bbe16_c154_4ecb_adb6_9cd3548c588d
+    _2442d6cbb5bf42a0a6e9ea7e1a03d295_on_table_2_at_verify_task_27:
+      initial_pos:
+      - -2.074994031071094
+      - 3.025668682447107
+      - 0.5176987331407145
+      final_pos:
+      - -2.0131707191467285
+      - 3.0278024673461914
+      - 0.38760486245155334
+      category: coffee maker
+      original_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295
+  global_index: 89
+  target_object_id: _2442d6cbb5bf42a0a6e9ea7e1a03d295

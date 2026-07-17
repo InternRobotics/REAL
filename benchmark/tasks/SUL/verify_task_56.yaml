@@ -1,0 +1,306 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _4c820629af294e50af725ad1f5f01cb0_on_table_1_at_verify_task_56:
+    original_id: _4c820629af294e50af725ad1f5f01cb0
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/4c820629af294e50af725ad1f5f01cb0.usd
+    usd_scale:
+    - 0.8503708705606161
+    - 0.594437132317855
+    - 0.872917708246437
+    position:
+    - -2.9312829509968994
+    - -1.3783289701322663
+    - 0.7947147758491337
+    size:
+    - 0.11966323852539062
+    - 0.12358665466308594
+    - 0.061429754830896854
+    detailed_caption: A vintage red alarm clock with a round face, two bells, and black hands.
+  _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_table_1_at_verify_task_56:
+    original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/79e2e966-6284-4217-8b9d-2e8159a68d5e.usd
+    usd_scale:
+    - 12.914418231997116
+    - 12.91305249662835
+    - 12.33636876463263
+    position:
+    - -1.8248887846049877
+    - -1.3039165760504603
+    - 0.8866371470681043
+    size:
+    - 0.11730003356933594
+    - 0.11744308471679688
+    - 0.24527449726883788
+    detailed_caption: Classic hourglass of dark wood, symmetrical design, transparent glass, fine white
+      sand visible.
+  _2dc619299f1c412c806cd5c190728523_on_table_1_at_verify_task_56:
+    original_id: _2dc619299f1c412c806cd5c190728523
+    category: hourglass
+    usd_path: ${MESATASK_USD_ROOT}/2dc619299f1c412c806cd5c190728523.usd
+    usd_scale:
+    - 1.021126145311794
+    - 1.0211259180215864
+    - 0.9192074448746357
+    position:
+    - -2.479121353631961
+    - -1.202406915937912
+    - 0.8435119718010538
+    size:
+    - 0.17491436004638672
+    - 0.30715882778167725
+    - 0.15902414673473686
+    detailed_caption: Elegant hourglass with a wooden frame, glass body, circular polished wood top, symmetrical
+      chambers.
+episodes:
+- task_id: verify_task_56
+  episode_idx: 40
+  original_idx: 56
+  benchmark_instruction: Go to the table much larger than another one, pick up a timekeeping device, then
+    travel to cabinet with vertical slatted wall unit to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Transport the a vintage red alarm clock with a round face, two bells, and black hands
+    at the table much larger than another one to cabinet with vertical slatted wall unit.
+  fuzzy_task_description: Go to the table much larger than another one, pick up a timekeeping device,
+    then travel to cabinet with vertical slatted wall unit to place it.
+  purpose: timekeeping device
+  purpose_group: timekeeping
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _4c820629af294e50af725ad1f5f01cb0
+      - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+      - _2dc619299f1c412c806cd5c190728523
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+      - _2dc619299f1c412c806cd5c190728523
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _4c820629af294e50af725ad1f5f01cb0
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_1
+  src_distractors:
+  - table_2
+  dest: cabinet_6
+  dest_distractors:
+  - cabinet_7
+  - cabinet_8
+  - cabinet_9
+  - cabinet_10
+  obj_meta:
+    _4c820629af294e50af725ad1f5f01cb0:
+      category: clock
+      detailed_caption: A vintage red alarm clock with a round face, two bells, and black hands.
+      usd_path: 4c820629af294e50af725ad1f5f01cb0.usd
+      size:
+      - 0.11966323852539062
+      - 0.12358665466308594
+      - 0.061429754830896854
+  obj_distractors:
+  - _79e2e966_6284_4217_8b9d_2e8159a68d5e
+  - _2dc619299f1c412c806cd5c190728523
+  obj_distractor_meta:
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e:
+      category: hourglass
+      detailed_caption: Classic hourglass of dark wood, symmetrical design, transparent glass, fine white
+        sand visible.
+      usd_path: 79e2e966-6284-4217-8b9d-2e8159a68d5e.usd
+      size:
+      - 0.11730003356933594
+      - 0.11744308471679688
+      - 0.24527449726883788
+    _2dc619299f1c412c806cd5c190728523:
+      category: hourglass
+      detailed_caption: Elegant hourglass with a wooden frame, glass body, circular polished wood top,
+        symmetrical chambers.
+      usd_path: 2dc619299f1c412c806cd5c190728523.usd
+      size:
+      - 0.17491436004638672
+      - 0.30715882778167725
+      - 0.15902414673473686
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: find
+    args:
+      target_category: clock
+      target_description: A vintage red alarm clock with a round face, two bells, and black hands.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: A vintage red alarm clock with a round face, two bells, and black hands.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: A vintage red alarm clock with a round face, two bells, and black hands.
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_6
+  - action: place
+    args:
+      receptacle_name: cabinet_6
+  physics_task_description: Transport the a vintage red alarm clock with a round face, two bells, and
+    black hands at the table much larger than another one to cabinet with vertical slatted wall unit.
+  placements:
+    _4c820629af294e50af725ad1f5f01cb0_on_table_1_at_verify_task_56:
+      position:
+      - -2.9312829509968994
+      - -1.3783289701322663
+      - 0.7947147758491337
+      furniture: table_1
+      original_id: _4c820629af294e50af725ad1f5f01cb0
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_table_1_at_verify_task_56:
+      position:
+      - -1.8248887846049877
+      - -1.3039165760504603
+      - 0.8866371470681043
+      furniture: table_1
+      original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    _2dc619299f1c412c806cd5c190728523_on_table_1_at_verify_task_56:
+      position:
+      - -2.479121353631961
+      - -1.202406915937912
+      - 0.8435119718010538
+      furniture: table_1
+      original_id: _2dc619299f1c412c806cd5c190728523
+  final_positions:
+    _4c820629af294e50af725ad1f5f01cb0_on_table_1_at_verify_task_56:
+      initial_pos:
+      - -2.9312829509968994
+      - -1.3783289701322663
+      - 0.8947147758491337
+      final_pos:
+      - -2.931967258453369
+      - -1.394225001335144
+      - 0.7701665759086609
+      category: clock
+      original_id: _4c820629af294e50af725ad1f5f01cb0
+    _79e2e966_6284_4217_8b9d_2e8159a68d5e_on_table_1_at_verify_task_56:
+      initial_pos:
+      - -1.8248887846049877
+      - -1.3039165760504603
+      - 0.9866371470681042
+      final_pos:
+      - -1.8249156475067139
+      - -1.303887128829956
+      - 0.8661113977432251
+      category: hourglass
+      original_id: _79e2e966_6284_4217_8b9d_2e8159a68d5e
+    _2dc619299f1c412c806cd5c190728523_on_table_1_at_verify_task_56:
+      initial_pos:
+      - -2.479121353631961
+      - -1.202406915937912
+      - 0.9435119718010537
+      final_pos:
+      - -2.4627459049224854
+      - -1.202612042427063
+      - 0.8219772577285767
+      category: hourglass
+      original_id: _2dc619299f1c412c806cd5c190728523
+  family: SUL
+  benchmark_task_id: SUL/verify_task_56
+  global_index: 216
+  target_object_id: _4c820629af294e50af725ad1f5f01cb0

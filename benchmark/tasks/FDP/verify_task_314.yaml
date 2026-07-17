@@ -1,0 +1,257 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  ca13bdd67bb14e0a9f9579ae3152d1d3_on_bed_1_at_verify_task_314:
+    original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/ca13bdd67bb14e0a9f9579ae3152d1d3.usd
+    usd_scale:
+    - 1.439434700765824
+    - 1.415398485116941
+    - 1.4961662834086935
+    position:
+    - 3.4490945809591778
+    - 4.128188380004519
+    - 0.49724103366635974
+    size:
+    - 0.12482070922851562
+    - 0.0071048736572265625
+    - 0.009911764369462617
+    detailed_caption: A ballpoint pen with a sleek design, blue tip, and wooden body.
+  ca13bdd67bb14e0a9f9579ae3152d1d3_on_bed_2_at_verify_task_314:
+    original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+    category: pen
+    usd_path: ${MESATASK_USD_ROOT}/ca13bdd67bb14e0a9f9579ae3152d1d3.usd
+    usd_scale:
+    - 1.439434700765824
+    - 1.415398485116941
+    - 1.4961662834086935
+    position:
+    - 4.695413125146154
+    - -2.489295191426556
+    - 0.5271051064660424
+    size:
+    - 0.12482070922851562
+    - 0.0071048736572265625
+    - 0.009911764369462617
+    detailed_caption: A ballpoint pen with a sleek design, blue tip, and wooden body.
+episodes:
+- task_id: verify_task_314
+  episode_idx: 61
+  original_idx: 314
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to layered grey and black bed, pick up the a ballpoint pen with a sleek design,
+    blue tip, and wooden body, then travel to wide desk with orange drawer pulls to place it.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content:
+      - ca13bdd67bb14e0a9f9579ae3152d1d3
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content:
+      - ca13bdd67bb14e0a9f9579ae3152d1d3
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - ca13bdd67bb14e0a9f9579ae3152d1d3
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: bed_2
+  src_distractors:
+  - bed_1
+  dest: desk_1
+  dest_distractors:
+  - desk_2
+  obj_meta:
+    ca13bdd67bb14e0a9f9579ae3152d1d3:
+      category: pen
+      detailed_caption: A ballpoint pen with a sleek design, blue tip, and wooden body.
+      usd_path: ca13bdd67bb14e0a9f9579ae3152d1d3.usd
+      size:
+      - 0.12482070922851562
+      - 0.0071048736572265625
+      - 0.009911764369462617
+  obj_distractors:
+  - a51ba478_3a52_4f69_a08b_80032e52345f
+  - _83fefaeffaed4586aa0bbae2fbfac6ff
+  obj_distractor_meta:
+    a51ba478_3a52_4f69_a08b_80032e52345f:
+      category: pen
+      detailed_caption: Red cylindrical felt-tip pen with a fine tip, white clip, and transparent ink
+        level end.
+      usd_path: a51ba478-3a52-4f69-a08b-80032e52345f.usd
+      size:
+      - 0.00919342041015625
+      - 0.1358642578125
+      - 0.01009893961600028
+    _83fefaeffaed4586aa0bbae2fbfac6ff:
+      category: cara
+      detailed_caption: Rectangular control panel box, matte black finish, metallic dials, red indicator
+        lights, labeled controls.
+      usd_path: 83fefaeffaed4586aa0bbae2fbfac6ff.usd
+      size:
+      - 0.1344776153564453
+      - 0.09222793579101562
+      - 0.13478827895596623
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: bed_1
+  - action: nav_to
+    args:
+      receptacle_name: bed_2
+  - action: find
+    args:
+      target_category: pen
+      target_description: A ballpoint pen with a sleek design, blue tip, and wooden body.
+  - action: gaze_at
+    args:
+      target_category: pen
+      target_description: A ballpoint pen with a sleek design, blue tip, and wooden body.
+  - action: pick
+    args:
+      target_category: pen
+      target_description: A ballpoint pen with a sleek design, blue tip, and wooden body.
+  - action: nav_to
+    args:
+      receptacle_name: desk_2
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: place
+    args:
+      receptacle_name: desk_1
+  placements:
+    ca13bdd67bb14e0a9f9579ae3152d1d3_on_bed_1_at_verify_task_314:
+      position:
+      - 3.4490945809591778
+      - 4.128188380004519
+      - 0.49724103366635974
+      furniture: bed_1
+      original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+    ca13bdd67bb14e0a9f9579ae3152d1d3_on_bed_2_at_verify_task_314:
+      position:
+      - 4.695413125146154
+      - -2.489295191426556
+      - 0.5271051064660424
+      furniture: bed_2
+      original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+  final_positions:
+    ca13bdd67bb14e0a9f9579ae3152d1d3_on_bed_1_at_verify_task_314:
+      initial_pos:
+      - 3.4490945809591778
+      - 4.128188380004519
+      - 0.5972410336663597
+      final_pos:
+      - 3.5185770988464355
+      - 4.150406837463379
+      - 0.4651649594306946
+      category: pen
+      original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+    ca13bdd67bb14e0a9f9579ae3152d1d3_on_bed_2_at_verify_task_314:
+      initial_pos:
+      - 4.695413125146154
+      - -2.489295191426556
+      - 0.6271051064660423
+      final_pos:
+      - 4.745785713195801
+      - -2.4931466579437256
+      - 0.5449689030647278
+      category: pen
+      original_id: ca13bdd67bb14e0a9f9579ae3152d1d3
+  family: FDP
+  benchmark_task_id: FDP/verify_task_314
+  benchmark_instruction: Go to layered grey and black bed, pick up the a ballpoint pen with a sleek design,
+    blue tip, and wooden body, then travel to wide desk with orange drawer pulls to place it.
+  global_index: 61
+  target_object_id: ca13bdd67bb14e0a9f9579ae3152d1d3

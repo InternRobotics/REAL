@@ -1,0 +1,382 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_6_at_verify_task_48:
+    original_id: _64c090bfccba4f91ab6efc8858aa4750
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/64c090bfccba4f91ab6efc8858aa4750.usd
+    usd_scale:
+    - 1.2537535280137757
+    - 1.2438319567928153
+    - 1.2439881397464698
+    position:
+    - 2.5178110408919174
+    - -0.9823630944041004
+    - 0.770160136222803
+    size:
+    - 0.1346435546875
+    - 0.14560389518737793
+    - 0.06432028293602343
+    detailed_caption: Decorative clock with gold statue, ornate base, classic dial, glossy finish, textured
+      rock element.
+  _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_7_at_verify_task_48:
+    original_id: _64c090bfccba4f91ab6efc8858aa4750
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/64c090bfccba4f91ab6efc8858aa4750.usd
+    usd_scale:
+    - 1.2537535280137757
+    - 1.2438319567928153
+    - 1.2439881397464698
+    position:
+    - 0.9447578012030369
+    - 1.6822672221210921
+    - 0.8887101387977236
+    size:
+    - 0.1346435546875
+    - 0.14560389518737793
+    - 0.06432028293602343
+    detailed_caption: Decorative clock with gold statue, ornate base, classic dial, glossy finish, textured
+      rock element.
+  _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_8_at_verify_task_48:
+    original_id: _64c090bfccba4f91ab6efc8858aa4750
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/64c090bfccba4f91ab6efc8858aa4750.usd
+    usd_scale:
+    - 1.2537535280137757
+    - 1.2438319567928153
+    - 1.2439881397464698
+    position:
+    - 4.568074083003522
+    - 2.949303904466412
+    - 0.5026601231097811
+    size:
+    - 0.1346435546875
+    - 0.14560389518737793
+    - 0.06432028293602343
+    detailed_caption: Decorative clock with gold statue, ornate base, classic dial, glossy finish, textured
+      rock element.
+  _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_9_at_verify_task_48:
+    original_id: _64c090bfccba4f91ab6efc8858aa4750
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/64c090bfccba4f91ab6efc8858aa4750.usd
+    usd_scale:
+    - 1.2537535280137757
+    - 1.2438319567928153
+    - 1.2439881397464698
+    position:
+    - 6.059777277890936
+    - 1.2294554828312287
+    - 0.9921601390838259
+    size:
+    - 0.1346435546875
+    - 0.14560389518737793
+    - 0.06432028293602343
+    detailed_caption: Decorative clock with gold statue, ornate base, classic dial, glossy finish, textured
+      rock element.
+  _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_10_at_verify_task_48:
+    original_id: _64c090bfccba4f91ab6efc8858aa4750
+    category: clock
+    usd_path: ${MESATASK_USD_ROOT}/64c090bfccba4f91ab6efc8858aa4750.usd
+    usd_scale:
+    - 1.2537535280137757
+    - 1.2438319567928153
+    - 1.2439881397464698
+    position:
+    - 3.20161296012652
+    - -0.5828244388104311
+    - 0.5251601314544314
+    size:
+    - 0.1346435546875
+    - 0.14560389518737793
+    - 0.06432028293602343
+    detailed_caption: Decorative clock with gold statue, ornate base, classic dial, glossy finish, textured
+      rock element.
+episodes:
+- task_id: verify_task_48
+  episode_idx: 28
+  original_idx: 48
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Get the decorative clock with gold statue, ornate base, classic dial, glossy finish,
+    textured rock element from square nightstand with circular rattan center and move it to the table
+    much larger than another one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content:
+      - _64c090bfccba4f91ab6efc8858aa4750
+    cabinet_7:
+      room: washingroom/0
+      content:
+      - _64c090bfccba4f91ab6efc8858aa4750
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content:
+      - _64c090bfccba4f91ab6efc8858aa4750
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content:
+      - _64c090bfccba4f91ab6efc8858aa4750
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content:
+      - _64c090bfccba4f91ab6efc8858aa4750
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _64c090bfccba4f91ab6efc8858aa4750
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: cabinet_8
+  src_distractors:
+  - cabinet_6
+  - cabinet_7
+  - cabinet_9
+  - cabinet_10
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _64c090bfccba4f91ab6efc8858aa4750:
+      category: clock
+      detailed_caption: Decorative clock with gold statue, ornate base, classic dial, glossy finish, textured
+        rock element.
+      usd_path: 64c090bfccba4f91ab6efc8858aa4750.usd
+      size:
+      - 0.1346435546875
+      - 0.14560389518737793
+      - 0.06432028293602343
+  obj_distractors:
+  - _29f2859da57b491dbca907164a8014f0
+  - _5f528103_90e2_4a1b_9693_7b3805f796db
+  obj_distractor_meta:
+    _29f2859da57b491dbca907164a8014f0:
+      category: timer
+      detailed_caption: Sleek, glossy rectangular clock with blue LED display; thin body, minimalist and
+        elegant design.
+      usd_path: 29f2859da57b491dbca907164a8014f0.usd
+      size:
+      - 0.17275238037109375
+      - 0.40416908264160156
+      - 0.00669733975064446
+    _5f528103_90e2_4a1b_9693_7b3805f796db:
+      category: clock
+      detailed_caption: Vintage alarm clock with a rounded metallic body, worn brass finish, white face,
+        and small legs.
+      usd_path: 5f528103-90e2-4a1b-9693-7b3805f796db.usd
+      size:
+      - 0.254540029913187
+      - 0.20325279235839844
+      - 0.10450849030166864
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_9
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_10
+  - action: nav_to
+    args:
+      receptacle_name: cabinet_8
+  - action: find
+    args:
+      target_category: clock
+      target_description: Decorative clock with gold statue, ornate base, classic dial, glossy finish,
+        textured rock element.
+  - action: gaze_at
+    args:
+      target_category: clock
+      target_description: Decorative clock with gold statue, ornate base, classic dial, glossy finish,
+        textured rock element.
+  - action: pick
+    args:
+      target_category: clock
+      target_description: Decorative clock with gold statue, ornate base, classic dial, glossy finish,
+        textured rock element.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_6_at_verify_task_48:
+      position:
+      - 2.5178110408919174
+      - -0.9823630944041004
+      - 0.770160136222803
+      furniture: cabinet_6
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_7_at_verify_task_48:
+      position:
+      - 0.9447578012030369
+      - 1.6822672221210921
+      - 0.8887101387977236
+      furniture: cabinet_7
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_8_at_verify_task_48:
+      position:
+      - 4.568074083003522
+      - 2.949303904466412
+      - 0.5026601231097811
+      furniture: cabinet_8
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_9_at_verify_task_48:
+      position:
+      - 6.059777277890936
+      - 1.2294554828312287
+      - 0.9921601390838259
+      furniture: cabinet_9
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_10_at_verify_task_48:
+      position:
+      - 3.20161296012652
+      - -0.5828244388104311
+      - 0.5251601314544314
+      furniture: cabinet_10
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+  final_positions:
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_6_at_verify_task_48:
+      initial_pos:
+      - 2.5178110408919174
+      - -0.9823630944041004
+      - 0.870160136222803
+      final_pos:
+      - 2.519244909286499
+      - -0.9784140586853027
+      - 0.7437531352043152
+      category: clock
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_7_at_verify_task_48:
+      initial_pos:
+      - 0.9447578012030369
+      - 1.6822672221210921
+      - 0.9887101387977236
+      final_pos:
+      - 0.9447530508041382
+      - 1.6847081184387207
+      - 0.8642231225967407
+      category: clock
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_8_at_verify_task_48:
+      initial_pos:
+      - 4.568074083003522
+      - 2.949303904466412
+      - 0.6026601231097811
+      final_pos:
+      - 4.570478439331055
+      - 2.9658679962158203
+      - 0.4781734049320221
+      category: clock
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_9_at_verify_task_48:
+      initial_pos:
+      - 6.059777277890936
+      - 1.2294554828312287
+      - 1.092160139083826
+      final_pos:
+      - 6.059345722198486
+      - 1.2316488027572632
+      - 0.9676723480224609
+      category: clock
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+    _64c090bfccba4f91ab6efc8858aa4750_on_cabinet_10_at_verify_task_48:
+      initial_pos:
+      - 3.20161296012652
+      - -0.5828244388104311
+      - 0.6251601314544314
+      final_pos:
+      - 3.2022292613983154
+      - -0.5580202341079712
+      - 0.5019232630729675
+      category: clock
+      original_id: _64c090bfccba4f91ab6efc8858aa4750
+  family: FDP
+  benchmark_task_id: FDP/verify_task_48
+  benchmark_instruction: Get the decorative clock with gold statue, ornate base, classic dial, glossy
+    finish, textured rock element from square nightstand with circular rattan center and move it to the
+    table much larger than another one.
+  global_index: 28
+  target_object_id: _64c090bfccba4f91ab6efc8858aa4750

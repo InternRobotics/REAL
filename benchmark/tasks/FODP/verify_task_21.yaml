@@ -1,0 +1,335 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _4e902017e4624547b440da0a6658a689_on_desk_1_at_verify_task_21:
+    original_id: _4e902017e4624547b440da0a6658a689
+    category: headphones
+    usd_path: ${MESATASK_USD_ROOT}/4e902017e4624547b440da0a6658a689.usd
+    usd_scale:
+    - 0.020198860939941148
+    - 0.0507302467406753
+    - 0.008407253808437527
+    position:
+    - 0.04066161308216969
+    - -3.0842306137089723
+    - 0.7740862631285563
+    size:
+    - 0.18924999237060547
+    - 0.4871482849121094
+    - 0.03217245568521321
+    detailed_caption: Glossy black over-ear headphones with cushioned ear pads and adjustable headband.
+      Modern design.
+  _5d182a8c2baf4134be22071a6fbd0be2_on_desk_1_at_verify_task_21:
+    original_id: _5d182a8c2baf4134be22071a6fbd0be2
+    category: mouse
+    usd_path: ${MESATASK_USD_ROOT}/5d182a8c2baf4134be22071a6fbd0be2.usd
+    usd_scale:
+    - 98.74915767582058
+    - 98.70143230542318
+    - 98.82424026828711
+    position:
+    - 0.007986058986590217
+    - -2.5687724767086393
+    - 0.8074598109815452
+    size:
+    - 0.057285308837890625
+    - 0.03194141387939453
+    - 0.09891955139119091
+    detailed_caption: Sleek, curved black mouse with subtle purple accents and a smooth surface.
+  a168f82493e54feda127d0361d8f0936_on_desk_1_at_verify_task_21:
+    original_id: a168f82493e54feda127d0361d8f0936
+    category: headphones
+    usd_path: ${MESATASK_USD_ROOT}/a168f82493e54feda127d0361d8f0936.usd
+    usd_scale:
+    - 5.064480445765724
+    - 4.916851051585438
+    - 5.3517198359482006
+    position:
+    - 0.09023362545327843
+    - -2.2120123655813577
+    - 0.7982387181650847
+    size:
+    - 0.145660400390625
+    - 0.15006637573242188
+    - 0.08047736575827003
+    detailed_caption: Pair of over-ear headphones; rounded, padded design; sleek matte black finish.
+  _4e902017e4624547b440da0a6658a689_on_desk_2_at_verify_task_21:
+    original_id: _4e902017e4624547b440da0a6658a689
+    category: headphones
+    usd_path: ${MESATASK_USD_ROOT}/4e902017e4624547b440da0a6658a689.usd
+    usd_scale:
+    - 0.020198860939941148
+    - 0.0507302467406753
+    - 0.008407253808437527
+    position:
+    - 4.405514245463886
+    - 1.614534313765786
+    - 0.7815287970984355
+    size:
+    - 0.18924999237060547
+    - 0.4871482849121094
+    - 0.03217245568521321
+    detailed_caption: Glossy black over-ear headphones with cushioned ear pads and adjustable headband.
+      Modern design.
+episodes:
+- benchmark_task_id: FODP/verify_task_21
+  family: FODP
+  task_id: verify_task_21
+  episode_idx: 13
+  original_idx: 21
+  benchmark_instruction: Go to white desk with rectangular wooden handles, pick up the glossy black over-ear
+    headphones with cushioned ear pads and adjustable headband. Modern design, then travel to the table
+    where we have dinner to place it.
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Go to white desk with rectangular wooden handles, pick up the glossy black over-ear
+    headphones with cushioned ear pads and adjustable headband. Modern design, then travel to the table
+    where we have dinner to place it.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content: []
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _4e902017e4624547b440da0a6658a689
+      - _5d182a8c2baf4134be22071a6fbd0be2
+      - a168f82493e54feda127d0361d8f0936
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _4e902017e4624547b440da0a6658a689
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _4e902017e4624547b440da0a6658a689
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content:
+      - _5d182a8c2baf4134be22071a6fbd0be2
+      - a168f82493e54feda127d0361d8f0936
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content:
+      - _4e902017e4624547b440da0a6658a689
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: desk_1
+  src_distractors:
+  - desk_2
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _4e902017e4624547b440da0a6658a689:
+      category: headphones
+      detailed_caption: Glossy black over-ear headphones with cushioned ear pads and adjustable headband.
+        Modern design.
+      usd_path: 4e902017e4624547b440da0a6658a689.usd
+      size:
+      - 0.18924999237060547
+      - 0.4871482849121094
+      - 0.03217245568521321
+  obj_distractors:
+  - _5d182a8c2baf4134be22071a6fbd0be2
+  - a168f82493e54feda127d0361d8f0936
+  obj_distractor_meta:
+    _5d182a8c2baf4134be22071a6fbd0be2:
+      category: mouse
+      detailed_caption: Sleek, curved black mouse with subtle purple accents and a smooth surface.
+      usd_path: 5d182a8c2baf4134be22071a6fbd0be2.usd
+      size:
+      - 0.057285308837890625
+      - 0.03194141387939453
+      - 0.09891955139119091
+    a168f82493e54feda127d0361d8f0936:
+      category: headphones
+      detailed_caption: Pair of over-ear headphones; rounded, padded design; sleek matte black finish.
+      usd_path: a168f82493e54feda127d0361d8f0936.usd
+      size:
+      - 0.145660400390625
+      - 0.15006637573242188
+      - 0.08047736575827003
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: desk_1
+  - action: find
+    args:
+      target_category: headphones
+      target_description: Glossy black over-ear headphones with cushioned ear pads and adjustable headband.
+        Modern design.
+  - action: gaze_at
+    args:
+      target_category: headphones
+      target_description: Glossy black over-ear headphones with cushioned ear pads and adjustable headband.
+        Modern design.
+  - action: pick
+    args:
+      target_category: headphones
+      target_description: Glossy black over-ear headphones with cushioned ear pads and adjustable headband.
+        Modern design.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    _4e902017e4624547b440da0a6658a689_on_desk_1_at_verify_task_21:
+      position:
+      - 0.04066161308216969
+      - -3.0842306137089723
+      - 0.7740862631285563
+      furniture: desk_1
+      original_id: _4e902017e4624547b440da0a6658a689
+    _5d182a8c2baf4134be22071a6fbd0be2_on_desk_1_at_verify_task_21:
+      position:
+      - 0.007986058986590217
+      - -2.5687724767086393
+      - 0.8074598109815452
+      furniture: desk_1
+      original_id: _5d182a8c2baf4134be22071a6fbd0be2
+    a168f82493e54feda127d0361d8f0936_on_desk_1_at_verify_task_21:
+      position:
+      - 0.09023362545327843
+      - -2.2120123655813577
+      - 0.7982387181650847
+      furniture: desk_1
+      original_id: a168f82493e54feda127d0361d8f0936
+    _4e902017e4624547b440da0a6658a689_on_desk_2_at_verify_task_21:
+      position:
+      - 4.405514245463886
+      - 1.614534313765786
+      - 0.7815287970984355
+      furniture: desk_2
+      original_id: _4e902017e4624547b440da0a6658a689
+  final_positions:
+    _4e902017e4624547b440da0a6658a689_on_desk_1_at_verify_task_21:
+      initial_pos:
+      - 0.04066161308216969
+      - -3.0842306137089723
+      - 0.8740862631285563
+      final_pos:
+      - 0.04065544530749321
+      - -3.0838546752929688
+      - 0.7506586313247681
+      category: headphones
+      original_id: _4e902017e4624547b440da0a6658a689
+    _5d182a8c2baf4134be22071a6fbd0be2_on_desk_1_at_verify_task_21:
+      initial_pos:
+      - 0.007986058986590217
+      - -2.5687724767086393
+      - 0.9074598109815452
+      final_pos:
+      - 0.006841275375336409
+      - -2.573251485824585
+      - 0.787532389163971
+      category: mouse
+      original_id: _5d182a8c2baf4134be22071a6fbd0be2
+    a168f82493e54feda127d0361d8f0936_on_desk_1_at_verify_task_21:
+      initial_pos:
+      - 0.09023362545327843
+      - -2.2120123655813577
+      - 0.8982387181650847
+      final_pos:
+      - 0.09488452970981598
+      - -2.3265299797058105
+      - 0.7638095617294312
+      category: headphones
+      original_id: a168f82493e54feda127d0361d8f0936
+    _4e902017e4624547b440da0a6658a689_on_desk_2_at_verify_task_21:
+      initial_pos:
+      - 4.405514245463886
+      - 1.614534313765786
+      - 0.8815287970984355
+      final_pos:
+      - 4.404648780822754
+      - 1.6156268119812012
+      - 0.7326928973197937
+      category: headphones
+      original_id: _4e902017e4624547b440da0a6658a689
+  global_index: 85
+  target_object_id: _4e902017e4624547b440da0a6658a689

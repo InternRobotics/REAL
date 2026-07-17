@@ -1,0 +1,262 @@
+scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+paths:
+  scene_usd: assets/scenes/MVUCSQAKTKJ5EAABAAAAABY8_usd/scene.usd
+  occ_map_dir: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8
+  furniture_lib: assets/metadata/MVUCSQAKTKJ5EAABAAAAABY8/scene_furniture_library.json
+objects:
+  _37c3f1eefbab44bcbc8dc19e66c676f8_on_table_1_at_verify_task_10:
+    original_id: _37c3f1eefbab44bcbc8dc19e66c676f8
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/37c3f1eefbab44bcbc8dc19e66c676f8.usd
+    usd_scale:
+    - 0.7557567715795169
+    - 0.6711619412371033
+    - 0.7970489359645578
+    position:
+    - -2.8856793959069744
+    - -1.4820453079928273
+    - 0.8012242896761745
+    size:
+    - 0.4267768859863281
+    - 0.3393745422363281
+    - 0.07444878248497844
+    detailed_caption: Rectangular tray with raised edges, textured surface, metallic finish, silver and
+      darker tones.
+  _37c3f1eefbab44bcbc8dc19e66c676f8_on_table_2_at_verify_task_10:
+    original_id: _37c3f1eefbab44bcbc8dc19e66c676f8
+    category: tray
+    usd_path: ${MESATASK_USD_ROOT}/37c3f1eefbab44bcbc8dc19e66c676f8.usd
+    usd_scale:
+    - 0.7557567715795169
+    - 0.6711619412371033
+    - 0.7970489359645578
+    position:
+    - -2.004232366344483
+    - 3.0354876854082558
+    - 0.32721239163540305
+    size:
+    - 0.4267768859863281
+    - 0.3393745422363281
+    - 0.07444878248497844
+    detailed_caption: Rectangular tray with raised edges, textured surface, metallic finish, silver and
+      darker tones.
+episodes:
+- task_id: verify_task_10
+  episode_idx: 4
+  original_idx: 10
+  scene_id: MVUCSQAKTKJ5EAABAAAAABY8
+  task_description: Navigate to the table to place my snack for watching TV, grasp the rectangular tray
+    with raised edges, textured surface, metallic finish, silver and darker tones, and carry it to the
+    table much larger than another one.
+  initial_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _37c3f1eefbab44bcbc8dc19e66c676f8
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content:
+      - _37c3f1eefbab44bcbc8dc19e66c676f8
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  goal_world_graph:
+    table_1:
+      room: dinning room/0
+      content:
+      - _37c3f1eefbab44bcbc8dc19e66c676f8
+    couch_2:
+      room: living room/0
+      content: []
+    table_2:
+      room: living room/0
+      content: []
+    desk_1:
+      room: study room/0
+      content: []
+    cabinet_6:
+      room: study room/0
+      content: []
+    cabinet_7:
+      room: washingroom/0
+      content: []
+    bed_1:
+      room: bedroom/0
+      content: []
+    cabinet_8:
+      room: bedroom/0
+      content: []
+    desk_2:
+      room: bedroom/0
+      content: []
+    cabinet_9:
+      room: bedroom/1
+      content: []
+    bed_2:
+      room: bedroom/1
+      content: []
+    cabinet_10:
+      room: bedroom/1
+      content: []
+    sink_0:
+      room: kitchen/0
+      content: []
+    sink_1:
+      room: washingroom/0
+      content: []
+    potlid_0:
+      room: kitchen/0
+      content: []
+    pot_0:
+      room: kitchen/0
+      content: []
+  src: table_2
+  src_distractors:
+  - table_1
+  dest: table_1
+  dest_distractors:
+  - table_2
+  obj_meta:
+    _37c3f1eefbab44bcbc8dc19e66c676f8:
+      category: tray
+      detailed_caption: Rectangular tray with raised edges, textured surface, metallic finish, silver
+        and darker tones.
+      usd_path: 37c3f1eefbab44bcbc8dc19e66c676f8.usd
+      size:
+      - 0.4267768859863281
+      - 0.3393745422363281
+      - 0.07444878248497844
+  obj_distractors:
+  - a77e88c7_f4a1_45e3_813a_df943607f8ff
+  - _3e7747b1db4b44a4952d6d94488ee16e
+  obj_distractor_meta:
+    a77e88c7_f4a1_45e3_813a_df943607f8ff:
+      category: tray
+      detailed_caption: Sleek, rectangular tray with raised edges, polished metallic surface, reflective
+        and elegant appearance.
+      usd_path: a77e88c7-f4a1-45e3-813a-df943607f8ff.usd
+      size:
+      - 0.3775520324707031
+      - 0.3553352355957031
+      - 0.031213812450005207
+    _3e7747b1db4b44a4952d6d94488ee16e:
+      category: tray
+      detailed_caption: Rectangular plastic tray with rounded edges, glossy finish, blue color, and subtle
+        colorful decorations.
+      usd_path: 3e7747b1db4b44a4952d6d94488ee16e.usd
+      size:
+      - 0.21071720123291016
+      - 0.29679298400878906
+      - 0.025400093640200794
+  execution_plan:
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: find
+    args:
+      target_category: tray
+      target_description: Rectangular tray with raised edges, textured surface, metallic finish, silver
+        and darker tones.
+  - action: gaze_at
+    args:
+      target_category: tray
+      target_description: Rectangular tray with raised edges, textured surface, metallic finish, silver
+        and darker tones.
+  - action: pick
+    args:
+      target_category: tray
+      target_description: Rectangular tray with raised edges, textured surface, metallic finish, silver
+        and darker tones.
+  - action: nav_to
+    args:
+      receptacle_name: table_2
+  - action: nav_to
+    args:
+      receptacle_name: table_1
+  - action: place
+    args:
+      receptacle_name: table_1
+  placements:
+    _37c3f1eefbab44bcbc8dc19e66c676f8_on_table_1_at_verify_task_10:
+      position:
+      - -2.8856793959069744
+      - -1.4820453079928273
+      - 0.8012242896761745
+      furniture: table_1
+      original_id: _37c3f1eefbab44bcbc8dc19e66c676f8
+    _37c3f1eefbab44bcbc8dc19e66c676f8_on_table_2_at_verify_task_10:
+      position:
+      - -2.004232366344483
+      - 3.0354876854082558
+      - 0.32721239163540305
+      furniture: table_2
+      original_id: _37c3f1eefbab44bcbc8dc19e66c676f8
+  final_positions:
+    _37c3f1eefbab44bcbc8dc19e66c676f8_on_table_1_at_verify_task_10:
+      initial_pos:
+      - -2.8856793959069744
+      - -1.4820453079928273
+      - 0.9012242896761745
+      final_pos:
+      - -2.88752818107605
+      - -1.2552434206008911
+      - 0.7753452062606812
+      category: tray
+      original_id: _37c3f1eefbab44bcbc8dc19e66c676f8
+    _37c3f1eefbab44bcbc8dc19e66c676f8_on_table_2_at_verify_task_10:
+      initial_pos:
+      - -2.004232366344483
+      - 3.0354876854082558
+      - 0.42721239163540303
+      final_pos:
+      - -2.008697032928467
+      - 3.270590305328369
+      - 0.30133312940597534
+      category: tray
+      original_id: _37c3f1eefbab44bcbc8dc19e66c676f8
+  family: FDP
+  benchmark_task_id: FDP/verify_task_10
+  benchmark_instruction: Navigate to the table to place my snack for watching TV, grasp the rectangular
+    tray with raised edges, textured surface, metallic finish, silver and darker tones, and carry it to
+    the table much larger than another one.
+  global_index: 4
+  target_object_id: _37c3f1eefbab44bcbc8dc19e66c676f8
