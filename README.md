@@ -267,12 +267,42 @@ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q \
 The procedural pipeline lives in `proc_datagen/`. It generates task configurations, applies static placement checks, verifies physics in simulation, and annotates previously recorded trajectories.
 
 ```mermaid
+%%{init: {'theme':'base', 'themeVariables': {'fontFamily':'Roboto Mono, Apple Color Emoji, monospace', 'fontSize':'14px'}}}%%
 flowchart LR
-    A["task_generator.py\n(task generation + static filter)"]
-    -->|"YAML per\nscene/type"| B["verify_proc.py\n(physics simulation)"]
-    B -->|pass| C["physics_passed.yaml"]
-    B -->|fail| D["physics_failed.yaml"]
-    A -->|"--to-json"| E["JSON files\n(backward compatibility)"]
+    %% ===== Style definitions =====
+    classDef process  fill:#e0e7ff,stroke:#6366f1,stroke-width:1.5px,color:#1e1b4b
+    classDef sim      fill:#d1fae5,stroke:#059669,stroke-width:1.5px,color:#064e3b
+    classDef response fill:#fce7f3,stroke:#db2777,stroke-width:1.5px,color:#831843
+
+    %% ===== Procedural task pipeline =====
+    subgraph Pipeline["Procedural Task Pipeline"]
+        direction LR
+
+        subgraph Generation["🛠️ Task Generation"]
+            Generator["⚙️ Generate task configs<br/><i>task_generator.py + static filter</i>"]:::process
+        end
+
+        subgraph Verification["🎮 Isaac Sim Verification"]
+            Verify["Physics verification<br/><i>verify_proc.py</i>"]:::sim
+        end
+
+        subgraph Artifacts["📦 Pipeline Artifacts"]
+            Passed["✅ physics_passed.yaml"]:::response
+            Failed["❌ physics_failed.yaml"]:::response
+            Json["🗂️ JSON files<br/><i>backward compatibility</i>"]:::response
+        end
+
+        Generator -->|"YAML per<br/>scene / type"| Verify
+        Verify -->|pass| Passed
+        Verify -->|fail| Failed
+        Generator -->|"--to-json"| Json
+    end
+
+    %% ===== Subgraph containers =====
+    style Pipeline fill:#ffffff,stroke:#94a3b8,stroke-width:2px
+    style Generation fill:#eef2ff,stroke:#6366f1,stroke-width:1.5px,stroke-dasharray:5 5
+    style Verification fill:#f0fdf4,stroke:#059669,stroke-width:1.5px,stroke-dasharray:5 5
+    style Artifacts fill:#fdf2f8,stroke:#db2777,stroke-width:1.5px,stroke-dasharray:5 5
 ```
 
 #### Task types
@@ -463,10 +493,10 @@ The public repository does not distribute training data, model weights, checkpoi
 If you find REAL useful in your research, please cite our [paper](https://arxiv.org/abs/2607.13653):
 
 ```bibtex
-@article{mi2026exploratory,
+@inproceedings{mi2026exploratory,
   title={Exploratory, Communicative, and Deployable: Vision-Driven Embodied Agents for Open-World Mobile Manipulation},
   author={Mi, Boyu and Ma, Mengchen and Yao, Yifei and Gao, Xing and Chen, Junting and Li, Yangzi and Zhu, Zihou and Li, Guohao and Yin, Zhenfei and Wang, Tai and Mu, Yao and Pang, Jiangmiao and Wang, Hanqing},
-  journal={arXiv preprint arXiv:2607.13653},
+  booktitle={European Conference on Computer Vision (ECCV)},
   year={2026}
 }
 ```
